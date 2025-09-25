@@ -36,6 +36,7 @@ Contents
    getting_started
    supercomputer_information
    general_organization
-   developer_tutorials
+   user_guide
+   developer_guide
    reference
 
