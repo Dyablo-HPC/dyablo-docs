@@ -9,7 +9,8 @@ Jean-Zay
 H100 partition (**Last update: 25/09/2025**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Configuration:** 
+Configuration
+"""""""""""""
 
 .. code-block :: bash
   
@@ -23,7 +24,8 @@ H100 partition (**Last update: 25/09/2025**)
   
   To start an interactive job use the following command ``srun --pty -A PROJECTID@h100 -C h100 --partition=gpu_p6 --nodes=1 --ntasks-per-node=1 --cpus-per-task=24 --gres=gpu:1 --hint=nomultithread bash``
 
-**Example job script for a single node run with 4 gpus:**
+Example jobscript
+"""""""""""""""""
 
 .. code-block :: slurm
 
@@ -51,7 +53,8 @@ H100 partition (**Last update: 25/09/2025**)
 A100 partition (**Last update: 25/09/2025**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Configuration:**
+Configuration
+"""""""""""""
 
 .. code-block :: bash
   
@@ -61,7 +64,8 @@ A100 partition (**Last update: 25/09/2025**)
   cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ENABLE_CUDA=ON -DKokkos_ARCH="AMPERE80" ..
 
 
-**Example job script for a single node run with 8 gpus:**
+Example jobscript
+"""""""""""""""""
 
 .. code-block :: slurm
 
@@ -91,6 +95,9 @@ Ad-Astra
 Genoa (CPU) partition (**Last update 25/09/2025**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Configuration
+"""""""""""""
+
 .. code-block :: bash
 
   module purge
@@ -100,7 +107,8 @@ Genoa (CPU) partition (**Last update 25/09/2025**)
   module load cray-hdf5-parallel
   CC=cc CXX=CC cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ARCH=ZEN4 ..
 
-**Example jobscript:**
+Example jobscript
+"""""""""""""""""
 
 .. code-block :: slurm
   
@@ -129,7 +137,9 @@ Genoa (CPU) partition (**Last update 25/09/2025**)
 
 MI250 partition (**Last update 25/09/2025**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Configuration:**
+
+Configuration
+"""""""""""""
 
 .. code-block :: bash
 
@@ -149,7 +159,8 @@ MI250 partition (**Last update 25/09/2025**)
   - Dyablo generates nans with default hipcc configuration, ``-ffp-model=precise`` must be added to yield correct results
   - Don't forget to use ``MPICH_GPU_SUPPORT_ENABLED=1`` at execution time
 
-**Example jobscript:**
+Example jobscript
+"""""""""""""""""
 
 .. code-block :: slurm
 
@@ -183,7 +194,9 @@ MI250 partition (**Last update 25/09/2025**)
 
 MI300 partition (**Last update 25/09/2025**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Configuration:**
+
+Configuration
+"""""""""""""
 
 .. code-block :: bash
 
@@ -201,7 +214,8 @@ MI300 partition (**Last update 25/09/2025**)
   - Don't forget to use ``MPICH_GPU_SUPPORT_ENABLED=1`` at execution time
 
 
-**Example jobscript:**
+Example jobscript
+"""""""""""""""""
 
 .. code-block :: slurm
 
