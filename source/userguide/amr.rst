@@ -154,6 +154,8 @@ The most important parameters are the following. Additional parameters depend on
 
 .. code-block:: ini
 
+  [amr]
+  
   # AMR levels
   level_min = 2
   level_max = 8
