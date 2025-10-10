@@ -30,13 +30,15 @@ Contents
 --------
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
    :caption: Contents:
 
    getting_started
-   supercomputer_information
    general_organization
    user_guide
    developer_guide
+   lexicon
+   community
+   publication_list
    reference
 
