@@ -44,7 +44,7 @@ O
 P
 -
 
-**Plugin**: a plugin in Dyablo is a piece of modular code that can be replaced at runtime. Plugin affects all major parts of the code.
+**Plugin**: a plugin in Dyablo is a piece of modular code that can be replaced at runtime. Plugins affect all major parts of the code.
 
 R
 -
