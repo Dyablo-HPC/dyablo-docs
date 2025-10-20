@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="SourceUpdate" kind="page">
+    <compoundname>SourceUpdate</compoundname>
+    <title>SourceUpdate</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="source_plugins_1_source_plugins000001"><xreftitle>xref Sample</xreftitle><xrefdescription><para><computeroutput>SourceUpdate_Cooling_FF</computeroutput> - Flux-flux cooling term, cooling/heating at the top/bottom of the box. </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="source_plugins_1_source_plugins000002"><xreftitle>xref Sample</xreftitle><xrefdescription><para><computeroutput>SourceUpdate_GLM</computeroutput> - Parabolic divergence cleaning term. </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="source_plugins_1_source_plugins000003"><xreftitle>xref Sample</xreftitle><xrefdescription><para><computeroutput>SourceUpdate_Photons_Beam</computeroutput> - Photons source term for a single photons beam. </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/md241548/work/codes/dyablo/dyablo-paper/core/src/source_terms/SourceUpdate_Cooling_FF.cpp"/>
+  </compounddef>
+</doxygen>

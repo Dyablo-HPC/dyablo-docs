@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="gravity_update_plugins" kind="page">
+    <compoundname>gravity_update_plugins</compoundname>
+    <title>xref Sample</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Page <ref refid="GravityUpdatePlugins" kindref="compound">List of gravity update plugins available:</ref>  </term></varlistentry>
+<listitem><para><anchor id="gravity_update_plugins_1_gravity_update_plugins000001"/> <computeroutput>HydroUpdate_gravity</computeroutput> - Updates the momentum and total energy. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="gravity_update_plugins"/>
+  </compounddef>
+</doxygen>

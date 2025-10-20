@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="GravitySolverPlugins" kind="page">
+    <compoundname>GravitySolverPlugins</compoundname>
+    <title>List of source plugins available:</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="gravity_solver_plugins_1_gravity_solver_plugins000001"><xreftitle>xref Sample</xreftitle><xrefdescription><para><computeroutput>GravitySolver_cg</computeroutput> - Conjugate gradient for auto-gravity runs. </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="gravity_solver_plugins_1_gravity_solver_plugins000002"><xreftitle>xref Sample</xreftitle><xrefdescription><para><computeroutput>GravitySolver_constant</computeroutput> - Constant gravity over the whole domain. </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="gravity_solver_plugins_1_gravity_solver_plugins000003"><xreftitle>xref Sample</xreftitle><xrefdescription><para><computeroutput>GravitySolver_point_mass</computeroutput> - Point mass gravitational source. </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/md241548/work/codes/dyablo/dyablo-paper/core/src/gravity/GravitySolver.h"/>
+  </compounddef>
+</doxygen>

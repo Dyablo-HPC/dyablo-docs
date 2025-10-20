@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="gravity_solver_plugins" kind="page">
+    <compoundname>gravity_solver_plugins</compoundname>
+    <title>xref Sample</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Page <ref refid="GravitySolverPlugins" kindref="compound">List of source plugins available:</ref>  </term></varlistentry>
+<listitem><para><anchor id="gravity_solver_plugins_1_gravity_solver_plugins000001"/> <computeroutput>GravitySolver_cg</computeroutput> - Conjugate gradient for auto-gravity runs. </para>
+<para><anchor id="gravity_solver_plugins_1_gravity_solver_plugins000002"/> <computeroutput>GravitySolver_constant</computeroutput> - Constant gravity over the whole domain. </para>
+<para><anchor id="gravity_solver_plugins_1_gravity_solver_plugins000003"/> <computeroutput>GravitySolver_point_mass</computeroutput> - Point mass gravitational source. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="gravity_solver_plugins"/>
+  </compounddef>
+</doxygen>

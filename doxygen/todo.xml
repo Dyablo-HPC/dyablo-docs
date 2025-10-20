@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classdyablo_1_1ParabolicTerm__viscosity_1a868d574a03e274d9e79e24b2968f7c28" kindref="member">dyablo::ParabolicTerm_viscosity::compute_rhs</ref>  (const U_t &amp;Uin, const PatchArray &amp;Ugroup, const PatchArray &amp;Qgroup, const PatchArray &amp;rhs, const CellIndex &amp;iCell_Uout, const CellIndex &amp;iCell_rhs, const CellMetaData &amp;cellmetadata) const</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>: fill in doc </para>
+<para></para>
+<para>: Replace the whole block of code with directions switching by a nice swapComponent at start</para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="todo"/>
+  </compounddef>
+</doxygen>

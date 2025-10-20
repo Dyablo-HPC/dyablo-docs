@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="hyperbolic_update_plugins" kind="page">
+    <compoundname>hyperbolic_update_plugins</compoundname>
+    <title>xref Sample</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Page <ref refid="HyperbolicUpdate" kindref="compound">HyperbolicUpdate</ref>  </term></varlistentry>
+<listitem><para><anchor id="hyperbolic_update_plugins_1_hyperbolic_update_plugins000001"/> <computeroutput>GLMMHDUpdate_euler</computeroutput> - Euler scheme for the magneto-hydrodynamics equations with hyperbolic divergence cleaning. </para>
+<para><anchor id="hyperbolic_update_plugins_1_hyperbolic_update_plugins000002"/> <computeroutput>GLMMHDUpdate_hancock</computeroutput> - MUSCL-Hancock scheme for the magneto-hydrodynamics equations with hyperbolic divergence cleaning. </para>
+<para><anchor id="hyperbolic_update_plugins_1_hyperbolic_update_plugins000003"/> <computeroutput>GLMMHDUpdate_RK2</computeroutput> - SSP-RK2 scheme for the magneto-hydrodynamics equations with hyperbolic divergence cleaning. </para>
+<para><anchor id="hyperbolic_update_plugins_1_hyperbolic_update_plugins000004"/> <computeroutput>HydroUpdate_euler</computeroutput> - Euler (1st order) scheme for the hydrodynamics equations. </para>
+<para><anchor id="hyperbolic_update_plugins_1_hyperbolic_update_plugins000005"/> <computeroutput>HydroUpdate_euler_no-patch</computeroutput> - Euler (1st order) scheme for the hydrodynamics equations, without hierarchical parallelism. </para>
+<para><anchor id="hyperbolic_update_plugins_1_hyperbolic_update_plugins000006"/> <computeroutput>HydroUpdate_hancock</computeroutput> - MUSCL-Hancock scheme for the hydrodynamics equations. </para>
+<para><anchor id="hyperbolic_update_plugins_1_hyperbolic_update_plugins000007"/> <computeroutput>HydroUpdate_RK2</computeroutput> - SSP-RK2 scheme for the hydrodynamics equations. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="hyperbolic_update_plugins"/>
+  </compounddef>
+</doxygen>

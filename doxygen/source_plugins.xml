@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="source_plugins" kind="page">
+    <compoundname>source_plugins</compoundname>
+    <title>xref Sample</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Page <ref refid="SourceUpdate" kindref="compound">SourceUpdate</ref>  </term></varlistentry>
+<listitem><para><anchor id="source_plugins_1_source_plugins000001"/> <computeroutput>SourceUpdate_Cooling_FF</computeroutput> - Flux-flux cooling term, cooling/heating at the top/bottom of the box. </para>
+<para><anchor id="source_plugins_1_source_plugins000002"/> <computeroutput>SourceUpdate_GLM</computeroutput> - Parabolic divergence cleaning term. </para>
+<para><anchor id="source_plugins_1_source_plugins000003"/> <computeroutput>SourceUpdate_Photons_Beam</computeroutput> - Photons source term for a single photons beam. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="source_plugins"/>
+  </compounddef>
+</doxygen>

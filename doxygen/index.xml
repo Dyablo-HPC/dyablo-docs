@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="GravitySolverPlugins" kind="page"><name>GravitySolverPlugins</name>
+  </compound>
+  <compound refid="HyperbolicUpdate" kind="page"><name>HyperbolicUpdate</name>
+  </compound>
+  <compound refid="GravityUpdatePlugins" kind="page"><name>GravityUpdatePlugins</name>
+  </compound>
+  <compound refid="HyperbolicUpdatePlugins" kind="page"><name>HyperbolicUpdatePlugins</name>
+  </compound>
+  <compound refid="SourcePlugins" kind="page"><name>SourcePlugins</name>
+  </compound>
+  <compound refid="SourceUpdate" kind="page"><name>SourceUpdate</name>
+  </compound>
+  <compound refid="gravity_solver_plugins" kind="page"><name>gravity_solver_plugins</name>
+  </compound>
+  <compound refid="hyperbolic_update_plugins" kind="page"><name>hyperbolic_update_plugins</name>
+  </compound>
+  <compound refid="gravity_update_plugins" kind="page"><name>gravity_update_plugins</name>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="source_plugins" kind="page"><name>source_plugins</name>
+  </compound>
+</doxygenindex>

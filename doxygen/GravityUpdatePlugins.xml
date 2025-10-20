@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="GravityUpdatePlugins" kind="page">
+    <compoundname>GravityUpdatePlugins</compoundname>
+    <title>List of gravity update plugins available:</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="gravity_update_plugins_1_gravity_update_plugins000001"><xreftitle>xref Sample</xreftitle><xrefdescription><para><computeroutput><ref refid="classdyablo_1_1HydroUpdate__gravity" kindref="compound">HydroUpdate_gravity</ref></computeroutput> - Updates the momentum and total energy. </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <location file="/home/md241548/work/codes/dyablo/dyablo-paper/core/src/hyperbolic/HydroUpdate_gravity.cpp"/>
+  </compounddef>
+</doxygen>
