@@ -43,6 +43,10 @@ To make a first build of Dyablo, create a ``build`` subfolder and configure the 
   mkdir build_openmp; cd build_openmp
   cmake -DCMAKE_BUILD_TYPE=Release ..
 
+.. danger ::
+
+  If you are a Mac user, chances are you will get an error about OpenMP. The problem here is that Apple creates automatically an alias on the command ``gcc`` that points to their own version of clang (AppleClang) which is not compatible with OpenMP. The solution is to install a real gcc separately and use this on the configuration line : ``CC=gcc CXX=g++ cmake -DCMAKE_BUILD_TYPE=Release ..``.
+
 By default, if no other argument is provided to the CMake command, Dyablo will build using the OpenMP backend of Kokkos, effectively compiling for multi-threaded CPUs.
 
 Once the configuration step finished, the last three lines should look like the following: :: 
