@@ -18,6 +18,8 @@ C
 
 **Cell**: the base grid element of the mesh that stores the fields and the data. [:doc:`userguide/amr`]
 
+**Checkpoint**: output made to restart the simulation after failing or stopping. [:doc:`userguide/ios`]
+
 **Coarsening**: merges 4(2D) or 8(3D) octants at level :math:`\ell` into a single octant at level :math:`\ell-1` [:doc:`userguide/amr`]
 
 **Coarse resolution**: resolution of the mesh at :math:`\ell_{min}`. [:doc:`userguide/amr`]
@@ -50,6 +52,11 @@ R
 -
 
 **Refinement**: subdivides an octant at level :math:`\ell` into 4(2D) or 8(3D) octants at level :math:`\ell+1` [:doc:`userguide/amr`]
+
+S
+-
+
+**Snapshot**: output made for visualization/analysis. [:doc:`userguide/ios`]
 
 U
 -
