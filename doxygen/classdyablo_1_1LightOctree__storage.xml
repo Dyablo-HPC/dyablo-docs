@@ -1,0 +1,727 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1LightOctree__storage" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::LightOctree_storage</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename MemorySpace_</type>
+        <defval>Kokkos::View&lt;int*&gt;::memory_space</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49" prot="protected" static="no" strong="no">
+        <type></type>
+        <name>oct_data_field_t</name>
+        <qualifiedname>dyablo::LightOctree_storage::oct_data_field_t</qualifiedname>
+        <enumvalue id="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a18b96174f4607884e9ee9149f72e8742" prot="protected">
+          <name>ICORNERX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a9643ee6f5e11e5bdfdddacbc0cc5b15c" prot="protected">
+          <name>ICORNERY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a007eb664b4460464ae96de34f36e3e81" prot="protected">
+          <name>ICORNERZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a43bd867247c7db1aa98d251b93cdfba1" prot="protected">
+          <name>ILEVEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a103a5d0fbced977cd0c37b9fc320e2c0" prot="protected">
+          <name>OCT_DATA_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Index to access different fields in <computeroutput>oct_data</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="24" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__storage_1ab528cea64a9f0db96188fef014a455d2" prot="protected" static="no">
+        <type><ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">LightOctree_base::OctantIndex</ref></type>
+        <definition>using dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::OctantIndex =  LightOctree_base::OctantIndex</definition>
+        <argsstring></argsstring>
+        <name>OctantIndex</name>
+        <qualifiedname>dyablo::LightOctree_storage::OctantIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="22" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__storage_1a71b3acba7e66e0d9039143d3b4711d5d" prot="public" static="no">
+        <type>MemorySpace_</type>
+        <definition>using dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::MemorySpace =  MemorySpace_</definition>
+        <argsstring></argsstring>
+        <name>MemorySpace</name>
+        <qualifiedname>dyablo::LightOctree_storage::MemorySpace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="15" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__storage_1aa1b8f581b324efc5513147f020fab919" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::logical_coord_t =  uint32_t</definition>
+        <argsstring></argsstring>
+        <name>logical_coord_t</name>
+        <qualifiedname>dyablo::LightOctree_storage::logical_coord_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="16" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__storage_1acb98f8be7db40577998aab572f7dbf15" prot="public" static="no">
+        <type>logical_coord_t</type>
+        <definition>using dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::level_t =  logical_coord_t</definition>
+        <argsstring></argsstring>
+        <name>level_t</name>
+        <qualifiedname>dyablo::LightOctree_storage::level_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="17" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__storage_1af51b732ac7a1f315bbc51a30dc36cad1" prot="public" static="no">
+        <type>Kokkos::View&lt; logical_coord_t **, Kokkos::LayoutLeft, MemorySpace &gt;</type>
+        <definition>using dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::oct_data_t =  Kokkos::View&lt; logical_coord_t**, Kokkos::LayoutLeft, MemorySpace &gt;</definition>
+        <argsstring></argsstring>
+        <name>oct_data_t</name>
+        <qualifiedname>dyablo::LightOctree_storage::oct_data_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="18" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__storage_1a7ed73aca61a9e3afbabbbe68aafdcab5" prot="public" static="no">
+        <type>Kokkos::Array&lt; real_t, 3 &gt;</type>
+        <definition>using dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::pos_t =  Kokkos::Array&lt;real_t,3&gt;</definition>
+        <argsstring></argsstring>
+        <name>pos_t</name>
+        <qualifiedname>dyablo::LightOctree_storage::pos_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="19" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__storage_1a6bddce09a98385ec557e900ef1c03841" prot="public" static="no">
+        <type>Kokkos::Array&lt; logical_coord_t, 3 &gt;</type>
+        <definition>using dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::coarse_grid_size_t =  Kokkos::Array&lt;logical_coord_t,3&gt;</definition>
+        <argsstring></argsstring>
+        <name>coarse_grid_size_t</name>
+        <qualifiedname>dyablo::LightOctree_storage::coarse_grid_size_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="20" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__storage_1ad705c90f551589e9670a93ed3bc5abab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::LightOctree_storage::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="173" column="7" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__storage_1ac0fcfad57379489eb960e4a5169fcf16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::numOctants</definition>
+        <argsstring></argsstring>
+        <name>numOctants</name>
+        <qualifiedname>dyablo::LightOctree_storage::numOctants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="174" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__storage_1a487132bbce3aede1df06fe3684eb5ae7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::numGhosts</definition>
+        <argsstring></argsstring>
+        <name>numGhosts</name>
+        <qualifiedname>dyablo::LightOctree_storage::numGhosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="174" column="23" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__storage_1a6639a8dc84b4cafa645def6bb764202d" prot="public" static="no" mutable="no">
+        <type>level_t</type>
+        <definition>level_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::level_min</definition>
+        <argsstring></argsstring>
+        <name>level_min</name>
+        <qualifiedname>dyablo::LightOctree_storage::level_min</qualifiedname>
+        <briefdescription>
+<para>Number of local octants (no ghosts), Number of ghosts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="175" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__storage_1a22a6afa46a5177f86672277bb7c91cce" prot="public" static="no" mutable="no">
+        <type>coarse_grid_size_t</type>
+        <definition>coarse_grid_size_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::coarse_grid_size</definition>
+        <argsstring></argsstring>
+        <name>coarse_grid_size</name>
+        <qualifiedname>dyablo::LightOctree_storage::coarse_grid_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="176" column="22" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__storage_1a02c8a4ca0d06095a06157948518bfdd7" prot="public" static="no" mutable="no">
+        <type>oct_data_t</type>
+        <definition>oct_data_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::oct_data</definition>
+        <argsstring></argsstring>
+        <name>oct_data</name>
+        <qualifiedname>dyablo::LightOctree_storage::oct_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Kokkos::view containing octants position and level ex: (<ref refid="classdyablo_1_1LightOctree__storage_1a02c8a4ca0d06095a06157948518bfdd7" kindref="member">oct_data(iOct, ILEVEL)</ref> is octant level) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="188" column="14" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1aa3ca37c2f0ee41acc86f707f8c8489d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::LightOctree_storage</definition>
+        <argsstring>()=default</argsstring>
+        <name>LightOctree_storage</name>
+        <qualifiedname>dyablo::LightOctree_storage::LightOctree_storage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a34a59ab0bbf3bda510e464173bcbee9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::LightOctree_storage</definition>
+        <argsstring>(const LightOctree_storage &amp;lmesh)=default</argsstring>
+        <name>LightOctree_storage</name>
+        <qualifiedname>dyablo::LightOctree_storage::LightOctree_storage</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref> &amp;</type>
+          <declname>lmesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="34" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a1ff598e7ffd4e6aa80e1bda27274acd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref> &amp;</type>
+        <definition>LightOctree_storage &amp; dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::operator=</definition>
+        <argsstring>(const LightOctree_storage &amp;lmesh)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>dyablo::LightOctree_storage::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref> &amp;</type>
+          <declname>lmesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="35" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a3f5a4b64ec82c4082c082807864b55ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::LightOctree_storage</definition>
+        <argsstring>(LightOctree_storage &amp;&amp;lmesh)=default</argsstring>
+        <name>LightOctree_storage</name>
+        <qualifiedname>dyablo::LightOctree_storage::LightOctree_storage</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref> &amp;&amp;</type>
+          <declname>lmesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a08b692099646875f5a18e02788cd8704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref> &amp;</type>
+        <definition>LightOctree_storage &amp; dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::operator=</definition>
+        <argsstring>(LightOctree_storage &amp;&amp;lmesh)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>dyablo::LightOctree_storage::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref> &amp;&amp;</type>
+          <declname>lmesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="37" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a6ecb9a12a82d50bea884d6f572ff3e04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MemorySpace_t</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref>&lt; MemorySpace_t &gt;</type>
+        <definition>LightOctree_storage&lt; MemorySpace_t &gt; dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::deep_copy</definition>
+        <argsstring>() const</argsstring>
+        <name>deep_copy</name>
+        <qualifiedname>dyablo::LightOctree_storage::deep_copy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="40" column="23" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1adf5980470750506d7806f419c1af313d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::LightOctree_storage</definition>
+        <argsstring>(int ndim, uint32_t numOctants, uint32_t numGhosts, level_t level_min, const coarse_grid_size_t &amp;coarse_grid_size)</argsstring>
+        <name>LightOctree_storage</name>
+        <qualifiedname>dyablo::LightOctree_storage::LightOctree_storage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ndim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>numOctants</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>numGhosts</declname>
+        </param>
+        <param>
+          <type>level_t</type>
+          <declname>level_min</declname>
+        </param>
+        <param>
+          <type>const coarse_grid_size_t &amp;</type>
+          <declname>coarse_grid_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="49" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1aaf832714d87a0b2e6c48740ba77b6ffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::LightOctree_storage</definition>
+        <argsstring>(int ndim, uint32_t numOctants, uint32_t numGhosts, level_t level_min)</argsstring>
+        <name>LightOctree_storage</name>
+        <qualifiedname>dyablo::LightOctree_storage::LightOctree_storage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ndim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>numOctants</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>numGhosts</declname>
+        </param>
+        <param>
+          <type>level_t</type>
+          <declname>level_min</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="56" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a0a457fe78c6035e8cf55bc36e0f6b805" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getNumOctants</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumOctants</name>
+        <qualifiedname>dyablo::LightOctree_storage::getNumOctants</qualifiedname>
+        <briefdescription>
+<para>Get local (MPI) octant count.    </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="65" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1ab219df3da24cfa519ce7d06d4ce351a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getNumGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumGhosts</name>
+        <qualifiedname>dyablo::LightOctree_storage::getNumGhosts</qualifiedname>
+        <briefdescription>
+<para>Get local (MPI) ghost octant count.    </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="72" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a21a11fbb6fb9c108d8754cef2b3ae756" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint8_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint8_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getNdim</definition>
+        <argsstring>() const</argsstring>
+        <name>getNdim</name>
+        <qualifiedname>dyablo::LightOctree_storage::getNdim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="79" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a4cf1717c8b435f389ebd70f22c99f0b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION pos_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getCenter</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getCenter</name>
+        <qualifiedname>dyablo::LightOctree_storage::getCenter</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+<para>Get physical position of Octant center.    </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="85" column="9" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="85" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1aca0308a0e420b68e60d23ca6ca270e36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION pos_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getCorner</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getCorner</name>
+        <qualifiedname>dyablo::LightOctree_storage::getCorner</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+<para>Get physical position of octant corner (smallest position inside octant)    </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="97" column="9" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="97" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1aa39565e9c22ef645052ffbb891cb74ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION bool</type>
+        <definition>KOKKOS_INLINE_FUNCTION bool dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getBound</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getBound</name>
+        <qualifiedname>dyablo::LightOctree_storage::getBound</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="109" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="109" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1ac978040cb1319df0fd497c599f47a55a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION pos_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getSize</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>dyablo::LightOctree_storage::getSize</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+<para>Get physical size of octant in all dimensions (Octant is a cube)    </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="122" column="9" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a4118f8b83d2bdafa3ecb480794f38dd3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION level_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION level_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getLevel</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getLevel</name>
+        <qualifiedname>dyablo::LightOctree_storage::getLevel</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+<para>Get amr level of octant.    </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="129" column="34" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a3095c542ab9d1a2d4b62632ed50d801f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION Kokkos::Array&lt; logical_coord_t, 3 &gt;</type>
+        <definition>KOKKOS_INLINE_FUNCTION Kokkos::Array&lt; logical_coord_t, 3 &gt; dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::get_logical_coords</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>get_logical_coords</name>
+        <qualifiedname>dyablo::LightOctree_storage::get_logical_coords</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="135" column="17" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="135" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a5c984de02d7eff56708d77866d431050" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION void</type>
+        <definition>KOKKOS_INLINE_FUNCTION void dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::set</definition>
+        <argsstring>(const OctantIndex &amp;iOct, logical_coord_t ix, logical_coord_t iy, logical_coord_t iz, level_t level) const</argsstring>
+        <name>set</name>
+        <qualifiedname>dyablo::LightOctree_storage::set</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <param>
+          <type>logical_coord_t</type>
+          <declname>ix</declname>
+        </param>
+        <param>
+          <type>logical_coord_t</type>
+          <declname>iy</declname>
+        </param>
+        <param>
+          <type>logical_coord_t</type>
+          <declname>iz</declname>
+        </param>
+        <param>
+          <type>level_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="146" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="146" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a97bdceff87308ab4b1e5ffd731a537b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>oct_data_t</type>
+        <definition>oct_data_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getLocalSubview</definition>
+        <argsstring>() const</argsstring>
+        <name>getLocalSubview</name>
+        <qualifiedname>dyablo::LightOctree_storage::getLocalSubview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="157" column="14" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="157" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a6a9255d599f2e41c65631f0c17a05362" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>oct_data_t</type>
+        <definition>oct_data_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::getGhostSubview</definition>
+        <argsstring>() const</argsstring>
+        <name>getGhostSubview</name>
+        <qualifiedname>dyablo::LightOctree_storage::getGhostSubview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="165" column="14" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="165" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1a58617754e4dbec2254f2a5b57a2cf955" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION logical_coord_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION logical_coord_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::cell_count</definition>
+        <argsstring>(ComponentIndex3D idim, level_t n) const</argsstring>
+        <name>cell_count</name>
+        <qualifiedname>dyablo::LightOctree_storage::cell_count</qualifiedname>
+        <param>
+          <type>ComponentIndex3D</type>
+          <declname>idim</declname>
+        </param>
+        <param>
+          <type>level_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="179" column="19" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="179" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__storage_1ab3f6f59bcc5853af2bd7585e146a1517" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::LightOctree_storage&lt; MemorySpace_ &gt;::get_ioct_local</definition>
+        <argsstring>(const OctantIndex &amp;oct) const</argsstring>
+        <name>get_ioct_local</name>
+        <qualifiedname>dyablo::LightOctree_storage::get_ioct_local</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>oct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="191" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="191" bodyend="195"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" line="12" column="1" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_storage.h" bodystart="13" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1LightOctree__storage_1a58617754e4dbec2254f2a5b57a2cf955" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>cell_count</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a22a6afa46a5177f86672277bb7c91cce" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>coarse_grid_size</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a6bddce09a98385ec557e900ef1c03841" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>coarse_grid_size_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a6ecb9a12a82d50bea884d6f572ff3e04" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>deep_copy</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1ab3f6f59bcc5853af2bd7585e146a1517" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>get_ioct_local</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a3095c542ab9d1a2d4b62632ed50d801f" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>get_logical_coords</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1aa39565e9c22ef645052ffbb891cb74ee" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getBound</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a4cf1717c8b435f389ebd70f22c99f0b4" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getCenter</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1aca0308a0e420b68e60d23ca6ca270e36" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getCorner</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a6a9255d599f2e41c65631f0c17a05362" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getGhostSubview</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a4118f8b83d2bdafa3ecb480794f38dd3" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getLevel</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a97bdceff87308ab4b1e5ffd731a537b4" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getLocalSubview</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a21a11fbb6fb9c108d8754cef2b3ae756" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getNdim</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1ab219df3da24cfa519ce7d06d4ce351a1" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getNumGhosts</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a0a457fe78c6035e8cf55bc36e0f6b805" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getNumOctants</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1ac978040cb1319df0fd497c599f47a55a" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>getSize</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a18b96174f4607884e9ee9149f72e8742" prot="protected" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>ICORNERX</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a9643ee6f5e11e5bdfdddacbc0cc5b15c" prot="protected" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>ICORNERY</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a007eb664b4460464ae96de34f36e3e81" prot="protected" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>ICORNERZ</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a43bd867247c7db1aa98d251b93cdfba1" prot="protected" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>ILEVEL</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a6639a8dc84b4cafa645def6bb764202d" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>level_min</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1acb98f8be7db40577998aab572f7dbf15" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>level_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1aa3ca37c2f0ee41acc86f707f8c8489d8" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>LightOctree_storage</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a34a59ab0bbf3bda510e464173bcbee9a" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>LightOctree_storage</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a3f5a4b64ec82c4082c082807864b55ad" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>LightOctree_storage</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1adf5980470750506d7806f419c1af313d" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>LightOctree_storage</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1aaf832714d87a0b2e6c48740ba77b6ffa" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>LightOctree_storage</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1aa1b8f581b324efc5513147f020fab919" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>logical_coord_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a71b3acba7e66e0d9039143d3b4711d5d" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>MemorySpace</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1ad705c90f551589e9670a93ed3bc5abab" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>ndim</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a487132bbce3aede1df06fe3684eb5ae7" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>numGhosts</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1ac0fcfad57379489eb960e4a5169fcf16" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>numOctants</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a02c8a4ca0d06095a06157948518bfdd7" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>oct_data</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49a103a5d0fbced977cd0c37b9fc320e2c0" prot="protected" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>OCT_DATA_COUNT</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1abf333bc462846b2708096c763cfd1f49" prot="protected" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>oct_data_field_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1af51b732ac7a1f315bbc51a30dc36cad1" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>oct_data_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1ab528cea64a9f0db96188fef014a455d2" prot="protected" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>OctantIndex</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a1ff598e7ffd4e6aa80e1bda27274acd5" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>operator=</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a08b692099646875f5a18e02788cd8704" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>operator=</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a7ed73aca61a9e3afbabbbe68aafdcab5" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>pos_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__storage_1a5c984de02d7eff56708d77866d431050" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_storage</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AMRBlockForeachCell__CData" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_CData</compoundname>
+    <includes refid="AMRBlockForeachCell_8h" local="no">AMRBlockForeachCell.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1a86082b43b83f0ec1080d154f6da22f15" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_CData::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="13" column="12" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1ac1dcde0396a5a120610b6d44193ced42" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_CData::bx</definition>
+        <argsstring></argsstring>
+        <name>bx</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::bx</qualifiedname>
+        <briefdescription>
+<para>Number of dimensions : 2D or 3D. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="14" column="12" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1a3d666bf60da2015d44ab3da7251a1194" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_CData::by</definition>
+        <argsstring></argsstring>
+        <name>by</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::by</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="14" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1ab668e0cdae59ba76b39590f1b05bc407" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_CData::bz</definition>
+        <argsstring></argsstring>
+        <name>bz</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::bz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="14" column="16" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1a4e2c995b530b9b991e6d743d75925292" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AMRBlockForeachCell_CData::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::xmin</qualifiedname>
+        <briefdescription>
+<para>Dimensions of cell blocks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="15" column="10" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1ace65b8ad90b51e8ddf5739e57055a12d" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AMRBlockForeachCell_CData::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="15" column="15" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1aab04bc667883d931f67388d7d56d6573" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AMRBlockForeachCell_CData::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="15" column="20" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1a95d58d7032e5e158145646fe2b476b62" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AMRBlockForeachCell_CData::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::xmax</qualifiedname>
+        <briefdescription>
+<para>min corner of physical domain </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="16" column="10" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1a4aaab4acbf213ae988aa415ca4b34fa7" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AMRBlockForeachCell_CData::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="16" column="15" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1a37b948f88f0b4d9c3850bbc1e8334441" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AMRBlockForeachCell_CData::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="16" column="20" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__CData_1afd12d23ffa216e4cb07dd7247fe0f717" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_CData::nbOctsPerGroup</definition>
+        <argsstring></argsstring>
+        <name>nbOctsPerGroup</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CData::nbOctsPerGroup</qualifiedname>
+        <briefdescription>
+<para>min corner of physical domain </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="17" column="12" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Constant data in AMRBlockForeachCell This must be copiable to device </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="12" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1ac1dcde0396a5a120610b6d44193ced42" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>bx</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1a3d666bf60da2015d44ab3da7251a1194" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>by</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1ab668e0cdae59ba76b39590f1b05bc407" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>bz</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1afd12d23ffa216e4cb07dd7247fe0f717" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>nbOctsPerGroup</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1a86082b43b83f0ec1080d154f6da22f15" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1a95d58d7032e5e158145646fe2b476b62" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>xmax</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1a4e2c995b530b9b991e6d743d75925292" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>xmin</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1a4aaab4acbf213ae988aa415ca4b34fa7" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>ymax</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1ace65b8ad90b51e8ddf5739e57055a12d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>ymin</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1a37b948f88f0b4d9c3850bbc1e8334441" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>zmax</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__CData_1aab04bc667883d931f67388d7d56d6573" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CData</scope><name>zmin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

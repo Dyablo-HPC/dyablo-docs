@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1SourceUpdate__Photons__Beam" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::SourceUpdate_Photons_Beam</compoundname>
+    <basecompoundref refid="classdyablo_1_1SourceUpdate" prot="public" virt="non-virtual">dyablo::SourceUpdate</basecompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdyablo_1_1SourceUpdate__Photons__Beam_1a9c40cf81d2f4ceb73aba4b925ddeb893" prot="private" static="no">
+        <type>decltype(Units::mol()/Units::code_units().getUnit&lt; <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Units::Time</ref> &gt;())</type>
+        <definition>using dyablo::SourceUpdate_Photons_Beam::SpawnRate =  decltype( Units::mol()/Units::code_units().getUnit&lt;Units::Time&gt;() )</definition>
+        <argsstring></argsstring>
+        <name>SpawnRate</name>
+        <qualifiedname>dyablo::SourceUpdate_Photons_Beam::SpawnRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="16" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Photons__Beam_1ae8fc2bfdf3d5166596b26c60c3f18c59" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::SourceUpdate_Photons_Beam::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::SourceUpdate_Photons_Beam::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="11" column="15" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Photons__Beam_1a392c0b3805235061c1180cd988da8156" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_Photons_Beam::source_position</definition>
+        <argsstring></argsstring>
+        <name>source_position</name>
+        <qualifiedname>dyablo::SourceUpdate_Photons_Beam::source_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="12" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Photons__Beam_1aa48539ab4d6c5e25fdf85262eed1afcb" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_Photons_Beam::spawn_rate</definition>
+        <argsstring></argsstring>
+        <name>spawn_rate</name>
+        <qualifiedname>dyablo::SourceUpdate_Photons_Beam::spawn_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="13" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Photons__Beam_1a88cb203e5d91f65e971942964d929987" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_Photons_Beam::c_rad</definition>
+        <argsstring></argsstring>
+        <name>c_rad</name>
+        <qualifiedname>dyablo::SourceUpdate_Photons_Beam::c_rad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="14" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__Photons__Beam_1a7c9c58fa6c15f54c818d88a5a95fe638" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::SourceUpdate_Photons_Beam::SourceUpdate_Photons_Beam</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>SourceUpdate_Photons_Beam</name>
+        <qualifiedname>dyablo::SourceUpdate_Photons_Beam::SourceUpdate_Photons_Beam</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="19" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__Photons__Beam_1a563a5b5fef7582a0b8069bf0e50382ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::SourceUpdate_Photons_Beam::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::SourceUpdate_Photons_Beam::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1SourceUpdate_1adf652efd434405d92080ba26647a879c">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="29" column="8" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="29" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Photons source term for a single photons beam. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::SourceUpdate</label>
+        <link refid="classdyablo_1_1SourceUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::SourceUpdate_Photons_Beam</label>
+        <link refid="classdyablo_1_1SourceUpdate__Photons__Beam"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::SourceUpdate</label>
+        <link refid="classdyablo_1_1SourceUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::SourceUpdate_Photons_Beam</label>
+        <link refid="classdyablo_1_1SourceUpdate__Photons__Beam"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" line="8" column="1" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Photons_Beam.cpp" bodystart="9" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1SourceUpdate__Photons__Beam_1a88cb203e5d91f65e971942964d929987" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>c_rad</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Photons__Beam_1ae8fc2bfdf3d5166596b26c60c3f18c59" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Photons__Beam_1a392c0b3805235061c1180cd988da8156" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>source_position</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Photons__Beam_1a7c9c58fa6c15f54c818d88a5a95fe638" prot="public" virt="non-virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>SourceUpdate_Photons_Beam</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Photons__Beam_1aa48539ab4d6c5e25fdf85262eed1afcb" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>spawn_rate</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Photons__Beam_1a9c40cf81d2f4ceb73aba4b925ddeb893" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>SpawnRate</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Photons__Beam_1a563a5b5fef7582a0b8069bf0e50382ae" prot="public" virt="virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>update</name></member>
+      <member refid="classdyablo_1_1SourceUpdate_1a9a85905bd78000faa09fc4a4aec39d9c" prot="public" virt="virtual"><scope>dyablo::SourceUpdate_Photons_Beam</scope><name>~SourceUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

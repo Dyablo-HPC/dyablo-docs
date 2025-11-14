@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1CosmoManager" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::CosmoManager</compoundname>
+    <includes refid="Cosmo_8h" local="no">Cosmo.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1a795ff0b949d0bab2caec08153e6be186" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::CosmoManager::cosmo_run</definition>
+        <argsstring></argsstring>
+        <name>cosmo_run</name>
+        <qualifiedname>dyablo::CosmoManager::cosmo_run</qualifiedname>
+        <briefdescription>
+<para>Is the current run a cosmo run. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="185" column="8" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1acf55dde767629ca08c9f61cfa76f6359" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::omega_m</definition>
+        <argsstring></argsstring>
+        <name>omega_m</name>
+        <qualifiedname>dyablo::CosmoManager::omega_m</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="186" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::omega_v</definition>
+        <argsstring></argsstring>
+        <name>omega_v</name>
+        <qualifiedname>dyablo::CosmoManager::omega_v</qualifiedname>
+        <briefdescription>
+<para>Energy budget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="186" column="18" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1a496b74a7da2833da86b0e761e776edc8" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::H0</definition>
+        <argsstring></argsstring>
+        <name>H0</name>
+        <qualifiedname>dyablo::CosmoManager::H0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="187" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1aedec7b0d609e65f09852dac900c793e9" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::a_start</definition>
+        <argsstring></argsstring>
+        <name>a_start</name>
+        <qualifiedname>dyablo::CosmoManager::a_start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="188" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1aeb927bf31fa309d0ff25b92ead6f4648" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::a_end</definition>
+        <argsstring></argsstring>
+        <name>a_end</name>
+        <qualifiedname>dyablo::CosmoManager::a_end</qualifiedname>
+        <briefdescription>
+<para>Expansion factor at the start and at the end of the simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="188" column="18" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::da</definition>
+        <argsstring></argsstring>
+        <name>da</name>
+        <qualifiedname>dyablo::CosmoManager::da</qualifiedname>
+        <briefdescription>
+<para>By how much do we need to multiplpy a for the next step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="189" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1a040e277dd391658912d7b3387f525a29" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::CosmoManager::save_expansion_table</definition>
+        <argsstring></argsstring>
+        <name>save_expansion_table</name>
+        <qualifiedname>dyablo::CosmoManager::save_expansion_table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="191" column="8" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1a9195603a4010d706f683fdbb18fcada4" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t dyablo::CosmoManager::lookup_size</definition>
+        <argsstring></argsstring>
+        <name>lookup_size</name>
+        <qualifiedname>dyablo::CosmoManager::lookup_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="193" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1a0b51ce5f5df2128cb9f3764946ac76e7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; real_t &gt;</type>
+        <definition>std::vector&lt;real_t&gt; dyablo::CosmoManager::lookup_a</definition>
+        <argsstring></argsstring>
+        <name>lookup_a</name>
+        <qualifiedname>dyablo::CosmoManager::lookup_a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="194" column="15" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1CosmoManager_1aa16124ca516c0662b046a67681f33980" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; real_t &gt;</type>
+        <definition>std::vector&lt;real_t&gt; dyablo::CosmoManager::lookup_t</definition>
+        <argsstring></argsstring>
+        <name>lookup_t</name>
+        <qualifiedname>dyablo::CosmoManager::lookup_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="195" column="15" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1af63bf869c3042b5694acfa5282078662" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>real_t</type>
+        <definition>static real_t dyablo::CosmoManager::integrate_da_dt</definition>
+        <argsstring>(real_t omega_m, real_t omega_v, real_t a, real_t b, real_t tol)</argsstring>
+        <name>integrate_da_dt</name>
+        <qualifiedname>dyablo::CosmoManager::integrate_da_dt</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>omega_m</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>omega_v</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>tol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="83" column="17" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="83" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1a750100666ce7cfb703dcfd00797a49e3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>real_t</type>
+        <definition>static real_t dyablo::CosmoManager::integrate_da_dt_physical</definition>
+        <argsstring>(real_t omega_m, real_t omega_v, real_t a, real_t b, real_t tol)</argsstring>
+        <name>integrate_da_dt_physical</name>
+        <qualifiedname>dyablo::CosmoManager::integrate_da_dt_physical</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>omega_m</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>omega_v</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>tol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="95" column="17" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="95" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1af1c14c2e826fa3353df927501f8a2410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::CosmoManager::CosmoManager</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>CosmoManager</name>
+        <qualifiedname>dyablo::CosmoManager::CosmoManager</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="108" column="3" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="108" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1a299cd7e0b00f22a9224a46021a0383cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::timeToExpansion</definition>
+        <argsstring>(const real_t time) const</argsstring>
+        <name>timeToExpansion</name>
+        <qualifiedname>dyablo::CosmoManager::timeToExpansion</qualifiedname>
+        <param>
+          <type>const real_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="127" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1a059e41ff49fc84d1f3993c5c13148502" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::expansionToTime</definition>
+        <argsstring>(const real_t aexp) const</argsstring>
+        <name>expansionToTime</name>
+        <qualifiedname>dyablo::CosmoManager::expansionToTime</qualifiedname>
+        <param>
+          <type>const real_t</type>
+          <declname>aexp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="132" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1a342a05bdbc3a8f69686a9b55f3f9b956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::CosmoManager::computeFLM</definition>
+        <argsstring>()</argsstring>
+        <name>computeFLM</name>
+        <qualifiedname>dyablo::CosmoManager::computeFLM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="138" column="8" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="138" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1afe2fd7d190170e8f307994c5bd007ea0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::compute_cosmo_dt</definition>
+        <argsstring>(real_t a)</argsstring>
+        <name>compute_cosmo_dt</name>
+        <qualifiedname>dyablo::CosmoManager::compute_cosmo_dt</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="173" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1ae4f5e44064062fd3e467600df0f611d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>real_t</type>
+        <definition>real_t dyablo::CosmoManager::compute_physical_t</definition>
+        <argsstring>(real_t a)</argsstring>
+        <name>compute_physical_t</name>
+        <qualifiedname>dyablo::CosmoManager::compute_physical_t</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="178" column="10" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="178" bodyend="181"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1CosmoManager_1a3523c00824653def9d1b042b0791f956" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>real_t</type>
+        <definition>static real_t dyablo::CosmoManager::static_compute_cosmo_dt</definition>
+        <argsstring>(real_t omega_m, real_t omega_v, real_t H0, real_t a, real_t da)</argsstring>
+        <name>static_compute_cosmo_dt</name>
+        <qualifiedname>dyablo::CosmoManager::static_compute_cosmo_dt</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>omega_m</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>omega_v</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>H0</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>da</declname>
+        </param>
+        <briefdescription>
+<para>Computes the value of dt corresponding to a value of da at a given expansion factor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference : Martel &amp; Shapiro, &quot;A convenient set of comoving cosmological variables and their application&quot; Eq. (32) is used to get the relation between dt and da. We take a0=1.0 and, in the definition of ttilde, fn=1.0. Omega_0 is identified with omega_m. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="169" column="17" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="169" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Utility struct for all of the cosmo. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/Cosmo.h" line="81" column="1" bodyfile="/builds/dyablo/dyablo/core/src/Cosmo.h" bodystart="81" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1CosmoManager_1aeb927bf31fa309d0ff25b92ead6f4648" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>a_end</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1aedec7b0d609e65f09852dac900c793e9" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>a_start</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1afe2fd7d190170e8f307994c5bd007ea0" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>compute_cosmo_dt</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1ae4f5e44064062fd3e467600df0f611d0" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>compute_physical_t</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a342a05bdbc3a8f69686a9b55f3f9b956" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>computeFLM</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a795ff0b949d0bab2caec08153e6be186" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>cosmo_run</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1af1c14c2e826fa3353df927501f8a2410" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>CosmoManager</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>da</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a059e41ff49fc84d1f3993c5c13148502" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>expansionToTime</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a496b74a7da2833da86b0e761e776edc8" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>H0</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1af63bf869c3042b5694acfa5282078662" prot="private" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>integrate_da_dt</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a750100666ce7cfb703dcfd00797a49e3" prot="private" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>integrate_da_dt_physical</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a0b51ce5f5df2128cb9f3764946ac76e7" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>lookup_a</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a9195603a4010d706f683fdbb18fcada4" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>lookup_size</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1aa16124ca516c0662b046a67681f33980" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>lookup_t</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1acf55dde767629ca08c9f61cfa76f6359" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>omega_m</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>omega_v</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a040e277dd391658912d7b3387f525a29" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>save_expansion_table</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a3523c00824653def9d1b042b0791f956" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>static_compute_cosmo_dt</name></member>
+      <member refid="classdyablo_1_1CosmoManager_1a299cd7e0b00f22a9224a46021a0383cd" prot="public" virt="non-virtual"><scope>dyablo::CosmoManager</scope><name>timeToExpansion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1MapUserData" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::MapUserData</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1MapUserData__base" prot="public" virt="non-virtual">dyablo::MapUserData_base</derivedcompoundref>
+    <includes refid="MapUserData__base_8h" local="no">MapUserData_base.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1MapUserData_1a7ad2caa8103a5dfe208f9cde6a6b9f66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::MapUserData::~MapUserData</definition>
+        <argsstring>()</argsstring>
+        <name>~MapUserData</name>
+        <qualifiedname>dyablo::MapUserData::~MapUserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="24" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MapUserData_1a6a52b7e8c75645ab6c9a958ce0565d3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::MapUserData::save_old_mesh</definition>
+        <argsstring>(UserData &amp;user_data)=0</argsstring>
+        <name>save_old_mesh</name>
+        <qualifiedname>dyablo::MapUserData::save_old_mesh</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1MapUserData__base_1a27f01c88b77e903bd811a2b2064c15ca">save_old_mesh</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1MapUserData__linear_1a4f94db32d26a727193ae6cea56a98882">save_old_mesh</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save a snapshot of the current AMR mesh in ForeachCell This should be called before calling AMRmesh::refine() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MapUserData_1a5afe6212bf4c30ebc923858a10a11e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::MapUserData::remap</definition>
+        <argsstring>(UserData &amp;user_data)=0</argsstring>
+        <name>remap</name>
+        <qualifiedname>dyablo::MapUserData::remap</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1MapUserData__base_1a0abfa935092fd671223220634cef9552">remap</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill new array Uout from Uin <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Uin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A cell array on the old amr mesh (mesh at last <ref refid="classdyablo_1_1MapUserData_1a6a52b7e8c75645ab6c9a958ce0565d3e" kindref="member">save_old_mesh()</ref> call) to copy data from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Uout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array to store new cells for the new mesh to write new mesh data to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="37" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for <ref refid="classdyablo_1_1MapUserData" kindref="compound">MapUserData</ref> plugin Contains the <ref refid="classdyablo_1_1MapUserData_1a5afe6212bf4c30ebc923858a10a11e94" kindref="member">remap()</ref> method to fill new mesh after AMR refinement/corasening </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::MapUserData</label>
+        <link refid="classdyablo_1_1MapUserData"/>
+      </node>
+      <node id="2">
+        <label>dyablo::MapUserData_base</label>
+        <link refid="classdyablo_1_1MapUserData__base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::MapUserData_linear</label>
+        <link refid="classdyablo_1_1MapUserData__linear"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::MapUserData_mean</label>
+        <link refid="classdyablo_1_1MapUserData__mean"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="18" column="1" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="18" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1MapUserData_1a5afe6212bf4c30ebc923858a10a11e94" prot="public" virt="pure-virtual"><scope>dyablo::MapUserData</scope><name>remap</name></member>
+      <member refid="classdyablo_1_1MapUserData_1a6a52b7e8c75645ab6c9a958ce0565d3e" prot="public" virt="pure-virtual"><scope>dyablo::MapUserData</scope><name>save_old_mesh</name></member>
+      <member refid="classdyablo_1_1MapUserData_1a7ad2caa8103a5dfe208f9cde6a6b9f66" prot="public" virt="virtual"><scope>dyablo::MapUserData</scope><name>~MapUserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_838af41079dede92b3dd5f9e7de8287c" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/utils/misc</compoundname>
+    <innerfile refid="Dyablo__assert_8h">Dyablo_assert.h</innerfile>
+    <innerfile refid="dyablo__variant_8h">dyablo_variant.h</innerfile>
+    <innerfile refid="MultiTypeMap_8h">MultiTypeMap.h</innerfile>
+    <innerfile refid="RegisteringFactory_8h">RegisteringFactory.h</innerfile>
+    <innerfile refid="utils_8cpp">utils.cpp</innerfile>
+    <innerfile refid="utils_8h">utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/misc/"/>
+  </compounddef>
+</doxygen>

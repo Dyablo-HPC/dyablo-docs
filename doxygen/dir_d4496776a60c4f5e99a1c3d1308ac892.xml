@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_d4496776a60c4f5e99a1c3d1308ac892" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/utils/config/inih</compoundname>
+    <innerfile refid="ini_8cpp">ini.cpp</innerfile>
+    <innerfile refid="ini_8h">ini.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://github.com/benhoyt/inih/actions/workflows/tests.yml"><image type="html" name="https://github.com/benhoyt/inih/actions/workflows/tests.yml/badge.svg" alt="Tests" inline="yes"></image>
+</ulink></para>
+<para><bold>inih (INI Not Invented Here)</bold> is a simple <ulink url="http://en.wikipedia.org/wiki/INI_file">.INI file</ulink> parser written in C. It&apos;s only a couple of pages of code, and it was designed to be <emphasis>small and simple</emphasis>, so it&apos;s good for embedded systems. It&apos;s also more or less compatible with Python&apos;s <ulink url="http://docs.python.org/library/configparser.html">ConfigParser</ulink> style of .INI files, including RFC 822-style multi-line syntax and <computeroutput>name: value</computeroutput> entries.</para>
+<para>To use it, just give <computeroutput>ini_parse()</computeroutput> an INI file, and it will call a callback for every <computeroutput>name=value</computeroutput> pair parsed, giving you strings for the section, name, and value. It&apos;s done this way (&quot;SAX style&quot;) because it works well on low-memory embedded systems, but also because it makes for a KISS implementation.</para>
+<para>You can also call <computeroutput>ini_parse_file()</computeroutput> to parse directly from a <computeroutput>FILE*</computeroutput> object, <computeroutput>ini_parse_string()</computeroutput> to parse data from a string, or <computeroutput>ini_parse_stream()</computeroutput> to parse using a custom fgets-style reader function for custom I/O.</para>
+<para>Download a release, browse the source, or read about <ulink url="http://blog.brush.co.nz/2009/08/xmacros/">how to use inih in a DRY style</ulink> with X-Macros.</para>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md1">
+<title>Compile-time options</title><para>You can control various aspects of inih using preprocessor defines:</para>
+<sect2 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md2">
+<title>Syntax options</title><para><itemizedlist>
+<listitem><para><bold>Multi-line entries:</bold> By default, inih supports multi-line entries in the style of Python&apos;s ConfigParser. To disable, add <computeroutput>-DINI_ALLOW_MULTILINE=0</computeroutput>.</para>
+</listitem><listitem><para><bold>UTF-8 BOM:</bold> By default, inih allows a UTF-8 BOM sequence (0xEF 0xBB 0xBF) at the start of INI files. To disable, add <computeroutput>-DINI_ALLOW_BOM=0</computeroutput>.</para>
+</listitem><listitem><para><bold>Inline comments:</bold> By default, inih allows inline comments with the <computeroutput>;</computeroutput> character. To disable, add <computeroutput>-DINI_ALLOW_INLINE_COMMENTS=0</computeroutput>. You can also specify which character(s) start an inline comment using <computeroutput>INI_INLINE_COMMENT_PREFIXES</computeroutput>.</para>
+</listitem><listitem><para><bold>Start-of-line comments:</bold> By default, inih allows both <computeroutput>;</computeroutput> and <computeroutput>#</computeroutput> to start a comment at the beginning of a line. You can override this by changing <computeroutput>INI_START_COMMENT_PREFIXES</computeroutput>.</para>
+</listitem><listitem><para><bold>Allow no value:</bold> By default, inih treats a name with no value (no <computeroutput>=</computeroutput> or <computeroutput>:</computeroutput> on the line) as an error. To allow names with no values, add <computeroutput>-DINI_ALLOW_NO_VALUE=1</computeroutput>, and inih will call your handler function with value set to NULL.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md3">
+<title>Parsing options</title><para><itemizedlist>
+<listitem><para><bold>Stop on first error:</bold> By default, inih keeps parsing the rest of the file after an error. To stop parsing on the first error, add <computeroutput>-DINI_STOP_ON_FIRST_ERROR=1</computeroutput>.</para>
+</listitem><listitem><para><bold>Report line numbers:</bold> By default, the <computeroutput>ini_handler</computeroutput> callback doesn&apos;t receive the line number as a parameter. If you need that, add <computeroutput>-DINI_HANDLER_LINENO=1</computeroutput>.</para>
+</listitem><listitem><para><bold>Call handler on new section:</bold> By default, inih only calls the handler on each <computeroutput>name=value</computeroutput> pair. To detect new sections (e.g., the INI file has multiple sections with the same name), add <computeroutput>-DINI_CALL_HANDLER_ON_NEW_SECTION=1</computeroutput>. Your handler function will then be called each time a new section is encountered, with <computeroutput>section</computeroutput> set to the new section name but <computeroutput>name</computeroutput> and <computeroutput>value</computeroutput> set to NULL.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md4">
+<title>Memory options</title><para><itemizedlist>
+<listitem><para><bold>Stack vs heap:</bold> By default, inih creates a fixed-sized line buffer on the stack. To allocate on the heap using <computeroutput>malloc</computeroutput> instead, specify <computeroutput>-DINI_USE_STACK=0</computeroutput>.</para>
+</listitem><listitem><para><bold>Maximum line length:</bold> The default maximum line length (for stack or heap) is 200 bytes. To override this, add something like <computeroutput>-DINI_MAX_LINE=1000</computeroutput>. Note that <computeroutput>INI_MAX_LINE</computeroutput> must be 3 more than the longest line (due to <computeroutput>\r</computeroutput>, <computeroutput>\n</computeroutput>, and the NUL).</para>
+</listitem><listitem><para><bold>Initial malloc size:</bold> <computeroutput>INI_INITIAL_ALLOC</computeroutput> specifies the initial malloc size when using the heap. It defaults to 200 bytes.</para>
+</listitem><listitem><para><bold>Allow realloc:</bold> By default when using the heap (<computeroutput>-DINI_USE_STACK=0</computeroutput>), inih allocates a fixed-sized buffer of <computeroutput>INI_INITIAL_ALLOC</computeroutput> bytes. To allow this to grow to <computeroutput>INI_MAX_LINE</computeroutput> bytes, doubling if needed, set <computeroutput>-DINI_ALLOW_REALLOC=1</computeroutput>.</para>
+</listitem><listitem><para><bold>Custom allocator:</bold> By default when using the heap, the standard library&apos;s <computeroutput>malloc</computeroutput>, <computeroutput>free</computeroutput>, and <computeroutput>realloc</computeroutput> functions are used; to use a custom allocator, specify <computeroutput>-DINI_CUSTOM_ALLOCATOR=1</computeroutput> (and <computeroutput>-DINI_USE_STACK=0</computeroutput>). You must define and link functions named <computeroutput>ini_malloc</computeroutput>, <computeroutput>ini_free</computeroutput>, and (if <computeroutput>INI_ALLOW_REALLOC</computeroutput> is set) <computeroutput>ini_realloc</computeroutput>, which must have the same signatures as the <computeroutput>stdlib.h</computeroutput> memory allocation functions.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md5">
+<title>Simple example in C</title><para><programlisting filename=".c"><codeline><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../ini.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>email;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>configuration;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>section,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>configuration*<sp/>pconfig<sp/>=<sp/>(configuration*)user;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>MATCH(s,<sp/>n)<sp/>strcmp(section,<sp/>s)<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>strcmp(name,<sp/>n)<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(MATCH(</highlight><highlight class="stringliteral">&quot;protocol&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pconfig-&gt;version<sp/>=<sp/>atoi(value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(MATCH(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pconfig-&gt;name<sp/>=<sp/>strdup(value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(MATCH(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;email&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pconfig-&gt;email<sp/>=<sp/>strdup(value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/><sp/></highlight><highlight class="comment">/*<sp/>unknown<sp/>section/name,<sp/>error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>configuration<sp/>config;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ini_parse(</highlight><highlight class="stringliteral">&quot;test.ini&quot;</highlight><highlight class="normal">,<sp/>handler,<sp/>&amp;config)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Can&apos;t<sp/>load<sp/>&apos;test.ini&apos;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Config<sp/>loaded<sp/>from<sp/>&apos;test.ini&apos;:<sp/>version=%d,<sp/>name=%s,<sp/>email=%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.version,<sp/>config.name,<sp/>config.email);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md6">
+<title>C++ example</title><para>If you&apos;re into C++ and the STL, there is also an easy-to-use <ulink url="https://github.com/benhoyt/inih/blob/master/cpp/INIReader.h">INIReader class</ulink> that stores values in a <computeroutput>map</computeroutput> and lets you <computeroutput>Get()</computeroutput> them:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;INIReader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>INIReader<sp/>reader(</highlight><highlight class="stringliteral">&quot;../examples/test.ini&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reader.ParseError()<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Can&apos;t<sp/>load<sp/>&apos;test.ini&apos;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Config<sp/>loaded<sp/>from<sp/>&apos;test.ini&apos;:<sp/>version=&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.GetInteger(</highlight><highlight class="stringliteral">&quot;protocol&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal">,<sp/>-1)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>name=&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.Get(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;UNKNOWN&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>email=&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.Get(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;email&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;UNKNOWN&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>pi=&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.GetReal(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;pi&quot;</highlight><highlight class="normal">,<sp/>-1)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>active=&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.GetBoolean(</highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;active&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>This simple C++ API works fine, but it&apos;s not very fully-fledged. I&apos;m not planning to work more on the C++ API at the moment, so if you want a bit more power (for example <computeroutput>GetSections()</computeroutput> and <computeroutput>GetFields()</computeroutput> functions), see these forks:</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://github.com/Blandinium/inih">https://github.com/Blandinium/inih</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/OSSystems/inih">https://github.com/OSSystems/inih</ulink></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md7">
+<title>Differences from ConfigParser</title><para>Some differences between inih and Python&apos;s <ulink url="http://docs.python.org/library/configparser.html">ConfigParser</ulink> standard library module:</para>
+<para><itemizedlist>
+<listitem><para>INI name=value pairs given above any section headers are treated as valid items with no section (section name is an empty string). In ConfigParser having no section is an error.</para>
+</listitem><listitem><para>Line continuations are handled with leading whitespace on continued lines (like ConfigParser). However, instead of concatenating continued lines together, they are treated as separate values for the same key (unlike ConfigParser).</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md8">
+<title>Platform-specific notes</title><para><itemizedlist>
+<listitem><para>Windows/Win32 uses UTF-16 filenames natively, so to handle Unicode paths you need to call <computeroutput>_wfopen()</computeroutput> to open a file and then <computeroutput>ini_parse_file()</computeroutput> to parse it; inih does not include <computeroutput>wchar_t</computeroutput> or Unicode handling.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md9">
+<title>Meson notes</title><para><itemizedlist>
+<listitem><para>The <computeroutput>meson.build</computeroutput> file is not required to use or compile inih, its main purpose is for distributions.</para>
+</listitem><listitem><para>By default Meson is set up for distro installation, but this behavior can be configured for embedded use cases:<itemizedlist>
+<listitem><para>with <computeroutput>-Ddefault_library=static</computeroutput> static libraries are built.</para>
+</listitem><listitem><para>with <computeroutput>-Ddistro_install=false</computeroutput> libraries, headers and pkg-config files won&apos;t be installed.</para>
+</listitem><listitem><para>with <computeroutput>-Dwith_INIReader=false</computeroutput> you can disable building the C++ library.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>All compile-time options are implemented in Meson as well, you can take a look at <ulink url="https://github.com/benhoyt/inih/blob/master/meson_options.txt">meson_options.txt</ulink> for their definition. These won&apos;t work if <computeroutput>distro_install</computeroutput> is set to <computeroutput>true</computeroutput>.</para>
+</listitem><listitem><para>If you want to use inih for programs which may be shipped in a distro, consider linking against the shared libraries. The pkg-config entries are <computeroutput>inih</computeroutput> and <computeroutput>INIReader</computeroutput>.</para>
+</listitem><listitem><para>In case you use inih as a Meson subproject, you can use the <computeroutput>inih_dep</computeroutput> and <computeroutput>INIReader_dep</computeroutput> dependency variables. You might want to set <computeroutput>default_library=static</computeroutput> and <computeroutput>distro_install=false</computeroutput> for the subproject. An official Wrap is provided on <ulink url="https://wrapdb.mesonbuild.com/inih">WrapDB</ulink>.</para>
+</listitem><listitem><para>For packagers: if you want to tag the version in the pkg-config file, you will need to do this downstream. Add <lsquo/>version : <rsquo/>&lt;version_as_int&gt;&apos;,<computeroutput>after the</computeroutput>license<computeroutput>tag in the</computeroutput>project()<computeroutput>function and</computeroutput>version : meson.project_version(),<computeroutput>after the</computeroutput>soversion<computeroutput>tag in both</computeroutput>library()` functions.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md10">
+<title>Using inih with tipi.build</title><para><computeroutput>inih</computeroutput> can be easily used in <ulink url="https://tipi.build">tipi.build</ulink> projects simply by adding the following entry to your <computeroutput>.tipi/deps</computeroutput> (replace <computeroutput>r56</computeroutput> with the latest version tag):</para>
+<para><programlisting filename=".json"><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;benhoyt/inih&quot;:<sp/>{<sp/>&quot;@&quot;:<sp/>&quot;r56&quot;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>The required include path in your project is:</para>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#include<sp/>&lt;ini.h&gt;</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md11">
+<title>Building from vcpkg</title><para>You can build and install inih using <ulink url="https://github.com/microsoft/vcpkg/">vcpkg</ulink> dependency manager: <verbatim>git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.sh
+./vcpkg integrate install
+./vcpkg install inih
+</verbatim></para>
+<para>The inih port in vcpkg is kept up to date by microsoft team members and community contributors. If the version is out of date, please <ulink url="https://github.com/Microsoft/vcpkg">create an issue or pull request</ulink> on the vcpkg repository.</para>
+</sect1>
+<sect1 id="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md_1autotoc_md12">
+<title>Related links</title><para><itemizedlist>
+<listitem><para><ulink url="https://github.com/mohamedghita/conan-inih">Conan package for inih</ulink> (Conan is a C/C++ package manager) </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/"/>
+  </compounddef>
+</doxygen>

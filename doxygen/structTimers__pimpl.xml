@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structTimers__pimpl" kind="struct" language="C++" prot="public">
+    <compoundname>Timers_pimpl</compoundname>
+    <innerclass refid="structTimers__pimpl_1_1print__times__t" prot="public">Timers_pimpl::print_times_t</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTimers__pimpl_1a2fded6db31020b4a688511d94e0de041" prot="public" static="no" mutable="no">
+        <type><ref refid="structTimers__Timer__pimpl" kindref="compound">Timers_Timer_pimpl</ref></type>
+        <definition>Timers_Timer_pimpl Timers_pimpl::timer_total</definition>
+        <argsstring></argsstring>
+        <name>timer_total</name>
+        <qualifiedname>Timers_pimpl::timer_total</qualifiedname>
+        <briefdescription>
+<para>Members. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="130" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTimers__pimpl_1a14ab64716b9b743972b7c7f45f6cda2a" prot="public" static="no" mutable="no">
+        <type><ref refid="structTimers__Timer__pimpl" kindref="compound">Timers_Timer_pimpl</ref> *</type>
+        <definition>Timers_Timer_pimpl* Timers_pimpl::current_timer</definition>
+        <argsstring></argsstring>
+        <name>current_timer</name>
+        <qualifiedname>Timers_pimpl::current_timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="131" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structTimers__pimpl_1a0a93c97ff484bd6dd8f4cc155e02c82a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Timers_pimpl::Timers_pimpl</definition>
+        <argsstring>()</argsstring>
+        <name>Timers_pimpl</name>
+        <qualifiedname>Timers_pimpl::Timers_pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="135" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__pimpl_1acffbb9e1837b41d2495126907136b65d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Timers_pimpl::~Timers_pimpl</definition>
+        <argsstring>()</argsstring>
+        <name>~Timers_pimpl</name>
+        <qualifiedname>Timers_pimpl::~Timers_pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="141" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__pimpl_1a70bca891eefe65327ca4feea4dab4854" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structTimers__Timer" kindref="compound">Timers_Timer</ref></type>
+        <definition>Timers_Timer Timers_pimpl::get</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>get</name>
+        <qualifiedname>Timers_pimpl::get</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get Timer associated to name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="147" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="147" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__pimpl_1a7755c123139e5473e67d7d0fb13b5871" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structTimers__pimpl_1_1print__times__t" kindref="compound">print_times_t</ref></type>
+        <definition>print_times_t Timers_pimpl::print_aux</definition>
+        <argsstring>(const Timers_Timer_pimpl &amp;timer, std::string prefix)</argsstring>
+        <name>print_aux</name>
+        <qualifiedname>Timers_pimpl::print_aux</qualifiedname>
+        <param>
+          <type>const <ref refid="structTimers__Timer__pimpl" kindref="compound">Timers_Timer_pimpl</ref> &amp;</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="168" column="17" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="168" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__pimpl_1a59fbe750b2a8a32ff822c1848a913354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timers_pimpl::get_timers_aux</definition>
+        <argsstring>(const Timers_Timer_pimpl &amp;timer, const std::string &amp;prefix, std::vector&lt; std::string &gt; &amp;names, std::vector&lt; double &gt; &amp;cpu_times_local)</argsstring>
+        <name>get_timers_aux</name>
+        <qualifiedname>Timers_pimpl::get_timers_aux</qualifiedname>
+        <param>
+          <type>const <ref refid="structTimers__Timer__pimpl" kindref="compound">Timers_Timer_pimpl</ref> &amp;</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>cpu_times_local</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="224" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="224" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__pimpl_1a3f38e0cd05bf8dde579712c80e7b4672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timers_pimpl::get_timers</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;names, std::vector&lt; double &gt; &amp;cpu_times)</argsstring>
+        <name>get_timers</name>
+        <qualifiedname>Timers_pimpl::get_timers</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>cpu_times</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="236" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__pimpl_1aba36223d42267a03ed7936e17acb4f0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timers_pimpl::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>Timers_pimpl::print</qualifiedname>
+        <briefdescription>
+<para>Print a summary of all the timers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="244" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="244" bodyend="249"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>OpenMPTimer</label>
+        <link refid="classOpenMPTimer"/>
+      </node>
+      <node id="2">
+        <label>Timers_Timer_pimpl</label>
+        <link refid="structTimers__Timer__pimpl"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>parent_timers</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>omp_timer</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Timers_pimpl</label>
+        <link refid="structTimers__pimpl"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>current_timer</edgelabel>
+          <edgelabel>timer_total</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" line="127" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="128" bodyend="250"/>
+    <listofallmembers>
+      <member refid="structTimers__pimpl_1a14ab64716b9b743972b7c7f45f6cda2a" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>current_timer</name></member>
+      <member refid="structTimers__pimpl_1a70bca891eefe65327ca4feea4dab4854" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>get</name></member>
+      <member refid="structTimers__pimpl_1a3f38e0cd05bf8dde579712c80e7b4672" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>get_timers</name></member>
+      <member refid="structTimers__pimpl_1a59fbe750b2a8a32ff822c1848a913354" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>get_timers_aux</name></member>
+      <member refid="structTimers__pimpl_1aba36223d42267a03ed7936e17acb4f0b" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>print</name></member>
+      <member refid="structTimers__pimpl_1a7755c123139e5473e67d7d0fb13b5871" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>print_aux</name></member>
+      <member refid="structTimers__pimpl_1a2fded6db31020b4a688511d94e0de041" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>timer_total</name></member>
+      <member refid="structTimers__pimpl_1a0a93c97ff484bd6dd8f4cc155e02c82a" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>Timers_pimpl</name></member>
+      <member refid="structTimers__pimpl_1acffbb9e1837b41d2495126907136b65d" prot="public" virt="non-virtual"><scope>Timers_pimpl</scope><name>~Timers_pimpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1InitialConditions__analytical_1_1Data" kind="struct" language="C++" prot="private">
+    <compoundname>dyablo::InitialConditions_analytical::Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1InitialConditions__analytical_1_1Data_1a7bee6937798ced1a3acc2a36a41d6246" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::InitialConditions_analytical&lt; AnalyticalFormula_impl &gt;::Data::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::InitialConditions_analytical::Data::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" line="29" column="21" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1InitialConditions__analytical_1_1Data_1a9dc62e1b9d7c0e88dc90e6675efde02b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::InitialConditions_analytical&lt; AnalyticalFormula_impl &gt;::Data::level_min</definition>
+        <argsstring></argsstring>
+        <name>level_min</name>
+        <qualifiedname>dyablo::InitialConditions_analytical::Data::level_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" line="30" column="13" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1InitialConditions__analytical_1_1Data_1aa5f6f8958664d34e5043c37b8ec4568d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::InitialConditions_analytical&lt; AnalyticalFormula_impl &gt;::Data::level_max</definition>
+        <argsstring></argsstring>
+        <name>level_max</name>
+        <qualifiedname>dyablo::InitialConditions_analytical::Data::level_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" line="30" column="23" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::AMRBlockForeachCell_impl&lt; AMRBlockForeachCell_group_impl::PatchManager &gt;</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__impl"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_analytical&lt; AnalyticalFormula_impl &gt;::Data</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>foreach_cell</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" line="28" column="5" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h" bodystart="28" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1InitialConditions__analytical_1_1Data_1a7bee6937798ced1a3acc2a36a41d6246" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_analytical::Data</scope><name>foreach_cell</name></member>
+      <member refid="structdyablo_1_1InitialConditions__analytical_1_1Data_1aa5f6f8958664d34e5043c37b8ec4568d" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_analytical::Data</scope><name>level_max</name></member>
+      <member refid="structdyablo_1_1InitialConditions__analytical_1_1Data_1a9dc62e1b9d7c0e88dc90e6675efde02b" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_analytical::Data</scope><name>level_min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

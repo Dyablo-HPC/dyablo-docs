@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="InitialConditions__particle__grid_8cpp" kind="file" language="C++">
+    <compoundname>InitialConditions_particle_grid.cpp</compoundname>
+    <includes refid="InitialConditions__base_8h" local="yes">InitialConditions_base.h</includes>
+    <includes refid="AnalyticalFormula_8h" local="yes">AnalyticalFormula.h</includes>
+    <includes refid="ForeachCell_8h" local="yes">foreach_cell/ForeachCell.h</includes>
+    <includes refid="ForeachParticle_8h" local="yes">particles/ForeachParticle.h</includes>
+    <includes refid="Units_8h" local="yes">utils/units/Units.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="37">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>AnalyticalFormula.h</label>
+        <link refid="AnalyticalFormula_8h_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp</label>
+        <link refid="InitialConditions__particle__grid_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>mpi/ViewCommunicator.h</label>
+        <link refid="ViewCommunicator_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>particles/ForeachParticle.h</label>
+        <link refid="ForeachParticle_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>particles/ParticleArray.h</label>
+        <link refid="ParticleArray_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>userdata_utils.h</label>
+        <link refid="userdata__utils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>utils/misc/RegisteringFactory.h</label>
+        <link refid="RegisteringFactory_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>utils/monitoring/Timers.h</label>
+        <link refid="Timers_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="48">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="26">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="32">
+        <label>any</label>
+      </node>
+      <node id="44">
+        <label>array</label>
+      </node>
+      <node id="35">
+        <label>cassert</label>
+      </node>
+      <node id="41">
+        <label>cstddef</label>
+      </node>
+      <node id="40">
+        <label>cstdint</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="20">
+        <label>iomanip</label>
+      </node>
+      <node id="8">
+        <label>iosfwd</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="21">
+        <label>limits</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="43">
+        <label>memory</label>
+      </node>
+      <node id="11">
+        <label>set</label>
+      </node>
+      <node id="19">
+        <label>sstream</label>
+      </node>
+      <node id="51">
+        <label>stdexcept</label>
+      </node>
+      <node id="28">
+        <label>stdio.h</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="52">
+        <label>tuple</label>
+      </node>
+      <node id="23">
+        <label>type_traits</label>
+      </node>
+      <node id="10">
+        <label>unordered_map</label>
+      </node>
+      <node id="38">
+        <label>utility</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classdyablo_1_1InitialConditions__particle__grid" prot="public">dyablo::InitialConditions_particle_grid</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="InitialConditions__particle__grid_8cpp_1ab2b3231d4df98458c8a963d6dd45f703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FACTORY_REGISTER</definition>
+        <argsstring>(dyablo::InitialConditionsFactory, dyablo::InitialConditions_particle_grid, &quot;particle_grid&quot;)</argsstring>
+        <name>FACTORY_REGISTER</name>
+        <param>
+          <type><ref refid="classRegisteringFactory" kindref="compound">dyablo::InitialConditionsFactory</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1InitialConditions__particle__grid" kindref="compound">dyablo::InitialConditions_particle_grid</ref></type>
+        </param>
+        <param>
+          <type>&quot;particle_grid&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="220" column="1" declfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" declline="220" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;InitialConditions_base.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AnalyticalFormula.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;foreach_cell/ForeachCell.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;particles/ForeachParticle.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/units/Units.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classdyablo_1_1InitialConditions__particle__grid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">InitialConditions_particle_grid<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1InitialConditions" kindref="compound">InitialConditions</ref>{<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>ForeachCell&amp;<sp/>foreach_cell;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1ForeachParticle" kindref="compound">ForeachParticle</ref><sp/>foreach_particle;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nx,<sp/>ny,<sp/>nz;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>xmin,<sp/>xmax;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>ymin,<sp/>ymax;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>zmin,<sp/>zmax;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>total_mass;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>dt_perturb;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>particle_array_name;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>InitialConditions_particle_grid(</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>configMap,<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ForeachCell&amp;<sp/>foreach_cell,<sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTimers" kindref="compound">Timers</ref>&amp;<sp/>timers<sp/>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>:<sp/>foreach_cell(foreach_cell),</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>foreach_particle(<sp/>foreach_cell.get_amr_mesh(),<sp/>configMap<sp/>),</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>xmin(<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;xmin&quot;</highlight><highlight class="normal">,<sp/>0.0)<sp/>),<sp/>xmax(<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;xmax&quot;</highlight><highlight class="normal">,<sp/>1.0)<sp/>),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>ymin(<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ymin&quot;</highlight><highlight class="normal">,<sp/>0.0)<sp/>),<sp/>ymax(<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ymax&quot;</highlight><highlight class="normal">,<sp/>1.0)<sp/>),</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>zmin(<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;zmin&quot;</highlight><highlight class="normal">,<sp/>0.0)<sp/>),<sp/>zmax(<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;zmax&quot;</highlight><highlight class="normal">,<sp/>1.0)<sp/>),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>particle_array_name(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;particle_grid&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;particle_array_name&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;particles&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref>&amp;<sp/>pmesh<sp/>=<sp/>foreach_cell.get_amr_mesh();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>default_nx<sp/>=<sp/>foreach_cell.blockSize()[IX]*pmesh.get_coarse_grid_size()[IX];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>default_ny<sp/>=<sp/>foreach_cell.blockSize()[IY]*pmesh.get_coarse_grid_size()[IY];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>default_nz<sp/>=<sp/>foreach_cell.blockSize()[IZ]*pmesh.get_coarse_grid_size()[IZ];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nx<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;uint32_t&gt;(</highlight><highlight class="stringliteral">&quot;particle_grid&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;nx&quot;</highlight><highlight class="normal">,<sp/>default_nx);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ny<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;uint32_t&gt;(</highlight><highlight class="stringliteral">&quot;particle_grid&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ny&quot;</highlight><highlight class="normal">,<sp/>default_ny);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nz<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;uint32_t&gt;(</highlight><highlight class="stringliteral">&quot;particle_grid&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;nz&quot;</highlight><highlight class="normal">,<sp/>default_nz);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>default_total_mass=1.0,<sp/>default_dt_perturb=0.0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cosmo<sp/>=<sp/>configMap.hasValue(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;astart&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>cosmo<sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>astart<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;astart&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>omegam<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;omegam&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>omegab<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;omegab&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>omegav<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;omegav&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>omegak<sp/>=<sp/>1.0<sp/>-<sp/>omegam<sp/>-<sp/>omegav;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>eta<sp/><sp/><sp/><sp/>=<sp/>sqrt(omegam<sp/>/<sp/>astart<sp/>+<sp/>omegav<sp/>*<sp/>astart<sp/>*<sp/>astart<sp/>+<sp/>omegak);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>dladt<sp/>=<sp/>astart<sp/>*<sp/>eta;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>fomega;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(omegam<sp/>&gt;=<sp/>1.0<sp/>&amp;&amp;<sp/>omegav<sp/>&lt;=<sp/>0.0)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fomega<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>dplus;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ddplus<sp/>=<sp/>[&amp;](real_t<sp/>a)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&lt;=<sp/>0.0)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>eta<sp/>=<sp/>sqrt(omegam<sp/>/<sp/>a<sp/>+<sp/>omegav<sp/>*<sp/>a<sp/>*<sp/>a<sp/>+<sp/>1.0<sp/>-<sp/>omegam<sp/>-<sp/>omegav);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2.5<sp/>/<sp/>(eta<sp/>*<sp/>eta<sp/>*<sp/>eta);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>UGLY<sp/>trapezoid<sp/>rule<sp/>integration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>Np<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>da<sp/>=<sp/>astart<sp/>/<sp/>Np;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>sum<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>Np;<sp/>++i)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>+=<sp/>0.5<sp/>*<sp/>(ddplus(i<sp/>*<sp/>da)<sp/>+<sp/>ddplus((i<sp/>+<sp/>1)<sp/>*<sp/>da));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>*=<sp/>da;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dplus<sp/>=<sp/>eta<sp/>/<sp/>astart<sp/>*<sp/>sum;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fomega<sp/>=<sp/>(2.5<sp/>/<sp/>dplus<sp/>-<sp/>1.5<sp/>*<sp/>omegam<sp/>/<sp/>astart<sp/>-<sp/>omegak)<sp/>/<sp/>(eta<sp/>*<sp/>eta);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Inv_Time<sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>1/Units::s()<sp/>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>H0<sp/>=<sp/>configMap.<ref refid="classConfigMap_1abfca4fda6db64a0e16f84d649dbfea08" kindref="member">getValue_in_code_unit</ref>&lt;Inv_Time&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;H0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>four_pi_G<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(<sp/></highlight><highlight class="stringliteral">&quot;gravity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;4_Pi_G&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rhoc<sp/>=<sp/>3.0<sp/>*<sp/>H0<sp/>*<sp/>H0<sp/>/(<sp/>2<sp/>*<sp/>four_pi_G);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>Vbox<sp/>=<sp/>(xmax-xmin)<sp/>*<sp/>(ymax-ymin)<sp/>*<sp/>(zmax<sp/>-zmin);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>default_total_mass<sp/>=<sp/>((omegam-omegab)<sp/>*<sp/>rhoc<sp/>*<sp/>Vbox);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>default_dt_perturb<sp/>=<sp/>1/<sp/>(fomega<sp/>*<sp/>dladt<sp/>)/<sp/>H0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;total_mass<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;particle_grid&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;total_mass&quot;</highlight><highlight class="normal">,<sp/>default_total_mass);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;dt_perturb<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;particle_grid&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;dt_perturb&quot;</highlight><highlight class="normal">,<sp/>default_dt_perturb);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init(<sp/><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref>&amp;<sp/>U<sp/>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpi_size<sp/>=<sp/><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>().MPI_Comm_size();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpi_rank<sp/>=<sp/><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>().MPI_Comm_rank();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nx<sp/>=<sp/>this-&gt;nx;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ny<sp/>=<sp/>this-&gt;ny;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nz<sp/>=<sp/>this-&gt;nz;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>nbpart_global<sp/>=<sp/>nx*ny*nz;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>ipart_global_begin<sp/>=<sp/>nbpart_global*mpi_rank/mpi_size;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>ipart_global_end<sp/>=<sp/>nbpart_global*(mpi_rank+1)/mpi_size;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nbpart_local<sp/>=<sp/>ipart_global_end-ipart_global_begin;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>U.<ref refid="classdyablo_1_1UserData_1acf836004270dbc9b09dfd5411583ff91" kindref="member">new_ParticleArray</ref>(particle_array_name,<sp/>nbpart_local);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>Lx<sp/>=<sp/>this-&gt;xmax-this-&gt;xmin;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>Ly<sp/>=<sp/>this-&gt;ymax-this-&gt;ymin;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>Lz<sp/>=<sp/>this-&gt;zmax-this-&gt;zmin;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>dx<sp/>=<sp/>(Lx)/this-&gt;nx;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>dy<sp/>=<sp/>(Ly)/this-&gt;ny;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>dz<sp/>=<sp/>(Lz)/this-&gt;nz;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>xmin<sp/>=<sp/>this-&gt;xmin;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ymin<sp/>=<sp/>this-&gt;ymin;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>zmin<sp/>=<sp/>this-&gt;zmin;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>UserData::ParticleArray_t<sp/>P<sp/>=<sp/>U.getParticleArray(<sp/>particle_array_name<sp/>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>foreach_particle.foreach_particle(</highlight><highlight class="stringliteral">&quot;InitialConditions_particle_grid::init_pos&quot;</highlight><highlight class="normal">,<sp/>P,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA<sp/>(ParticleData::ParticleIndex<sp/>iPart)<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>ipart_global<sp/>=<sp/>ipart_global_begin<sp/>+<sp/>iPart;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>:<sp/>maybe<sp/>add<sp/>particles<sp/>in<sp/>morton<sp/>order?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>i<sp/>=<sp/>ipart_global%nx;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>j<sp/>=<sp/>(ipart_global/nx)%ny;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>k<sp/>=<sp/>(ipart_global/nx)/ny;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(iPart,<sp/>IX)<sp/>=<sp/>xmin<sp/>+<sp/>i*dx<sp/>+<sp/>0.5*dx;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(iPart,<sp/>IY)<sp/>=<sp/>ymin<sp/>+<sp/>j*dy<sp/>+<sp/>0.5*dy;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(iPart,<sp/>IZ)<sp/>=<sp/>zmin<sp/>+<sp/>k*dz<sp/>+<sp/>0.5*dz;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>U.distributeParticles(particle_array_name);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>mass<sp/>=<sp/>this-&gt;total_mass<sp/>/<sp/>nbpart_global;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>dt_perturb<sp/>=<sp/>this-&gt;dt_perturb;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>U.<ref refid="classdyablo_1_1UserData_1a5f9f5fb49c62c3fac1a2587efb72e956" kindref="member">new_ParticleAttribute</ref>(particle_array_name,<sp/></highlight><highlight class="stringliteral">&quot;vx&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>U.<ref refid="classdyablo_1_1UserData_1a5f9f5fb49c62c3fac1a2587efb72e956" kindref="member">new_ParticleAttribute</ref>(particle_array_name,<sp/></highlight><highlight class="stringliteral">&quot;vy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>U.<ref refid="classdyablo_1_1UserData_1a5f9f5fb49c62c3fac1a2587efb72e956" kindref="member">new_ParticleAttribute</ref>(particle_array_name,<sp/></highlight><highlight class="stringliteral">&quot;vz&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>U.<ref refid="classdyablo_1_1UserData_1a5f9f5fb49c62c3fac1a2587efb72e956" kindref="member">new_ParticleAttribute</ref>(particle_array_name,<sp/></highlight><highlight class="stringliteral">&quot;mass&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>VarIndex_particle_grid<sp/>{<sp/>IVX,<sp/>IVY,<sp/>IVZ,<sp/>IMASS,<sp/>IRHO<sp/>};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>UserData::ParticleArray_t<sp/>P<sp/>=<sp/>U.getParticleArray(<sp/>particle_array_name<sp/>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Pout<sp/>=<sp/>U.getParticleAccessor(<sp/>particle_array_name,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;vx&quot;</highlight><highlight class="normal">,<sp/>IVX},<sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;vy&quot;</highlight><highlight class="normal">,<sp/>IVY},</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;vz&quot;</highlight><highlight class="normal">,<sp/>IVZ},</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;mass&quot;</highlight><highlight class="normal">,<sp/>IMASS}<sp/>});</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Uin<sp/>=<sp/>U.getAccessor(<sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal">,<sp/>IRHO},</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vx&quot;</highlight><highlight class="normal">,<sp/>IVX},<sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vy&quot;</highlight><highlight class="normal">,<sp/>IVY},</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vz&quot;</highlight><highlight class="normal">,<sp/>IVZ}<sp/>});</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ForeachCell::CellMetaData<sp/>cells<sp/>=<sp/>foreach_cell.getCellMetaData();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>foreach_particle.foreach_particle(</highlight><highlight class="stringliteral">&quot;InitialConditions_particle_grid::init_attributes&quot;</highlight><highlight class="normal">,<sp/>P,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA<sp/>(ParticleData::ParticleIndex<sp/>iPart)<sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ForeachCell::CellMetaData::pos_t<sp/>pos<sp/>=<sp/>{P.pos(iPart,<sp/>IX),<sp/>P.pos(iPart,<sp/>IY),<sp/>P.pos(iPart,<sp/>IZ)};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ForeachCell::CellIndex<sp/>iCell<sp/>=<sp/>cells.getCellFromPos(<sp/>pos<sp/>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pout.at(<sp/>iPart,<sp/>IMASS<sp/>)<sp/>=<sp/>mass;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rho<sp/>=<sp/>Uin.at(iCell,<sp/>IRHO);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>u<sp/>=<sp/>Uin.at(iCell,<sp/>IVX)<sp/>/<sp/>rho;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>v<sp/>=<sp/>Uin.at(iCell,<sp/>IVY)<sp/>/<sp/>rho;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>w<sp/>=<sp/>Uin.at(iCell,<sp/>IVZ)<sp/>/<sp/>rho;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pout.at(<sp/>iPart,<sp/>IVX<sp/>)<sp/>=<sp/>u;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pout.at(<sp/>iPart,<sp/>IVY<sp/>)<sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pout.at(<sp/>iPart,<sp/>IVZ<sp/>)<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(<sp/>iPart,<sp/>IX<sp/>)<sp/>=<sp/>P.pos(<sp/>iPart,<sp/>IX<sp/>)<sp/>+<sp/>u<sp/>*<sp/>dt_perturb;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(<sp/>iPart,<sp/>IY<sp/>)<sp/>=<sp/>P.pos(<sp/>iPart,<sp/>IY<sp/>)<sp/>+<sp/>v<sp/>*<sp/>dt_perturb;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(<sp/>iPart,<sp/>IZ<sp/>)<sp/>=<sp/>P.pos(<sp/>iPart,<sp/>IZ<sp/>)<sp/>+<sp/>w<sp/>*<sp/>dt_perturb;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>periodic<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(iPart,<sp/>IX)<sp/>=<sp/>fmod(<sp/>(P.pos(iPart,<sp/>IX)<sp/>-<sp/>xmin)<sp/>+<sp/>(Lx)<sp/>,<sp/>Lx)<sp/>+<sp/>xmin;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(iPart,<sp/>IY)<sp/>=<sp/>fmod(<sp/>(P.pos(iPart,<sp/>IY)<sp/>-<sp/>ymin)<sp/>+<sp/>(Ly)<sp/>,<sp/>Ly)<sp/>+<sp/>ymin;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P.pos(iPart,<sp/>IZ)<sp/>=<sp/>fmod(<sp/>(P.pos(iPart,<sp/>IZ)<sp/>-<sp/>zmin)<sp/>+<sp/>(Lz)<sp/>,<sp/>Lz)<sp/>+<sp/>zmin;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>U.distributeParticles(particle_array_name);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">};<sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">FACTORY_REGISTER(dyablo::InitialConditionsFactory,<sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1InitialConditions__particle__grid" kindref="compound">dyablo::InitialConditions_particle_grid</ref>,<sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;particle_grid&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp"/>
+  </compounddef>
+</doxygen>

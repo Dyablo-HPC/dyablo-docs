@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__Rad__Params" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_Rad_Params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Rad__Params_1a03a7f13dc531be657b5a219355753174" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::HyperbolicPolicy_Rad_Params::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Rad_Params::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="58" column="7" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Rad__Params_1a9755d37482ef7aaf2243f49065cb54ec" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_Rad_Params::c_rad</definition>
+        <argsstring></argsstring>
+        <name>c_rad</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Rad_Params::c_rad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="59" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__Rad__Params_1a5cacf1bf8bd58246e2a7e6a6860495cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__Rad__Params" kindref="compound">HyperbolicPolicy_Rad_Params</ref></type>
+        <definition>static HyperbolicPolicy_Rad_Params dyablo::HyperbolicPolicy_Rad_Params::from_configmap</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>from_configmap</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Rad_Params::from_configmap</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="50" column="38" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="50" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="48" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="49" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Rad__Params_1a9755d37482ef7aaf2243f49065cb54ec" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Rad_Params</scope><name>c_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Rad__Params_1a5cacf1bf8bd58246e2a7e6a6860495cc" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Rad_Params</scope><name>from_configmap</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Rad__Params_1a03a7f13dc531be657b5a219355753174" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Rad_Params</scope><name>ndim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

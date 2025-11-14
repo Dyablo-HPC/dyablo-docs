@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1RefineCondition__mass__formula" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::RefineCondition_mass_formula</compoundname>
+    <innerclass refid="structdyablo_1_1RefineCondition__mass__formula_1_1Params" prot="public">dyablo::RefineCondition_mass_formula::Params</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classdyablo_1_1RefineCondition__mass__formula_1ab6f75bbdd627a7c88a4f337707667943" prot="public" static="no" strong="no">
+        <type></type>
+        <name>VarIndex</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::VarIndex</qualifiedname>
+        <enumvalue id="classdyablo_1_1RefineCondition__mass__formula_1ab6f75bbdd627a7c88a4f337707667943a5d455e5fd9f5f1b210fc6e0bca1b45ce" prot="public">
+          <name>Irho</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="23" column="3" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__mass__formula_1ac19f2d541287e228154deab34ab7b93e" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_mass_formula::mass_coarsen</definition>
+        <argsstring></argsstring>
+        <name>mass_coarsen</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::mass_coarsen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="49" column="10" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__mass__formula_1a49a8b6677a0e156a00c6707347642314" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_mass_formula::mass_refine</definition>
+        <argsstring></argsstring>
+        <name>mass_refine</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::mass_refine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="49" column="23" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__mass__formula_1aada894b4bd72c1bd427490f6f24c8fc2" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref></type>
+        <definition>UserData::FieldAccessor dyablo::RefineCondition_mass_formula::Uin</definition>
+        <argsstring></argsstring>
+        <name>Uin</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::Uin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="50" column="27" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1RefineCondition__mass__formula_1a7af8c42237fe7c479963b6b0cd206848" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::RefineCondition_mass_formula::RefineCondition_mass_formula</definition>
+        <argsstring>(const Params &amp;params, const UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>RefineCondition_mass_formula</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::RefineCondition_mass_formula</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1RefineCondition__mass__formula_1_1Params" kindref="compound">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="25" column="3" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1RefineCondition__mass__formula_1aee016437bcd1b2094a2fac9fce89c532" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION int</type>
+        <definition>KOKKOS_INLINE_FUNCTION int dyablo::RefineCondition_mass_formula::getMarker</definition>
+        <argsstring>(const ForeachCell::CellIndex &amp;iCell, const ForeachCell::CellMetaData &amp;cells) const</argsstring>
+        <name>getMarker</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::getMarker</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">ForeachCell::CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kindref="compound">ForeachCell::CellMetaData</ref> &amp;</type>
+          <declname>cells</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="33" column="7" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="33" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::RefineCondition_mass_formula</label>
+        <link refid="classdyablo_1_1RefineCondition__mass__formula"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Uin</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::UserData_fields::FieldAccessor</label>
+        <link refid="classdyablo_1_1UserData__fields_1_1FieldAccessor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="9" column="1" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="10" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1RefineCondition__mass__formula_1aee016437bcd1b2094a2fac9fce89c532" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula</scope><name>getMarker</name></member>
+      <member refid="classdyablo_1_1RefineCondition__mass__formula_1ab6f75bbdd627a7c88a4f337707667943a5d455e5fd9f5f1b210fc6e0bca1b45ce" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula</scope><name>Irho</name></member>
+      <member refid="classdyablo_1_1RefineCondition__mass__formula_1ac19f2d541287e228154deab34ab7b93e" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula</scope><name>mass_coarsen</name></member>
+      <member refid="classdyablo_1_1RefineCondition__mass__formula_1a49a8b6677a0e156a00c6707347642314" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula</scope><name>mass_refine</name></member>
+      <member refid="classdyablo_1_1RefineCondition__mass__formula_1a7af8c42237fe7c479963b6b0cd206848" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula</scope><name>RefineCondition_mass_formula</name></member>
+      <member refid="classdyablo_1_1RefineCondition__mass__formula_1aada894b4bd72c1bd427490f6f24c8fc2" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula</scope><name>Uin</name></member>
+      <member refid="classdyablo_1_1RefineCondition__mass__formula_1ab6f75bbdd627a7c88a4f337707667943" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula</scope><name>VarIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

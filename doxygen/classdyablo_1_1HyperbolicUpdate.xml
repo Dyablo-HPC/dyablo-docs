@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicUpdate" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::HyperbolicUpdate</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate_euler_nopatch&lt; HyperbolicPolicy_Hydro &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; HyperbolicPolicy_Hydro_Hancock &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__RK2" prot="public" virt="non-virtual">dyablo::Hyperbolic_RK2&lt; HyperbolicPolicy_GLMMHD &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__RK2" prot="public" virt="non-virtual">dyablo::Hyperbolic_RK2&lt; HyperbolicPolicy_Hydro &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__euler" prot="public" virt="non-virtual">dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_GLMMHD &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__euler" prot="public" virt="non-virtual">dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_Hydro &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__euler" prot="public" virt="non-virtual">dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_Rad &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__hancock" prot="public" virt="non-virtual">dyablo::Hyperbolic_hancock&lt; HyperbolicPolicy_GLMMHD &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__hancock" prot="public" virt="non-virtual">dyablo::Hyperbolic_hancock&lt; HyperbolicPolicy_Hydro &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1HydroUpdate__gravity" prot="public" virt="non-virtual">dyablo::HydroUpdate_gravity</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__RK2" prot="public" virt="non-virtual">dyablo::Hyperbolic_RK2&lt; Policy &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__euler" prot="public" virt="non-virtual">dyablo::Hyperbolic_euler&lt; Policy &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Hyperbolic__hancock" prot="public" virt="non-virtual">dyablo::Hyperbolic_hancock&lt; Policy &gt;</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::HyperbolicUpdate::~HyperbolicUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>~HyperbolicUpdate</name>
+        <qualifiedname>dyablo::HyperbolicUpdate::~HyperbolicUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h" line="22" column="11" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicUpdate_1ac76f22f39d55840fdf90e1abef294cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::HyperbolicUpdate::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)=0</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::HyperbolicUpdate::update</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1HydroUpdate__gravity_1ad2389857254cd98a61bf439dc46675fd">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__euler_1a67d16281b9e7c1ea5ef7dc5c8088dfaf">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__euler_1a67d16281b9e7c1ea5ef7dc5c8088dfaf">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__euler_1a67d16281b9e7c1ea5ef7dc5c8088dfaf">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__euler_1a67d16281b9e7c1ea5ef7dc5c8088dfaf">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__hancock_1a2b9c673b46a749543194bed698fe529d">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__hancock_1a2b9c673b46a749543194bed698fe529d">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__hancock_1a2b9c673b46a749543194bed698fe529d">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__RK2_1a2c6df4d066765e0bb89127fb8549f858">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__RK2_1a2c6df4d066765e0bb89127fb8549f858">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Hyperbolic__RK2_1a2c6df4d066765e0bb89127fb8549f858">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1abc03764ffd1c562bf46aaf018adacf15">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1abc03764ffd1c562bf46aaf018adacf15">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab33c9be39d211329a18ce727dc6e9236">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab33c9be39d211329a18ce727dc6e9236">update</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h" line="23" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>dyablo::GLMMHDUpdate_RK2</label>
+        <link refid="classdyablo_1_1GLMMHDUpdate__RK2"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dyablo::GLMMHDUpdate_euler</label>
+        <link refid="classdyablo_1_1GLMMHDUpdate__euler"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>dyablo::GLMMHDUpdate_hancock</label>
+        <link refid="classdyablo_1_1GLMMHDUpdate__hancock"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dyablo::HydroUpdate_RK2</label>
+        <link refid="classdyablo_1_1HydroUpdate__RK2"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dyablo::HydroUpdate_euler</label>
+        <link refid="classdyablo_1_1HydroUpdate__euler"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HydroUpdate_euler_nopatch</label>
+        <link refid="classdyablo_1_1HydroUpdate__euler__nopatch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dyablo::HydroUpdate_gravity</label>
+        <link refid="classdyablo_1_1HydroUpdate__gravity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dyablo::HydroUpdate_hancock</label>
+        <link refid="classdyablo_1_1HydroUpdate__hancock"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dyablo::HydroUpdate_hancock_oneneighbor</label>
+        <link refid="classdyablo_1_1HydroUpdate__hancock__oneneighbor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="21">
+        <label>dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate_euler_nopatch&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; HyperbolicPolicy_Hydro_Hancock &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>dyablo::Hyperbolic_RK2&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__RK2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dyablo::Hyperbolic_RK2&lt; HyperbolicPolicy_GLMMHD &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__RK2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dyablo::Hyperbolic_RK2&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__RK2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>dyablo::Hyperbolic_euler&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__euler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_GLMMHD &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__euler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__euler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_Rad &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__euler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>dyablo::Hyperbolic_hancock&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__hancock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>dyablo::Hyperbolic_hancock&lt; HyperbolicPolicy_GLMMHD &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__hancock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>dyablo::Hyperbolic_hancock&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__hancock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dyablo::RadUpdate_euler</label>
+        <link refid="classdyablo_1_1RadUpdate__euler"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1ac76f22f39d55840fdf90e1abef294cfe" prot="public" virt="pure-virtual"><scope>dyablo::HyperbolicUpdate</scope><name>update</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" virt="virtual"><scope>dyablo::HyperbolicUpdate</scope><name>~HyperbolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

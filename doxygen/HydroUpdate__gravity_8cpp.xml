@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="HydroUpdate__gravity_8cpp" kind="file" language="C++">
+    <compoundname>HydroUpdate_gravity.cpp</compoundname>
+    <includes refid="HyperbolicUpdate__base_8h" local="yes">scheme/HyperbolicUpdate_base.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>ScalarSimulationData.h</label>
+        <link refid="ScalarSimulationData_8h_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="37">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp</label>
+        <link refid="HydroUpdate__gravity_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scheme/HyperbolicUpdate_base.h</label>
+        <link refid="HyperbolicUpdate__base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>mpi/ViewCommunicator.h</label>
+        <link refid="ViewCommunicator_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>particles/ForeachParticle.h</label>
+        <link refid="ForeachParticle_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>particles/ParticleArray.h</label>
+        <link refid="ParticleArray_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>userdata_utils.h</label>
+        <link refid="userdata__utils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>utils/misc/MultiTypeMap.h</label>
+        <link refid="MultiTypeMap_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>utils/misc/RegisteringFactory.h</label>
+        <link refid="RegisteringFactory_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>utils/monitoring/Timers.h</label>
+        <link refid="Timers_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="48">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="26">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="32">
+        <label>any</label>
+      </node>
+      <node id="44">
+        <label>array</label>
+      </node>
+      <node id="35">
+        <label>cassert</label>
+      </node>
+      <node id="41">
+        <label>cstddef</label>
+      </node>
+      <node id="40">
+        <label>cstdint</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="20">
+        <label>iomanip</label>
+      </node>
+      <node id="8">
+        <label>iosfwd</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="21">
+        <label>limits</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="43">
+        <label>memory</label>
+      </node>
+      <node id="11">
+        <label>set</label>
+      </node>
+      <node id="19">
+        <label>sstream</label>
+      </node>
+      <node id="51">
+        <label>stdexcept</label>
+      </node>
+      <node id="28">
+        <label>stdio.h</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="52">
+        <label>tuple</label>
+      </node>
+      <node id="23">
+        <label>type_traits</label>
+      </node>
+      <node id="10">
+        <label>unordered_map</label>
+      </node>
+      <node id="38">
+        <label>utility</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classdyablo_1_1HydroUpdate__gravity" prot="public">dyablo::HydroUpdate_gravity</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;scheme/HyperbolicUpdate_base.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Should<sp/>we<sp/>keep<sp/>that<sp/>name<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classdyablo_1_1HydroUpdate__gravity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HydroUpdate_gravity<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicUpdate" kindref="compound">HyperbolicUpdate</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>ForeachCell&amp;<sp/>foreach_cell;<sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>GravityType<sp/>gravity_type;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>real_t<sp/>gx,<sp/>gy,<sp/>gz;<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>HydroUpdate_gravity(</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>configMap,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ForeachCell&amp;<sp/>foreach_cell,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTimers" kindref="compound">Timers</ref>&amp;<sp/>timers)<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>:<sp/>foreach_cell(foreach_cell),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>ndim(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ndim&quot;</highlight><highlight class="normal">,<sp/>3)),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>gravity_type(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;GravityType&gt;(</highlight><highlight class="stringliteral">&quot;gravity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;gravity_type&quot;</highlight><highlight class="normal">,<sp/>GRAVITY_NONE))<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gravity_type<sp/>&amp;<sp/>GRAVITY_CONSTANT)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gx<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;gravity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;gx&quot;</highlight><highlight class="normal">,<sp/>0.0);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gy<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;gravity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;gy&quot;</highlight><highlight class="normal">,<sp/>0.0);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gz<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;gravity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;gz&quot;</highlight><highlight class="normal">,<sp/>0.0);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(<sp/><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref>&amp;<sp/>U,<sp/>ScalarSimulationData&amp;<sp/>scalar_data)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">FieldAccessor<sp/>=<sp/>UserData::FieldAccessor;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">FieldInfo<sp/>=<sp/>UserData::FieldAccessor::FieldInfo;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellIndex<sp/>=<sp/>ForeachCell::CellIndex;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_field<sp/>=<sp/>gravity_type&amp;GRAVITY_FIELD;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>VarIndex_gravity{<sp/>Ie_tot,<sp/>Irho,<sp/>Irho_vx,<sp/>Irho_vy,<sp/>Irho_vz,<sp/>IGX,<sp/>IGY,<sp/>IGZ<sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FieldInfo&gt;<sp/>Uin_fields<sp/>=<sp/>{{</highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal">,<sp/>Irho}};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(use_field)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uin_fields.push_back({</highlight><highlight class="stringliteral">&quot;gx&quot;</highlight><highlight class="normal"><sp/>,<sp/>IGX});</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uin_fields.push_back({</highlight><highlight class="stringliteral">&quot;gy&quot;</highlight><highlight class="normal"><sp/>,<sp/>IGY});</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ndim==3)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Uin_fields.push_back({</highlight><highlight class="stringliteral">&quot;gz&quot;</highlight><highlight class="normal"><sp/>,<sp/>IGZ});</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FieldInfo&gt;<sp/>Uout_fields<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;e_tot_next&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>,<sp/>Ie_tot},<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_next&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>,<sp/>Irho},<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vx_next&quot;</highlight><highlight class="normal">,<sp/>Irho_vx},<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vy_next&quot;</highlight><highlight class="normal">,<sp/>Irho_vy}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ndim==3)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uout_fields.push_back({</highlight><highlight class="stringliteral">&quot;rho_vz_next&quot;</highlight><highlight class="normal">,<sp/>Irho_vz});</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldAccessor<sp/>Uin<sp/>=<sp/>U.getAccessor(<sp/>Uin_fields<sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldAccessor<sp/>Uout<sp/>=<sp/>U.getAccessor(<sp/>Uout_fields<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>dt<sp/>=<sp/>scalar_data.get&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;dt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim<sp/>=<sp/>this-&gt;ndim;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gx_<sp/>=<sp/>this-&gt;gx;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gy_<sp/>=<sp/>this-&gt;gy;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gz_<sp/>=<sp/>this-&gt;gz;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>foreach_cell.foreach_cell(</highlight><highlight class="stringliteral">&quot;HydroUpdate_gravity&quot;</highlight><highlight class="normal">,<sp/>Uin.getShape(),<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>gx<sp/>=<sp/>gx_;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>gy<sp/>=<sp/>gy_;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>gz<sp/>=<sp/>gz_;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(use_field)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gx<sp/>=<sp/>Uin.at(iCell,<sp/>IGX);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gy<sp/>=<sp/>Uin.at(iCell,<sp/>IGY);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gz<sp/>=<sp/>Uin.at(iCell,<sp/>IGZ);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rhoOld<sp/>=<sp/>Uin.at(iCell,<sp/>Irho);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rhoNew<sp/>=<sp/>Uout.at(iCell,<sp/>Irho);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rhou<sp/>=<sp/>Uout.at(iCell,<sp/>Irho_vx);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rhov<sp/>=<sp/>Uout.at(iCell,<sp/>Irho_vy);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>ekin_old<sp/>=<sp/>rhou*rhou<sp/>+<sp/>rhov*rhov;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rhow;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhow<sp/>=<sp/>Uout.at(iCell,<sp/>Irho_vz);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ekin_old<sp/>+=<sp/>rhow*rhow;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ekin_old<sp/>=<sp/>0.5<sp/>*<sp/>ekin_old<sp/>/<sp/>rhoNew;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhou<sp/>+=<sp/>0.5<sp/>*<sp/>dt<sp/>*<sp/>gx<sp/>*<sp/>(rhoOld<sp/>+<sp/>rhoNew);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rhov<sp/>+=<sp/>0.5<sp/>*<sp/>dt<sp/>*<sp/>gy<sp/>*<sp/>(rhoOld<sp/>+<sp/>rhoNew);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uout.at(iCell,<sp/>Irho_vx)<sp/>=<sp/>rhou;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uout.at(iCell,<sp/>Irho_vy)<sp/>=<sp/>rhov;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhow<sp/>+=<sp/>0.5<sp/>*<sp/>dt<sp/>*<sp/>gz<sp/>*<sp/>(rhoOld<sp/>+<sp/>rhoNew);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Uout.at(iCell,<sp/>Irho_vz)<sp/>=<sp/>rhow;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Energy<sp/>correction<sp/>should<sp/>be<sp/>included<sp/>in<sp/>case<sp/>of<sp/>self-gravitation<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>ekin_new<sp/>=<sp/>rhou*rhou<sp/>+<sp/>rhov*rhov;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ekin_new<sp/>+=<sp/>rhow*rhow;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ekin_new<sp/>=<sp/>0.5<sp/>*<sp/>ekin_new<sp/>/<sp/>rhoNew;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uout.at(iCell,<sp/>Ie_tot)<sp/>+=<sp/>(ekin_new<sp/>-<sp/>ekin_old);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">FACTORY_REGISTER(<sp/>dyablo::HyperbolicUpdateFactory,<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1HydroUpdate__gravity" kindref="compound">dyablo::HydroUpdate_gravity</ref>,<sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;HydroUpdate_gravity&quot;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp"/>
+  </compounddef>
+</doxygen>

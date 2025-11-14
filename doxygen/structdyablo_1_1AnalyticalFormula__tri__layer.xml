@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AnalyticalFormula__tri__layer" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_tri_layer</compoundname>
+    <basecompoundref refid="structdyablo_1_1AnalyticalFormula__base__hydro" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_base_hydro</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__tri__layer_1ad18b44b222de9176a4a15b99849fdae2" prot="public" static="no">
+        <type>Kokkos::Random_XorShift64_Pool&lt;&gt;</type>
+        <definition>using dyablo::AnalyticalFormula_tri_layer::RNGPool =  Kokkos::Random_XorShift64_Pool&lt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>RNGPool</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::RNGPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="21" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__tri__layer_1acab2b2bcc341cfb4763cefac275a0417" prot="public" static="no">
+        <type>RNGPool::generator_type</type>
+        <definition>using dyablo::AnalyticalFormula_tri_layer::RNGType =  RNGPool::generator_type</definition>
+        <argsstring></argsstring>
+        <name>RNGType</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::RNGType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="22" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a3f4483c875ab5eb929da4bb0a852407f" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_tri_layer::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="24" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a3cb4f528367cf8870327ba3927ae3a99" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="25" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a8cc4d2f5a4fa69238026e9e900a6dedb" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="26" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1abc639e3b199e47f6b870e4a40a9bb462" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="27" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1aa7eedb2cf63698bc7c5c7f4aa39e32c9" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="28" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a8c608ac25839415a604dc6eb6a3667a6" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::error_max</definition>
+        <argsstring></argsstring>
+        <name>error_max</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::error_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="29" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a970eddab2b244a7c9469449326ac751a" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_tri_layer::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::seed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="31" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a0f34877fad64a6d97f5bb6b45e17b03a" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::z1</definition>
+        <argsstring></argsstring>
+        <name>z1</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::z1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="32" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a39fe48be35a5fc495644ca5485c1780b" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::z2</definition>
+        <argsstring></argsstring>
+        <name>z2</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::z2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="32" column="19" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a67e27268bc8f1210c24fbcbe3f358b23" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::theta1</definition>
+        <argsstring></argsstring>
+        <name>theta1</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::theta1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="33" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a7bce14d443a3e7d65f6e26059aa872df" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::theta2</definition>
+        <argsstring></argsstring>
+        <name>theta2</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::theta2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="33" column="23" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a46fd44c77bf1a425c5ad6c78f091b8b9" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::m1</definition>
+        <argsstring></argsstring>
+        <name>m1</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::m1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="34" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a230cd3023135a94f77332d5f9bd826d1" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::m2</definition>
+        <argsstring></argsstring>
+        <name>m2</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::m2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="34" column="19" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a67eb167ebac6b8ba8597e12e7f6e7ece" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::rho0</definition>
+        <argsstring></argsstring>
+        <name>rho0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::rho0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="35" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a2b5b2a9366ab14587589900473f3725d" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::T0</definition>
+        <argsstring></argsstring>
+        <name>T0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::T0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="35" column="21" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a26c3e7d6faedfab1f3d67376ab1d2740" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_tri_layer::perturbation</definition>
+        <argsstring></argsstring>
+        <name>perturbation</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::perturbation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="36" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__tri__layer_1af88cd1b62f7bac3e45ef09cc6047207d" prot="public" static="no" mutable="no">
+        <type>RNGPool</type>
+        <definition>RNGPool dyablo::AnalyticalFormula_tri_layer::rand_pool</definition>
+        <argsstring></argsstring>
+        <name>rand_pool</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::rand_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="38" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__tri__layer_1a52b63bdde86447a767ffec73466ce7a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AnalyticalFormula_tri_layer::AnalyticalFormula_tri_layer</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>AnalyticalFormula_tri_layer</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::AnalyticalFormula_tri_layer</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="40" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="40" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__tri__layer_1adba2ed00d9cf389c1839daa52c94d0b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">State</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION State dyablo::AnalyticalFormula_tri_layer::value</definition>
+        <argsstring>(real_t x, real_t y, real_t z, real_t dx, real_t dy, real_t dz) const</argsstring>
+        <name>value</name>
+        <qualifiedname>dyablo::AnalyticalFormula_tri_layer::value</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="63" column="9" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="63" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A three-layer setup very loosely based on the papers by Currie et al 2020, Brummel et al 2002 and Hurlburt et al 1996. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This setup takes two polytropic models (theta1, m1, kappa1) and (theta2, m2, kappa2) and initialises three layers. The two outermost ones have use the second polytropic model while the central one uses the first polytropic model. The idea is to have the first polytropic model to be convectively unstable while the two other stable. The delimitation of the three layers is as follow :</para>
+<para>zmin <ndash/> top stable layer <ndash/> z1 <ndash/> convective layer <ndash/> z2 <ndash/> bottom stable layer <ndash/> zmax </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_tri_layer</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__tri__layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_tri_layer</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__tri__layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" line="19" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/wholesun/InitialConditions_tri_layer.cpp" bodystart="20" bodyend="126"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a52b63bdde86447a767ffec73466ce7a1" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>AnalyticalFormula_tri_layer</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc9e104f11a094d4eb01551b30f6f420" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>ConsHydroState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a8c608ac25839415a604dc6eb6a3667a6" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>error_max</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a3cb4f528367cf8870327ba3927ae3a99" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1a78404e035b2f8dde366288b564d30f14" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a46fd44c77bf1a425c5ad6c78f091b8b9" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>m1</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a230cd3023135a94f77332d5f9bd826d1" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>m2</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a3f4483c875ab5eb929da4bb0a852407f" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a26c3e7d6faedfab1f3d67376ab1d2740" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>perturbation</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1af88cd1b62f7bac3e45ef09cc6047207d" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>rand_pool</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a67eb167ebac6b8ba8597e12e7f6e7ece" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>rho0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1ad18b44b222de9176a4a15b99849fdae2" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>RNGPool</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1acab2b2bcc341cfb4763cefac275a0417" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>RNGType</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a970eddab2b244a7c9469449326ac751a" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>seed</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc1b1589c77d1286deb78e32e122a643" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>setState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1abc639e3b199e47f6b870e4a40a9bb462" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>smallc</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1aa7eedb2cf63698bc7c5c7f4aa39e32c9" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a8cc4d2f5a4fa69238026e9e900a6dedb" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>smallr</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1ab7c34f90f960785202d0345a2fdbf091" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>State</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a2b5b2a9366ab14587589900473f3725d" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>T0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a67e27268bc8f1210c24fbcbe3f358b23" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>theta1</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a7bce14d443a3e7d65f6e26059aa872df" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>theta2</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1adba2ed00d9cf389c1839daa52c94d0b2" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>value</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a0f34877fad64a6d97f5bb6b45e17b03a" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>z1</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__tri__layer_1a39fe48be35a5fc495644ca5485c1780b" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_tri_layer</scope><name>z2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

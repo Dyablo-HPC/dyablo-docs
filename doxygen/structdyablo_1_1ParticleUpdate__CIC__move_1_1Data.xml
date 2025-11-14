@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::ParticleUpdate_CIC_move::Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a782493fc91658c647fcc917bc04fe2a4" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_CIC_move::Data::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::ParticleUpdate_CIC_move::Data::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" line="148" column="12" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a662926e0f956e26914459fcf03e25b61" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_CIC_move::Data::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::ParticleUpdate_CIC_move::Data::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" line="148" column="16" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a45ceb0e0d8d4f77f7cadca60029251c3" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_CIC_move::Data::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::ParticleUpdate_CIC_move::Data::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" line="148" column="20" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a238987aca787f02e94d673f5c9f72a59" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_CIC_move::Data::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::ParticleUpdate_CIC_move::Data::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" line="148" column="24" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a2a69987a5536ded81cc5f35dbc18baa5" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_CIC_move::Data::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::ParticleUpdate_CIC_move::Data::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" line="148" column="28" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a6b74fdb6b8a6ae66ccc096e7709e748c" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_CIC_move::Data::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::ParticleUpdate_CIC_move::Data::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" line="148" column="32" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" line="147" column="3" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_CIC_move.cpp" bodystart="147" bodyend="149"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a662926e0f956e26914459fcf03e25b61" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_CIC_move::Data</scope><name>xmax</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a782493fc91658c647fcc917bc04fe2a4" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_CIC_move::Data</scope><name>xmin</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a238987aca787f02e94d673f5c9f72a59" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_CIC_move::Data</scope><name>ymax</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a45ceb0e0d8d4f77f7cadca60029251c3" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_CIC_move::Data</scope><name>ymin</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a6b74fdb6b8a6ae66ccc096e7709e748c" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_CIC_move::Data</scope><name>zmax</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__CIC__move_1_1Data_1a2a69987a5536ded81cc5f35dbc18baa5" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_CIC_move::Data</scope><name>zmin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

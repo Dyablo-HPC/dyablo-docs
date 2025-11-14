@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1InitialConditions__restart" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::InitialConditions_restart</compoundname>
+    <basecompoundref refid="classdyablo_1_1InitialConditions" prot="public" virt="non-virtual">dyablo::InitialConditions</basecompoundref>
+    <innerclass refid="structdyablo_1_1InitialConditions__restart_1_1Data" prot="private">dyablo::InitialConditions_restart::Data</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__restart_1a95d3cbc2a723996bda57c6bb2f92bd39" prot="private" static="no" mutable="no">
+        <type>struct dyablo::InitialConditions_restart::Data</type>
+        <definition>struct dyablo::InitialConditions_restart::Data dyablo::InitialConditions_restart::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>dyablo::InitialConditions_restart::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" line="190" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__restart_1ad5c5f0654a94bc50a9bd894437a7f03a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::InitialConditions_restart::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <qualifiedname>dyablo::InitialConditions_restart::filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" line="191" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__restart_1a270a964286201dff2e7a2fee0941829a" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1ForeachParticle" kindref="compound">ForeachParticle</ref></type>
+        <definition>ForeachParticle dyablo::InitialConditions_restart::foreach_particle</definition>
+        <argsstring></argsstring>
+        <name>foreach_particle</name>
+        <qualifiedname>dyablo::InitialConditions_restart::foreach_particle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" line="192" column="21" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__restart_1a68220294f72b74339b1b80e141107d83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::InitialConditions_restart::InitialConditions_restart</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>InitialConditions_restart</name>
+        <qualifiedname>dyablo::InitialConditions_restart::InitialConditions_restart</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" line="194" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" bodystart="194" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__restart_1a4e93afd5e0aeee1063c02f690b5d3df1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::InitialConditions_restart::init</definition>
+        <argsstring>(UserData &amp;U)</argsstring>
+        <name>init</name>
+        <qualifiedname>dyablo::InitialConditions_restart::init</qualifiedname>
+        <reimplements refid="classdyablo_1_1InitialConditions_1a20889de941f815d050a2f29d8f312d28">init</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" line="207" column="8" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" bodystart="207" bodyend="337"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_restart</label>
+        <link refid="classdyablo_1_1InitialConditions__restart"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_restart</label>
+        <link refid="classdyablo_1_1InitialConditions__restart"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" line="185" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp" bodystart="185" bodyend="338"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1InitialConditions__restart_1a95d3cbc2a723996bda57c6bb2f92bd39" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_restart</scope><name>data</name></member>
+      <member refid="classdyablo_1_1InitialConditions__restart_1ad5c5f0654a94bc50a9bd894437a7f03a" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_restart</scope><name>filename</name></member>
+      <member refid="classdyablo_1_1InitialConditions__restart_1a270a964286201dff2e7a2fee0941829a" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_restart</scope><name>foreach_particle</name></member>
+      <member refid="classdyablo_1_1InitialConditions__restart_1a4e93afd5e0aeee1063c02f690b5d3df1" prot="public" virt="virtual"><scope>dyablo::InitialConditions_restart</scope><name>init</name></member>
+      <member refid="classdyablo_1_1InitialConditions__restart_1a68220294f72b74339b1b80e141107d83" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_restart</scope><name>InitialConditions_restart</name></member>
+      <member refid="classdyablo_1_1InitialConditions_1a49242f31b906aa339374199c2ff18b96" prot="public" virt="virtual"><scope>dyablo::InitialConditions_restart</scope><name>~InitialConditions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

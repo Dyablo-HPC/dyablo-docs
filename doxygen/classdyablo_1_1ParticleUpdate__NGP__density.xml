@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ParticleUpdate__NGP__density" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::ParticleUpdate_NGP_density</compoundname>
+    <basecompoundref refid="classdyablo_1_1ParticleUpdate" prot="public" virt="non-virtual">dyablo::ParticleUpdate</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1ParticleUpdate__NGP__density_1a23faf5f1d2277febc9823cac764b01e2" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::ParticleUpdate_NGP_density::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_density::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" line="60" column="15" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParticleUpdate__NGP__density_1aa114999412d2304811dbe22931e8f987" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1ForeachParticle" kindref="compound">ForeachParticle</ref></type>
+        <definition>ForeachParticle dyablo::ParticleUpdate_NGP_density::foreach_particle</definition>
+        <argsstring></argsstring>
+        <name>foreach_particle</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_density::foreach_particle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" line="61" column="19" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParticleUpdate__NGP__density_1aec9e9a554d231b2c64e53ddbac2383db" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::ParticleUpdate_NGP_density::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_density::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" line="62" column="10" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ParticleUpdate__NGP__density_1a3acc284faf59e35d5dc28f2c0157ddaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleUpdate_NGP_density::ParticleUpdate_NGP_density</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>ParticleUpdate_NGP_density</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_density::ParticleUpdate_NGP_density</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" line="9" column="3" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" bodystart="9" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleUpdate__NGP__density_1afb6d69a205ab22bb94754b86247e3b93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleUpdate_NGP_density::~ParticleUpdate_NGP_density</definition>
+        <argsstring>()</argsstring>
+        <name>~ParticleUpdate_NGP_density</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_density::~ParticleUpdate_NGP_density</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" line="18" column="3" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleUpdate__NGP__density_1aabe84e2cc22ae689c20f13aba1b5800d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::ParticleUpdate_NGP_density::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_density::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1ParticleUpdate_1a9415a4b998b34df4de9d0e67bd1e2047">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" line="20" column="8" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" bodystart="20" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::ParticleUpdate</label>
+        <link refid="classdyablo_1_1ParticleUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParticleUpdate_NGP_density</label>
+        <link refid="classdyablo_1_1ParticleUpdate__NGP__density"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::ParticleUpdate</label>
+        <link refid="classdyablo_1_1ParticleUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParticleUpdate_NGP_density</label>
+        <link refid="classdyablo_1_1ParticleUpdate__NGP__density"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_density.cpp" bodystart="7" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__density_1a23faf5f1d2277febc9823cac764b01e2" prot="private" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_density</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__density_1aa114999412d2304811dbe22931e8f987" prot="private" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_density</scope><name>foreach_particle</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__density_1a3acc284faf59e35d5dc28f2c0157ddaf" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_density</scope><name>ParticleUpdate_NGP_density</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__density_1aec9e9a554d231b2c64e53ddbac2383db" prot="private" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_density</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__density_1aabe84e2cc22ae689c20f13aba1b5800d" prot="public" virt="virtual"><scope>dyablo::ParticleUpdate_NGP_density</scope><name>update</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate_1a95712942817575aadc61e9e40f28d203" prot="public" virt="virtual"><scope>dyablo::ParticleUpdate_NGP_density</scope><name>~ParticleUpdate</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__density_1afb6d69a205ab22bb94754b86247e3b93" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_density</scope><name>~ParticleUpdate_NGP_density</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

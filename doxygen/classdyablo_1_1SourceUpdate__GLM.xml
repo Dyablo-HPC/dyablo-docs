@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1SourceUpdate__GLM" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::SourceUpdate_GLM</compoundname>
+    <basecompoundref refid="classdyablo_1_1SourceUpdate" prot="public" virt="non-virtual">dyablo::SourceUpdate</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__GLM_1a1f3c2f7080a6b60696fc2d7cf38a8e4d" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::SourceUpdate_GLM::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="17" column="15" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__GLM_1a1e65c0d183e4e918ad37e16f9840a5f0" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::SourceUpdate_GLM::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="18" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__GLM_1a34ba4616aeda69aaa027933bc1007439" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_GLM::base_c_h</definition>
+        <argsstring></argsstring>
+        <name>base_c_h</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::base_c_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="20" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__GLM_1ad4c3339e6f1f5539229414e073e82ab4" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_GLM::c_r</definition>
+        <argsstring></argsstring>
+        <name>c_r</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::c_r</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="21" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__GLM_1aa48baf2e083bdbb312e6f6595b26f107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::SourceUpdate_GLM::SourceUpdate_GLM</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>SourceUpdate_GLM</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::SourceUpdate_GLM</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="23" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="23" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__GLM_1ab0f48c7fa364829bfd1be1dacddecda2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::SourceUpdate_GLM::~SourceUpdate_GLM</definition>
+        <argsstring>()</argsstring>
+        <name>~SourceUpdate_GLM</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::~SourceUpdate_GLM</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="62" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__GLM_1a653a5b96dbe3fadcaacfb293b3e00c33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::SourceUpdate_GLM::update_aux</definition>
+        <argsstring>(UserData &amp;U, real_t dt)</argsstring>
+        <name>update_aux</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::update_aux</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="65" column="8" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="65" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__GLM_1a7ee72708cecc5f2c72d220b4f7982f23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::SourceUpdate_GLM::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::SourceUpdate_GLM::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1SourceUpdate_1adf652efd434405d92080ba26647a879c">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="89" column="8" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="89" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>GLM parabolic cleaning term. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This plugin participates in the divergence cleaning of MHD runs by applying the parabolic source term of GLMMHD equations. Dedner et al., &quot;Hyperbolic Divergence Cleaning for the MHD Equations&quot;, 2002 Mignone et al., &quot;High-order conservative finite difference GLM–MHD schemes for cell-centered MHD&quot;, 2010 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::SourceUpdate</label>
+        <link refid="classdyablo_1_1SourceUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::SourceUpdate_GLM</label>
+        <link refid="classdyablo_1_1SourceUpdate__GLM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::SourceUpdate</label>
+        <link refid="classdyablo_1_1SourceUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::SourceUpdate_GLM</label>
+        <link refid="classdyablo_1_1SourceUpdate__GLM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_GLM.cpp" bodystart="15" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1a34ba4616aeda69aaa027933bc1007439" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>base_c_h</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1ad4c3339e6f1f5539229414e073e82ab4" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>c_r</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1a1f3c2f7080a6b60696fc2d7cf38a8e4d" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1aa48baf2e083bdbb312e6f6595b26f107" prot="public" virt="non-virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>SourceUpdate_GLM</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1a1e65c0d183e4e918ad37e16f9840a5f0" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1a7ee72708cecc5f2c72d220b4f7982f23" prot="public" virt="virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>update</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1a653a5b96dbe3fadcaacfb293b3e00c33" prot="public" virt="non-virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>update_aux</name></member>
+      <member refid="classdyablo_1_1SourceUpdate_1a9a85905bd78000faa09fc4a4aec39d9c" prot="public" virt="virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>~SourceUpdate</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__GLM_1ab0f48c7fa364829bfd1be1dacddecda2" prot="public" virt="non-virtual"><scope>dyablo::SourceUpdate_GLM</scope><name>~SourceUpdate_GLM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

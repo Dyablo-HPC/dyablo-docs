@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicUpdate_hancock_oneneighbor</compoundname>
+    <basecompoundref refid="classdyablo_1_1HyperbolicUpdate" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename Policy</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1a0a991f0b0cd1a07bf0160fef1854e492" prot="public" static="no">
+        <type>typename Policy::PrimState</type>
+        <definition>using dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;::PrimState =  typename Policy::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_hancock_oneneighbor::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="44" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ad0397d9f0bb9e5b866c2cd1b6b7779e7" prot="public" static="no">
+        <type>typename Policy::ConsState</type>
+        <definition>using dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;::ConsState =  typename Policy::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_hancock_oneneighbor::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="45" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1aba566bc3566b8d4e607b74be5dfcac2a" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_hancock_oneneighbor::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="315" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab83aba0a1276e987987be217ccdc48c5" prot="private" static="no" mutable="no">
+        <type>Policy::Params</type>
+        <definition>Policy::Params dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;::policy_params</definition>
+        <argsstring></argsstring>
+        <name>policy_params</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_hancock_oneneighbor::policy_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="316" column="29" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ac5b3da2943b127795d85daf6f61d7d92" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_hancock_oneneighbor::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="317" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="317" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab3d2788bf06eea89fdfcd4665f6c66d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;::HyperbolicUpdate_hancock_oneneighbor</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>HyperbolicUpdate_hancock_oneneighbor</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_hancock_oneneighbor::HyperbolicUpdate_hancock_oneneighbor</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="47" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab33c9be39d211329a18ce727dc6e9236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_hancock_oneneighbor::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1HyperbolicUpdate_1ac76f22f39d55840fdf90e1abef294cfe">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="56" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="56" bodyend="313"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Solves the equations with a Hancock timestepping on small blocks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This solver should only be used for comparison with cell-based AMR as it is the only one allowing for bx=by=bz=1. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicUpdate_hancock_oneneighbor&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="42" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="42" bodyend="318"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ad0397d9f0bb9e5b866c2cd1b6b7779e7" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1aba566bc3566b8d4e607b74be5dfcac2a" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab3d2788bf06eea89fdfcd4665f6c66d0" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>HyperbolicUpdate_hancock_oneneighbor</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab83aba0a1276e987987be217ccdc48c5" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>policy_params</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1a0a991f0b0cd1a07bf0160fef1854e492" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ac5b3da2943b127795d85daf6f61d7d92" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__hancock__oneneighbor_1ab33c9be39d211329a18ce727dc6e9236" prot="public" virt="virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>update</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" virt="virtual"><scope>dyablo::HyperbolicUpdate_hancock_oneneighbor</scope><name>~HyperbolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

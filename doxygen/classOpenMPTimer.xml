@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classOpenMPTimer" kind="class" language="C++" prot="public">
+    <compoundname>OpenMPTimer</compoundname>
+    <includes refid="OpenMPTimer_8h" local="no">OpenMPTimer.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenMPTimer_1a56ebec89781020e396304d255b561c8b" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMPTimer::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <qualifiedname>OpenMPTimer::start_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="41" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMPTimer_1af3091e4c12b4f11d8abb66baec5fa835" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMPTimer::total_time</definition>
+        <argsstring></argsstring>
+        <name>total_time</name>
+        <qualifiedname>OpenMPTimer::total_time</qualifiedname>
+        <briefdescription>
+<para>store total accumulated timings </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="44" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMPTimer_1ae32054c01b8fa929a8fb7590c22fbf14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMPTimer::OpenMPTimer</definition>
+        <argsstring>()</argsstring>
+        <name>OpenMPTimer</name>
+        <qualifiedname>OpenMPTimer::OpenMPTimer</qualifiedname>
+        <briefdescription>
+<para>default constructor, timing starts rightaway </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="22" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.cpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMPTimer_1a0c2c1548a355067dd0ecd7ccf63b1c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMPTimer::OpenMPTimer</definition>
+        <argsstring>(double t)</argsstring>
+        <name>OpenMPTimer</name>
+        <qualifiedname>OpenMPTimer::OpenMPTimer</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>initialize total time </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="25" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.cpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMPTimer_1aca2af3ba72b4b7f318258994436f48fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMPTimer::OpenMPTimer</definition>
+        <argsstring>(const OpenMPTimer &amp;aTimer)</argsstring>
+        <name>OpenMPTimer</name>
+        <qualifiedname>OpenMPTimer::OpenMPTimer</qualifiedname>
+        <param>
+          <type>const <ref refid="classOpenMPTimer" kindref="compound">OpenMPTimer</ref> &amp;</type>
+          <declname>aTimer</declname>
+        </param>
+        <briefdescription>
+<para>copy constructor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="28" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.cpp" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMPTimer_1a496b0563e65d2cdffdc9336d38ad8027" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>OpenMPTimer::~OpenMPTimer</definition>
+        <argsstring>()</argsstring>
+        <name>~OpenMPTimer</name>
+        <qualifiedname>OpenMPTimer::~OpenMPTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="29" column="11" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMPTimer_1a33fbaec205d7b995f2d236f9cab6bb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMPTimer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>OpenMPTimer::start</qualifiedname>
+        <briefdescription>
+<para>start time measure </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="32" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.cpp" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMPTimer_1a04dd2c79cef766787277ad4eac79c6a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMPTimer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>OpenMPTimer::stop</qualifiedname>
+        <briefdescription>
+<para>stop time measure and add result to total_time </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="35" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.cpp" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMPTimer_1a5bd052c8ccfed1b7106e1fc50027fc72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMPTimer::elapsed</definition>
+        <argsstring>() const</argsstring>
+        <name>elapsed</name>
+        <qualifiedname>OpenMPTimer::elapsed</qualifiedname>
+        <briefdescription>
+<para>return elapsed time in seconds (as stored in total_time) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="38" column="18" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.cpp" bodystart="72" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>a simple Timer class. If MPI is enabled, should we use MPI_WTime instead of gettimeofday (?!?) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" line="18" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/OpenMPTimer.h" bodystart="19" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classOpenMPTimer_1a5bd052c8ccfed1b7106e1fc50027fc72" prot="public" virt="virtual"><scope>OpenMPTimer</scope><name>elapsed</name></member>
+      <member refid="classOpenMPTimer_1ae32054c01b8fa929a8fb7590c22fbf14" prot="public" virt="non-virtual"><scope>OpenMPTimer</scope><name>OpenMPTimer</name></member>
+      <member refid="classOpenMPTimer_1a0c2c1548a355067dd0ecd7ccf63b1c5b" prot="public" virt="non-virtual"><scope>OpenMPTimer</scope><name>OpenMPTimer</name></member>
+      <member refid="classOpenMPTimer_1aca2af3ba72b4b7f318258994436f48fd" prot="public" virt="non-virtual"><scope>OpenMPTimer</scope><name>OpenMPTimer</name></member>
+      <member refid="classOpenMPTimer_1a33fbaec205d7b995f2d236f9cab6bb52" prot="public" virt="virtual"><scope>OpenMPTimer</scope><name>start</name></member>
+      <member refid="classOpenMPTimer_1a56ebec89781020e396304d255b561c8b" prot="protected" virt="non-virtual"><scope>OpenMPTimer</scope><name>start_time</name></member>
+      <member refid="classOpenMPTimer_1a04dd2c79cef766787277ad4eac79c6a9" prot="public" virt="virtual"><scope>OpenMPTimer</scope><name>stop</name></member>
+      <member refid="classOpenMPTimer_1af3091e4c12b4f11d8abb66baec5fa835" prot="protected" virt="non-virtual"><scope>OpenMPTimer</scope><name>total_time</name></member>
+      <member refid="classOpenMPTimer_1a496b0563e65d2cdffdc9336d38ad8027" prot="public" virt="virtual"><scope>OpenMPTimer</scope><name>~OpenMPTimer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

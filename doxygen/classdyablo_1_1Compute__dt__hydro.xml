@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Compute__dt__hydro" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::Compute_dt_hydro</compoundname>
+    <basecompoundref refid="classdyablo_1_1Compute__dt" prot="public" virt="non-virtual">dyablo::Compute_dt</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__hydro_1a9af03a109294d4c6a6a7d20f8de43b0b" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::Compute_dt_hydro::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="128" column="15" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__hydro_1ac7c37c0883a0dcc681a23b5824f82710" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_hydro::cfl</definition>
+        <argsstring></argsstring>
+        <name>cfl</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::cfl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="130" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__hydro_1a669cdc0c17ecf99094b93ec2a8c9fd8d" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_hydro::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="131" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__hydro_1a46456352b17290e3070a2dafd1673658" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_hydro::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="131" column="17" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__hydro_1a9dc4f57908beda7ca8cafc30362222cd" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_hydro::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="131" column="24" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__hydro_1a71abb6e760df51a777f4bd144138c3c4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::Compute_dt_hydro::has_mhd</definition>
+        <argsstring></argsstring>
+        <name>has_mhd</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::has_mhd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="132" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__hydro_1add28d1c5a52afaf0342debd0e4f94f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Compute_dt_hydro::Compute_dt_hydro</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>Compute_dt_hydro</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::Compute_dt_hydro</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="22" column="3" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="22" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__hydro_1a67ceb1ecab7c630140cc8bace90bf8fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::Compute_dt_hydro::compute_dt</definition>
+        <argsstring>(const UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>compute_dt</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::compute_dt</qualifiedname>
+        <reimplements refid="classdyablo_1_1Compute__dt_1a4d5c4db5ef4b82127137594b4027d891">compute_dt</reimplements>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="39" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="39" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__hydro_1a7ebc3e1e0dc35762985f3fee00fde306" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename State</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double dyablo::Compute_dt_hydro::compute_dt_aux</definition>
+        <argsstring>(const UserData &amp;U)</argsstring>
+        <name>compute_dt_aux</name>
+        <qualifiedname>dyablo::Compute_dt_hydro::compute_dt_aux</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="57" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="57" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Timestep limiter for (magneto)hydrodynamics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Limits the timestep according to the CFL condition. The limitation is of the form dt = C * min_h(d_h / |lambda_h|) with : . C a constant factor &lt; 1, . d_h the cell_size along direction h, . lambda_h the maximum signal speed in that direction </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_hydro</label>
+        <link refid="classdyablo_1_1Compute__dt__hydro"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_hydro</label>
+        <link refid="classdyablo_1_1Compute__dt__hydro"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" line="19" column="1" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_hydro.cpp" bodystart="20" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1ac7c37c0883a0dcc681a23b5824f82710" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>cfl</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1a67ceb1ecab7c630140cc8bace90bf8fa" prot="public" virt="virtual"><scope>dyablo::Compute_dt_hydro</scope><name>compute_dt</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1a7ebc3e1e0dc35762985f3fee00fde306" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>compute_dt_aux</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1add28d1c5a52afaf0342debd0e4f94f1a" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>Compute_dt_hydro</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1a9af03a109294d4c6a6a7d20f8de43b0b" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1a669cdc0c17ecf99094b93ec2a8c9fd8d" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>gamma0</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1a71abb6e760df51a777f4bd144138c3c4" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>has_mhd</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1a9dc4f57908beda7ca8cafc30362222cd" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>smallc</name></member>
+      <member refid="classdyablo_1_1Compute__dt__hydro_1a46456352b17290e3070a2dafd1673658" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_hydro</scope><name>smallr</name></member>
+      <member refid="classdyablo_1_1Compute__dt_1a8ff850a48ff27f842d5d8aa3893b7588" prot="public" virt="virtual"><scope>dyablo::Compute_dt_hydro</scope><name>~Compute_dt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

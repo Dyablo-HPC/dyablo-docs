@@ -1,0 +1,847 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="ForeachCell_8h" kind="file" language="C++">
+    <compoundname>ForeachCell.h</compoundname>
+    <includes refid="AMRBlockForeachCell__group_8h" local="yes">AMRBlockForeachCell_group.h</includes>
+    <includedby refid="DyabloTimeLoop_8h" local="yes">/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</includedby>
+    <includedby refid="UserData__fields_8h" local="yes">/builds/dyablo/dyablo/core/src/UserData_fields.h</includedby>
+    <includedby refid="UserData__particles_8h" local="yes">/builds/dyablo/dyablo/core/src/UserData_particles.h</includedby>
+    <includedby refid="CellIndexRemapper_8h" local="yes">/builds/dyablo/dyablo/core/src/amr/CellIndexRemapper.h</includedby>
+    <includedby refid="MapUserData__base_8h" local="yes">/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</includedby>
+    <includedby refid="Compute__dt__base_8h" local="yes">/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</includedby>
+    <includedby refid="GravitySolver__base_8h" local="yes">/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</includedby>
+    <includedby refid="HyperbolicPolicy__base_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</includedby>
+    <includedby refid="HyperbolicUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</includedby>
+    <includedby refid="HyperbolicUpdate__hancock__oneneighbor_8cpp" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp</includedby>
+    <includedby refid="InitialConditions__analytical_8h" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h</includedby>
+    <includedby refid="InitialConditions__base_8h" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</includedby>
+    <includedby refid="InitialConditions__particle__grid_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp</includedby>
+    <includedby refid="InitialConditions__restart_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_restart.cpp</includedby>
+    <includedby refid="InitialConditions__simple__particles_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_simple_particles.cpp</includedby>
+    <includedby refid="InitialConditions__tiled__restart_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_tiled_restart.cpp</includedby>
+    <includedby refid="InitialConditions__zeldovitch__particles_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_zeldovitch_particles.cpp</includedby>
+    <includedby refid="IOManager__base_8h" local="yes">/builds/dyablo/dyablo/core/src/io/IOManager_base.h</includedby>
+    <includedby refid="IOManager__hdf5_8cpp" local="yes">/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp</includedby>
+    <includedby refid="DerivedFields__base_8h" local="yes">/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</includedby>
+    <includedby refid="GhostCommunicator__partial__blocks_8h" local="yes">/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h</includedby>
+    <includedby refid="ParabolicTerm__thermal__conduction_8h" local="yes">/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</includedby>
+    <includedby refid="ParabolicTerm__viscosity_8h" local="yes">/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</includedby>
+    <includedby refid="ParabolicUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</includedby>
+    <includedby refid="ParabolicUpdate__explicit_8cpp" local="yes">/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp</includedby>
+    <includedby refid="ParticleUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</includedby>
+    <includedby refid="RefineCondition__base_8h" local="yes">/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</includedby>
+    <includedby refid="RefineCondition__downflows_8cpp" local="yes">/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp</includedby>
+    <includedby refid="RefineCondition__helper_8h" local="yes">/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_helper.h</includedby>
+    <includedby refid="RefineCondition__mass_8cpp" local="yes">/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp</includedby>
+    <includedby refid="RefineCondition__pseudo__gradient_8cpp" local="yes">/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_pseudo_gradient.cpp</includedby>
+    <includedby refid="RefineCondition__second__derivative__error_8cpp" local="yes">/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp</includedby>
+    <includedby refid="SourceUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="39">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="50">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="28">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="24">
+        <label>algorithm</label>
+      </node>
+      <node id="34">
+        <label>any</label>
+      </node>
+      <node id="46">
+        <label>array</label>
+      </node>
+      <node id="37">
+        <label>cassert</label>
+      </node>
+      <node id="43">
+        <label>cstddef</label>
+      </node>
+      <node id="42">
+        <label>cstdint</label>
+      </node>
+      <node id="20">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>iomanip</label>
+      </node>
+      <node id="10">
+        <label>iosfwd</label>
+      </node>
+      <node id="19">
+        <label>iostream</label>
+      </node>
+      <node id="23">
+        <label>limits</label>
+      </node>
+      <node id="18">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="45">
+        <label>memory</label>
+      </node>
+      <node id="13">
+        <label>set</label>
+      </node>
+      <node id="21">
+        <label>sstream</label>
+      </node>
+      <node id="30">
+        <label>stdio.h</label>
+      </node>
+      <node id="16">
+        <label>string</label>
+      </node>
+      <node id="25">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>unordered_map</label>
+      </node>
+      <node id="40">
+        <label>utility</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</label>
+        <link refid="DyabloTimeLoop_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/builds/dyablo/dyablo/core/src/UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/builds/dyablo/dyablo/core/src/amr/CellIndexRemapper.h</label>
+        <link refid="CellIndexRemapper_8h_source"/>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData.h</label>
+        <link refid="MapUserData_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</label>
+        <link refid="MapUserData__base_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt.h</label>
+        <link refid="Compute__dt_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</label>
+        <link refid="Compute__dt__base_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver.h</label>
+        <link refid="GravitySolver_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</label>
+        <link refid="GravitySolver__base_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.h</label>
+        <link refid="GravitySolver__cg_8h_source"/>
+      </node>
+      <node id="25">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/HyperbolicUpdate.h</label>
+        <link refid="HyperbolicUpdate_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</label>
+        <link refid="HyperbolicUpdate__base_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_RK2.h</label>
+        <link refid="Hyperbolic__RK2_8h_source"/>
+      </node>
+      <node id="27">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler.h</label>
+        <link refid="Hyperbolic__euler_8h_source"/>
+      </node>
+      <node id="28">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h</label>
+        <link refid="Hyperbolic__euler__nopatch_8h_source"/>
+      </node>
+      <node id="29">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_hancock.h</label>
+        <link refid="Hyperbolic__hancock_8h_source"/>
+      </node>
+      <node id="30">
+        <label>/builds/dyablo/dyablo/core/src/init/AnalyticalFormula.h</label>
+        <link refid="AnalyticalFormula_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions.h</label>
+        <link refid="InitialConditions_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h</label>
+        <link refid="InitialConditions__analytical_8h_source"/>
+      </node>
+      <node id="32">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h</label>
+        <link refid="InitialConditions__uniform_8h_source"/>
+      </node>
+      <node id="19">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="36">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager.h</label>
+        <link refid="IOManager_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager_base.h</label>
+        <link refid="IOManager__base_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields.h</label>
+        <link refid="DerivedFields_8h_source"/>
+      </node>
+      <node id="37">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</label>
+        <link refid="DerivedFields__base_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h</label>
+        <link refid="GhostCommunicator_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h</label>
+        <link refid="GhostCommunicator__full__blocks_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h</label>
+        <link refid="GhostCommunicator__partial__blocks_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="21">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</label>
+        <link refid="ParabolicTerm__viscosity_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate.h</label>
+        <link refid="ParabolicUpdate_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</label>
+        <link refid="ParabolicUpdate__base_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate.h</label>
+        <link refid="ParticleUpdate_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</label>
+        <link refid="ParticleUpdate__base_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition.h</label>
+        <link refid="RefineCondition_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</label>
+        <link refid="RefineCondition__base_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_helper.h</label>
+        <link refid="RefineCondition__helper_8h_source"/>
+      </node>
+      <node id="47">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate.h</label>
+        <link refid="SourceUpdate_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</label>
+        <link refid="SourceUpdate__base_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="20">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ForeachCell_8h_1aafb64ca435a32f7a38a549492d8b2ca1" prot="public" static="no">
+        <name>DYABLO_USE_AMRBlockForeachCell_group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h" line="3" column="9" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedyablo_1a1b2b2bb73e61757f34d6ed7fc222f329" prot="public" static="no">
+        <type>AMRBlockForeachCell_group</type>
+        <definition>using dyablo::ForeachCell =  AMRBlockForeachCell_group</definition>
+        <argsstring></argsstring>
+        <name>ForeachCell</name>
+        <qualifiedname>dyablo::ForeachCell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DYABLO_USE_AMRBlockForeachCell_group</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(DYABLO_USE_AMRBlockForeachCell_group)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AMRBlockForeachCell_group.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ForeachCell<sp/>=<sp/>AMRBlockForeachCell_group;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(DYABLO_USE_AMRBlockForeachCell_scratch)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AMRBlockForeachCell_scratch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ForeachCell<sp/>=<sp/>AMRBlockForeachCell_scratch;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;No<sp/>ForeachCell<sp/>defined&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h"/>
+  </compounddef>
+</doxygen>

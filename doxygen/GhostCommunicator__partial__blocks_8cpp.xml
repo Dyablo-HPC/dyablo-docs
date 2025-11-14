@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="GhostCommunicator__partial__blocks_8cpp" kind="file" language="C++">
+    <compoundname>GhostCommunicator_partial_blocks.cpp</compoundname>
+    <includes refid="GhostCommunicator__partial__blocks_8h" local="yes">GhostCommunicator_partial_blocks.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="41">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.cpp</label>
+        <link refid="GhostCommunicator__partial__blocks_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GhostCommunicator_partial_blocks.h</label>
+        <link refid="GhostCommunicator__partial__blocks_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="52">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="30">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="26">
+        <label>algorithm</label>
+      </node>
+      <node id="36">
+        <label>any</label>
+      </node>
+      <node id="48">
+        <label>array</label>
+      </node>
+      <node id="39">
+        <label>cassert</label>
+      </node>
+      <node id="45">
+        <label>cstddef</label>
+      </node>
+      <node id="44">
+        <label>cstdint</label>
+      </node>
+      <node id="22">
+        <label>fstream</label>
+      </node>
+      <node id="24">
+        <label>iomanip</label>
+      </node>
+      <node id="13">
+        <label>iosfwd</label>
+      </node>
+      <node id="21">
+        <label>iostream</label>
+      </node>
+      <node id="25">
+        <label>limits</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>math.h</label>
+      </node>
+      <node id="47">
+        <label>memory</label>
+      </node>
+      <node id="16">
+        <label>set</label>
+      </node>
+      <node id="23">
+        <label>sstream</label>
+      </node>
+      <node id="32">
+        <label>stdio.h</label>
+      </node>
+      <node id="18">
+        <label>string</label>
+      </node>
+      <node id="27">
+        <label>type_traits</label>
+      </node>
+      <node id="15">
+        <label>unordered_map</label>
+      </node>
+      <node id="42">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedyablo_1adc4a5a7792dd0bf0ad9be38835ee6ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::precompute_facemask_cells</definition>
+        <argsstring>(uint32_t bx, uint32_t by, uint32_t bz, uint32_t ghost_count, Kokkos::View&lt; uint32_t * &gt; &amp;facemask_count, Kokkos::View&lt; uint32_t **, Kokkos::LayoutRight &gt; &amp;facemask_iCells)</argsstring>
+        <name>precompute_facemask_cells</name>
+        <qualifiedname>dyablo::precompute_facemask_cells</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>bx</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>by</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bz</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ghost_count</declname>
+        </param>
+        <param>
+          <type>Kokkos::View&lt; uint32_t * &gt; &amp;</type>
+          <declname>facemask_count</declname>
+        </param>
+        <param>
+          <type>Kokkos::View&lt; uint32_t **, Kokkos::LayoutRight &gt; &amp;</type>
+          <declname>facemask_iCells</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.cpp" line="5" column="6" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.cpp" bodystart="5" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;GhostCommunicator_partial_blocks.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>precompute_facemask_cells(<sp/>uint32_t<sp/>bx,<sp/>uint32_t<sp/>by,<sp/>uint32_t<sp/>bz,<sp/>uint32_t<sp/>ghost_count,<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;&amp;<sp/>facemask_count,<sp/>Kokkos::View&lt;uint32_t**,<sp/>Kokkos::LayoutRight&gt;&amp;<sp/>facemask_iCells<sp/>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellMask<sp/>=<sp/>AMRmesh::GhostMap_t::CellMask;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Face<sp/>=<sp/>AMRmesh::GhostMap_t::Face;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>facemask_count_host<sp/>=<sp/>Kokkos::create_mirror_view(facemask_count);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>face<sp/>is<sp/>included<sp/>in<sp/>mask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>has_face<sp/>=<sp/>[](CellMask<sp/>mask,<sp/>Face<sp/>face){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mask<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>face);<sp/>};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>cells<sp/>of<sp/>block<sp/>to<sp/>facemask_*<sp/>delimited<sp/>by<sp/>region<sp/>(xmin:xmax,<sp/>...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>add_cells<sp/>=<sp/>[&amp;](CellMask<sp/>mask,<sp/>uint32_t<sp/>xmin,<sp/>uint32_t<sp/>xmax,<sp/>uint32_t<sp/>ymin,<sp/>uint32_t<sp/>ymax,<sp/>uint32_t<sp/>zmin,<sp/>uint32_t<sp/>zmax)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_DEBUG(<sp/>xmin<sp/>&lt;=<sp/>xmax<sp/>&amp;&amp;<sp/>xmax<sp/>&lt;=<sp/>bx,<sp/></highlight><highlight class="stringliteral">&quot;add_cells,<sp/>xmin,<sp/>xmax<sp/>error,<sp/>should<sp/>have<sp/>0<sp/>&lt;=<sp/>xmin<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>xmin<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>&lt;=<sp/>xmax<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>xmax<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>&lt;=<sp/>bx<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_DEBUG(<sp/>ymin<sp/>&lt;=<sp/>ymax<sp/>&amp;&amp;<sp/>ymax<sp/>&lt;=<sp/>by,<sp/></highlight><highlight class="stringliteral">&quot;add_cells,<sp/>ymin,<sp/>ymax<sp/>error,<sp/>should<sp/>have<sp/>0<sp/>&lt;=<sp/>ymin<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ymin<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>&lt;=<sp/>ymax<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ymax<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>&lt;=<sp/>by<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>by<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_DEBUG(<sp/>zmin<sp/>&lt;=<sp/>zmax<sp/>&amp;&amp;<sp/>zmax<sp/>&lt;=<sp/>bz,<sp/></highlight><highlight class="stringliteral">&quot;add_cells,<sp/>zmin,<sp/>zmax<sp/>error,<sp/>should<sp/>have<sp/>0<sp/>&lt;=<sp/>zmin<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>zmin<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>&lt;=<sp/>zmax<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>zmax<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>&lt;=<sp/>bz<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bz<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>dx<sp/>=<sp/>(xmax-xmin);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>dy<sp/>=<sp/>(ymax-ymin);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>dz<sp/>=<sp/>(zmax-zmin);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>i0<sp/>=<sp/>facemask_count_host(mask);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>facemask_count_host(mask)<sp/>+=<sp/>dx*dy*dz;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_for(<sp/></highlight><highlight class="stringliteral">&quot;add_cells&quot;</highlight><highlight class="normal">,<sp/>dx*dy*dz,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/>uint32_t<sp/>i<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>x<sp/>=<sp/>i%dx;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>y<sp/>=<sp/>(i/dx)%dy;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>z<sp/>=<sp/>(i/dx)/dy;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>xmin;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>+=<sp/>ymin;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>z<sp/>+=<sp/>zmin;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iCell<sp/>=<sp/>x<sp/>+<sp/>bx*y<sp/>+<sp/>bx*by*z;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>i0<sp/>+<sp/>i<sp/>&lt;<sp/>facemask_iCells.extent(1),<sp/></highlight><highlight class="stringliteral">&quot;precompute_facemask_cells<sp/>:<sp/>too<sp/>many<sp/>cells&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>facemask_iCells(mask,<sp/>i0<sp/>+<sp/>i)<sp/>=<sp/>iCell;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>masks_count<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>Face::FACE_COUNT);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>ghost_count<sp/>&lt;=<sp/>bx<sp/>||<sp/>ghost_count<sp/>&lt;=<sp/>by,<sp/></highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::init<sp/>:<sp/>ghost_count<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;ghost_count&lt;&lt;</highlight><highlight class="stringliteral">&quot;)<sp/>not<sp/>compatible<sp/>with<sp/>block<sp/>size<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>by<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bz<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>CellMask<sp/>mask<sp/>=<sp/>1;<sp/>mask<sp/>&lt;<sp/>masks_count;<sp/>mask++<sp/><sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Uncomment<sp/>to<sp/>add<sp/>full<sp/>block<sp/>each<sp/>time<sp/>for<sp/>debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add_cells(<sp/>mask,<sp/>0,<sp/>bx,<sp/>0,<sp/>by,<sp/>0,<sp/>bz<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>continue;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>xmin<sp/>=<sp/>0,<sp/>xmax<sp/>=<sp/>bx;<sp/></highlight><highlight class="comment">//<sp/>avoid<sp/>duplicates<sp/>:<sp/>all<sp/>cells<sp/>with<sp/>x&lt;xmin<sp/>are<sp/>already<sp/>added</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>has_face(mask,<sp/>Face::XL)<sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>xl_xmax<sp/>=<sp/>ghost_count;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_cells(<sp/>mask,<sp/>0,<sp/>xl_xmax,<sp/>0,<sp/>by,<sp/>0,<sp/>bz<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>xmin<sp/>=<sp/>xl_xmax;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>has_face(mask,<sp/>Face::XR)<sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>xr_xmin<sp/>=<sp/>std::max(<sp/>bx-ghost_count,<sp/>xmin<sp/>);<sp/></highlight><highlight class="comment">//<sp/>avoid<sp/>adding<sp/>cells<sp/>already<sp/>added<sp/>when<sp/>ghost_count<sp/>&lt;<sp/>2*bx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_cells(<sp/>mask,<sp/>xr_xmin,<sp/>bx,<sp/>0,<sp/>by,<sp/>0,<sp/>bz<sp/>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>xmax<sp/>=<sp/>xr_xmin;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ymin<sp/>=<sp/>0,<sp/>ymax<sp/>=<sp/>by;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>has_face(mask,<sp/>Face::YL)<sp/>)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>yl_ymax<sp/>=<sp/>ghost_count;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_cells(<sp/>mask,<sp/>xmin,<sp/>xmax,<sp/>0,<sp/>yl_ymax,<sp/>0,<sp/>bz<sp/>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ymin<sp/>=<sp/>yl_ymax;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>has_face(mask,<sp/>Face::YR)<sp/>)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>yr_ymin<sp/>=<sp/>std::max(<sp/>by-ghost_count,<sp/>ymin<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_cells(<sp/>mask,<sp/>xmin,<sp/>xmax,<sp/>yr_ymin,<sp/>by,<sp/>0,<sp/>bz<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ymax<sp/>=<sp/>yr_ymin;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>zmin<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>has_face(mask,<sp/>Face::ZL)<sp/>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>zl_zmax<sp/>=<sp/>std::min(<sp/>ghost_count,<sp/>bz<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_cells(<sp/>mask,<sp/>xmin,<sp/>xmax,<sp/>ymin,<sp/>ymax,<sp/>0,<sp/>zl_zmax<sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>zmin<sp/>=<sp/>zl_zmax;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>has_face(mask,<sp/>Face::ZR)<sp/>)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>zr_zmin<sp/>=<sp/>std::max(<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)bz-(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)ghost_count,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)zmin);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_cells(<sp/>mask,<sp/>xmin,<sp/>xmax,<sp/>ymin,<sp/>ymax,<sp/>zr_zmin,<sp/>bz<sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(<sp/>facemask_count,<sp/>facemask_count_host<sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">GhostCommunicator_partial_blocks::GhostCommunicator_partial_blocks(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref>&amp;<sp/>amr_mesh,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ForeachCell::CellArray_global_ghosted::Shape_t&amp;<sp/>shape,<sp/>uint32_t<sp/>ghost_count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref>&amp;<sp/>mpi_comm<sp/>)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>:<sp/>mpi_comm(mpi_comm)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>init(amr_mesh,<sp/>shape,<sp/>ghost_count,<sp/>mpi_comm);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GhostCommunicator_partial_blocks::init(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AMRmesh&amp;<sp/>amr_mesh,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ForeachCell::CellArray_global_ghosted::Shape_t&amp;<sp/>shape,<sp/>uint32_t<sp/>ghost_count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MpiComm&amp;<sp/>mpi_comm<sp/>)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">GhostMap_t<sp/>=<sp/>AMRmesh::GhostMap_t;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpi_size<sp/>=<sp/>mpi_comm.MPI_Comm_size();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>ghost_count<sp/>&lt;=<sp/>shape.bx<sp/>||<sp/>ghost_count<sp/>&lt;=<sp/>shape.by,<sp/></highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::init<sp/>:<sp/>ghost_count<sp/>(&quot;</highlight><highlight class="normal">&lt;&lt;ghost_count&lt;&lt;</highlight><highlight class="stringliteral">&quot;)<sp/>not<sp/>compatible<sp/>with<sp/>block<sp/>size<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>shape.bx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>shape.by<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>shape.bz<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Exchange<sp/>ghostmap<sp/>sizes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>GhostMap_t<sp/>ghostmap<sp/>=<sp/>amr_mesh.getGhostMap();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>ghostmap_send_sizes(<sp/>mpi_size<sp/>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ghostmap_send_sizes_host<sp/>=<sp/>Kokkos::create_mirror_view(ghostmap.send_sizes);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::deep_copy(<sp/>ghostmap_send_sizes_host,<sp/>ghostmap.send_sizes<sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;mpi_size;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ghostmap_send_sizes[i]<sp/>=<sp/>ghostmap_send_sizes_host(i);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>ghostmap_recv_sizes(<sp/>mpi_size<sp/>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>mpi_comm.MPI_Alltoall(<sp/><sp/>ghostmap_send_sizes.data(),<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ghostmap_recv_sizes.data(),<sp/>1);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>uint32_t<sp/>total_ghostmap_recv_count<sp/>=<sp/>std::accumulate(<sp/>ghostmap_recv_sizes.begin(),<sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ghostmap_recv_sizes.end(),<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellMask<sp/>=<sp/>GhostMap_t::CellMask;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>mask<sp/>to<sp/>recieving<sp/>ranks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;CellMask*&gt;&amp;<sp/>ghostmap_send_masks<sp/>=<sp/>ghostmap.send_cell_masks;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;CellMask*&gt;<sp/><sp/>ghostmap_recv_masks(</highlight><highlight class="stringliteral">&quot;ghostmap_recv_masks&quot;</highlight><highlight class="normal">,<sp/>total_ghostmap_recv_count);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>MPI_IS_CUDA_AWARE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>mpi_comm.MPI_Alltoallv(<sp/>ghostmap_send_masks.data(),<sp/>ghostmap_send_sizes.data(),</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ghostmap_recv_masks.data(),<sp/>ghostmap_recv_sizes.data());</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ghostmap_send_masks_host<sp/>=<sp/>Kokkos::create_mirror_view(ghostmap_send_masks);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ghostmap_recv_masks_host<sp/>=<sp/>Kokkos::create_mirror_view(ghostmap_recv_masks);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::deep_copy(ghostmap_send_masks_host,<sp/>ghostmap_send_masks);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>mpi_comm.MPI_Alltoallv(<sp/>ghostmap_send_masks_host.data(),<sp/>ghostmap_send_sizes.data(),<sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ghostmap_recv_masks_host.data(),<sp/>ghostmap_recv_sizes.data()<sp/>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::deep_copy(ghostmap_recv_masks,<sp/>ghostmap_recv_masks_host);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Precompute<sp/>cells<sp/>for<sp/>each<sp/>mask<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>masks_count<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>6);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_icells<sp/>=<sp/>shape.bx*shape.by*shape.bz;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>facemask_count(</highlight><highlight class="stringliteral">&quot;facemask_count&quot;</highlight><highlight class="normal">,<sp/>masks_count);</highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>cells<sp/>to<sp/>add<sp/>for<sp/>facemask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t**,<sp/>Kokkos::LayoutRight&gt;<sp/>facemask_iCells(</highlight><highlight class="stringliteral">&quot;facemask_iCells&quot;</highlight><highlight class="normal">,<sp/>masks_count,<sp/>max_icells);</highlight><highlight class="comment">//<sp/>cells<sp/>to<sp/>add<sp/>for<sp/>facemask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>precompute_facemask_cells(<sp/>shape.bx,<sp/>shape.by,<sp/>shape.bz,<sp/>ghost_count,<sp/>facemask_count,<sp/>facemask_iCells<sp/>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>list<sp/>of<sp/>cells<sp/>to<sp/>send</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>send_sizes(<sp/>mpi_size<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>send_iOct;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>send_iCell;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Count<sp/>cells<sp/>to<sp/>send<sp/>to<sp/>each<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>offset_iOct(</highlight><highlight class="stringliteral">&quot;offset_iOct&quot;</highlight><highlight class="normal">,<sp/>ghostmap.send_cell_masks.size());</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>first_rank_iOct<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank=0;<sp/>rank&lt;mpi_size;<sp/>rank++<sp/>)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::parallel_scan(</highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::count_send_cells&quot;</highlight><highlight class="normal">,<sp/>ghostmap_send_sizes[rank],</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/>uint32_t<sp/>iOct,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>count,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GhostMap_t::CellMask<sp/>facemask<sp/>=<sp/>ghostmap.send_cell_masks(first_rank_iOct+iOct);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset_iOct(<sp/>first_rank_iOct+iOct<sp/>)<sp/>=<sp/>count<sp/>+<sp/>offset;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>+=<sp/>facemask_count(facemask);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>send_sizes[rank]);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>first_rank_iOct<sp/>+=<sp/>ghostmap_send_sizes[rank];</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>offset+=send_sizes[rank];</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocate<sp/>cell<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>total_cell_count<sp/>=<sp/>std::accumulate(<sp/>send_sizes.begin(),<sp/>send_sizes.end(),<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>send_iOct<sp/>=<sp/>Kokkos::View&lt;uint32_t*&gt;(<sp/></highlight><highlight class="stringliteral">&quot;send_iOct&quot;</highlight><highlight class="normal">,<sp/>total_cell_count<sp/>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>send_iCell<sp/>=<sp/>Kokkos::View&lt;uint32_t*&gt;(<sp/></highlight><highlight class="stringliteral">&quot;send_iCell&quot;</highlight><highlight class="normal">,<sp/>total_cell_count<sp/>);<sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>cell<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_for(</highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::list_send_cells&quot;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::TeamPolicy&lt;&gt;(ghostmap.send_iOcts.size(),<sp/>Kokkos::AUTO),</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::TeamPolicy&lt;&gt;::member_type&amp;<sp/>team<sp/>)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct<sp/>=<sp/>team.league_rank();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GhostMap_t::CellMask<sp/>facemask<sp/>=<sp/>ghostmap.send_cell_masks(iOct);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iCell_begin<sp/>=<sp/>offset_iOct(iOct);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>current_send_iOct<sp/>=<sp/>ghostmap.send_iOcts(iOct);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::parallel_for(<sp/>Kokkos::TeamVectorRange(team,<sp/>facemask_count(facemask)),</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](<sp/>uint32_t<sp/>i<sp/>)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>(iCell_begin<sp/>+<sp/>i)<sp/>&lt;<sp/>total_cell_count,<sp/></highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::list_cells<sp/>out<sp/>of<sp/>bounds<sp/>&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>send_iOct(<sp/>iCell_begin<sp/>+<sp/>i<sp/>)<sp/>=<sp/>current_send_iOct;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>send_iCell(<sp/>iCell_begin<sp/>+<sp/>i<sp/>)<sp/>=<sp/>facemask_iCells(<sp/>facemask,<sp/>i);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>list<sp/>of<sp/>cells<sp/>to<sp/>recieve</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>recv_sizes(<sp/>mpi_size<sp/>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;<sp/>recv_iOcts;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;<sp/>recv_iCell;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>local_octant_count<sp/>=<sp/>total_ghostmap_recv_count;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Count<sp/>cells<sp/>to<sp/>recieve<sp/>from<sp/>each<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>offset_iOct(</highlight><highlight class="stringliteral">&quot;offset_iOct&quot;</highlight><highlight class="normal">,<sp/>ghostmap_recv_masks.size());</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>first_rank_iOct<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank=0;<sp/>rank&lt;mpi_size;<sp/>rank++<sp/>)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::parallel_scan(</highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::count_recv_cells&quot;</highlight><highlight class="normal">,<sp/>ghostmap_recv_sizes[rank],</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/>uint32_t<sp/>iOct,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>count,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GhostMap_t::CellMask<sp/>facemask<sp/>=<sp/>ghostmap_recv_masks(first_rank_iOct+iOct);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset_iOct(<sp/>first_rank_iOct+iOct<sp/>)<sp/>=<sp/>count<sp/>+<sp/>offset;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>+=<sp/>facemask_count(facemask);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>recv_sizes[rank]);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>first_rank_iOct<sp/>+=<sp/>ghostmap_recv_sizes[rank];</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>offset+=recv_sizes[rank];</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocate<sp/>cell<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>total_cell_count<sp/>=<sp/>std::accumulate(<sp/>recv_sizes.begin(),<sp/>recv_sizes.end(),<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>recv_iOcts<sp/>=<sp/>Kokkos::View&lt;uint32_t*&gt;(<sp/></highlight><highlight class="stringliteral">&quot;recv_iOct&quot;</highlight><highlight class="normal">,<sp/>total_cell_count<sp/>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>recv_iCell<sp/>=<sp/>Kokkos::View&lt;uint32_t*&gt;(<sp/></highlight><highlight class="stringliteral">&quot;recv_iCell&quot;</highlight><highlight class="normal">,<sp/>total_cell_count<sp/>);<sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>cell<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_for(</highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::list_recv_cells&quot;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::TeamPolicy&lt;&gt;(local_octant_count,<sp/>Kokkos::AUTO),</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::TeamPolicy&lt;&gt;::member_type&amp;<sp/>team<sp/>)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct<sp/>=<sp/>team.league_rank();</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>GhostMap_t::CellMask<sp/>facemask<sp/>=<sp/>ghostmap_recv_masks(iOct);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iCell_begin<sp/>=<sp/>offset_iOct(iOct);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::parallel_for(<sp/>Kokkos::TeamVectorRange(team,<sp/>facemask_count(facemask)),</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](<sp/>uint32_t<sp/>i<sp/>)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>(iCell_begin<sp/>+<sp/>i)<sp/>&lt;<sp/>total_cell_count,<sp/></highlight><highlight class="stringliteral">&quot;GhostCommunicator_partial_blocks::list_cells<sp/>out<sp/>of<sp/>bounds<sp/>&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recv_iOcts(<sp/>iCell_begin<sp/>+<sp/>i<sp/>)<sp/>=<sp/>iOct;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recv_iCell(<sp/>iCell_begin<sp/>+<sp/>i<sp/>)<sp/>=<sp/>facemask_iCells(<sp/>facemask,<sp/>i);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>this-&gt;m_send_cell_count<sp/>=<sp/>send_sizes;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>this-&gt;m_recv_cell_count<sp/>=<sp/>recv_sizes;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>this-&gt;m_send_iOct<sp/>=<sp/>send_iOct;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>this-&gt;m_send_iCell<sp/>=<sp/>send_iCell;<sp/></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>this-&gt;m_recv_iOct<sp/>=<sp/>recv_iOcts;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>this-&gt;m_recv_iCell<sp/>=<sp/>recv_iCell;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/>this-&gt;m_local_ghost_octants<sp/>=<sp/>local_octant_count;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.cpp"/>
+  </compounddef>
+</doxygen>

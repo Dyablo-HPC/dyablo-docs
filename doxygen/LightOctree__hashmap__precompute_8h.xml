@@ -1,0 +1,830 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="LightOctree__hashmap__precompute_8h" kind="file" language="C++">
+    <compoundname>LightOctree_hashmap_precompute.h</compoundname>
+    <includes refid="LightOctree__hashmap_8h" local="yes">amr/LightOctree_hashmap.h</includes>
+    <includedby refid="LightOctree_8h" local="yes">/builds/dyablo/dyablo/core/src/amr/LightOctree.h</includedby>
+    <incdepgraph>
+      <node id="18">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="2">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="30">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="29">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="20">
+        <label>array</label>
+      </node>
+      <node id="23">
+        <label>cassert</label>
+      </node>
+      <node id="6">
+        <label>cstddef</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>iosfwd</label>
+      </node>
+      <node id="25">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>math.h</label>
+      </node>
+      <node id="19">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</label>
+        <link refid="DyabloTimeLoop_8h_source"/>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>/builds/dyablo/dyablo/core/src/UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/amr/CellIndexRemapper.h</label>
+        <link refid="CellIndexRemapper_8h_source"/>
+      </node>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData.h</label>
+        <link refid="MapUserData_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</label>
+        <link refid="MapUserData__base_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt.h</label>
+        <link refid="Compute__dt_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</label>
+        <link refid="Compute__dt__base_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h</label>
+        <link refid="AMRBlockForeachCell__scratch_8h_source"/>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver.h</label>
+        <link refid="GravitySolver_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</label>
+        <link refid="GravitySolver__base_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.h</label>
+        <link refid="GravitySolver__cg_8h_source"/>
+      </node>
+      <node id="31">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/HyperbolicUpdate.h</label>
+        <link refid="HyperbolicUpdate_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="18">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</label>
+        <link refid="HyperbolicUpdate__base_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_RK2.h</label>
+        <link refid="Hyperbolic__RK2_8h_source"/>
+      </node>
+      <node id="33">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler.h</label>
+        <link refid="Hyperbolic__euler_8h_source"/>
+      </node>
+      <node id="34">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h</label>
+        <link refid="Hyperbolic__euler__nopatch_8h_source"/>
+      </node>
+      <node id="35">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_hancock.h</label>
+        <link refid="Hyperbolic__hancock_8h_source"/>
+      </node>
+      <node id="36">
+        <label>/builds/dyablo/dyablo/core/src/init/AnalyticalFormula.h</label>
+        <link refid="AnalyticalFormula_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions.h</label>
+        <link refid="InitialConditions_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h</label>
+        <link refid="InitialConditions__analytical_8h_source"/>
+      </node>
+      <node id="38">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h</label>
+        <link refid="InitialConditions__uniform_8h_source"/>
+      </node>
+      <node id="25">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="21">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="42">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager.h</label>
+        <link refid="IOManager_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager_base.h</label>
+        <link refid="IOManager__base_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields.h</label>
+        <link refid="DerivedFields_8h_source"/>
+      </node>
+      <node id="43">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</label>
+        <link refid="DerivedFields__base_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h</label>
+        <link refid="GhostCommunicator_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h</label>
+        <link refid="GhostCommunicator__full__blocks_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h</label>
+        <link refid="GhostCommunicator__partial__blocks_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="27">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</label>
+        <link refid="ParabolicTerm__viscosity_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate.h</label>
+        <link refid="ParabolicUpdate_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</label>
+        <link refid="ParabolicUpdate__base_8h_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate.h</label>
+        <link refid="ParticleUpdate_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</label>
+        <link refid="ParticleUpdate__base_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition.h</label>
+        <link refid="RefineCondition_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</label>
+        <link refid="RefineCondition__base_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_helper.h</label>
+        <link refid="RefineCondition__helper_8h_source"/>
+      </node>
+      <node id="53">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate.h</label>
+        <link refid="SourceUpdate_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</label>
+        <link refid="SourceUpdate__base_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="26">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>/builds/dyablo/dyablo/core/src/utils/io/AMRMesh_output_vtk.h</label>
+        <link refid="AMRMesh__output__vtk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdyablo_1_1LightOctree__hashmap__precompute" prot="public">dyablo::LightOctree_hashmap_precompute</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedyablo_1a44495e62f16e1b58c2688711e2a68e4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::LightOctree_hashmap_precompute_init</definition>
+        <argsstring>(const LightOctree_hashmap &amp;lmesh_hashmap, Kokkos::View&lt; uint8_t **, Kokkos::LayoutLeft &gt; &amp;neighbors_count, Kokkos::View&lt; uint32_t **, Kokkos::LayoutLeft &gt; &amp;neighbors_offset, Kokkos::View&lt; uint32_t * &gt; &amp;neighbors_iOct, uint32_t ndims)</argsstring>
+        <name>LightOctree_hashmap_precompute_init</name>
+        <qualifiedname>dyablo::LightOctree_hashmap_precompute_init</qualifiedname>
+        <param>
+          <type>const LightOctree_hashmap &amp;</type>
+          <declname>lmesh_hashmap</declname>
+        </param>
+        <param>
+          <type>Kokkos::View&lt; uint8_t **, Kokkos::LayoutLeft &gt; &amp;</type>
+          <declname>neighbors_count</declname>
+        </param>
+        <param>
+          <type>Kokkos::View&lt; uint32_t **, Kokkos::LayoutLeft &gt; &amp;</type>
+          <declname>neighbors_offset</declname>
+        </param>
+        <param>
+          <type>Kokkos::View&lt; uint32_t * &gt; &amp;</type>
+          <declname>neighbors_iOct</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ndims</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap_precompute.h" line="25" column="13" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap_precompute.h" bodystart="25" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;amr/LightOctree_hashmap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">KOKKOS_INLINE_FUNCTION<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>offset_to_index(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">LightOctree_base::offset_t</ref>&amp;<sp/>offset,<sp/>uint32_t<sp/>ndims)<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>offset[IX]+1<sp/>+<sp/>3*(offset[IY]+1)<sp/>+<sp/>(ndims==3)*3*3*(offset[IZ]+1);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">KOKKOS_INLINE_FUNCTION<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">LightOctree_base::offset_t</ref><sp/>index_to_offset(uint32_t<sp/>index,<sp/>uint32_t<sp/>ndims)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>iz<sp/>=<sp/>index<sp/>/<sp/>(3*3);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>iy<sp/>=<sp/>(index<sp/>-<sp/>3*3*iz)/3;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>ix<sp/>=<sp/>index<sp/>%<sp/>3;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">LightOctree_base::offset_t</ref>{<sp/>(int8_t)(ix-1),<sp/>(int8_t)(iy-1),<sp/>(int8_t)((ndims==2)?0:iz-1)};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LightOctree_hashmap_precompute_init(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1LightOctree__hashmap" kindref="compound">LightOctree_hashmap</ref>&amp;<sp/>lmesh_hashmap,<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;<sp/>uint8_t**,<sp/>Kokkos::LayoutLeft<sp/>&gt;&amp;<sp/>neighbors_count,<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t**,<sp/>Kokkos::LayoutLeft<sp/>&gt;&amp;<sp/>neighbors_offset,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;&amp;<sp/>neighbors_iOct,<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ndims<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">NeighborList<sp/>=<sp/><ref refid="structdyablo_1_1LightOctree__base_1_1NeighborList" kindref="compound">LightOctree_hashmap::NeighborList</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nneighbors<sp/>=<sp/>(ndims==2)<sp/>?<sp/>3*3<sp/>:<sp/>3*3*3;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nbOcts<sp/>=<sp/>lmesh_hashmap.getNumOctants();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>number<sp/>of<sp/>neighbors<sp/>at<sp/>each<sp/>offset<sp/>for<sp/>each<sp/>octant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>neighbors_count<sp/>=<sp/>Kokkos::View&lt;<sp/>uint8_t**,<sp/>Kokkos::LayoutLeft<sp/>&gt;(</highlight><highlight class="stringliteral">&quot;LightOctree_hashmap_precompute::neighbors_count&quot;</highlight><highlight class="normal">,<sp/>nbOcts,<sp/>nneighbors);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nneigh_tot<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_reduce(<sp/></highlight><highlight class="stringliteral">&quot;LightOctree_hashmap_precompute::precompute_count&quot;</highlight><highlight class="normal">,<sp/>neighbors_count.size(),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/>uint32_t<sp/>index,<sp/>uint32_t&amp;<sp/>nneigh_partial<sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct<sp/>=<sp/>index%nbOcts;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>offset_index<sp/>=<sp/>index/nbOcts;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">LightOctree_base::offset_t</ref><sp/>offset<sp/>=<sp/>index_to_offset(offset_index,<sp/>ndims);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if(offset[IX]!=0<sp/>||<sp/>offset[IY]!=0<sp/>||<sp/>offset[IZ]!=0<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NeighborList<sp/>ns<sp/>=<sp/>lmesh_hashmap.findNeighbors({iOct,</highlight><highlight class="keyword">false</highlight><highlight class="normal">},<sp/>offset);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neighbors_count(iOct,<sp/>offset_index)<sp/>=<sp/>ns.size();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nneigh_partial<sp/>+=<sp/>ns.size();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>,<sp/>nneigh_tot<sp/>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>neighbors_offset<sp/>=<sp/>Kokkos::View&lt;<sp/>uint32_t**,<sp/>Kokkos::LayoutLeft<sp/>&gt;(</highlight><highlight class="stringliteral">&quot;LightOctree_hashmap_precompute::neighbors_offset&quot;</highlight><highlight class="normal">,<sp/>nbOcts,<sp/>nneighbors);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>neighbors_iOct<sp/>=<sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;(</highlight><highlight class="stringliteral">&quot;LightOctree_hashmap_precompute::neighbors_iOct&quot;</highlight><highlight class="normal">,<sp/>nneigh_tot);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_scan(<sp/></highlight><highlight class="stringliteral">&quot;LightOctree_hashmap_precompute::precompute<sp/>neighborhood&quot;</highlight><highlight class="normal">,<sp/>neighbors_count.size(),</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(uint32_t<sp/>index,<sp/>uint32_t&amp;<sp/>iOct_offset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct<sp/>=<sp/>index/nneighbors;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>offset_index<sp/>=<sp/>index%nneighbors;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">LightOctree_base::offset_t</ref><sp/>offset<sp/>=<sp/>index_to_offset(offset_index,<sp/>ndims);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if(offset[IX]!=0<sp/>||<sp/>offset[IY]!=0<sp/>||<sp/>offset[IZ]!=0<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>nneighbors<sp/>=<sp/>neighbors_count(iOct,<sp/>offset_index);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keyword">final</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NeighborList<sp/>ns<sp/>=<sp/>lmesh_hashmap.findNeighbors({iOct,</highlight><highlight class="keyword">false</highlight><highlight class="normal">},<sp/>offset);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neighbors_offset(iOct,<sp/>offset_index)<sp/>=<sp/>iOct_offset;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;nneighbors;<sp/>i++)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neighbors_iOct(iOct_offset+i)<sp/>=<sp/><ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex_1a98a3df2d80dff376bfcbd922a065069c" kindref="member">LightOctree_base::OctantIndex::OctantIndex_to_iOctLocal</ref>(ns[i],<sp/>nbOcts);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iOct_offset<sp/>+=<sp/>nneighbors;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classdyablo_1_1LightOctree__hashmap__precompute" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LightOctree_hashmap_precompute<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>LightOctree_hashmap{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>LightOctree_hashmap_precompute()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>LightOctree_hashmap_precompute(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LightOctree_hashmap_precompute&amp;<sp/>lmesh)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>AMRmesh_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>LightOctree_hashmap_precompute(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AMRmesh_t*<sp/>pmesh,<sp/>uint8_t<sp/>level_min,<sp/>uint8_t<sp/>level_max<sp/>)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>LightOctree_hashmap(pmesh,<sp/>level_min,<sp/>level_max)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LightOctree_hashmap_precompute_init(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>neighbors_count,<sp/>neighbors_offset,<sp/>neighbors_iOct,<sp/>getNdim());</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="classdyablo_1_1LightOctree__hashmap__precompute_1a82372764d1402f4ee9e5316573a97f05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_INLINE_FUNCTION<sp/><ref refid="structdyablo_1_1LightOctree__base_1_1NeighborList" kindref="compound">NeighborList</ref><sp/><ref refid="classdyablo_1_1LightOctree__hashmap__precompute_1a82372764d1402f4ee9e5316573a97f05" kindref="member">findNeighbors</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref>&amp;<sp/>iOct,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">offset_t</ref>&amp;<sp/>offset<sp/>)</highlight><highlight class="keyword"><sp/><sp/>const</highlight></codeline>
+<codeline lineno="94"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>iOct.<ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex_1aeb1d26db1028c4263423bc9cf25d83c0" kindref="member">isGhost</ref><sp/>)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">LightOctree_hashmap::findNeighbors</ref>(iOct,<sp/>offset);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim<sp/>=<sp/>getNdim();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>nneighbors<sp/>=<sp/>neighbors_count(iOct.iOct,<sp/>offset_to_index(offset,<sp/>ndim));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>n_offset<sp/>=<sp/>neighbors_offset(iOct.iOct,<sp/>offset_to_index(offset,<sp/>ndim));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::Array&lt;OctantIndex,4&gt;<sp/>neighbors;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;nneighbors;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neighbors[i]<sp/>=<sp/>LightOctree_base::OctantIndex::iOctLocal_to_OctantIndex(<sp/>neighbors_iOct(<sp/>n_offset<sp/>+<sp/>i<sp/>),<sp/>getNumOctants()<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>nneighbors<sp/>==<sp/><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">LightOctree_hashmap::findNeighbors</ref>(iOct,<sp/>offset).size(),<sp/></highlight><highlight class="stringliteral">&quot;Precomputed<sp/>neighbor<sp/>count<sp/>mismatch&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;nneighbors;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>neighbors[i].iOct<sp/>==<sp/><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">LightOctree_hashmap::findNeighbors</ref>(iOct,<sp/>offset)[i].iOct,<sp/></highlight><highlight class="stringliteral">&quot;Precomputed<sp/>neighbor<sp/>mismatch&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1LightOctree__base_1_1NeighborList" kindref="compound">NeighborList</ref>{<sp/>nneighbors,<sp/>neighbors<sp/>};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;<sp/>uint8_t**,<sp/>Kokkos::LayoutLeft<sp/>&gt;<sp/>neighbors_count;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t**,<sp/>Kokkos::LayoutLeft<sp/>&gt;<sp/>neighbors_offset;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;<sp/>neighbors_iOct;<sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap_precompute.h"/>
+  </compounddef>
+</doxygen>

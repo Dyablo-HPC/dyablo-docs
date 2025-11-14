@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicUpdate__euler__nopatch" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicUpdate_euler_nopatch</compoundname>
+    <basecompoundref refid="classdyablo_1_1HyperbolicUpdate" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate</basecompoundref>
+    <includes refid="Hyperbolic__euler__nopatch_8h" local="no">Hyperbolic_euler_nopatch.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Policy</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ad756f4104fe301f2d97376b563a18880" prot="public" static="no">
+        <type>typename Policy::PrimState</type>
+        <definition>using dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::PrimState =  typename Policy::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="28" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ae3b7cb4269a64079aa66e9d98718ead4" prot="public" static="no">
+        <type>typename Policy::ConsState</type>
+        <definition>using dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::ConsState =  typename Policy::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="29" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aac5de6d5f8638adef248ecba0c898d71" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="262" column="15" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aff4710646230263ed143067e8b00f88a" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="264" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1a22a1d253b84b9c0e5060779be67f893a" prot="private" static="no" mutable="no">
+        <type>Policy::Params</type>
+        <definition>Policy::Params dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::policy_params</definition>
+        <argsstring></argsstring>
+        <name>policy_params</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::policy_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="265" column="27" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aa49c29061cce1d78b259f1c14671b293" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="267" column="7" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ae6ef1e0165ff168ab4c43b2f817a112d" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="268" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1add75d803b982f51bc2351b0c02f01e01" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="268" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1a4105653830a0cccc8028efd85f85e43a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::slope_enabled</definition>
+        <argsstring></argsstring>
+        <name>slope_enabled</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::slope_enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="269" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aed0990c4da6e2577c068207da04585ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::HyperbolicUpdate_euler_nopatch</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>HyperbolicUpdate_euler_nopatch</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::HyperbolicUpdate_euler_nopatch</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="32" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="32" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1abc03764ffd1c562bf46aaf018adacf15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::HyperbolicUpdate_euler_nopatch::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1HyperbolicUpdate_1ac76f22f39d55840fdf90e1abef294cfe">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+<para>Solves hydro for one step using the euler method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input/output global array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scalar_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input scalar data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="51" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="51" bodyend="259"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Euler update algorithm. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>State</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of state to treat </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicUpdate_euler_nopatch&lt; Policy &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" line="23" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h" bodystart="23" bodyend="270"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ae3b7cb4269a64079aa66e9d98718ead4" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aac5de6d5f8638adef248ecba0c898d71" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aed0990c4da6e2577c068207da04585ec" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>HyperbolicUpdate_euler_nopatch</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aa49c29061cce1d78b259f1c14671b293" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>ndim</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1a22a1d253b84b9c0e5060779be67f893a" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>policy_params</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ad756f4104fe301f2d97376b563a18880" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1a4105653830a0cccc8028efd85f85e43a" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>slope_enabled</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1add75d803b982f51bc2351b0c02f01e01" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>smallp</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ae6ef1e0165ff168ab4c43b2f817a112d" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>smallr</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aff4710646230263ed143067e8b00f88a" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1abc03764ffd1c562bf46aaf018adacf15" prot="public" virt="virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>update</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" virt="virtual"><scope>dyablo::HyperbolicUpdate_euler_nopatch</scope><name>~HyperbolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_ConsHydroState</compoundname>
+    <includes refid="HyperbolicPolicy__Hydro_8h" local="no">HyperbolicPolicy_Hydro.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1" prot="public" static="no" strong="no">
+        <type>dyablo::VarIndex</type>
+        <name>VarIndex</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::VarIndex</qualifiedname>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1ad90f729e39feebea4c839cf1248a49c1" prot="public">
+          <name>Irho</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1afb9bc885ad76ae667fcaf89dae64c394" prot="public">
+          <name>Ie_tot</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1a2b3ee1776e4461f697f9fe1e645e1760" prot="public">
+          <name>Irho_vx</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1ab2304930e1782081e20b45bfd5591350" prot="public">
+          <name>Irho_vy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1a698adaa0cf38362e563d10010b7389ef" prot="public">
+          <name>Irho_vz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="14" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="15" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1a912ef6bf4437245e92737d92a8f9310c" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsHydroState::rho</definition>
+        <argsstring></argsstring>
+        <name>rho</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::rho</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="37" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1a9e0df14dea9a3d6d455d4b739b5704f7" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsHydroState::e_tot</definition>
+        <argsstring></argsstring>
+        <name>e_tot</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::e_tot</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="38" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1aa9a7804fcfb1673a91b54ee514e266cc" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsHydroState::rho_u</definition>
+        <argsstring></argsstring>
+        <name>rho_u</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::rho_u</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="39" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1a114542fa3f9fa60a2eb0b57f669be2a0" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsHydroState::rho_v</definition>
+        <argsstring></argsstring>
+        <name>rho_v</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::rho_v</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="40" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ae165191c9eedf7616af03e86ed4ab4b5" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsHydroState::rho_w</definition>
+        <argsstring></argsstring>
+        <name>rho_w</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::rho_w</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="41" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ae9aa32f88d4abf7f01ae797ecfab8d62" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo" kindref="compound">UserData::FieldAccessor::FieldInfo</ref> &gt;</type>
+        <definition>static std::vector&lt; UserData::FieldAccessor::FieldInfo &gt; dyablo::HyperbolicPolicy_ConsHydroState::getFieldsInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldsInfo</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::getFieldsInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="23" column="22" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ad7dd91af2e7b7c1bdabb299e73fb14a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref></type>
+        <definition>static FieldManager dyablo::HyperbolicPolicy_ConsHydroState::getFieldManager</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldManager</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsHydroState::getFieldManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="32" column="23" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="32" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure holding conservative hydrodynamics variables. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="13" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="13" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1a9e0df14dea9a3d6d455d4b739b5704f7" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>e_tot</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ad7dd91af2e7b7c1bdabb299e73fb14a7" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>getFieldManager</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ae9aa32f88d4abf7f01ae797ecfab8d62" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1afb9bc885ad76ae667fcaf89dae64c394" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>Ie_tot</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1ad90f729e39feebea4c839cf1248a49c1" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>Irho</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1a2b3ee1776e4461f697f9fe1e645e1760" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>Irho_vx</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1ab2304930e1782081e20b45bfd5591350" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>Irho_vy</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1a698adaa0cf38362e563d10010b7389ef" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>Irho_vz</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1a912ef6bf4437245e92737d92a8f9310c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>rho</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1aa9a7804fcfb1673a91b54ee514e266cc" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>rho_u</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1a114542fa3f9fa60a2eb0b57f669be2a0" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>rho_v</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ae165191c9eedf7616af03e86ed4ab4b5" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>rho_w</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState_1ac9ca5cb4a72f3719cf2f062834adf9f1" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsHydroState</scope><name>VarIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

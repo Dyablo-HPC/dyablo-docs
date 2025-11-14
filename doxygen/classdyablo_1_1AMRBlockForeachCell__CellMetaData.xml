@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_CellMetaData</compoundname>
+    <includes refid="AMRBlockForeachCell_8h" local="no">AMRBlockForeachCell.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a3817c136fa4eaecfae59d91546519ce3" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">AMRBlockForeachCell_CellArray_impl::CellIndex</ref></type>
+        <definition>using dyablo::AMRBlockForeachCell_CellMetaData::CellIndex =  AMRBlockForeachCell_CellArray_impl::CellIndex</definition>
+        <argsstring></argsstring>
+        <name>CellIndex</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::CellIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="27" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a7e2cbc484bc73525c72dd897386f6ac7" prot="public" static="no">
+        <type>Kokkos::Array&lt; real_t, 3 &gt;</type>
+        <definition>using dyablo::AMRBlockForeachCell_CellMetaData::pos_t =  Kokkos::Array&lt;real_t, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>pos_t</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::pos_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="28" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a3d68d5df1c42b4288f5e990b2fd17706" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CData" kindref="compound">AMRBlockForeachCell_CData</ref></type>
+        <definition>const AMRBlockForeachCell_CData dyablo::AMRBlockForeachCell_CellMetaData::cdata</definition>
+        <argsstring></argsstring>
+        <name>cdata</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::cdata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="132" column="35" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1af305665ec1eff57b544fb24261fe460e" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1LightOctree__hashmap" kindref="compound">LightOctree</ref></type>
+        <definition>LightOctree dyablo::AMRBlockForeachCell_CellMetaData::lmesh</definition>
+        <argsstring></argsstring>
+        <name>lmesh</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::lmesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="133" column="15" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a4fcfde88c8adaaa2580d275035a68ee7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_CellMetaData::AMRBlockForeachCell_CellMetaData</definition>
+        <argsstring>(const AMRBlockForeachCell_CData &amp;cdata, AMRmesh &amp;pmesh)</argsstring>
+        <name>AMRBlockForeachCell_CellMetaData</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::AMRBlockForeachCell_CellMetaData</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CData" kindref="compound">AMRBlockForeachCell_CData</ref> &amp;</type>
+          <declname>cdata</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+          <declname>pmesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="31" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ac98682e1c5b375251e8e415daf93b141" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION pos_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::AMRBlockForeachCell_CellMetaData::getCellSize</definition>
+        <argsstring>(const CellIndex &amp;iCell) const</argsstring>
+        <name>getCellSize</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::getCellSize</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <briefdescription>
+<para>Get the physical size of the cell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="37" column="9" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="37" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ab8e4b6e6dd22565d5020f64f60131abf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION pos_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::AMRBlockForeachCell_CellMetaData::getCellCenter</definition>
+        <argsstring>(const CellIndex &amp;iCell) const</argsstring>
+        <name>getCellCenter</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::getCellCenter</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <briefdescription>
+<para>Get the physical position of the center of the cell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="58" column="9" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="58" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ababf33e4c58c83f798d5c7b0856b04ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION CellIndex dyablo::AMRBlockForeachCell_CellMetaData::getCellFromPos</definition>
+        <argsstring>(const pos_t &amp;pos) const</argsstring>
+        <name>getCellFromPos</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellMetaData::getCellFromPos</qualifiedname>
+        <param>
+          <type>const pos_t &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="84" column="13" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="84" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Information related to the position and size of cells This can be captured on device and referenced inside foreach_patch/cell </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="24" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="25" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a4fcfde88c8adaaa2580d275035a68ee7" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>AMRBlockForeachCell_CellMetaData</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a3d68d5df1c42b4288f5e990b2fd17706" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>cdata</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a3817c136fa4eaecfae59d91546519ce3" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>CellIndex</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ab8e4b6e6dd22565d5020f64f60131abf" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>getCellCenter</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ababf33e4c58c83f798d5c7b0856b04ff" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>getCellFromPos</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ac98682e1c5b375251e8e415daf93b141" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>getCellSize</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1af305665ec1eff57b544fb24261fe460e" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>lmesh</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1a7e2cbc484bc73525c72dd897386f6ac7" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellMetaData</scope><name>pos_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

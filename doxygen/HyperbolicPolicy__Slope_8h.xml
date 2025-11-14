@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="HyperbolicPolicy__Slope_8h" kind="file" language="C++">
+    <compoundname>HyperbolicPolicy_Slope.h</compoundname>
+    <includes refid="dyablo__variant_8h" local="yes">utils/misc/dyablo_variant.h</includes>
+    <includedby refid="HyperbolicPolicy__GLMMHD_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</includedby>
+    <includedby refid="HyperbolicPolicy__Hydro_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</includedby>
+    <includedby refid="HyperbolicPolicy__Rad_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h</label>
+        <link refid="HyperbolicPolicy__Slope_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>utils/misc/dyablo_variant.h</label>
+        <link refid="dyablo__variant_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>variant</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h</label>
+        <link refid="HyperbolicPolicy__Slope_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__Slope__zero" prot="public">dyablo::HyperbolicPolicy_Slope_zero</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__Slope__zero_1_1Params" prot="public">dyablo::HyperbolicPolicy_Slope_zero::Params</innerclass>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__Slope__minmod" prot="public">dyablo::HyperbolicPolicy_Slope_minmod</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__Slope__minmod_1_1Params" prot="public">dyablo::HyperbolicPolicy_Slope_minmod::Params</innerclass>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee" prot="public">dyablo::HyperbolicPolicy_Slope_superbee</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__Slope__superbee_1_1Params" prot="public">dyablo::HyperbolicPolicy_Slope_superbee::Params</innerclass>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl" prot="public">dyablo::HyperbolicPolicy_Slope_dynamic_impl</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1_1Params" prot="public">dyablo::HyperbolicPolicy_Slope_dynamic_impl::Params</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <innernamespace refid="namespacedyablo_1_1Slope__dynamic__impl">dyablo::Slope_dynamic_impl</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedyablo_1a53c776c24377fb58b7217dca1b2a6eb0" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename LegacyState_t</type>
+          </param>
+        </templateparamlist>
+        <type>HyperbolicPolicy_Slope_dynamic_impl&lt; LegacyState_t, HyperbolicPolicy_Slope_minmod&lt; LegacyState_t &gt;, HyperbolicPolicy_Slope_superbee&lt; LegacyState_t &gt; &gt;</type>
+        <definition>using dyablo::HyperbolicPolicy_Slope_dynamic =  HyperbolicPolicy_Slope_dynamic_impl&lt; LegacyState_t,
+  HyperbolicPolicy_Slope_minmod&lt;LegacyState_t&gt;,
+  HyperbolicPolicy_Slope_superbee&lt;LegacyState_t&gt;
+&gt;</definition>
+        <argsstring></argsstring>
+        <name>HyperbolicPolicy_Slope_dynamic</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Slope_dynamic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="206" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/misc/dyablo_variant.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="8" refid="classdyablo_1_1HyperbolicPolicy__Slope__zero" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HyperbolicPolicy_Slope_zero</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t::PrimState;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t::ConsState;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>name()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;zero&quot;</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structdyablo_1_1HyperbolicPolicy__Slope__zero_1_1Params" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__zero_1_1Params" kindref="compound">Params</ref><sp/>{};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__zero_1_1Params" kindref="compound">Params</ref><sp/>getParams(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_Slope_zero(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Params&amp;<sp/>Params)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>PrimState<sp/>compute_slope(<sp/>PrimState<sp/>qL,<sp/>PrimState<sp/>qC,<sp/>PrimState<sp/>qR,<sp/>real_t<sp/>dL,<sp/>real_t<sp/>dR)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="28"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="35" refid="classdyablo_1_1HyperbolicPolicy__Slope__minmod" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HyperbolicPolicy_Slope_minmod</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t::PrimState;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t::ConsState;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>name()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;minmod&quot;</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structdyablo_1_1HyperbolicPolicy__Slope__minmod_1_1Params" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__minmod_1_1Params" kindref="compound">Params</ref><sp/>{};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__minmod_1_1Params" kindref="compound">Params</ref><sp/>getParams(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_Slope_minmod(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Params&amp;<sp/>Params)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>PrimState<sp/>compute_slope(<sp/>PrimState<sp/>qL,<sp/>PrimState<sp/>qC,<sp/>PrimState<sp/>qR,<sp/>real_t<sp/>dL,<sp/>real_t<sp/>dR)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="55"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dqp<sp/>=<sp/>(qR<sp/>-<sp/>qC)<sp/>/<sp/>dR;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dqm<sp/>=<sp/>(qC<sp/>-<sp/>qL)<sp/>/<sp/>dL;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimState<sp/>slope{};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedyablo_1a19835518c20f1773e346c9c3739d6dfd" kindref="member">state_foreach_var</ref>([](real_t&amp;<sp/>res,<sp/>real_t<sp/>dvp,<sp/>real_t<sp/>dvm)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dvp<sp/>*<sp/>dvm<sp/>&lt;=<sp/>0.0)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fabs(dvp)<sp/>&gt;<sp/>fabs(dvm)<sp/>?<sp/>dvm<sp/>:<sp/>dvp;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>},<sp/>slope,<sp/>dqp,<sp/>dqm);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>slope;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>State_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="73" refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HyperbolicPolicy_Slope_superbee</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>State_t::PrimState;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>State_t::ConsState;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>name()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;superbee&quot;</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structdyablo_1_1HyperbolicPolicy__Slope__superbee_1_1Params" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__superbee_1_1Params" kindref="compound">Params</ref><sp/>{};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__superbee_1_1Params" kindref="compound">Params</ref><sp/>getParams(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_Slope_superbee(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Params&amp;<sp/>Params)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>PrimState<sp/>compute_slope(<sp/>PrimState<sp/>qL,<sp/>PrimState<sp/>qC,<sp/>PrimState<sp/>qR,<sp/>real_t<sp/>dL,<sp/>real_t<sp/>dR)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="93"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dqp<sp/>=<sp/>(qR<sp/>-<sp/>qC)<sp/>/<sp/>dR;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dqm<sp/>=<sp/>(qC<sp/>-<sp/>qL)<sp/>/<sp/>dL;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimState<sp/>slope{};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacedyablo_1a19835518c20f1773e346c9c3739d6dfd" kindref="member">state_foreach_var</ref>([](real_t&amp;<sp/>res,<sp/>real_t<sp/>dvp,<sp/>real_t<sp/>dvm)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>dvp<sp/>*<sp/>dvm<sp/>&lt;=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>g1<sp/>=<sp/>(fabs(2*dvp)<sp/>&lt;<sp/>fabs(<sp/><sp/>dvm)<sp/>?<sp/>2*dvp<sp/>:<sp/><sp/><sp/>dvm);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>g2<sp/>=<sp/>(fabs(<sp/><sp/>dvp)<sp/>&lt;<sp/>fabs(2*dvm)<sp/>?<sp/><sp/><sp/>dvp<sp/>:<sp/>2*dvm);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>g1<sp/>*<sp/>g2<sp/>&lt;=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fabs(g1)<sp/>&lt;<sp/>fabs(g2)<sp/>?<sp/>g2<sp/>:<sp/>g1;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>},<sp/>slope,<sp/>dqp,<sp/>dqm);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>slope;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Slope_dynamic_impl{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>var_out,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T0,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">var_out<sp/>slope_params_from_name_aux(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConfigMap&amp;<sp/>configMap<sp/>)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>T0::name()<sp/>==<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>T0::getParams(configMap);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Ts)<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>find<sp/>slope<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>for<sp/>HyperbolicPolicy_Slope_dynamic&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Ts)<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>slope_params_from_name_aux&lt;var_out,<sp/>Ts...&gt;(<sp/>name,<sp/>configMap<sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">dyablo_variant&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Ts::Params...&gt;<sp/>slope_params_from_name(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConfigMap&amp;<sp/>configMap<sp/>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>slope_params_from_name_aux&lt;dyablo_variant&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Ts::Params...&gt;,<sp/>Ts...&gt;(name,<sp/>configMap);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>var_in,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>var_out,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T0,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">var_out<sp/>slope_from_params_aux(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>var_in&amp;<sp/>params<sp/>)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Params_t<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T0::Params;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>dyablo_variant_holds_alternative&lt;Params_t&gt;(params)<sp/>)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>T0(<sp/>dyablo_variant_get&lt;Params_t&gt;(params)<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Ts)<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;Internal<sp/>error<sp/>:<sp/>invalid<sp/>slope<sp/>parameters<sp/>for<sp/>HyperbolicPolicy_Slope_dynamic&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Ts)<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>slope_from_params_aux&lt;var_in,<sp/>var_out,<sp/>Ts...&gt;(<sp/>params<sp/>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">dyablo_variant&lt;Ts...&gt;<sp/>slope_from_params(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dyablo_variant&lt;typename<sp/>Ts::Params...&gt;&amp;<sp/>params<sp/>)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>slope_from_params_aux&lt;dyablo_variant&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Ts::Params...&gt;,<sp/>dyablo_variant&lt;Ts...&gt;,<sp/>Ts...&gt;(params);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Slope_dynamic_impl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/>Dynamic<sp/>Implementation<sp/>for<sp/>HyperbolicPolicy_Slope</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*<sp/>Merge<sp/>multiple<sp/>implementations<sp/>of<sp/>HyperbolicPolicy_Slope<sp/>and<sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/>choose<sp/>which<sp/>version<sp/>to<sp/>use<sp/>at<sp/>runtime</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*<sp/>@tparam<sp/>LegacyState_t::PrimState<sp/>input/output<sp/>state<sp/>used<sp/>for<sp/>compute_slope</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/>@tparam<sp/>Ts...<sp/>HyperbolicPolicy_Slope<sp/>types<sp/>to<sp/>choose<sp/>from</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts<sp/>&gt;</highlight></codeline>
+<codeline lineno="170" refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HyperbolicPolicy_Slope_dynamic_impl</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>dyablo_variant&lt;Ts...&gt;<sp/>slope;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t::PrimState;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="structdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1_1Params" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1_1Params" kindref="compound">Params</ref>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>dyablo_variant&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Ts::Params...&gt;<sp/>params;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1_1Params" kindref="compound">Params</ref><sp/>getParams(<ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>configMap)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>slope_limiter<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;slope_limiter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;minmod&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.params<sp/>=<sp/>Slope_dynamic_impl::slope_params_from_name&lt;Ts...&gt;(slope_limiter,<sp/>configMap)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_Slope_dynamic_impl(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Params&amp;<sp/>params)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>:<sp/>slope(Slope_dynamic_impl::slope_from_params&lt;Ts...&gt;(params.params))</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>PrimState<sp/>compute_slope(<sp/>PrimState<sp/>qL,<sp/>PrimState<sp/>qC,<sp/>PrimState<sp/>qR,<sp/>real_t<sp/>dL,<sp/>real_t<sp/>dR)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="196"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dyablo_variant_visit&lt;PrimState&gt;(<sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)<sp/>-&gt;<sp/>PrimState</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.compute_slope(<sp/>qL,<sp/>qC,<sp/>qR,<sp/>dL,<sp/>dR<sp/>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>},<sp/>this-&gt;slope);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>LegacyState_t&gt;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">HyperbolicPolicy_Slope_dynamic<sp/>=<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl" kindref="compound">HyperbolicPolicy_Slope_dynamic_impl</ref>&lt;<sp/>LegacyState_t,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__Slope__minmod" kindref="compound">HyperbolicPolicy_Slope_minmod&lt;LegacyState_t&gt;</ref>,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee" kindref="compound">HyperbolicPolicy_Slope_superbee&lt;LegacyState_t&gt;</ref></highlight></codeline>
+<codeline lineno="209"><highlight class="normal">&gt;;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h"/>
+  </compounddef>
+</doxygen>

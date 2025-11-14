@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="RegisteringFactory_8h" kind="file" language="C++">
+    <compoundname>RegisteringFactory.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">tuple</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="MapUserData__base_8h" local="yes">/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</includedby>
+    <includedby refid="Compute__dt__base_8h" local="yes">/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</includedby>
+    <includedby refid="GravitySolver__base_8h" local="yes">/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</includedby>
+    <includedby refid="HyperbolicUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</includedby>
+    <includedby refid="InitialConditions__base_8h" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</includedby>
+    <includedby refid="IOManager__base_8h" local="yes">/builds/dyablo/dyablo/core/src/io/IOManager_base.h</includedby>
+    <includedby refid="DerivedFields__base_8h" local="yes">/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</includedby>
+    <includedby refid="ParabolicUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</includedby>
+    <includedby refid="ParticleUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</includedby>
+    <includedby refid="RefineCondition__base_8h" local="yes">/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</includedby>
+    <includedby refid="SourceUpdate__base_8h" local="yes">/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h</label>
+        <link refid="RegisteringFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="7">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>tuple</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</label>
+        <link refid="DyabloTimeLoop_8h_source"/>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData.h</label>
+        <link refid="MapUserData_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</label>
+        <link refid="MapUserData__base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt.h</label>
+        <link refid="Compute__dt_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</label>
+        <link refid="Compute__dt__base_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver.h</label>
+        <link refid="GravitySolver_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</label>
+        <link refid="GravitySolver__base_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.h</label>
+        <link refid="GravitySolver__cg_8h_source"/>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/HyperbolicUpdate.h</label>
+        <link refid="HyperbolicUpdate_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</label>
+        <link refid="HyperbolicUpdate__base_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_RK2.h</label>
+        <link refid="Hyperbolic__RK2_8h_source"/>
+      </node>
+      <node id="13">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler.h</label>
+        <link refid="Hyperbolic__euler_8h_source"/>
+      </node>
+      <node id="14">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h</label>
+        <link refid="Hyperbolic__euler__nopatch_8h_source"/>
+      </node>
+      <node id="15">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_hancock.h</label>
+        <link refid="Hyperbolic__hancock_8h_source"/>
+      </node>
+      <node id="17">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions.h</label>
+        <link refid="InitialConditions_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h</label>
+        <link refid="InitialConditions__analytical_8h_source"/>
+      </node>
+      <node id="16">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h</label>
+        <link refid="InitialConditions__uniform_8h_source"/>
+      </node>
+      <node id="21">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager.h</label>
+        <link refid="IOManager_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager_base.h</label>
+        <link refid="IOManager__base_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields.h</label>
+        <link refid="DerivedFields_8h_source"/>
+      </node>
+      <node id="22">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</label>
+        <link refid="DerivedFields__base_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate.h</label>
+        <link refid="ParabolicUpdate_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</label>
+        <link refid="ParabolicUpdate__base_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate.h</label>
+        <link refid="ParticleUpdate_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</label>
+        <link refid="ParticleUpdate__base_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition.h</label>
+        <link refid="RefineCondition_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</label>
+        <link refid="RefineCondition__base_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_helper.h</label>
+        <link refid="RefineCondition__helper_8h_source"/>
+      </node>
+      <node id="32">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate.h</label>
+        <link refid="SourceUpdate_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</label>
+        <link refid="SourceUpdate__base_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h</label>
+        <link refid="RegisteringFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classRegisteringFactory" prot="public">RegisteringFactory</innerclass>
+    <innerclass refid="structRegisteringFactory_1_1construct__base" prot="private">RegisteringFactory::construct_base</innerclass>
+    <innerclass refid="structRegisteringFactory_1_1construct" prot="private">RegisteringFactory::construct</innerclass>
+    <innerclass refid="structFactory__Registered" prot="public">Factory_Registered</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="RegisteringFactory_8h_1aec8602617a7214dc1dba066d5e856679" prot="public" static="no">
+        <name>FACTORY_REGISTER</name>
+        <param><defname>FACTORY_TYPE</defname></param>
+        <param><defname>IMPL_TYPE</defname></param>
+        <param><defname>name</defname></param>
+        <initializer>template&lt;&gt;\
+const bool <ref refid="structFactory__Registered" kindref="compound">Factory_Registered</ref>&lt;FACTORY_TYPE, IMPL_TYPE&gt;::registered \
+            = FACTORY_TYPE::register_class&lt;IMPL_TYPE&gt;( name );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register a type to the factory. Once the type is registered FACTORY_TYPE::make_instance(name, ...) will create an instance of IMPL_TYPE.</para>
+<para>IMPL_TYPE has to be a complete type when FACTORY_REGISTER is called.</para>
+<para>Each FACTORY_REGISTER(Class, name) must have a corresponding DECLARE_REGISTERED(Class) in RegisterFactory::init(), or implementation may not be fully registered. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="153" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="define" id="RegisteringFactory_8h_1ac969d783e2026c2130c4c53acacef5d0" prot="public" static="no">
+        <name>DECLARE_REGISTERED</name>
+        <param><defname>IMPL_TYPE</defname></param>
+        <initializer>if( !<ref refid="structFactory__Registered" kindref="compound">Factory_Registered</ref>&lt;<ref refid="classRegisteringFactory" kindref="compound">RegisteringFactory</ref>, IMPL_TYPE&gt;::registered ) {throw std::runtime_error(&quot;Class not registered&quot;);}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference an already registered type in the factory in RegisterFactory::init() (this macro won&apos;t work outside of RegisterFactory::init())</para>
+<para>IMPL_TYPE DOES NOT NEED to be a complete type when FACTORY_REGISTER is called. Only a forward-declaration of the type is necessary. This is useful to avoid importing the whole header of a registered template class.</para>
+<para>Expanation : FACTORY_REGISTER uses dynamic initialization of a static variable to add the class to the id-&gt;class map of the factory &quot;before the main&quot;. Dynamic initialization (i.e. registering of the class) may not be triggered if the static variable is not imported to the compilation unit where make_instance() is called (this may happen when the static variable is stripped when linking with a static library). To make sure that class is registered before the call to make_instance(), the static variable used to trigger dynamic initialization must be referenced in the compilation unit where make_instance() is called (using DECLARE_REGISTERED). Listing all the registered classes in RegisterFactory::init() ensures that all necessary symbols are imported when RegisterFactory::make_instance() is called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="173" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tuple&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BaseType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="21" refid="classRegisteringFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRegisteringFactory" kindref="compound">RegisteringFactory</ref>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classRegisteringFactory_1a57968cc955ee16d9c316d5ba153d57bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRegisteringFactory_1a57968cc955ee16d9c316d5ba153d57bd" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classRegisteringFactory_1ae67dbb3bcbd16451acddeef9f0e5e620" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classRegisteringFactory_1ae67dbb3bcbd16451acddeef9f0e5e620" kindref="member">get_available_ids</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRegisteringFactory_1a57968cc955ee16d9c316d5ba153d57bd" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>constructs<sp/>=<sp/>get_constructs();<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>p<sp/>:<sp/>constructs)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(<sp/>p.first<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classRegisteringFactory_1ac70197b416d331e353615966094b79d7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;BaseType&gt;<sp/><ref refid="classRegisteringFactory_1ac70197b416d331e353615966094b79d7" kindref="member">make_instance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>Args...<sp/>args<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRegisteringFactory_1a57968cc955ee16d9c316d5ba153d57bd" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;BaseType&gt;();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>constructs<sp/>=<sp/>get_constructs();<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>constructs.find(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>==<sp/>constructs.end()<sp/>)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Factory<sp/>:<sp/>\&apos;&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\&apos;<sp/>not<sp/>found&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Registered<sp/>ids<sp/>:<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>constructs.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>p<sp/>:<sp/>constructs)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>-<sp/>\&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>p.first<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Factory<sp/>:<sp/>\&apos;&quot;</highlight><highlight class="normal">+</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">+</highlight><highlight class="stringliteral">&quot;\&apos;<sp/>not<sp/>found&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;BaseType&gt;<sp/>res<sp/>=<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constructs.at(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)-&gt;make_instance(<sp/>args...<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="88" refid="classRegisteringFactory_1a4968b0b0a02726f5b5872d3930252d38" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRegisteringFactory_1a4968b0b0a02726f5b5872d3930252d38" kindref="member">register_class</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;id<sp/>&apos;none&apos;<sp/>is<sp/>reserved<sp/>for<sp/>nullptr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(std::is_base_of&lt;BaseType,<sp/>T&gt;::value,<sp/></highlight><highlight class="stringliteral">&quot;T<sp/>is<sp/>not<sp/>a<sp/>base<sp/>of<sp/>BaseType&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>get_constructs().emplace(</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">),<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::unique_ptr&lt;construct_base&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>construct&lt;T&gt;())</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!res.second)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>registered<sp/>multiple<sp/>times&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">construct_base{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;BaseType&gt;<sp/>make_instance(Args...<sp/>args)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~construct_base()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T<sp/>&gt;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">construct<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>construct_base{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;BaseType&gt;<sp/>make_instance(Args...<sp/>args)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_unique&lt;T&gt;(<sp/>args...<sp/>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::map&lt;<sp/>std::string,<sp/>std::unique_ptr&lt;construct_base&gt;<sp/>&gt;&amp;<sp/>get_constructs()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::map&lt;<sp/>std::string,<sp/>std::unique_ptr&lt;construct_base&gt;<sp/>&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Factory_t,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Impl_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="135" refid="structFactory__Registered" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFactory__Registered" kindref="compound">Factory_Registered</ref>{</highlight></codeline>
+<codeline lineno="140" refid="structFactory__Registered_1a8c86c351967c80eb44fd605941a8ac27" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structFactory__Registered_1a8c86c351967c80eb44fd605941a8ac27" kindref="member">registered</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FACTORY_REGISTER(<sp/>FACTORY_TYPE,<sp/>IMPL_TYPE,<sp/>name<sp/>)<sp/>template&lt;&gt;\</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor">const<sp/>bool<sp/>Factory_Registered&lt;FACTORY_TYPE,<sp/>IMPL_TYPE&gt;::registered<sp/>\</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>FACTORY_TYPE::register_class&lt;IMPL_TYPE&gt;(<sp/>name<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DECLARE_REGISTERED(<sp/>IMPL_TYPE<sp/>)<sp/>if(<sp/>!Factory_Registered&lt;RegisteringFactory,<sp/>IMPL_TYPE&gt;::registered<sp/>)<sp/>{throw<sp/>std::runtime_error(&quot;Class<sp/>not<sp/>registered&quot;);}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h"/>
+  </compounddef>
+</doxygen>

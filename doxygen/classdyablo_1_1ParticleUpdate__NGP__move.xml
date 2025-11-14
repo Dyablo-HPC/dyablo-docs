@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ParticleUpdate__NGP__move" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::ParticleUpdate_NGP_move</compoundname>
+    <basecompoundref refid="classdyablo_1_1ParticleUpdate" prot="public" virt="non-virtual">dyablo::ParticleUpdate</basecompoundref>
+    <innerclass refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data" prot="public">dyablo::ParticleUpdate_NGP_move::Data</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1ParticleUpdate__NGP__move_1a6a4ae3dae8dd2c58c7597552d9ef56b1" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::ParticleUpdate_NGP_move::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="72" column="15" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParticleUpdate__NGP__move_1a0d105fb5ea2ed55ed577b1123cc991c1" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1ForeachParticle" kindref="compound">ForeachParticle</ref></type>
+        <definition>ForeachParticle dyablo::ParticleUpdate_NGP_move::foreach_particle</definition>
+        <argsstring></argsstring>
+        <name>foreach_particle</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::foreach_particle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="73" column="19" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParticleUpdate__NGP__move_1ad57efca7d9eb39426c628c397020ae4a" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::ParticleUpdate_NGP_move::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="74" column="10" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1ParticleUpdate__NGP__move_1a226a221cd6b34b3adfe61118bd224b18" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data" kindref="compound">dyablo::ParticleUpdate_NGP_move::Data</ref></type>
+        <definition>struct dyablo::ParticleUpdate_NGP_move::Data dyablo::ParticleUpdate_NGP_move::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="78" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ParticleUpdate__NGP__move_1ae2fbc2b0c5dc022222f18746ebf8cf2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleUpdate_NGP_move::ParticleUpdate_NGP_move</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>ParticleUpdate_NGP_move</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::ParticleUpdate_NGP_move</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="9" column="3" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="9" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleUpdate__NGP__move_1afcb334ac3f916c1960832896bb77022b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleUpdate_NGP_move::~ParticleUpdate_NGP_move</definition>
+        <argsstring>()</argsstring>
+        <name>~ParticleUpdate_NGP_move</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::~ParticleUpdate_NGP_move</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="26" column="3" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleUpdate__NGP__move_1a0b32f572c7977572644faaa80411743a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::ParticleUpdate_NGP_move::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1ParticleUpdate_1a9415a4b998b34df4de9d0e67bd1e2047">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="28" column="8" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="28" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::ParticleUpdate</label>
+        <link refid="classdyablo_1_1ParticleUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParticleUpdate_NGP_move</label>
+        <link refid="classdyablo_1_1ParticleUpdate__NGP__move"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::ParticleUpdate</label>
+        <link refid="classdyablo_1_1ParticleUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParticleUpdate_NGP_move</label>
+        <link refid="classdyablo_1_1ParticleUpdate__NGP__move"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::ParticleUpdate_NGP_move::Data</label>
+        <link refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="7" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__move_1a226a221cd6b34b3adfe61118bd224b18" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>data</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__move_1a6a4ae3dae8dd2c58c7597552d9ef56b1" prot="private" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__move_1a0d105fb5ea2ed55ed577b1123cc991c1" prot="private" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>foreach_particle</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__move_1ae2fbc2b0c5dc022222f18746ebf8cf2c" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>ParticleUpdate_NGP_move</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__move_1ad57efca7d9eb39426c628c397020ae4a" prot="private" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__move_1a0b32f572c7977572644faaa80411743a" prot="public" virt="virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>update</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate_1a95712942817575aadc61e9e40f28d203" prot="public" virt="virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>~ParticleUpdate</name></member>
+      <member refid="classdyablo_1_1ParticleUpdate__NGP__move_1afcb334ac3f916c1960832896bb77022b" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move</scope><name>~ParticleUpdate_NGP_move</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

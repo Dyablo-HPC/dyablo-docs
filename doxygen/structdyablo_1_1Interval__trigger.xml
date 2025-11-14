@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1Interval__trigger" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::Interval_trigger</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1Interval__trigger_1ac774c6459cb9d7b8bb4b134a046e3a82" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::Interval_trigger&lt; T &gt;::var</definition>
+        <argsstring></argsstring>
+        <name>var</name>
+        <qualifiedname>dyablo::Interval_trigger::var</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="36" column="15" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Interval__trigger_1a299a298619249a68ff0087fdda748805" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::Interval_trigger&lt; T &gt;::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>dyablo::Interval_trigger::enabled</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="37" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Interval__trigger_1a83f22d33316125d00328165b6502269d" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T dyablo::Interval_trigger&lt; T &gt;::interval</definition>
+        <argsstring></argsstring>
+        <name>interval</name>
+        <qualifiedname>dyablo::Interval_trigger::interval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="38" column="5" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Interval__trigger_1a8713aad924b17ca1baae0f09488908f7" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T dyablo::Interval_trigger&lt; T &gt;::last_trigger</definition>
+        <argsstring></argsstring>
+        <name>last_trigger</name>
+        <qualifiedname>dyablo::Interval_trigger::last_trigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="39" column="5" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1Interval__trigger_1ac2cd59d5d1523047350713199d79e9d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Interval_trigger&lt; T &gt;::Interval_trigger</definition>
+        <argsstring>()=default</argsstring>
+        <name>Interval_trigger</name>
+        <qualifiedname>dyablo::Interval_trigger::Interval_trigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1Interval__trigger_1a5a0d5c02716a547c87bc85dddca03a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Interval_trigger&lt; T &gt;::Interval_trigger</definition>
+        <argsstring>(const Interval_trigger &amp;)=default</argsstring>
+        <name>Interval_trigger</name>
+        <qualifiedname>dyablo::Interval_trigger::Interval_trigger</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1Interval__trigger" kindref="compound">Interval_trigger</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="43" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1Interval__trigger_1a1b618d389a2d75b5738450f7503d0aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1Interval__trigger" kindref="compound">Interval_trigger</ref> &amp;</type>
+        <definition>Interval_trigger &amp; dyablo::Interval_trigger&lt; T &gt;::operator=</definition>
+        <argsstring>(const Interval_trigger &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>dyablo::Interval_trigger::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1Interval__trigger" kindref="compound">Interval_trigger</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="44" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1Interval__trigger_1a31e514041dda516ed66c3d76a269bfba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Interval_trigger&lt; T &gt;::Interval_trigger</definition>
+        <argsstring>(const std::string &amp;var, T interval, const ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>Interval_trigger</name>
+        <qualifiedname>dyablo::Interval_trigger::Interval_trigger</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>interval</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="46" column="3" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="46" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1Interval__trigger_1a4714b6eaaf62a350bc74f6ab5d166882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dyablo::Interval_trigger&lt; T &gt;::trigger</definition>
+        <argsstring>(const ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>trigger</name>
+        <qualifiedname>dyablo::Interval_trigger::trigger</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="53" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="53" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="33" column="1" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="34" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1Interval__trigger_1a299a298619249a68ff0087fdda748805" prot="private" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>enabled</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1a83f22d33316125d00328165b6502269d" prot="private" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>interval</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1ac2cd59d5d1523047350713199d79e9d7" prot="public" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>Interval_trigger</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1a5a0d5c02716a547c87bc85dddca03a7f" prot="public" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>Interval_trigger</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1a31e514041dda516ed66c3d76a269bfba" prot="public" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>Interval_trigger</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1a8713aad924b17ca1baae0f09488908f7" prot="private" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>last_trigger</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1a1b618d389a2d75b5738450f7503d0aab" prot="public" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>operator=</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1a4714b6eaaf62a350bc74f6ab5d166882" prot="public" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>trigger</name></member>
+      <member refid="structdyablo_1_1Interval__trigger_1ac774c6459cb9d7b8bb4b134a046e3a82" prot="private" virt="non-virtual"><scope>dyablo::Interval_trigger</scope><name>var</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

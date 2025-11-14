@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="ParabolicTerm__viscosity_8h" kind="file" language="C++">
+    <compoundname>ParabolicTerm_viscosity.h</compoundname>
+    <includes refid="FieldManager_8h" local="yes">FieldManager.h</includes>
+    <includes refid="ForeachCell_8h" local="yes">foreach_cell/ForeachCell.h</includes>
+    <includes refid="ForeachCell__utils_8h" local="yes">foreach_cell/ForeachCell_utils.h</includes>
+    <includedby refid="Compute__dt__parabolic_8cpp" local="yes">/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp</includedby>
+    <includedby refid="ParabolicTerm_8h" local="yes">/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</includedby>
+    <includedby refid="ParabolicUpdate__explicit_8cpp" local="yes">/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="40">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>foreach_cell/ForeachCell_utils.h</label>
+        <link refid="ForeachCell__utils_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</label>
+        <link refid="ParabolicTerm__viscosity_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="51">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="25">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="21">
+        <label>algorithm</label>
+      </node>
+      <node id="31">
+        <label>any</label>
+      </node>
+      <node id="47">
+        <label>array</label>
+      </node>
+      <node id="34">
+        <label>cassert</label>
+      </node>
+      <node id="44">
+        <label>cstddef</label>
+      </node>
+      <node id="43">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>fstream</label>
+      </node>
+      <node id="19">
+        <label>iomanip</label>
+      </node>
+      <node id="10">
+        <label>iosfwd</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>limits</label>
+      </node>
+      <node id="15">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="46">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>set</label>
+      </node>
+      <node id="18">
+        <label>sstream</label>
+      </node>
+      <node id="27">
+        <label>stdio.h</label>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>type_traits</label>
+      </node>
+      <node id="3">
+        <label>unordered_map</label>
+      </node>
+      <node id="41">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</label>
+        <link refid="ParabolicTerm__viscosity_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdyablo_1_1ParabolicTerm__viscosity" prot="public">dyablo::ParabolicTerm_viscosity</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;FieldManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;foreach_cell/ForeachCell.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;foreach_cell/ForeachCell_utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">GhostedArray<sp/>=<sp/>ForeachCell::CellArray_global_ghosted;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">GlobalArray<sp/><sp/>=<sp/>ForeachCell::CellArray_global;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PatchArray<sp/><sp/><sp/>=<sp/>ForeachCell::CellArray_patch;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellIndex<sp/><sp/><sp/><sp/>=<sp/>ForeachCell::CellIndex;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellMetaData<sp/>=<sp/>ForeachCell::CellMetaData;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classdyablo_1_1ParabolicTerm__viscosity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ParabolicTerm_viscosity<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">State<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structdyablo_1_1HydroState" kindref="compound">HydroState</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>State::PrimState;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsState<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>State::ConsState;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>ParabolicTerm_viscosity(<ref refid="classConfigMap" kindref="compound">ConfigMap</ref><sp/>&amp;configMap)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mu_cst(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;viscosity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mu&quot;</highlight><highlight class="normal">,<sp/>0.0))<sp/>{};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>real_t<sp/>compute_mu(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pos_t&amp;<sp/>pos)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>mu<sp/>=<sp/>0.0;<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>mu<sp/>=<sp/>mu_cst;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mu;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;UserData::FieldAccessor::FieldInfo&gt;<sp/>getFieldsInfo()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ConsHydroState::getFieldsInfo();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U_t&gt;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="63" refid="classdyablo_1_1ParabolicTerm__viscosity_1a868d574a03e274d9e79e24b2968f7c28" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1ParabolicTerm__viscosity_1a868d574a03e274d9e79e24b2968f7c28" kindref="member">compute_rhs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>U_t&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Uin,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PatchArray&amp;<sp/><sp/><sp/>Ugroup,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PatchArray&amp;<sp/><sp/><sp/>Qgroup,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PatchArray&amp;<sp/><sp/><sp/>rhs,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/><sp/><sp/><sp/>iCell_Uout,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/><sp/><sp/><sp/>iCell_rhs,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellMetaData&amp;<sp/>cellmetadata)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="70"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Aliases</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">offset_t<sp/>=<sp/>CellIndex::offset_t;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">pos_t<sp/><sp/><sp/><sp/>=<sp/>CellMetaData::pos_t;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>cellmetadata.getCellSize(iCell_Uout);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>pos_t<sp/>inv_size<sp/>{1.0/size[IX],<sp/>1.0/size[IY],<sp/>1.0/size[IZ]};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Index<sp/>in<sp/>grouped<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iCell_Qgroup<sp/>=<sp/>Qgroup.convert_index(iCell_Uout);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimHydroState<sp/>q;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>getPrimitiveState&lt;ndim&gt;(Qgroup,<sp/>iCell_Qgroup,<sp/>q);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Computing<sp/>mu<sp/>at<sp/>local<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>cellmetadata.getCellCenter(iCell_Qgroup);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>mu_cell<sp/>=<sp/>compute_mu&lt;ndim&gt;(pos);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimState::VarIndex<sp/>IU<sp/>=<sp/>PrimState::VarIndex::Iu;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimState::VarIndex<sp/>IV<sp/>=<sp/>PrimState::VarIndex::Iv;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimState::VarIndex<sp/>IW<sp/>=<sp/>PrimState::VarIndex::Iw;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>stencil<sp/>=<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>offset_t&amp;<sp/>offset,<sp/>PrimState::VarIndex&amp;<sp/>ivar)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Qgroup.at(<sp/>iCell_Qgroup<sp/>+<sp/>offset,<sp/>ivar<sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>ConsHydroState<sp/>vf{};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>each<sp/>side<sp/>and<sp/>each<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>side<sp/>:<sp/>{0,1}<sp/>)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>R<sp/>=<sp/>side;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>L<sp/>=<sp/>side-1;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>viscous_flux<sp/>for<sp/>direction<sp/>IX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dudx<sp/>=<sp/>inv_size[IX]<sp/>*<sp/>(stencil({R,<sp/>0,<sp/>0},<sp/>IU)<sp/>-<sp/>stencil({L,<sp/>0,<sp/>0},<sp/>IU));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dvdx<sp/>=<sp/>inv_size[IX]<sp/>*<sp/>(stencil({R,<sp/>0,<sp/>0},<sp/>IV)<sp/>-<sp/>stencil({L,<sp/>0,<sp/>0},<sp/>IV));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dudy<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IY]<sp/>*<sp/>(<sp/>stencil({R,<sp/>1,<sp/>0},<sp/>IU)<sp/>-<sp/>stencil({R,<sp/>-1,<sp/>0},<sp/>IU)<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({L,<sp/>1,<sp/>0},<sp/>IU)<sp/>-<sp/>stencil({L,<sp/>-1,<sp/>0},<sp/>IU));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dvdy<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IY]<sp/>*<sp/>(<sp/>stencil({R,<sp/>1,<sp/>0},<sp/>IV)<sp/>-<sp/>stencil({R,<sp/>-1,<sp/>0},<sp/>IV)<sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({L,<sp/>1,<sp/>0},<sp/>IV)<sp/>-<sp/>stencil({L,<sp/>-1,<sp/>0},<sp/>IV));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>dwdx=0.0,<sp/>dudz=0.0,<sp/>dwdz=0.0,<sp/>qi_w=0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwdx<sp/>=<sp/>inv_size[IX]<sp/>*<sp/>(<sp/>stencil({R,<sp/>0,<sp/>0},<sp/>IW)<sp/>-<sp/>stencil({L,<sp/>0,<sp/>0},<sp/>IW)<sp/>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dudz<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IZ]<sp/>*<sp/>(<sp/><sp/>stencil({R,<sp/>0,<sp/>1},<sp/>IU)<sp/>-<sp/>stencil({R,<sp/>0,<sp/>-1},<sp/>IU)<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({L,<sp/>0,<sp/>1},<sp/>IU)<sp/>-<sp/>stencil({L,<sp/>0,<sp/>-1},<sp/>IU)<sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwdz<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IZ]<sp/>*<sp/>(<sp/><sp/>stencil({R,<sp/>0,<sp/>1},<sp/>IW)<sp/>-<sp/>stencil({R,<sp/>0,<sp/>-1},<sp/>IW)<sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({L,<sp/>0,<sp/>1},<sp/>IW)<sp/>-<sp/>stencil({L,<sp/>0,<sp/>-1},<sp/>IW)<sp/>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qi_w<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({R,<sp/>0,<sp/>0},<sp/>IW)<sp/>+<sp/>stencil({L,<sp/>0,<sp/>0},<sp/>IW)<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>qi_u<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({R,<sp/>0,<sp/>0},<sp/>IU)<sp/>+<sp/>stencil({L,<sp/>0,<sp/>0},<sp/>IU)<sp/>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>qi_v<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({R,<sp/>0,<sp/>0},<sp/>IV)<sp/>+<sp/>stencil({L,<sp/>0,<sp/>0},<sp/>IV)<sp/>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Building<sp/>relevant<sp/>tensor<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_xx<sp/>=<sp/>4.0/3.0<sp/>*<sp/>dudx<sp/>-<sp/>2.0/3.0<sp/>*<sp/>(dvdy<sp/>+<sp/>dwdz);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_xy<sp/>=<sp/>dudy<sp/>+<sp/>dvdx;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_xz<sp/>=<sp/>dudz<sp/>+<sp/>dwdx;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Building<sp/>flux</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>sign<sp/>=<sp/>(side<sp/>==<sp/>0<sp/>?<sp/>-1.0<sp/>:<sp/>1.0);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>area<sp/>=<sp/>size[IY]<sp/>*<sp/>size[IZ];</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_u<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_xx;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_v<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_xy;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_w<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_xz;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.e_tot<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>(qi_u<sp/>*<sp/>tau_xx<sp/>+<sp/>qi_v<sp/>*<sp/>tau_xy<sp/>+<sp/>qi_w<sp/>*<sp/>tau_xz);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>viscous_flux<sp/>for<sp/>direction<sp/>IY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dudy<sp/>=<sp/>inv_size[IY]<sp/>*<sp/>(stencil({0,<sp/>R,<sp/>0},<sp/>IU)<sp/>-<sp/>stencil({0,<sp/>L,<sp/>0},<sp/>IU));</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dvdy<sp/>=<sp/>inv_size[IY]<sp/>*<sp/>(stencil({0,<sp/>R,<sp/>0},<sp/>IV)<sp/>-<sp/>stencil({0,<sp/>L,<sp/>0},<sp/>IV));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dudx<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IX]<sp/>*<sp/>(<sp/>stencil({1,<sp/>R,<sp/>0},<sp/>IU)<sp/>-<sp/>stencil({-1,<sp/>R,<sp/>0},<sp/>IU)<sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({1,<sp/>L,<sp/>0},<sp/>IU)<sp/>-<sp/>stencil({-1,<sp/>L,<sp/>0},<sp/>IU));</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dvdx<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IX]<sp/>*<sp/>(<sp/>stencil({1,<sp/>R,<sp/>0},<sp/>IV)<sp/>-<sp/>stencil({-1,<sp/>R,<sp/>0},<sp/>IV)<sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({1,<sp/>L,<sp/>0},<sp/>IV)<sp/>-<sp/>stencil({-1,<sp/>L,<sp/>0},<sp/>IV));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>dwdy=0.0,<sp/>dvdz=0.0,<sp/>dwdz=0.0,<sp/>qi_w=0;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)<sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwdy<sp/>=<sp/>inv_size[IY]<sp/>*<sp/>(<sp/>stencil({0,<sp/>R,<sp/>0},<sp/>IW)<sp/>-<sp/>stencil({0,<sp/>L,<sp/>0},<sp/>IW)<sp/>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dvdz<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IZ]<sp/>*<sp/>(<sp/><sp/>stencil({0,<sp/>R,<sp/>1},<sp/>IV)<sp/>-<sp/>stencil({0,<sp/>R,<sp/>-1},<sp/>IV)<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({0,<sp/>L,<sp/>1},<sp/>IV)<sp/>-<sp/>stencil({0,<sp/>L,<sp/>-1},<sp/>IV)<sp/>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwdz<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IZ]<sp/>*<sp/>(<sp/><sp/>stencil({0,<sp/>R,<sp/>1},<sp/>IW)<sp/>-<sp/>stencil({0,<sp/>R,<sp/>-1},<sp/>IW)<sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({0,<sp/>L,<sp/>1},<sp/>IW)<sp/>-<sp/>stencil({0,<sp/>L,<sp/>-1},<sp/>IW)<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qi_w<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({0,<sp/>R,<sp/>0},<sp/>IW)<sp/>+<sp/>stencil({0,<sp/>L,<sp/>0},<sp/>IW)<sp/>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>qi_u<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({0,<sp/>R,<sp/>0},<sp/>IU)<sp/>+<sp/>stencil({0,<sp/>L,<sp/>0},<sp/>IU)<sp/>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>qi_v<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({0,<sp/>R,<sp/>0},<sp/>IV)<sp/>+<sp/>stencil({0,<sp/>L,<sp/>0},<sp/>IV)<sp/>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Building<sp/>relevant<sp/>tensor<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_yy<sp/>=<sp/>4.0/3.0<sp/>*<sp/>dvdy<sp/>-<sp/>2.0/3.0<sp/>*<sp/>(dudx<sp/>+<sp/>dwdz);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_xy<sp/>=<sp/>dudy<sp/>+<sp/>dvdx;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_yz<sp/>=<sp/>dvdz<sp/>+<sp/>dwdy;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Building<sp/>flux</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>sign<sp/>=<sp/>(side<sp/>==<sp/>0<sp/>?<sp/>-1.0<sp/>:<sp/>1.0);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>area<sp/>=<sp/>size[IX]<sp/>*<sp/>size[IZ];</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_u<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_xy;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_v<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_yy;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_w<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_yz;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.e_tot<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>(qi_u<sp/>*<sp/>tau_xy<sp/>+<sp/>qi_v<sp/>*<sp/>tau_yy<sp/>+<sp/>qi_w<sp/>*<sp/>tau_yz);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>viscous_flux<sp/>for<sp/>direction<sp/>IZ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)<sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dudz<sp/>=<sp/>inv_size[IZ]<sp/>*<sp/>(stencil({0,<sp/>0,<sp/>R},<sp/>IU)<sp/>-<sp/>stencil({0,<sp/>0,<sp/>L},<sp/>IU));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dvdz<sp/>=<sp/>inv_size[IZ]<sp/>*<sp/>(stencil({0,<sp/>0,<sp/>R},<sp/>IV)<sp/>-<sp/>stencil({0,<sp/>0,<sp/>L},<sp/>IV));</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dwdz<sp/>=<sp/>inv_size[IZ]<sp/>*<sp/>(stencil({0,<sp/>0,<sp/>R},<sp/>IW)<sp/>-<sp/>stencil({0,<sp/>0,<sp/>L},<sp/>IW));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dudx<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IX]<sp/>*<sp/>(<sp/>stencil({1,<sp/>0,<sp/>R},<sp/>IU)<sp/>-<sp/>stencil({-1,<sp/>0,<sp/>R},<sp/>IU)<sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({1,<sp/>0,<sp/>L},<sp/>IU)<sp/>-<sp/>stencil({-1,<sp/>0,<sp/>L},<sp/>IU));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dwdx<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IX]<sp/>*<sp/>(<sp/>stencil({1,<sp/>0,<sp/>R},<sp/>IW)<sp/>-<sp/>stencil({-1,<sp/>0,<sp/>R},<sp/>IW)<sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({1,<sp/>0,<sp/>L},<sp/>IW)<sp/>-<sp/>stencil({-1,<sp/>0,<sp/>L},<sp/>IW));</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dvdy<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IY]<sp/>*<sp/>(<sp/>stencil({0,<sp/>1,<sp/>R},<sp/>IV)<sp/>-<sp/>stencil({<sp/>0,-1,<sp/>R},<sp/>IV)<sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({0,<sp/>1,<sp/>L},<sp/>IV)<sp/>-<sp/>stencil({<sp/>0,-1,<sp/>L},<sp/>IV));</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>dwdy<sp/>=<sp/>0.25<sp/>*<sp/>inv_size[IY]<sp/>*<sp/>(<sp/>stencil({0,<sp/>1,<sp/>R},<sp/>IW)<sp/>-<sp/>stencil({<sp/>0,-1,<sp/>R},<sp/>IW)<sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>stencil({0,<sp/>1,<sp/>L},<sp/>IW)<sp/>-<sp/>stencil({<sp/>0,-1,<sp/>L},<sp/>IW));</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>qi_u<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({0,<sp/>0,<sp/>R},<sp/>IU)<sp/>+<sp/>stencil({0,<sp/>0,<sp/>L},<sp/>IU)<sp/>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>qi_v<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({0,<sp/>0,<sp/>R},<sp/>IV)<sp/>+<sp/>stencil({0,<sp/>0,<sp/>L},<sp/>IV)<sp/>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>qi_w<sp/>=<sp/>0.5<sp/>*<sp/>(<sp/>stencil({0,<sp/>0,<sp/>R},<sp/>IW)<sp/>+<sp/>stencil({0,<sp/>0,<sp/>L},<sp/>IW)<sp/>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Building<sp/>relevant<sp/>tensor<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_zz<sp/>=<sp/>4.0/3.0<sp/>*<sp/>dwdz<sp/>-<sp/>2.0/3.0<sp/>*<sp/>(dudx<sp/>+<sp/>dvdy);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_xz<sp/>=<sp/>dudz<sp/>+<sp/>dwdx;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>tau_yz<sp/>=<sp/>dvdz<sp/>+<sp/>dwdy;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Building<sp/>flux</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>sign<sp/>=<sp/>(side<sp/>==<sp/>0<sp/>?<sp/>-1.0<sp/>:<sp/>1.0);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>area<sp/>=<sp/>size[IX]<sp/>*<sp/>size[IY];</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_u<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_xz;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_v<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_yz;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.rho_w<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>tau_zz;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vf.e_tot<sp/>+=<sp/>sign<sp/>*<sp/>area<sp/>*<sp/>(qi_u<sp/>*<sp/>tau_xz<sp/>+<sp/>qi_v<sp/>*<sp/>tau_yz<sp/>+<sp/>qi_w<sp/>*<sp/>tau_zz);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>volume<sp/><sp/>=<sp/>size[IX]<sp/>*<sp/>size[IY]<sp/>*<sp/>(ndim<sp/>==<sp/>3<sp/>?<sp/>size[IZ]<sp/>:<sp/>1.0);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConsHydroState<sp/>res<sp/>=<sp/>mu_cell<sp/>*<sp/>vf<sp/>/<sp/>volume;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>setConservativeState&lt;ndim&gt;(rhs,<sp/>iCell_rhs,<sp/>res);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>real_t<sp/>mu_cst;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h"/>
+  </compounddef>
+</doxygen>

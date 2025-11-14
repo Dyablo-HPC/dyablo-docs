@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ViewCommunicator" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::ViewCommunicator</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1GhostCommunicator__full__blocks" prot="protected" virt="non-virtual">dyablo::GhostCommunicator_full_blocks</derivedcompoundref>
+    <includes refid="ViewCommunicator_8h" local="no">ViewCommunicator.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1ViewCommunicator_1a476775ad1741ca7fbe46eb6a44137af3" prot="protected" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt;uint32_t*&gt; dyablo::ViewCommunicator::recv_sizes</definition>
+        <argsstring></argsstring>
+        <name>recv_sizes</name>
+        <qualifiedname>dyablo::ViewCommunicator::recv_sizes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="111" column="18" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ViewCommunicator_1a4f2c3b25db9fb0e58f995b58c9d25e29" prot="protected" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt;uint32_t*&gt; dyablo::ViewCommunicator::send_sizes</definition>
+        <argsstring></argsstring>
+        <name>send_sizes</name>
+        <qualifiedname>dyablo::ViewCommunicator::send_sizes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="111" column="29" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" prot="protected" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;::HostMirror</type>
+        <definition>Kokkos::View&lt;uint32_t*&gt;::HostMirror dyablo::ViewCommunicator::recv_sizes_host</definition>
+        <argsstring></argsstring>
+        <name>recv_sizes_host</name>
+        <qualifiedname>dyablo::ViewCommunicator::recv_sizes_host</qualifiedname>
+        <briefdescription>
+<para>Number of octants to send/recv for each proc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="112" column="31" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ViewCommunicator_1a767344a2982ef90dc3d2e50f2406c921" prot="protected" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;::HostMirror</type>
+        <definition>Kokkos::View&lt;uint32_t*&gt;::HostMirror dyablo::ViewCommunicator::send_sizes_host</definition>
+        <argsstring></argsstring>
+        <name>send_sizes_host</name>
+        <qualifiedname>dyablo::ViewCommunicator::send_sizes_host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="112" column="47" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" prot="protected" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt;uint32_t*&gt; dyablo::ViewCommunicator::send_iOcts</definition>
+        <argsstring></argsstring>
+        <name>send_iOcts</name>
+        <qualifiedname>dyablo::ViewCommunicator::send_iOcts</qualifiedname>
+        <briefdescription>
+<para>Number of octants to send/recv for each proc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="113" column="18" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ViewCommunicator_1a8d422661df0fe6c2cddb328da96e823a" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::ViewCommunicator::nbghosts_recv</definition>
+        <argsstring></argsstring>
+        <name>nbghosts_recv</name>
+        <qualifiedname>dyablo::ViewCommunicator::nbghosts_recv</qualifiedname>
+        <briefdescription>
+<para>List of octants to send (first send_sizes[0] iOcts to send to rank[0] and so on...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="114" column="14" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ViewCommunicator_1aa16e6d3f3b714af3c1552c57aee28592" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref></type>
+        <definition>MpiComm dyablo::ViewCommunicator::mpi_comm</definition>
+        <argsstring></argsstring>
+        <name>mpi_comm</name>
+        <qualifiedname>dyablo::ViewCommunicator::mpi_comm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="115" column="13" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1accd86903368004966d29fc69dbc3e58b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref></type>
+        <definition>static ViewCommunicator dyablo::ViewCommunicator::from_mesh</definition>
+        <argsstring>(const AMRmesh &amp;mesh, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>from_mesh</name>
+        <qualifiedname>dyablo::ViewCommunicator::from_mesh</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="27" column="29" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="27" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1ab3e9dc7aedae827ad54390a4546b9eac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ViewCommunicator::ViewCommunicator</definition>
+        <argsstring>(const Kokkos::View&lt; int * &gt; target_domains, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>ViewCommunicator</name>
+        <qualifiedname>dyablo::ViewCommunicator::ViewCommunicator</qualifiedname>
+        <param>
+          <type>const Kokkos::View&lt; int * &gt;</type>
+          <declname>target_domains</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref> using a view containing the target domain for each local object This is for example used for load balancing when blocks are moved from one rank to another (since there is only one target domain per block, this cannot be used for ghosts)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target_domains</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>View containing the target domain for each local object in the distributed dimension (same size as the distributed dimension extent) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="41" column="5" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1a0667aa340c11ff305d2368b22b5083da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::ViewCommunicator::private_init_domains</definition>
+        <argsstring>(const Kokkos::View&lt; int * &gt; domains)</argsstring>
+        <name>private_init_domains</name>
+        <qualifiedname>dyablo::ViewCommunicator::private_init_domains</qualifiedname>
+        <param>
+          <type>const Kokkos::View&lt; int * &gt;</type>
+          <declname>domains</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DO NOT CALL THIS YOURSELF this is here because KOKKOS_LAMBDAS cannot be declared in constructors or private methods with nvcc </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="51" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.cpp" bodystart="7" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1addb576949d4891df9aeb531674822f25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ViewCommunicator::ViewCommunicator</definition>
+        <argsstring>(const std::map&lt; int, std::vector&lt; uint32_t &gt; &gt; &amp;ghost_map, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>ViewCommunicator</name>
+        <qualifiedname>dyablo::ViewCommunicator::ViewCommunicator</qualifiedname>
+        <param>
+          <type>const std::map&lt; int, std::vector&lt; uint32_t &gt; &gt; &amp;</type>
+          <declname>ghost_map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref> by listing local object to send to each remote domain (map&lt;int, vector&gt; representation). Same object can be sent to multiple domains</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ghost_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a &apos;rank -&gt; local octant list&apos; map to describe which objects to send to each MPI process </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="59" column="5" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.cpp" bodystart="86" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1a95c7bd9355de2a6f54959f1ec6ad7daf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ViewCommunicator::ViewCommunicator</definition>
+        <argsstring>(const Kokkos::View&lt; uint32_t * &gt; send_sizes, const Kokkos::View&lt; uint32_t * &gt; send_iObj, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>ViewCommunicator</name>
+        <qualifiedname>dyablo::ViewCommunicator::ViewCommunicator</qualifiedname>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt;</type>
+          <declname>send_sizes</declname>
+        </param>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt;</type>
+          <declname>send_iObj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref> by listing local object to send to each remote domain ( Kokkos::View representation ) Same object can be sent to multiple domains</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>send_sizes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of size <computeroutput>MPI_comm_size()</computeroutput> describing how many object to send to each rank </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>send_iObj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local object indices to send. First send_sizes(0) objects in send_iObj will be sent to rank 0, etc... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="68" column="5" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1a0d2dac0199f6b71455c74aad75e5c254" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::ViewCommunicator::getNumGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumGhosts</name>
+        <qualifiedname>dyablo::ViewCommunicator::getNumGhosts</qualifiedname>
+        <briefdescription>
+<para>Get the number of ghosts in local process with the current exchange pattern. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="75" column="14" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1ab2c42816f513e7e10a1c6027bab22c09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>distributed_dim</declname>
+            <defname>distributed_dim</defname>
+          </param>
+          <param>
+            <type>typename DataArray_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::ViewCommunicator::exchange_ghosts</definition>
+        <argsstring>(const DataArray_t &amp;U, const DataArray_t &amp;Ughost) const</argsstring>
+        <name>exchange_ghosts</name>
+        <qualifiedname>dyablo::ViewCommunicator::exchange_ghosts</qualifiedname>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>Ughost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic function to send object data stored in U to Ughost according to communication pattern</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Kokkos::View type. It must be Kokkos::LayoutLeft </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distributed_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position distributed objects index coordinate in U(..,..,...). When distributed object index is not the leftmost index (distributed_dim != DataArray_t::rank-1), packing/unpacking is less efficient because data needs to be transposed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a view containing data distributed accross the distributed_dim-th dimension. Must be in accordance with the communication pattern. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Ughost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A view to recieve the exchanged objects. This must be allocated to have <ref refid="classdyablo_1_1ViewCommunicator_1a0d2dac0199f6b71455c74aad75e5c254" kindref="member">getNumGhosts()</ref> elements in the distributed_dim-th dimension, and must have the same shape than U in all other dimensions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="90" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="190" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1a879538474f1ed2cb1e75136fba3a1c42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>distributed_dim</declname>
+            <defname>distributed_dim</defname>
+          </param>
+          <param>
+            <type>typename DataArray_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::ViewCommunicator::reduce_ghosts</definition>
+        <argsstring>(const DataArray_t &amp;U, const DataArray_t &amp;Ughost) const</argsstring>
+        <name>reduce_ghosts</name>
+        <qualifiedname>dyablo::ViewCommunicator::reduce_ghosts</qualifiedname>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>Ughost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic function to reduce ghost values to source object Ghost values from every process are sent to owning process and then added to the local non-ghost cell</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Kokkos::View type. It must be Kokkos::LayoutLeft </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distributed_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position distributed objects index coordinate in U(..,..,...). When distributed object index is not the leftmost index (distributed_dim != DataArray_t::rank-1), packing/unpacking is less efficient because data needs to be transposed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a view containing data distributed accross the distributed_dim-th dimension. Must be in accordance with the communication pattern. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Ughost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A view to recieve the exchanged objects. This must have <ref refid="classdyablo_1_1ViewCommunicator_1a0d2dac0199f6b71455c74aad75e5c254" kindref="member">getNumGhosts()</ref> elements in the distributed_dim-th dimension, and must have the same shape than U in all other dimensions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="106" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="376" bodyend="506"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdyablo_1_1ViewCommunicator_1ab08afc47420a7f458e99933859c0828b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::ViewCommunicator::private_init_map</definition>
+        <argsstring>(const Kokkos::View&lt; uint32_t * &gt; send_sizes, const Kokkos::View&lt; uint32_t * &gt; send_iOcts)</argsstring>
+        <name>private_init_map</name>
+        <qualifiedname>dyablo::ViewCommunicator::private_init_map</qualifiedname>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt;</type>
+          <declname>send_sizes</declname>
+        </param>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt;</type>
+          <declname>send_iOcts</declname>
+        </param>
+        <briefdescription>
+<para>See <ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref>&apos;s related constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="109" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.cpp" bodystart="62" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Communicator to exchange Kokkos::View data between MPI domains. <ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref> can exchange multidimensionnal views that are distributed in a single dimension. (e.g. cell block arrays are distributed along the <computeroutput>iOct</computeroutput> dimension, particle arrays are distributed along the iPart dimension).</para>
+<para>The distributed dimension is the position of the index in Kokkos::operator() for the distributed objects. Any index can be the distributed dimension, objects will be automatically packed and unpacked if they are not contiguous (be aware of performance implications).</para>
+<para><ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref> is constructed with a description of the exchange pattern (e.g. which local octant to send to which rank), then <ref refid="classdyablo_1_1ViewCommunicator_1ab2c42816f513e7e10a1c6027bab22c09" kindref="member">exchange_ghosts&lt;distributed_dim&gt;()</ref> and <ref refid="classdyablo_1_1ViewCommunicator_1a879538474f1ed2cb1e75136fba3a1c42" kindref="member">reduce_ghosts&lt;distributed_dim&gt;()</ref> are used to perform MPI operations. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::GhostCommunicator_full_blocks</label>
+        <link refid="classdyablo_1_1GhostCommunicator__full__blocks"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dyablo::ViewCommunicator</label>
+        <link refid="classdyablo_1_1ViewCommunicator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::MpiComm</label>
+        <link refid="classdyablo_1_1MpiComm"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ViewCommunicator</label>
+        <link refid="classdyablo_1_1ViewCommunicator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mpi_comm</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="24" column="1" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="25" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1ViewCommunicator_1ab2c42816f513e7e10a1c6027bab22c09" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>exchange_ghosts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1accd86903368004966d29fc69dbc3e58b" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>from_mesh</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a0d2dac0199f6b71455c74aad75e5c254" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>getNumGhosts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1aa16e6d3f3b714af3c1552c57aee28592" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>mpi_comm</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a8d422661df0fe6c2cddb328da96e823a" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>nbghosts_recv</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a0667aa340c11ff305d2368b22b5083da" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>private_init_domains</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ab08afc47420a7f458e99933859c0828b" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>private_init_map</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a476775ad1741ca7fbe46eb6a44137af3" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>recv_sizes</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>recv_sizes_host</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a879538474f1ed2cb1e75136fba3a1c42" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>reduce_ghosts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>send_iOcts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a4f2c3b25db9fb0e58f995b58c9d25e29" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>send_sizes</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a767344a2982ef90dc3d2e50f2406c921" prot="protected" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>send_sizes_host</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ab3e9dc7aedae827ad54390a4546b9eac" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>ViewCommunicator</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1addb576949d4891df9aeb531674822f25" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>ViewCommunicator</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a95c7bd9355de2a6f54959f1ec6ad7daf" prot="public" virt="non-virtual"><scope>dyablo::ViewCommunicator</scope><name>ViewCommunicator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

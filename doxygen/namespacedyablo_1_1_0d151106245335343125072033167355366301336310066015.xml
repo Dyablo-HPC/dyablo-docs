@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1_0d151106245335343125072033167355366301336310066015" kind="namespace" language="C++">
+    <compoundname>dyablo</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedyablo_1_1_0d151106245335343125072033167355366301336310066015_1a1412bcaadb0a6d5db521e5f632cfe75e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>VarIndex_Cooling</name>
+        <qualifiedname>dyablo::VarIndex_Cooling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="6" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacedyablo_1_1_0d151106245335343125072033167355366301336310066015_1a5422a5d652de12b4e01a9bf575c35a75" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CoolingLayer</name>
+        <qualifiedname>dyablo::CoolingLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="7" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

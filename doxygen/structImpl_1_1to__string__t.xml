@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structImpl_1_1to__string__t" kind="struct" language="C++" prot="public">
+    <compoundname>Impl::to_string_t</compoundname>
+    <includes refid="ConfigMap_8h" local="no">ConfigMap.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structImpl_1_1to__string__t_1a4519f5d2af89a166964758743b7e355c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Impl::to_string_t&lt; T &gt;::convert</definition>
+        <argsstring>(const T &amp;t)</argsstring>
+        <name>convert</name>
+        <qualifiedname>Impl::to_string_t::convert</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="131" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="131" bodyend="161"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Template wrapper class for partial specialization of to_string. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="129" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="130" bodyend="162"/>
+    <listofallmembers>
+      <member refid="structImpl_1_1to__string__t_1a4519f5d2af89a166964758743b7e355c" prot="public" virt="non-virtual"><scope>Impl::to_string_t</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

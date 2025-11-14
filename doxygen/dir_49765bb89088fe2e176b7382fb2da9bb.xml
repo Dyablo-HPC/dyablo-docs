@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_49765bb89088fe2e176b7382fb2da9bb" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/init</compoundname>
+    <innerdir refid="dir_2f99028ebe7a44599df4b7fffcd51ef2">/builds/dyablo/dyablo/core/src/init/hydro</innerdir>
+    <innerdir refid="dir_3fd01284de124ab24e42a90aa3f98568">/builds/dyablo/dyablo/core/src/init/mhd</innerdir>
+    <innerdir refid="dir_b9738cd5c6cc4dd1422cc37faeb75fbe">/builds/dyablo/dyablo/core/src/init/wholesun</innerdir>
+    <innerfile refid="AnalyticalFormula_8h">AnalyticalFormula.h</innerfile>
+    <innerfile refid="InitialConditions_8h">InitialConditions.h</innerfile>
+    <innerfile refid="InitialConditions__analytical_8h">InitialConditions_analytical.h</innerfile>
+    <innerfile refid="InitialConditions__base_8h">InitialConditions_base.h</innerfile>
+    <innerfile refid="InitialConditions__grafic__fields_8cpp">InitialConditions_grafic_fields.cpp</innerfile>
+    <innerfile refid="InitialConditions__particle__grid_8cpp">InitialConditions_particle_grid.cpp</innerfile>
+    <innerfile refid="InitialConditions__restart_8cpp">InitialConditions_restart.cpp</innerfile>
+    <innerfile refid="InitialConditions__simple__particles_8cpp">InitialConditions_simple_particles.cpp</innerfile>
+    <innerfile refid="InitialConditions__tiled__restart_8cpp">InitialConditions_tiled_restart.cpp</innerfile>
+    <innerfile refid="InitialConditions__uniform_8cpp">InitialConditions_uniform.cpp</innerfile>
+    <innerfile refid="InitialConditions__uniform_8h">InitialConditions_uniform.h</innerfile>
+    <innerfile refid="InitialConditions__zeldovitch__pancake_8cpp">InitialConditions_zeldovitch_pancake.cpp</innerfile>
+    <innerfile refid="InitialConditions__zeldovitch__particles_8cpp">InitialConditions_zeldovitch_particles.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/init/"/>
+  </compounddef>
+</doxygen>

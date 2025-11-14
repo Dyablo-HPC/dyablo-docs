@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_2c6fefa207b4fe15b24321cae5e9b4b8" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/particles</compoundname>
+    <innerfile refid="ForeachParticle_8h">ForeachParticle.h</innerfile>
+    <innerfile refid="ParticleArray_8h">ParticleArray.h</innerfile>
+    <innerfile refid="ParticleUpdate_8h">ParticleUpdate.h</innerfile>
+    <innerfile refid="ParticleUpdate__base_8h">ParticleUpdate_base.h</innerfile>
+    <innerfile refid="ParticleUpdate__CIC__density_8cpp">ParticleUpdate_CIC_density.cpp</innerfile>
+    <innerfile refid="ParticleUpdate__CIC__move_8cpp">ParticleUpdate_CIC_move.cpp</innerfile>
+    <innerfile refid="ParticleUpdate__NGP__density_8cpp">ParticleUpdate_NGP_density.cpp</innerfile>
+    <innerfile refid="ParticleUpdate__NGP__move_8cpp">ParticleUpdate_NGP_move.cpp</innerfile>
+    <innerfile refid="ParticleUpdate__tracers__move_8cpp">ParticleUpdate_tracers_move.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/particles/"/>
+  </compounddef>
+</doxygen>

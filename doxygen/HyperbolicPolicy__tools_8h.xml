@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="HyperbolicPolicy__tools_8h" kind="file" language="C++">
+    <compoundname>HyperbolicPolicy_tools.h</compoundname>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedyablo_1a85755f1c9ef81f60700d640e1e7c9dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename Tuple_t</type>
+          </param>
+          <param>
+            <type>size_t...</type>
+            <declname>Is</declname>
+            <defname>Is</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION bool</type>
+        <definition>KOKKOS_INLINE_FUNCTION bool dyablo::tuple_foreach_until</definition>
+        <argsstring>(F f, const Tuple_t &amp;t, std::index_sequence&lt; Is... &gt;)</argsstring>
+        <name>tuple_foreach_until</name>
+        <qualifiedname>dyablo::tuple_foreach_until</qualifiedname>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const Tuple_t &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>std::index_sequence&lt; Is... &gt;</type>
+        </param>
+        <briefdescription>
+<para>Apply f(int index, auto elt) to tuple elements until f returns true;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_tools.h" line="8" column="6" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_tools.h" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a2e340d931431ca302289ac23b5600b7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T0</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t dyablo::tuple_find_name</definition>
+        <argsstring>(std::string name, int N=0)</argsstring>
+        <name>tuple_find_name</name>
+        <qualifiedname>dyablo::tuple_find_name</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Find the index n of the tuple element where std::get&lt;n&gt;(t).name() == name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_tools.h" line="15" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_tools.h" bodystart="15" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a7c0e1e4040748900a1165270f4e54ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION auto</type>
+        <definition>KOKKOS_INLINE_FUNCTION auto dyablo::tuple_apply_nth</definition>
+        <argsstring>(int n, F f, const std::tuple&lt; Ts... &gt; &amp;t)</argsstring>
+        <name>tuple_apply_nth</name>
+        <qualifiedname>dyablo::tuple_apply_nth</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const std::tuple&lt; Ts... &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_tools.h" line="40" column="6" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_tools.h" bodystart="40" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tuple_t,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">...<sp/>Is<sp/>&gt;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">KOKKOS_INLINE_FUNCTION<sp/></highlight></codeline>
+<codeline lineno="8" refid="namespacedyablo_1a85755f1c9ef81f60700d640e1e7c9dee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacedyablo_1a85755f1c9ef81f60700d640e1e7c9dee" kindref="member">tuple_foreach_until</ref>(<sp/>F<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Tuple_t&amp;<sp/>t,<sp/>std::index_sequence&lt;Is...&gt;)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/>f(Is,<sp/>std::get&lt;Is&gt;(t))<sp/>||<sp/>...<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T0,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts<sp/>&gt;</highlight></codeline>
+<codeline lineno="15" refid="namespacedyablo_1a2e340d931431ca302289ac23b5600b7a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="namespacedyablo_1a2e340d931431ca302289ac23b5600b7a" kindref="member">tuple_find_name</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N=0)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>T0::name()<sp/>==<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>N;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Ts)<sp/>==<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>find<sp/>tuple<sp/>element<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacedyablo_1a2e340d931431ca302289ac23b5600b7a" kindref="member">tuple_find_name</ref>&lt;Ts...&gt;(name,<sp/>N+1);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>Apply<sp/>function<sp/>f()<sp/>to<sp/>the<sp/>n-th<sp/>element<sp/>of<sp/>the<sp/>tuple,<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>like<sp/>f(std::get&lt;n&gt;(t))<sp/>but<sp/>with<sp/>non-constexpr<sp/>n</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>@param<sp/>f<sp/>T<sp/>-&gt;<sp/>Res,<sp/>can<sp/>take<sp/>every<sp/>type<sp/>in<sp/>Ts...<sp/>as<sp/>input<sp/>and<sp/>always<sp/>return<sp/>the<sp/>same<sp/>type<sp/>Res</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>@param<sp/>t<sp/>a<sp/>tuple<sp/>containing<sp/>types<sp/>compatible<sp/>with<sp/>f()</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>@returns<sp/>same<sp/>return<sp/>type<sp/>as<sp/>f()</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>F,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts<sp/>&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">KOKKOS_INLINE_FUNCTION<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>tuple_apply_nth(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>F<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::tuple&lt;Ts...&gt;&amp;<sp/>t)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ret_type<sp/>=<sp/>std::invoke_result_t&lt;<sp/>F,<sp/>std::tuple_element_t&lt;0,<sp/>std::tuple&lt;Ts...&gt;<sp/>&gt;<sp/>&gt;;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(<sp/>(<sp/>std::is_same_v&lt;<sp/>ret_type,<sp/>std::invoke_result_t&lt;<sp/>F,<sp/>Ts<sp/>&gt;<sp/>&gt;<sp/>&amp;&amp;<sp/>...<sp/>),<sp/></highlight><highlight class="stringliteral">&quot;Return<sp/>type<sp/>mismatch<sp/>for<sp/>F&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>ret_type<sp/>res;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>apply<sp/>f<sp/>if<sp/>i==n,<sp/>stop<sp/>when<sp/>that<sp/>happens</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>apply_nth<sp/>=<sp/>[&amp;](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>ti)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>i==n<sp/>)<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>f(ti);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i==n;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>[[maybe_unused]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>found<sp/>=<sp/><ref refid="namespacedyablo_1a85755f1c9ef81f60700d640e1e7c9dee" kindref="member">tuple_foreach_until</ref>(<sp/>apply_nth,<sp/>t,<sp/>std::index_sequence_for&lt;Ts...&gt;{}<sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>found,<sp/></highlight><highlight class="stringliteral">&quot;Internal<sp/>error<sp/>:<sp/>could<sp/>not<sp/>find<sp/>corresponding<sp/>tuple<sp/>element&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_tools.h"/>
+  </compounddef>
+</doxygen>

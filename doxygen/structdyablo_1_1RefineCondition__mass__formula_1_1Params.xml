@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1RefineCondition__mass__formula_1_1Params" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::RefineCondition_mass_formula::Params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1ad84973b9ae80c2895149e4903809bbc6" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_mass_formula::Params::mass_coarsen</definition>
+        <argsstring></argsstring>
+        <name>mass_coarsen</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::Params::mass_coarsen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="19" column="12" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1a783d386f4bf5b690ee4145e1f6bcf4bb" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_mass_formula::Params::mass_refine</definition>
+        <argsstring></argsstring>
+        <name>mass_refine</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::Params::mass_refine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="19" column="25" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1ab3d3366a92039deb2106cecea63be4c0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::RefineCondition_mass_formula::Params::rho_field_name</definition>
+        <argsstring></argsstring>
+        <name>rho_field_name</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::Params::rho_field_name</qualifiedname>
+        <initializer>= &quot;rho&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="20" column="17" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1a74456eea10fee4a95f00b35d121c22c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::RefineCondition_mass_formula::Params::Params</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>Params</name>
+        <qualifiedname>dyablo::RefineCondition_mass_formula::Params::Params</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="14" column="5" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" line="12" column="3" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_mass.cpp" bodystart="13" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1ad84973b9ae80c2895149e4903809bbc6" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula::Params</scope><name>mass_coarsen</name></member>
+      <member refid="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1a783d386f4bf5b690ee4145e1f6bcf4bb" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula::Params</scope><name>mass_refine</name></member>
+      <member refid="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1a74456eea10fee4a95f00b35d121c22c3" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula::Params</scope><name>Params</name></member>
+      <member refid="structdyablo_1_1RefineCondition__mass__formula_1_1Params_1ab3d3366a92039deb2106cecea63be4c0" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_mass_formula::Params</scope><name>rho_field_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

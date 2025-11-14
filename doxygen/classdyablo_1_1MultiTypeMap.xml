@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1MultiTypeMap" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::MultiTypeMap</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Ts</declname>
+        <defname>Ts</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdyablo_1_1MultiTypeMap_1a54bef49f3709c181eb2c674b979a7343" prot="private" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::map&lt; std::string, T &gt;</type>
+        <definition>using dyablo::MultiTypeMap&lt; Ts &gt;::map_t =  std::map&lt; std::string, T &gt;</definition>
+        <argsstring></argsstring>
+        <name>map_t</name>
+        <qualifiedname>dyablo::MultiTypeMap::map_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="14" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1MultiTypeMap_1ac41ba5f174d59c2cdc17f670bbeaed65" prot="private" static="no" mutable="no">
+        <type>std::tuple&lt; map_t&lt; Ts &gt;... &gt;</type>
+        <definition>std::tuple&lt; map_t&lt;Ts&gt;... &gt; dyablo::MultiTypeMap&lt; Ts &gt;::maps</definition>
+        <argsstring></argsstring>
+        <name>maps</name>
+        <qualifiedname>dyablo::MultiTypeMap::maps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="90" column="14" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a961586f2d186aa00b0e470fdfd9257a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::MultiTypeMap&lt; Ts &gt;::MultiTypeMap</definition>
+        <argsstring>()=default</argsstring>
+        <name>MultiTypeMap</name>
+        <qualifiedname>dyablo::MultiTypeMap::MultiTypeMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a5de6b143b1497ea2fdc3c20e47a8c272" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::MultiTypeMap&lt; Ts &gt;::MultiTypeMap</definition>
+        <argsstring>(std::initializer_list&lt; typename map_t&lt; Ts &gt;::value_type &gt; ... is)</argsstring>
+        <name>MultiTypeMap</name>
+        <qualifiedname>dyablo::MultiTypeMap::MultiTypeMap</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; typename map_t&lt; Ts &gt;::value_type &gt; ...</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="18" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a548f0cdee0c5d24e092498191ddee41c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; dyablo::MultiTypeMap&lt; Ts &gt;::get</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>get</name>
+        <qualifiedname>dyablo::MultiTypeMap::get</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="23" column="11" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="23" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a3002b1fc08d1f4dd6294dd88b9fb53c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; dyablo::MultiTypeMap&lt; Ts &gt;::get</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>get</name>
+        <qualifiedname>dyablo::MultiTypeMap::get</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="50" column="5" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a0945873324d1c8c075f4a906c26d87da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::MultiTypeMap&lt; Ts &gt;::set</definition>
+        <argsstring>(const std::string &amp;name, const T &amp;v)</argsstring>
+        <name>set</name>
+        <qualifiedname>dyablo::MultiTypeMap::set</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="57" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a2a538c7992e877e207ba6f54f9551630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::MultiTypeMap&lt; Ts &gt;::foreach_var_t</definition>
+        <argsstring>(const Func &amp;f)</argsstring>
+        <name>foreach_var_t</name>
+        <qualifiedname>dyablo::MultiTypeMap::foreach_var_t</qualifiedname>
+        <param>
+          <type>const Func &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="63" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1acd5c819e95eb51f5ecc79971398beedc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::MultiTypeMap&lt; Ts &gt;::foreach_var</definition>
+        <argsstring>(const Func &amp;f)</argsstring>
+        <name>foreach_var</name>
+        <qualifiedname>dyablo::MultiTypeMap::foreach_var</qualifiedname>
+        <param>
+          <type>const Func &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="72" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a14c9100cf84f3522beafbdd702604b0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::MultiTypeMap&lt; Ts &gt;::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>dyablo::MultiTypeMap::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="77" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="77" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a75cd5e51b46f2ed1995c347b50da4e23" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>map_t&lt; T &gt; &amp;</type>
+        <definition>map_t&lt; T &gt; &amp; dyablo::MultiTypeMap&lt; Ts &gt;::getMap</definition>
+        <argsstring>()</argsstring>
+        <name>getMap</name>
+        <qualifiedname>dyablo::MultiTypeMap::getMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="93" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MultiTypeMap_1a9ad83c057d42cedf276e3af02ff8d569" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const map_t&lt; T &gt; &amp;</type>
+        <definition>const map_t&lt; T &gt; &amp; dyablo::MultiTypeMap&lt; Ts &gt;::getMap</definition>
+        <argsstring>() const</argsstring>
+        <name>getMap</name>
+        <qualifiedname>dyablo::MultiTypeMap::getMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="100" column="15" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="100" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/MultiTypeMap.h" bodystart="11" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1MultiTypeMap_1acd5c819e95eb51f5ecc79971398beedc" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>foreach_var</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a2a538c7992e877e207ba6f54f9551630" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>foreach_var_t</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a548f0cdee0c5d24e092498191ddee41c" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>get</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a3002b1fc08d1f4dd6294dd88b9fb53c4" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>get</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a75cd5e51b46f2ed1995c347b50da4e23" prot="private" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>getMap</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a9ad83c057d42cedf276e3af02ff8d569" prot="private" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>getMap</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a54bef49f3709c181eb2c674b979a7343" prot="private" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>map_t</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1ac41ba5f174d59c2cdc17f670bbeaed65" prot="private" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>maps</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a961586f2d186aa00b0e470fdfd9257a9" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>MultiTypeMap</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a5de6b143b1497ea2fdc3c20e47a8c272" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>MultiTypeMap</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a14c9100cf84f3522beafbdd702604b0b" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>print</name></member>
+      <member refid="classdyablo_1_1MultiTypeMap_1a0945873324d1c8c075f4a906c26d87da" prot="public" virt="non-virtual"><scope>dyablo::MultiTypeMap</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

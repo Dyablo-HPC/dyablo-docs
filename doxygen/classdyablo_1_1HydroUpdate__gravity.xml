@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HydroUpdate__gravity" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HydroUpdate_gravity</compoundname>
+    <basecompoundref refid="classdyablo_1_1HyperbolicUpdate" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HydroUpdate__gravity_1a5a4d101391ff5858318efb33d1005c90" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::HydroUpdate_gravity::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="9" column="15" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HydroUpdate__gravity_1a3e397307acb493a47c2876226ad9fc8e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::HydroUpdate_gravity::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="10" column="7" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HydroUpdate__gravity_1ab1aa8af1cbf63025511dda5e0e7f5425" prot="private" static="no" mutable="no">
+        <type>GravityType</type>
+        <definition>GravityType dyablo::HydroUpdate_gravity::gravity_type</definition>
+        <argsstring></argsstring>
+        <name>gravity_type</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::gravity_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="11" column="15" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HydroUpdate__gravity_1acf981d7a127db6ef0b8f09bd2b53d405" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HydroUpdate_gravity::gx</definition>
+        <argsstring></argsstring>
+        <name>gx</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::gx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="12" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HydroUpdate__gravity_1af9895a3df57310307892cebb5dcb93aa" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HydroUpdate_gravity::gy</definition>
+        <argsstring></argsstring>
+        <name>gy</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::gy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="12" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HydroUpdate__gravity_1a09066d9eb61d27fc8c6f5afe3e484828" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HydroUpdate_gravity::gz</definition>
+        <argsstring></argsstring>
+        <name>gz</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::gz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="12" column="16" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HydroUpdate__gravity_1a9b766ce5392c668d2e704cdd03eb1802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HydroUpdate_gravity::HydroUpdate_gravity</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>HydroUpdate_gravity</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::HydroUpdate_gravity</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="15" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="15" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HydroUpdate__gravity_1ad2389857254cd98a61bf439dc46675fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::HydroUpdate_gravity::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::HydroUpdate_gravity::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1HyperbolicUpdate_1ac76f22f39d55840fdf90e1abef294cfe">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="30" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="30" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::HydroUpdate_gravity</label>
+        <link refid="classdyablo_1_1HydroUpdate__gravity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::HydroUpdate_gravity</label>
+        <link refid="classdyablo_1_1HydroUpdate__gravity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_gravity.cpp" bodystart="7" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1a5a4d101391ff5858318efb33d1005c90" prot="private" virt="non-virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1ab1aa8af1cbf63025511dda5e0e7f5425" prot="private" virt="non-virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>gravity_type</name></member>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1acf981d7a127db6ef0b8f09bd2b53d405" prot="private" virt="non-virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>gx</name></member>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1af9895a3df57310307892cebb5dcb93aa" prot="private" virt="non-virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>gy</name></member>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1a09066d9eb61d27fc8c6f5afe3e484828" prot="private" virt="non-virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>gz</name></member>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1a9b766ce5392c668d2e704cdd03eb1802" prot="public" virt="non-virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>HydroUpdate_gravity</name></member>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1a3e397307acb493a47c2876226ad9fc8e" prot="private" virt="non-virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>ndim</name></member>
+      <member refid="classdyablo_1_1HydroUpdate__gravity_1ad2389857254cd98a61bf439dc46675fd" prot="public" virt="virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>update</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" virt="virtual"><scope>dyablo::HydroUpdate_gravity</scope><name>~HyperbolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

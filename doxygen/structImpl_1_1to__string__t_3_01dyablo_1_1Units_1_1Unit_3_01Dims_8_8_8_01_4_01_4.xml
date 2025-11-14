@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structImpl_1_1to__string__t_3_01dyablo_1_1Units_1_1Unit_3_01Dims_8_8_8_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>Impl::to_string_t&lt; dyablo::Units::Unit&lt; Dims... &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int...</type>
+        <declname>Dims</declname>
+        <defname>Dims</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structImpl_1_1to__string__t_3_01dyablo_1_1Units_1_1Unit_3_01Dims_8_8_8_01_4_01_4_1adc5462442b1764f399237947a4043c18" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Impl::to_string_t&lt; dyablo::Units::Unit&lt; Dims... &gt; &gt;::convert</definition>
+        <argsstring>(const dyablo::Units::Unit&lt; Dims... &gt; &amp;u)</argsstring>
+        <name>convert</name>
+        <qualifiedname>Impl::to_string_t&lt; dyablo::Units::Unit&lt; Dims... &gt; &gt;::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">dyablo::Units::Unit</ref>&lt; Dims... &gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="183" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="structImpl_1_1to__string__t_1a4519f5d2af89a166964758743b7e355c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Impl::to_string_t&lt; dyablo::Units::Unit&lt; Dims... &gt; &gt;::convert</definition>
+        <argsstring>(const dyablo::Units::Unit&lt; Dims... &gt; &amp;t)</argsstring>
+        <name>convert</name>
+        <qualifiedname>Impl::to_string_t&lt; dyablo::Units::Unit&lt; Dims... &gt; &gt;::convert</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">dyablo::Units::Unit</ref>&lt; Dims... &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="131" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="131" bodyend="161"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="181" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="182" bodyend="188"/>
+    <listofallmembers>
+      <member refid="structImpl_1_1to__string__t_3_01dyablo_1_1Units_1_1Unit_3_01Dims_8_8_8_01_4_01_4_1adc5462442b1764f399237947a4043c18" prot="public" virt="non-virtual"><scope>Impl::to_string_t&lt; dyablo::Units::Unit&lt; Dims... &gt; &gt;</scope><name>convert</name></member>
+      <member refid="structImpl_1_1to__string__t_1a4519f5d2af89a166964758743b7e355c" prot="public" virt="non-virtual"><scope>Impl::to_string_t&lt; dyablo::Units::Unit&lt; Dims... &gt; &gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

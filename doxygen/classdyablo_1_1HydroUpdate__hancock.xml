@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HydroUpdate__hancock" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HydroUpdate_hancock</compoundname>
+    <basecompoundref refid="classdyablo_1_1Hyperbolic__hancock" prot="public" virt="non-virtual">dyablo::Hyperbolic_hancock&lt; HyperbolicPolicy_Hydro &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::HydroUpdate_hancock</label>
+        <link refid="classdyablo_1_1HydroUpdate__hancock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::Hyperbolic_hancock&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__hancock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::HydroUpdate_hancock</label>
+        <link refid="classdyablo_1_1HydroUpdate__hancock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::Hyperbolic_hancock&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__hancock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_hancock.cpp" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_hancock.cpp" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Hyperbolic__hancock_1a4bc7b0916561641a291238cc1b637c8e" prot="public" virt="non-virtual"><scope>dyablo::HydroUpdate_hancock</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1Hyperbolic__hancock_1a74893ade17dcdaa2d5d9e5165a14e30a" prot="public" virt="non-virtual"><scope>dyablo::HydroUpdate_hancock</scope><name>Hyperbolic_hancock</name></member>
+      <member refid="classdyablo_1_1Hyperbolic__hancock_1aa890b054d5e97c39698e041f8e8df9c8" prot="public" virt="non-virtual"><scope>dyablo::HydroUpdate_hancock</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1Hyperbolic__hancock_1a2b9c673b46a749543194bed698fe529d" prot="public" virt="virtual"><scope>dyablo::HydroUpdate_hancock</scope><name>update</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" virt="virtual"><scope>dyablo::HydroUpdate_hancock</scope><name>~HyperbolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

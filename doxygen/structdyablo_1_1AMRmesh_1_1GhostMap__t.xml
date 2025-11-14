@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AMRmesh_1_1GhostMap__t" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AMRmesh::GhostMap_t</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Face</name>
+        <qualifiedname>dyablo::AMRmesh::GhostMap_t::Face</qualifiedname>
+        <enumvalue id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca8bb12f14af481c87406891362741955e" prot="public">
+          <name>XL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014caea3b69412a3348e95a05836053deb2dc" prot="public">
+          <name>XR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca9d3e8bfe7a606bfc50278cf82013759b" prot="public">
+          <name>YL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca780e379ea90f88403430046717f2c08f" prot="public">
+          <name>YR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca71dc74f2449a5a04de64b396ad3b87c4" prot="public">
+          <name>ZL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca66562020d9e6ffa0478d8fba4c42f558" prot="public">
+          <name>ZR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014cab7e6c153f12892fbbadb295ef6ad4cc2" prot="public">
+          <name>FACE_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="87" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a03b097ada763e23acb58c3a022eb3c09" prot="public" static="no">
+        <type>int</type>
+        <definition>using dyablo::AMRmesh::GhostMap_t::CellMask =  int</definition>
+        <argsstring></argsstring>
+        <name>CellMask</name>
+        <qualifiedname>dyablo::AMRmesh::GhostMap_t::CellMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="93" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1acebd3125382ff50bba02a8c4a3436a34" prot="public" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt; uint32_t* &gt; dyablo::AMRmesh::GhostMap_t::send_sizes</definition>
+        <argsstring></argsstring>
+        <name>send_sizes</name>
+        <qualifiedname>dyablo::AMRmesh::GhostMap_t::send_sizes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="84" column="18" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a46ffef145a23f3cd91e14b1dce74ca91" prot="public" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt; uint32_t* &gt; dyablo::AMRmesh::GhostMap_t::send_iOcts</definition>
+        <argsstring></argsstring>
+        <name>send_iOcts</name>
+        <qualifiedname>dyablo::AMRmesh::GhostMap_t::send_iOcts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="85" column="18" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a473ee1f70f3c47dbb996a84f2674fa5e" prot="public" static="no" mutable="no">
+        <type>Kokkos::View&lt; CellMask * &gt;</type>
+        <definition>Kokkos::View&lt;CellMask*&gt; dyablo::AMRmesh::GhostMap_t::send_cell_masks</definition>
+        <argsstring></argsstring>
+        <name>send_cell_masks</name>
+        <qualifiedname>dyablo::AMRmesh::GhostMap_t::send_cell_masks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="95" column="18" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="82" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="83" bodyend="96"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a03b097ada763e23acb58c3a022eb3c09" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>CellMask</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014c" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>Face</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014cab7e6c153f12892fbbadb295ef6ad4cc2" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>FACE_COUNT</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a473ee1f70f3c47dbb996a84f2674fa5e" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>send_cell_masks</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a46ffef145a23f3cd91e14b1dce74ca91" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>send_iOcts</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1acebd3125382ff50bba02a8c4a3436a34" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>send_sizes</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca8bb12f14af481c87406891362741955e" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>XL</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014caea3b69412a3348e95a05836053deb2dc" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>XR</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca9d3e8bfe7a606bfc50278cf82013759b" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>YL</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca780e379ea90f88403430046717f2c08f" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>YR</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca71dc74f2449a5a04de64b396ad3b87c4" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>ZL</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1GhostMap__t_1a07501a01d182f9c80925b3582b80014ca66562020d9e6ffa0478d8fba4c42f558" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::GhostMap_t</scope><name>ZR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

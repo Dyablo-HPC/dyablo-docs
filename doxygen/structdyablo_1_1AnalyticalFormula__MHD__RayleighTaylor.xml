@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_MHD_RayleighTaylor</compoundname>
+    <basecompoundref refid="structdyablo_1_1AnalyticalFormula__base__MHD" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_base_MHD</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a53e1404522f0035fe6a792b858ce33cc" prot="public" static="no">
+        <type>Kokkos::Random_XorShift64_Pool&lt;&gt;</type>
+        <definition>using dyablo::AnalyticalFormula_MHD_RayleighTaylor::RNGPool =  Kokkos::Random_XorShift64_Pool&lt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>RNGPool</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::RNGPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="16" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a85aee0bec4a3c8aedc3526a3ef90719a" prot="public" static="no">
+        <type>RNGPool::generator_type</type>
+        <definition>using dyablo::AnalyticalFormula_MHD_RayleighTaylor::RNGType =  RNGPool::generator_type</definition>
+        <argsstring></argsstring>
+        <name>RNGType</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::RNGType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="17" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a82e75e134a8f23d0d03c79f6b0dffc52" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_MHD_RayleighTaylor::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="19" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a596dd7398b0c95053c10206e78bbd4f0" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="20" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1ae5140725c70ebfc7d14aaba86c14c11c" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="21" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1ae5ee42b8998f8caeca694d7b596ab559" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="22" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a374f7ed2be4c5c93864133c5785beccf" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="23" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a1f87ee30eb794c8be5cdfd8292b7170f" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::error_max</definition>
+        <argsstring></argsstring>
+        <name>error_max</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::error_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="24" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1afde1232fb07a68d350c0702cdb3a8de0" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::rho_top</definition>
+        <argsstring></argsstring>
+        <name>rho_top</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::rho_top</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="27" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a947961629425db52a433d631e8e8f11c" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::rho_bot</definition>
+        <argsstring></argsstring>
+        <name>rho_bot</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::rho_bot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="28" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a80d6cf545ec24021df283d63dfe7ced2" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::z0</definition>
+        <argsstring></argsstring>
+        <name>z0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::z0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="29" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a83207a2f25a57abf422d959db2d7fd15" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::P0</definition>
+        <argsstring></argsstring>
+        <name>P0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::P0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="30" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1abf5e4f3e870bcd7ae1ea0626628c28ed" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::amplitude</definition>
+        <argsstring></argsstring>
+        <name>amplitude</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::amplitude</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="31" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aebcce752a0463424ea1ca2a169be0d75" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::B0x</definition>
+        <argsstring></argsstring>
+        <name>B0x</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::B0x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="32" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aa52498f6b62e4490548021bc830ef5ff" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::B0y</definition>
+        <argsstring></argsstring>
+        <name>B0y</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::B0y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="33" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1adda74a4c5dd0276441198e7718a616b0" prot="public" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool dyablo::AnalyticalFormula_MHD_RayleighTaylor::multi_mode</definition>
+        <argsstring></argsstring>
+        <name>multi_mode</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::multi_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="34" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a2d3054394d4067c31c7f4462d3f153b1" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_MHD_RayleighTaylor::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::seed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="35" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1af80b1a6344f819ea50385d90d4cb2cd1" prot="public" static="no" mutable="no">
+        <type>RNGPool</type>
+        <definition>RNGPool dyablo::AnalyticalFormula_MHD_RayleighTaylor::rand_pool</definition>
+        <argsstring></argsstring>
+        <name>rand_pool</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::rand_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="36" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a3042f2f31d4274553b07c9084f4bbe31" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AnalyticalFormula_MHD_RayleighTaylor::gz</definition>
+        <argsstring></argsstring>
+        <name>gz</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::gz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="38" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aa56f233a3093133ed62147d983de222a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AnalyticalFormula_MHD_RayleighTaylor::AnalyticalFormula_MHD_RayleighTaylor</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>AnalyticalFormula_MHD_RayleighTaylor</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::AnalyticalFormula_MHD_RayleighTaylor</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="40" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aef09f361dac141d870b64c0cf483802c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">State</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION State dyablo::AnalyticalFormula_MHD_RayleighTaylor::value</definition>
+        <argsstring>(real_t x, real_t y, real_t z, real_t dx, real_t dy, real_t dz) const</argsstring>
+        <name>value</name>
+        <qualifiedname>dyablo::AnalyticalFormula_MHD_RayleighTaylor::value</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="65" column="9" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="65" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Rayleigh-Taylor instability test for MHD variables Rayleigh-Taylor instability test for MHD variables based on the description of the Athena code : <ulink url="https://www.astro.princeton.edu/~jstone/Athena/tests/rt/rt.html">https://www.astro.princeton.edu/~jstone/Athena/tests/rt/rt.html</ulink>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_MHD_RayleighTaylor</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_MHD</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__MHD"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_MHD_RayleighTaylor</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_MHD</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__MHD"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_MHD_rayleigh_taylor.cpp" bodystart="15" bodyend="106"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1abf5e4f3e870bcd7ae1ea0626628c28ed" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>amplitude</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aa56f233a3093133ed62147d983de222a" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>AnalyticalFormula_MHD_RayleighTaylor</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aebcce752a0463424ea1ca2a169be0d75" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>B0x</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aa52498f6b62e4490548021bc830ef5ff" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>B0y</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a1f87ee30eb794c8be5cdfd8292b7170f" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>error_max</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a596dd7398b0c95053c10206e78bbd4f0" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__MHD_1a5ac6faf055c1d44796b1a934260f4a35" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a3042f2f31d4274553b07c9084f4bbe31" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>gz</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1adda74a4c5dd0276441198e7718a616b0" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>multi_mode</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a82e75e134a8f23d0d03c79f6b0dffc52" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a83207a2f25a57abf422d959db2d7fd15" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>P0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1af80b1a6344f819ea50385d90d4cb2cd1" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>rand_pool</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a947961629425db52a433d631e8e8f11c" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>rho_bot</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1afde1232fb07a68d350c0702cdb3a8de0" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>rho_top</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a53e1404522f0035fe6a792b858ce33cc" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>RNGPool</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a85aee0bec4a3c8aedc3526a3ef90719a" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>RNGType</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a2d3054394d4067c31c7f4462d3f153b1" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>seed</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__MHD_1a28b81fe3c0c8bba5dfa1e7aa6c5b1d64" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>setState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1ae5ee42b8998f8caeca694d7b596ab559" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>smallc</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a374f7ed2be4c5c93864133c5785beccf" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1ae5140725c70ebfc7d14aaba86c14c11c" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>smallr</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__MHD_1a3ccc7fe3e1e4b30247c443ebb665f1fe" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>State</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1aef09f361dac141d870b64c0cf483802c" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>value</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__MHD__RayleighTaylor_1a80d6cf545ec24021df283d63dfe7ced2" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_MHD_RayleighTaylor</scope><name>z0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

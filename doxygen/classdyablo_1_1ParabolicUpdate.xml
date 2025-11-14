@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ParabolicUpdate" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::ParabolicUpdate</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1ParabolicUpdate__explicit" prot="public" virt="non-virtual">dyablo::ParabolicUpdate_explicit</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ParabolicUpdate_1a606cecbbef9a2cbd9b3a4ee559b4a927" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::ParabolicUpdate::~ParabolicUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>~ParabolicUpdate</name>
+        <qualifiedname>dyablo::ParabolicUpdate::~ParabolicUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h" line="15" column="11" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParabolicUpdate_1a10461fa7f5f81b7aa0f50ba3e19f9520" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::ParabolicUpdate::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)=0</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::ParabolicUpdate::update</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1ParabolicUpdate__explicit_1a13a4bff83c66584ca2fc262e2b82808d">update</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h" line="17" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::ParabolicUpdate</label>
+        <link refid="classdyablo_1_1ParabolicUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::ParabolicUpdate_explicit</label>
+        <link refid="classdyablo_1_1ParabolicUpdate__explicit"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h" line="13" column="1" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h" bodystart="13" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1ParabolicUpdate_1a10461fa7f5f81b7aa0f50ba3e19f9520" prot="public" virt="pure-virtual"><scope>dyablo::ParabolicUpdate</scope><name>update</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate_1a606cecbbef9a2cbd9b3a4ee559b4a927" prot="public" virt="virtual"><scope>dyablo::ParabolicUpdate</scope><name>~ParabolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

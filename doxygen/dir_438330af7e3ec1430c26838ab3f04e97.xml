@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_438330af7e3ec1430c26838ab3f04e97" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/hyperbolic/policy</compoundname>
+    <innerfile refid="HyperbolicPolicy__base_8h">HyperbolicPolicy_base.h</innerfile>
+    <innerfile refid="HyperbolicPolicy__BoundaryConditions_8h">HyperbolicPolicy_BoundaryConditions.h</innerfile>
+    <innerfile refid="HyperbolicPolicy__GLMMHD_8h">HyperbolicPolicy_GLMMHD.h</innerfile>
+    <innerfile refid="HyperbolicPolicy__Hydro_8h">HyperbolicPolicy_Hydro.h</innerfile>
+    <innerfile refid="HyperbolicPolicy__Hydro__BoundaryConditions_8h">HyperbolicPolicy_Hydro_BoundaryConditions.h</innerfile>
+    <innerfile refid="HyperbolicPolicy__Rad_8h">HyperbolicPolicy_Rad.h</innerfile>
+    <innerfile refid="HyperbolicPolicy__Slope_8h">HyperbolicPolicy_Slope.h</innerfile>
+    <innerfile refid="HyperbolicPolicy__tools_8h">HyperbolicPolicy_tools.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/"/>
+  </compounddef>
+</doxygen>

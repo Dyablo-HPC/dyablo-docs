@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>ghosts</declname>
+        <defname>ghosts</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ae6989330c313421a47952ca2b81776ca" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::_bx</definition>
+        <argsstring></argsstring>
+        <name>_bx</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::_bx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="303" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ae33a851271ff2cfa4d4475682eb9c897" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::_by</definition>
+        <argsstring></argsstring>
+        <name>_by</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::_by</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="303" column="18" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ab4345075334479952333a38b2210aae7" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::_bz</definition>
+        <argsstring></argsstring>
+        <name>_bz</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::_bz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="303" column="22" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1aabbbd6f9f121c5b5c94df42fbf981d28" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::nbOcts</definition>
+        <argsstring></argsstring>
+        <name>nbOcts</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::nbOcts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="303" column="26" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a69b44819dbbf7bf4d651f1d84bec2e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::IterationSpace_fullArray_impl</definition>
+        <argsstring>(const CellArray_shape &amp;iter_space)</argsstring>
+        <name>IterationSpace_fullArray_impl</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::IterationSpace_fullArray_impl</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape" kindref="compound">CellArray_shape</ref> &amp;</type>
+          <declname>iter_space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="305" column="5" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a46098948e32659638130db663703df01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::bx</definition>
+        <argsstring>() const</argsstring>
+        <name>bx</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::bx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="310" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="310" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ad959fd5e30f0212684ce6576578139a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::by</definition>
+        <argsstring>() const</argsstring>
+        <name>by</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::by</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="312" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="312" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a8f3ae6f7636b38b5f1ceb3bc9bc9e258" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::bz</definition>
+        <argsstring>() const</argsstring>
+        <name>bz</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::bz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="314" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="314" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a3b5c3f930e68c36e3cf140cfb2a2c6ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::iOct_count</definition>
+        <argsstring>() const</argsstring>
+        <name>iOct_count</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::iOct_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="317" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="317" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a2dadcc92af60a2275451dd3c855242ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION CellIndex dyablo::AMRBlockForeachCell_impl&lt; PatchManager_t &gt;::IterationSpace_fullArray_impl&lt; ghosts &gt;::getCellIndex</definition>
+        <argsstring>(uint32_t iOct, uint32_t i, uint32_t j, uint32_t k) const</argsstring>
+        <name>getCellIndex</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl::getCellIndex</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="320" column="15" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="320" bodyend="324"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" line="300" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h" bodystart="301" bodyend="325"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ae6989330c313421a47952ca2b81776ca" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>_bx</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ae33a851271ff2cfa4d4475682eb9c897" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>_by</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ab4345075334479952333a38b2210aae7" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>_bz</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a46098948e32659638130db663703df01" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>bx</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1ad959fd5e30f0212684ce6576578139a8" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>by</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a8f3ae6f7636b38b5f1ceb3bc9bc9e258" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>bz</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a2dadcc92af60a2275451dd3c855242ac" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>getCellIndex</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a3b5c3f930e68c36e3cf140cfb2a2c6ac" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>iOct_count</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1a69b44819dbbf7bf4d651f1d84bec2e28" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>IterationSpace_fullArray_impl</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__impl_1_1IterationSpace__fullArray__impl_1aabbbd6f9f121c5b5c94df42fbf981d28" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_impl::IterationSpace_fullArray_impl</scope><name>nbOcts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

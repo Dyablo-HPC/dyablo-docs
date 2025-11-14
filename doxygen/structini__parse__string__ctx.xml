@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structini__parse__string__ctx" kind="struct" language="C++" prot="public">
+    <compoundname>ini_parse_string_ctx</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structini__parse__string__ctx_1af663d77366545df9b12b166831745c75" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ini_parse_string_ctx::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <qualifiedname>ini_parse_string_ctx::ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" line="43" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structini__parse__string__ctx_1aea48cbdd64d060c55b3b68cb01cbe69f" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ini_parse_string_ctx::num_left</definition>
+        <argsstring></argsstring>
+        <name>num_left</name>
+        <qualifiedname>ini_parse_string_ctx::num_left</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" line="44" column="12" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" line="42" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" bodystart="42" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structini__parse__string__ctx_1aea48cbdd64d060c55b3b68cb01cbe69f" prot="public" virt="non-virtual"><scope>ini_parse_string_ctx</scope><name>num_left</name></member>
+      <member refid="structini__parse__string__ctx_1af663d77366545df9b12b166831745c75" prot="public" virt="non-virtual"><scope>ini_parse_string_ctx</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

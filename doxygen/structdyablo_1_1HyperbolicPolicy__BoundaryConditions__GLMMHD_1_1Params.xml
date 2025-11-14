@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1ac0ce38b0d2ed8337f72a9acc560e893b" prot="public" static="no" mutable="no">
+        <type>Kokkos::Array&lt; BoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;BoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bc_min</definition>
+        <argsstring></argsstring>
+        <name>bc_min</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bc_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="667" column="19" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1ab0931d88b2cbe16e8a154d3b48f90d81" prot="public" static="no" mutable="no">
+        <type>Kokkos::Array&lt; BoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;BoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bc_max</definition>
+        <argsstring></argsstring>
+        <name>bc_max</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bc_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="667" column="26" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1af1545df7ccf518f2653c46963aa9b1c4" prot="public" static="no" mutable="no">
+        <type>Kokkos::Array&lt; MagneticBoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;MagneticBoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bcmag_min</definition>
+        <argsstring></argsstring>
+        <name>bcmag_min</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bcmag_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="668" column="19" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1a774cf7bac4a5767b379d54fb476172d1" prot="public" static="no" mutable="no">
+        <type>Kokkos::Array&lt; MagneticBoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;MagneticBoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bcmag_max</definition>
+        <argsstring></argsstring>
+        <name>bcmag_max</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::bcmag_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="668" column="29" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1a3c8d280c31bac3f1ac9b17ff054467a7" prot="public" static="no" mutable="no">
+        <type>Rparams</type>
+        <definition>Rparams dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::rparams</definition>
+        <argsstring></argsstring>
+        <name>rparams</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params::rparams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="669" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params</label>
+        <link refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>rparams</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Rparams</label>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="665" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="666" bodyend="670"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1ab0931d88b2cbe16e8a154d3b48f90d81" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params</scope><name>bc_max</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1ac0ce38b0d2ed8337f72a9acc560e893b" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params</scope><name>bc_min</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1a774cf7bac4a5767b379d54fb476172d1" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params</scope><name>bcmag_max</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1af1545df7ccf518f2653c46963aa9b1c4" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params</scope><name>bcmag_min</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1Params_1a3c8d280c31bac3f1ac9b17ff054467a7" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::Params</scope><name>rparams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

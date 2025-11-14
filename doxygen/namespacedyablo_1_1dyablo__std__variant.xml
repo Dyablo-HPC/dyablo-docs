@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1dyablo__std__variant" kind="namespace" language="C++">
+    <compoundname>dyablo::dyablo_std_variant</compoundname>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dyablo__variant_8h_1a8a1a82b503f872d4ce14cc312e83f3f5" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>std::variant&lt; T... &gt;</type>
+        <definition>using dyablo::dyablo_std_variant::dyablo_variant =  std::variant&lt;T...&gt;</definition>
+        <argsstring></argsstring>
+        <name>dyablo_variant</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="10" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="dyablo__variant_8h_1a360db2edaf27ba7801166a5b0f233a2f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Types</declname>
+            <defname>Types</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr bool</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr bool dyablo::dyablo_std_variant::dyablo_variant_holds_alternative</definition>
+        <argsstring>(const dyablo_variant&lt; Types... &gt; &amp;v) noexcept</argsstring>
+        <name>dyablo_variant_holds_alternative</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant_holds_alternative</qualifiedname>
+        <param>
+          <type>const dyablo_variant&lt; Types... &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="14" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="dyablo__variant_8h_1a8043897dcfa4693dbb6172d8b5b62345" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Types</declname>
+            <defname>Types</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr T &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr T &amp; dyablo::dyablo_std_variant::dyablo_variant_get</definition>
+        <argsstring>(std::variant&lt; Types... &gt; &amp;v) noexcept</argsstring>
+        <name>dyablo_variant_get</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant_get</qualifiedname>
+        <param>
+          <type>std::variant&lt; Types... &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="21" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="dyablo__variant_8h_1a608adff507229435eafec6f64c85dc05" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Types</declname>
+            <defname>Types</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr const T &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr const T &amp; dyablo::dyablo_std_variant::dyablo_variant_get</definition>
+        <argsstring>(const std::variant&lt; Types... &gt; &amp;v) noexcept</argsstring>
+        <name>dyablo_variant_get</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant_get</qualifiedname>
+        <param>
+          <type>const std::variant&lt; Types... &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="30" column="19" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="7" column="1"/>
+  </compounddef>
+</doxygen>

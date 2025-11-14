@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HydroUpdate__euler__nopatch" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HydroUpdate_euler_nopatch</compoundname>
+    <basecompoundref refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch" prot="public" virt="non-virtual">dyablo::HyperbolicUpdate_euler_nopatch&lt; HyperbolicPolicy_Hydro &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::HydroUpdate_euler_nopatch</label>
+        <link refid="classdyablo_1_1HydroUpdate__euler__nopatch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate_euler_nopatch&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::HydroUpdate_euler_nopatch</label>
+        <link refid="classdyablo_1_1HydroUpdate__euler__nopatch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicUpdate_euler_nopatch&lt; HyperbolicPolicy_Hydro &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_euler_nopatch.cpp" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_euler_nopatch.cpp" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ae3b7cb4269a64079aa66e9d98718ead4" prot="public" virt="non-virtual"><scope>dyablo::HydroUpdate_euler_nopatch</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1aed0990c4da6e2577c068207da04585ec" prot="public" virt="non-virtual"><scope>dyablo::HydroUpdate_euler_nopatch</scope><name>HyperbolicUpdate_euler_nopatch</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1ad756f4104fe301f2d97376b563a18880" prot="public" virt="non-virtual"><scope>dyablo::HydroUpdate_euler_nopatch</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate__euler__nopatch_1abc03764ffd1c562bf46aaf018adacf15" prot="public" virt="virtual"><scope>dyablo::HydroUpdate_euler_nopatch</scope><name>update</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" virt="virtual"><scope>dyablo::HydroUpdate_euler_nopatch</scope><name>~HyperbolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

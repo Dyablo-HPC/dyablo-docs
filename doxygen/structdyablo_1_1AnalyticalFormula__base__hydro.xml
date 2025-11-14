@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AnalyticalFormula__base__hydro" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_base_hydro</compoundname>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__C91" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_C91</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_KelvinHelmholtz</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__RayleighTaylor" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_RayleighTaylor</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__Zeldovitch__pancake" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_Zeldovitch_pancake</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__blast" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_blast</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__double__mach" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_double_mach</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__implode" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_implode</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__riemann2d" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_riemann2d</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__sod" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_sod</derivedcompoundref>
+    <derivedcompoundref refid="structdyablo_1_1AnalyticalFormula__tri__layer" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_tri_layer</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__base__hydro_1afc9e104f11a094d4eb01551b30f6f420" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_State_Hydro::ConsState</ref></type>
+        <definition>using dyablo::AnalyticalFormula_base_hydro::ConsHydroState =  HyperbolicPolicy_State_Hydro::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsHydroState</name>
+        <qualifiedname>dyablo::AnalyticalFormula_base_hydro::ConsHydroState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" line="11" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__base__hydro_1ab7c34f90f960785202d0345a2fdbf091" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsHydroState</ref></type>
+        <definition>using dyablo::AnalyticalFormula_base_hydro::State =  ConsHydroState</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>dyablo::AnalyticalFormula_base_hydro::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" line="12" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__base__hydro_1a78404e035b2f8dde366288b564d30f14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo" kindref="compound">UserData::FieldAccessor::FieldInfo</ref> &gt;</type>
+        <definition>std::vector&lt; UserData::FieldAccessor::FieldInfo &gt; dyablo::AnalyticalFormula_base_hydro::getFieldsInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>getFieldsInfo</name>
+        <qualifiedname>dyablo::AnalyticalFormula_base_hydro::getFieldsInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" line="14" column="15" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__base__hydro_1afc1b1589c77d1286deb78e32e122a643" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION void</type>
+        <definition>KOKKOS_INLINE_FUNCTION void dyablo::AnalyticalFormula_base_hydro::setState</definition>
+        <argsstring>(const UserData::FieldAccessor &amp;Uout, const ForeachCell::CellIndex &amp;iCell, const State &amp;u) const</argsstring>
+        <name>setState</name>
+        <qualifiedname>dyablo::AnalyticalFormula_base_hydro::setState</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>Uout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">ForeachCell::CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">State</ref> &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" line="20" column="8" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_C91</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__C91"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::AnalyticalFormula_KelvinHelmholtz</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::AnalyticalFormula_RayleighTaylor</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__RayleighTaylor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dyablo::AnalyticalFormula_Zeldovitch_pancake</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__Zeldovitch__pancake"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+      <node id="6">
+        <label>dyablo::AnalyticalFormula_blast</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__blast"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dyablo::AnalyticalFormula_double_mach</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__double__mach"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dyablo::AnalyticalFormula_implode</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__implode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dyablo::AnalyticalFormula_riemann2d</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__riemann2d"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dyablo::AnalyticalFormula_sod</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__sod"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dyablo::AnalyticalFormula_tri_layer</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__tri__layer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" line="9" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp" bodystart="10" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc9e104f11a094d4eb01551b30f6f420" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_base_hydro</scope><name>ConsHydroState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1a78404e035b2f8dde366288b564d30f14" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_base_hydro</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc1b1589c77d1286deb78e32e122a643" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_base_hydro</scope><name>setState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1ab7c34f90f960785202d0345a2fdbf091" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_base_hydro</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_c7e218ccd4f2fc01f3b3a5563cbdab4a" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/refine_condition</compoundname>
+    <innerfile refid="RefineCondition_8h">RefineCondition.h</innerfile>
+    <innerfile refid="RefineCondition__base_8h">RefineCondition_base.h</innerfile>
+    <innerfile refid="RefineCondition__downflows_8cpp">RefineCondition_downflows.cpp</innerfile>
+    <innerfile refid="RefineCondition__helper_8h">RefineCondition_helper.h</innerfile>
+    <innerfile refid="RefineCondition__mass_8cpp">RefineCondition_mass.cpp</innerfile>
+    <innerfile refid="RefineCondition__pseudo__gradient_8cpp">RefineCondition_pseudo_gradient.cpp</innerfile>
+    <innerfile refid="RefineCondition__second__derivative__error_8cpp">RefineCondition_second_derivative_error.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/refine_condition/"/>
+  </compounddef>
+</doxygen>

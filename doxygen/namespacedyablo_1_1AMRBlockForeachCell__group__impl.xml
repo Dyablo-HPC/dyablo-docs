@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1AMRBlockForeachCell__group__impl" kind="namespace" language="C++">
+    <compoundname>dyablo::AMRBlockForeachCell_group_impl</compoundname>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch" prot="public">dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</innerclass>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1Patch" prot="public">dyablo::AMRBlockForeachCell_group_impl::Patch</innerclass>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager" prot="public">dyablo::AMRBlockForeachCell_group_impl::PatchManager</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="AMRBlockForeachCell__group_8h_1a3b950e35173228fa18f0abccc0519d73" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1AMRBlockForeachCell__CData" kindref="compound">AMRBlockForeachCell_CData</ref></type>
+        <definition>using dyablo::AMRBlockForeachCell_group_impl::CData =  AMRBlockForeachCell_CData</definition>
+        <argsstring></argsstring>
+        <name>CData</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::CData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

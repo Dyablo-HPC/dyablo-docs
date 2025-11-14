@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Compute__dt__rad" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::Compute_dt_rad</compoundname>
+    <basecompoundref refid="classdyablo_1_1Compute__dt" prot="public" virt="non-virtual">dyablo::Compute_dt</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__rad_1aac5153c3e168fa507b5328e0bb0717fb" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::Compute_dt_rad::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::Compute_dt_rad::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" line="59" column="15" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__rad_1a6bfcf4402fc5d0b0f06a17c864038a84" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_rad::c_rad</definition>
+        <argsstring></argsstring>
+        <name>c_rad</name>
+        <qualifiedname>dyablo::Compute_dt_rad::c_rad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" line="60" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__rad_1a5cae86e80a17c7c5af711f405df443ba" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_rad::cfl</definition>
+        <argsstring></argsstring>
+        <name>cfl</name>
+        <qualifiedname>dyablo::Compute_dt_rad::cfl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" line="61" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__rad_1ab6422114db1022099c2b3f7e32bc00ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Compute_dt_rad::Compute_dt_rad</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>Compute_dt_rad</name>
+        <qualifiedname>dyablo::Compute_dt_rad::Compute_dt_rad</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" line="11" column="3" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" bodystart="11" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__rad_1a56a40b1709da3adb1efb982bdd9b032a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::Compute_dt_rad::compute_dt</definition>
+        <argsstring>(const UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>compute_dt</name>
+        <qualifiedname>dyablo::Compute_dt_rad::compute_dt</qualifiedname>
+        <reimplements refid="classdyablo_1_1Compute__dt_1a4d5c4db5ef4b82127137594b4027d891">compute_dt</reimplements>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" line="25" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" bodystart="25" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_rad</label>
+        <link refid="classdyablo_1_1Compute__dt__rad"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_rad</label>
+        <link refid="classdyablo_1_1Compute__dt__rad"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" line="8" column="1" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_rad.cpp" bodystart="9" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Compute__dt__rad_1a6bfcf4402fc5d0b0f06a17c864038a84" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_rad</scope><name>c_rad</name></member>
+      <member refid="classdyablo_1_1Compute__dt__rad_1a5cae86e80a17c7c5af711f405df443ba" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_rad</scope><name>cfl</name></member>
+      <member refid="classdyablo_1_1Compute__dt__rad_1a56a40b1709da3adb1efb982bdd9b032a" prot="public" virt="virtual"><scope>dyablo::Compute_dt_rad</scope><name>compute_dt</name></member>
+      <member refid="classdyablo_1_1Compute__dt__rad_1ab6422114db1022099c2b3f7e32bc00ae" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_rad</scope><name>Compute_dt_rad</name></member>
+      <member refid="classdyablo_1_1Compute__dt__rad_1aac5153c3e168fa507b5328e0bb0717fb" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_rad</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1Compute__dt_1a8ff850a48ff27f842d5d8aa3893b7588" prot="public" virt="virtual"><scope>dyablo::Compute_dt_rad</scope><name>~Compute_dt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

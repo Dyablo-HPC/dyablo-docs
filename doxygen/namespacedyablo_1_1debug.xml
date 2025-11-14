@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1debug" kind="namespace" language="C++">
+    <compoundname>dyablo::debug</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="AMRMesh__output__vtk_8h_1a717c54826e5a4c88436a60afeb98dcf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::debug::output_vtk</definition>
+        <argsstring>(const std::string &amp;name, AMRmesh &amp;mesh)</argsstring>
+        <name>output_vtk</name>
+        <qualifiedname>dyablo::debug::output_vtk</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/AMRMesh_output_vtk.h" line="14" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/AMRMesh_output_vtk.h" bodystart="14" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/io/AMRMesh_output_vtk.h" line="12" column="1"/>
+  </compounddef>
+</doxygen>

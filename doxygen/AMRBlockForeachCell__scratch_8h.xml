@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="AMRBlockForeachCell__scratch_8h" kind="file" language="C++">
+    <compoundname>AMRBlockForeachCell_scratch.h</compoundname>
+    <includes refid="AMRBlockForeachCell_8h" local="yes">foreach_cell/AMRBlockForeachCell.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="38">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h</label>
+        <link refid="AMRBlockForeachCell__scratch_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="49">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="27">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="23">
+        <label>algorithm</label>
+      </node>
+      <node id="33">
+        <label>any</label>
+      </node>
+      <node id="45">
+        <label>array</label>
+      </node>
+      <node id="36">
+        <label>cassert</label>
+      </node>
+      <node id="42">
+        <label>cstddef</label>
+      </node>
+      <node id="41">
+        <label>cstdint</label>
+      </node>
+      <node id="19">
+        <label>fstream</label>
+      </node>
+      <node id="21">
+        <label>iomanip</label>
+      </node>
+      <node id="9">
+        <label>iosfwd</label>
+      </node>
+      <node id="18">
+        <label>iostream</label>
+      </node>
+      <node id="22">
+        <label>limits</label>
+      </node>
+      <node id="17">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>math.h</label>
+      </node>
+      <node id="44">
+        <label>memory</label>
+      </node>
+      <node id="12">
+        <label>set</label>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="29">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="24">
+        <label>type_traits</label>
+      </node>
+      <node id="11">
+        <label>unordered_map</label>
+      </node>
+      <node id="39">
+        <label>utility</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1CellArray__patch" prot="public">dyablo::AMRBlockForeachCell_scratch_impl::CellArray_patch</innerclass>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch" prot="public">dyablo::AMRBlockForeachCell_scratch_impl::Patch</innerclass>
+    <innerclass refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" prot="public">dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData</innerclass>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1PatchManager" prot="public">dyablo::AMRBlockForeachCell_scratch_impl::PatchManager</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <innernamespace refid="namespacedyablo_1_1AMRBlockForeachCell__scratch__impl">dyablo::AMRBlockForeachCell_scratch_impl</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="AMRBlockForeachCell__scratch_8h_1a71868cd1228af1a6fdcde9ca1827b766" prot="public" static="no">
+        <name>PATCH_LAMBDA</name>
+        <initializer>KOKKOS_LAMBDA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="5" column="9" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMRBlockForeachCell__scratch_8h_1a2fcbd4201653ca561b361eaea286eed3" prot="public" static="no">
+        <name>CELL_LAMBDA</name>
+        <initializer>[&amp;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="6" column="9" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AMRBlockForeachCell__scratch_8h_1aeaa83d4437d3bdec41787421aabedadf" prot="public" static="no">
+        <name>SCRATCH_LEVEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="7" column="9" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="AMRBlockForeachCell__scratch_8h_1a82365c8f1ec272ee7a560bb13178349f" prot="public" static="no">
+        <type>AMRBlockForeachCell_CData</type>
+        <definition>using dyablo::AMRBlockForeachCell_scratch_impl::CData =  AMRBlockForeachCell_CData</definition>
+        <argsstring></argsstring>
+        <name>CData</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::CData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="15" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="AMRBlockForeachCell__scratch_8h_1abe98a97fc84c0420f3fdce7825ddf72e" prot="public" static="no">
+        <type>Kokkos::TeamPolicy&lt;&gt;</type>
+        <definition>using dyablo::AMRBlockForeachCell_scratch_impl::policy_t =  Kokkos::TeamPolicy&lt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>policy_t</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::policy_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="16" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedyablo_1a0a366904b50b4432dd656abab8545bad" prot="public" static="no">
+        <type>AMRBlockForeachCell_impl&lt; AMRBlockForeachCell_scratch_impl::PatchManager &gt;</type>
+        <definition>using dyablo::AMRBlockForeachCell_scratch =  AMRBlockForeachCell_impl&lt;AMRBlockForeachCell_scratch_impl::PatchManager&gt;</definition>
+        <argsstring></argsstring>
+        <name>AMRBlockForeachCell_scratch</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="149" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;foreach_cell/AMRBlockForeachCell.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PATCH_LAMBDA<sp/>KOKKOS_LAMBDA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CELL_LAMBDA<sp/>[&amp;]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCRATCH_LEVEL<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">AMRBlockForeachCell_scratch_impl{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">AMRBlockForeachCell_CellArray_impl;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CData<sp/>=<sp/>AMRBlockForeachCell_CData;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">policy_t<sp/>=<sp/>Kokkos::TeamPolicy&lt;&gt;;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1PatchManager" kindref="compound">PatchManager</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1CellArray__patch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CellArray_patch<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>CellArray_base&lt;false,false&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Ref<sp/>=<sp/>CellArray_patch;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>CellArray_patch(){};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>CellArray_patch(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Shape_t&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref>&amp;<sp/>fm)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>:<sp/>CellArray_base(<sp/>s,<sp/>fm<sp/>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Patch{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>PatchManager;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" kindref="compound">PData</ref>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CData<sp/>cdata;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>policy_t::member_type<sp/>team_member;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" kindref="compound">PData</ref><sp/>pdata;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>Patch(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" kindref="compound">PData</ref>&amp;<sp/>pdata<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>pdata(pdata)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Function&gt;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="66" refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1ab0dc78bd974c2a08017fadff6fa0fd13" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1ab0dc78bd974c2a08017fadff6fa0fd13" kindref="member">foreach_cell</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape" kindref="compound">CellArray_shape</ref>&amp;<sp/>iter_space,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Function&amp;<sp/>f)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="67"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bx<sp/>=<sp/>iter_space.bx;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>by<sp/>=<sp/>iter_space.by;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bz<sp/>=<sp/>iter_space.bz;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct<sp/>=<sp/>pdata.iOct;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_for(<sp/>Kokkos::TeamThreadRange(pdata.team_member,<sp/>bz*by),</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](<sp/>uint32_t<sp/>kj<sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>k<sp/>=<sp/>kj/by;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>j<sp/>=<sp/>kj%by;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::parallel_for(<sp/>Kokkos::ThreadVectorRange(pdata.team_member,<sp/>bx),</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](<sp/>uint32_t<sp/>i<sp/>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CellIndex<sp/>iCell<sp/>=<sp/>{{iOct,false},<sp/>i,<sp/>j,<sp/>k,<sp/>bx,<sp/>by,<sp/>bz};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f(<sp/>iCell<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>pdata.team_member.team_barrier();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>CellArray_patch<sp/>allocate_tmp(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellArray_patch::Ref&amp;<sp/>array_ref<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="91"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>CellArray_patch<sp/>res<sp/>=<sp/>array_ref;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s<sp/>=<sp/>array_ref.shape;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>res.U<sp/>=<sp/>CellArray_patch::View_t(this-&gt;pdata.team_member.team_scratch(SCRATCH_LEVEL),<sp/>s.bx*s.by*s.bz,<sp/>s.nbFields,<sp/>1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1PatchManager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">PatchManager{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Patch<sp/>=<sp/><ref refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch" kindref="compound">AMRBlockForeachCell_scratch_impl::Patch</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellArray_patch<sp/>=<sp/><ref refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1CellArray__patch" kindref="compound">AMRBlockForeachCell_scratch_impl::CellArray_patch</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CData<sp/>cdata;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref>&amp;<sp/>pmesh;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>uint32_t<sp/>scratch_size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>PatchManager(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CData&amp;<sp/>cdata,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref>&amp;<sp/>pmesh)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>:<sp/>cdata(cdata),<sp/>pmesh(pmesh)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>CellArray_patch::Ref<sp/>reserve_patch_tmp(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gy,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gz,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref>&amp;<sp/>fm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nvars)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CData&amp;<sp/>cdata<sp/>=<sp/>this-&gt;cdata;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bx<sp/>=<sp/>cdata.<ref refid="structdyablo_1_1AMRBlockForeachCell__CData_1ac1dcde0396a5a120610b6d44193ced42" kindref="member">bx</ref>+2*gx;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>by<sp/>=<sp/>cdata.by+2*gy;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bz<sp/>=<sp/>cdata.bz+2*gz;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>cdata.ndim<sp/>!=<sp/>2<sp/>||<sp/>bz==1,<sp/></highlight><highlight class="stringliteral">&quot;bz<sp/>should<sp/>be<sp/>1<sp/>in<sp/>2D&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>scratch_size<sp/>+=<sp/>CellArray_patch::View_t::shmem_size(bx*by*bz,<sp/>nvars,<sp/>1);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>CellArray_patch::Shape_t<sp/>shape{bx,<sp/>by,<sp/>bz,<sp/>(uint32_t)nvars,<sp/>1};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CellArray_patch::Ref(shape,<sp/>fm);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Function&gt;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>foreach_patch(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>kernel_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Function&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>this-&gt;scratch_size<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CData&amp;<sp/>cdata<sp/>=<sp/>this-&gt;cdata;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>nbOcts<sp/>=<sp/>pmesh.getNumOctants();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_for(<sp/></highlight><highlight class="stringliteral">&quot;AMRBlockForeachCell::Patch::foreach_patch&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>policy_t(nbOcts,<sp/>Kokkos::AUTO())</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_scratch_size(SCRATCH_LEVEL,<sp/>Kokkos::PerTeam(this-&gt;scratch_size)),</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/>policy_t::member_type<sp/>team_member<sp/>)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct<sp/>=<sp/>team_member.league_rank();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>f(<sp/>Patch({cdata,<sp/>iOct,<sp/>team_member})<sp/>);<sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>scratch_size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>AMRBlockForeachCell_scratch_impl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">AMRBlockForeachCell_scratch<sp/>=<sp/><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">AMRBlockForeachCell_impl&lt;AMRBlockForeachCell_scratch_impl::PatchManager&gt;</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h"/>
+  </compounddef>
+</doxygen>

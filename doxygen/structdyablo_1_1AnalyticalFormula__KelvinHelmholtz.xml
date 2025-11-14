@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_KelvinHelmholtz</compoundname>
+    <basecompoundref refid="structdyablo_1_1AnalyticalFormula__base__hydro" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_base_hydro</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a685519e62a17ff5019dc2cf1d7c871a4" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_KelvinHelmholtz::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="13" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a5cadbbf64d961759b20cb977f34f82cb" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="14" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac430450f6e243f405b2512523ca0a135" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="15" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac76b9cd73b7c3083e4a117baeac7a6ee" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="16" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1af02807fbd8ae65448a731e1700f1b7b9" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="17" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a88c0045da8960d1ccff9b720174ad711" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::error_max</definition>
+        <argsstring></argsstring>
+        <name>error_max</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::error_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="18" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ab8c7f3a13a1c178a482c4956a7e894b2" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::rho_fac</definition>
+        <argsstring></argsstring>
+        <name>rho_fac</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::rho_fac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="21" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a88764b84c91e003aabedc48baf8384f5" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::z1</definition>
+        <argsstring></argsstring>
+        <name>z1</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::z1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="22" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1adde6b47658d2ffcd90ada4bf04d36eb7" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::z2</definition>
+        <argsstring></argsstring>
+        <name>z2</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::z2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="23" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a39d1b6b6ef4c262c1e1c2f71467e70f8" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="24" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac0768495d2613844054869a20abebfdc" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::A</definition>
+        <argsstring></argsstring>
+        <name>A</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::A</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="25" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ab638034eadcf4fe9ebea05c378f6237f" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::sigma</definition>
+        <argsstring></argsstring>
+        <name>sigma</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::sigma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="26" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac9618fe91a10532634e59963ddaaf94b" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::P0</definition>
+        <argsstring></argsstring>
+        <name>P0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::P0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="27" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1afc2a85d06403c86b698ce14d7f3fc94c" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_KelvinHelmholtz::uflow</definition>
+        <argsstring></argsstring>
+        <name>uflow</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::uflow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="28" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ad743170d74e3a9b86e53d4789df3e1b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AnalyticalFormula_KelvinHelmholtz::AnalyticalFormula_KelvinHelmholtz</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>AnalyticalFormula_KelvinHelmholtz</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::AnalyticalFormula_KelvinHelmholtz</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="30" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="30" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1af50257d61f15d49dbc3d4f035b34474f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsHydroState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsHydroState dyablo::AnalyticalFormula_KelvinHelmholtz::value</definition>
+        <argsstring>(real_t x, real_t y, real_t z, real_t dx, real_t dy, real_t dz) const</argsstring>
+        <name>value</name>
+        <qualifiedname>dyablo::AnalyticalFormula_KelvinHelmholtz::value</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="52" column="18" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="52" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Kelvin-Helmholtz instability test. Based on Lecoanet et al &quot;A validated non-linear kelvin-helmholtz benchmark for numerical 
+hydrodynamics&quot;, 2016, Monthly Notices of the Royal Astronomy Society </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_KelvinHelmholtz</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_KelvinHelmholtz</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_kelvin_helmholtz.cpp" bodystart="11" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac0768495d2613844054869a20abebfdc" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>A</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a39d1b6b6ef4c262c1e1c2f71467e70f8" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>a</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ad743170d74e3a9b86e53d4789df3e1b5" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>AnalyticalFormula_KelvinHelmholtz</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc9e104f11a094d4eb01551b30f6f420" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>ConsHydroState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a88c0045da8960d1ccff9b720174ad711" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>error_max</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a5cadbbf64d961759b20cb977f34f82cb" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1a78404e035b2f8dde366288b564d30f14" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a685519e62a17ff5019dc2cf1d7c871a4" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac9618fe91a10532634e59963ddaaf94b" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>P0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ab8c7f3a13a1c178a482c4956a7e894b2" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>rho_fac</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc1b1589c77d1286deb78e32e122a643" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>setState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ab638034eadcf4fe9ebea05c378f6237f" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>sigma</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac76b9cd73b7c3083e4a117baeac7a6ee" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>smallc</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1af02807fbd8ae65448a731e1700f1b7b9" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1ac430450f6e243f405b2512523ca0a135" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>smallr</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1ab7c34f90f960785202d0345a2fdbf091" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>State</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1afc2a85d06403c86b698ce14d7f3fc94c" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>uflow</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1af50257d61f15d49dbc3d4f035b34474f" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>value</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1a88764b84c91e003aabedc48baf8384f5" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>z1</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__KelvinHelmholtz_1adde6b47658d2ffcd90ada4bf04d36eb7" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_KelvinHelmholtz</scope><name>z2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_scratch_impl::Patch</compoundname>
+    <includes refid="AMRBlockForeachCell__scratch_8h" local="no">AMRBlockForeachCell_scratch.h</includes>
+    <innerclass refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" prot="public">dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a59dab48d9c5d5df5f93be33c1d0c189e" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend dyablo::AMRBlockForeachCell_scratch_impl::Patch::PatchManager</definition>
+        <argsstring></argsstring>
+        <name>PatchManager</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PatchManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="41" column="10" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a33a663d6962dbc5b4515b89af970d205" prot="private" static="no" mutable="no">
+        <type><ref refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" kindref="compound">PData</ref></type>
+        <definition>PData dyablo::AMRBlockForeachCell_scratch_impl::Patch::pdata</definition>
+        <argsstring></argsstring>
+        <name>pdata</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::pdata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="50" column="9" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a3be38806ced8e29d01576d0544ad9c74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::AMRBlockForeachCell_scratch_impl::Patch::Patch</definition>
+        <argsstring>(const PData &amp;pdata)</argsstring>
+        <name>Patch</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::Patch</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" kindref="compound">PData</ref> &amp;</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="54" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1ab0dc78bd974c2a08017fadff6fa0fd13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Function</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION void</type>
+        <definition>KOKKOS_INLINE_FUNCTION void dyablo::AMRBlockForeachCell_scratch_impl::Patch::foreach_cell</definition>
+        <argsstring>(const CellArray_shape &amp;iter_space, const Function &amp;f) const</argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::foreach_cell</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape" kindref="compound">CellArray_shape</ref> &amp;</type>
+          <declname>iter_space</declname>
+        </param>
+        <param>
+          <type>const Function &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply the user-defined function f to every cell of the patch <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the iCell parameter in f will take every valid position inside iter_space </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: a const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref>&amp; iCell -&gt; void function This is usually a lambda that class <ref refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1CellArray__patch" kindref="compound">CellArray_patch</ref>;reads and modify CellArrays at position iCell </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="66" column="8" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="66" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a5e9bb4e190500ae379c4e788482a4c19" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1CellArray__patch" kindref="compound">CellArray_patch</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION CellArray_patch dyablo::AMRBlockForeachCell_scratch_impl::Patch::allocate_tmp</definition>
+        <argsstring>(const CellArray_patch::Ref &amp;array_ref) const</argsstring>
+        <name>allocate_tmp</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::allocate_tmp</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1CellArray__patch" kindref="compound">CellArray_patch::Ref</ref> &amp;</type>
+          <declname>array_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="90" column="19" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="90" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a group of cells to be iterated upon This is an abstract interface for hyerarchical parallelism on cell arrays It enables the allocation of temporary arrays to store intermediate results for the current patch </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="40" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="40" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a5e9bb4e190500ae379c4e788482a4c19" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch</scope><name>allocate_tmp</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1ab0dc78bd974c2a08017fadff6fa0fd13" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a3be38806ced8e29d01576d0544ad9c74" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch</scope><name>Patch</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a59dab48d9c5d5df5f93be33c1d0c189e" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch</scope><name>PatchManager</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1a33a663d6962dbc5b4515b89af970d205" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch</scope><name>pdata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

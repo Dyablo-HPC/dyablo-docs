@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="ViewCommunicator_8cpp" kind="file" language="C++">
+    <compoundname>ViewCommunicator.cpp</compoundname>
+    <includes refid="ViewCommunicator_8h" local="yes">ViewCommunicator.h</includes>
+    <includes local="no">cstdint</includes>
+    <includes refid="GlobalMpiSession_8h" local="yes">utils/mpi/GlobalMpiSession.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="14">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.cpp</label>
+        <link refid="ViewCommunicator_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ViewCommunicator.h</label>
+        <link refid="ViewCommunicator_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>userdata_utils.h</label>
+        <link refid="userdata__utils_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="27">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="12">
+        <label>array</label>
+      </node>
+      <node id="15">
+        <label>cassert</label>
+      </node>
+      <node id="28">
+        <label>cstdint</label>
+      </node>
+      <node id="9">
+        <label>iosfwd</label>
+      </node>
+      <node id="18">
+        <label>iostream</label>
+      </node>
+      <node id="23">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>math.h</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="22">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>utility</label>
+      </node>
+      <node id="24">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;ViewCommunicator.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/mpi/GlobalMpiSession.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1ViewCommunicator_1a0667aa340c11ff305d2368b22b5083da" kindref="member">ViewCommunicator::private_init_domains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::View&lt;<sp/>int*<sp/>&gt;<sp/>domains)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpi_size<sp/>=<sp/>mpi_comm.MPI_Comm_size();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>this-&gt;send_sizes<sp/>=<sp/>Kokkos::View&lt;uint32_t*&gt;(<sp/></highlight><highlight class="stringliteral">&quot;ViewCommunicator::send_sizes&quot;</highlight><highlight class="normal">,<sp/>mpi_size<sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>this-&gt;recv_sizes<sp/>=<sp/>Kokkos::View&lt;uint32_t*&gt;(<sp/></highlight><highlight class="stringliteral">&quot;ViewCommunicator::recv_sizes&quot;</highlight><highlight class="normal">,<sp/>mpi_size<sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>this-&gt;send_sizes_host<sp/>=<sp/>Kokkos::create_mirror_view(<sp/>send_sizes<sp/>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref><sp/>=<sp/>Kokkos::create_mirror_view(<sp/>recv_sizes<sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" kindref="member">send_iOcts</ref><sp/>=<sp/>Kokkos::View&lt;uint32_t*&gt;(<sp/></highlight><highlight class="stringliteral">&quot;ViewCommunicator::send_iOcts&quot;</highlight><highlight class="normal">,<sp/>domains.size()<sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Local<sp/>refs<sp/>to<sp/>avoid<sp/>dereferencing<sp/>this<sp/>in<sp/>kernels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;&amp;<sp/>send_sizes<sp/>=<sp/>this-&gt;send_sizes;<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;&amp;<sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" kindref="member">send_iOcts</ref><sp/>=<sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" kindref="member">send_iOcts</ref>;<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>send_sizes<sp/>from<sp/>domain<sp/>list<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>Kokkos::parallel_for(<sp/></highlight><highlight class="stringliteral">&quot;ViewCommunicator::construct_from_domain::count_send_sizes&quot;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>domains.size(),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::atomic_inc(<sp/>&amp;send_sizes(<sp/>domains(i)<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>});</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(<sp/>send_sizes_host,<sp/>send_sizes<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>send_iOcts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank=0;<sp/>rank&lt;mpi_size;<sp/>rank++)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>send_sizes_host(rank)<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::parallel_scan(<sp/></highlight><highlight class="stringliteral">&quot;ViewCommunicator::construct_from_domain::compute_send_iOcts&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>domains.size(),</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/>uint32_t<sp/>iOct,<sp/>uint32_t&amp;<sp/>i_write,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>domains(iOct)<sp/>==<sp/>rank<sp/>)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" kindref="member">send_iOcts</ref>(<sp/>offset<sp/>+<sp/>i_write<sp/>)<sp/>=<sp/>iOct;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i_write++;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>send_sizes_host(rank);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Exchange<sp/>sizes<sp/>to<sp/>send/recieve<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>mpi_comm.MPI_Alltoall(<sp/>send_sizes_host.data(),<sp/>1,<sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref>.data(),<sp/>1<sp/>);<sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1a8d422661df0fe6c2cddb328da96e823a" kindref="member">nbghosts_recv</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r=0;<sp/>r&lt;mpi_size;<sp/>r++<sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1a8d422661df0fe6c2cddb328da96e823a" kindref="member">nbghosts_recv</ref><sp/>+=<sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref>(r);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(<sp/>recv_sizes,<sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref><sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1ViewCommunicator_1ab08afc47420a7f458e99933859c0828b" kindref="member">ViewCommunicator::private_init_map</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;<sp/>send_sizes,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;<sp/>send_iOcts<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_proc<sp/>=<sp/>mpi_comm.MPI_Comm_size();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>this-&gt;send_sizes<sp/>=<sp/>send_sizes;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" kindref="member">send_iOcts</ref><sp/>=<sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" kindref="member">send_iOcts</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>this-&gt;send_sizes_host<sp/>=<sp/>Kokkos::create_mirror_view(<sp/>send_sizes<sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(<sp/>this-&gt;send_sizes_host,<sp/>send_sizes<sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>number<sp/>of<sp/>octants<sp/>to<sp/>recieve</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::realloc(this-&gt;recv_sizes,<sp/>nb_proc);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref><sp/>=<sp/>Kokkos::create_mirror_view(this-&gt;recv_sizes);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>mpi_comm.MPI_Alltoall(<sp/><sp/>send_sizes_host.data(),<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref>.data(),<sp/>1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>number<sp/>of<sp/>octants<sp/>to<sp/>recieve<sp/>to<sp/>device<sp/>(host<sp/>+<sp/>device<sp/>are<sp/>up<sp/>to<sp/>date)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::deep_copy(recv_sizes,<sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1a8d422661df0fe6c2cddb328da96e823a" kindref="member">nbghosts_recv</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;nb_proc;<sp/>i++)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classdyablo_1_1ViewCommunicator_1a8d422661df0fe6c2cddb328da96e823a" kindref="member">nbghosts_recv</ref><sp/>+=<sp/><ref refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" kindref="member">recv_sizes_host</ref>(i);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="classdyablo_1_1ViewCommunicator_1ab3e9dc7aedae827ad54390a4546b9eac" kindref="member">ViewCommunicator::ViewCommunicator</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>std::vector&lt;uint32_t&gt;&gt;&amp;<sp/>ghost_map,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref>&amp;<sp/>mpi_comm<sp/>)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>:<sp/>mpi_comm(mpi_comm)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_proc<sp/>=<sp/>mpi_comm.MPI_Comm_size();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocate<sp/>send_sizes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;<sp/>send_sizes(</highlight><highlight class="stringliteral">&quot;send_sizes&quot;</highlight><highlight class="normal">,<sp/>nb_proc);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>send_sizes_host<sp/>=<sp/>Kokkos::create_mirror_view(send_sizes);<sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Compute<sp/>send<sp/>sizes<sp/>(on<sp/>Host)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>uint32_t<sp/>nbGhostSend<sp/>=<sp/>0;<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank=0;<sp/>rank&lt;nb_proc;<sp/>rank++)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>ghost_map.find(rank);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(it==ghost_map.end())</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>send_sizes_host(rank)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;uint32_t&gt;&amp;<sp/>iOcts_source<sp/>=<sp/>it-&gt;second;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>send_sizes_host(rank)<sp/>=<sp/>iOcts_source.size();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nbGhostSend<sp/>+=<sp/>iOcts_source.size();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Synchronize<sp/>send<sp/>sizes<sp/>to<sp/>device</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(send_sizes,<sp/>send_sizes_host);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocate<sp/>send_iOcts<sp/>(on<sp/>Device)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;<sp/>uint32_t*<sp/>&gt;<sp/>send_iOcts(</highlight><highlight class="stringliteral">&quot;send_iOcts&quot;</highlight><highlight class="normal">,<sp/>nbGhostSend);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>uint32_t<sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank=0;<sp/>rank&lt;nb_proc;<sp/>rank++)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>send_size_rank<sp/>=<sp/>send_sizes_host(rank);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>send_size_rank<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>an<sp/>unmanaged<sp/>view<sp/>from<sp/>ghost_map[rank]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;uint32_t&gt;&amp;<sp/>iOcts_rank_vector<sp/>=<sp/>ghost_map.at(rank);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnmanagedHostView<sp/>=<sp/>Kokkos::View&lt;const<sp/>uint32_t*,<sp/>Kokkos::HostSpace,<sp/>Kokkos::MemoryTraits&lt;Kokkos::Unmanaged&gt;<sp/>&gt;;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>UnmanagedHostView<sp/>iOcts_rank_host(<sp/>iOcts_rank_vector.data(),<sp/>iOcts_rank_vector.size()<sp/>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>subview<sp/>of<sp/>send_iOcts<sp/>for<sp/>iOcts<sp/>to<sp/>send<sp/>to<sp/>`rank`</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iOcts_rank_device<sp/>=<sp/>Kokkos::subview(<sp/>send_iOcts,<sp/>std::pair(<sp/>offset,<sp/>offset+send_size_rank<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>octants<sp/>from<sp/>ghost_map[rank]<sp/>to<sp/>send_iOcts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::deep_copy(<sp/>iOcts_rank_device,<sp/>iOcts_rank_host<sp/>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>offset<sp/>+=<sp/>send_size_rank;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>private_init_map(send_sizes,<sp/>send_iOcts);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">uint32_t<sp/>ViewCommunicator::getNumGhosts()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="140"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;nbghosts_recv;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight><highlight class="comment">//namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.cpp"/>
+  </compounddef>
+</doxygen>

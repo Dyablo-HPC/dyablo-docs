@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData_1a09098654c83d3ed20e3c0092430bb240" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CData" kindref="compound">CData</ref></type>
+        <definition>const CData dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData::cdata</definition>
+        <argsstring></argsstring>
+        <name>cdata</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData::cdata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="44" column="17" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData_1a720fb3837acd1484f84223282ab1ef79" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData::iOct</definition>
+        <argsstring></argsstring>
+        <name>iOct</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData::iOct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="45" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData_1ac01551e7a1e4738f0b7fc89fdf009058" prot="public" static="no" mutable="no">
+        <type>policy_t::member_type</type>
+        <definition>policy_t::member_type dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData::team_member</definition>
+        <argsstring></argsstring>
+        <name>team_member</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData::team_member</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="46" column="27" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::AMRBlockForeachCell_CData</label>
+        <link refid="structdyablo_1_1AMRBlockForeachCell__CData"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData</label>
+        <link refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cdata</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" line="43" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h" bodystart="43" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData_1a09098654c83d3ed20e3c0092430bb240" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData</scope><name>cdata</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData_1a720fb3837acd1484f84223282ab1ef79" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData</scope><name>iOct</name></member>
+      <member refid="structdyablo_1_1AMRBlockForeachCell__scratch__impl_1_1Patch_1_1PData_1ac01551e7a1e4738f0b7fc89fdf009058" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_scratch_impl::Patch::PData</scope><name>team_member</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

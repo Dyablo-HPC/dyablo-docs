@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_f4be3fc22817f341d21d58c50a5c6b45" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/utils/units</compoundname>
+    <innerfile refid="CodeUnits_8cpp">CodeUnits.cpp</innerfile>
+    <innerfile refid="UnitParser_8cpp">UnitParser.cpp</innerfile>
+    <innerfile refid="UnitParser_8hpp">UnitParser.hpp</innerfile>
+    <innerfile refid="Units_8h">Units.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/units/"/>
+  </compounddef>
+</doxygen>

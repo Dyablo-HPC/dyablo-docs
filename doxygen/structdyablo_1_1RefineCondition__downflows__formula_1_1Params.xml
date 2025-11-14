@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1RefineCondition__downflows__formula_1_1Params" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::RefineCondition_downflows_formula::Params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1afc0decd0ed23863fcb2b26bdcc86b911" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::RefineCondition_downflows_formula::Params::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::RefineCondition_downflows_formula::Params::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" line="29" column="9" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1ac87160f8f3f63d6e49708637226e7e09" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_downflows_formula::Params::downflow_sign</definition>
+        <argsstring></argsstring>
+        <name>downflow_sign</name>
+        <qualifiedname>dyablo::RefineCondition_downflows_formula::Params::downflow_sign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" line="30" column="12" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1a56f824ce48a72a7de40b36d517289df5" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_downflows_formula::Params::velocity_coarsen</definition>
+        <argsstring></argsstring>
+        <name>velocity_coarsen</name>
+        <qualifiedname>dyablo::RefineCondition_downflows_formula::Params::velocity_coarsen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" line="31" column="12" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1aae79d41db90d7348be3dc0998a36ffa4" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_downflows_formula::Params::velocity_refine</definition>
+        <argsstring></argsstring>
+        <name>velocity_refine</name>
+        <qualifiedname>dyablo::RefineCondition_downflows_formula::Params::velocity_refine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" line="32" column="12" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1a36d27b052c499260c4b4897584bcf3d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::RefineCondition_downflows_formula::Params::Params</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>Params</name>
+        <qualifiedname>dyablo::RefineCondition_downflows_formula::Params::Params</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" line="22" column="5" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" bodystart="22" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" line="20" column="3" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_downflows.cpp" bodystart="21" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1ac87160f8f3f63d6e49708637226e7e09" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_downflows_formula::Params</scope><name>downflow_sign</name></member>
+      <member refid="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1afc0decd0ed23863fcb2b26bdcc86b911" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_downflows_formula::Params</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1a36d27b052c499260c4b4897584bcf3d8" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_downflows_formula::Params</scope><name>Params</name></member>
+      <member refid="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1a56f824ce48a72a7de40b36d517289df5" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_downflows_formula::Params</scope><name>velocity_coarsen</name></member>
+      <member refid="structdyablo_1_1RefineCondition__downflows__formula_1_1Params_1aae79d41db90d7348be3dc0998a36ffa4" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_downflows_formula::Params</scope><name>velocity_refine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

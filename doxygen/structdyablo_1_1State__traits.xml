@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1State__traits" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::State_traits</compoundname>
+    <includes refid="State__Ops_8h" local="no">State_Ops.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1State__traits_1a2fe9846ed8f98ac80f35c2a66057949a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::State_traits&lt; T &gt;::is_state</definition>
+        <argsstring></argsstring>
+        <name>is_state</name>
+        <qualifiedname>dyablo::State_traits::is_state</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/states/State_Ops.h" line="24" column="27" bodyfile="/builds/dyablo/dyablo/core/src/states/State_Ops.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>By default T is not a State. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/states/State_Ops.h" line="22" column="1" bodyfile="/builds/dyablo/dyablo/core/src/states/State_Ops.h" bodystart="23" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1State__traits_1a2fe9846ed8f98ac80f35c2a66057949a" prot="public" virt="non-virtual"><scope>dyablo::State_traits</scope><name>is_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

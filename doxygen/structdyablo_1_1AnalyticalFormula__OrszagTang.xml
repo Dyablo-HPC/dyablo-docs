@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AnalyticalFormula__OrszagTang" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_OrszagTang</compoundname>
+    <basecompoundref refid="structdyablo_1_1AnalyticalFormula__base__MHD" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_base_MHD</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a973a0b0eadb6da4fe89ace34b3446d33" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">HyperbolicPolicy_State_GLMMHD::ConsState</ref></type>
+        <definition>using dyablo::AnalyticalFormula_OrszagTang::ConsState =  HyperbolicPolicy_State_GLMMHD::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="31" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a1648ac2fc502c29ad128972649ae8326" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimGLMMHDState" kindref="compound">HyperbolicPolicy_State_GLMMHD::PrimState</ref></type>
+        <definition>using dyablo::AnalyticalFormula_OrszagTang::PrimState =  HyperbolicPolicy_State_GLMMHD::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="32" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1ab49e816953425cd0323fa14eff3d2c4a" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_OrszagTang::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="13" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1ac9e83c44d4b3affd6c836dad6e5a8022" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_OrszagTang::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="14" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a88a1f6e736a634ac4c7c28b31dd50d50" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_OrszagTang::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="15" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a2fb9b461601a9ef102464b632f2a7fd5" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_OrszagTang::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="16" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a8309c808459a6485ee1670719c870747" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_OrszagTang::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="17" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a4cb6bdb16494116fd63de9c1d54a52c0" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_OrszagTang::error_max</definition>
+        <argsstring></argsstring>
+        <name>error_max</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::error_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="18" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a702904a0c6605adfb64c6462642ef3d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AnalyticalFormula_OrszagTang::AnalyticalFormula_OrszagTang</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>AnalyticalFormula_OrszagTang</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::AnalyticalFormula_OrszagTang</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="20" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="20" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__OrszagTang_1a80ccdc7bda0e4008b99d724ded9be16b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::AnalyticalFormula_OrszagTang::value</definition>
+        <argsstring>(real_t x, real_t y, real_t z, real_t dx, real_t dy, real_t dz) const</argsstring>
+        <name>value</name>
+        <qualifiedname>dyablo::AnalyticalFormula_OrszagTang::value</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="35" column="13" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="35" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>2D Orszag-Tang vortex test Based on Orszag-Tang 1979 &quot;Small-scale structure of two-dimensional magnetohydrodynamic turbulence&quot; Journal of Fluid Mechanics, 1979. Vol 90 pp 128-143 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_OrszagTang</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__OrszagTang"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_MHD</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__MHD"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_OrszagTang</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__OrszagTang"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_MHD</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__MHD"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/mhd/InitialConditions_orszag_tang.cpp" bodystart="12" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a702904a0c6605adfb64c6462642ef3d8" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>AnalyticalFormula_OrszagTang</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a973a0b0eadb6da4fe89ace34b3446d33" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>ConsState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a4cb6bdb16494116fd63de9c1d54a52c0" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>error_max</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1ac9e83c44d4b3affd6c836dad6e5a8022" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__MHD_1a5ac6faf055c1d44796b1a934260f4a35" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1ab49e816953425cd0323fa14eff3d2c4a" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a1648ac2fc502c29ad128972649ae8326" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>PrimState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__MHD_1a28b81fe3c0c8bba5dfa1e7aa6c5b1d64" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>setState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a2fb9b461601a9ef102464b632f2a7fd5" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>smallc</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a8309c808459a6485ee1670719c870747" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a88a1f6e736a634ac4c7c28b31dd50d50" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>smallr</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__MHD_1a3ccc7fe3e1e4b30247c443ebb665f1fe" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>State</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__OrszagTang_1a80ccdc7bda0e4008b99d724ded9be16b" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_OrszagTang</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

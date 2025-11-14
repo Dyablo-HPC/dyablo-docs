@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1AMRBlockForeachCell__CellArray__impl" kind="namespace" language="C++">
+    <compoundname>dyablo::AMRBlockForeachCell_CellArray_impl</compoundname>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" prot="public">dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</innerclass>
+    <innerclass refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape" prot="public">dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_shape</innerclass>
+    <innerclass refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape__ghosted" prot="public">dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_shape_ghosted</innerclass>
+    <innerclass refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape__local" prot="public">dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_shape_local</innerclass>
+    <innerclass refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" prot="public">dyablo::AMRBlockForeachCell_CellArray_impl::CellIndex</innerclass>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local" prot="public">dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</innerclass>
+    <innerclass refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__neighbor" prot="public">dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_neighbor</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="AMRBlockForeachCell__CellArray_8h_1abf72f43f4db40bebd0e646f0d3436481" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">CellArray_base</ref>&lt; false, false &gt;</type>
+        <definition>using dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_global =  CellArray_base&lt;false, false&gt;</definition>
+        <argsstring></argsstring>
+        <name>CellArray_global</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_global</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="668" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="AMRBlockForeachCell__CellArray_8h_1aeaaabecd0f16bfe7827679dfa1c62c74" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">CellArray_base</ref>&lt; true, false &gt;</type>
+        <definition>using dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_global_ghosted =  CellArray_base&lt;true, false&gt;</definition>
+        <argsstring></argsstring>
+        <name>CellArray_global_ghosted</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_global_ghosted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="669" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="8" column="1"/>
+  </compounddef>
+</doxygen>

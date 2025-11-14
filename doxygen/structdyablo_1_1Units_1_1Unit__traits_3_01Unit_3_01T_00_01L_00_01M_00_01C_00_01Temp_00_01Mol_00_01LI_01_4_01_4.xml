@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>L</declname>
+        <defname>L</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>M</declname>
+        <defname>M</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>C</declname>
+        <defname>C</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>Temp</declname>
+        <defname>Temp</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>Mol</declname>
+        <defname>Mol</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>LI</declname>
+        <defname>LI</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a92c35b5e60797c84222271fbb32a5b18" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::is_unit</definition>
+        <argsstring></argsstring>
+        <name>is_unit</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::is_unit</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="148" column="27" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a4371a4a40bfa2d7a9b05b88d76e584b6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Time_exp</definition>
+        <argsstring></argsstring>
+        <name>Time_exp</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Time_exp</qualifiedname>
+        <initializer>= T</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="149" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a72a163bfd4a2f79cbd9f6e56883a3f97" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Length_exp</definition>
+        <argsstring></argsstring>
+        <name>Length_exp</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Length_exp</qualifiedname>
+        <initializer>= L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="150" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a255850dbe6d8f5d1d83ccd735567b75a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Mass_exp</definition>
+        <argsstring></argsstring>
+        <name>Mass_exp</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Mass_exp</qualifiedname>
+        <initializer>= M</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="151" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a1f8bf86556bf9ca53f245dbea104b72e" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Current_exp</definition>
+        <argsstring></argsstring>
+        <name>Current_exp</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Current_exp</qualifiedname>
+        <initializer>= C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="152" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1ad5e934c497befb231176ea9754a7842a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Temp_exp</definition>
+        <argsstring></argsstring>
+        <name>Temp_exp</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Temp_exp</qualifiedname>
+        <initializer>= Temp</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="153" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a64d16564fc003feef5dfe7ef76c72aa6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Mol_exp</definition>
+        <argsstring></argsstring>
+        <name>Mol_exp</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::Mol_exp</qualifiedname>
+        <initializer>= <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Mol</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="154" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a1d1720793aa90377d0922fa6febb127e" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::LuminousIntensity_exp</definition>
+        <argsstring></argsstring>
+        <name>LuminousIntensity_exp</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::LuminousIntensity_exp</qualifiedname>
+        <initializer>= LI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="155" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_1a7fa333bd25fe9f7246de55b9fec22918" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::Units::Unit_traits&lt; T &gt;::is_unit</definition>
+        <argsstring></argsstring>
+        <name>is_unit</name>
+        <qualifiedname>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;::is_unit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="142" column="27" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="146" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="147" bodyend="156"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a1f8bf86556bf9ca53f245dbea104b72e" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>Current_exp</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a92c35b5e60797c84222271fbb32a5b18" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>is_unit</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_1a7fa333bd25fe9f7246de55b9fec22918" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>is_unit</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a72a163bfd4a2f79cbd9f6e56883a3f97" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>Length_exp</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a1d1720793aa90377d0922fa6febb127e" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>LuminousIntensity_exp</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a255850dbe6d8f5d1d83ccd735567b75a" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>Mass_exp</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a64d16564fc003feef5dfe7ef76c72aa6" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>Mol_exp</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1ad5e934c497befb231176ea9754a7842a" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>Temp_exp</name></member>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4_1a4371a4a40bfa2d7a9b05b88d76e584b6" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</scope><name>Time_exp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

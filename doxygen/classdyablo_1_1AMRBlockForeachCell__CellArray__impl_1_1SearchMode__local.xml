@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</compoundname>
+    <includes refid="AMRBlockForeachCell__CellArray_8h" local="no">AMRBlockForeachCell_CellArray.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ad972f27ff5bf3287471b2643cc0787c0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ErrorMode</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::ErrorMode</qualifiedname>
+        <enumvalue id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ad972f27ff5bf3287471b2643cc0787c0a37a1a4112b0220f56478e6cff770e062" prot="public">
+          <name>ASSERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ad972f27ff5bf3287471b2643cc0787c0af851ffe831614badb6e4e5f623932c6b" prot="public">
+          <name>INVALID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="27" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1aad2fd208476541acbf00e88715008cc6" prot="private" static="no" mutable="no">
+        <type>ErrorMode</type>
+        <definition>ErrorMode dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::_error_mode</definition>
+        <argsstring></argsstring>
+        <name>_error_mode</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::_error_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="44" column="13" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1a4dea0b85105b7736788d03649adbe213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::SearchMode_local</definition>
+        <argsstring>()=delete</argsstring>
+        <name>SearchMode_local</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::SearchMode_local</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1a371896e561e530bed1eb941927893ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::SearchMode_local</definition>
+        <argsstring>(const SearchMode_local &amp;)=delete</argsstring>
+        <name>SearchMode_local</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::SearchMode_local</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local" kindref="compound">SearchMode_local</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ae2af51135df5e64cbd68a12424945343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::SearchMode_local</definition>
+        <argsstring>(ErrorMode error_mode)</argsstring>
+        <name>SearchMode_local</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::SearchMode_local</qualifiedname>
+        <param>
+          <type>ErrorMode</type>
+          <declname>error_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="33" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1a00ac5c116a225704d84e9107135530cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION ErrorMode</type>
+        <definition>KOKKOS_INLINE_FUNCTION ErrorMode dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::error_mode</definition>
+        <argsstring>() const</argsstring>
+        <name>error_mode</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local::error_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="38" column="13" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Search mode for neighbors : don&apos;t search outside of local block ErrorMode describes the behavior when target cell is outside of current block:<itemizedlist>
+<listitem><para>ASSERT : convert_index fails/crashes (assert in debug, UB in release)</para>
+</listitem><listitem><para>INVALID : convert_index returns CELLINDEX_INVALID </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="24" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="25" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1aad2fd208476541acbf00e88715008cc6" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>_error_mode</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ad972f27ff5bf3287471b2643cc0787c0a37a1a4112b0220f56478e6cff770e062" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>ASSERT</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1a00ac5c116a225704d84e9107135530cc" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>error_mode</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ad972f27ff5bf3287471b2643cc0787c0" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>ErrorMode</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ad972f27ff5bf3287471b2643cc0787c0af851ffe831614badb6e4e5f623932c6b" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>INVALID</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1a4dea0b85105b7736788d03649adbe213" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>SearchMode_local</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1a371896e561e530bed1eb941927893ead" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>SearchMode_local</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1SearchMode__local_1ae2af51135df5e64cbd68a12424945343" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::SearchMode_local</scope><name>SearchMode_local</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

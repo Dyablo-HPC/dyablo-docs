@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Compute__dt__particle__velocity" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::Compute_dt_particle_velocity</compoundname>
+    <basecompoundref refid="classdyablo_1_1Compute__dt" prot="public" virt="non-virtual">dyablo::Compute_dt</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__particle__velocity_1a1ce6012cf98a2029d6ccd537b9d354ad" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::Compute_dt_particle_velocity::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::Compute_dt_particle_velocity::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" line="83" column="15" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__particle__velocity_1ada526be4d09aee46ed501f057f8a4dfa" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1ForeachParticle" kindref="compound">ForeachParticle</ref></type>
+        <definition>ForeachParticle dyablo::Compute_dt_particle_velocity::foreach_particle</definition>
+        <argsstring></argsstring>
+        <name>foreach_particle</name>
+        <qualifiedname>dyablo::Compute_dt_particle_velocity::foreach_particle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" line="84" column="19" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__particle__velocity_1a9e831324bd6d26594a8b6aac37bf1da5" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_particle_velocity::cfl</definition>
+        <argsstring></argsstring>
+        <name>cfl</name>
+        <qualifiedname>dyablo::Compute_dt_particle_velocity::cfl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" line="86" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__particle__velocity_1af9de78eda26e2624e0a879f3a1ff81ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Compute_dt_particle_velocity::Compute_dt_particle_velocity</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>Compute_dt_particle_velocity</name>
+        <qualifiedname>dyablo::Compute_dt_particle_velocity::Compute_dt_particle_velocity</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" line="17" column="3" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__particle__velocity_1affaa6fb6b2d009dfa15593cd07167ecf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::Compute_dt_particle_velocity::compute_dt</definition>
+        <argsstring>(const UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>compute_dt</name>
+        <qualifiedname>dyablo::Compute_dt_particle_velocity::compute_dt</qualifiedname>
+        <reimplements refid="classdyablo_1_1Compute__dt_1a4d5c4db5ef4b82127137594b4027d891">compute_dt</reimplements>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" line="25" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" bodystart="25" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__particle__velocity_1a46482d1457a0698a16ececab200a7260" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dyablo::Compute_dt_particle_velocity::compute_dt_aux</definition>
+        <argsstring>(const UserData &amp;U)</argsstring>
+        <name>compute_dt_aux</name>
+        <qualifiedname>dyablo::Compute_dt_particle_velocity::compute_dt_aux</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" line="38" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" bodystart="38" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Timestep limiter for particles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class computes the limitation of the timestep for the particles in the same way as the &quot;traditional&quot; CFL for hydro works. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_particle_velocity</label>
+        <link refid="classdyablo_1_1Compute__dt__particle__velocity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_particle_velocity</label>
+        <link refid="classdyablo_1_1Compute__dt__particle__velocity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_particle_velocity.cpp" bodystart="15" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Compute__dt__particle__velocity_1a9e831324bd6d26594a8b6aac37bf1da5" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_particle_velocity</scope><name>cfl</name></member>
+      <member refid="classdyablo_1_1Compute__dt__particle__velocity_1affaa6fb6b2d009dfa15593cd07167ecf" prot="public" virt="virtual"><scope>dyablo::Compute_dt_particle_velocity</scope><name>compute_dt</name></member>
+      <member refid="classdyablo_1_1Compute__dt__particle__velocity_1a46482d1457a0698a16ececab200a7260" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_particle_velocity</scope><name>compute_dt_aux</name></member>
+      <member refid="classdyablo_1_1Compute__dt__particle__velocity_1af9de78eda26e2624e0a879f3a1ff81ff" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_particle_velocity</scope><name>Compute_dt_particle_velocity</name></member>
+      <member refid="classdyablo_1_1Compute__dt__particle__velocity_1a1ce6012cf98a2029d6ccd537b9d354ad" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_particle_velocity</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1Compute__dt__particle__velocity_1ada526be4d09aee46ed501f057f8a4dfa" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_particle_velocity</scope><name>foreach_particle</name></member>
+      <member refid="classdyablo_1_1Compute__dt_1a8ff850a48ff27f842d5d8aa3893b7588" prot="public" virt="virtual"><scope>dyablo::Compute_dt_particle_velocity</scope><name>~Compute_dt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

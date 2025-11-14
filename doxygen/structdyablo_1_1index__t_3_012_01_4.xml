@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1index__t_3_012_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::index_t&lt; 2 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1index__t_3_012_01_4_1a1ea8bca3648b6b68d13634fc1e4c04f2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::index_t&lt; 2 &gt;::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::index_t&lt; 2 &gt;::ndim</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="114" column="24" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1index__t_3_012_01_4_1a5f12e95a652444e07510c33987175f6b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::index_t&lt; 2 &gt;::data[ndim]</definition>
+        <argsstring>[ndim]</argsstring>
+        <name>data</name>
+        <qualifiedname>dyablo::index_t&lt; 2 &gt;::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="116" column="12" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1index__t_3_012_01_4_1adaace69450b53f4ce7ad42a536086716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::index_t&lt; 2 &gt;::index_t</definition>
+        <argsstring>()</argsstring>
+        <name>index_t</name>
+        <qualifiedname>dyablo::index_t&lt; 2 &gt;::index_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="119" column="3" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1index__t_3_012_01_4_1a7e298e60d15c8b16271210ca03a4fdc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::index_t&lt; 2 &gt;::index_t</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>index_t</name>
+        <qualifiedname>dyablo::index_t&lt; 2 &gt;::index_t</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="122" column="3" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1index__t_3_012_01_4_1a06503405e64a41f88fe8cefa8fd0bb76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::index_t&lt; 2 &gt;::operator[]</definition>
+        <argsstring>(std::size_t i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>dyablo::index_t&lt; 2 &gt;::operator[]</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="125" column="12" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1index__t_3_012_01_4_1ae37b33123f74118e161bb1d55fd161a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t &amp; dyablo::index_t&lt; 2 &gt;::operator[]</definition>
+        <argsstring>(std::size_t i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>dyablo::index_t&lt; 2 &gt;::operator[]</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="128" column="12" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="112" column="1" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="112" bodyend="130"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1index__t_3_012_01_4_1a5f12e95a652444e07510c33987175f6b" prot="public" virt="non-virtual"><scope>dyablo::index_t&lt; 2 &gt;</scope><name>data</name></member>
+      <member refid="structdyablo_1_1index__t_3_012_01_4_1adaace69450b53f4ce7ad42a536086716" prot="public" virt="non-virtual"><scope>dyablo::index_t&lt; 2 &gt;</scope><name>index_t</name></member>
+      <member refid="structdyablo_1_1index__t_3_012_01_4_1a7e298e60d15c8b16271210ca03a4fdc2" prot="public" virt="non-virtual"><scope>dyablo::index_t&lt; 2 &gt;</scope><name>index_t</name></member>
+      <member refid="structdyablo_1_1index__t_3_012_01_4_1a1ea8bca3648b6b68d13634fc1e4c04f2" prot="public" virt="non-virtual"><scope>dyablo::index_t&lt; 2 &gt;</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1index__t_3_012_01_4_1a06503405e64a41f88fe8cefa8fd0bb76" prot="public" virt="non-virtual"><scope>dyablo::index_t&lt; 2 &gt;</scope><name>operator[]</name></member>
+      <member refid="structdyablo_1_1index__t_3_012_01_4_1ae37b33123f74118e161bb1d55fd161a2" prot="public" virt="non-virtual"><scope>dyablo::index_t&lt; 2 &gt;</scope><name>operator[]</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

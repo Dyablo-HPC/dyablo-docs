@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classHipTimer" kind="class" language="C++" prot="public">
+    <compoundname>HipTimer</compoundname>
+    <includes refid="HipTimer_8h" local="no">HipTimer.h</includes>
+    <innerclass refid="classHipTimer_1_1HIPEvent" prot="protected">HipTimer::HIPEvent</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classHipTimer_1aa71ec8bfb47fbaa92f7b4a842445f90a" prot="protected" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classHipTimer_1_1HIPEvent" kindref="compound">HIPEvent</ref> &gt;</type>
+        <definition>std::queue&lt;HIPEvent&gt; HipTimer::startEv_queue</definition>
+        <argsstring></argsstring>
+        <name>startEv_queue</name>
+        <qualifiedname>HipTimer::startEv_queue</qualifiedname>
+        <briefdescription>
+<para>queue HIP start and stop events </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="60" column="14" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHipTimer_1a6a4eaac6ebe2752431b77bfbc80a2e50" prot="protected" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classHipTimer_1_1HIPEvent" kindref="compound">HIPEvent</ref> &gt;</type>
+        <definition>std::queue&lt;HIPEvent&gt; HipTimer::stopEv_queue</definition>
+        <argsstring></argsstring>
+        <name>stopEv_queue</name>
+        <qualifiedname>HipTimer::stopEv_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="60" column="28" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHipTimer_1a6f6d7cad4463ba6c7e8fc6b1a85da21e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double HipTimer::total_time</definition>
+        <argsstring></argsstring>
+        <name>total_time</name>
+        <qualifiedname>HipTimer::total_time</qualifiedname>
+        <briefdescription>
+<para>total accumulated duration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="62" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHipTimer_1a3765caf1e48cfaa956d8b073a9dfbd36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HipTimer::HipTimer</definition>
+        <argsstring>()</argsstring>
+        <name>HipTimer</name>
+        <qualifiedname>HipTimer::HipTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="65" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classHipTimer_1a63acab857a09cdff4cbe667c13449d9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HipTimer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>HipTimer::start</qualifiedname>
+        <briefdescription>
+<para>start timer push a start even in a hip stream also check events termination (hipEventQuery()) and accumulate times </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="75" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classHipTimer_1a19184bc88f5843840a4fa9bb9cc40dd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HipTimer::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>HipTimer::reset</qualifiedname>
+        <briefdescription>
+<para>reset accumulated duration and empty the queue </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="83" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classHipTimer_1a5d67f5939d3b99e3902e7ec805305509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HipTimer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>HipTimer::stop</qualifiedname>
+        <briefdescription>
+<para>stop timer, push a stop event in a hip stream </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="90" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classHipTimer_1a9c13c7a8c42f1dd8978e46fbbb806ead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double HipTimer::elapsed</definition>
+        <argsstring>()</argsstring>
+        <name>elapsed</name>
+        <qualifiedname>HipTimer::elapsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return total elapsed time in seconds Performs a CPU synchronization (hipEventSynchronize()) and flushes event queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="99" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="99" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classHipTimer_1af483bf9b4020637c1aaf26230733a6d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HipTimer::empty_queue</definition>
+        <argsstring>()</argsstring>
+        <name>empty_queue</name>
+        <qualifiedname>HipTimer::empty_queue</qualifiedname>
+        <briefdescription>
+<para>Wait for events and flush queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="108" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="108" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classHipTimer_1a1a24dd1da2c6c440891c81a8ebd53606" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HipTimer::accumulate_finished</definition>
+        <argsstring>()</argsstring>
+        <name>accumulate_finished</name>
+        <qualifiedname>HipTimer::accumulate_finished</qualifiedname>
+        <briefdescription>
+<para>Flush finished events from the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="121" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="121" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>a simple timer for HIP kernel using HIP events. (converted form CUDA with hipify) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__EVENT.html">https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__EVENT.html</ulink></para>
+</simplesect>
+This timer uses a HIP event queue to avoid using hipEventSychronize() to accumulate measured times <ref refid="classHipTimer_1a63acab857a09cdff4cbe667c13449d9d" kindref="member">start()</ref>/stop() create new hipEvent_t handles and adds it to an event queue hipEventQuery() is called periodically (during <ref refid="classHipTimer_1a63acab857a09cdff4cbe667c13449d9d" kindref="member">start()</ref> and <ref refid="classHipTimer_1a9c13c7a8c42f1dd8978e46fbbb806ead" kindref="member">elapsed()</ref>) to empty the queue and accumulate time CPU synchronization (hipEventSynchronize()) is performed only in <ref refid="classHipTimer_1a9c13c7a8c42f1dd8978e46fbbb806ead" kindref="member">elapsed()</ref> (and <ref refid="classHipTimer_1a19184bc88f5843840a4fa9bb9cc40dd8" kindref="member">reset()</ref>) </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" line="22" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/HipTimer.h" bodystart="23" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classHipTimer_1a1a24dd1da2c6c440891c81a8ebd53606" prot="private" virt="non-virtual"><scope>HipTimer</scope><name>accumulate_finished</name></member>
+      <member refid="classHipTimer_1a9c13c7a8c42f1dd8978e46fbbb806ead" prot="public" virt="non-virtual"><scope>HipTimer</scope><name>elapsed</name></member>
+      <member refid="classHipTimer_1af483bf9b4020637c1aaf26230733a6d8" prot="private" virt="non-virtual"><scope>HipTimer</scope><name>empty_queue</name></member>
+      <member refid="classHipTimer_1a3765caf1e48cfaa956d8b073a9dfbd36" prot="public" virt="non-virtual"><scope>HipTimer</scope><name>HipTimer</name></member>
+      <member refid="classHipTimer_1a19184bc88f5843840a4fa9bb9cc40dd8" prot="public" virt="non-virtual"><scope>HipTimer</scope><name>reset</name></member>
+      <member refid="classHipTimer_1a63acab857a09cdff4cbe667c13449d9d" prot="public" virt="non-virtual"><scope>HipTimer</scope><name>start</name></member>
+      <member refid="classHipTimer_1aa71ec8bfb47fbaa92f7b4a842445f90a" prot="protected" virt="non-virtual"><scope>HipTimer</scope><name>startEv_queue</name></member>
+      <member refid="classHipTimer_1a5d67f5939d3b99e3902e7ec805305509" prot="public" virt="non-virtual"><scope>HipTimer</scope><name>stop</name></member>
+      <member refid="classHipTimer_1a6a4eaac6ebe2752431b77bfbc80a2e50" prot="protected" virt="non-virtual"><scope>HipTimer</scope><name>stopEv_queue</name></member>
+      <member refid="classHipTimer_1a6f6d7cad4463ba6c7e8fc6b1a85da21e" prot="protected" virt="non-virtual"><scope>HipTimer</scope><name>total_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

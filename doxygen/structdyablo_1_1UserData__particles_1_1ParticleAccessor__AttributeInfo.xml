@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1UserData__particles_1_1ParticleAccessor__AttributeInfo" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::UserData_particles::ParticleAccessor_AttributeInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1UserData__particles_1_1ParticleAccessor__AttributeInfo_1aa87539d187e9f7a0c48c1ee1996cc62d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::UserData_particles::ParticleAccessor_AttributeInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>dyablo::UserData_particles::ParticleAccessor_AttributeInfo::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/UserData_particles.h" line="282" column="17" bodyfile="/builds/dyablo/dyablo/core/src/UserData_particles.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1UserData__particles_1_1ParticleAccessor__AttributeInfo_1aa2bef1022add0bf9275e9b43b6435dfb" prot="public" static="no" mutable="no">
+        <type>VarIndex</type>
+        <definition>VarIndex dyablo::UserData_particles::ParticleAccessor_AttributeInfo::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>dyablo::UserData_particles::ParticleAccessor_AttributeInfo::id</qualifiedname>
+        <briefdescription>
+<para>Name as in <ref refid="VarIndex_8h_source" kindref="compound">VarIndex.h</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/UserData_particles.h" line="283" column="14" bodyfile="/builds/dyablo/dyablo/core/src/UserData_particles.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/UserData_particles.h" line="280" column="1" bodyfile="/builds/dyablo/dyablo/core/src/UserData_particles.h" bodystart="281" bodyend="284"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1UserData__particles_1_1ParticleAccessor__AttributeInfo_1aa2bef1022add0bf9275e9b43b6435dfb" prot="public" virt="non-virtual"><scope>dyablo::UserData_particles::ParticleAccessor_AttributeInfo</scope><name>id</name></member>
+      <member refid="structdyablo_1_1UserData__particles_1_1ParticleAccessor__AttributeInfo_1aa87539d187e9f7a0c48c1ee1996cc62d" prot="public" virt="non-virtual"><scope>dyablo::UserData_particles::ParticleAccessor_AttributeInfo</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

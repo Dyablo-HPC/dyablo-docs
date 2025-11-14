@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classSimpleTimer" kind="class" language="C++" prot="public">
+    <compoundname>SimpleTimer</compoundname>
+    <includes refid="SimpleTimer_8h" local="no">SimpleTimer.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classSimpleTimer_1a70928f422d18c9abbf61b42a277b256f" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SimpleTimer::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <qualifiedname>SimpleTimer::start_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="42" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSimpleTimer_1a0a4ba60202b4003939c891a89f687478" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SimpleTimer::total_time</definition>
+        <argsstring></argsstring>
+        <name>total_time</name>
+        <qualifiedname>SimpleTimer::total_time</qualifiedname>
+        <briefdescription>
+<para>store total accumulated timings </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="45" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSimpleTimer_1af0c18d77bcd3a28f41fb09b3f1358543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SimpleTimer::SimpleTimer</definition>
+        <argsstring>()</argsstring>
+        <name>SimpleTimer</name>
+        <qualifiedname>SimpleTimer::SimpleTimer</qualifiedname>
+        <briefdescription>
+<para>default constructor, timing starts rightaway </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="25" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleTimer_1a3f5bd32b9562210069be7acae7fc754f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SimpleTimer::SimpleTimer</definition>
+        <argsstring>(double t)</argsstring>
+        <name>SimpleTimer</name>
+        <qualifiedname>SimpleTimer::SimpleTimer</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>initialize total accumulated time </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="28" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.cpp" bodystart="28" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleTimer_1af89d20fa4779118aebaca637f5821fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SimpleTimer::SimpleTimer</definition>
+        <argsstring>(SimpleTimer const &amp;aTimer)</argsstring>
+        <name>SimpleTimer</name>
+        <qualifiedname>SimpleTimer::SimpleTimer</qualifiedname>
+        <param>
+          <type><ref refid="classSimpleTimer" kindref="compound">SimpleTimer</ref> const &amp;</type>
+          <declname>aTimer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="29" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleTimer_1ad29e9a56c18bb1e378b0bd125e50c62a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SimpleTimer::~SimpleTimer</definition>
+        <argsstring>()</argsstring>
+        <name>~SimpleTimer</name>
+        <qualifiedname>SimpleTimer::~SimpleTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="30" column="11" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleTimer_1afa298cf96261fc9d9af0d6ea8ece2ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SimpleTimer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>SimpleTimer::start</qualifiedname>
+        <briefdescription>
+<para>start time measure </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="33" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.cpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleTimer_1a07a7dbb801e7f805f7777fdf8f3ef108" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SimpleTimer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>SimpleTimer::stop</qualifiedname>
+        <briefdescription>
+<para>stop time measure and add result to total_time </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="36" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.cpp" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classSimpleTimer_1ad7cb69a92d4884423f1a21a96b98e1c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double SimpleTimer::elapsed</definition>
+        <argsstring>() const</argsstring>
+        <name>elapsed</name>
+        <qualifiedname>SimpleTimer::elapsed</qualifiedname>
+        <briefdescription>
+<para>return elapsed time in seconds (as stored in total_time) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="39" column="18" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.cpp" bodystart="84" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>a simple Timer class. If MPI is enabled, should we use MPI_WTime instead of gettimeofday (?!?) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" line="21" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/SimpleTimer.h" bodystart="22" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classSimpleTimer_1ad7cb69a92d4884423f1a21a96b98e1c4" prot="public" virt="virtual"><scope>SimpleTimer</scope><name>elapsed</name></member>
+      <member refid="classSimpleTimer_1af0c18d77bcd3a28f41fb09b3f1358543" prot="public" virt="non-virtual"><scope>SimpleTimer</scope><name>SimpleTimer</name></member>
+      <member refid="classSimpleTimer_1a3f5bd32b9562210069be7acae7fc754f" prot="public" virt="non-virtual"><scope>SimpleTimer</scope><name>SimpleTimer</name></member>
+      <member refid="classSimpleTimer_1af89d20fa4779118aebaca637f5821fe8" prot="public" virt="non-virtual"><scope>SimpleTimer</scope><name>SimpleTimer</name></member>
+      <member refid="classSimpleTimer_1afa298cf96261fc9d9af0d6ea8ece2ae6" prot="public" virt="virtual"><scope>SimpleTimer</scope><name>start</name></member>
+      <member refid="classSimpleTimer_1a70928f422d18c9abbf61b42a277b256f" prot="protected" virt="non-virtual"><scope>SimpleTimer</scope><name>start_time</name></member>
+      <member refid="classSimpleTimer_1a07a7dbb801e7f805f7777fdf8f3ef108" prot="public" virt="virtual"><scope>SimpleTimer</scope><name>stop</name></member>
+      <member refid="classSimpleTimer_1a0a4ba60202b4003939c891a89f687478" prot="protected" virt="non-virtual"><scope>SimpleTimer</scope><name>total_time</name></member>
+      <member refid="classSimpleTimer_1ad29e9a56c18bb1e378b0bd125e50c62a" prot="public" virt="virtual"><scope>SimpleTimer</scope><name>~SimpleTimer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

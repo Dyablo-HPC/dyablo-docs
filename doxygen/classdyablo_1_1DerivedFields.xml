@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1DerivedFields" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::DerivedFields</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1DerivedFields__divB" prot="public" virt="non-virtual">dyablo::DerivedFields_divB</derivedcompoundref>
+    <includes refid="DerivedFields__base_8h" local="no">DerivedFields_base.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1DerivedFields_1a7c46d9b6b636ba42d7eb410e2863f4ad" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">ForeachCell::CellArray_global</ref></type>
+        <definition>using dyablo::DerivedFields::OutputArray =  ForeachCell::CellArray_global</definition>
+        <argsstring></argsstring>
+        <name>OutputArray</name>
+        <qualifiedname>dyablo::DerivedFields::OutputArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" line="23" column="3" bodyfile="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1DerivedFields_1ae0dfb9ae5bccac8c649d005131377a34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>virtual std::vector&lt; std::string &gt; dyablo::DerivedFields::get_fields_names</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_fields_names</name>
+        <qualifiedname>dyablo::DerivedFields::get_fields_names</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1DerivedFields__divB_1a98ad82640f21f8964fc4782991f1ee9f">get_fields_names</reimplementedby>
+        <briefdescription>
+<para>Returns the name of all the new derived fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" line="31" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1DerivedFields_1a51d2ee2a343b08b03df8bd8c74f0b1db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::DerivedFields::compute_derived_fields</definition>
+        <argsstring>(OutputArray &amp;out, const UserData &amp;U) const =0</argsstring>
+        <name>compute_derived_fields</name>
+        <qualifiedname>dyablo::DerivedFields::compute_derived_fields</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1DerivedFields__divB_1ac5acd61eb79c9ec9238c90e9119c44ef">compute_derived_fields</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">OutputArray</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+<para>Compute derived fields. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the derived field(s) using data for U and store them in out.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> containing simulation fields </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new derived fields are stored in out after execution.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Note : out must be allocated to the right size before calling <ref refid="classdyablo_1_1DerivedFields_1a51d2ee2a343b08b03df8bd8c74f0b1db" kindref="member">compute_derived_fields()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" line="43" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1DerivedFields_1ad319d77a9e9ac31c0509c81cc9d2d243" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::DerivedFields::~DerivedFields</definition>
+        <argsstring>()</argsstring>
+        <name>~DerivedFields</name>
+        <qualifiedname>dyablo::DerivedFields::~DerivedFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" line="44" column="11" bodyfile="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for derived fields. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Derived fields are sub-plugins for IOManagers to output additional fields derived from fields needed for the simulation. They are meant to be used only for output and are not used in the rest of the simulation. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::DerivedFields</label>
+        <link refid="classdyablo_1_1DerivedFields"/>
+      </node>
+      <node id="2">
+        <label>dyablo::DerivedFields_divB</label>
+        <link refid="classdyablo_1_1DerivedFields__divB"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" line="21" column="1" bodyfile="/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h" bodystart="21" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1DerivedFields_1a51d2ee2a343b08b03df8bd8c74f0b1db" prot="public" virt="pure-virtual"><scope>dyablo::DerivedFields</scope><name>compute_derived_fields</name></member>
+      <member refid="classdyablo_1_1DerivedFields_1ae0dfb9ae5bccac8c649d005131377a34" prot="public" virt="pure-virtual"><scope>dyablo::DerivedFields</scope><name>get_fields_names</name></member>
+      <member refid="classdyablo_1_1DerivedFields_1a7c46d9b6b636ba42d7eb410e2863f4ad" prot="public" virt="non-virtual"><scope>dyablo::DerivedFields</scope><name>OutputArray</name></member>
+      <member refid="classdyablo_1_1DerivedFields_1ad319d77a9e9ac31c0509c81cc9d2d243" prot="public" virt="virtual"><scope>dyablo::DerivedFields</scope><name>~DerivedFields</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

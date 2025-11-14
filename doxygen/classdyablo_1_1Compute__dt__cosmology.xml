@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Compute__dt__cosmology" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::Compute_dt_cosmology</compoundname>
+    <basecompoundref refid="classdyablo_1_1Compute__dt" prot="public" virt="non-virtual">dyablo::Compute_dt</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__cosmology_1ad6c55a140fa716ca6d59cbb4d536e87c" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1CosmoManager" kindref="compound">CosmoManager</ref></type>
+        <definition>CosmoManager dyablo::Compute_dt_cosmology::cosmo_manager</definition>
+        <argsstring></argsstring>
+        <name>cosmo_manager</name>
+        <qualifiedname>dyablo::Compute_dt_cosmology::cosmo_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" line="42" column="16" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__cosmology_1ac0af7410e8996f7691958de0a5e9e510" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Compute_dt_cosmology::Compute_dt_cosmology</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>Compute_dt_cosmology</name>
+        <qualifiedname>dyablo::Compute_dt_cosmology::Compute_dt_cosmology</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" line="16" column="3" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__cosmology_1af8a32cdc47fe15bb5a5505608fcb316f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::Compute_dt_cosmology::compute_dt</definition>
+        <argsstring>(const UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>compute_dt</name>
+        <qualifiedname>dyablo::Compute_dt_cosmology::compute_dt</qualifiedname>
+        <reimplements refid="classdyablo_1_1Compute__dt_1a4d5c4db5ef4b82127137594b4027d891">compute_dt</reimplements>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+<para>Computes the maximum acceptable dt for cosmological simulations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calls the <ref refid="classdyablo_1_1CosmoManager" kindref="compound">CosmoManager</ref> to manage this part of the calculation, nothing is actually done in here.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scalar_data[inout]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ScalarSimulationData structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" line="31" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" bodystart="31" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Timestep limiter for cosmology. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Relies on the <ref refid="classdyablo_1_1CosmoManager" kindref="compound">CosmoManager</ref> to calculate the limited dt. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_cosmology</label>
+        <link refid="classdyablo_1_1Compute__dt__cosmology"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_cosmology</label>
+        <link refid="classdyablo_1_1Compute__dt__cosmology"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" line="13" column="1" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp" bodystart="14" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Compute__dt__cosmology_1af8a32cdc47fe15bb5a5505608fcb316f" prot="public" virt="virtual"><scope>dyablo::Compute_dt_cosmology</scope><name>compute_dt</name></member>
+      <member refid="classdyablo_1_1Compute__dt__cosmology_1ac0af7410e8996f7691958de0a5e9e510" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_cosmology</scope><name>Compute_dt_cosmology</name></member>
+      <member refid="classdyablo_1_1Compute__dt__cosmology_1ad6c55a140fa716ca6d59cbb4d536e87c" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_cosmology</scope><name>cosmo_manager</name></member>
+      <member refid="classdyablo_1_1Compute__dt_1a8ff850a48ff27f842d5d8aa3893b7588" prot="public" virt="virtual"><scope>dyablo::Compute_dt_cosmology</scope><name>~Compute_dt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

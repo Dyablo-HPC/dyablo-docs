@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams" kind="struct" language="C++" prot="private">
+    <compoundname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a45be39a419ce4629b2c751c84ae86fc0" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="243" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a8607a961e15bfd03b1bec2cea0acc860" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="244" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a827d5f9e65fa6cc49d774b821db18e68" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="245" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a20227239ee51874b6646b152aac47bdd" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="246" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="242" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="242" bodyend="247"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a45be39a419ce4629b2c751c84ae86fc0" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a20227239ee51874b6646b152aac47bdd" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</scope><name>smallc</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a827d5f9e65fa6cc49d774b821db18e68" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams_1a8607a961e15bfd03b1bec2cea0acc860" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</scope><name>smallr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

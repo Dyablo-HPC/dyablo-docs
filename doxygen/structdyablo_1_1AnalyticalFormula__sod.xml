@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AnalyticalFormula__sod" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_sod</compoundname>
+    <basecompoundref refid="structdyablo_1_1AnalyticalFormula__base__hydro" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_base_hydro</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__sod_1ae021e57c457dafc7b0715da74d8fd59d" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_sod::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="13" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__sod_1a0a1dadac99da6b5f0cd7ef578cc970e4" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_sod::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::x0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="15" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__sod_1a0cac61b17f0d15582b3d7095bb99be2c" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_sod::pL</definition>
+        <argsstring></argsstring>
+        <name>pL</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::pL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="17" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__sod_1a7a16c5fdd66c065b7bb3a5dad47dc78b" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_sod::pR</definition>
+        <argsstring></argsstring>
+        <name>pR</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::pR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="18" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__sod_1a6c8fd33eaa4fe9f8c566fd27d2790acb" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_sod::rhoL</definition>
+        <argsstring></argsstring>
+        <name>rhoL</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::rhoL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="20" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__sod_1a230a9f1487f81f318ecb02e1756059b2" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_sod::rhoR</definition>
+        <argsstring></argsstring>
+        <name>rhoR</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::rhoR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="21" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__sod_1abf2df1b84ebea4b4eeab61e382c5aa02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AnalyticalFormula_sod::AnalyticalFormula_sod</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>AnalyticalFormula_sod</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::AnalyticalFormula_sod</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="23" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__sod_1a35a9b5362ccd326a6d5b7e37f0bab02d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsHydroState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsHydroState dyablo::AnalyticalFormula_sod::value</definition>
+        <argsstring>(real_t x, real_t y, real_t z, real_t dx, real_t dy, real_t dz) const</argsstring>
+        <name>value</name>
+        <qualifiedname>dyablo::AnalyticalFormula_sod::value</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="42" column="18" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="42" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>2D implosion test. Based on Liska, Wendroff &quot;Comparison of Several Difference Schemes on 1D and 2D Test Problems 
+for the Euler Equations&quot;, 2003, SIAM journal on Scientific Computing </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_sod</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__sod"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_sod</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__sod"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_sod.cpp" bodystart="12" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1abf2df1b84ebea4b4eeab61e382c5aa02" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>AnalyticalFormula_sod</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc9e104f11a094d4eb01551b30f6f420" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>ConsHydroState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1ae021e57c457dafc7b0715da74d8fd59d" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1a78404e035b2f8dde366288b564d30f14" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1a0cac61b17f0d15582b3d7095bb99be2c" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>pL</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1a7a16c5fdd66c065b7bb3a5dad47dc78b" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>pR</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1a6c8fd33eaa4fe9f8c566fd27d2790acb" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>rhoL</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1a230a9f1487f81f318ecb02e1756059b2" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>rhoR</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc1b1589c77d1286deb78e32e122a643" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>setState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1ab7c34f90f960785202d0345a2fdbf091" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>State</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1a35a9b5362ccd326a6d5b7e37f0bab02d" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>value</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__sod_1a0a1dadac99da6b5f0cd7ef578cc970e4" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_sod</scope><name>x0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

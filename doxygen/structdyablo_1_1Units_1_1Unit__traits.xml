@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1Units_1_1Unit__traits" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::Units::Unit_traits</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1Units_1_1Unit__traits_1a7fa333bd25fe9f7246de55b9fec22918" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::Units::Unit_traits&lt; T &gt;::is_unit</definition>
+        <argsstring></argsstring>
+        <name>is_unit</name>
+        <qualifiedname>dyablo::Units::Unit_traits::is_unit</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="142" column="27" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="140" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="141" bodyend="143"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1Units_1_1Unit__traits_1a7fa333bd25fe9f7246de55b9fec22918" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit_traits</scope><name>is_unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

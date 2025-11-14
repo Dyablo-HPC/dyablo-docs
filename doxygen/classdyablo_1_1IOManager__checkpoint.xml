@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1IOManager__checkpoint" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::IOManager_checkpoint</compoundname>
+    <basecompoundref refid="classdyablo_1_1IOManager" prot="public" virt="non-virtual">dyablo::IOManager</basecompoundref>
+    <innerclass refid="structdyablo_1_1IOManager__checkpoint_1_1Data" prot="public">dyablo::IOManager_checkpoint::Data</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__checkpoint_1ac6948f25d7167550894e3befd8f9163b" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structdyablo_1_1IOManager__checkpoint_1_1Data" kindref="compound">Data</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;Data&gt; dyablo::IOManager_checkpoint::pdata</definition>
+        <argsstring></argsstring>
+        <name>pdata</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::pdata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="105" column="19" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1IOManager__checkpoint_1a959a31a46f45a94c4396fb5c8e3424b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::IOManager_checkpoint::IOManager_checkpoint</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>IOManager_checkpoint</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::IOManager_checkpoint</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="31" column="3" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="31" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1IOManager__checkpoint_1aa176b5c8e89bca89d141d919c96e1048" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::IOManager_checkpoint::save_snapshot</definition>
+        <argsstring>(const UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>save_snapshot</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::save_snapshot</qualifiedname>
+        <reimplements refid="classdyablo_1_1IOManager_1a153a366ae5ca463116fa5eba2bb3c96b">save_snapshot</reimplements>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output simulation snapshot to a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+<parametername>Ughost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Simulation data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iteration number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>physical time of the simulation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="44" column="8" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="44" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::IOManager</label>
+        <link refid="classdyablo_1_1IOManager"/>
+      </node>
+      <node id="1">
+        <label>dyablo::IOManager_checkpoint</label>
+        <link refid="classdyablo_1_1IOManager__checkpoint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::IOManager</label>
+        <link refid="classdyablo_1_1IOManager"/>
+      </node>
+      <node id="1">
+        <label>dyablo::IOManager_checkpoint</label>
+        <link refid="classdyablo_1_1IOManager__checkpoint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="28" column="1" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="29" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1IOManager__checkpoint_1a959a31a46f45a94c4396fb5c8e3424b1" prot="public" virt="non-virtual"><scope>dyablo::IOManager_checkpoint</scope><name>IOManager_checkpoint</name></member>
+      <member refid="classdyablo_1_1IOManager__checkpoint_1ac6948f25d7167550894e3befd8f9163b" prot="private" virt="non-virtual"><scope>dyablo::IOManager_checkpoint</scope><name>pdata</name></member>
+      <member refid="classdyablo_1_1IOManager__checkpoint_1aa176b5c8e89bca89d141d919c96e1048" prot="public" virt="virtual"><scope>dyablo::IOManager_checkpoint</scope><name>save_snapshot</name></member>
+      <member refid="classdyablo_1_1IOManager_1ace6483ec8b5e65bf3e51fc1825c8afbf" prot="public" virt="virtual"><scope>dyablo::IOManager_checkpoint</scope><name>~IOManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

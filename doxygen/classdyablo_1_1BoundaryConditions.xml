@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1BoundaryConditions" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::BoundaryConditions</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1a6f179d71b3834a28c0b907bcb4d3a8ad" prot="public" static="no" mutable="no">
+        <type>BoundaryConditionType</type>
+        <definition>BoundaryConditionType dyablo::BoundaryConditions::bc_min[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>bc_min</name>
+        <qualifiedname>dyablo::BoundaryConditions::bc_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="196" column="25" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1a7064cbeca3cf9b29f9d3c9026ef269cc" prot="public" static="no" mutable="no">
+        <type>BoundaryConditionType</type>
+        <definition>BoundaryConditionType dyablo::BoundaryConditions::bc_max[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>bc_max</name>
+        <qualifiedname>dyablo::BoundaryConditions::bc_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="196" column="32" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1a1a972c4ce3dbc904909f797cf752278b" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::BoundaryConditions::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::BoundaryConditions::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="197" column="10" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1a0e0e82a851f7faa102274055658b7c9f" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::BoundaryConditions::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::BoundaryConditions::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="197" column="15" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1a58cc55362a2aea639d8d03c9822f882f" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::BoundaryConditions::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::BoundaryConditions::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="198" column="10" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1af9c49f6f1f625424bea4c29d367072f9" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::BoundaryConditions::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::BoundaryConditions::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="198" column="15" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1af2737fb24a21ca9869e34a72670592aa" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::BoundaryConditions::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::BoundaryConditions::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="199" column="10" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1BoundaryConditions_1a750093929bad19981a266cc20b1cd969" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::BoundaryConditions::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::BoundaryConditions::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="199" column="15" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1BoundaryConditions_1a8f93aa586c02ffa8c85307ef4107e871" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::BoundaryConditions::BoundaryConditions</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>BoundaryConditions</name>
+        <qualifiedname>dyablo::BoundaryConditions::BoundaryConditions</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="14" column="3" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="14" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1BoundaryConditions_1aa02c5bb96621ba2cafed732b46375038" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+          <param>
+            <type>typename State</type>
+          </param>
+          <param>
+            <type>typename Uin_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION State::ConsState</type>
+        <definition>KOKKOS_INLINE_FUNCTION State::ConsState dyablo::BoundaryConditions::getBoundaryValue</definition>
+        <argsstring>(const Uin_t &amp;Uin, const CellIndex &amp;iCell_boundary, const CellMetaData &amp;metadata) const</argsstring>
+        <name>getBoundaryValue</name>
+        <qualifiedname>dyablo::BoundaryConditions::getBoundaryValue</qualifiedname>
+        <param>
+          <type>const Uin_t &amp;</type>
+          <declname>Uin</declname>
+        </param>
+        <param>
+          <type>const CellIndex &amp;</type>
+          <declname>iCell_boundary</declname>
+        </param>
+        <param>
+          <type>const CellMetaData &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Get field values for a cell outside of the simulation domain. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is usually called by kernels when trying to access neighbors outside of the simulation domain. Returns the state of a virtual cell outside of the domain. The value returned may be determined by the values inside the domain (e.g. reflecting/absorbing boundary conditions)</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ndim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of dimensions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>State</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of state to be outputted by the method </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Uin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input array of conservative variables </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iCell_boundary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cell index outside of the domain (iCell_boundary.is_boundary() must be true) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CellMetaData object allowing for mesh queries on size/position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The hydrostate defined at the given boundary position </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="50" column="29" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="50" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1BoundaryConditions_1afdcc54da57de7410827356bf57de6222" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+          <param>
+            <type>typename State</type>
+          </param>
+          <param>
+            <type>typename Uin_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION State::ConsState</type>
+        <definition>KOKKOS_INLINE_FUNCTION State::ConsState dyablo::BoundaryConditions::getUserdefBoundaryValue</definition>
+        <argsstring>(const Uin_t &amp;Uin, const CellIndex &amp;iCell_Boundary, const CellMetaData &amp;metadata, const CellIndex::offset_t &amp;offset, ComponentIndex3D dir) const</argsstring>
+        <name>getUserdefBoundaryValue</name>
+        <qualifiedname>dyablo::BoundaryConditions::getUserdefBoundaryValue</qualifiedname>
+        <param>
+          <type>const Uin_t &amp;</type>
+          <declname>Uin</declname>
+        </param>
+        <param>
+          <type>const CellIndex &amp;</type>
+          <declname>iCell_Boundary</declname>
+        </param>
+        <param>
+          <type>const CellMetaData &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <param>
+          <type>const CellIndex::offset_t &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>ComponentIndex3D</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+<para>Returns a user-defined value at a boundary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by getBoundaryValue in the case where we try to access a value at the boundary that is flagged as user-defined.</para>
+<para>This method should return a conservative state. <bold>Important note</bold> that this method should not be used as is, but instead should be specialized to return a specific type of state (eg, MHDConservativeState or HydroConservativeState)</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ndim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of dimensions</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Uin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input array of conservative variables </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iCell_boundary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cell index outside of the domain (iCell_boundary.is_boundary() must be true) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CellMetaData object allowing for mesh queries on size/position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the offset to apply to iCell_boundary to get to the symmetrical cell inside the domain </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the direction along which we&apos;re getting out of the domain </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="148" column="29" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="148" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1BoundaryConditions_1a16e1e239ab194f2c44b5cc4ddf0f382c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+          <param>
+            <type>typename State</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION State::ConsState</type>
+        <definition>KOKKOS_INLINE_FUNCTION State::ConsState dyablo::BoundaryConditions::overrideBoundaryFlux</definition>
+        <argsstring>(const typename State::ConsState flux_in, const typename State::PrimState q, const ComponentIndex3D dir, const bool min_bound) const</argsstring>
+        <name>overrideBoundaryFlux</name>
+        <qualifiedname>dyablo::BoundaryConditions::overrideBoundaryFlux</qualifiedname>
+        <param>
+          <type>const typename State::ConsState</type>
+          <declname>flux_in</declname>
+        </param>
+        <param>
+          <type>const typename State::PrimState</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const ComponentIndex3D</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>min_bound</declname>
+        </param>
+        <briefdescription>
+<para>Overrides the flux at a boundary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides a flux after the resolution of the Riemann problem at a boundary</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ndim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of dimensions</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flux_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the flux at the boundary as calculated per the Riemann solver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the primitive value of the cell at the boundary, inside the domain </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IX, IY or IZ depending on the direction of the current flux </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tells if the current boundary is the minimum boundary along dir or the maximum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="175" column="29" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="175" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1BoundaryConditions_1a69a0630a285037bc9f74d650162883f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+          <param>
+            <type>typename State</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION real_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t dyablo::BoundaryConditions::overrideBoundaryHeatFlux</definition>
+        <argsstring>(real_t flux_in, const typename State::PrimState q, const real_t kappa, const real_t dh, const ComponentIndex3D dir, const bool min_bound) const</argsstring>
+        <name>overrideBoundaryHeatFlux</name>
+        <qualifiedname>dyablo::BoundaryConditions::overrideBoundaryHeatFlux</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>flux_in</declname>
+        </param>
+        <param>
+          <type>const typename State::PrimState</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const real_t</type>
+          <declname>kappa</declname>
+        </param>
+        <param>
+          <type>const real_t</type>
+          <declname>dh</declname>
+        </param>
+        <param>
+          <type>const ComponentIndex3D</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>min_bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="187" column="10" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="187" bodyend="194"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/boundary_conditions/BoundaryConditions.h" bodystart="11" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1BoundaryConditions_1a7064cbeca3cf9b29f9d3c9026ef269cc" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>bc_max</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a6f179d71b3834a28c0b907bcb4d3a8ad" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>bc_min</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a8f93aa586c02ffa8c85307ef4107e871" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>BoundaryConditions</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1aa02c5bb96621ba2cafed732b46375038" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>getBoundaryValue</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1afdcc54da57de7410827356bf57de6222" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>getUserdefBoundaryValue</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a16e1e239ab194f2c44b5cc4ddf0f382c" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>overrideBoundaryFlux</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a69a0630a285037bc9f74d650162883f6" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>overrideBoundaryHeatFlux</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a0e0e82a851f7faa102274055658b7c9f" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>xmax</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a1a972c4ce3dbc904909f797cf752278b" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>xmin</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1af9c49f6f1f625424bea4c29d367072f9" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>ymax</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a58cc55362a2aea639d8d03c9822f882f" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>ymin</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1a750093929bad19981a266cc20b1cd969" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>zmax</name></member>
+      <member refid="classdyablo_1_1BoundaryConditions_1af2737fb24a21ca9869e34a72670592aa" prot="public" virt="non-virtual"><scope>dyablo::BoundaryConditions</scope><name>zmin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

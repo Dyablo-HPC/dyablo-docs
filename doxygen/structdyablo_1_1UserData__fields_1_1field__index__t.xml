@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1UserData__fields_1_1field__index__t" kind="struct" language="C++" prot="private">
+    <compoundname>dyablo::UserData_fields::field_index_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1UserData__fields_1_1field__index__t_1a1d9ea74433380f0c1cb69380fa5a6b57" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::UserData_fields::field_index_t::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>dyablo::UserData_fields::field_index_t::index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/UserData_fields.h" line="189" column="13" bodyfile="/builds/dyablo/dyablo/core/src/UserData_fields.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/UserData_fields.h" line="187" column="5" bodyfile="/builds/dyablo/dyablo/core/src/UserData_fields.h" bodystart="188" bodyend="190"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1UserData__fields_1_1field__index__t_1a1d9ea74433380f0c1cb69380fa5a6b57" prot="public" virt="non-virtual"><scope>dyablo::UserData_fields::field_index_t</scope><name>index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

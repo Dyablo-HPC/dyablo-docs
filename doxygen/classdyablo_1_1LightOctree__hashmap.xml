@@ -1,0 +1,682 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1LightOctree__hashmap" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::LightOctree_hashmap</compoundname>
+    <basecompoundref refid="classdyablo_1_1LightOctree__base" prot="public" virt="non-virtual">dyablo::LightOctree_base</basecompoundref>
+    <derivedcompoundref refid="classdyablo_1_1LightOctree__hashmap__precompute" prot="public" virt="non-virtual">dyablo::LightOctree_hashmap_precompute</derivedcompoundref>
+    <innerclass refid="structdyablo_1_1LightOctree__hashmap_1_1key__t" prot="public">dyablo::LightOctree_hashmap::key_t</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__hashmap_1a233e223cf8bf7224114336fc8c67886e" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref>&lt;&gt;</type>
+        <definition>using dyablo::LightOctree_hashmap::Storage_t =  LightOctree_storage&lt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>Storage_t</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::Storage_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="39" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__hashmap_1a93668acad06408b0e73d1ab628744d8e" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>using dyablo::LightOctree_hashmap::morton_t =  uint64_t</definition>
+        <argsstring></argsstring>
+        <name>morton_t</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::morton_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="42" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__hashmap_1ae1253ca30620a8cfa2f566da54a7cbbc" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using dyablo::LightOctree_hashmap::logical_coord_t =  uint32_t</definition>
+        <argsstring></argsstring>
+        <name>logical_coord_t</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::logical_coord_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="366" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__hashmap_1ad3d737469c378db3435ad8d5fdca930f" prot="public" static="no">
+        <type>logical_coord_t</type>
+        <definition>using dyablo::LightOctree_hashmap::level_t =  logical_coord_t</definition>
+        <argsstring></argsstring>
+        <name>level_t</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::level_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="367" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__hashmap_1abd3cd31c897145968ee85b85534431c1" prot="public" static="no">
+        <type>Kokkos::Array&lt; real_t, 3 &gt;</type>
+        <definition>using dyablo::LightOctree_base::pos_t =  Kokkos::Array&lt;real_t,3&gt;</definition>
+        <argsstring></argsstring>
+        <name>pos_t</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::pos_t</qualifiedname>
+        <briefdescription>
+<para>Physical cell position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="41" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_base.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__hashmap_1ab2f1f4797756be5ce942501e18b638e9" prot="private" static="no">
+        <type><ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref></type>
+        <definition>using dyablo::LightOctree_hashmap::oct_ref_t =  OctantIndex</definition>
+        <argsstring></argsstring>
+        <name>oct_ref_t</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::oct_ref_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="376" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1LightOctree__hashmap_1a9899a949752aa06fcdda85e8f3fe5f19" prot="private" static="no">
+        <type>Kokkos::UnorderedMap&lt; <ref refid="structdyablo_1_1LightOctree__hashmap_1_1key__t" kindref="compound">key_t</ref>, <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">oct_ref_t</ref> &gt;</type>
+        <definition>using dyablo::LightOctree_hashmap::oct_map_t =  Kokkos::UnorderedMap&lt;key_t, oct_ref_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>oct_map_t</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::oct_map_t</qualifiedname>
+        <briefdescription>
+<para>value type for the hashmap </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="377" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__hashmap_1a77aaa0e99a3dbaa73d289708d4ec225f" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">Storage_t</ref></type>
+        <definition>Storage_t dyablo::LightOctree_hashmap::storage</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::storage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="374" column="15" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__hashmap_1a8f04dac2a783b4257d59e6af3232d8fc" prot="private" static="no" mutable="no">
+        <type>oct_map_t</type>
+        <definition>oct_map_t dyablo::LightOctree_hashmap::oct_map</definition>
+        <argsstring></argsstring>
+        <name>oct_map</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::oct_map</qualifiedname>
+        <briefdescription>
+<para>hashmap returning an octant form a key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="378" column="15" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__hashmap_1a58b0bf52dcbea0869d4cc4fd852a5984" prot="private" static="no" mutable="no">
+        <type>level_t</type>
+        <definition>level_t dyablo::LightOctree_hashmap::min_level</definition>
+        <argsstring></argsstring>
+        <name>min_level</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::min_level</qualifiedname>
+        <briefdescription>
+<para>hashmap returning an octant form a key </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="380" column="13" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__hashmap_1ac46361851efc0ce8895d2e32265e5c97" prot="private" static="no" mutable="no">
+        <type>level_t</type>
+        <definition>level_t dyablo::LightOctree_hashmap::max_level</definition>
+        <argsstring></argsstring>
+        <name>max_level</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::max_level</qualifiedname>
+        <briefdescription>
+<para>Coarser level of the octree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="381" column="13" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__hashmap_1a8015136cc22bb9925dbdf9f8d6c98320" prot="private" static="no" mutable="no">
+        <type>Kokkos::Array&lt; bool, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;bool, 3&gt; dyablo::LightOctree_hashmap::is_periodic</definition>
+        <argsstring></argsstring>
+        <name>is_periodic</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::is_periodic</qualifiedname>
+        <briefdescription>
+<para>Finer level of the octree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="382" column="19" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1LightOctree__hashmap_1a7ed272dd484cd05fe9bff78fae30380e" prot="private" static="no" mutable="no">
+        <type>Kokkos::View&lt; morton_t * &gt;</type>
+        <definition>Kokkos::View&lt;morton_t*&gt; dyablo::LightOctree_hashmap::morton_intervals</definition>
+        <argsstring></argsstring>
+        <name>morton_intervals</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::morton_intervals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="383" column="18" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a964177301537981b0607a038fd38cec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_hashmap::LightOctree_hashmap</definition>
+        <argsstring>()=default</argsstring>
+        <name>LightOctree_hashmap</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::LightOctree_hashmap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="44" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1afe3200d04c9791e2a2f7f8f2787378d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_hashmap::LightOctree_hashmap</definition>
+        <argsstring>(const LightOctree_hashmap &amp;lmesh)=default</argsstring>
+        <name>LightOctree_hashmap</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::LightOctree_hashmap</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1LightOctree__hashmap" kindref="compound">LightOctree_hashmap</ref> &amp;</type>
+          <declname>lmesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="45" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a6a096653434301e6a22d45ef20e766c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_hashmap::LightOctree_hashmap</definition>
+        <argsstring>(Storage_t &amp;&amp;storage, uint8_t level_min, uint8_t level_max, Kokkos::Array&lt; bool, 3 &gt; periodic)</argsstring>
+        <name>LightOctree_hashmap</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::LightOctree_hashmap</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">Storage_t</ref> &amp;&amp;</type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_min</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_max</declname>
+        </param>
+        <param>
+          <type>Kokkos::Array&lt; bool, 3 &gt;</type>
+          <declname>periodic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="47" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1ad06761bf3aff37970a1cf321c5f940dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::LightOctree_hashmap::LightOctree_hashmap</definition>
+        <argsstring>(const AMRmesh *pmesh, uint8_t level_min, uint8_t level_max)</argsstring>
+        <name>LightOctree_hashmap</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::LightOctree_hashmap</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> *</type>
+          <declname>pmesh</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_min</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="58" column="5" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="58" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a900d69960df6f0a217c40ff67cc16396" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::LightOctree_hashmap::private_init</definition>
+        <argsstring>()</argsstring>
+        <name>private_init</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::private_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DO NOT CALL THIS YOURSELF this is here because KOKKOS_LAMBDAS cannot be declared in constructors or private methods </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="92" column="10" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="92" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a2944f25e26de4996da7b24734ee583db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION int</type>
+        <definition>KOKKOS_INLINE_FUNCTION int dyablo::LightOctree_hashmap::getNdim</definition>
+        <argsstring>() const</argsstring>
+        <name>getNdim</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getNdim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="120" column="9" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="120" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1ae09099c3d876a52ac95685e2d0f7f378" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::LightOctree_hashmap::getNumOctants</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumOctants</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getNumOctants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="124" column="14" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="124" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a96a65368a581d55adcc9fcd033ca54fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::LightOctree_hashmap::getNumGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumGhosts</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getNumGhosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="128" column="14" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="128" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1af1fa47d5f412c81ceddb4e1c3b161f03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="classdyablo_1_1LightOctree__hashmap_1abd3cd31c897145968ee85b85534431c1" kindref="member">pos_t</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::LightOctree_hashmap::getCenter</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getCenter</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getCenter</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="132" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="132" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a5c737e62b8a64ac35696602d19735ef2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="classdyablo_1_1LightOctree__hashmap_1abd3cd31c897145968ee85b85534431c1" kindref="member">pos_t</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::LightOctree_hashmap::getCorner</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getCorner</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getCorner</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="136" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="136" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a5b8508058e9d9530ff215df08bf3c9ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="classdyablo_1_1LightOctree__hashmap_1abd3cd31c897145968ee85b85534431c1" kindref="member">pos_t</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION pos_t dyablo::LightOctree_hashmap::getSize</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getSize</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="140" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="140" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a4319cd710b43c69c30800cba6cbb7f53" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint8_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint8_t dyablo::LightOctree_hashmap::getLevel</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getLevel</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getLevel</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="144" column="13" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="144" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a865e0dd7a488f6cb14db8daf0d17bdb1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION bool</type>
+        <definition>KOKKOS_INLINE_FUNCTION bool dyablo::LightOctree_hashmap::getBound</definition>
+        <argsstring>(const OctantIndex &amp;iOct) const</argsstring>
+        <name>getBound</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getBound</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="148" column="10" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="148" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1afae072a51913753ef7bd14ddf059bffd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">Storage_t</ref></type>
+        <definition>const Storage_t dyablo::LightOctree_hashmap::getStorage</definition>
+        <argsstring>() const</argsstring>
+        <name>getStorage</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getStorage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="151" column="21" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1LightOctree__base_1_1NeighborList" kindref="compound">NeighborList</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION NeighborList dyablo::LightOctree_hashmap::findNeighbors</definition>
+        <argsstring>(const OctantIndex &amp;iOct, const offset_t &amp;offset) const</argsstring>
+        <name>findNeighbors</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::findNeighbors</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">offset_t</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get neighbors of <computeroutput>iOct</computeroutput> at relative position <computeroutput>offset</computeroutput></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iOct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local Octant index (cannot be a ghost octant) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Relative position of neighbor(s) to fetch. offset in each dimension is either -1, 0 or 1; {0,0,0} is invalid in 2D, third dimension is always 0 ex : {-1,0,0} is left neighbor; {-1,-1,0} is lower-left edge(3D)/corner(2D)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>between 1 and 4 neighbors packed in a <ref refid="structdyablo_1_1LightOctree__base_1_1NeighborList" kindref="compound">NeighborList</ref></para>
+</simplesect>
+ex in 2D: <programlisting><codeline><highlight class="normal"><sp/><sp/>___________<sp/>__________</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>14<sp/>|<sp/>15<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|<sp/><sp/><sp/><sp/>11<sp/><sp/><sp/><sp/><sp/>|-----+----|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>12<sp/>|<sp/>13<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|___________|_____|____|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/>|<sp/>8|9<sp/>|<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|<sp/><sp/>2<sp/><sp/>|<sp/><sp/>3<sp/><sp/>|<sp/>6|7<sp/>|<sp/>10<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|-----+-----|-----+----|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|<sp/><sp/>0<sp/><sp/>|<sp/><sp/>1<sp/><sp/>|<sp/><sp/>4<sp/><sp/>|<sp/>5<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/>|_____|_____|_____|____|</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">findNeighbors</ref>({8,</highlight><highlight class="keyword">true</highlight><highlight class="normal">},{-1,<sp/>1,<sp/>0})<sp/>-&gt;<sp/>11</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">findNeighbors</ref>({8,</highlight><highlight class="keyword">true</highlight><highlight class="normal">},{-1,<sp/>0,<sp/>0})<sp/>-&gt;<sp/>3</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">findNeighbors</ref>({8,</highlight><highlight class="keyword">true</highlight><highlight class="normal">},{-1,-1,<sp/>0})<sp/>-&gt;<sp/>3<sp/>(Note<sp/>that<sp/>same<sp/>neighbor<sp/>can<sp/>be<sp/>returned<sp/>twice)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">findNeighbors</ref>({3,</highlight><highlight class="keyword">true</highlight><highlight class="normal">},{<sp/>1,<sp/>0,<sp/>0})<sp/>-&gt;<sp/>{8,6}</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">findNeighbors</ref>({3,</highlight><highlight class="keyword">true</highlight><highlight class="normal">},{<sp/>1,<sp/>1,<sp/>0})<sp/>-&gt;<sp/>12</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" kindref="member">findNeighbors</ref>({1,</highlight><highlight class="keyword">true</highlight><highlight class="normal">},{<sp/>1,<sp/>1,<sp/>0})<sp/>-&gt;<sp/>6<sp/>(Note<sp/>that<sp/>there<sp/>is<sp/>only<sp/>1<sp/>smaller<sp/>neighbor<sp/>in<sp/>corners)</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="note"><para>findNeighbor(), always returns all neighbors in corner </para>
+</simplesect>
+<simplesect kind="note"><para>Requesting a neighbor outside the domain when octree is not periodic returns an empty neighbor list (but you should use <ref refid="classdyablo_1_1LightOctree__hashmap_1a2f9710f8a8922fc33b169e2ea26e862a" kindref="member">isBoundary()</ref> if you only want to test that)    </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="158" column="41" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="158" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a2f9710f8a8922fc33b169e2ea26e862a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION bool</type>
+        <definition>KOKKOS_INLINE_FUNCTION bool dyablo::LightOctree_hashmap::isBoundary</definition>
+        <argsstring>(const OctantIndex &amp;iOct, const offset_t &amp;offset) const</argsstring>
+        <name>isBoundary</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::isBoundary</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref> &amp;</type>
+          <declname>iOct</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" kindref="member">offset_t</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Is the given face of the given oct an external boundary ?    </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="239" column="10" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="239" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1ac8b7d1f2248cd96d03c5874608adff10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION OctantIndex dyablo::LightOctree_hashmap::getiOctFromCoordinates</definition>
+        <argsstring>(uint16_t ix, uint16_t iy, uint16_t iz, uint16_t level) const</argsstring>
+        <name>getiOctFromCoordinates</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getiOctFromCoordinates</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>ix</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>iy</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>iz</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get octant from logical position </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="262" column="17" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="262" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1aae18d47d77302b237fe1803d9acfb544" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1LightOctree__base_1_1OctantIndex" kindref="compound">OctantIndex</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION OctantIndex dyablo::LightOctree_hashmap::getiOctFromPos</definition>
+        <argsstring>(const pos_t &amp;pos) const</argsstring>
+        <name>getiOctFromPos</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getiOctFromPos</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1LightOctree__hashmap_1abd3cd31c897145968ee85b85534431c1" kindref="member">pos_t</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get octant containing position pos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="285" column="17" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="285" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1LightOctree__hashmap_1a11364ad5b0a860ab03fbeeae208972aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION int</type>
+        <definition>KOKKOS_INLINE_FUNCTION int dyablo::LightOctree_hashmap::getDomainFromPos</definition>
+        <argsstring>(const pos_t &amp;pos) const</argsstring>
+        <name>getDomainFromPos</name>
+        <qualifiedname>dyablo::LightOctree_hashmap::getDomainFromPos</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1LightOctree__hashmap_1abd3cd31c897145968ee85b85534431c1" kindref="member">pos_t</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="328" column="9" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="328" bodyend="363"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::LightOctree_base</label>
+        <link refid="classdyablo_1_1LightOctree__base"/>
+      </node>
+      <node id="1">
+        <label>dyablo::LightOctree_hashmap</label>
+        <link refid="classdyablo_1_1LightOctree__hashmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::LightOctree_hashmap_precompute</label>
+        <link refid="classdyablo_1_1LightOctree__hashmap__precompute"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::LightOctree_base</label>
+        <link refid="classdyablo_1_1LightOctree__base"/>
+      </node>
+      <node id="1">
+        <label>dyablo::LightOctree_hashmap</label>
+        <link refid="classdyablo_1_1LightOctree__hashmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" line="37" column="1" bodyfile="/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h" bodystart="37" bodyend="384"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a0f56ddff22e39c9ef83f965189d54a2b" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>findNeighbors</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a865e0dd7a488f6cb14db8daf0d17bdb1" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getBound</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1af1fa47d5f412c81ceddb4e1c3b161f03" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getCenter</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a5c737e62b8a64ac35696602d19735ef2" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getCorner</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a11364ad5b0a860ab03fbeeae208972aa" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getDomainFromPos</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1ac8b7d1f2248cd96d03c5874608adff10" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getiOctFromCoordinates</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1aae18d47d77302b237fe1803d9acfb544" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getiOctFromPos</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a4319cd710b43c69c30800cba6cbb7f53" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getLevel</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a2944f25e26de4996da7b24734ee583db" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getNdim</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a96a65368a581d55adcc9fcd033ca54fc" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getNumGhosts</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1ae09099c3d876a52ac95685e2d0f7f378" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getNumOctants</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a5b8508058e9d9530ff215df08bf3c9ad" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getSize</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1afae072a51913753ef7bd14ddf059bffd" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>getStorage</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a8015136cc22bb9925dbdf9f8d6c98320" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>is_periodic</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a2f9710f8a8922fc33b169e2ea26e862a" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>isBoundary</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1ad3d737469c378db3435ad8d5fdca930f" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>level_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a964177301537981b0607a038fd38cec2" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>LightOctree_hashmap</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1afe3200d04c9791e2a2f7f8f2787378d6" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>LightOctree_hashmap</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a6a096653434301e6a22d45ef20e766c1" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>LightOctree_hashmap</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1ad06761bf3aff37970a1cf321c5f940dc" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>LightOctree_hashmap</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1ae1253ca30620a8cfa2f566da54a7cbbc" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>logical_coord_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1ac46361851efc0ce8895d2e32265e5c97" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>max_level</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a58b0bf52dcbea0869d4cc4fd852a5984" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>min_level</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a7ed272dd484cd05fe9bff78fae30380e" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>morton_intervals</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a93668acad06408b0e73d1ab628744d8e" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>morton_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a8f04dac2a783b4257d59e6af3232d8fc" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>oct_map</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a9899a949752aa06fcdda85e8f3fe5f19" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>oct_map_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1ab2f1f4797756be5ce942501e18b638e9" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>oct_ref_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__base_1a4e6a300dd1dab675fdcfd65b9fffe4ef" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>offset_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1abd3cd31c897145968ee85b85534431c1" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>pos_t</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a900d69960df6f0a217c40ff67cc16396" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>private_init</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a77aaa0e99a3dbaa73d289708d4ec225f" prot="private" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>storage</name></member>
+      <member refid="classdyablo_1_1LightOctree__hashmap_1a233e223cf8bf7224114336fc8c67886e" prot="public" virt="non-virtual"><scope>dyablo::LightOctree_hashmap</scope><name>Storage_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

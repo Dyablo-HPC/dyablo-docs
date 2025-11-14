@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Units_1_1Unit" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::Units::Unit</compoundname>
+    <includes refid="Units_8h" local="no">Units.h</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>Time</declname>
+        <defname>Time</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>Length</declname>
+        <defname>Length</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>Mass</declname>
+        <defname>Mass</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>Current</declname>
+        <defname>Current</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>Temperature</declname>
+        <defname>Temperature</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>mol</declname>
+        <defname>mol</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>LuminousIntensity</declname>
+        <defname>LuminousIntensity</defname>
+        <defval>0</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1Unit_1a3f134c82fc63cacfcf0b7f84a3861fdc" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Units::Unit&lt; Time, Length, Mass, Current, Temperature, mol, LuminousIntensity &gt;::value_SI</definition>
+        <argsstring></argsstring>
+        <name>value_SI</name>
+        <qualifiedname>dyablo::Units::Unit::value_SI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="45" column="12" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION constexpr</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr dyablo::Units::Unit&lt; Time, Length, Mass, Current, Temperature, mol, LuminousIntensity &gt;::Unit</definition>
+        <argsstring>(real_t value_SI)</argsstring>
+        <name>Unit</name>
+        <qualifiedname>dyablo::Units::Unit::Unit</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>value_SI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a unit from it&apos;s value in SI units /!\ please only create new units from multiplying/dividing existing units This constructor is explicit to force correct dimensionnal analysis when using floats </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="54" column="24" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1Unit_1a63cc54566aa6e8c12e12771de96c595e" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int...</type>
+            <declname>Dims</declname>
+            <defname>Dims</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr real_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr real_t dyablo::Units::Unit&lt; Time, Length, Mass, Current, Temperature, mol, LuminousIntensity &gt;::convert_to</definition>
+        <argsstring>(const Unit&lt; Dims... &gt; &amp;unit) const</argsstring>
+        <name>convert_to</name>
+        <qualifiedname>dyablo::Units::Unit::convert_to</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; Dims... &gt; &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value of current &apos;<ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&apos; (actually a quantity) expressed in unit <computeroutput>unit</computeroutput> <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Dims...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>must be the same as current unit dims, this is only here for the error message Note : this is the only way to convert from <computeroutput><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref></computeroutput> to <computeroutput>real_t</computeroutput> that ensures correct dimensional analysis </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="66" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1Unit_1a17a6cc9e92cbd39e3bb7a01110f2cb2a" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int...</type>
+            <declname>Dims</declname>
+            <defname>Dims</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr Unit dyablo::Units::Unit&lt; Time, Length, Mass, Current, Temperature, mol, LuminousIntensity &gt;::operator+</definition>
+        <argsstring>(const Unit&lt; Dims... &gt; &amp;u2) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>dyablo::Units::Unit::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; Dims... &gt; &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+<para>Quantities of same dimensionnality can be added/substracted to help with dimensionnal analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="75" column="20" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1Unit_1a65f96fd1f386d8a51a869ac1ac7c2253" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int...</type>
+            <declname>Dims</declname>
+            <defname>Dims</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr Unit dyablo::Units::Unit&lt; Time, Length, Mass, Current, Temperature, mol, LuminousIntensity &gt;::operator-</definition>
+        <argsstring>(const Unit&lt; Dims... &gt; u2) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>dyablo::Units::Unit::operator-</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; Dims... &gt;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="83" column="20" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1Unit_1a9ffe453580ca719181f7e7b6149689d7" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>p</declname>
+            <defname>p</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr auto</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr auto dyablo::Units::Unit&lt; Time, Length, Mass, Current, Temperature, mol, LuminousIntensity &gt;::pow</definition>
+        <argsstring>() const</argsstring>
+        <name>pow</name>
+        <qualifiedname>dyablo::Units::Unit::pow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="97" column="20" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="97" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1Unit_1a294d5bfe1153fc9d0840a4a8a9358435" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>p</declname>
+            <defname>p</defname>
+          </param>
+          <param>
+            <type>int...</type>
+            <declname>Dims</declname>
+            <defname>Dims</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; p *Dims... &gt;</type>
+        <definition>static constexpr Unit&lt; p *Dims... &gt; dyablo::Units::Unit&lt; Time, Length, Mass, Current, Temperature, mol, LuminousIntensity &gt;::pow</definition>
+        <argsstring>(const Unit&lt; Dims... &gt; &amp;u)</argsstring>
+        <name>pow</name>
+        <qualifiedname>dyablo::Units::Unit::pow</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; Dims... &gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="90" column="27" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents a unit with it&apos;s dimensionnality as template parameters and it&apos;s value in arbitrary common units.</para>
+<para>@tparams Dims... dimensions for dimensionnal analysis (the names are probably explicit enough)</para>
+<para>Notes:<itemizedlist>
+<listitem><para>&apos;Units&apos; represent physical units as well as quantities and may be used in simple formulas for compile-time dimensional analysis</para>
+</listitem><listitem><para>(Using SI as arbitrary common unit is only internal implementation details, besides SI really is the only true real unit system) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="42" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="43" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Units_1_1Unit_1a63cc54566aa6e8c12e12771de96c595e" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit</scope><name>convert_to</name></member>
+      <member refid="classdyablo_1_1Units_1_1Unit_1a17a6cc9e92cbd39e3bb7a01110f2cb2a" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit</scope><name>operator+</name></member>
+      <member refid="classdyablo_1_1Units_1_1Unit_1a65f96fd1f386d8a51a869ac1ac7c2253" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit</scope><name>operator-</name></member>
+      <member refid="classdyablo_1_1Units_1_1Unit_1a294d5bfe1153fc9d0840a4a8a9358435" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit</scope><name>pow</name></member>
+      <member refid="classdyablo_1_1Units_1_1Unit_1a9ffe453580ca719181f7e7b6149689d7" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit</scope><name>pow</name></member>
+      <member refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit</scope><name>Unit</name></member>
+      <member refid="classdyablo_1_1Units_1_1Unit_1a3f134c82fc63cacfcf0b7f84a3861fdc" prot="public" virt="non-virtual"><scope>dyablo::Units::Unit</scope><name>value_SI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

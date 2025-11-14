@@ -1,0 +1,1378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="HyperbolicPolicy__Hydro_8h" kind="file" language="C++">
+    <compoundname>HyperbolicPolicy_Hydro.h</compoundname>
+    <includes refid="State__Ops_8h" local="yes">states/State_Ops.h</includes>
+    <includes refid="HyperbolicPolicy__base_8h" local="yes">HyperbolicPolicy_base.h</includes>
+    <includes refid="HyperbolicPolicy__Slope_8h" local="yes">HyperbolicPolicy_Slope.h</includes>
+    <includes refid="HyperbolicPolicy__BoundaryConditions_8h" local="yes">HyperbolicPolicy_BoundaryConditions.h</includes>
+    <includes refid="HyperbolicPolicy__Hydro__BoundaryConditions_8h" local="yes">HyperbolicPolicy_Hydro_BoundaryConditions.h</includes>
+    <includedby refid="HydroUpdate__RK2_8cpp" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_RK2.cpp</includedby>
+    <includedby refid="HydroUpdate__euler_8cpp" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_euler.cpp</includedby>
+    <includedby refid="HydroUpdate__euler__nopatch_8cpp" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_euler_nopatch.cpp</includedby>
+    <includedby refid="HydroUpdate__hancock_8cpp" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/HydroUpdate_hancock.cpp</includedby>
+    <includedby refid="HyperbolicUpdate__hancock__oneneighbor_8cpp" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp</includedby>
+    <includedby refid="AnalyticalFormula__base__hydro_8hpp" local="yes">/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</includedby>
+    <includedby refid="State__hydro_8h" local="yes">/builds/dyablo/dyablo/core/src/states/State_hydro.h</includedby>
+    <incdepgraph>
+      <node id="39">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>ScalarSimulationData.h</label>
+        <link refid="ScalarSimulationData_8h_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="44">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>HyperbolicPolicy_Hydro_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__Hydro__BoundaryConditions_8h_source"/>
+      </node>
+      <node id="65">
+        <label>HyperbolicPolicy_Slope.h</label>
+        <link refid="HyperbolicPolicy__Slope_8h_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>mpi/ViewCommunicator.h</label>
+        <link refid="ViewCommunicator_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>particles/ForeachParticle.h</label>
+        <link refid="ForeachParticle_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>particles/ParticleArray.h</label>
+        <link refid="ParticleArray_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>states/State_Ops.h</label>
+        <link refid="State__Ops_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>userdata_utils.h</label>
+        <link refid="userdata__utils_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>utils/misc/MultiTypeMap.h</label>
+        <link refid="MultiTypeMap_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>utils/misc/dyablo_variant.h</label>
+        <link refid="dyablo__variant_8h_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="55">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="25">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="21">
+        <label>algorithm</label>
+      </node>
+      <node id="31">
+        <label>any</label>
+      </node>
+      <node id="51">
+        <label>array</label>
+      </node>
+      <node id="34">
+        <label>cassert</label>
+      </node>
+      <node id="48">
+        <label>cstddef</label>
+      </node>
+      <node id="47">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>fstream</label>
+      </node>
+      <node id="19">
+        <label>iomanip</label>
+      </node>
+      <node id="8">
+        <label>iosfwd</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>limits</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="50">
+        <label>memory</label>
+      </node>
+      <node id="41">
+        <label>set</label>
+      </node>
+      <node id="18">
+        <label>sstream</label>
+      </node>
+      <node id="64">
+        <label>stdexcept</label>
+      </node>
+      <node id="27">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>type_traits</label>
+      </node>
+      <node id="40">
+        <label>unordered_map</label>
+      </node>
+      <node id="45">
+        <label>utility</label>
+      </node>
+      <node id="67">
+        <label>variant</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" prot="public">dyablo::HyperbolicPolicy_ConsHydroState</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" prot="public">dyablo::HyperbolicPolicy_PrimHydroState</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" prot="public">dyablo::HyperbolicPolicy_Hydro_Params</innerclass>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__State__Hydro" prot="public">dyablo::HyperbolicPolicy_State_Hydro</innerclass>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc" prot="public">dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams" prot="private">dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</innerclass>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl" prot="public">dyablo::HyperbolicPolicy_Hydro_impl</innerclass>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params" prot="public">dyablo::HyperbolicPolicy_Hydro_impl::Params</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacedyablo_1a841b10796e1599e05f11027045e01667" prot="public" static="no">
+        <type>HyperbolicPolicy_BoundaryConditions_dynamic&lt; HyperbolicPolicy_State_Hydro, HyperbolicPolicy_BoundaryConditions_Hydro_Default, HyperbolicPolicy_BoundaryConditions_Hydro_DoubleMach &gt;</type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_dynamic =  HyperbolicPolicy_BoundaryConditions_dynamic&lt;
+    HyperbolicPolicy_State_Hydro,
+    HyperbolicPolicy_BoundaryConditions_Hydro_Default,
+    HyperbolicPolicy_BoundaryConditions_Hydro_DoubleMach
+  &gt;</definition>
+        <argsstring></argsstring>
+        <name>HyperbolicPolicy_BoundaryConditions_Hydro_dynamic</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_dynamic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="420" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacedyablo_1af7b2c2c53ce5ab8c84c82e7850909eeb" prot="public" static="no">
+        <type>HyperbolicPolicy_base&lt; HyperbolicPolicy_Hydro_impl &gt;</type>
+        <definition>using dyablo::HyperbolicPolicy_Hydro =  HyperbolicPolicy_base&lt; HyperbolicPolicy_Hydro_impl &gt;</definition>
+        <argsstring></argsstring>
+        <name>HyperbolicPolicy_Hydro</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="519" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedyablo_1ae1f72ee9de920ef56053405727c401ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_TYPE</definition>
+        <argsstring>(HyperbolicPolicy_ConsHydroState, 5)</argsstring>
+        <name>DECLARE_STATE_TYPE</name>
+        <qualifiedname>dyablo::DECLARE_STATE_TYPE</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_ConsHydroState</type>
+        </param>
+        <param>
+          <type>5</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="44" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="44" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1ace9922837cb44d7d490c8f44952a7f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_ConsHydroState, 0, rho)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_ConsHydroState</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <param>
+          <type>rho</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="45" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="45" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a7a29262acf138a5a6577516b18bb421c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_ConsHydroState, 1, e_tot)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_ConsHydroState</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <param>
+          <type>e_tot</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="46" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="46" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a11a867a941b7fb7eaff4e9494b7b3129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_ConsHydroState, 2, rho_u)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_ConsHydroState</type>
+        </param>
+        <param>
+          <type>2</type>
+        </param>
+        <param>
+          <type>rho_u</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="47" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="47" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1afbf51a77ffe5c61cd1946f8bedcbe97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_ConsHydroState, 3, rho_v)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_ConsHydroState</type>
+        </param>
+        <param>
+          <type>3</type>
+        </param>
+        <param>
+          <type>rho_v</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="48" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="48" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a2e8c34d040ecaf0d02a5f70bf9e37bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_ConsHydroState, 4, rho_w)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_ConsHydroState</type>
+        </param>
+        <param>
+          <type>4</type>
+        </param>
+        <param>
+          <type>rho_w</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="49" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="49" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a761f6545b0ad68908ecb9181e5b81586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_TYPE</definition>
+        <argsstring>(HyperbolicPolicy_PrimHydroState, 5)</argsstring>
+        <name>DECLARE_STATE_TYPE</name>
+        <qualifiedname>dyablo::DECLARE_STATE_TYPE</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_PrimHydroState</type>
+        </param>
+        <param>
+          <type>5</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="76" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="76" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a80b35c1e5562c50862ea12f17385734e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_PrimHydroState, 0, rho)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_PrimHydroState</type>
+        </param>
+        <param>
+          <type>0</type>
+        </param>
+        <param>
+          <type>rho</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="77" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="77" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a82d90ae6efd4c13418c87d1c46c3675b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_PrimHydroState, 1, p)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_PrimHydroState</type>
+        </param>
+        <param>
+          <type>1</type>
+        </param>
+        <param>
+          <type>p</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="78" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="78" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1ab251b3a30343f9cc13acbfcbcbcf7f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_PrimHydroState, 2, u)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_PrimHydroState</type>
+        </param>
+        <param>
+          <type>2</type>
+        </param>
+        <param>
+          <type>u</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="79" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="79" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a0d6de1aef1188f725ebdba5495159e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_PrimHydroState, 3, v)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_PrimHydroState</type>
+        </param>
+        <param>
+          <type>3</type>
+        </param>
+        <param>
+          <type>v</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="80" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="80" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1af3d5a0dbf787f8c841fbdb7315745708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DECLARE_STATE_GET</definition>
+        <argsstring>(HyperbolicPolicy_PrimHydroState, 4, w)</argsstring>
+        <name>DECLARE_STATE_GET</name>
+        <qualifiedname>dyablo::DECLARE_STATE_GET</qualifiedname>
+        <param>
+          <type>HyperbolicPolicy_PrimHydroState</type>
+        </param>
+        <param>
+          <type>4</type>
+        </param>
+        <param>
+          <type>w</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="81" column="1" declfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" declline="81" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;states/State_Ops.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HyperbolicPolicy_base.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HyperbolicPolicy_Slope.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HyperbolicPolicy_BoundaryConditions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="13" refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>VarIndex<sp/>:<sp/>dyablo::VarIndex</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>Irho,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Ie_tot,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Irho_vx,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Irho_vy,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>Irho_vz</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>};<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;UserData::FieldAccessor::FieldInfo&gt;<sp/>getFieldsInfo()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>{<sp/>{</highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/>VarIndex::Irho},<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;e_tot&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/>VarIndex::Ie_tot},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vx&quot;</highlight><highlight class="normal">,<sp/><sp/>VarIndex::Irho_vx},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vy&quot;</highlight><highlight class="normal">,<sp/><sp/>VarIndex::Irho_vy},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vz&quot;</highlight><highlight class="normal">,<sp/><sp/>VarIndex::Irho_vz}<sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref><sp/>getFieldManager()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref>(<sp/>{VarIndex::Irho,<sp/>VarIndex::Ie_tot,<sp/>VarIndex::Irho_vx,<sp/>VarIndex::Irho_vy,<sp/>VarIndex::Irho_vz<sp/>}<sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>real_t<sp/>rho<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>real_t<sp/>e_tot<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>real_t<sp/>rho_u<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>real_t<sp/>rho_v<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>real_t<sp/>rho_w<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">DECLARE_STATE_TYPE(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref>,<sp/>5<sp/>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref>,<sp/>0,<sp/>rho<sp/>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref>,<sp/>1,<sp/>e_tot<sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref>,<sp/>2,<sp/>rho_u<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref>,<sp/>3,<sp/>rho_v<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref>,<sp/>4,<sp/>rho_w<sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>VarIndex<sp/>:<sp/>dyablo::VarIndex</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>Irho,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>Ip,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>Iu,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>Iv,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>Iw</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref><sp/>getFieldManager()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref>(<sp/>{VarIndex::Irho,<sp/>VarIndex::Ip,<sp/>VarIndex::Iu,<sp/>VarIndex::Iv,<sp/>VarIndex::Iw<sp/>}<sp/>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>real_t<sp/>rho<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>real_t<sp/>p<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>real_t<sp/>u<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>real_t<sp/>v<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>real_t<sp/>w<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">DECLARE_STATE_TYPE(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref>,<sp/>5<sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref>,<sp/>0,<sp/>rho<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref>,<sp/>1,<sp/>p<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref>,<sp/>2,<sp/>u<sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref>,<sp/>3,<sp/>v<sp/>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">DECLARE_STATE_GET(<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref>,<sp/>4,<sp/>w<sp/>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref><sp/>from_configMap(<sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>configMap<sp/>)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.ndim<sp/><sp/><sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(</highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ndim&quot;</highlight><highlight class="normal">,<sp/>3),</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.gamma0<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;gamma0&quot;</highlight><highlight class="normal">,<sp/>1.4),</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.smallr<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;smallr&quot;</highlight><highlight class="normal">,<sp/>1e-10),</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.smallp<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;smallp&quot;</highlight><highlight class="normal">,<sp/>1e-10),</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.smallc<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;smallc&quot;</highlight><highlight class="normal">,<sp/>1e-10),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>real_t<sp/>gamma0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>real_t<sp/>smallr;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>real_t<sp/>smallp;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>real_t<sp/>smallc;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classdyablo_1_1HyperbolicPolicy__State__Hydro" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HyperbolicPolicy_State_Hydro</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>real_t<sp/>gamma0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellIndex<sp/>=<sp/>ForeachCell::CellIndex;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">FieldAccessor<sp/>=<sp/>UserData::FieldAccessor;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_PrimHydroState</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsState<sp/>=<sp/><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_ConsHydroState</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_State_Hydro(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref>&amp;<sp/>params<sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>:<sp/>ndim(params.ndim),</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>gamma0(params.gamma0)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsVarIndex<sp/>=<sp/>HyperbolicPolicy_ConsHydroState::VarIndex;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>FieldAccessor<sp/>getUin(<sp/><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref>&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FieldAccessor::FieldInfo&gt;<sp/>Uin_fieldinfo<sp/>{<sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/>ConsVarIndex::Irho},<sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;e_tot&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/>ConsVarIndex::Ie_tot},</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vx&quot;</highlight><highlight class="normal">,<sp/><sp/>ConsVarIndex::Irho_vx},</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vy&quot;</highlight><highlight class="normal">,<sp/><sp/>ConsVarIndex::Irho_vy},</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vz&quot;</highlight><highlight class="normal">,<sp/><sp/>ConsVarIndex::Irho_vz}<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>U.getAccessor(<sp/>Uin_fieldinfo<sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>FieldAccessor<sp/>getUout(<sp/><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref>&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="137"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FieldAccessor::FieldInfo&gt;<sp/>Uout_fieldinfo<sp/>{<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_next&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/>ConsVarIndex::Irho},<sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;e_tot_next&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/>ConsVarIndex::Ie_tot},</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vx_next&quot;</highlight><highlight class="normal">,<sp/><sp/>ConsVarIndex::Irho_vx},</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vy_next&quot;</highlight><highlight class="normal">,<sp/><sp/>ConsVarIndex::Irho_vy},</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vz_next&quot;</highlight><highlight class="normal">,<sp/><sp/>ConsVarIndex::Irho_vz}<sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>U.getAccessor(<sp/>Uout_fieldinfo<sp/>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>ConsState<sp/>getConsState(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="151"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>ConsState<sp/>u;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>u.rho<sp/><sp/><sp/>=<sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho<sp/>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>u.e_tot<sp/>=<sp/>U.at(iCell,<sp/>ConsState::VarIndex::Ie_tot<sp/>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>u.rho_u<sp/>=<sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho_vx<sp/>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>u.rho_v<sp/>=<sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho_vy<sp/>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>u.rho_w<sp/>=<sp/>(ndim<sp/>==<sp/>3<sp/>?<sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho_vz<sp/>)<sp/>:<sp/>0.0);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setConsState(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConsState&amp;<sp/>u<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="164"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho)<sp/>=<sp/>u.rho;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>U.at(iCell,<sp/>ConsState::VarIndex::Ie_tot)<sp/>=<sp/>u.e_tot;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho_vx)<sp/>=<sp/>u.rho_u;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho_vy)<sp/>=<sp/>u.rho_v;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>U.at(iCell,<sp/>ConsState::VarIndex::Irho_vz)<sp/>=<sp/>u.rho_w;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>atomic_addConsState(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConsState&amp;<sp/>u<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="176"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::atomic_add(&amp;U.at(iCell,<sp/>ConsState::VarIndex::Irho),<sp/>u.rho);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::atomic_add(&amp;U.at(iCell,<sp/>ConsState::VarIndex::Ie_tot),<sp/>u.e_tot);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::atomic_add(&amp;U.at(iCell,<sp/>ConsState::VarIndex::Irho_vx),<sp/>u.rho_u);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::atomic_add(&amp;U.at(iCell,<sp/>ConsState::VarIndex::Irho_vy),<sp/>u.rho_v);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::atomic_add(&amp;U.at(iCell,<sp/>ConsState::VarIndex::Irho_vz),<sp/>u.rho_w);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>PrimState<sp/>getPrimState(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>Q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="188"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimState<sp/>q;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>q.rho<sp/>=<sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Irho<sp/>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>q.p<sp/><sp/><sp/>=<sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Ip<sp/>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>q.u<sp/><sp/><sp/>=<sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Iu<sp/>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>q.v<sp/><sp/><sp/>=<sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Iv<sp/>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>q.w<sp/><sp/><sp/>=<sp/>(ndim<sp/>==<sp/>3<sp/>?<sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Iw<sp/>)<sp/>:<sp/>0.0);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setPrimState(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>Q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PrimState&amp;<sp/>q<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="201"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Irho)<sp/>=<sp/>q.rho;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Ip)<sp/>=<sp/>q.p;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Iu)<sp/>=<sp/>q.u;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Iv)<sp/>=<sp/>q.v;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ndim<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Q.at(iCell,<sp/>PrimState::VarIndex::Iw)<sp/>=<sp/>q.w;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>PrimState<sp/>consToPrim(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConsState&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="212"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gamma0<sp/>=<sp/>this-&gt;gamma0;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>Ek<sp/>=<sp/>0.5<sp/>*<sp/>(U.rho_u*U.rho_u+U.rho_v*U.rho_v+U.rho_w*U.rho_w)/U.rho;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>p<sp/>=<sp/>(U.e_tot<sp/>-<sp/>Ek)<sp/>*<sp/>(gamma0-1.0);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{U.rho,<sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p,<sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>U.rho_u/U.rho,<sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>U.rho_v/U.rho,<sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ndim<sp/>==<sp/>3<sp/>?<sp/>U.rho_w/U.rho<sp/>:<sp/>0.0)};</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>ConsState<sp/>primToCons(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PrimState&amp;<sp/>Q<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="226"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gamma0<sp/>=<sp/>this-&gt;gamma0;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>Ek<sp/>=<sp/>0.5<sp/>*<sp/>Q.rho<sp/>*<sp/>(Q.u*Q.u+Q.v*Q.v+Q.w*Q.w);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>E<sp/><sp/>=<sp/>Ek<sp/>+<sp/>Q.p<sp/>/<sp/>(gamma0-1.0);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{Q.rho,<sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E,<sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q.rho*Q.u,<sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q.rho*Q.v,<sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ndim<sp/>==3<sp/>?<sp/>Q.rho*Q.w<sp/>:<sp/>0.0)};</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HyperbolicPolicy_RiemannSolver_Hydro_hllc</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Rparams<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gamma0;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallr;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallp;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallc;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>}<sp/>rparams;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">State<sp/>=<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__State__Hydro" kindref="compound">HyperbolicPolicy_State_Hydro</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/>State::PrimState;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsState<sp/>=<sp/>State::ConsState;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_RiemannSolver_Hydro_hllc(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref>&amp;<sp/>params<sp/>)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>:<sp/>rparams(<sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.gamma0<sp/>=<sp/>params.gamma0,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.smallr<sp/>=<sp/>params.smallr,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.smallp<sp/>=<sp/>params.smallp,</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.smallc<sp/>=<sp/>params.smallc,</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>})</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>ConsState<sp/>riemann_solver(<sp/>PrimState<sp/>qL,<sp/>PrimState<sp/>qR,<sp/>ComponentIndex3D<sp/>dir<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="266"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>qL<sp/>=<sp/>swapComponents(qL,<sp/>dir);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>qR<sp/>=<sp/>swapComponents(qR,<sp/>dir);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>ConsState<sp/>flux<sp/>=<sp/>riemann_hllc(qL,<sp/>qR);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>flux<sp/>=<sp/>swapComponents(flux,<sp/>dir);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flux;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>PrimState<sp/>swapComponents(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PrimState<sp/>&amp;q,<sp/>ComponentIndex3D<sp/>comp)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="278"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(<sp/>comp<sp/>)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>IX:</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>IY:</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PrimState{q.rho,<sp/>q.p,<sp/>q.v,<sp/>q.u,<sp/>q.w};</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>IZ:</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PrimState{q.rho,<sp/>q.p,<sp/>q.w,<sp/>q.v,<sp/>q.u};</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;invalid<sp/>component&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PrimState{};</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>ConsState<sp/>swapComponents(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConsState<sp/>&amp;u,<sp/>ComponentIndex3D<sp/>comp)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="295"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(<sp/>comp<sp/>)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>IX:</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>IY:</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ConsState{u.rho,<sp/>u.e_tot,<sp/>u.rho_v,<sp/>u.rho_u,<sp/>u.rho_w};</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>IZ:</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ConsState{u.rho,<sp/>u.e_tot,<sp/>u.rho_w,<sp/>u.rho_v,<sp/>u.rho_u};</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;invalid<sp/>component&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ConsState{};</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>ConsState<sp/>riemann_hllc(<sp/>PrimState<sp/>qleft,<sp/>PrimState<sp/>qright)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="312"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gamma0<sp/>=<sp/>rparams.gamma0;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallr<sp/>=<sp/>rparams.smallr;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallp<sp/>=<sp/>rparams.smallp;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallc<sp/>=<sp/>rparams.smallc;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>entho<sp/>=<sp/>1<sp/>/<sp/>(gamma0<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Left<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>rl<sp/>=<sp/>fmax(qleft.rho,<sp/>smallr);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>pl<sp/>=<sp/>fmax(qleft.p,<sp/>rl*smallp);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ul<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/>qleft.u;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>vl<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/>qleft.v;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>wl<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/>qleft.w;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ecinl<sp/>=<sp/>0.5*rl*(ul*ul+vl*vl+wl*wl);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>etotl<sp/>=<sp/>pl*entho+ecinl;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ptotl<sp/>=<sp/>pl;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Right<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>rr<sp/>=<sp/>fmax(qright.rho,<sp/>smallr);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>pr<sp/>=<sp/>fmax(qright.p,<sp/>rr*smallp);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ur<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/>qright.u;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>vr<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/>qright.v;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>wr<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/>qright.w;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ecinr<sp/>=<sp/>0.5*rr*(ur*ur+vr*vr+wr*wr);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>etotr<sp/>=<sp/>pr*entho+ecinr;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ptotr<sp/>=<sp/>pr;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>the<sp/>largest<sp/>eigenvalues<sp/>in<sp/>the<sp/>normal<sp/>direction<sp/>to<sp/>the<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>cfastl<sp/>=<sp/>SQRT(fmax(gamma0*pl/rl,smallc*smallc));</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>cfastr<sp/>=<sp/>SQRT(fmax(gamma0*pr/rr,smallc*smallc));</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>HLL<sp/>wave<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>SL<sp/>=<sp/>fmin(ul,ur)<sp/>-<sp/>fmax(cfastl,cfastr);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>SR<sp/>=<sp/>fmax(ul,ur)<sp/>+<sp/>fmax(cfastl,cfastr);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>lagrangian<sp/>sound<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>rcl<sp/>=<sp/>rl*(ul-SL);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>rcr<sp/>=<sp/>rr*(SR-ur);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>acoustic<sp/>star<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ustar<sp/><sp/><sp/><sp/>=<sp/>(rcr*ur<sp/><sp/><sp/>+rcl*ul<sp/><sp/><sp/>+<sp/><sp/>(ptotl-ptotr))/(rcr+rcl);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ptotstar<sp/>=<sp/>(rcr*ptotl+rcl*ptotr+rcl*rcr*(ul-ur))/(rcr+rcl);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Left<sp/>star<sp/>region<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>rstarl<sp/><sp/><sp/><sp/>=<sp/>rl*(SL-ul)/(SL-ustar);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>etotstarl<sp/>=<sp/>((SL-ul)*etotl-ptotl*ul+ptotstar*ustar)/(SL-ustar);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Right<sp/>star<sp/>region<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>rstarr<sp/><sp/><sp/><sp/>=<sp/>rr*(SR-ur)/(SR-ustar);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>etotstarr<sp/>=<sp/>((SR-ur)*etotr-ptotr*ur+ptotstar*ustar)/(SR-ustar);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sample<sp/>the<sp/>solution<sp/>at<sp/>x/t=0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>ro,<sp/>uo,<sp/>ptoto,<sp/>etoto;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//real_t<sp/>p_out;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SL<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ro=rl;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uo=ul;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptoto=ptotl;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>etoto=etotl;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//p_out=pl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ustar<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ro=rstarl;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uo=ustar;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptoto=ptotstar;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>etoto=etotstarl;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//p_out=ptotstar;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SR<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ro=rstarr;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uo=ustar;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptoto=ptotstar;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>etoto=etotstarr;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//p_out=ptotstar;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ro=rr;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uo=ur;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptoto=ptotr;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>etoto=etotr;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//p_out=pr;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>the<sp/>Godunov<sp/>flux</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>ConsState<sp/>flux;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>flux.rho<sp/><sp/><sp/>=<sp/>ro*uo;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/>flux.rho_u<sp/>=<sp/>ro*uo*uo+ptoto;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>flux.e_tot<sp/>=<sp/>(etoto+ptoto)*uo;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flux.rho<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flux.rho_v<sp/>=<sp/>flux.rho*qleft.v;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flux.rho_w<sp/>=<sp/>flux.rho*qleft.w;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flux.rho_v<sp/>=<sp/>flux.rho*qright.v;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flux.rho_w<sp/>=<sp/>flux.rho*qright.w;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flux;</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HyperbolicPolicy_Hydro_BoundaryConditions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">HyperbolicPolicy_BoundaryConditions_Hydro_dynamic<sp/>=<sp/>HyperbolicPolicy_BoundaryConditions_dynamic&lt;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>HyperbolicPolicy_State_Hydro,</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>HyperbolicPolicy_BoundaryConditions_Hydro_Default,</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>HyperbolicPolicy_BoundaryConditions_Hydro_DoubleMach</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/>&gt;;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HyperbolicPolicy_Hydro_impl</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>HyperbolicPolicy_State_Hydro,</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>HyperbolicPolicy_RiemannSolver_Hydro_hllc,</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>HyperbolicPolicy_Slope_dynamic&lt;HyperbolicPolicy_State_Hydro&gt;,</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>HyperbolicPolicy_BoundaryConditions_Hydro_dynamic</highlight></codeline>
+<codeline lineno="431"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellIndex<sp/><sp/><sp/><sp/><sp/>=<sp/>ForeachCell::CellIndex;</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellMetaData<sp/><sp/>=<sp/>ForeachCell::CellMetaData;</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">State<sp/>=<sp/>HyperbolicPolicy_State_Hydro;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">RiemannSolver_t<sp/>=<sp/>HyperbolicPolicy_RiemannSolver_Hydro_hllc;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Slope_t<sp/>=<sp/>HyperbolicPolicy_Slope_dynamic&lt;HyperbolicPolicy_State_Hydro&gt;;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">BoundaryConditions_t<sp/>=<sp/>HyperbolicPolicy_BoundaryConditions_Hydro_dynamic;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PrimState<sp/>=<sp/>State::PrimState;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">ConsState<sp/>=<sp/>State::ConsState;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445" refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params" kindref="compound">Params</ref></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref><sp/>policy_params;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>BoundaryConditions_t::Params<sp/>bc_params;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>Slope_t::Params<sp/>slope_params;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params" kindref="compound">Params</ref><sp/>getParams(<sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>configMap<sp/>)</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params" kindref="compound">Params</ref>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.policy_params<sp/>=<sp/>HyperbolicPolicy_Hydro_Params::from_configMap(configMap),</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.bc_params<sp/>=<sp/>BoundaryConditions_t::getParams(configMap),</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.slope_params<sp/>=<sp/>Slope_t::getParams(configMap)</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_Hydro_impl(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Params&amp;<sp/>params,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ScalarSimulationData&amp;<sp/>scalar_data<sp/>)</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/>:<sp/>HyperbolicPolicy_State_Hydro(params.policy_params),</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/>RiemannSolver_t(params.policy_params),</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>Slope_t(params.slope_params),</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>BoundaryConditions_t(params.bc_params,<sp/>scalar_data),</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>smallr(params.policy_params.smallr),</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>smallp(params.policy_params.smallp),</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/>negative_rho_count(</highlight><highlight class="stringliteral">&quot;negative_rho_count&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>negative_p_count(</highlight><highlight class="stringliteral">&quot;negative_p_count&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/>real_t<sp/>smallr,<sp/>smallp;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;int&gt;<sp/>negative_rho_count,<sp/>negative_p_count;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_postProcess()</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/>ConsState<sp/>postProcess(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ConsState<sp/>&amp;u<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="482"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallr<sp/>=<sp/>this-&gt;smallr;</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallp<sp/>=<sp/>this-&gt;smallp;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimState<sp/>q<sp/>=<sp/>this-&gt;consToPrim(u);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(q.rho<sp/>&lt;<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;negative_rho_count()++;<sp/></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>inaccurate<sp/>because<sp/>of<sp/>concurrency<sp/>but<sp/>it&apos;s<sp/>always<sp/>&gt;<sp/>1<sp/>when<sp/>there<sp/>is<sp/>an<sp/>error<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>atomic_inc<sp/>if<sp/>you<sp/>need<sp/>accurate<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Kokkos::atomic_inc(<sp/>&amp;this-&gt;negative_rho_count()<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>q.rho<sp/>=<sp/>smallr;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(q.p<sp/>&lt;<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;negative_p_count()<sp/>++;</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Kokkos::atomic_inc(<sp/>&amp;this-&gt;negative_p_count()<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>q.p<sp/><sp/><sp/>=<sp/>smallp;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/>ConsState<sp/>u_pp<sp/>=<sp/>this-&gt;primToCons(q);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u_pp;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printWarnings()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="504"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>negative_rho_count<sp/>=<sp/>this-&gt;negative_rho_count;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>negative_p_count<sp/>=<sp/>this-&gt;negative_p_count;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_for(<sp/></highlight><highlight class="stringliteral">&quot;Print<sp/>Warnings&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>negative_rho_count()<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::printf(<sp/></highlight><highlight class="stringliteral">&quot;Negative<sp/>density<sp/>detected\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>negative_p_count()<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::printf(<sp/></highlight><highlight class="stringliteral">&quot;Negative<sp/>pressure<sp/>detected\n&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="517"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">HyperbolicPolicy_Hydro<sp/>=<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base" kindref="compound">HyperbolicPolicy_base&lt; HyperbolicPolicy_Hydro_impl &gt;</ref>;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h"/>
+  </compounddef>
+</doxygen>

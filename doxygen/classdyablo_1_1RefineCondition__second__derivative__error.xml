@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1RefineCondition__second__derivative__error" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::RefineCondition_second_derivative_error</compoundname>
+    <basecompoundref refid="classdyablo_1_1RefineCondition" prot="public" virt="non-virtual">dyablo::RefineCondition</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a3ad795b9c0e3d5954b17f99a18a45e73" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::RefineCondition_second_derivative_error::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="177" column="15" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a6a81f7d257762774c0f8dfd4774b8d94" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_second_derivative_error::error_min</definition>
+        <argsstring></argsstring>
+        <name>error_min</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::error_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="178" column="10" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a3bdaf1cf664027b679a93ea8940003f4" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_second_derivative_error::error_max</definition>
+        <argsstring></argsstring>
+        <name>error_max</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::error_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="178" column="20" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a187ee8b56085fd7da43500308f7fd3e6" prot="private" static="no" mutable="no">
+        <type>GravityType</type>
+        <definition>GravityType dyablo::RefineCondition_second_derivative_error::gravity_type</definition>
+        <argsstring></argsstring>
+        <name>gravity_type</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::gravity_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="180" column="15" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a18e2e913e1b4f4b24ef414e5cdb0b459" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1BoundaryConditions" kindref="compound">BoundaryConditions</ref></type>
+        <definition>BoundaryConditions dyablo::RefineCondition_second_derivative_error::bc_manager</definition>
+        <argsstring></argsstring>
+        <name>bc_manager</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::bc_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="181" column="22" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a76b2a7ce173401b2890c7704eebb9666" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_second_derivative_error::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="182" column="10" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a54a47767157dcc6fce7b95a016f63654" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_second_derivative_error::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="182" column="17" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a49969992a21b1f25a98b54a93c82ad96" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_second_derivative_error::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="182" column="24" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1RefineCondition__second__derivative__error_1a561c45b7c790980d4651da1fecb9e007" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::RefineCondition_second_derivative_error::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="182" column="31" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1RefineCondition__second__derivative__error_1a18850b2a4466158c2464657f180af77d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::RefineCondition_second_derivative_error::RefineCondition_second_derivative_error</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>RefineCondition_second_derivative_error</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::RefineCondition_second_derivative_error</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="77" column="3" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="77" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1RefineCondition__second__derivative__error_1aa6f3fb1986e88086b73ad8ee758f4f7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::RefineCondition_second_derivative_error::mark_cells</definition>
+        <argsstring>(UserData &amp;Uin, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>mark_cells</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::mark_cells</qualifiedname>
+        <reimplements refid="classdyablo_1_1RefineCondition_1aebf191e1fdc66f7348b03dcab407c32b">mark_cells</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>Uin</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="92" column="8" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1RefineCondition__second__derivative__error_1a658acd353d7b3db192a666aa3dd089be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+          <param>
+            <type>typename PrimState</type>
+          </param>
+          <param>
+            <type>typename ConsState</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::RefineCondition_second_derivative_error::mark_cells_aux</definition>
+        <argsstring>(UserData &amp;Uin_)</argsstring>
+        <name>mark_cells_aux</name>
+        <qualifiedname>dyablo::RefineCondition_second_derivative_error::mark_cells_aux</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>Uin_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="104" column="8" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="104" bodyend="174"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::RefineCondition</label>
+        <link refid="classdyablo_1_1RefineCondition"/>
+      </node>
+      <node id="1">
+        <label>dyablo::RefineCondition_second_derivative_error</label>
+        <link refid="classdyablo_1_1RefineCondition__second__derivative__error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::RefineCondition</label>
+        <link refid="classdyablo_1_1RefineCondition"/>
+      </node>
+      <node id="1">
+        <label>dyablo::RefineCondition_second_derivative_error</label>
+        <link refid="classdyablo_1_1RefineCondition__second__derivative__error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" line="74" column="1" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_second_derivative_error.cpp" bodystart="75" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a18e2e913e1b4f4b24ef414e5cdb0b459" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>bc_manager</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bda4b94af2afbcdb1318d470914b02b0247" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>COARSEN</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a3bdaf1cf664027b679a93ea8940003f4" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>error_max</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a6a81f7d257762774c0f8dfd4774b8d94" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>error_min</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a3ad795b9c0e3d5954b17f99a18a45e73" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a76b2a7ce173401b2890c7704eebb9666" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>gamma0</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a187ee8b56085fd7da43500308f7fd3e6" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>gravity_type</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1aa6f3fb1986e88086b73ad8ee758f4f7f" prot="public" virt="virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>mark_cells</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a658acd353d7b3db192a666aa3dd089be" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>mark_cells_aux</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bd" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>Marker</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bdabf09f98907f0a315fa3b66f219d4e986" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>NOCHANGE</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bdab81a25897365e92f8b08889a3e660f5f" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>REFINE</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a18850b2a4466158c2464657f180af77d" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>RefineCondition_second_derivative_error</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a49969992a21b1f25a98b54a93c82ad96" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>smallc</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a561c45b7c790980d4651da1fecb9e007" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>smallp</name></member>
+      <member refid="classdyablo_1_1RefineCondition__second__derivative__error_1a54a47767157dcc6fce7b95a016f63654" prot="private" virt="non-virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>smallr</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a51201d61fb51128b1131cc7ad7d354a9" prot="public" virt="virtual"><scope>dyablo::RefineCondition_second_derivative_error</scope><name>~RefineCondition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

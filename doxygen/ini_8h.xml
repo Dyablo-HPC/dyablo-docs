@@ -1,0 +1,984 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="ini_8h" kind="file" language="C++">
+    <compoundname>ini.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="ConfigMap_8h" local="yes">/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h</includedby>
+    <includedby refid="ini_8cpp" local="yes">/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h</label>
+        <link refid="ini_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</label>
+        <link refid="DyabloTimeLoop_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>/builds/dyablo/dyablo/core/src/UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>/builds/dyablo/dyablo/core/src/amr/CellIndexRemapper.h</label>
+        <link refid="CellIndexRemapper_8h_source"/>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData.h</label>
+        <link refid="MapUserData_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</label>
+        <link refid="MapUserData__base_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt.h</label>
+        <link refid="Compute__dt_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</label>
+        <link refid="Compute__dt__base_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h</label>
+        <link refid="AMRBlockForeachCell__scratch_8h_source"/>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver.h</label>
+        <link refid="GravitySolver_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</label>
+        <link refid="GravitySolver__base_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.h</label>
+        <link refid="GravitySolver__cg_8h_source"/>
+      </node>
+      <node id="31">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/HyperbolicUpdate.h</label>
+        <link refid="HyperbolicUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="18">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</label>
+        <link refid="HyperbolicUpdate__base_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_RK2.h</label>
+        <link refid="Hyperbolic__RK2_8h_source"/>
+      </node>
+      <node id="33">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler.h</label>
+        <link refid="Hyperbolic__euler_8h_source"/>
+      </node>
+      <node id="34">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h</label>
+        <link refid="Hyperbolic__euler__nopatch_8h_source"/>
+      </node>
+      <node id="35">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_hancock.h</label>
+        <link refid="Hyperbolic__hancock_8h_source"/>
+      </node>
+      <node id="36">
+        <label>/builds/dyablo/dyablo/core/src/init/AnalyticalFormula.h</label>
+        <link refid="AnalyticalFormula_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions.h</label>
+        <link refid="InitialConditions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h</label>
+        <link refid="InitialConditions__analytical_8h_source"/>
+      </node>
+      <node id="38">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h</label>
+        <link refid="InitialConditions__uniform_8h_source"/>
+      </node>
+      <node id="25">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="21">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="42">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager.h</label>
+        <link refid="IOManager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager_base.h</label>
+        <link refid="IOManager__base_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields.h</label>
+        <link refid="DerivedFields_8h_source"/>
+      </node>
+      <node id="43">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</label>
+        <link refid="DerivedFields__base_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h</label>
+        <link refid="GhostCommunicator_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h</label>
+        <link refid="GhostCommunicator__full__blocks_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h</label>
+        <link refid="GhostCommunicator__partial__blocks_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="27">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</label>
+        <link refid="ParabolicTerm__viscosity_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate.h</label>
+        <link refid="ParabolicUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</label>
+        <link refid="ParabolicUpdate__base_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate.h</label>
+        <link refid="ParticleUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</label>
+        <link refid="ParticleUpdate__base_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition.h</label>
+        <link refid="RefineCondition_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</label>
+        <link refid="RefineCondition__base_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_helper.h</label>
+        <link refid="RefineCondition__helper_8h_source"/>
+      </node>
+      <node id="53">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate.h</label>
+        <link refid="SourceUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</label>
+        <link refid="SourceUpdate__base_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="26">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h</label>
+        <link refid="ini_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ini_8h_1a5c067971ef2b8e9d35b716dd773eb1bf" prot="public" static="no">
+        <name>INI_MAX_LINE</name>
+        <initializer>999999</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="18" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a2a6d4557273d55fd770d40c690094aa1" prot="public" static="no">
+        <name>INI_USE_STACK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="19" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1ae12f79b788d1181024f0aabe6f444b36" prot="public" static="no">
+        <name>INI_ALLOW_REALLOC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="20" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a1b9ae2ea08de2b455f0db240a9385afe" prot="public" static="no">
+        <name>INI_HANDLER_LINENO</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="31" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a100f9833a46f9c2b9dac0247876eb71b" prot="public" static="no">
+        <name>INI_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="50" column="14" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1ad0f757e985620449b325e2023ee21275" prot="public" static="no">
+        <name>INI_ALLOW_MULTILINE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="102" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1ac7397d484a14bb9007527edd0b66e38c" prot="public" static="no">
+        <name>INI_ALLOW_BOM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="108" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a94fd267a11de14467754cd87e51a9f28" prot="public" static="no">
+        <name>INI_START_COMMENT_PREFIXES</name>
+        <initializer>&quot;;#&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="114" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a9443b06de7678499c7b68148359e8fe0" prot="public" static="no">
+        <name>INI_ALLOW_INLINE_COMMENTS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="121" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a327d5a588a6a54129f768fc8dcc6f115" prot="public" static="no">
+        <name>INI_INLINE_COMMENT_PREFIXES</name>
+        <initializer>&quot;;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="124" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1ad8a81c44a7c94dc99dab9004e93670da" prot="public" static="no">
+        <name>INI_INITIAL_ALLOC</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="148" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a197006c50f50af690746459a73de14a3" prot="public" static="no">
+        <name>INI_STOP_ON_FIRST_ERROR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="153" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a2c317b97113ce38a664e34261a57ae17" prot="public" static="no">
+        <name>INI_CALL_HANDLER_ON_NEW_SECTION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="160" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a6a99e3ce94f611bee3c538fdd25d4c39" prot="public" static="no">
+        <name>INI_ALLOW_NO_VALUE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="167" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ini_8h_1a60046718f0606edf8c78e3a949b5b475" prot="public" static="no">
+        <name>INI_CUSTOM_ALLOCATOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="175" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="ini_8h_1a7343d087975289e095471430150dbe59" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* ini_handler) (void *user, const char *section, const char *name, const char *value)</definition>
+        <argsstring>)(void *user, const char *section, const char *name, const char *value)</argsstring>
+        <name>ini_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="61" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="ini_8h_1a25eedf39f6c0689a517df8d4b512c4ab" prot="public" static="no">
+        <type>char *(*</type>
+        <definition>typedef char *(* ini_reader) (char *str, int num, void *stream)</definition>
+        <argsstring>)(char *str, int num, void *stream)</argsstring>
+        <name>ini_reader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="66" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ini_8h_1adc6bd549113c458cfb7ca51d9590c222" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INI_API int</type>
+        <definition>INI_API int ini_parse</definition>
+        <argsstring>(const char *filename, ini_handler handler, void *user)</argsstring>
+        <name>ini_parse</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>ini_handler</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="81" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" bodystart="256" bodyend="267" declfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" declline="81" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ini_8h_1ab342d928128ec27efdf5d597a793688e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INI_API int</type>
+        <definition>INI_API int ini_parse_file</definition>
+        <argsstring>(FILE *file, ini_handler handler, void *user)</argsstring>
+        <name>ini_parse_file</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>ini_handler</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="85" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" bodystart="250" bodyend="253" declfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" declline="85" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ini_8h_1a443b481927eadbc1939a567a0439b95b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INI_API int</type>
+        <definition>INI_API int ini_parse_stream</definition>
+        <argsstring>(ini_reader reader, void *stream, ini_handler handler, void *user)</argsstring>
+        <name>ini_parse_stream</name>
+        <param>
+          <type>ini_reader</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>ini_handler</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="90" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" bodystart="97" bodyend="247" declfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" declline="90" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="ini_8h_1a74f4769cbc69ed7b32c1e3c488923c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>INI_API int</type>
+        <definition>INI_API int ini_parse_string</definition>
+        <argsstring>(const char *string, ini_handler handler, void *user)</argsstring>
+        <name>ini_parse_string</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>ini_handler</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" line="96" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.cpp" bodystart="297" bodyend="304" declfile="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h" declline="96" declcolumn="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>inih<sp/>--<sp/>simple<sp/>.INI<sp/>file<sp/>parser</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">SPDX-License-Identifier:<sp/>BSD-3-Clause</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Copyright<sp/>(C)<sp/>2009-2020,<sp/>Ben<sp/>Hoyt</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">inih<sp/>is<sp/>released<sp/>under<sp/>the<sp/>New<sp/>BSD<sp/>license<sp/>(see<sp/>LICENSE.txt).<sp/>Go<sp/>to<sp/>the<sp/>project</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">home<sp/>page<sp/>for<sp/>more<sp/>info:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">https://github.com/benhoyt/inih</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Dyablo<sp/>Specific<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_MAX_LINE<sp/>999999</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_USE_STACK<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_ALLOW_REALLOC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Make<sp/>this<sp/>header<sp/>file<sp/>easier<sp/>to<sp/>include<sp/>in<sp/>C++<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>if<sp/>ini_handler<sp/>callback<sp/>should<sp/>accept<sp/>lineno<sp/>parameter.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_HANDLER_LINENO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_HANDLER_LINENO<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Visibility<sp/>symbols,<sp/>required<sp/>for<sp/>Windows<sp/>DLLs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>_WIN32<sp/>||<sp/>defined<sp/>__CYGWIN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>ifdef<sp/>INI_SHARED_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifdef<sp/>INI_SHARED_LIB_BUILDING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>INI_API<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>INI_API<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>INI_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>if<sp/>defined(__GNUC__)<sp/>&amp;&amp;<sp/>__GNUC__<sp/>&gt;=<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>INI_API<sp/>__attribute__<sp/>((visibility<sp/>(&quot;default&quot;)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>define<sp/>INI_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Typedef<sp/>for<sp/>prototype<sp/>of<sp/>handler<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>INI_HANDLER_LINENO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*ini_handler)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>section,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lineno);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*ini_handler)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>section,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Typedef<sp/>for<sp/>prototype<sp/>of<sp/>fgets-style<sp/>reader<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>(*ini_reader)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>stream);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parse<sp/>given<sp/>INI-style<sp/>file.<sp/>May<sp/>have<sp/>[section]s,<sp/>name=value<sp/>pairs</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/>(whitespace<sp/>stripped),<sp/>and<sp/>comments<sp/>starting<sp/>with<sp/>&apos;;&apos;<sp/>(semicolon).<sp/>Section</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/>is<sp/>&quot;&quot;<sp/>if<sp/>name=value<sp/>pair<sp/>parsed<sp/>before<sp/>any<sp/>section<sp/>heading.<sp/>name:value</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/>pairs<sp/>are<sp/>also<sp/>supported<sp/>as<sp/>a<sp/>concession<sp/>to<sp/>Python&apos;s<sp/>configparser.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/>For<sp/>each<sp/>name=value<sp/>pair<sp/>parsed,<sp/>call<sp/>handler<sp/>function<sp/>with<sp/>given<sp/>user</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/>pointer<sp/>as<sp/>well<sp/>as<sp/>section,<sp/>name,<sp/>and<sp/>value<sp/>(data<sp/>only<sp/>valid<sp/>for<sp/>duration</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/>of<sp/>handler<sp/>call).<sp/>Handler<sp/>should<sp/>return<sp/>nonzero<sp/>on<sp/>success,<sp/>zero<sp/>on<sp/>error.</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/>Returns<sp/>0<sp/>on<sp/>success,<sp/>line<sp/>number<sp/>of<sp/>first<sp/>error<sp/>on<sp/>parse<sp/>error<sp/>(doesn&apos;t</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/>stop<sp/>on<sp/>first<sp/>error),<sp/>-1<sp/>on<sp/>file<sp/>open<sp/>error,<sp/>or<sp/>-2<sp/>on<sp/>memory<sp/>allocation</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/>error<sp/>(only<sp/>when<sp/>INI_USE_STACK<sp/>is<sp/>zero).</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">INI_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ini_parse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename,<sp/>ini_handler<sp/>handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Same<sp/>as<sp/>ini_parse(),<sp/>but<sp/>takes<sp/>a<sp/>FILE*<sp/>instead<sp/>of<sp/>filename.<sp/>This<sp/>doesn&apos;t</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/>close<sp/>the<sp/>file<sp/>when<sp/>it&apos;s<sp/>finished<sp/>--<sp/>the<sp/>caller<sp/>must<sp/>do<sp/>that.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">INI_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ini_parse_file(FILE*<sp/>file,<sp/>ini_handler<sp/>handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Same<sp/>as<sp/>ini_parse(),<sp/>but<sp/>takes<sp/>an<sp/>ini_reader<sp/>function<sp/>pointer<sp/>instead<sp/>of</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/>filename.<sp/>Used<sp/>for<sp/>implementing<sp/>custom<sp/>or<sp/>string-based<sp/>I/O<sp/>(see<sp/>also</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/>ini_parse_string).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">INI_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ini_parse_stream(ini_reader<sp/>reader,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>stream,<sp/>ini_handler<sp/>handler,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Same<sp/>as<sp/>ini_parse(),<sp/>but<sp/>takes<sp/>a<sp/>zero-terminated<sp/>string<sp/>with<sp/>the<sp/>INI<sp/>data</highlight></codeline>
+<codeline lineno="94"><highlight class="comment">instead<sp/>of<sp/>a<sp/>file.<sp/>Useful<sp/>for<sp/>parsing<sp/>INI<sp/>data<sp/>from<sp/>a<sp/>network<sp/>socket<sp/>or</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">already<sp/>in<sp/>memory.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">INI_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ini_parse_string(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/>ini_handler<sp/>handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>allow<sp/>multi-line<sp/>value<sp/>parsing,<sp/>in<sp/>the<sp/>style<sp/>of<sp/>Python&apos;s</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/>configparser.<sp/>If<sp/>allowed,<sp/>ini_parse()<sp/>will<sp/>call<sp/>the<sp/>handler<sp/>with<sp/>the<sp/>same</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/>name<sp/>for<sp/>each<sp/>subsequent<sp/>line<sp/>parsed.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_ALLOW_MULTILINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_ALLOW_MULTILINE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>allow<sp/>a<sp/>UTF-8<sp/>BOM<sp/>sequence<sp/>(0xEF<sp/>0xBB<sp/>0xBF)<sp/>at<sp/>the<sp/>start<sp/>of</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/>the<sp/>file.<sp/>See<sp/>https://github.com/benhoyt/inih/issues/21<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_ALLOW_BOM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_ALLOW_BOM<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Chars<sp/>that<sp/>begin<sp/>a<sp/>start-of-line<sp/>comment.<sp/>Per<sp/>Python<sp/>configparser,<sp/>allow</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/>both<sp/>;<sp/>and<sp/>#<sp/>comments<sp/>at<sp/>the<sp/>start<sp/>of<sp/>a<sp/>line<sp/>by<sp/>default.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_START_COMMENT_PREFIXES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_START_COMMENT_PREFIXES<sp/>&quot;;#&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>allow<sp/>inline<sp/>comments<sp/>(with<sp/>valid<sp/>inline<sp/>comment<sp/>characters</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/>specified<sp/>by<sp/>INI_INLINE_COMMENT_PREFIXES).<sp/>Set<sp/>to<sp/>0<sp/>to<sp/>turn<sp/>off<sp/>and<sp/>match</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/>Python<sp/>3.2+<sp/>configparser<sp/>behaviour.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_ALLOW_INLINE_COMMENTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_ALLOW_INLINE_COMMENTS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_INLINE_COMMENT_PREFIXES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_INLINE_COMMENT_PREFIXES<sp/>&quot;;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>use<sp/>stack<sp/>for<sp/>line<sp/>buffer,<sp/>zero<sp/>to<sp/>use<sp/>heap<sp/>(malloc/free).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_USE_STACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_USE_STACK<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Maximum<sp/>line<sp/>length<sp/>for<sp/>any<sp/>line<sp/>in<sp/>INI<sp/>file<sp/>(stack<sp/>or<sp/>heap).<sp/>Note<sp/>that</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/>this<sp/>must<sp/>be<sp/>3<sp/>more<sp/>than<sp/>the<sp/>longest<sp/>line<sp/>(due<sp/>to<sp/>&apos;\r&apos;,<sp/>&apos;\n&apos;,<sp/>and<sp/>&apos;\0&apos;).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_MAX_LINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_MAX_LINE<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>allow<sp/>heap<sp/>line<sp/>buffer<sp/>to<sp/>grow<sp/>via<sp/>realloc(),<sp/>zero<sp/>for<sp/>a</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/>fixed-size<sp/>buffer<sp/>of<sp/>INI_MAX_LINE<sp/>bytes.<sp/>Only<sp/>applies<sp/>if<sp/>INI_USE_STACK<sp/>is</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/>zero.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_ALLOW_REALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_ALLOW_REALLOC<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initial<sp/>size<sp/>in<sp/>bytes<sp/>for<sp/>heap<sp/>line<sp/>buffer.<sp/>Only<sp/>applies<sp/>if<sp/>INI_USE_STACK</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/>is<sp/>zero.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_INITIAL_ALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_INITIAL_ALLOC<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Stop<sp/>parsing<sp/>on<sp/>first<sp/>error<sp/>(default<sp/>is<sp/>to<sp/>keep<sp/>parsing).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_STOP_ON_FIRST_ERROR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_STOP_ON_FIRST_ERROR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>call<sp/>the<sp/>handler<sp/>at<sp/>the<sp/>start<sp/>of<sp/>each<sp/>new<sp/>section<sp/>(with</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/><sp/>name<sp/>and<sp/>value<sp/>NULL).<sp/>Default<sp/>is<sp/>to<sp/>only<sp/>call<sp/>the<sp/>handler<sp/>on</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/>each<sp/>name=value<sp/>pair.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_CALL_HANDLER_ON_NEW_SECTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_CALL_HANDLER_ON_NEW_SECTION<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>allow<sp/>a<sp/>name<sp/>without<sp/>a<sp/>value<sp/>(no<sp/>&apos;=&apos;<sp/>or<sp/>&apos;:&apos;<sp/>on<sp/>the<sp/>line)<sp/>and</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/>call<sp/>the<sp/>handler<sp/>with<sp/>value<sp/>NULL<sp/>in<sp/>this<sp/>case.<sp/>Default<sp/>is<sp/>to<sp/>treat</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/><sp/>no-value<sp/>lines<sp/>as<sp/>an<sp/>error.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_ALLOW_NO_VALUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_ALLOW_NO_VALUE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nonzero<sp/>to<sp/>use<sp/>custom<sp/>ini_malloc,<sp/>ini_free,<sp/>and<sp/>ini_realloc<sp/>memory</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/><sp/><sp/>allocation<sp/>functions<sp/>(INI_USE_STACK<sp/>must<sp/>also<sp/>be<sp/>0).<sp/>These<sp/>functions<sp/>must</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/><sp/><sp/>have<sp/>the<sp/>same<sp/>signatures<sp/>as<sp/>malloc/free/realloc<sp/>and<sp/>behave<sp/>in<sp/>a<sp/>similar</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/><sp/><sp/>way.<sp/>ini_realloc<sp/>is<sp/>only<sp/>needed<sp/>if<sp/>INI_ALLOW_REALLOC<sp/>is<sp/>set.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INI_CUSTOM_ALLOCATOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INI_CUSTOM_ALLOCATOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/ini.h"/>
+  </compounddef>
+</doxygen>

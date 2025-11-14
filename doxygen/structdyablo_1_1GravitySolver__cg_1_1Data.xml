@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1GravitySolver__cg_1_1Data" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::GravitySolver_cg::Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a745e912fac96b60cbf20535128cfcd57" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::GravitySolver_cg::Data::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="15" column="15" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a1d89ea96e2b9357490abb8fd2c94433b" prot="public" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::GravitySolver_cg::Data::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="17" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1adfe60a3cab4cc5b55c1758afa9d29d76" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="19" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a63c34888bad4be243d591c0c03fdca57" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="19" column="15" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1afeee5c69d11397465f3280a6b33cfb42" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="19" column="20" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a5d12b1edacb99e75c1ba564c88f03a12" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="20" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1ab6b3e3a2fbac312476d91e47b99db53c" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="20" column="15" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a3fc62da1f286237c3b26f39c1240190d" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="20" column="20" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1ab3bb4da514d110c5a0aafcb53438d6c5" prot="public" static="no" mutable="no">
+        <type>Kokkos::Array&lt; BoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;BoundaryConditionType, 3&gt; dyablo::GravitySolver_cg::Data::boundarycondition</definition>
+        <argsstring></argsstring>
+        <name>boundarycondition</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::boundarycondition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="22" column="17" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1abeaeb6bbe74a650ebd89d6c003e87d28" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::GravitySolver_cg::Data::cosmo_run</definition>
+        <argsstring></argsstring>
+        <name>cosmo_run</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::cosmo_run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="24" column="8" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a9dba0eeeba4131e198c968da450e9d38" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::four_Pi_G_physical</definition>
+        <argsstring></argsstring>
+        <name>four_Pi_G_physical</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::four_Pi_G_physical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="25" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a41483db572d4af0933a34ebd2f54674c" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::GravitySolver_cg::Data::CG_eps</definition>
+        <argsstring></argsstring>
+        <name>CG_eps</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::CG_eps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="26" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GravitySolver__cg_1_1Data_1a78ef0700bc16ca5bae6082fc63413703" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::GravitySolver_cg::Data::print_cg_iter</definition>
+        <argsstring></argsstring>
+        <name>print_cg_iter</name>
+        <qualifiedname>dyablo::GravitySolver_cg::Data::print_cg_iter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="27" column="8" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure storing all the necessary information for the resolution of the conjugate gradient. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Timers</label>
+        <link refid="classTimers"/>
+      </node>
+      <node id="2">
+        <label>dyablo::AMRBlockForeachCell_impl&lt; AMRBlockForeachCell_group_impl::PatchManager &gt;</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__impl"/>
+      </node>
+      <node id="1">
+        <label>dyablo::GravitySolver_cg::Data</label>
+        <link refid="structdyablo_1_1GravitySolver__cg_1_1Data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>foreach_cell</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>timers</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="14" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1ab3bb4da514d110c5a0aafcb53438d6c5" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>boundarycondition</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a41483db572d4af0933a34ebd2f54674c" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>CG_eps</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1abeaeb6bbe74a650ebd89d6c003e87d28" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>cosmo_run</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a745e912fac96b60cbf20535128cfcd57" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>foreach_cell</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a9dba0eeeba4131e198c968da450e9d38" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>four_Pi_G_physical</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a78ef0700bc16ca5bae6082fc63413703" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>print_cg_iter</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a1d89ea96e2b9357490abb8fd2c94433b" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>timers</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a5d12b1edacb99e75c1ba564c88f03a12" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>xmax</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1adfe60a3cab4cc5b55c1758afa9d29d76" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>xmin</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1ab6b3e3a2fbac312476d91e47b99db53c" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>ymax</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a63c34888bad4be243d591c0c03fdca57" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>ymin</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1a3fc62da1f286237c3b26f39c1240190d" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>zmax</name></member>
+      <member refid="structdyablo_1_1GravitySolver__cg_1_1Data_1afeee5c69d11397465f3280a6b33cfb42" prot="public" virt="non-virtual"><scope>dyablo::GravitySolver_cg::Data</scope><name>zmin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

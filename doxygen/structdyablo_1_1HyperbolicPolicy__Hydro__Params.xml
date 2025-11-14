@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_Hydro_Params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a62460c41e676ff80e6527ef5b1bab6e0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::HyperbolicPolicy_Hydro_Params::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Params::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="96" column="7" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1af98a5b613419c7f7f71bf5eb1108f043" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_Hydro_Params::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Params::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="97" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a62163a0c353aee2e4a935e305a7b9d69" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_Hydro_Params::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Params::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="98" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a3432ab9c5a06fa93487d3fbba1b43cd8" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_Hydro_Params::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Params::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="99" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a5c671f9831ad8859e9480bc11265b18c" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_Hydro_Params::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Params::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="100" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a1a060d16fe0928465f3bce0824fc7eec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref></type>
+        <definition>static HyperbolicPolicy_Hydro_Params dyablo::HyperbolicPolicy_Hydro_Params::from_configMap</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>from_configMap</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Params::from_configMap</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="85" column="40" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="85" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="83" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="84" bodyend="101"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a1a060d16fe0928465f3bce0824fc7eec" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Params</scope><name>from_configMap</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1af98a5b613419c7f7f71bf5eb1108f043" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Params</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a62460c41e676ff80e6527ef5b1bab6e0" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Params</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a5c671f9831ad8859e9480bc11265b18c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Params</scope><name>smallc</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a3432ab9c5a06fa93487d3fbba1b43cd8" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Params</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params_1a62163a0c353aee2e4a935e305a7b9d69" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Params</scope><name>smallr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

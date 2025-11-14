@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1FieldManager" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::FieldManager</compoundname>
+    <includes refid="FieldManager_8h" local="no">FieldManager.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1FieldManager_1a08906038f926ad4f8eedcf697fa1f27f" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref></type>
+        <definition>id2index_t dyablo::FieldManager::id2index</definition>
+        <argsstring></argsstring>
+        <name>id2index</name>
+        <qualifiedname>dyablo::FieldManager::id2index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="149" column="14" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1FieldManager_1ac5ea755dfb3ce9c6441c8620d0df2534" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::FieldManager::FieldManager</definition>
+        <argsstring>(const std::set&lt; VarIndex &gt; &amp;active_fields)</argsstring>
+        <name>FieldManager</name>
+        <qualifiedname>dyablo::FieldManager::FieldManager</qualifiedname>
+        <param>
+          <type>const std::set&lt; VarIndex &gt; &amp;</type>
+          <declname>active_fields</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref> with specific fields All VarIndex must be created befor this constructor with getiVar() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="112" column="3" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1FieldManager_1a6684cc65ea5f89653c209410044ca2e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::FieldManager::FieldManager</definition>
+        <argsstring>(const std::initializer_list&lt; VarIndex &gt; &amp;active_fields={})</argsstring>
+        <name>FieldManager</name>
+        <qualifiedname>dyablo::FieldManager::FieldManager</qualifiedname>
+        <param>
+          <type>const std::initializer_list&lt; VarIndex &gt; &amp;</type>
+          <declname>active_fields</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="120" column="3" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1FieldManager_1a5f89ece75e0b70837efdf4747d1638b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::FieldManager::FieldManager</definition>
+        <argsstring>(VarIndex count)</argsstring>
+        <name>FieldManager</name>
+        <qualifiedname>dyablo::FieldManager::FieldManager</qualifiedname>
+        <param>
+          <type>VarIndex</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref> with unnamed fields Generated VarIndexes can be fetched using enabled_fields() VarIndexes generated this way should not be used with var_name() This is usually used for temporary arrays when VarIndexes don&apos;t need to be conserved between kernels </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="130" column="3" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1FieldManager_1a406a41cb039dc01079dee79661fbc906" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref></type>
+        <definition>id2index_t dyablo::FieldManager::get_id2index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_id2index</name>
+        <qualifiedname>dyablo::FieldManager::get_id2index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="134" column="14" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1FieldManager_1a596c7145fe770e6e5f3e1988c8315c88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int dyablo::FieldManager::nbfields</definition>
+        <argsstring>() const</argsstring>
+        <name>nbfields</name>
+        <qualifiedname>dyablo::FieldManager::nbfields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="139" column="7" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1FieldManager_1a49e01b2e290d669d6b7cf77e50be10e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::set&lt; VarIndex &gt;</type>
+        <definition>std::set&lt; VarIndex &gt; dyablo::FieldManager::enabled_fields</definition>
+        <argsstring>() const</argsstring>
+        <name>enabled_fields</name>
+        <qualifiedname>dyablo::FieldManager::enabled_fields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="144" column="12" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="144" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Field manager class.</para>
+<para>Initialize a std::unordered_map object to map enum ComponentIndex to an actual integer depending on runtime configuration (e.g. is MHD / magnetic field components valid, etc...). </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/FieldManager.h" line="106" column="1" bodyfile="/builds/dyablo/dyablo/core/src/FieldManager.h" bodystart="106" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1FieldManager_1a49e01b2e290d669d6b7cf77e50be10e8" prot="public" virt="non-virtual"><scope>dyablo::FieldManager</scope><name>enabled_fields</name></member>
+      <member refid="classdyablo_1_1FieldManager_1ac5ea755dfb3ce9c6441c8620d0df2534" prot="public" virt="non-virtual"><scope>dyablo::FieldManager</scope><name>FieldManager</name></member>
+      <member refid="classdyablo_1_1FieldManager_1a6684cc65ea5f89653c209410044ca2e8" prot="public" virt="non-virtual"><scope>dyablo::FieldManager</scope><name>FieldManager</name></member>
+      <member refid="classdyablo_1_1FieldManager_1a5f89ece75e0b70837efdf4747d1638b4" prot="public" virt="non-virtual"><scope>dyablo::FieldManager</scope><name>FieldManager</name></member>
+      <member refid="classdyablo_1_1FieldManager_1a406a41cb039dc01079dee79661fbc906" prot="public" virt="non-virtual"><scope>dyablo::FieldManager</scope><name>get_id2index</name></member>
+      <member refid="classdyablo_1_1FieldManager_1a08906038f926ad4f8eedcf697fa1f27f" prot="private" virt="non-virtual"><scope>dyablo::FieldManager</scope><name>id2index</name></member>
+      <member refid="classdyablo_1_1FieldManager_1a596c7145fe770e6e5f3e1988c8315c88" prot="public" virt="non-virtual"><scope>dyablo::FieldManager</scope><name>nbfields</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

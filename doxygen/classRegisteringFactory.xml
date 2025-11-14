@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classRegisteringFactory" kind="class" language="C++" prot="public">
+    <compoundname>RegisteringFactory</compoundname>
+    <includes refid="RegisteringFactory_8h" local="no">RegisteringFactory.h</includes>
+    <innerclass refid="structRegisteringFactory_1_1construct" prot="private">RegisteringFactory::construct</innerclass>
+    <innerclass refid="structRegisteringFactory_1_1construct__base" prot="private">RegisteringFactory::construct_base</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename BaseType</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classRegisteringFactory_1a57968cc955ee16d9c316d5ba153d57bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool RegisteringFactory&lt; BaseType, Args &gt;::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>RegisteringFactory::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be implemented and contains the list of registered class (in a DECLARE_REGISTERED macro) This will be called during the first call to <ref refid="classRegisteringFactory_1ac70197b416d331e353615966094b79d7" kindref="member">make_instance()</ref> to verify the classes have actually been registered</para>
+<para>e.g: <programlisting><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">Impl1;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Impl2;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Impl3;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ImplFactory::init()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DECLARE_REGISTERED(Impl1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DECLARE_REGISTERED(Impl2);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>DECLARE_REGISTERED(Impl3);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="42" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegisteringFactory_1ae67dbb3bcbd16451acddeef9f0e5e620" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>static std::vector&lt; std::string &gt; RegisteringFactory&lt; BaseType, Args &gt;::get_available_ids</definition>
+        <argsstring>()</argsstring>
+        <name>get_available_ids</name>
+        <qualifiedname>RegisteringFactory::get_available_ids</qualifiedname>
+        <briefdescription>
+<para>List all available IDs for this factory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="45" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegisteringFactory_1ac70197b416d331e353615966094b79d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unique_ptr&lt; BaseType &gt;</type>
+        <definition>static std::unique_ptr&lt; BaseType &gt; RegisteringFactory&lt; BaseType, Args &gt;::make_instance</definition>
+        <argsstring>(const std::string &amp;id, Args... args)</argsstring>
+        <name>make_instance</name>
+        <qualifiedname>RegisteringFactory::make_instance</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct an instance of BaseType with the actual dynamic type corresponding to the id registered with FACTORY_REGISTER</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a valid identifier from a FACTORY_REGISTER declaration, also listed in <ref refid="classRegisteringFactory_1a57968cc955ee16d9c316d5ba153d57bd" kindref="member">RegisteringFactory::init()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters for the constructor of the class to instanciate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="62" column="26" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" bodystart="62" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classRegisteringFactory_1a4968b0b0a02726f5b5872d3930252d38" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool RegisteringFactory&lt; BaseType, Args &gt;::register_class</definition>
+        <argsstring>(const std::string &amp;id)</argsstring>
+        <name>register_class</name>
+        <qualifiedname>RegisteringFactory::register_class</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Register class (do not use directly, use FACTORY_REGISTER instead) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="88" column="15" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" bodystart="88" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classRegisteringFactory_1ad6c0bae2c48208b33ae4718356979ace" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; std::string, std::unique_ptr&lt; construct_base &gt; &gt; &amp;</type>
+        <definition>static std::map&lt; std::string, std::unique_ptr&lt; construct_base &gt; &gt; &amp; RegisteringFactory&lt; BaseType, Args &gt;::get_constructs</definition>
+        <argsstring>()</argsstring>
+        <name>get_constructs</name>
+        <qualifiedname>RegisteringFactory::get_constructs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the id-&gt;construct&lt;T&gt; map Using &quot;Meyer&apos;s singleton&quot; pattern to avoid static initialization order fiasco </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="127" column="19" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" bodystart="127" bodyend="131"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A general factory to construct instances of BaseType from an id and constructor parameters <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BaseType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Constructed instances are implementations of BaseType </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: implementations of basetype have a constructor compatible with Args...</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+When implementing new BaseType implementations, dynamic types are registered using the FACTORY_REGISTER() macro and linked to an identifier During execution, specific implementations of BaseType are constructed using RegisteringFactory::make_instance(&lt;identifier&gt;, &lt;constructor_params...&gt;) </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" line="21" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/RegisteringFactory.h" bodystart="21" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classRegisteringFactory_1ae67dbb3bcbd16451acddeef9f0e5e620" prot="public" virt="non-virtual"><scope>RegisteringFactory</scope><name>get_available_ids</name></member>
+      <member refid="classRegisteringFactory_1ad6c0bae2c48208b33ae4718356979ace" prot="private" virt="non-virtual"><scope>RegisteringFactory</scope><name>get_constructs</name></member>
+      <member refid="classRegisteringFactory_1a57968cc955ee16d9c316d5ba153d57bd" prot="public" virt="non-virtual"><scope>RegisteringFactory</scope><name>init</name></member>
+      <member refid="classRegisteringFactory_1ac70197b416d331e353615966094b79d7" prot="public" virt="non-virtual"><scope>RegisteringFactory</scope><name>make_instance</name></member>
+      <member refid="classRegisteringFactory_1a4968b0b0a02726f5b5872d3930252d38" prot="public" virt="non-virtual"><scope>RegisteringFactory</scope><name>register_class</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

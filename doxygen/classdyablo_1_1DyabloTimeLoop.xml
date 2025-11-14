@@ -1,0 +1,636 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1DyabloTimeLoop" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::DyabloTimeLoop</compoundname>
+    <includes refid="DyabloTimeLoop_8h" local="no">DyabloTimeLoop.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdyablo_1_1DyabloTimeLoop_1af021ae94ec54f8d1eacb7ccf0dd125fc" prot="private" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">ForeachCell::CellArray_global_ghosted</ref></type>
+        <definition>using dyablo::DyabloTimeLoop::CellArray =  ForeachCell::CellArray_global_ghosted</definition>
+        <argsstring></argsstring>
+        <name>CellArray</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::CellArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="881" column="3" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a8a01cca5f6002b2488ac14913eae0d49" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::DyabloTimeLoop::interrupted</definition>
+        <argsstring></argsstring>
+        <name>interrupted</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::interrupted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="478" column="14" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a3176011a2b5c929cdfe46010abc8d3b5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::DyabloTimeLoop::m_nlog</definition>
+        <argsstring></argsstring>
+        <name>m_nlog</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_nlog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="865" column="7" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a5fe715a30a4e5abcd067d826ac95f8bd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::DyabloTimeLoop::m_enable_output</definition>
+        <argsstring></argsstring>
+        <name>m_enable_output</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_enable_output</qualifiedname>
+        <briefdescription>
+<para>Timestep log frequency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="866" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a8b7f6eeecc749d8abb4c7372c61cc4ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::DyabloTimeLoop::m_enable_checkpoint</definition>
+        <argsstring></argsstring>
+        <name>m_enable_checkpoint</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_enable_checkpoint</qualifiedname>
+        <briefdescription>
+<para>Enable vizualization output and output at least at beginning and end of simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="867" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a24b8f240887dcc9c85ab5c01de240b6a" prot="private" static="no" mutable="no">
+        <type>GravityType</type>
+        <definition>GravityType dyablo::DyabloTimeLoop::m_gravity_type</definition>
+        <argsstring></argsstring>
+        <name>m_gravity_type</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_gravity_type</qualifiedname>
+        <briefdescription>
+<para>Enable checkpoint output and output at least at beginning and end of simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="869" column="15" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1adba37adaa4cb902efa9bbc68b535f338" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::DyabloTimeLoop::m_iter_start</definition>
+        <argsstring></argsstring>
+        <name>m_iter_start</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_iter_start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="871" column="7" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a167f9426fd86a8302346f9b538710ba0" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref></type>
+        <definition>ScalarSimulationData dyablo::DyabloTimeLoop::m_scalar_data</definition>
+        <argsstring></argsstring>
+        <name>m_scalar_data</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_scalar_data</qualifiedname>
+        <briefdescription>
+<para>First iteration (for restart) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="873" column="24" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a3815255c895165bff7d8ac7d59e35c04" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref></type>
+        <definition>MpiComm dyablo::DyabloTimeLoop::m_communicator</definition>
+        <argsstring></argsstring>
+        <name>m_communicator</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_communicator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="875" column="11" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1ae79dd269a5522130998814c150f5dadb" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;AMRmesh&gt; dyablo::DyabloTimeLoop::m_amr_mesh</definition>
+        <argsstring></argsstring>
+        <name>m_amr_mesh</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_amr_mesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="876" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a17f5bea28e7f22cb85d0a9438f8edcae" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref></type>
+        <definition>ForeachCell dyablo::DyabloTimeLoop::m_foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>m_foreach_cell</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="877" column="15" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1ac8b020f2f4550e6de7c0cc095c8b4112" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref></type>
+        <definition>UserData dyablo::DyabloTimeLoop::U</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::U</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="878" column="12" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1ab705e39da504c4c413ead2c4640b4fa7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::DyabloTimeLoop::m_loadbalance_coherent_levels</definition>
+        <argsstring></argsstring>
+        <name>m_loadbalance_coherent_levels</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_loadbalance_coherent_levels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="879" column="7" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="879" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1abfa4dcc2f2d0ff0d7a9139b5eb38fb14" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1IterationHandler" kindref="compound">IterationHandler</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;IterationHandler&gt; dyablo::DyabloTimeLoop::m_iteration_handler</definition>
+        <argsstring></argsstring>
+        <name>m_iteration_handler</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::m_iteration_handler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="883" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="883" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a79036dc3b76549606b386eaa7c508653" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdyablo_1_1Compute__dt" kindref="compound">Compute_dt</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Compute_dt&gt; &gt; dyablo::DyabloTimeLoop::compute_dt</definition>
+        <argsstring></argsstring>
+        <name>compute_dt</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::compute_dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="884" column="15" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a1d84acfd9330e4cf529a2e2cff0b2b0b" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1RefineCondition" kindref="compound">RefineCondition</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;RefineCondition&gt; dyablo::DyabloTimeLoop::refine_condition</definition>
+        <argsstring></argsstring>
+        <name>refine_condition</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::refine_condition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="885" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="885" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a92c691ef9d9d3434340421e610a3e1ec" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1HyperbolicUpdate" kindref="compound">HyperbolicUpdate</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;HyperbolicUpdate&gt; dyablo::DyabloTimeLoop::godunov_updater</definition>
+        <argsstring></argsstring>
+        <name>godunov_updater</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::godunov_updater</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="886" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="886" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a3f0e5d9eeafed23116cc769349b2b3b9" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1HyperbolicUpdate" kindref="compound">HyperbolicUpdate</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;HyperbolicUpdate&gt; dyablo::DyabloTimeLoop::rad_updater</definition>
+        <argsstring></argsstring>
+        <name>rad_updater</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::rad_updater</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="887" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="887" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1afca04a028741c38fbdb0fda6f82a9d66" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::DyabloTimeLoop::has_mhd</definition>
+        <argsstring></argsstring>
+        <name>has_mhd</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::has_mhd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="888" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a2fb434385b79ec08c0e919757a6ff346" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::DyabloTimeLoop::is_glm</definition>
+        <argsstring></argsstring>
+        <name>is_glm</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::is_glm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="888" column="16" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a8b13133af78198937ac7779eb1b44442" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::DyabloTimeLoop::ghost_count</definition>
+        <argsstring></argsstring>
+        <name>ghost_count</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::ghost_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="889" column="7" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="889" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1aa5bdbbd726464c4e646c67d90837aea3" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1ParticleUpdate" kindref="compound">ParticleUpdate</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;ParticleUpdate&gt; dyablo::DyabloTimeLoop::particle_position_updater</definition>
+        <argsstring></argsstring>
+        <name>particle_position_updater</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::particle_position_updater</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="890" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="890" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a8eef1b87a68090bdf9da39a4322d04dd" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1ParticleUpdate" kindref="compound">ParticleUpdate</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;ParticleUpdate&gt; dyablo::DyabloTimeLoop::particle_update_density</definition>
+        <argsstring></argsstring>
+        <name>particle_update_density</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::particle_update_density</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="890" column="45" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="890" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1ad9eec1e4bf9642ed1c91111a184d9ea7" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1MapUserData" kindref="compound">MapUserData</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;MapUserData&gt; dyablo::DyabloTimeLoop::mapUserData</definition>
+        <argsstring></argsstring>
+        <name>mapUserData</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::mapUserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="891" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="891" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a3f18e5881474494228fa7bdad07aa3b5" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1IOManager" kindref="compound">IOManager</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;IOManager&gt; dyablo::DyabloTimeLoop::io_manager</definition>
+        <argsstring></argsstring>
+        <name>io_manager</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::io_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="892" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a5bdf043a8906ccb88ae3542d97b957b9" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1IOManager" kindref="compound">IOManager</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;IOManager&gt; dyablo::DyabloTimeLoop::io_manager_checkpoint</definition>
+        <argsstring></argsstring>
+        <name>io_manager_checkpoint</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::io_manager_checkpoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="892" column="30" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a76f207fac085d003053bb009eef8daef" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1GravitySolver" kindref="compound">GravitySolver</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;GravitySolver&gt; dyablo::DyabloTimeLoop::gravity_solver</definition>
+        <argsstring></argsstring>
+        <name>gravity_solver</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::gravity_solver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="893" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="893" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1aad505cffd32cb0acaf17c636447c4280" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1HyperbolicUpdate" kindref="compound">HyperbolicUpdate</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;HyperbolicUpdate&gt; dyablo::DyabloTimeLoop::gravity_update</definition>
+        <argsstring></argsstring>
+        <name>gravity_update</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::gravity_update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="894" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a1ffc0c58b4893ee15cbc823bfe446b82" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1CosmoManager" kindref="compound">CosmoManager</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;CosmoManager&gt; dyablo::DyabloTimeLoop::cosmo_manager</definition>
+        <argsstring></argsstring>
+        <name>cosmo_manager</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::cosmo_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="896" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a1aa43c0b8ee043ec1c6a10d71469c839" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1ParabolicUpdate" kindref="compound">ParabolicUpdate</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;ParabolicUpdate&gt; dyablo::DyabloTimeLoop::thermal_conduction_updater</definition>
+        <argsstring></argsstring>
+        <name>thermal_conduction_updater</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::thermal_conduction_updater</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="898" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="898" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1a19bfb0f1e5201da071b4ae574cce252b" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1ParabolicUpdate" kindref="compound">ParabolicUpdate</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;ParabolicUpdate&gt; dyablo::DyabloTimeLoop::viscosity_updater</definition>
+        <argsstring></argsstring>
+        <name>viscosity_updater</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::viscosity_updater</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="899" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="899" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1af9b7f0bb67d2df51fe561b1684cba51d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdyablo_1_1SourceUpdate" kindref="compound">SourceUpdate</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;SourceUpdate&gt; &gt; dyablo::DyabloTimeLoop::source_updaters</definition>
+        <argsstring></argsstring>
+        <name>source_updaters</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::source_updaters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="900" column="15" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="900" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloTimeLoop_1ae20c3b3ba19f1293eefbc70d72d4f73c" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref></type>
+        <definition>Timers dyablo::DyabloTimeLoop::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="902" column="10" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="902" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdyablo_1_1DyabloTimeLoop_1a23cc3915ae4dbe34cb79c301b7c74c55" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; AMRmesh &gt; dyablo::DyabloTimeLoop::init_amr_mesh</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>init_amr_mesh</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::init_amr_mesh</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="217" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="217" bodyend="222"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1DyabloTimeLoop_1aef785562ef7f48d8255cfe2bd1fcbfdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DyabloTimeLoop::DyabloTimeLoop</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>DyabloTimeLoop</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::DyabloTimeLoop</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create ans initialize a simulation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="227" column="3" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="227" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1DyabloTimeLoop_1a84735f1ca98038926853b99c818d0ade" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::DyabloTimeLoop::timer_file</definition>
+        <argsstring>(Timers &amp;timers)</argsstring>
+        <name>timer_file</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::timer_file</qualifiedname>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="493" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="493" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1DyabloTimeLoop_1a606e970484ce2ef35244b0eac8fb7cb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::DyabloTimeLoop::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run the simulation for multiple timesteps until a stop condition is met </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="537" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="537" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1DyabloTimeLoop_1a1aef8e6da32cee0cf1825d73bab044fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::DyabloTimeLoop::step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::step</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run one timestep of the simulation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="590" column="8" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="590" bodyend="861"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1DyabloTimeLoop_1aeaa74eca18faa3c49c8b5f99453ff893" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dyablo::DyabloTimeLoop::interrupt_handler</definition>
+        <argsstring>(int sig)</argsstring>
+        <name>interrupt_handler</name>
+        <qualifiedname>dyablo::DyabloTimeLoop::interrupt_handler</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="479" column="15" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="479" bodyend="491"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main class to run Dyablo simulation </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" line="215" column="1" bodyfile="/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h" bodystart="215" bodyend="903"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1af021ae94ec54f8d1eacb7ccf0dd125fc" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>CellArray</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a79036dc3b76549606b386eaa7c508653" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>compute_dt</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a1ffc0c58b4893ee15cbc823bfe446b82" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>cosmo_manager</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1aef785562ef7f48d8255cfe2bd1fcbfdd" prot="public" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>DyabloTimeLoop</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a8b13133af78198937ac7779eb1b44442" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>ghost_count</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a92c691ef9d9d3434340421e610a3e1ec" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>godunov_updater</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a76f207fac085d003053bb009eef8daef" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>gravity_solver</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1aad505cffd32cb0acaf17c636447c4280" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>gravity_update</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1afca04a028741c38fbdb0fda6f82a9d66" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>has_mhd</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a23cc3915ae4dbe34cb79c301b7c74c55" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>init_amr_mesh</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1aeaa74eca18faa3c49c8b5f99453ff893" prot="public" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>interrupt_handler</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a8a01cca5f6002b2488ac14913eae0d49" prot="public" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>interrupted</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a3f18e5881474494228fa7bdad07aa3b5" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>io_manager</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a5bdf043a8906ccb88ae3542d97b957b9" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>io_manager_checkpoint</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a2fb434385b79ec08c0e919757a6ff346" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>is_glm</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1ae79dd269a5522130998814c150f5dadb" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_amr_mesh</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a3815255c895165bff7d8ac7d59e35c04" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_communicator</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a8b7f6eeecc749d8abb4c7372c61cc4ab" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_enable_checkpoint</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a5fe715a30a4e5abcd067d826ac95f8bd" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_enable_output</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a17f5bea28e7f22cb85d0a9438f8edcae" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_foreach_cell</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a24b8f240887dcc9c85ab5c01de240b6a" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_gravity_type</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1adba37adaa4cb902efa9bbc68b535f338" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_iter_start</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1abfa4dcc2f2d0ff0d7a9139b5eb38fb14" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_iteration_handler</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1ab705e39da504c4c413ead2c4640b4fa7" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_loadbalance_coherent_levels</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a3176011a2b5c929cdfe46010abc8d3b5" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_nlog</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a167f9426fd86a8302346f9b538710ba0" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>m_scalar_data</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1ad9eec1e4bf9642ed1c91111a184d9ea7" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>mapUserData</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1aa5bdbbd726464c4e646c67d90837aea3" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>particle_position_updater</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a8eef1b87a68090bdf9da39a4322d04dd" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>particle_update_density</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a3f0e5d9eeafed23116cc769349b2b3b9" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>rad_updater</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a1d84acfd9330e4cf529a2e2cff0b2b0b" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>refine_condition</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a606e970484ce2ef35244b0eac8fb7cb4" prot="public" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>run</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1af9b7f0bb67d2df51fe561b1684cba51d" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>source_updaters</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a1aef8e6da32cee0cf1825d73bab044fd" prot="public" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>step</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a1aa43c0b8ee043ec1c6a10d71469c839" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>thermal_conduction_updater</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a84735f1ca98038926853b99c818d0ade" prot="public" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>timer_file</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1ae20c3b3ba19f1293eefbc70d72d4f73c" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1ac8b020f2f4550e6de7c0cc095c8b4112" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>U</name></member>
+      <member refid="classdyablo_1_1DyabloTimeLoop_1a19bfb0f1e5201da071b4ae574cce252b" prot="private" virt="non-virtual"><scope>dyablo::DyabloTimeLoop</scope><name>viscosity_updater</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

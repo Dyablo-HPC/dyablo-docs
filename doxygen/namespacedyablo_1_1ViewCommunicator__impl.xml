@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1ViewCommunicator__impl" kind="namespace" language="C++">
+    <compoundname>dyablo::ViewCommunicator_impl</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ViewCommunicator_8h_1a832ee240931d8d43f779e4bef867d825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Layout_t</type>
+          </param>
+        </templateparamlist>
+        <type>Kokkos::LayoutLeft</type>
+        <definition>Kokkos::LayoutLeft dyablo::ViewCommunicator_impl::to_LayoutLeft</definition>
+        <argsstring>(const Layout_t &amp;l)</argsstring>
+        <name>to_LayoutLeft</name>
+        <qualifiedname>dyablo::ViewCommunicator_impl::to_LayoutLeft</qualifiedname>
+        <param>
+          <type>const Layout_t &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="126" column="22" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="126" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="ViewCommunicator_8h_1af9f091207015855ef7542830bf878222" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataArray_t</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; sizeof...(Args)==DataArray_t::rank-1, DataArray_t &gt;</type>
+        <definition>std::enable_if_t&lt; sizeof...(Args)==DataArray_t::rank-1, DataArray_t &gt; dyablo::ViewCommunicator_impl::get_subview</definition>
+        <argsstring>(const DataArray_t &amp;U, uint32_t iOct_begin, uint32_t iOct_end, Args... is)</argsstring>
+        <name>get_subview</name>
+        <qualifiedname>dyablo::ViewCommunicator_impl::get_subview</qualifiedname>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct_begin</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct_end</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic way to get a subview of an an n-dimensional Kokkos view with Kokkos::ALL, ..., std::make_pair(iOct_begin, iOct_end) as parameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="146" column="3" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="ViewCommunicator_8h_1a1055d624372d2beb3713eea862d5c088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataArray_t</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt; sizeof...(Args) !=DataArray_t::rank-1, DataArray_t &gt;</type>
+        <definition>std::enable_if_t&lt; sizeof...(Args) !=DataArray_t::rank-1, DataArray_t &gt; dyablo::ViewCommunicator_impl::get_subview</definition>
+        <argsstring>(const DataArray_t &amp;U, uint32_t iOct_begin, uint32_t iOct_end, Args... is)</argsstring>
+        <name>get_subview</name>
+        <qualifiedname>dyablo::ViewCommunicator_impl::get_subview</qualifiedname>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct_begin</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct_end</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="152" column="3" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="ViewCommunicator_8h_1a8c1200d427e718becf9c7f991a21fd2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PackBuffer_t</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; PackBuffer_t &gt;</type>
+        <definition>std::vector&lt; PackBuffer_t &gt; dyablo::ViewCommunicator_impl::get_subviews</definition>
+        <argsstring>(const PackBuffer_t &amp;view, const Kokkos::View&lt; uint32_t * &gt;::HostMirror &amp;sizes, int local_rank)</argsstring>
+        <name>get_subviews</name>
+        <qualifiedname>dyablo::ViewCommunicator_impl::get_subviews</qualifiedname>
+        <param>
+          <type>const PackBuffer_t &amp;</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt;::HostMirror &amp;</type>
+          <declname>sizes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>local_rank</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slice view into one subview per rank. (ignore local_rank) Each subview <computeroutput>res[rank]</computeroutput> contains <computeroutput>sizes[rank]</computeroutput> octants from <computeroutput>view</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="163" column="15" bodyfile="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" bodystart="163" bodyend="186"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/ViewCommunicator.h" line="118" column="1"/>
+  </compounddef>
+</doxygen>

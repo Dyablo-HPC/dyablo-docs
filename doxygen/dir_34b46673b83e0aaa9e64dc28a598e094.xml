@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_34b46673b83e0aaa9e64dc28a598e094" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/parabolic</compoundname>
+    <innerfile refid="ParabolicTerm_8h">ParabolicTerm.h</innerfile>
+    <innerfile refid="ParabolicTerm__thermal__conduction_8h">ParabolicTerm_thermal_conduction.h</innerfile>
+    <innerfile refid="ParabolicTerm__viscosity_8h">ParabolicTerm_viscosity.h</innerfile>
+    <innerfile refid="ParabolicUpdate_8h">ParabolicUpdate.h</innerfile>
+    <innerfile refid="ParabolicUpdate__base_8h">ParabolicUpdate_base.h</innerfile>
+    <innerfile refid="ParabolicUpdate__explicit_8cpp">ParabolicUpdate_explicit.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/parabolic/"/>
+  </compounddef>
+</doxygen>

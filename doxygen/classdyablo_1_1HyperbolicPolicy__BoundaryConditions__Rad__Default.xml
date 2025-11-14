@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicPolicy__Rad__impl" prot="public" virt="non-virtual">dyablo::HyperbolicPolicy_Rad_impl</derivedcompoundref>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1_1Params" prot="public">dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::Params</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a9176d4f0c67d7c85549325cc82440a5a" prot="private" static="no">
+        <type><ref refid="classdyablo_1_1HyperbolicPolicy__State__Rad" kindref="compound">HyperbolicPolicy_State_Rad</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::HyperbolicPolicy_State =  HyperbolicPolicy_State_Rad</definition>
+        <argsstring></argsstring>
+        <name>HyperbolicPolicy_State</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::HyperbolicPolicy_State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="313" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a5028fcf6531556bc230f5893b38d4467" prot="private" static="no">
+        <type><ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">ForeachCell::CellIndex</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::CellIndex =  ForeachCell::CellIndex</definition>
+        <argsstring></argsstring>
+        <name>CellIndex</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::CellIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="314" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1aae641269793b162881ca33cb1b05872c" prot="private" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kindref="compound">ForeachCell::CellMetaData</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::CellMetaData =  ForeachCell::CellMetaData</definition>
+        <argsstring></argsstring>
+        <name>CellMetaData</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::CellMetaData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="315" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a9eeb22a774c8814fb4ed0561dd3efcd1" prot="private" static="no">
+        <type>CellIndex::offset_t</type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::offset_t =  CellIndex::offset_t</definition>
+        <argsstring></argsstring>
+        <name>offset_t</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::offset_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="316" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a843492db8795fb28a82c641fbd4a0867" prot="public" static="no">
+        <type>typename <ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">HyperbolicPolicy_State::PrimState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::PrimState =  typename HyperbolicPolicy_State::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="321" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a076dc997f729dbc8be73569e1117202d" prot="public" static="no">
+        <type>typename <ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">HyperbolicPolicy_State::ConsState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::ConsState =  typename HyperbolicPolicy_State::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="322" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1ac389f0b976d08c8d3cbc4db0974393f0" prot="private" static="no" mutable="no">
+        <type>Kokkos::Array&lt; BoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;BoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::bc_min</definition>
+        <argsstring></argsstring>
+        <name>bc_min</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::bc_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="318" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a43c091edcc34222abf96f74dc8b09929" prot="private" static="no" mutable="no">
+        <type>Kokkos::Array&lt; BoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;BoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::bc_max</definition>
+        <argsstring></argsstring>
+        <name>bc_max</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::bc_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="318" column="24" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a33c86491bb376332f7da5fcf8abe2712" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1_1Params" kindref="compound">Params</ref></type>
+        <definition>static Params dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::getParams</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>getParams</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::getParams</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="328" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="328" bodyend="342"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1aefeb78e04eeb6595a1622f9426ab71bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::HyperbolicPolicy_BoundaryConditions_Rad_Default</definition>
+        <argsstring>(const Params &amp;params, const ScalarSimulationData &amp;)</argsstring>
+        <name>HyperbolicPolicy_BoundaryConditions_Rad_Default</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::HyperbolicPolicy_BoundaryConditions_Rad_Default</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1_1Params" kindref="compound">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="344" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="344" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1aeb67d4a99d2d0f0f3e71a8ad951a4cca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+          <param>
+            <type>typename Policy_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION ConsState</type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::getBoundaryValue</definition>
+        <argsstring>(const Policy_t &amp;policy, const Array_t &amp;U, const CellIndex &amp;iCell_boundary, const CellMetaData &amp;metadata) const</argsstring>
+        <name>getBoundaryValue</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::getBoundaryValue</qualifiedname>
+        <param>
+          <type>const Policy_t &amp;</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell_boundary</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kindref="compound">CellMetaData</ref> &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="351" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="351" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1ae4eca2f472f4e214f9cd59e191c1efce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+          <param>
+            <type>typename Policy_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION ConsState</type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::getBoundaryFlux</definition>
+        <argsstring>(const Policy_t &amp;policy, const Array_t &amp;U, const CellIndex &amp;iCell_boundary, const PrimState &amp;q_in_reconstructed, const CellMetaData &amp;metadata) const</argsstring>
+        <name>getBoundaryFlux</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default::getBoundaryFlux</qualifiedname>
+        <param>
+          <type>const Policy_t &amp;</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell_boundary</declname>
+        </param>
+        <param>
+          <type>const PrimState &amp;</type>
+          <declname>q_in_reconstructed</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kindref="compound">CellMetaData</ref> &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="393" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="393" bodyend="446"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default"/>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_Rad_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Rad__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="310" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="311" bodyend="447"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a43c091edcc34222abf96f74dc8b09929" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>bc_max</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1ac389f0b976d08c8d3cbc4db0974393f0" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>bc_min</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a5028fcf6531556bc230f5893b38d4467" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>CellIndex</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1aae641269793b162881ca33cb1b05872c" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>CellMetaData</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a076dc997f729dbc8be73569e1117202d" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1ae4eca2f472f4e214f9cd59e191c1efce" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>getBoundaryFlux</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1aeb67d4a99d2d0f0f3e71a8ad951a4cca" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>getBoundaryValue</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a33c86491bb376332f7da5fcf8abe2712" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>getParams</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1aefeb78e04eeb6595a1622f9426ab71bf" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>HyperbolicPolicy_BoundaryConditions_Rad_Default</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a9176d4f0c67d7c85549325cc82440a5a" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>HyperbolicPolicy_State</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a9eeb22a774c8814fb4ed0561dd3efcd1" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>offset_t</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Rad__Default_1a843492db8795fb28a82c641fbd4a0867" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Rad_Default</scope><name>PrimState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

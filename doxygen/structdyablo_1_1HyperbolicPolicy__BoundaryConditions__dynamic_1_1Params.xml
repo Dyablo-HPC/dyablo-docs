@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1_1Params" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_BoundaryConditions_dynamic::Params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1_1Params_1a384b3273ba427d963a0c91d22256e780" prot="public" static="no" mutable="no">
+        <type>dyablo_variant&lt; typename Ts::Params... &gt;</type>
+        <definition>dyablo_variant&lt;typename Ts::Params...&gt; dyablo::HyperbolicPolicy_BoundaryConditions_dynamic&lt; State_t, Ts &gt;::Params::params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_dynamic::Params::params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h" line="129" column="20" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h" line="128" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h" bodystart="128" bodyend="130"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1_1Params_1a384b3273ba427d963a0c91d22256e780" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_dynamic::Params</scope><name>params</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

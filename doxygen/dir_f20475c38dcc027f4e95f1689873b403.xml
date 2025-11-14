@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_f20475c38dcc027f4e95f1689873b403" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/utils/monitoring</compoundname>
+    <innerfile refid="CudaTimer_8h">CudaTimer.h</innerfile>
+    <innerfile refid="HipTimer_8h">HipTimer.h</innerfile>
+    <innerfile refid="OpenMPTimer_8cpp">OpenMPTimer.cpp</innerfile>
+    <innerfile refid="OpenMPTimer_8h">OpenMPTimer.h</innerfile>
+    <innerfile refid="SimpleTimer_8cpp">SimpleTimer.cpp</innerfile>
+    <innerfile refid="SimpleTimer_8h">SimpleTimer.h</innerfile>
+    <innerfile refid="Timers_8cpp">Timers.cpp</innerfile>
+    <innerfile refid="Timers_8h">Timers.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/"/>
+  </compounddef>
+</doxygen>

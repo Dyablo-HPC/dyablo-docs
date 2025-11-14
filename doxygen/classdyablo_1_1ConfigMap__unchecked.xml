@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ConfigMap__unchecked" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::ConfigMap_unchecked</compoundname>
+    <basecompoundref refid="classConfigMap" prot="public" virt="non-virtual">ConfigMap</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ConfigMap__unchecked_1a309e8cb4b4660759f863d17f748754ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ConfigMap_unchecked::ConfigMap_unchecked</definition>
+        <argsstring>(const ConfigMap &amp;configMap)</argsstring>
+        <name>ConfigMap_unchecked</name>
+        <qualifiedname>dyablo::ConfigMap_unchecked::ConfigMap_unchecked</qualifiedname>
+        <param>
+          <type>const <ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="14" column="3" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ConfigMap__unchecked_1a50541d4ea79920041c57247c9b46773c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::ConfigMap_unchecked::set</definition>
+        <argsstring>(const std::string &amp;section, const std::string &amp;name, const T &amp;val)</argsstring>
+        <name>set</name>
+        <qualifiedname>dyablo::ConfigMap_unchecked::set</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="19" column="8" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ConfigMap</label>
+        <link refid="classConfigMap"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ConfigMap_unchecked</label>
+        <link refid="classdyablo_1_1ConfigMap__unchecked"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ConfigMap</label>
+        <link refid="classConfigMap"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ConfigMap_unchecked</label>
+        <link refid="classdyablo_1_1ConfigMap__unchecked"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="12" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classConfigMap_1add1cae6e21c1f69f00fb0b202fb70e3b" prot="protected" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>_values</name></member>
+      <member refid="classConfigMap_1a8924989242dd30189223c5325aed436c" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>broadcast_parameters</name></member>
+      <member refid="classConfigMap_1a5f5568a516145e575508167b3167c8e0" prot="protected" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>ConfigMap</name></member>
+      <member refid="classConfigMap_1a49ccec050f8030a13ee018beb365ace7" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>ConfigMap</name></member>
+      <member refid="classConfigMap_1aa36155f2920f89d35cf5b1b7f1ba0530" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>ConfigMap</name></member>
+      <member refid="classConfigMap_1adb834b4f510ba5efa80e3cf1b2b5da09" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>ConfigMap</name></member>
+      <member refid="classdyablo_1_1ConfigMap__unchecked_1a309e8cb4b4660759f863d17f748754ca" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>ConfigMap_unchecked</name></member>
+      <member refid="classConfigMap_1adc4b8058536e9ecfbf3e3e708090683e" prot="protected" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>convert_units</name></member>
+      <member refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue</name></member>
+      <member refid="classConfigMap_1aa278ade233b84fa02b5d49d6d94cfbd1" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue</name></member>
+      <member refid="classConfigMap_1abfca4fda6db64a0e16f84d649dbfea08" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue_in_code_unit</name></member>
+      <member refid="classConfigMap_1ad091f46f3c1f1383a758822cb2a7ce3d" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue_in_code_unit</name></member>
+      <member refid="classConfigMap_1a4ad91ff2655ffacee44168bc00d2c36b" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue_in_code_unit</name></member>
+      <member refid="classConfigMap_1adf598a6710eb9bb5ab14f205e2e46683" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue_in_unit</name></member>
+      <member refid="classConfigMap_1a9c8f68b3fb474a11cc6cc9e87f9ea28e" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue_in_unit</name></member>
+      <member refid="classConfigMap_1a7f9dae03a56cf2a4a08fcf8e7b43cab5" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue_in_unit</name></member>
+      <member refid="classConfigMap_1a07d5d21dde8fd84fb96138c810d7125b" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>getValue_in_unit_aux</name></member>
+      <member refid="classConfigMap_1ae2489b29b5ee29a5ea4a60c8b22ab8c1" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>hasValue</name></member>
+      <member refid="classConfigMap_1af0b03896adfab9bf1c4e941e0068ad8d" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>output</name></member>
+      <member refid="classConfigMap_1ad5b4613ce3dc143d786879f1a5322928" prot="protected" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>print_config</name></member>
+      <member refid="classdyablo_1_1ConfigMap__unchecked_1a50541d4ea79920041c57247c9b46773c" prot="public" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>set</name></member>
+      <member refid="classConfigMap_1a160811567343ff95dbd714310aae4ce1" prot="protected" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>tolower</name></member>
+      <member refid="classConfigMap_1a14fd2eaa7841f0dcf36d692ec64d4e21" prot="protected" virt="non-virtual"><scope>dyablo::ConfigMap_unchecked</scope><name>valueHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

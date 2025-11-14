@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ParabolicUpdate__explicit" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::ParabolicUpdate_explicit</compoundname>
+    <basecompoundref refid="classdyablo_1_1ParabolicUpdate" prot="public" virt="non-virtual">dyablo::ParabolicUpdate</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicUpdate__explicit_1aed737243f787e1d495e5de77484ff62b" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::ParabolicUpdate_explicit::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="188" column="15" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicUpdate__explicit_1affbf9df7f50f3d34662e7a35c8b7774d" prot="public" static="no" mutable="no">
+        <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+        <definition>ConfigMap&amp; dyablo::ParabolicUpdate_explicit::configMap</definition>
+        <argsstring></argsstring>
+        <name>configMap</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::configMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="189" column="15" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicUpdate__explicit_1abedf038f38807cc0e6f910178dfbe77a" prot="public" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::ParabolicUpdate_explicit::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="190" column="15" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicUpdate__explicit_1ae8850fd45cd7602c2c70be73b62ec27e" prot="public" static="no" mutable="no">
+        <type>ParabolicTermType</type>
+        <definition>ParabolicTermType dyablo::ParabolicUpdate_explicit::term_type</definition>
+        <argsstring></argsstring>
+        <name>term_type</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::term_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="192" column="21" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicUpdate__explicit_1ab5a2a16814a974c8b0b704b8bca3fd0b" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicUpdate_explicit::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="193" column="10" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicUpdate__explicit_1aef0fff8347349e99fc346c2160a672e8" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1BoundaryConditions" kindref="compound">BoundaryConditions</ref></type>
+        <definition>BoundaryConditions dyablo::ParabolicUpdate_explicit::bc_manager</definition>
+        <argsstring></argsstring>
+        <name>bc_manager</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::bc_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="195" column="22" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ParabolicUpdate__explicit_1a41a7ba5e93e2ffeac846437b5a5c7cbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParabolicUpdate_explicit::ParabolicUpdate_explicit</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers, ParabolicTermType term_type)</argsstring>
+        <name>ParabolicUpdate_explicit</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::ParabolicUpdate_explicit</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <param>
+          <type>ParabolicTermType</type>
+          <declname>term_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="74" column="3" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="74" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParabolicUpdate__explicit_1a13a4bff83c66584ca2fc262e2b82808d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::ParabolicUpdate_explicit::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1ParabolicUpdate_1a10461fa7f5f81b7aa0f50ba3e19f9520">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="88" column="8" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParabolicUpdate__explicit_1a7228b5c429c380f70118bc9ff3a5262e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::ParabolicUpdate_explicit::update_parabolic</definition>
+        <argsstring>(UserData &amp;U, real_t dt)</argsstring>
+        <name>update_parabolic</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::update_parabolic</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="98" column="8" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="98" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParabolicUpdate__explicit_1ae16264c0fe8db020b82c9a47119e5e02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+          <param>
+            <type>typename ParabolicTerm</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::ParabolicUpdate_explicit::update_aux</definition>
+        <argsstring>(UserData &amp;U, real_t dt)</argsstring>
+        <name>update_aux</name>
+        <qualifiedname>dyablo::ParabolicUpdate_explicit::update_aux</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="112" column="8" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="112" bodyend="185"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Kernel implementing an explicit update for a parabolic term. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>configMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration map of the run </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>foreach_cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Traversal used for the calculation of the kernel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handles to time kernel application </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>term_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of parabolic term being solved </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::ParabolicUpdate</label>
+        <link refid="classdyablo_1_1ParabolicUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParabolicUpdate_explicit</label>
+        <link refid="classdyablo_1_1ParabolicUpdate__explicit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ConfigMap</label>
+        <link refid="classConfigMap"/>
+      </node>
+      <node id="5">
+        <label>Timers</label>
+        <link refid="classTimers"/>
+      </node>
+      <node id="3">
+        <label>dyablo::AMRBlockForeachCell_impl&lt; AMRBlockForeachCell_group_impl::PatchManager &gt;</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__impl"/>
+      </node>
+      <node id="6">
+        <label>dyablo::BoundaryConditions</label>
+        <link refid="classdyablo_1_1BoundaryConditions"/>
+      </node>
+      <node id="2">
+        <label>dyablo::ParabolicUpdate</label>
+        <link refid="classdyablo_1_1ParabolicUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParabolicUpdate_explicit</label>
+        <link refid="classdyablo_1_1ParabolicUpdate__explicit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>foreach_cell</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>configMap</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>timers</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>bc_manager</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" line="72" column="1" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_explicit.cpp" bodystart="72" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1aef0fff8347349e99fc346c2160a672e8" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>bc_manager</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1affbf9df7f50f3d34662e7a35c8b7774d" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>configMap</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1aed737243f787e1d495e5de77484ff62b" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1ab5a2a16814a974c8b0b704b8bca3fd0b" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>gamma0</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1a41a7ba5e93e2ffeac846437b5a5c7cbc" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>ParabolicUpdate_explicit</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1ae8850fd45cd7602c2c70be73b62ec27e" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>term_type</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1abedf038f38807cc0e6f910178dfbe77a" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1a13a4bff83c66584ca2fc262e2b82808d" prot="public" virt="virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>update</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1ae16264c0fe8db020b82c9a47119e5e02" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>update_aux</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate__explicit_1a7228b5c429c380f70118bc9ff3a5262e" prot="public" virt="non-virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>update_parabolic</name></member>
+      <member refid="classdyablo_1_1ParabolicUpdate_1a606cecbbef9a2cbd9b3a4ee559b4a927" prot="public" virt="virtual"><scope>dyablo::ParabolicUpdate_explicit</scope><name>~ParabolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

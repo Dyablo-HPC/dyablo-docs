@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams" kind="struct" language="C++" prot="private">
+    <compoundname>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1a8a25c1a701db14ee5d088ab82634b2f2" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="345" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1a0710a5275a6b560079d4f9d1e01c626c" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="346" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1ae654531d37114a76167727b0f616fd0a" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="347" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1a7a0f888e82b58c5c96e3ef5df19cc057" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::smalle</definition>
+        <argsstring></argsstring>
+        <name>smalle</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::smalle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="348" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1aad54c9a0203661b7045222cc92f7e3a7" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::c_h</definition>
+        <argsstring></argsstring>
+        <name>c_h</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams::c_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="349" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="344" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="344" bodyend="350"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1aad54c9a0203661b7045222cc92f7e3a7" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams</scope><name>c_h</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1a8a25c1a701db14ee5d088ab82634b2f2" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1a7a0f888e82b58c5c96e3ef5df19cc057" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams</scope><name>smalle</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1ae654531d37114a76167727b0f616fd0a" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__GLMMHD__hlld_1_1Rparams_1a0710a5275a6b560079d4f9d1e01c626c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_GLMMHD_hlld::Rparams</scope><name>smallr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

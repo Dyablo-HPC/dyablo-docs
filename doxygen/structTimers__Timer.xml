@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structTimers__Timer" kind="struct" language="C++" prot="public">
+    <compoundname>Timers_Timer</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structTimers__Timer_1a0f2db676d4029190254900027edd0bef" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Elapsed_mode_t</name>
+        <qualifiedname>Timers_Timer::Elapsed_mode_t</qualifiedname>
+        <enumvalue id="structTimers__Timer_1a0f2db676d4029190254900027edd0befa25aadb20b0d2c3f1c19fc715e68126c7" prot="public">
+          <name>ELAPSED_CPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structTimers__Timer_1a0f2db676d4029190254900027edd0befa6b9250655f68052728f4f2f0a6086bce" prot="public">
+          <name>ELAPSED_GPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" line="14" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTimers__Timer_1abe97a7d5045e7ebd362166b0e126fd32" prot="public" static="no" mutable="no">
+        <type><ref refid="structTimers__Timer__pimpl" kindref="compound">Timers_Timer_pimpl</ref> *</type>
+        <definition>Timers_Timer_pimpl* Timers_Timer::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Timers_Timer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" line="20" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structTimers__Timer_1a75dcfa839e07729ea1e7756c92602a10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timers_Timer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>Timers_Timer::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" line="12" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__Timer_1a03a18ab4d140d0414114efd97a91aad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timers_Timer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>Timers_Timer::stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" line="13" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="structTimers__Timer_1a51b67cf507c01a186059476ba991404b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Timers_Timer::elapsed</definition>
+        <argsstring>(Elapsed_mode_t mode) const</argsstring>
+        <name>elapsed</name>
+        <qualifiedname>Timers_Timer::elapsed</qualifiedname>
+        <param>
+          <type>Elapsed_mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" line="19" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.cpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>OpenMPTimer</label>
+        <link refid="classOpenMPTimer"/>
+      </node>
+      <node id="1">
+        <label>Timers_Timer</label>
+        <link refid="structTimers__Timer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Timers_Timer_pimpl</label>
+        <link refid="structTimers__Timer__pimpl"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parent_timers</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>omp_timer</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Timers_pimpl</label>
+        <link refid="structTimers__pimpl"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>current_timer</edgelabel>
+          <edgelabel>timer_total</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/Timers.h" bodystart="11" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structTimers__Timer_1abe97a7d5045e7ebd362166b0e126fd32" prot="public" virt="non-virtual"><scope>Timers_Timer</scope><name>data</name></member>
+      <member refid="structTimers__Timer_1a51b67cf507c01a186059476ba991404b" prot="public" virt="non-virtual"><scope>Timers_Timer</scope><name>elapsed</name></member>
+      <member refid="structTimers__Timer_1a0f2db676d4029190254900027edd0befa25aadb20b0d2c3f1c19fc715e68126c7" prot="public" virt="non-virtual"><scope>Timers_Timer</scope><name>ELAPSED_CPU</name></member>
+      <member refid="structTimers__Timer_1a0f2db676d4029190254900027edd0befa6b9250655f68052728f4f2f0a6086bce" prot="public" virt="non-virtual"><scope>Timers_Timer</scope><name>ELAPSED_GPU</name></member>
+      <member refid="structTimers__Timer_1a0f2db676d4029190254900027edd0bef" prot="public" virt="non-virtual"><scope>Timers_Timer</scope><name>Elapsed_mode_t</name></member>
+      <member refid="structTimers__Timer_1a75dcfa839e07729ea1e7756c92602a10" prot="public" virt="non-virtual"><scope>Timers_Timer</scope><name>start</name></member>
+      <member refid="structTimers__Timer_1a03a18ab4d140d0414114efd97a91aad0" prot="public" virt="non-virtual"><scope>Timers_Timer</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

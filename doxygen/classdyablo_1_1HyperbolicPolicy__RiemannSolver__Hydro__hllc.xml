@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl" prot="public" virt="non-virtual">dyablo::HyperbolicPolicy_Hydro_impl</derivedcompoundref>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1_1Rparams" prot="private">dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a0379625e8e63770b12a80784c8a906d3" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1HyperbolicPolicy__State__Hydro" kindref="compound">HyperbolicPolicy_State_Hydro</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::State =  HyperbolicPolicy_State_Hydro</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="250" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a632156bf23c050ee86495dec3cc1b1e0" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">State::PrimState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::PrimState =  State::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="251" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a6159ef327158f75993af966f5cc39ed6" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">State::ConsState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::ConsState =  State::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="252" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a1905516102ba12fbe00477ab6b28c05a" prot="private" static="no" mutable="no">
+        <type>struct dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams</type>
+        <definition>struct dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::Rparams dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::rparams</definition>
+        <argsstring></argsstring>
+        <name>rparams</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::rparams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="247" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a8119b334d7448f0eed2d0abc443bd00f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::HyperbolicPolicy_RiemannSolver_Hydro_hllc</definition>
+        <argsstring>(const HyperbolicPolicy_Hydro_Params &amp;params)</argsstring>
+        <name>HyperbolicPolicy_RiemannSolver_Hydro_hllc</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::HyperbolicPolicy_RiemannSolver_Hydro_hllc</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="254" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="254" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1afc85a618c0b5d0128fce6460ccabbf81" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::riemann_solver</definition>
+        <argsstring>(PrimState qL, PrimState qR, ComponentIndex3D dir) const</argsstring>
+        <name>riemann_solver</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::riemann_solver</qualifiedname>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>qL</declname>
+        </param>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>qR</declname>
+        </param>
+        <param>
+          <type>ComponentIndex3D</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="265" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="265" bodyend="272"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a2f92a4792d8ac514cb9fc86fa38e7505" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION PrimState dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::swapComponents</definition>
+        <argsstring>(const PrimState &amp;q, ComponentIndex3D comp) const</argsstring>
+        <name>swapComponents</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::swapComponents</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>ComponentIndex3D</type>
+          <declname>comp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="277" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="277" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a4a256f6c75465d4151220e73de708890" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::swapComponents</definition>
+        <argsstring>(const ConsState &amp;u, ComponentIndex3D comp) const</argsstring>
+        <name>swapComponents</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::swapComponents</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsState</ref> &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>ComponentIndex3D</type>
+          <declname>comp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="294" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="294" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a1ff6b3aca098f16e36a5d44d4ef80120" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::riemann_hllc</definition>
+        <argsstring>(PrimState qleft, PrimState qright) const</argsstring>
+        <name>riemann_hllc</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc::riemann_hllc</qualifiedname>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>qleft</declname>
+        </param>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>qright</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="311" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="311" bodyend="410"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_Hydro_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc"/>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="239" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="240" bodyend="412"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a6159ef327158f75993af966f5cc39ed6" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a8119b334d7448f0eed2d0abc443bd00f" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>HyperbolicPolicy_RiemannSolver_Hydro_hllc</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a632156bf23c050ee86495dec3cc1b1e0" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a1ff6b3aca098f16e36a5d44d4ef80120" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>riemann_hllc</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1afc85a618c0b5d0128fce6460ccabbf81" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>riemann_solver</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a1905516102ba12fbe00477ab6b28c05a" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>rparams</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a0379625e8e63770b12a80784c8a906d3" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>State</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a2f92a4792d8ac514cb9fc86fa38e7505" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>swapComponents</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a4a256f6c75465d4151220e73de708890" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</scope><name>swapComponents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

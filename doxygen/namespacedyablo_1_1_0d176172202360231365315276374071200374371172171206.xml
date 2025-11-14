@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1_0d176172202360231365315276374071200374371172171206" kind="namespace" language="C++">
+    <compoundname>dyablo</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedyablo_1_1_0d176172202360231365315276374071200374371172171206_1a8a2ba9e8fef9232dc451021a7fab2236" prot="public" static="no" strong="no">
+        <type></type>
+        <name>VarIndex_CG</name>
+        <qualifiedname>dyablo::VarIndex_CG</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="73" column="1" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.cpp" line="67" column="1"/>
+  </compounddef>
+</doxygen>

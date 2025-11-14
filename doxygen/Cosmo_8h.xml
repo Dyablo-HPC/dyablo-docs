@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="Cosmo_8h" kind="file" language="C++">
+    <compoundname>Cosmo.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="Units_8h" local="yes">utils/units/Units.h</includes>
+    <includedby refid="DyabloTimeLoop_8h" local="yes">/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</includedby>
+    <includedby refid="Compute__dt__cosmology_8cpp" local="yes">/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_cosmology.cpp</includedby>
+    <includedby refid="InitialConditions__zeldovitch__pancake_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_zeldovitch_pancake.cpp</includedby>
+    <includedby refid="InitialConditions__zeldovitch__particles_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_zeldovitch_particles.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/Cosmo.h</label>
+        <link refid="Cosmo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>utils/units/Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/Cosmo.h</label>
+        <link refid="Cosmo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</label>
+        <link refid="DyabloTimeLoop_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdyablo_1_1CosmoManager" prot="public">dyablo::CosmoManager</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <innernamespace refid="namespacedyablo_1_1Impl">dyablo::Impl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/units/Units.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Impl<sp/>{<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">real_t<sp/>lookup_interpolate(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;real_t&gt;&amp;<sp/>lookup_x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;real_t&gt;&amp;<sp/>lookup_y,<sp/>real_t<sp/>x<sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>x<sp/>==<sp/>lookup_x[0])</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lookup_y[0];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lower_bound_it<sp/>=<sp/>std::lower_bound(<sp/>lookup_x.begin(),<sp/>lookup_x.end(),<sp/>x<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>lower_bound_it<sp/>-<sp/>lookup_x.begin();<sp/></highlight><highlight class="comment">//<sp/>First<sp/>greater<sp/>or<sp/>equal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>x_interp<sp/>=<sp/>(<sp/>x<sp/>-<sp/>lookup_x[i-1]<sp/>)<sp/>/<sp/>(<sp/>lookup_x[i]<sp/>-<sp/>lookup_x[i-1]<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lookup_y[i-1]<sp/>+<sp/>x_interp<sp/>*<sp/>(<sp/>lookup_y[i]<sp/>-<sp/>lookup_y[i-1]<sp/><sp/>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/***</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>Integrate<sp/>function<sp/>f<sp/>in<sp/>[a,b]<sp/>with<sp/>accuracy<sp/>&apos;acc&apos;<sp/>and<sp/>steps<sp/>&apos;max_steps&apos;</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>using<sp/>Romberg&apos;s<sp/>method</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>https://en.wikipedia.org/wiki/Romberg%27s_method</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>@param<sp/>f<sp/>:<sp/>real_t<sp/>-&gt;<sp/>real_t<sp/>function<sp/>to<sp/>integrate</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>@param<sp/>a<sp/>:<sp/>lower<sp/>limit</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>@param<sp/>b<sp/>:<sp/>upper<sp/>limit</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>@param<sp/>max_steps:<sp/>maximum<sp/>steps<sp/>of<sp/>the<sp/>procedure</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>@param<sp/>acc<sp/><sp/>:<sp/>desired<sp/>accuracy</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_steps,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func<sp/></highlight><highlight class="comment">/*<sp/>real_t<sp/>-&gt;<sp/>real_t<sp/>*/</highlight><highlight class="normal"><sp/>&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">real_t<sp/>romberg(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Func&amp;<sp/>f,<sp/>real_t<sp/>a,<sp/>real_t<sp/>b,<sp/>real_t<sp/>acc)<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>real_t<sp/>R1[max_steps],<sp/>R2[max_steps];<sp/></highlight><highlight class="comment">//<sp/>buffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>real_t<sp/>*Rp<sp/>=<sp/>&amp;R1[0],<sp/>*Rc<sp/>=<sp/>&amp;R2[0];<sp/></highlight><highlight class="comment">//<sp/>Rp<sp/>is<sp/>previous<sp/>row,<sp/>Rc<sp/>is<sp/>current<sp/>row</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>real_t<sp/>h<sp/>=<sp/>b-a;<sp/></highlight><highlight class="comment">//step<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>Rp[0]<sp/>=<sp/>(f(a)<sp/>+<sp/>f(b))*h*0.5;<sp/></highlight><highlight class="comment">//<sp/>first<sp/>trapezoidal<sp/>step</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>max_steps;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>/=<sp/>2.;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>c<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ep<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>(i-1);<sp/></highlight><highlight class="comment">//2^(n-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>1;<sp/>j<sp/>&lt;=<sp/>ep;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>+=<sp/>f(a<sp/>+<sp/>(2*j-1)<sp/>*<sp/>h);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Rc[0]<sp/>=<sp/>h*c<sp/>+<sp/>.5*Rp[0];<sp/></highlight><highlight class="comment">//<sp/>R(i,0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>1;<sp/>j<sp/>&lt;=<sp/>i;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>n_k<sp/>=<sp/>pow(4,<sp/>j);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Rc[j]<sp/>=<sp/>(n_k*Rc[j-1]<sp/>-<sp/>Rp[j-1])<sp/>/<sp/>(n_k-1);<sp/></highlight><highlight class="comment">//<sp/>compute<sp/>R(i,j)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&gt;<sp/>1<sp/>&amp;&amp;<sp/>fabs(Rp[i-1]-Rc[i])<sp/>&lt;<sp/>acc)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Rc[i];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>swap<sp/>Rn<sp/>and<sp/>Rc<sp/>as<sp/>we<sp/>only<sp/>need<sp/>the<sp/>last<sp/>row</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>*rt<sp/>=<sp/>Rp;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>Rp<sp/>=<sp/>Rc;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>Rc<sp/>=<sp/>rt;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;WARNING<sp/>:<sp/>Romberg<sp/>did<sp/>not<sp/>converge<sp/>in<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>max_steps<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>iterations;<sp/>Error<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fabs(Rp[max_steps-1]-Rc[max_steps])<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Rp[max_steps-1];<sp/></highlight><highlight class="comment">//<sp/>return<sp/>our<sp/>best<sp/>guess</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Impl::</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classdyablo_1_1CosmoManager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CosmoManager<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>real_t<sp/>integrate_da_dt(real_t<sp/>omega_m,<sp/>real_t<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>,<sp/>real_t<sp/>a,<sp/>real_t<sp/>b,<sp/>real_t<sp/>tol)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iterations=16;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>faexp_tilde<sp/>=<sp/>[&amp;](real_t<sp/>aexp)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0<sp/>/<sp/>sqrt(std::pow(aexp,<sp/>4)<sp/>*<sp/>(1.0-omega_m-<ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>)<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>std::pow(aexp,<sp/>3)<sp/>*<sp/>omega_m<sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>std::pow(aexp,<sp/>6)<sp/>*<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Impl::romberg&lt;max_iterations&gt;(<sp/>faexp_tilde,<sp/>a,<sp/>b,<sp/>tol<sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>real_t<sp/>integrate_da_dt_physical(real_t<sp/>omega_m,<sp/>real_t<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>,<sp/>real_t<sp/>a,<sp/>real_t<sp/>b,<sp/>real_t<sp/>tol)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iterations=16;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>faexp_tilde<sp/>=<sp/>[&amp;](real_t<sp/>aexp)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aexp*aexp<sp/>/<sp/>sqrt(std::pow(aexp,<sp/>4)<sp/>*<sp/>(1.0-omega_m-<ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>)<sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>std::pow(aexp,<sp/>3)<sp/>*<sp/>omega_m<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>std::pow(aexp,<sp/>6)<sp/>*<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Impl::romberg&lt;max_iterations&gt;(<sp/>faexp_tilde,<sp/>a,<sp/>b,<sp/>tol<sp/>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>CosmoManager(<ref refid="classConfigMap" kindref="compound">ConfigMap</ref><sp/>&amp;configMap)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classdyablo_1_1CosmoManager_1a795ff0b949d0bab2caec08153e6be186" kindref="member">cosmo_run</ref>(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;active&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>omega_m(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;omegam&quot;</highlight><highlight class="normal">,<sp/>0.3)),</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;omegav&quot;</highlight><highlight class="normal">,<sp/>0.7)),</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>a_start(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;aStart&quot;</highlight><highlight class="normal">,<sp/>1.0)),</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1CosmoManager_1aeb927bf31fa309d0ff25b92ead6f4648" kindref="member">a_end</ref>(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;aEnd&quot;</highlight><highlight class="normal">,<sp/>1.00)),</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" kindref="member">da</ref>(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;da&quot;</highlight><highlight class="normal">,<sp/>1.02)),</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>save_expansion_table(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;save_expansion_table&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>lookup_size(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;lookup_size&quot;</highlight><highlight class="normal">,<sp/>1024))<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classdyablo_1_1CosmoManager_1a795ff0b949d0bab2caec08153e6be186" kindref="member">cosmo_run</ref>)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Inv_Time<sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>1/Units::s()<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;H0<sp/>=<sp/>configMap.<ref refid="classConfigMap_1abfca4fda6db64a0e16f84d649dbfea08" kindref="member">getValue_in_code_unit</ref>&lt;Inv_Time&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;H0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>computeFLM();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>real_t<sp/>timeToExpansion(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>time)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Impl::lookup_interpolate(<sp/>lookup_t,<sp/>lookup_a,<sp/>time<sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>real_t<sp/>expansionToTime(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>aexp)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>lookup_a[0]<sp/>&lt;=<sp/>aexp<sp/>&amp;&amp;<sp/>aexp<sp/>&lt;=<sp/>lookup_a[lookup_a.size()-1],<sp/></highlight><highlight class="stringliteral">&quot;aexp<sp/>out<sp/>of<sp/>range<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>aexp<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>in<sp/>[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lookup_a[0]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lookup_a[lookup_a.size()-1]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Impl::lookup_interpolate(<sp/>lookup_a,<sp/>lookup_t,<sp/>aexp+0.0000000001<sp/>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>computeFLM()<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>a_ext<sp/>=<sp/><ref refid="classdyablo_1_1CosmoManager_1aeb927bf31fa309d0ff25b92ead6f4648" kindref="member">a_end</ref><sp/>*<sp/>1.1;<sp/></highlight><highlight class="comment">//<sp/>Getting<sp/>a<sp/>safety<sp/>margin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>delta_a<sp/>=<sp/>a_ext<sp/>-<sp/>a_start;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>lookup_a.reserve(lookup_size);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>lookup_t.reserve(lookup_size);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>lookup_size;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>a<sp/>=<sp/>a_start<sp/>+<sp/>i*delta_a<sp/>/<sp/>(lookup_size-1);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>t<sp/>=<sp/>-1.0/H0<sp/>*<sp/>integrate_da_dt(omega_m,<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>,<sp/>a,<sp/>1.0,<sp/>1.0e-8);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>lookup_a.push_back(a);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>lookup_t.push_back(t);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(save_expansion_table)<sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>f_out(</highlight><highlight class="stringliteral">&quot;expansion_table.dat&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>f_out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#a<sp/>t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>lookup_size;<sp/>++i)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f_out<sp/>&lt;&lt;<sp/>lookup_a[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lookup_t[i]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classdyablo_1_1CosmoManager_1a3523c00824653def9d1b042b0791f956" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>real_t<sp/><ref refid="classdyablo_1_1CosmoManager_1a3523c00824653def9d1b042b0791f956" kindref="member">static_compute_cosmo_dt</ref>(real_t<sp/>omega_m,<sp/>real_t<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>,<sp/>real_t<sp/>H0,<sp/>real_t<sp/>a,<sp/>real_t<sp/><ref refid="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" kindref="member">da</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0/H0*(<ref refid="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" kindref="member">da</ref>-1.0)*a/sqrt(std::pow(a,<sp/>4)<sp/>*<sp/>(1.0-omega_m-<ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>)<sp/>+<sp/>std::pow(a,<sp/>3)<sp/>*<sp/>omega_m<sp/>+<sp/>std::pow(a,<sp/>6)<sp/>*<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>real_t<sp/>compute_cosmo_dt(real_t<sp/>a)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1CosmoManager_1a3523c00824653def9d1b042b0791f956" kindref="member">static_compute_cosmo_dt</ref>(omega_m,<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>,<sp/>H0,<sp/>a,<sp/><ref refid="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" kindref="member">da</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>real_t<sp/>compute_physical_t(real_t<sp/>a)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1.0/H0<sp/>*<sp/>integrate_da_dt_physical(omega_m,<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>,<sp/>a,<sp/>1.0,<sp/>1.0e-8);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classdyablo_1_1CosmoManager_1a795ff0b949d0bab2caec08153e6be186" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1CosmoManager_1a795ff0b949d0bab2caec08153e6be186" kindref="member">cosmo_run</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186" refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" refkind="member"><highlight class="normal"><sp/><sp/>real_t<sp/>omega_m,<sp/><ref refid="classdyablo_1_1CosmoManager_1ab7186c7b1db58fbbcb2a8742e20b51d6" kindref="member">omega_v</ref>;<sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>real_t<sp/>H0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hubble<sp/>Parameter<sp/>at<sp/>z=0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classdyablo_1_1CosmoManager_1aeb927bf31fa309d0ff25b92ead6f4648" refkind="member"><highlight class="normal"><sp/><sp/>real_t<sp/>a_start,<sp/><ref refid="classdyablo_1_1CosmoManager_1aeb927bf31fa309d0ff25b92ead6f4648" kindref="member">a_end</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189" refid="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" refkind="member"><highlight class="normal"><sp/><sp/>real_t<sp/><ref refid="classdyablo_1_1CosmoManager_1ad06cac7e573d7a3a97feb2e9fceb12ac" kindref="member">da</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save_expansion_table;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lookup_size;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>std::vector&lt;real_t&gt;<sp/>lookup_a;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>std::vector&lt;real_t&gt;<sp/>lookup_t;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/Cosmo.h"/>
+  </compounddef>
+</doxygen>

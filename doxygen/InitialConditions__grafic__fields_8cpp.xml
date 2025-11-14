@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="InitialConditions__grafic__fields_8cpp" kind="file" language="C++">
+    <compoundname>InitialConditions_grafic_fields.cpp</compoundname>
+    <includes refid="InitialConditions__base_8h" local="yes">InitialConditions_base.h</includes>
+    <includes refid="FortranBinaryReader_8h" local="yes">utils/io/FortranBinaryReader.h</includes>
+    <includes refid="Units_8h" local="yes">utils/units/Units.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="37">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp</label>
+        <link refid="InitialConditions__grafic__fields_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>mpi/ViewCommunicator.h</label>
+        <link refid="ViewCommunicator_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>particles/ForeachParticle.h</label>
+        <link refid="ForeachParticle_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>particles/ParticleArray.h</label>
+        <link refid="ParticleArray_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>userdata_utils.h</label>
+        <link refid="userdata__utils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>utils/io/FortranBinaryReader.h</label>
+        <link refid="FortranBinaryReader_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>utils/misc/RegisteringFactory.h</label>
+        <link refid="RegisteringFactory_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>utils/monitoring/Timers.h</label>
+        <link refid="Timers_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="48">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="26">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="32">
+        <label>any</label>
+      </node>
+      <node id="44">
+        <label>array</label>
+      </node>
+      <node id="35">
+        <label>cassert</label>
+      </node>
+      <node id="41">
+        <label>cstddef</label>
+      </node>
+      <node id="40">
+        <label>cstdint</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="20">
+        <label>iomanip</label>
+      </node>
+      <node id="8">
+        <label>iosfwd</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="21">
+        <label>limits</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="43">
+        <label>memory</label>
+      </node>
+      <node id="11">
+        <label>set</label>
+      </node>
+      <node id="19">
+        <label>sstream</label>
+      </node>
+      <node id="51">
+        <label>stdexcept</label>
+      </node>
+      <node id="28">
+        <label>stdio.h</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="52">
+        <label>tuple</label>
+      </node>
+      <node id="23">
+        <label>type_traits</label>
+      </node>
+      <node id="10">
+        <label>unordered_map</label>
+      </node>
+      <node id="38">
+        <label>utility</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classdyablo_1_1InitialConditions__grafic__fields" prot="public">dyablo::InitialConditions_grafic_fields</innerclass>
+    <innerclass refid="structdyablo_1_1InitialConditions__grafic__fields_1_1grafic__header" prot="private">dyablo::InitialConditions_grafic_fields::grafic_header</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="InitialConditions__grafic__fields_8cpp_1a1e3526d92934b618d0ba3ef2cbca335c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FACTORY_REGISTER</definition>
+        <argsstring>(dyablo::InitialConditionsFactory, dyablo::InitialConditions_grafic_fields, &quot;grafic_fields&quot;)</argsstring>
+        <name>FACTORY_REGISTER</name>
+        <param>
+          <type><ref refid="classRegisteringFactory" kindref="compound">dyablo::InitialConditionsFactory</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1InitialConditions__grafic__fields" kindref="compound">dyablo::InitialConditions_grafic_fields</ref></type>
+        </param>
+        <param>
+          <type>&quot;grafic_fields&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="299" column="1" declfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" declline="299" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;InitialConditions_base.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/io/FortranBinaryReader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utils/units/Units.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classdyablo_1_1InitialConditions__grafic__fields" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">InitialConditions_grafic_fields<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1InitialConditions" kindref="compound">InitialConditions</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">grafic_header</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>nx,ny,nz;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dx;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xo,yo,zo;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>astart;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>om,ov,H0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>InitialConditions_grafic_fields(</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>configMap,<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ForeachCell&amp;<sp/>foreach_cell,<sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTimers" kindref="compound">Timers</ref>&amp;<sp/>timers<sp/>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>foreach_cell(foreach_cell),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>gamma0(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;gamma0&quot;</highlight><highlight class="normal">,<sp/>1.4)),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>smallr(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;smallr&quot;</highlight><highlight class="normal">,<sp/>1e-10)),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>smallc(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;smallc&quot;</highlight><highlight class="normal">,<sp/>1e-10)),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>smallp(configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;hydro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;smallp&quot;</highlight><highlight class="normal">,<sp/>1e-10))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref>&amp;<sp/>pmesh<sp/>=<sp/>foreach_cell.get_amr_mesh();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bx<sp/>=<sp/>foreach_cell.blockSize()[IX];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_level<sp/>=<sp/>pmesh.get_level_min()<sp/>+<sp/>std::log2(bx);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;graficDir<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;grafic&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;inputDir&quot;</highlight><highlight class="normal">,<sp/>std::string(</highlight><highlight class="stringliteral">&quot;data/IC_&quot;</highlight><highlight class="normal">)+std::to_string(cell_level));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>header<sp/>from<sp/>grafic<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>grafic_header<sp/>header;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>grafic_filename<sp/>=<sp/>this-&gt;graficDir<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/ic_deltab&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>grafic_file(grafic_filename<sp/>,<sp/>std::ios::in|std::ios::binary<sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(grafic_file,<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>open<sp/>grafic<sp/>file<sp/>:<sp/>`&quot;</highlight><highlight class="normal"><sp/>+<sp/>grafic_filename<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;`&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>FortranBinaryReader::read_record(<sp/>grafic_file,<sp/>&amp;header,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1InitialConditions__grafic__fields_1a47bd7ba56f7b063f873f468b526e4fe6" kindref="member">printHeader</ref>(header,<sp/>graficDir);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>values<sp/>are<sp/>the<sp/>same<sp/>as<sp/>.ini<sp/>(or<sp/>create<sp/>new<sp/>entries)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>set_or_check<sp/>=<sp/>[&amp;](<sp/>std::string<sp/>section,<sp/>std::string<sp/>param,<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>val<sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">T<sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(val);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>configMap.hasValue(section,<sp/>param)<sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;<sp/>T<sp/>&gt;(section,<sp/>param)<sp/>==<sp/>val,<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;.ini<sp/>parameter<sp/>does<sp/>not<sp/>match<sp/>grafic<sp/>file<sp/>:<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.ini<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>section<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>param<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;<sp/>T<sp/>&gt;(section,<sp/>param)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>grafic_filename<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>:<sp/>`&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>Impl::to_string(<sp/>val<sp/>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;`&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;<sp/>T<sp/>&gt;(section,<sp/>param,<sp/>val);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>code_time<sp/>=<sp/>Units::code_units().getUnit(Units::s());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>code_length<sp/>=<sp/>Units::code_units().getUnit(Units::m());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>0<sp/>==<sp/>header.nx%foreach_cell.blockSize()[IX],<sp/></highlight><highlight class="stringliteral">&quot;Block<sp/>size<sp/>(x)<sp/>is<sp/>not<sp/>compatible<sp/>with<sp/>grafic<sp/>file&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>0<sp/>==<sp/>header.ny%foreach_cell.blockSize()[IY],<sp/></highlight><highlight class="stringliteral">&quot;Block<sp/>size<sp/>(y)<sp/>is<sp/>not<sp/>compatible<sp/>with<sp/>grafic<sp/>file&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>0<sp/>==<sp/>header.nz%foreach_cell.blockSize()[IZ],<sp/></highlight><highlight class="stringliteral">&quot;Block<sp/>size<sp/>(z)<sp/>is<sp/>not<sp/>compatible<sp/>with<sp/>grafic<sp/>file&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;amr&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;coarse_oct_resolution_x&quot;</highlight><highlight class="normal">,<sp/>header.nx/foreach_cell.blockSize()[IX]<sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;amr&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;coarse_oct_resolution_y&quot;</highlight><highlight class="normal">,<sp/>header.ny/foreach_cell.blockSize()[IY]<sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;amr&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;coarse_oct_resolution_z&quot;</highlight><highlight class="normal">,<sp/>header.nz/foreach_cell.blockSize()[IZ]<sp/>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;xmin<sp/>=<sp/>header.xo<sp/>*<sp/>Units::Mpc().convert_to(<sp/>code_length<sp/>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;xmin&quot;</highlight><highlight class="normal">,<sp/>this-&gt;xmin<sp/>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ymin<sp/>=<sp/>header.yo<sp/>*<sp/>Units::Mpc().convert_to(<sp/>code_length<sp/>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ymin&quot;</highlight><highlight class="normal">,<sp/>this-&gt;ymin<sp/>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;zmin<sp/>=<sp/>header.zo<sp/>*<sp/>Units::Mpc().convert_to(<sp/>code_length<sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;zmin&quot;</highlight><highlight class="normal">,<sp/>this-&gt;zmin<sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;astart<sp/>=<sp/>header.astart;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;astart&quot;</highlight><highlight class="normal">,<sp/>header.astart<sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;omegam<sp/>=<sp/>header.om;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;omegam&quot;</highlight><highlight class="normal">,<sp/>omegam<sp/>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;omegav&quot;</highlight><highlight class="normal">,<sp/>header.ov<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;omegab<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;omegab&quot;</highlight><highlight class="normal">,<sp/>0.049);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>H0_u<sp/>=<sp/>header.H0<sp/>*<sp/>Units::km()<sp/>/<sp/>Units::s()<sp/>/<sp/>Units::Mpc();<sp/></highlight><highlight class="comment">//<sp/>Hubble<sp/>constant<sp/>from<sp/>grafic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;H0<sp/>=<sp/>H0_u.convert_to(<sp/>1/code_time<sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Inv_Time<sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>1/Units::s()<sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>H0_ini<sp/>=<sp/>configMap.<ref refid="classConfigMap_1abfca4fda6db64a0e16f84d649dbfea08" kindref="member">getValue_in_code_unit</ref>&lt;Inv_Time&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;H0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>H0<sp/>==<sp/>H0_ini,<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;.ini<sp/>parameter<sp/>does<sp/>not<sp/>match<sp/>grafic<sp/>file<sp/>:<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.ini<sp/>cosmology/H0<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>H0_ini<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;grafic<sp/>file<sp/>:<sp/>`&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;H0<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;`&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>dx<sp/>=<sp/>(header.dx<sp/>*<sp/>Units::Mpc()).convert_to(code_length);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;dx&quot;</highlight><highlight class="normal">,<sp/>dx<sp/>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;xmax<sp/>=<sp/>xmin<sp/>+<sp/>header.nx<sp/>*<sp/>dx;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;xmax&quot;</highlight><highlight class="normal">,<sp/>xmax<sp/><sp/>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ymax<sp/>=<sp/>ymin<sp/>+<sp/>header.ny<sp/>*<sp/>dx;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ymax&quot;</highlight><highlight class="normal">,<sp/>ymax<sp/><sp/>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;zmax<sp/>=<sp/>zmin<sp/>+<sp/>header.nz<sp/>*<sp/>dx;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>set_or_check(<sp/></highlight><highlight class="stringliteral">&quot;mesh&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;zmax&quot;</highlight><highlight class="normal">,<sp/>zmax<sp/><sp/>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>four_pi_G<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;gravity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;4_Pi_G&quot;</highlight><highlight class="normal">,<sp/>4<sp/>*<sp/>M_PI<sp/>*<sp/>Units::constant_to_code_units(Units::NEWTON_G()));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rhoc<sp/>=<sp/>(3.<sp/>*<sp/>H0<sp/>*<sp/>H0<sp/>/<sp/>(2<sp/>*<sp/>four_pi_G));<sp/></highlight><highlight class="comment">//<sp/>comoving<sp/>critical<sp/>density<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mean<sp/>mass<sp/>for<sp/>a<sp/>raw<sp/>cell<sp/>used<sp/>for<sp/>refinement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Lbox<sp/>=<sp/>(xmax-xmin);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass0<sp/>=<sp/>rhoc<sp/>*<sp/>omegam<sp/>*<sp/>(dx<sp/>*<sp/>dx<sp/>*<sp/>dx);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mean<sp/>mass<sp/>per<sp/>cell<sp/>(code<sp/>Units)=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mass0<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>mass_coarsen_factor<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mass_coarsen_factor&quot;</highlight><highlight class="normal">,<sp/>0.1);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>mass_refine_factor<sp/>=<sp/>configMap.<ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue</ref>&lt;real_t&gt;(</highlight><highlight class="stringliteral">&quot;cosmology&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mass_refine_factor&quot;</highlight><highlight class="normal">,<sp/>1.0);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>set_or_check(</highlight><highlight class="stringliteral">&quot;amr&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mass_coarsen&quot;</highlight><highlight class="normal">,<sp/>mass0*mass_coarsen_factor);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>set_or_check(</highlight><highlight class="stringliteral">&quot;amr&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mass_refine&quot;</highlight><highlight class="normal">,<sp/>mass0*mass_refine_factor);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>cosmo_z<sp/>=<sp/>1.<sp/>/<sp/>astart<sp/>-<sp/>1.;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>temp_u<sp/>=<sp/>317.5<sp/>*<sp/>Units::Kelvin()<sp/>*<sp/>(cosmo_z<sp/>*<sp/>cosmo_z)<sp/>/<sp/>(151.0<sp/>*<sp/>151.0);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;temp<sp/>=<sp/>temp_u.convert_to(<sp/>Units::code_units().getUnit&lt;Units::Temperature&gt;()<sp/>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init(<sp/><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref>&amp;<sp/>U<sp/>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>ForeachCell&amp;<sp/>foreach_cell<sp/>=<sp/>this-&gt;foreach_cell;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>header<sp/>from<sp/>ic_deltab</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>grafic_header<sp/>header;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Open<sp/>grafic<sp/>file<sp/>ic_deltab</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>grafic_filename<sp/>=<sp/>this-&gt;graficDir<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/ic_deltab&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>grafic_file(grafic_filename<sp/>,<sp/>std::ios::in|std::ios::binary<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(grafic_file,<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>open<sp/>grafic<sp/>file<sp/>:<sp/>`&quot;</highlight><highlight class="normal"><sp/>+<sp/>grafic_filename<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;`&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FortranBinaryReader::read_record(<sp/>grafic_file,<sp/>&amp;header,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>nx<sp/>=<sp/>header.nx;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ny<sp/>=<sp/>header.ny;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>nz<sp/>=<sp/>header.nz;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>ForeachCell::CellMetaData<sp/>cellmetadata<sp/>=<sp/>foreach_cell.getCellMetaData();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fill_field<sp/>=<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>grafic_file_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>dyablo_field_name)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::View&lt;<sp/>float***,<sp/>Kokkos::LayoutLeft<sp/>&gt;<sp/>grafic_field_device<sp/>(<sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>grafic_file_name,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nx,<sp/>ny,<sp/>nz</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Open<sp/>grafic<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>grafic_filename<sp/>=<sp/>this-&gt;graficDir<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>+<sp/>grafic_file_name;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>grafic_file(grafic_filename<sp/>,<sp/>std::ios::in|std::ios::binary<sp/>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(grafic_file,<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>open<sp/>grafic<sp/>file<sp/>:<sp/>`&quot;</highlight><highlight class="normal"><sp/>+<sp/>grafic_filename<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;`&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>header<sp/>from<sp/>grafic<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>grafic_header<sp/>header;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FortranBinaryReader::read_record(<sp/>grafic_file,<sp/>&amp;header,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>array<sp/>from<sp/>grafic<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>grafic_field_host<sp/>=<sp/>Kokkos::create_mirror_view(<sp/>grafic_field_device<sp/>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint32_t<sp/>z=0;<sp/>z&lt;(uint32_t)nz;<sp/>z++)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FortranBinaryReader::read_record(<sp/>grafic_file,<sp/>&amp;grafic_field_host(0,0,z),<sp/>nx*ny<sp/>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::deep_copy(<sp/>grafic_field_device,<sp/>grafic_field_host<sp/>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>VarIndex<sp/>{<sp/>Ifield<sp/>};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>UserData::FieldAccessor<sp/>U_field<sp/>=<sp/>U.getAccessor({{dyablo_field_name,<sp/>Ifield}});</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>xmin<sp/>=<sp/>this-&gt;xmin;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>ymin<sp/>=<sp/>this-&gt;ymin;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>zmin<sp/>=<sp/>this-&gt;zmin;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>foreach_cell.foreach_cell(<sp/></highlight><highlight class="stringliteral">&quot;InitialConditions_grafic_fields::init_field&quot;</highlight><highlight class="normal">,<sp/>U_field.getShape(),</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ForeachCell::CellIndex&amp;<sp/>iCell<sp/>)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>cellmetadata.<ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ab8e4b6e6dd22565d5020f64f60131abf" kindref="member">getCellCenter</ref>(<sp/>iCell<sp/>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>cellmetadata.<ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData_1ac98682e1c5b375251e8e415daf93b141" kindref="member">getCellSize</ref>(<sp/>iCell<sp/>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>ix<sp/>=<sp/>(c[IX]<sp/>-<sp/>xmin)<sp/>/<sp/>s[IX];</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iy<sp/>=<sp/>(c[IY]<sp/>-<sp/>ymin)<sp/>/<sp/>s[IY];</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iz<sp/>=<sp/>(c[IZ]<sp/>-<sp/>zmin)<sp/>/<sp/>s[IZ];</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>U_field.at(<sp/>iCell,<sp/>Ifield<sp/>)<sp/>=<sp/>grafic_field_device(ix,iy,iz);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sequentially<sp/>read<sp/>density<sp/>and<sp/>velocities<sp/>from<sp/>grafic<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>U.<ref refid="classdyablo_1_1UserData_1ad1e76a0220a8feff2e0a195ef48b9020" kindref="member">new_fields</ref>({</highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;e_tot&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;rho_vx&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;rho_vy&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;rho_vz&quot;</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>fill_field(<sp/></highlight><highlight class="stringliteral">&quot;ic_deltab&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>fill_field(<sp/></highlight><highlight class="stringliteral">&quot;ic_velbx&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rho_vx&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>fill_field(<sp/></highlight><highlight class="stringliteral">&quot;ic_velby&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rho_vy&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>fill_field(<sp/></highlight><highlight class="stringliteral">&quot;ic_velbz&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;rho_vz&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>VarIndex_hydro<sp/>{ID,<sp/>IE,<sp/>IU,<sp/>IV,<sp/>IW};</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>UserData::FieldAccessor<sp/>Uinout<sp/>=<sp/>U.getAccessor({</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho&quot;</highlight><highlight class="normal">,<sp/>ID},</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;e_tot&quot;</highlight><highlight class="normal">,<sp/>IE},</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vx&quot;</highlight><highlight class="normal">,<sp/>IU},</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vy&quot;</highlight><highlight class="normal">,<sp/>IV},</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;rho_vz&quot;</highlight><highlight class="normal">,<sp/>IW}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>gamma0<sp/>=<sp/>this-&gt;gamma0;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>omegab<sp/>=<sp/>this-&gt;omegab;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>astart<sp/>=<sp/>this-&gt;astart;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>smallp<sp/>=<sp/>this-&gt;smallp;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>rhoc<sp/>=<sp/>this-&gt;rhoc;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>temp<sp/>=<sp/>this-&gt;temp;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>grafic_vel<sp/>=<sp/>Units::km()<sp/>/<sp/>Units::s();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>code_density<sp/>=<sp/>Units::code_units().getUnit(Units::kg()<sp/>/<sp/>Units::m3());</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>code_vel<sp/>=<sp/>Units::code_units().getUnit(grafic_vel);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>code_pressure<sp/>=<sp/>Units::code_units().getUnit(Units::Pa());</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>foreach_cell.foreach_cell(<sp/></highlight><highlight class="stringliteral">&quot;InitialConditions_grafic_fields::compute_conservative&quot;</highlight><highlight class="normal">,<sp/>Uinout.getShape(),</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ForeachCell::CellIndex&amp;<sp/>iCell<sp/>)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>cosmo_contrast<sp/>=<sp/>Uinout.at(<sp/>iCell,<sp/>ID<sp/>);<sp/></highlight><highlight class="comment">//<sp/>contrast<sp/>is<sp/>(rho<sp/>-<sp/>rho_mean)<sp/>/<sp/>rho_mean</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>cosmo_velx<sp/>=<sp/>Uinout.at(<sp/>iCell,<sp/>IU<sp/>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>cosmo_vely<sp/>=<sp/>Uinout.at(<sp/>iCell,<sp/>IV<sp/>);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>cosmo_velz<sp/>=<sp/>Uinout.at(<sp/>iCell,<sp/>IW<sp/>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>u<sp/>=<sp/>(cosmo_velx<sp/>*<sp/>grafic_vel).convert_to(code_vel)<sp/>*<sp/>astart;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>v<sp/>=<sp/>(cosmo_vely<sp/>*<sp/>grafic_vel).convert_to(code_vel)<sp/>*<sp/>astart;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>w<sp/>=<sp/>(cosmo_velz<sp/>*<sp/>grafic_vel).convert_to(code_vel)<sp/>*<sp/>astart;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>u2<sp/>=<sp/>u<sp/>*<sp/>u<sp/>+<sp/>v<sp/>*<sp/>v<sp/>+<sp/>w<sp/>*<sp/>w;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rho_tot<sp/>=<sp/>(cosmo_contrast<sp/>+<sp/>1.0)<sp/>*<sp/>rhoc;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rho<sp/>=<sp/>omegab<sp/>*<sp/>rho_tot;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rho_u<sp/>=<sp/>rho<sp/>*<sp/>u;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rho_v<sp/>=<sp/>rho<sp/>*<sp/>v;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>rho_w<sp/>=<sp/>rho<sp/>*<sp/>w;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cosmo_rhob<sp/>=<sp/>rho_tot<sp/>*<sp/>omegab<sp/>/<sp/>(astart<sp/>*<sp/>astart<sp/>*<sp/>astart)<sp/>*<sp/>code_density;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cosmo_pressure_u<sp/>=<sp/>(gamma0<sp/>-<sp/>1.0)<sp/>*<sp/>1.5<sp/>*<sp/>(cosmo_rhob<sp/>*<sp/>(1.<sp/>-<sp/>Units::YHE())<sp/>/<sp/>Units::PROTON_MASS()<sp/>*<sp/>(1.<sp/>+<sp/>Units::yHE()))<sp/>*<sp/>Units::KBOLTZ()<sp/>*<sp/>(temp<sp/>*<sp/>Units::Kelvin());</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>cosmo_pressure<sp/>=<sp/>cosmo_pressure_u.convert_to(<sp/>code_pressure<sp/>);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>p<sp/>=<sp/>fmax(<sp/>cosmo_pressure<sp/>*<sp/>(astart<sp/>*<sp/>astart<sp/>*<sp/>astart<sp/>*<sp/>astart<sp/>*<sp/>astart),<sp/>smallp<sp/>);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>real_t<sp/>e_tot<sp/>=<sp/>rho*u2/2.0<sp/>+<sp/>p/(gamma0-1.0);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hydro</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uinout.at(<sp/>iCell,<sp/>ID<sp/>)<sp/>=<sp/>rho;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uinout.at(<sp/>iCell,<sp/>IE<sp/>)<sp/>=<sp/>e_tot;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uinout.at(<sp/>iCell,<sp/>IU<sp/>)<sp/>=<sp/>rho_u;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uinout.at(<sp/>iCell,<sp/>IV<sp/>)<sp/>=<sp/>rho_v;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Uinout.at(<sp/>iCell,<sp/>IW<sp/>)<sp/>=<sp/>rho_w;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1InitialConditions__grafic__fields_1a47bd7ba56f7b063f873f468b526e4fe6" kindref="member">printHeader</ref>(grafic_header<sp/>hdr,<sp/>std::string<sp/>graficDir){</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;GRAFIC<sp/>:<sp/>reading<sp/>initial<sp/>Conditions<sp/>from<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>graficDir<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;nx<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.nx<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ny<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.ny<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;nz<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.nz<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;x0<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.xo<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;y0<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.yo<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;z0<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.zo<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;astart<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.astart<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;om<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.om<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ov<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.ov<sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;H0<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.H0<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[km/s/Mpc]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;dx<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.dx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[Mpc]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;box<sp/>size<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.nx<sp/>*<sp/>hdr.dx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[Mpc]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;box<sp/>size<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdr.nx<sp/>*<sp/>hdr.dx<sp/>*<sp/>hdr.H0/100.0<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[Mpc/h]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;mass0<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>mass0<sp/>&lt;&lt;<sp/>std::endl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;##########################&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>std::string<sp/>graficDir;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>ForeachCell&amp;<sp/>foreach_cell;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Cosmo<sp/>params</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>real_t<sp/>xmin,<sp/>ymin,<sp/>zmin;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>real_t<sp/>xmax,<sp/>ymax,<sp/>zmax;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>real_t<sp/>omegab;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>real_t<sp/>astart,<sp/>omegam;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>real_t<sp/>H0;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>real_t<sp/>rhoc;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Hydro<sp/>params</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>real_t<sp/>gamma0;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>real_t<sp/>smallr,smallc,smallp;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>real_t<sp/>temp;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal">FACTORY_REGISTER(dyablo::InitialConditionsFactory,<sp/></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1InitialConditions__grafic__fields" kindref="compound">dyablo::InitialConditions_grafic_fields</ref>,<sp/></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;grafic_fields&quot;</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp"/>
+  </compounddef>
+</doxygen>

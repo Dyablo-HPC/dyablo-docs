@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1ScalarData__t" kind="struct" language="C++" prot="private">
+    <compoundname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::ScalarData_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1ScalarData__t_1a400c409a34254e3638fd3879dc33d33d" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::ScalarData_t::dt</definition>
+        <argsstring></argsstring>
+        <name>dt</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::ScalarData_t::dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="658" column="12" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="657" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="657" bodyend="659"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__GLMMHD_1_1ScalarData__t_1a400c409a34254e3638fd3879dc33d33d" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_GLMMHD::ScalarData_t</scope><name>dt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

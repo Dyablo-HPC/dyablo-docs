@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_2f99028ebe7a44599df4b7fffcd51ef2" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/init/hydro</compoundname>
+    <innerfile refid="AnalyticalFormula__base__hydro_8hpp">AnalyticalFormula_base_hydro.hpp</innerfile>
+    <innerfile refid="InitialConditions__blast_8cpp">InitialConditions_blast.cpp</innerfile>
+    <innerfile refid="InitialConditions__double__mach_8cpp">InitialConditions_double_mach.cpp</innerfile>
+    <innerfile refid="InitialConditions__implode_8cpp">InitialConditions_implode.cpp</innerfile>
+    <innerfile refid="InitialConditions__kelvin__helmholtz_8cpp">InitialConditions_kelvin_helmholtz.cpp</innerfile>
+    <innerfile refid="InitialConditions__rayleigh__taylor_8cpp">InitialConditions_rayleigh_taylor.cpp</innerfile>
+    <innerfile refid="InitialConditions__riemann2d_8cpp">InitialConditions_riemann2d.cpp</innerfile>
+    <innerfile refid="InitialConditions__sod_8cpp">InitialConditions_sod.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/init/hydro/"/>
+  </compounddef>
+</doxygen>

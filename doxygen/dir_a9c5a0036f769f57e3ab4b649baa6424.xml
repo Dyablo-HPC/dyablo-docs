@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_a9c5a0036f769f57e3ab4b649baa6424" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/io</compoundname>
+    <innerdir refid="dir_b8e20d793564286dfc602c172e9090d8">/builds/dyablo/dyablo/core/src/io/derived_fields</innerdir>
+    <innerfile refid="IOManager_8h">IOManager.h</innerfile>
+    <innerfile refid="IOManager__base_8h">IOManager_base.h</innerfile>
+    <innerfile refid="IOManager__checkpoint_8cpp">IOManager_checkpoint.cpp</innerfile>
+    <innerfile refid="IOManager__diagnostics_8cpp">IOManager_diagnostics.cpp</innerfile>
+    <innerfile refid="IOManager__hdf5_8cpp">IOManager_hdf5.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/io/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1SourceUpdate__Cooling__FF" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::SourceUpdate_Cooling_FF</compoundname>
+    <basecompoundref refid="classdyablo_1_1SourceUpdate" prot="public" virt="non-virtual">dyablo::SourceUpdate</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Cooling__FF_1ac5130e9acbde9980d1d9217bdbe6d188" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::SourceUpdate_Cooling_FF::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="21" column="15" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Cooling__FF_1a47217f08263189bb9ee72420f7095205" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::SourceUpdate_Cooling_FF::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="22" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Cooling__FF_1a5cd0e538fabeee63a2ddcab2869d2c86" prot="private" static="no" mutable="no">
+        <type>CoolingLayer</type>
+        <definition>CoolingLayer dyablo::SourceUpdate_Cooling_FF::cooling_mode</definition>
+        <argsstring></argsstring>
+        <name>cooling_mode</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::cooling_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="24" column="16" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Cooling__FF_1ad99627555187d23f4acdbf424416441a" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_Cooling_FF::flux</definition>
+        <argsstring></argsstring>
+        <name>flux</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::flux</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="25" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Cooling__FF_1ac40ea5656c63da8960a924f06fd25231" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_Cooling_FF::dmin</definition>
+        <argsstring></argsstring>
+        <name>dmin</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::dmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="27" column="10" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1SourceUpdate__Cooling__FF_1a36bb0fa86d2f55225babed34287e6395" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::SourceUpdate_Cooling_FF::dmax</definition>
+        <argsstring></argsstring>
+        <name>dmax</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::dmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="27" column="15" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__Cooling__FF_1a8ae216f5d5fe26996fe4d47056a6a320" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::SourceUpdate_Cooling_FF::SourceUpdate_Cooling_FF</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>SourceUpdate_Cooling_FF</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::SourceUpdate_Cooling_FF</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="29" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="29" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__Cooling__FF_1a584b46112a12497cc6efb692c3dff3ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::SourceUpdate_Cooling_FF::~SourceUpdate_Cooling_FF</definition>
+        <argsstring>()</argsstring>
+        <name>~SourceUpdate_Cooling_FF</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::~SourceUpdate_Cooling_FF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="61" column="3" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__Cooling__FF_1a644c31efc5b58603619f9002dd7f4ff5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::SourceUpdate_Cooling_FF::update_aux</definition>
+        <argsstring>(UserData &amp;U, real_t dt)</argsstring>
+        <name>update_aux</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::update_aux</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="64" column="8" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="64" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate__Cooling__FF_1a5d48080d58f657681dbfe9ab706b9ebb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::SourceUpdate_Cooling_FF::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::SourceUpdate_Cooling_FF::update</qualifiedname>
+        <reimplements refid="classdyablo_1_1SourceUpdate_1adf652efd434405d92080ba26647a879c">update</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="112" column="8" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="112" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Flux-Flux cooling term. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This plugin cools the domain at the top (zmin in 3D, ymin in 2D) and heats the domain at the bottom (zmax/ymax). The heating is exactly compensated by the cooling so that no total energy is injected in the box. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::SourceUpdate</label>
+        <link refid="classdyablo_1_1SourceUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::SourceUpdate_Cooling_FF</label>
+        <link refid="classdyablo_1_1SourceUpdate__Cooling__FF"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::SourceUpdate</label>
+        <link refid="classdyablo_1_1SourceUpdate"/>
+      </node>
+      <node id="1">
+        <label>dyablo::SourceUpdate_Cooling_FF</label>
+        <link refid="classdyablo_1_1SourceUpdate__Cooling__FF"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" line="18" column="1" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_Cooling_FF.cpp" bodystart="19" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a5cd0e538fabeee63a2ddcab2869d2c86" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>cooling_mode</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a36bb0fa86d2f55225babed34287e6395" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>dmax</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1ac40ea5656c63da8960a924f06fd25231" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>dmin</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1ad99627555187d23f4acdbf424416441a" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>flux</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1ac5130e9acbde9980d1d9217bdbe6d188" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a8ae216f5d5fe26996fe4d47056a6a320" prot="public" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>SourceUpdate_Cooling_FF</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a47217f08263189bb9ee72420f7095205" prot="private" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a5d48080d58f657681dbfe9ab706b9ebb" prot="public" virt="virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>update</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a644c31efc5b58603619f9002dd7f4ff5" prot="public" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>update_aux</name></member>
+      <member refid="classdyablo_1_1SourceUpdate_1a9a85905bd78000faa09fc4a4aec39d9c" prot="public" virt="virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>~SourceUpdate</name></member>
+      <member refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a584b46112a12497cc6efb692c3dff3ff" prot="public" virt="non-virtual"><scope>dyablo::SourceUpdate_Cooling_FF</scope><name>~SourceUpdate_Cooling_FF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

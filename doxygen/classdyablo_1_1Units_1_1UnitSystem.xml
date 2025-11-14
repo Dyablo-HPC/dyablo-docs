@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Units_1_1UnitSystem" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::Units::UnitSystem</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1UnitSystem_1a21cb8929b86d52a85427887031a74da5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 1 &gt;</type>
+        <definition>Unit&lt;1&gt; dyablo::Units::UnitSystem::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <qualifiedname>dyablo::Units::UnitSystem::time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="312" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1UnitSystem_1a258c3823066cc954a2180eddcd51b439" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 1 &gt;</type>
+        <definition>Unit&lt;0,1&gt; dyablo::Units::UnitSystem::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>dyablo::Units::UnitSystem::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="313" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1UnitSystem_1ad48c546d2478ea137a5c94b0b8a8a0a7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 1 &gt;</type>
+        <definition>Unit&lt;0,0,1&gt; dyablo::Units::UnitSystem::mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <qualifiedname>dyablo::Units::UnitSystem::mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="314" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1UnitSystem_1ab50b68fafba34c149ef63ba39d717796" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 1 &gt;</type>
+        <definition>Unit&lt;0,0,0,1&gt; dyablo::Units::UnitSystem::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <qualifiedname>dyablo::Units::UnitSystem::current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="315" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1UnitSystem_1a16b693dd7e77befa969bfb865bbf91c5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 0, 1 &gt;</type>
+        <definition>Unit&lt;0,0,0,0,1&gt; dyablo::Units::UnitSystem::temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <qualifiedname>dyablo::Units::UnitSystem::temp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="316" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1UnitSystem_1aa5bbe32219eb5f59ea838e65243b530d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 0, 0, 1 &gt;</type>
+        <definition>Unit&lt;0,0,0,0,0,1&gt; dyablo::Units::UnitSystem::mol</definition>
+        <argsstring></argsstring>
+        <name>mol</name>
+        <qualifiedname>dyablo::Units::UnitSystem::mol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="317" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Units_1_1UnitSystem_1a85635d3290aa949db389460f179acb31" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 0, 0, 0, 1 &gt;</type>
+        <definition>Unit&lt;0,0,0,0,0,0,1&gt; dyablo::Units::UnitSystem::luminousIntensity</definition>
+        <argsstring></argsstring>
+        <name>luminousIntensity</name>
+        <qualifiedname>dyablo::Units::UnitSystem::luminousIntensity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="318" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1UnitSystem_1ad50eabb91ad038452d81e5c53c909929" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::UnitSystem::UnitSystem</definition>
+        <argsstring>(Unit&lt; 1 &gt; time=Units::second(), Unit&lt; 0, 1 &gt; length=Units::meter(), Unit&lt; 0, 0, 1 &gt; mass=Units::kg(), Unit&lt; 0, 0, 0, 1 &gt; current=Units::Ampere(), Unit&lt; 0, 0, 0, 0, 1 &gt; temp=Units::Kelvin(), Unit&lt; 0, 0, 0, 0, 0, 1 &gt; mol=Units::mol(), Unit&lt; 0, 0, 0, 0, 0, 0, 1 &gt; luminousIntensity=Units::candela())</argsstring>
+        <name>UnitSystem</name>
+        <qualifiedname>dyablo::Units::UnitSystem::UnitSystem</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 1 &gt;</type>
+          <declname>time</declname>
+          <defval>Units::second()</defval>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 1 &gt;</type>
+          <declname>length</declname>
+          <defval>Units::meter()</defval>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 1 &gt;</type>
+          <declname>mass</declname>
+          <defval>Units::kg()</defval>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 1 &gt;</type>
+          <declname>current</declname>
+          <defval>Units::Ampere()</defval>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 0, 1 &gt;</type>
+          <declname>temp</declname>
+          <defval>Units::Kelvin()</defval>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 0, 0, 1 &gt;</type>
+          <declname>mol</declname>
+          <defval>Units::mol()</defval>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt; 0, 0, 0, 0, 0, 0, 1 &gt;</type>
+          <declname>luminousIntensity</declname>
+          <defval>Units::candela()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="321" column="5" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="321" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Units_1_1UnitSystem_1a1f7c088d1ef199406a2854fb13f03929" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION Unit_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION Unit_t dyablo::Units::UnitSystem::getUnit</definition>
+        <argsstring>(const Unit_t &amp;u=Unit_t(1)) const</argsstring>
+        <name>getUnit</name>
+        <qualifiedname>dyablo::Units::UnitSystem::getUnit</qualifiedname>
+        <param>
+          <type>const Unit_t &amp;</type>
+          <declname>u</declname>
+          <defval>Unit_t(1)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="329" column="12" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="329" bodyend="340"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>dyablo::Units::Unit&lt; 0, 0, 0, 0, 0, 0, 1 &gt;</label>
+        <link refid="classdyablo_1_1Units_1_1Unit"/>
+      </node>
+      <node id="7">
+        <label>dyablo::Units::Unit&lt; 0, 0, 0, 0, 0, 1 &gt;</label>
+        <link refid="classdyablo_1_1Units_1_1Unit"/>
+      </node>
+      <node id="6">
+        <label>dyablo::Units::Unit&lt; 0, 0, 0, 0, 1 &gt;</label>
+        <link refid="classdyablo_1_1Units_1_1Unit"/>
+      </node>
+      <node id="5">
+        <label>dyablo::Units::Unit&lt; 0, 0, 0, 1 &gt;</label>
+        <link refid="classdyablo_1_1Units_1_1Unit"/>
+      </node>
+      <node id="4">
+        <label>dyablo::Units::Unit&lt; 0, 0, 1 &gt;</label>
+        <link refid="classdyablo_1_1Units_1_1Unit"/>
+      </node>
+      <node id="3">
+        <label>dyablo::Units::Unit&lt; 0, 1 &gt;</label>
+        <link refid="classdyablo_1_1Units_1_1Unit"/>
+      </node>
+      <node id="2">
+        <label>dyablo::Units::Unit&lt; 1 &gt;</label>
+        <link refid="classdyablo_1_1Units_1_1Unit"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Units::UnitSystem</label>
+        <link refid="classdyablo_1_1Units_1_1UnitSystem"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>length</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mass</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>current</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>temp</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mol</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>luminousIntensity</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="309" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="310" bodyend="341"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1ab50b68fafba34c149ef63ba39d717796" prot="protected" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>current</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1a1f7c088d1ef199406a2854fb13f03929" prot="public" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>getUnit</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1a258c3823066cc954a2180eddcd51b439" prot="protected" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>length</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1a85635d3290aa949db389460f179acb31" prot="protected" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>luminousIntensity</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1ad48c546d2478ea137a5c94b0b8a8a0a7" prot="protected" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>mass</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1aa5bbe32219eb5f59ea838e65243b530d" prot="protected" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>mol</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1a16b693dd7e77befa969bfb865bbf91c5" prot="protected" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>temp</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1a21cb8929b86d52a85427887031a74da5" prot="protected" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>time</name></member>
+      <member refid="classdyablo_1_1Units_1_1UnitSystem_1ad50eabb91ad038452d81e5c53c909929" prot="public" virt="non-virtual"><scope>dyablo::Units::UnitSystem</scope><name>UnitSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

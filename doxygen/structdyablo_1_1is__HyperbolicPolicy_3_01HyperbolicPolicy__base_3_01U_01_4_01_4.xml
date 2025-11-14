@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1is__HyperbolicPolicy_3_01HyperbolicPolicy__base_3_01U_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::is_HyperbolicPolicy&lt; HyperbolicPolicy_base&lt; U &gt; &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::false_type</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">std::true_type</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class U</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::is_HyperbolicPolicy&lt; HyperbolicPolicy_base&lt; U &gt; &gt;</label>
+        <link refid="structdyablo_1_1is__HyperbolicPolicy_3_01HyperbolicPolicy__base_3_01U_01_4_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::false_type</label>
+      </node>
+      <node id="3">
+        <label>std::true_type</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::is_HyperbolicPolicy&lt; HyperbolicPolicy_base&lt; U &gt; &gt;</label>
+        <link refid="structdyablo_1_1is__HyperbolicPolicy_3_01HyperbolicPolicy__base_3_01U_01_4_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::false_type</label>
+      </node>
+      <node id="3">
+        <label>std::true_type</label>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h" line="267" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h" bodystart="269" bodyend="269"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

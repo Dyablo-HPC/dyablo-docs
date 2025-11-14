@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dyablo__variant_8h" kind="file" language="C++">
+    <compoundname>dyablo_variant.h</compoundname>
+    <includes local="no">variant</includes>
+    <includedby refid="HyperbolicPolicy__BoundaryConditions_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</includedby>
+    <includedby refid="HyperbolicPolicy__Slope_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h</label>
+        <link refid="dyablo__variant_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>variant</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="13">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h</label>
+        <link refid="HyperbolicPolicy__Slope_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h</label>
+        <link refid="dyablo__variant_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <innernamespace refid="namespacedyablo_1_1dyablo__std__variant">dyablo::dyablo_std_variant</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dyablo__variant_8h_1a8a1a82b503f872d4ce14cc312e83f3f5" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>std::variant&lt; T... &gt;</type>
+        <definition>using dyablo::dyablo_std_variant::dyablo_variant =  std::variant&lt;T...&gt;</definition>
+        <argsstring></argsstring>
+        <name>dyablo_variant</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="10" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="dyablo__variant_8h_1a360db2edaf27ba7801166a5b0f233a2f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Types</declname>
+            <defname>Types</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr bool</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr bool dyablo::dyablo_std_variant::dyablo_variant_holds_alternative</definition>
+        <argsstring>(const dyablo_variant&lt; Types... &gt; &amp;v) noexcept</argsstring>
+        <name>dyablo_variant_holds_alternative</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant_holds_alternative</qualifiedname>
+        <param>
+          <type>const dyablo_variant&lt; Types... &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="14" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="dyablo__variant_8h_1a8043897dcfa4693dbb6172d8b5b62345" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Types</declname>
+            <defname>Types</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr T &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr T &amp; dyablo::dyablo_std_variant::dyablo_variant_get</definition>
+        <argsstring>(std::variant&lt; Types... &gt; &amp;v) noexcept</argsstring>
+        <name>dyablo_variant_get</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant_get</qualifiedname>
+        <param>
+          <type>std::variant&lt; Types... &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="21" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="dyablo__variant_8h_1a608adff507229435eafec6f64c85dc05" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Types</declname>
+            <defname>Types</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr const T &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr const T &amp; dyablo::dyablo_std_variant::dyablo_variant_get</definition>
+        <argsstring>(const std::variant&lt; Types... &gt; &amp;v) noexcept</argsstring>
+        <name>dyablo_variant_get</name>
+        <qualifiedname>dyablo::dyablo_std_variant::dyablo_variant_get</qualifiedname>
+        <param>
+          <type>const std::variant&lt; Types... &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="30" column="19" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a357b4c6377652fc0fb18868584c7adbb" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class R</type>
+          </param>
+          <param>
+            <type>class Visitor</type>
+          </param>
+          <param>
+            <type>class var_t</type>
+          </param>
+          <param>
+            <type>typename T0</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr R</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr R dyablo::dyablo_variant_visit_aux</definition>
+        <argsstring>(const Visitor &amp;vis, const var_t &amp;var) noexcept</argsstring>
+        <name>dyablo_variant_visit_aux</name>
+        <qualifiedname>dyablo::dyablo_variant_visit_aux</qualifiedname>
+        <param>
+          <type>const Visitor &amp;</type>
+          <declname>vis</declname>
+        </param>
+        <param>
+          <type>const var_t &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="52" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="52" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1aae4559c44fa59144eb9f2554545708ea" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class R</type>
+          </param>
+          <param>
+            <type>class Visitor</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr R</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr R dyablo::dyablo_variant_visit</definition>
+        <argsstring>(const Visitor &amp;vis, const dyablo_variant&lt; Ts... &gt; &amp;var) noexcept</argsstring>
+        <name>dyablo_variant_visit</name>
+        <qualifiedname>dyablo::dyablo_variant_visit</qualifiedname>
+        <param>
+          <type>const Visitor &amp;</type>
+          <declname>vis</declname>
+        </param>
+        <param>
+          <type>const dyablo_variant&lt; Ts... &gt; &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" line="68" column="13" bodyfile="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">dyablo_std_variant<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T<sp/>&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">dyablo_variant<sp/>=<sp/>std::variant&lt;T...&gt;;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">...<sp/>Types<sp/>&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dyablo_variant_holds_alternative(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dyablo_variant&lt;Types...&gt;&amp;<sp/>v<sp/>)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::holds_alternative&lt;T&gt;(<sp/>v<sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">...<sp/>Types<sp/>&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>T&amp;<sp/>dyablo_variant_get(<sp/>std::variant&lt;Types...&gt;&amp;<sp/>v<sp/>)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>T*<sp/>res<sp/>=<sp/>std::get_if&lt;T&gt;(&amp;v);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>res<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>variant<sp/>access&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*res;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">...<sp/>Types<sp/>&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>dyablo_variant_get(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::variant&lt;Types...&gt;&amp;<sp/>v<sp/>)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/>res<sp/>=<sp/>std::get_if&lt;T&gt;(&amp;v);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>res<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>variant<sp/>access&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*res;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>template&lt;<sp/>class<sp/>R,<sp/>class<sp/>Visitor,<sp/>typename...<sp/>Ts<sp/>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>KOKKOS_INLINE_FUNCTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>constexpr<sp/>R<sp/>dyablo_variant_visit(<sp/>const<sp/>Visitor&amp;<sp/>vis,<sp/>const<sp/>dyablo_variant&lt;Ts...&gt;&amp;<sp/>var<sp/>)<sp/>noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>return<sp/>std::visit(<sp/>vis,<sp/>var<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo_std_variant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">dyablo_std_variant;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">R,<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Visitor,<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">var_t,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T0,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts<sp/>&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>R<sp/>dyablo_variant_visit_aux(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Visitor&amp;<sp/>vis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>var_t&amp;<sp/>var<sp/>)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>dyablo_variant_holds_alternative&lt;T0&gt;(var)<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vis(<sp/>dyablo_variant_get&lt;T0&gt;(var)<sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Ts)<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;Internal<sp/>Error<sp/>:<sp/>bad<sp/>variant&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Ts)<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dyablo_variant_visit_aux&lt;R,<sp/>Visitor,<sp/>var_t,<sp/>Ts...&gt;(vis,<sp/>var);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>R();<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">R,<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Visitor,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts<sp/>&gt;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>R<sp/>dyablo_variant_visit(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Visitor&amp;<sp/>vis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dyablo_variant&lt;Ts...&gt;&amp;<sp/>var<sp/>)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dyablo_variant_visit_aux&lt;R,<sp/>Visitor,<sp/>dyablo_variant&lt;Ts...&gt;,<sp/>Ts...&gt;(vis,<sp/>var);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/utils/misc/dyablo_variant.h"/>
+  </compounddef>
+</doxygen>

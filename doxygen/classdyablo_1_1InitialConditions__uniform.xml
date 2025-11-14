@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1InitialConditions__uniform" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::InitialConditions_uniform</compoundname>
+    <basecompoundref refid="classdyablo_1_1InitialConditions" prot="public" virt="non-virtual">dyablo::InitialConditions</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__uniform_1a452d9e449ad6dc59979e03f621b55aed" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::InitialConditions_uniform::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::InitialConditions_uniform::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" line="10" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__uniform_1ad98b0ae232dfafc210ad34b927450b66" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; dyablo::InitialConditions_uniform::fields</definition>
+        <argsstring></argsstring>
+        <name>fields</name>
+        <qualifiedname>dyablo::InitialConditions_uniform::fields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" line="11" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__uniform_1a1f56cb293e460c0d86860b0ba14a80a7" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; real_t &gt;</type>
+        <definition>std::vector&lt;real_t&gt; dyablo::InitialConditions_uniform::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <qualifiedname>dyablo::InitialConditions_uniform::values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" line="12" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__uniform_1a1cc6a9dae4b4c904ae10f6405d622807" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::InitialConditions_uniform::InitialConditions_uniform</definition>
+        <argsstring>(ForeachCell &amp;foreach_cell)</argsstring>
+        <name>InitialConditions_uniform</name>
+        <qualifiedname>dyablo::InitialConditions_uniform::InitialConditions_uniform</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <briefdescription>
+<para>Simple Constructor to build deriverd <ref refid="classdyablo_1_1InitialConditions" kindref="compound">InitialConditions</ref> with static values with static fields and values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" line="15" column="5" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__uniform_1a1b1604133c7815efef48156d0b0d6f9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::InitialConditions_uniform::InitialConditions_uniform</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>InitialConditions_uniform</name>
+        <qualifiedname>dyablo::InitialConditions_uniform::InitialConditions_uniform</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" line="20" column="5" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" bodystart="20" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__uniform_1aa6b1cd7f08f3e3cfc0550b9228b37198" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::InitialConditions_uniform::init</definition>
+        <argsstring>(UserData &amp;U)</argsstring>
+        <name>init</name>
+        <qualifiedname>dyablo::InitialConditions_uniform::init</qualifiedname>
+        <reimplements refid="classdyablo_1_1InitialConditions_1a20889de941f815d050a2f29d8f312d28">init</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" line="31" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" bodystart="31" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_uniform</label>
+        <link refid="classdyablo_1_1InitialConditions__uniform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>dyablo::AMRBlockForeachCell_impl&lt; AMRBlockForeachCell_group_impl::PatchManager &gt;</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__impl"/>
+      </node>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_uniform</label>
+        <link refid="classdyablo_1_1InitialConditions__uniform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>foreach_cell</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h" bodystart="8" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1InitialConditions__uniform_1ad98b0ae232dfafc210ad34b927450b66" prot="protected" virt="non-virtual"><scope>dyablo::InitialConditions_uniform</scope><name>fields</name></member>
+      <member refid="classdyablo_1_1InitialConditions__uniform_1a452d9e449ad6dc59979e03f621b55aed" prot="protected" virt="non-virtual"><scope>dyablo::InitialConditions_uniform</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1InitialConditions__uniform_1aa6b1cd7f08f3e3cfc0550b9228b37198" prot="public" virt="virtual"><scope>dyablo::InitialConditions_uniform</scope><name>init</name></member>
+      <member refid="classdyablo_1_1InitialConditions__uniform_1a1cc6a9dae4b4c904ae10f6405d622807" prot="protected" virt="non-virtual"><scope>dyablo::InitialConditions_uniform</scope><name>InitialConditions_uniform</name></member>
+      <member refid="classdyablo_1_1InitialConditions__uniform_1a1b1604133c7815efef48156d0b0d6f9c" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_uniform</scope><name>InitialConditions_uniform</name></member>
+      <member refid="classdyablo_1_1InitialConditions__uniform_1a1f56cb293e460c0d86860b0ba14a80a7" prot="protected" virt="non-virtual"><scope>dyablo::InitialConditions_uniform</scope><name>values</name></member>
+      <member refid="classdyablo_1_1InitialConditions_1a49242f31b906aa339374199c2ff18b96" prot="public" virt="virtual"><scope>dyablo::InitialConditions_uniform</scope><name>~InitialConditions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

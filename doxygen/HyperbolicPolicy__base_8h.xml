@@ -1,0 +1,723 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="HyperbolicPolicy__base_8h" kind="file" language="C++">
+    <compoundname>HyperbolicPolicy_base.h</compoundname>
+    <includes refid="UserData_8h" local="yes">UserData.h</includes>
+    <includes refid="ScalarSimulationData_8h" local="yes">ScalarSimulationData.h</includes>
+    <includes refid="ForeachCell_8h" local="yes">foreach_cell/ForeachCell.h</includes>
+    <includedby refid="HyperbolicPolicy__BoundaryConditions_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</includedby>
+    <includedby refid="HyperbolicPolicy__GLMMHD_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</includedby>
+    <includedby refid="HyperbolicPolicy__Hydro_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</includedby>
+    <includedby refid="HyperbolicPolicy__Rad_8h" local="yes">/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</includedby>
+    <incdepgraph>
+      <node id="37">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>ScalarSimulationData.h</label>
+        <link refid="ScalarSimulationData_8h_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="42">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>mpi/ViewCommunicator.h</label>
+        <link refid="ViewCommunicator_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>particles/ForeachParticle.h</label>
+        <link refid="ForeachParticle_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>particles/ParticleArray.h</label>
+        <link refid="ParticleArray_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>userdata_utils.h</label>
+        <link refid="userdata__utils_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>utils/misc/MultiTypeMap.h</label>
+        <link refid="MultiTypeMap_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="53">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="17">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="26">
+        <label>any</label>
+      </node>
+      <node id="49">
+        <label>array</label>
+      </node>
+      <node id="29">
+        <label>cassert</label>
+      </node>
+      <node id="46">
+        <label>cstddef</label>
+      </node>
+      <node id="45">
+        <label>cstdint</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>iomanip</label>
+      </node>
+      <node id="36">
+        <label>iosfwd</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>limits</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="25">
+        <label>math.h</label>
+      </node>
+      <node id="48">
+        <label>memory</label>
+      </node>
+      <node id="39">
+        <label>set</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="62">
+        <label>stdexcept</label>
+      </node>
+      <node id="19">
+        <label>stdio.h</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>type_traits</label>
+      </node>
+      <node id="38">
+        <label>unordered_map</label>
+      </node>
+      <node id="43">
+        <label>utility</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdyablo_1_1HyperbolicPolicy__base" prot="public">dyablo::HyperbolicPolicy_base</innerclass>
+    <innerclass refid="structdyablo_1_1is__HyperbolicPolicy" prot="public">dyablo::is_HyperbolicPolicy</innerclass>
+    <innerclass refid="structdyablo_1_1is__HyperbolicPolicy_3_01HyperbolicPolicy__base_3_01U_01_4_01_4" prot="public">dyablo::is_HyperbolicPolicy&lt; HyperbolicPolicy_base&lt; U &gt; &gt;</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedyablo_1aed9e30f547883ba6c25ddd59929b4326" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool dyablo::is_HyperbolicPolicy_v</definition>
+        <argsstring></argsstring>
+        <name>is_HyperbolicPolicy_v</name>
+        <qualifiedname>dyablo::is_HyperbolicPolicy_v</qualifiedname>
+        <initializer>= is_HyperbolicPolicy&lt;T&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h" line="272" column="23" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;UserData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ScalarSimulationData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;foreach_cell/ForeachCell.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>HyperbolicPolicy_impl<sp/>&gt;</highlight></codeline>
+<codeline lineno="16" refid="classdyablo_1_1HyperbolicPolicy__base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdyablo_1_1HyperbolicPolicy__base_1ab040b8604bcf4da4e7e6d02fdf0e2533" kindref="member">HyperbolicPolicy_base</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>HyperbolicPolicy_impl<sp/>impl;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>HyperbolicPolicy_impl::PrimState;</highlight></codeline>
+<codeline lineno="25" refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>HyperbolicPolicy_impl::ConsState;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellIndex<sp/>=<sp/>ForeachCell::CellIndex;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">CellMetaData<sp/>=<sp/>ForeachCell::CellMetaData;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">FieldAccessor<sp/>=<sp/>UserData::FieldAccessor;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Params<sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>HyperbolicPolicy_impl::Params;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Params<sp/>getParams(<sp/><ref refid="classConfigMap" kindref="compound">ConfigMap</ref>&amp;<sp/>configMap<sp/>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>HyperbolicPolicy_impl::getParams(configMap);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classdyablo_1_1HyperbolicPolicy__base_1ab040b8604bcf4da4e7e6d02fdf0e2533" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1ab040b8604bcf4da4e7e6d02fdf0e2533" kindref="member">HyperbolicPolicy_base</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Params&amp;<sp/>params,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ScalarSimulationData&amp;<sp/>scalar_data<sp/>)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>:<sp/>impl(params,<sp/>scalar_data)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classdyablo_1_1HyperbolicPolicy__base_1ab5a72e4e06a72b7a1fabfc8999e180bd" refkind="member"><highlight class="normal"><sp/><sp/>FieldAccessor<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1ab5a72e4e06a72b7a1fabfc8999e180bd" kindref="member">getUin</ref>(<sp/><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref>&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="46"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.getUin(U);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classdyablo_1_1HyperbolicPolicy__base_1a589df5f4b64453fe9ee488672af87d4e" refkind="member"><highlight class="normal"><sp/><sp/>FieldAccessor<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a589df5f4b64453fe9ee488672af87d4e" kindref="member">getUout</ref>(<sp/><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref>&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="55"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.getUout(U);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="70" refid="classdyablo_1_1HyperbolicPolicy__base_1ac1427c669c496b327286b9b8b41700bb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1ac1427c669c496b327286b9b8b41700bb" kindref="member">getConsState</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.getConsState(U,<sp/>iCell);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="88" refid="classdyablo_1_1HyperbolicPolicy__base_1a811c13021913211bcc6b4e414180c58d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a811c13021913211bcc6b4e414180c58d" kindref="member">setConsState</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref>&amp;<sp/>u<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="89"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>impl.setConsState(U,<sp/>iCell,<sp/>u);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="106" refid="classdyablo_1_1HyperbolicPolicy__base_1a7c74ba146e6b601160195cb572d143ba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a7c74ba146e6b601160195cb572d143ba" kindref="member">atomic_addConsState</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref>&amp;<sp/>u<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="107"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>impl.atomic_addConsState(U,<sp/>iCell,<sp/>u);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="122" refid="classdyablo_1_1HyperbolicPolicy__base_1a904794cd7455b596fd17b4027f1e1d0d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a904794cd7455b596fd17b4027f1e1d0d" kindref="member">getPrimState</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>Q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="123"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.getPrimState(Q,<sp/>iCell);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="140" refid="classdyablo_1_1HyperbolicPolicy__base_1a7caf2f645cb7f16e950bb400a319aab2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a7caf2f645cb7f16e950bb400a319aab2" kindref="member">setPrimState</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t&amp;<sp/>Q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex&amp;<sp/>iCell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref>&amp;<sp/>q<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="141"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>impl.setPrimState(Q,<sp/>iCell,<sp/>q);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/>/***</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/>*<sp/>@brief<sp/>Converts<sp/>from<sp/>conservative<sp/>state<sp/>to<sp/>primitive<sp/>state</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/><sp/>*<sp/>@param<sp/>u<sp/>the<sp/>initial<sp/>conservative<sp/>state</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/><sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>consToPrim(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref>&amp;<sp/>u<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="152"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.consToPrim(u);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/>/***</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/><sp/>*<sp/>@brief<sp/>Converts<sp/>from<sp/>primitive<sp/>state<sp/>to<sp/>conservative<sp/>state</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/>*<sp/>@param<sp/>u<sp/>the<sp/>initial<sp/>primitive<sp/>state</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/><sp/><sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/>primToCons(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref>&amp;<sp/>q<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="163"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.primToCons(q);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="179" refid="classdyablo_1_1HyperbolicPolicy__base_1acd23bfd9b5c4a7cce7c8f616666106d4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1acd23bfd9b5c4a7cce7c8f616666106d4" kindref="member">riemann_solver</ref>(<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>qL,<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>qR,<sp/>ComponentIndex3D<sp/>dir)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="180"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.riemann_solver(qL,<sp/>qR,<sp/>dir);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>compute_slope(<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>qL,<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>qC,<sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>qR,<sp/>real_t<sp/>dL,<sp/>real_t<sp/>dR)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="187"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.compute_slope(qL,<sp/>qC,<sp/>qR,<sp/>dL,<sp/>dR);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="208" refid="classdyablo_1_1HyperbolicPolicy__base_1aefb25271def688fa2651859462a54e06" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1aefb25271def688fa2651859462a54e06" kindref="member">getBoundaryValue</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t<sp/>&amp;U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex<sp/>&amp;iCell_boundary,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellMetaData<sp/>&amp;metadata)</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.getBoundaryValue(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>U,<sp/>iCell_boundary,<sp/>metadata);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Array_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="232" refid="classdyablo_1_1HyperbolicPolicy__base_1af2737ba7d0ff61c210d08338f0a0c953" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1af2737ba7d0ff61c210d08338f0a0c953" kindref="member">getBoundaryFlux</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Array_t<sp/>&amp;U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellIndex<sp/>&amp;iCell_boundary,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a21fe8c251cda7297049ee69ad94d774a" kindref="member">PrimState</ref><sp/>&amp;q_in_reconstructed,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CellMetaData<sp/>&amp;metadata)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="233"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.getBoundaryFlux(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>U,<sp/>iCell_boundary,<sp/>q_in_reconstructed,<sp/>metadata);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_postProcess()</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>HyperbolicPolicy_impl::has_postProcess();}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="247" refid="classdyablo_1_1HyperbolicPolicy__base_1ab076d3c6b0e9c35a4852ca573f9978d3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1ab076d3c6b0e9c35a4852ca573f9978d3" kindref="member">postProcess</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1HyperbolicPolicy__base_1a09a11993c4311487c9aa6f077fa19c13" kindref="member">ConsState</ref><sp/>&amp;u<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="248"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(has_postProcess())</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl.postProcess(u);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printWarnings()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="256"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>impl.printWarnings();</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T<sp/>&gt;</highlight></codeline>
+<codeline lineno="262" refid="structdyablo_1_1is__HyperbolicPolicy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1is__HyperbolicPolicy" kindref="compound">is_HyperbolicPolicy</ref><sp/></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>:<sp/>std::false_type</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>U<sp/>&gt;</highlight></codeline>
+<codeline lineno="267" refid="structdyablo_1_1is__HyperbolicPolicy_3_01HyperbolicPolicy__base_3_01U_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1is__HyperbolicPolicy" kindref="compound">is_HyperbolicPolicy</ref>&lt;<ref refid="classdyablo_1_1HyperbolicPolicy__base" kindref="compound">HyperbolicPolicy_base</ref>&lt;U&gt;&gt;<sp/></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>:<sp/>std::true_type</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T<sp/>&gt;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_HyperbolicPolicy_v<sp/></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>=<sp/><ref refid="structdyablo_1_1is__HyperbolicPolicy" kindref="compound">is_HyperbolicPolicy&lt;T&gt;::value</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h"/>
+  </compounddef>
+</doxygen>

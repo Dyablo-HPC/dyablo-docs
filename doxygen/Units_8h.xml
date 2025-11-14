@@ -1,0 +1,2927 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="Units_8h" kind="file" language="C++">
+    <compoundname>Units.h</compoundname>
+    <includes refid="real__type_8h" local="yes">real_type.h</includes>
+    <includes local="yes">Kokkos_Core.hpp</includes>
+    <includes refid="Dyablo__assert_8h" local="yes">../misc/Dyablo_assert.h</includes>
+    <includedby refid="Cosmo_8h" local="yes">/builds/dyablo/dyablo/core/src/Cosmo.h</includedby>
+    <includedby refid="InitialConditions__grafic__fields_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp</includedby>
+    <includedby refid="InitialConditions__particle__grid_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp</includedby>
+    <includedby refid="InitialConditions__zeldovitch__particles_8cpp" local="yes">/builds/dyablo/dyablo/core/src/init/InitialConditions_zeldovitch_particles.cpp</includedby>
+    <includedby refid="CodeUnits_8cpp" local="yes">/builds/dyablo/dyablo/core/src/utils/units/CodeUnits.cpp</includedby>
+    <includedby refid="UnitParser_8hpp" local="yes">/builds/dyablo/dyablo/core/src/utils/units/UnitParser.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/units/Units.h</label>
+        <link refid="Units_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/Cosmo.h</label>
+        <link refid="Cosmo_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</label>
+        <link refid="DyabloTimeLoop_8h_source"/>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/builds/dyablo/dyablo/core/src/UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/builds/dyablo/dyablo/core/src/UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>/builds/dyablo/dyablo/core/src/UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>/builds/dyablo/dyablo/core/src/amr/CellIndexRemapper.h</label>
+        <link refid="CellIndexRemapper_8h_source"/>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData.h</label>
+        <link refid="MapUserData_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</label>
+        <link refid="MapUserData__base_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt.h</label>
+        <link refid="Compute__dt_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</label>
+        <link refid="Compute__dt__base_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h</label>
+        <link refid="AMRBlockForeachCell__scratch_8h_source"/>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver.h</label>
+        <link refid="GravitySolver_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</label>
+        <link refid="GravitySolver__base_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.h</label>
+        <link refid="GravitySolver__cg_8h_source"/>
+      </node>
+      <node id="33">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/HyperbolicUpdate.h</label>
+        <link refid="HyperbolicUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="20">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</label>
+        <link refid="HyperbolicUpdate__base_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_RK2.h</label>
+        <link refid="Hyperbolic__RK2_8h_source"/>
+      </node>
+      <node id="35">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler.h</label>
+        <link refid="Hyperbolic__euler_8h_source"/>
+      </node>
+      <node id="36">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h</label>
+        <link refid="Hyperbolic__euler__nopatch_8h_source"/>
+      </node>
+      <node id="37">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_hancock.h</label>
+        <link refid="Hyperbolic__hancock_8h_source"/>
+      </node>
+      <node id="38">
+        <label>/builds/dyablo/dyablo/core/src/init/AnalyticalFormula.h</label>
+        <link refid="AnalyticalFormula_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions.h</label>
+        <link refid="InitialConditions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h</label>
+        <link refid="InitialConditions__analytical_8h_source"/>
+      </node>
+      <node id="40">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h</label>
+        <link refid="InitialConditions__uniform_8h_source"/>
+      </node>
+      <node id="27">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="44">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager.h</label>
+        <link refid="IOManager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager_base.h</label>
+        <link refid="IOManager__base_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields.h</label>
+        <link refid="DerivedFields_8h_source"/>
+      </node>
+      <node id="45">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</label>
+        <link refid="DerivedFields__base_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h</label>
+        <link refid="GhostCommunicator_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h</label>
+        <link refid="GhostCommunicator__full__blocks_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h</label>
+        <link refid="GhostCommunicator__partial__blocks_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="29">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</label>
+        <link refid="ParabolicTerm__viscosity_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate.h</label>
+        <link refid="ParabolicUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</label>
+        <link refid="ParabolicUpdate__base_8h_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate.h</label>
+        <link refid="ParticleUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</label>
+        <link refid="ParticleUpdate__base_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition.h</label>
+        <link refid="RefineCondition_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</label>
+        <link refid="RefineCondition__base_8h_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_helper.h</label>
+        <link refid="RefineCondition__helper_8h_source"/>
+      </node>
+      <node id="55">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate.h</label>
+        <link refid="SourceUpdate_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</label>
+        <link refid="SourceUpdate__base_8h_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="28">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/utils/units/Units.h</label>
+        <link refid="Units_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdyablo_1_1Units_1_1Unit" prot="public">dyablo::Units::Unit</innerclass>
+    <innerclass refid="structdyablo_1_1Units_1_1Unit__traits" prot="public">dyablo::Units::Unit_traits</innerclass>
+    <innerclass refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4" prot="public">dyablo::Units::Unit_traits&lt; Unit&lt; T, L, M, C, Temp, Mol, LI &gt; &gt;</innerclass>
+    <innerclass refid="classdyablo_1_1Units_1_1UnitSystem" prot="public">dyablo::Units::UnitSystem</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <innernamespace refid="namespacedyablo_1_1Units">dyablo::Units</innernamespace>
+    <innernamespace refid="namespacedyablo_1_1Units_1_1Impl">dyablo::Units::Impl</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="Units_8h_1a0216ab17dd57abebba71a7d5c96a1676" prot="public" static="no">
+        <name>DEFINE_UNIT</name>
+        <param><defname>name</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>constexpr auto name() {return __VA_ARGS__;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="202" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="Units_8h_1a7a7c465ba7591c6c8d47a1bce67f9e68" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Ts</declname>
+            <defname>Ts</defname>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if_t&lt;((is_unit&lt; Ts &gt;||...)), int &gt;</type>
+        <definition>using dyablo::Units::enable_if_has_unit =  std::enable_if_t&lt;((is_unit&lt;Ts&gt; || ...)), int&gt;</definition>
+        <argsstring></argsstring>
+        <name>enable_if_has_unit</name>
+        <qualifiedname>dyablo::Units::enable_if_has_unit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="168" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a7557a92ee6b0be3d1aa5dda228f4973f" prot="public" static="no">
+        <type>Unit&lt; 1 &gt;</type>
+        <definition>using dyablo::Units::Time =  Unit&lt;1&gt;</definition>
+        <argsstring></argsstring>
+        <name>Time</name>
+        <qualifiedname>dyablo::Units::Time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="291" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a2aabeb20e849475e2e5982eccfe7b691" prot="public" static="no">
+        <type>Unit&lt; 0, 1 &gt;</type>
+        <definition>using dyablo::Units::Length =  Unit&lt;0,1&gt;</definition>
+        <argsstring></argsstring>
+        <name>Length</name>
+        <qualifiedname>dyablo::Units::Length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="292" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a110a3bd2212196b67a08664cf80bb4d4" prot="public" static="no">
+        <type>Unit&lt; 0, 0, 1 &gt;</type>
+        <definition>using dyablo::Units::Mass =  Unit&lt;0,0,1&gt;</definition>
+        <argsstring></argsstring>
+        <name>Mass</name>
+        <qualifiedname>dyablo::Units::Mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="293" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a622280b82a7ec60e9262ee520469c68f" prot="public" static="no">
+        <type>Unit&lt; 0, 0, 0, 1 &gt;</type>
+        <definition>using dyablo::Units::Current =  Unit&lt;0,0,0,1&gt;</definition>
+        <argsstring></argsstring>
+        <name>Current</name>
+        <qualifiedname>dyablo::Units::Current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="294" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a8dff5ff440b44474da1fdfaf5bdf03f8" prot="public" static="no">
+        <type>Unit&lt; 0, 0, 0, 0, 1 &gt;</type>
+        <definition>using dyablo::Units::Temperature =  Unit&lt;0,0,0,0,1&gt;</definition>
+        <argsstring></argsstring>
+        <name>Temperature</name>
+        <qualifiedname>dyablo::Units::Temperature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="295" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a77b48b84b7b44d0d02c8855b4a0a0033" prot="public" static="no">
+        <type>Unit&lt; 0, 0, 0, 0, 0, 1 &gt;</type>
+        <definition>using dyablo::Units::Mol =  Unit&lt;0,0,0,0,0,1&gt;</definition>
+        <argsstring></argsstring>
+        <name>Mol</name>
+        <qualifiedname>dyablo::Units::Mol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="296" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a34c5c21289f646cbe8fcd6b9fcff1e18" prot="public" static="no">
+        <type>Unit&lt; 0, 0, 0, 0, 0, 0, 1 &gt;</type>
+        <definition>using dyablo::Units::LuminousIntensity =  Unit&lt;0,0,0,0,0,0,1&gt;</definition>
+        <argsstring></argsstring>
+        <name>LuminousIntensity</name>
+        <qualifiedname>dyablo::Units::LuminousIntensity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="297" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1af1d842c3b26349a444e16ad89aebf4ef" prot="public" static="no">
+        <type>decltype(m2())</type>
+        <definition>using dyablo::Units::Area =  decltype( m2() )</definition>
+        <argsstring></argsstring>
+        <name>Area</name>
+        <qualifiedname>dyablo::Units::Area</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="299" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1ad0bf30f36787605ae340d38d4da78fff" prot="public" static="no">
+        <type>decltype(m3())</type>
+        <definition>using dyablo::Units::Volume =  decltype( m3() )</definition>
+        <argsstring></argsstring>
+        <name>Volume</name>
+        <qualifiedname>dyablo::Units::Volume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="300" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1aa052f119e230be5ee587c2dcaaa71493" prot="public" static="no">
+        <type>decltype(m()/s())</type>
+        <definition>using dyablo::Units::Velocity =  decltype( m()/s() )</definition>
+        <argsstring></argsstring>
+        <name>Velocity</name>
+        <qualifiedname>dyablo::Units::Velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="301" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a48cc8c1fa0b9baae68ba833bd826978d" prot="public" static="no">
+        <type>decltype(m()/s2())</type>
+        <definition>using dyablo::Units::Acceleration =  decltype( m()/s2() )</definition>
+        <argsstring></argsstring>
+        <name>Acceleration</name>
+        <qualifiedname>dyablo::Units::Acceleration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="302" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1ad7814a28d5b096ec645e3e5d5d2d576b" prot="public" static="no">
+        <type>decltype(kg()/m3())</type>
+        <definition>using dyablo::Units::Density =  decltype( kg()/m3() )</definition>
+        <argsstring></argsstring>
+        <name>Density</name>
+        <qualifiedname>dyablo::Units::Density</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="303" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1afecb7ad0860f723c10202a955e5d8908" prot="public" static="no">
+        <type>decltype(J())</type>
+        <definition>using dyablo::Units::Energy =  decltype( J() )</definition>
+        <argsstring></argsstring>
+        <name>Energy</name>
+        <qualifiedname>dyablo::Units::Energy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="304" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a16bfb533679c7e6281215fea5ce4c24d" prot="public" static="no">
+        <type>decltype(J()/m3())</type>
+        <definition>using dyablo::Units::EnergyDensity =  decltype( J()/m3() )</definition>
+        <argsstring></argsstring>
+        <name>EnergyDensity</name>
+        <qualifiedname>dyablo::Units::EnergyDensity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="305" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="Units_8h_1a33a788400818a64e7b1a3b3895bcfda9" prot="public" static="no">
+        <type>decltype(Pa())</type>
+        <definition>using dyablo::Units::Pressure =  decltype( Pa() )</definition>
+        <argsstring></argsstring>
+        <name>Pressure</name>
+        <qualifiedname>dyablo::Units::Pressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="306" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="Units_8h_1a83ba98e81b90352aa5c5b0d3d33eeed3" prot="public" static="no" constexpr="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool dyablo::Units::is_unit</definition>
+        <argsstring></argsstring>
+        <name>is_unit</name>
+        <qualifiedname>dyablo::Units::is_unit</qualifiedname>
+        <initializer>= Unit_traits&lt;T&gt;::is_unit</initializer>
+        <briefdescription>
+<para>Is type a unit or not? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="160" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="Units_8h_1a71fb194b96f0e3956bc8054d44834f67" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int...</type>
+            <declname>Dims1</declname>
+            <defname>Dims1</defname>
+          </param>
+          <param>
+            <type>int...</type>
+            <declname>Dims2</declname>
+            <defname>Dims2</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr Unit&lt; Dims1+Dims2... &gt;</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr Unit&lt; Dims1+Dims2... &gt; dyablo::Units::operator*</definition>
+        <argsstring>(const Unit&lt; Dims1... &gt; &amp;u1, const Unit&lt; Dims2... &gt; &amp;u2)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>dyablo::Units::operator*</qualifiedname>
+        <param>
+          <type>const Unit&lt; Dims1... &gt; &amp;</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>const Unit&lt; Dims2... &gt; &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+<para>Multiply Units to create derived units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="106" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1aaf787025b4c61ffcd40a654709beda10" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int...</type>
+            <declname>Dims1</declname>
+            <defname>Dims1</defname>
+          </param>
+          <param>
+            <type>int...</type>
+            <declname>Dims2</declname>
+            <defname>Dims2</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr Unit&lt; Dims1-Dims2... &gt;</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr Unit&lt; Dims1-Dims2... &gt; dyablo::Units::operator/</definition>
+        <argsstring>(const Unit&lt; Dims1... &gt; &amp;u1, const Unit&lt; Dims2... &gt; &amp;u2)</argsstring>
+        <name>operator/</name>
+        <qualifiedname>dyablo::Units::operator/</qualifiedname>
+        <param>
+          <type>const Unit&lt; Dims1... &gt; &amp;</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>const Unit&lt; Dims2... &gt; &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+<para>Divide Units to create derived units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="114" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a90ebc850ea9dfa002237f996d1a9e24d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int...</type>
+            <declname>Dims</declname>
+            <defname>Dims</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr Unit&lt; Dims... &gt;</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr Unit&lt; Dims... &gt; dyablo::Units::to_unit</definition>
+        <argsstring>(const Unit&lt; Dims... &gt; &amp;u)</argsstring>
+        <name>to_unit</name>
+        <qualifiedname>dyablo::Units::to_unit</qualifiedname>
+        <param>
+          <type>const Unit&lt; Dims... &gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper template function to perform controlled conversions from other types to units Version for Units : Units are already units </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="125" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a9fe53221d48a32325ef9350bd41dd06f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION constexpr Unit</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr Unit dyablo::Units::to_unit</definition>
+        <argsstring>(real_t val)</argsstring>
+        <name>to_unit</name>
+        <qualifiedname>dyablo::Units::to_unit</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper template function to perform controlled conversions from other types to units Version for floats : Automatically convert floats to dimensionless Units (in operators only) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="134" column="12" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1aad6744d30bcca68cd13898c8aae6968f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>enable_if_has_unit&lt; T1, T2 &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr auto</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr auto dyablo::Units::operator*</definition>
+        <argsstring>(const T1 &amp;u1, const T2 &amp;u2)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>dyablo::Units::operator*</qualifiedname>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+<para>Units can be multiplied with types compatible with to_unit() on both sides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="173" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1aacb8704e03e4e35c9a5d8805c166a8d4" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>enable_if_has_unit&lt; T1, T2 &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr auto</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr auto dyablo::Units::operator/</definition>
+        <argsstring>(const T1 &amp;u1, const T2 &amp;u2)</argsstring>
+        <name>operator/</name>
+        <qualifiedname>dyablo::Units::operator/</qualifiedname>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+<para>Units can be divided with types compatible with to_unit() on both sides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="181" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a8fa2398a6cdfca6d4302819619779e7d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>enable_if_has_unit&lt; T1, T2 &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr auto</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr auto dyablo::Units::operator+</definition>
+        <argsstring>(const T1 &amp;u1, const T2 &amp;u2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>dyablo::Units::operator+</qualifiedname>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+<para>Units can be added with types compatible with to_unit() on both sides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="189" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a929ca87625c9407040abd3ffbc302701" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>enable_if_has_unit&lt; T1, T2 &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION constexpr auto</type>
+        <definition>KOKKOS_INLINE_FUNCTION constexpr auto dyablo::Units::operator-</definition>
+        <argsstring>(const T1 &amp;u1, const T2 &amp;u2)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>dyablo::Units::operator-</qualifiedname>
+        <param>
+          <type>const T1 &amp;</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>const T2 &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <briefdescription>
+<para>Units can be substracted with types compatible with to_unit() on both sides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="197" column="16" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ad02a1b2d25184aa6a134c07f8078e117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(second, Unit&lt; 1 &gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>second</type>
+        </param>
+        <param>
+          <type>Unit&lt; 1 &gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="206" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="206" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a5b0edd77e8a02e43fd661b243fc5fed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(meter, Unit&lt; 0, 1 &gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>meter</type>
+        </param>
+        <param>
+          <type>Unit&lt; 0, 1 &gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="207" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="207" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a71f09142d06d15906302077f3c255ab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(kilogram, Unit&lt; 0, 0, 1 &gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>kilogram</type>
+        </param>
+        <param>
+          <type>Unit&lt; 0, 0, 1 &gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="208" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="208" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a0bcc1e03a8b2918b3ffc0b11c9b089d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Ampere, Unit&lt; 0, 0, 0, 1 &gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Ampere</type>
+        </param>
+        <param>
+          <type>Unit&lt; 0, 0, 0, 1 &gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="209" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="209" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a608ace529552963ec1ab2486df772ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Kelvin, Unit&lt; 0, 0, 0, 0, 1 &gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Kelvin</type>
+        </param>
+        <param>
+          <type>Unit&lt; 0, 0, 0, 0, 1 &gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="210" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="210" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a6a7351aef0df0bf956bc3b2ad803cc04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(mol, Unit&lt; 0, 0, 0, 0, 0, 1 &gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>mol</type>
+        </param>
+        <param>
+          <type>Unit&lt; 0, 0, 0, 0, 0, 1 &gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="211" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="211" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a3b95980e7e16cfb7a8abcc6441d98626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(candela, Unit&lt; 0, 0, 0, 0, 0, 0, 1 &gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>candela</type>
+        </param>
+        <param>
+          <type>Unit&lt; 0, 0, 0, 0, 0, 0, 1 &gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="212" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="212" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a4155895629bf1ef8af464f72f370bdfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(one, Unit&lt;&gt;(1))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>one</type>
+        </param>
+        <param>
+          <type>Unit&lt;&gt;</type>
+          <array>1</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="215" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="215" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1abfdfc8970d4d09a29bc81c39398cae82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Giga, 1e9 *one())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Giga</type>
+        </param>
+        <param>
+          <type>1e9 *</type>
+          <declname>one</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="216" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="216" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a87326aaeb7fce631f9b737b725da6662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Mega, 1e6 *one())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Mega</type>
+        </param>
+        <param>
+          <type>1e6 *</type>
+          <declname>one</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="217" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="217" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ab7a68ad25c1ab9e179b2d7b499f68ca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Kilo, 1e3 *one())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Kilo</type>
+        </param>
+        <param>
+          <type>1e3 *</type>
+          <declname>one</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="218" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="218" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1af81d099aed1a6502fb14219e38a05878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(centi, 1e-2 *one())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>centi</type>
+        </param>
+        <param>
+          <type>1e-2 *</type>
+          <declname>one</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="219" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="219" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ae99d9c49d12159442c00bc0f5991e367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(milli, 1e-3 *one())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>milli</type>
+        </param>
+        <param>
+          <type>1e-3 *</type>
+          <declname>one</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="220" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="220" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ae658f459eeb93e1d1cdb78b80d89f3d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(kg, kilogram())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>kg</type>
+        </param>
+        <param>
+          <type>kilogram()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="223" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="223" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a47ff8ef20f23e33ae8ccdcab46357f35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(m, meter())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>m</type>
+        </param>
+        <param>
+          <type>meter()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="224" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="224" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a56ef9cdc8f40aa9f3eedc0e6fd0bf988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(s, second())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>s</type>
+        </param>
+        <param>
+          <type>second()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="225" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="225" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1af671dab71666e2ffb0376365bc368097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(km, Kilo() *meter())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>km</type>
+        </param>
+        <param>
+          <type>Kilo() *meter()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="226" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="226" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a618316e8860bd7390aaa6266b3d494ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(K, Kelvin())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>K</type>
+        </param>
+        <param>
+          <type>Kelvin()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="227" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="227" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a3d899c41324a60984d6eec7d70c3dac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Pa, kg()/m()/s()/s())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Pa</type>
+        </param>
+        <param>
+          <type>kg()/m()/s()/s()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="228" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="228" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a6a910bbd88e6aeb574673bbad91a19c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(cd, candela())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>cd</type>
+        </param>
+        <param>
+          <type>candela()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="229" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="229" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ae348ff1e3c2dc1f7db5c85dc605c0a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Joule, kg() *m() *m()/s()/s())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Joule</type>
+        </param>
+        <param>
+          <type>kg() *m() *m()/s()/s()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="230" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="230" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a668c3423d072ec9509ff000437a6c271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Newton, kg() *m()/s()/s())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Newton</type>
+        </param>
+        <param>
+          <type>kg() *m()/s()/s()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="231" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="231" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a19a682ee8003973e00f839ff785eb086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(J, Joule())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>J</type>
+        </param>
+        <param>
+          <type>Joule()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="232" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="232" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a1610e4b8102b30ed332260038b29ba23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(N, Newton())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>N</type>
+        </param>
+        <param>
+          <type>Newton()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="233" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="233" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a1e4231bc087c187a092b77ac4def169f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(gram, milli() *kilogram())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>gram</type>
+        </param>
+        <param>
+          <type>milli() *kilogram()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="236" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="236" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a906a0e5d4dae15acd8ff47ae7541ee56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(g, gram())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>g</type>
+        </param>
+        <param>
+          <type>gram()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="237" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="237" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a51a0b78b60359c9f5053b6c09a2129da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(centimeter, centi() *meter())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>centimeter</type>
+        </param>
+        <param>
+          <type>centi() *meter()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="238" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="238" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a66e2261895f3cda08b150f8df96f3152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(cm, centimeter())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>cm</type>
+        </param>
+        <param>
+          <type>centimeter()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="239" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="239" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a22a163b81a770179d429b45aeb756bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(cm_per_s, cm()/s())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>cm_per_s</type>
+        </param>
+        <param>
+          <type>cm()/s()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="240" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="240" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a2c17fd72894eda6c2b2ef4a83a61673c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(erg, 1e-7 *Joule())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>erg</type>
+        </param>
+        <param>
+          <type>1e-7 *</type>
+          <declname>Joule</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="241" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="241" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a87df42dcab01fc71c2869ea999fdfe9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(parsec, 3.085678e16 *meter())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>parsec</type>
+        </param>
+        <param>
+          <type>3.085678e16 *</type>
+          <declname>meter</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="244" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="244" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ad1d55844f26f7997cd5dc752ba855e99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(pc, parsec())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>pc</type>
+        </param>
+        <param>
+          <type>parsec()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="245" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="245" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ad8deff179e5c6331f79668c49752693e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(kpc, Kilo() *parsec())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>kpc</type>
+        </param>
+        <param>
+          <type>Kilo() *parsec()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="246" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="246" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1acb6f4dd942de88c114bbaca912105dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Mpc, Mega() *parsec())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Mpc</type>
+        </param>
+        <param>
+          <type>Mega() *parsec()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="247" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="247" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a882ea73285efb2e3b6620282324a3eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Gpc, Giga() *parsec())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Gpc</type>
+        </param>
+        <param>
+          <type>Giga() *parsec()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="248" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="248" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1abe9eefa2686954eeb1bb9d9fec68b86a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(astronomical_unit, 149597870700.0 *meter())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>astronomical_unit</type>
+        </param>
+        <param>
+          <type>149597870700.0 *</type>
+          <declname>meter</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="250" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="250" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a867856598fb0f8e202e88f401fd339bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(au, astronomical_unit())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>au</type>
+        </param>
+        <param>
+          <type>astronomical_unit()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="251" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="251" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a6355e924ae44ef9acb9f4c39c968d0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(solar_mass, 1.9884e30 *kilogram())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>solar_mass</type>
+        </param>
+        <param>
+          <type>1.9884e30 *</type>
+          <declname>kilogram</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="252" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="252" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1acb4dfa7ef4d1959a088ed43a15f27f82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Msun, solar_mass())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Msun</type>
+        </param>
+        <param>
+          <type>solar_mass()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="253" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="253" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ae28594dc5157c30333c9f6c95062d9c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(minute, 60 *second())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>minute</type>
+        </param>
+        <param>
+          <type>60 *</type>
+          <declname>second</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="255" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="255" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1aec31c5424236623872cca7af5ab5371b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(hour, 60 *minute())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>hour</type>
+        </param>
+        <param>
+          <type>60 *</type>
+          <declname>minute</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="256" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="256" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1afba557679dce57f314063531a7b1119f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(year, 8760.0 *hour())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>year</type>
+        </param>
+        <param>
+          <type>8760.0 *</type>
+          <declname>hour</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="257" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="257" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a3062b1f2259158fec23cf80c77b7f2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(yr, year())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>yr</type>
+        </param>
+        <param>
+          <type>year()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="258" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="258" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ac5863d06c668a5430c081cdd328890c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(kyr, Kilo() *year())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>kyr</type>
+        </param>
+        <param>
+          <type>Kilo() *year()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="259" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="259" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a8a057abd2cf763668efebe5091195baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Myr, Mega() *year())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Myr</type>
+        </param>
+        <param>
+          <type>Mega() *year()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="260" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="260" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a17cb48c50872c3de4684dda0d16488ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Gyr, Giga() *year())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Gyr</type>
+        </param>
+        <param>
+          <type>Giga() *year()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="261" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="261" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a926f9225b6705f1489767b5ac5464471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(Dalton, 1.6605388628e-27 *kilogram())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>Dalton</type>
+        </param>
+        <param>
+          <type>1.6605388628e-27 *</type>
+          <declname>kilogram</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="263" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="263" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a5051b1ef05ba2a58c66596df85b4e65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(atomic_mass_unit, Dalton())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>atomic_mass_unit</type>
+        </param>
+        <param>
+          <type>Dalton()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="264" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="264" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ae5560a5939804e01ca5e34e0837a90af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(amu, Dalton())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>amu</type>
+        </param>
+        <param>
+          <type>Dalton()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="265" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="265" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ad3b06f0629671b07fe1f313bf0b43dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(electronvolt, 1.602176634e-19 *Joule())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>electronvolt</type>
+        </param>
+        <param>
+          <type>1.602176634e-19 *</type>
+          <declname>Joule</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="266" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="266" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a5e9680830088d83e14566c8bb1bfdba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(eV, electronvolt())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>eV</type>
+        </param>
+        <param>
+          <type>electronvolt()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="267" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="267" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1aa3ca63a47a6ff48f1739f06ad1865f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(m2, m() *m())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>m2</type>
+        </param>
+        <param>
+          <type>m() *m()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="270" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="270" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a79608a732fec69bc6ab8d14a2937a62a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(m3, m() *m() *m())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>m3</type>
+        </param>
+        <param>
+          <type>m() *m() *m()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="271" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="271" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ab8790e8f09ea704c8272d978f829c94c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(cm2, cm() *cm())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>cm2</type>
+        </param>
+        <param>
+          <type>cm() *cm()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="272" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="272" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a4823b0bf89395971ffddae2514b8c5ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(cm3, cm() *cm() *cm())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>cm3</type>
+        </param>
+        <param>
+          <type>cm() *cm() *cm()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="273" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="273" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1adb61c2536576622e585b68590bcdaaaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(s2, s() *s())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>s2</type>
+        </param>
+        <param>
+          <type>s() *s()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="274" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="274" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a73794573adabf2e0004983bc750bbc53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(atom, mol()/6.02214076e23)</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>atom</type>
+        </param>
+        <param>
+          <type>mol()/6.</type>
+          <declname>02214076e23</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="277" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="277" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ab90c31c691af0b37617eff2d3d0a8b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(KBOLTZ, 1.3806e-23 *Joule()/Kelvin())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>KBOLTZ</type>
+        </param>
+        <param>
+          <type>1.3806e-23 *</type>
+          <declname>Joule</declname>
+          <array>)/Kelvin(</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="280" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="280" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a164c83cc33d8ef7d2e392b06dc4e9e7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(PROTON_MASS, 1.67262158e-27 *kilogram())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>PROTON_MASS</type>
+        </param>
+        <param>
+          <type>1.67262158e-27 *</type>
+          <declname>kilogram</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="281" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="281" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1ac92b706611ab385c085ea8a63f2084a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(MHE_OVER_MH, 4.002 *one())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>MHE_OVER_MH</type>
+        </param>
+        <param>
+          <type>4.002 *</type>
+          <declname>one</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="282" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="282" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a19daa0f99dd039dc9aebe6e5a2a701fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(HELIUM_MASS, MHE_OVER_MH() *PROTON_MASS())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>HELIUM_MASS</type>
+        </param>
+        <param>
+          <type>MHE_OVER_MH() *PROTON_MASS()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="283" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="283" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a0f1cf178de0bef4153ebf24de0d58165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(NEWTON_G, 6.67408e-11 *Newton() *(meter() *meter())/(kilogram() *kilogram()))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>NEWTON_G</type>
+        </param>
+        <param>
+          <type>6.67408e-11 *</type>
+          <declname>Newton</declname>
+          <array>) *(meter() *meter())/(kilogram() *kilogram()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="284" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="284" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a0f12d278faebb353d9910ba8bd6dba95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(SOLAR_MASS, solar_mass())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>SOLAR_MASS</type>
+        </param>
+        <param>
+          <type>solar_mass()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="285" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="285" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a71505a09f7ada896fda034152bf6535f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(SPEEDOFLIGHT, 299792458 *meter()/second())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>SPEEDOFLIGHT</type>
+        </param>
+        <param>
+          <type>299792458 *</type>
+          <declname>meter</declname>
+          <array>)/second(</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="286" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="286" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1aa16e12f5fb2c7a423f9bbe694fc717a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(H0, 70.3 *km()/s()/Mpc())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>H0</type>
+        </param>
+        <param>
+          <type>70.3 *</type>
+          <declname>km</declname>
+          <array>)/s()/Mpc(</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="287" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="287" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a4fc802ff000d75fbccb177e8f1ae0d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(YHE, 0.24 *one())</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>YHE</type>
+        </param>
+        <param>
+          <type>0.24 *</type>
+          <declname>one</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="288" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="288" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1acadee40a43384055e53b0889cab925c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Units::DEFINE_UNIT</definition>
+        <argsstring>(yHE,(YHE()/(1.-YHE())/MHE_OVER_MH()))</argsstring>
+        <name>DEFINE_UNIT</name>
+        <qualifiedname>dyablo::Units::DEFINE_UNIT</qualifiedname>
+        <param>
+          <type>yHE</type>
+        </param>
+        <param>
+          <type>(YHE()/(1.-YHE())/MHE_OVER_MH())</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="289" column="1" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="289" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="CodeUnits_8cpp_1a7f5246f59e7182102f4a779adf47656e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::Units::code_units_init</definition>
+        <argsstring>(const UnitSystem &amp;code_units)</argsstring>
+        <name>code_units_init</name>
+        <qualifiedname>dyablo::Units::code_units_init</qualifiedname>
+        <param>
+          <type>const UnitSystem &amp;</type>
+          <declname>code_units</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/CodeUnits.cpp" line="18" column="6" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/CodeUnits.cpp" bodystart="18" bodyend="22" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="343" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="CodeUnits_8cpp_1a09ab549ff67c07d8bfcaac31a5ceffa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const UnitSystem &amp;</type>
+        <definition>const UnitSystem &amp; dyablo::Units::code_units</definition>
+        <argsstring>()</argsstring>
+        <name>code_units</name>
+        <qualifiedname>dyablo::Units::code_units</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/CodeUnits.cpp" line="24" column="18" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/CodeUnits.cpp" bodystart="24" bodyend="28" declfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" declline="345" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a93234451b8133c39503857518488fb84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t dyablo::Units::constant_to_code_units</definition>
+        <argsstring>(const Unit_t &amp;cst)</argsstring>
+        <name>constant_to_code_units</name>
+        <qualifiedname>dyablo::Units::constant_to_code_units</qualifiedname>
+        <param>
+          <type>const Unit_t &amp;</type>
+          <declname>cst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="348" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="348" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1aadbec66a1d45c93e61924f6047b336f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION real_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t dyablo::Units::physical_to_supercomoving</definition>
+        <argsstring>(const real_t val, const real_t aexp)</argsstring>
+        <name>physical_to_supercomoving</name>
+        <qualifiedname>dyablo::Units::physical_to_supercomoving</qualifiedname>
+        <param>
+          <type>const real_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const real_t</type>
+          <declname>aexp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="369" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="369" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="Units_8h_1a1c3582443cd9a9daf2115b9024f5feb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION real_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t dyablo::Units::supercomoving_to_physical</definition>
+        <argsstring>(const real_t val, const real_t aexp)</argsstring>
+        <name>supercomoving_to_physical</name>
+        <qualifiedname>dyablo::Units::supercomoving_to_physical</qualifiedname>
+        <param>
+          <type>const real_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const real_t</type>
+          <declname>aexp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h" line="376" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/units/Units.h" bodystart="376" bodyend="379"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="real__type_8h" kindref="compound">real_type.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Kokkos_Core.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../misc/Dyablo_assert.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Units{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">[[maybe_unused]]<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>real_t<sp/>pow_int(real_t<sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exp)<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>exp<sp/>&lt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1<sp/>/<sp/>pow_int(<sp/>x,<sp/>-exp<sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>exp<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>temp<sp/>=<sp/>pow_int(x,<sp/>exp/2);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exp%2<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp*temp;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x*temp*temp;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Time=0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length=0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Mass=0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Current=0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Temperature=0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mol=0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>LuminousIntensity=0&gt;</highlight></codeline>
+<codeline lineno="42" refid="classdyablo_1_1Units_1_1Unit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>real_t<sp/>value_SI;<sp/></highlight><highlight class="comment">//<sp/>Value<sp/>expressed<sp/>in<sp/>SI<sp/>unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="54" refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>(real_t<sp/>value_SI)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>value_SI(value_SI)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims&gt;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="66" refid="classdyablo_1_1Units_1_1Unit_1a63cc54566aa6e8c12e12771de96c595e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>real_t<sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a63cc54566aa6e8c12e12771de96c595e" kindref="member">convert_to</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit&lt;Dims...&gt;</ref>&amp;<sp/>unit<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="67"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(<sp/>std::is_same_v&lt;<ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>&lt;Dims...&gt;&gt;,<sp/></highlight><highlight class="stringliteral">&quot;Unit<sp/>conversion<sp/>error<sp/>:<sp/>dimension<sp/>mismatch&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value_SI<sp/>/<sp/>unit.value_SI;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims&gt;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="75" refid="classdyablo_1_1Units_1_1Unit_1a17a6cc9e92cbd39e3bb7a01110f2cb2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a17a6cc9e92cbd39e3bb7a01110f2cb2a" kindref="member">operator+</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit&lt;Dims...&gt;</ref>&amp;<sp/>u2<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(<sp/>std::is_same_v&lt;<ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>&lt;Dims...&gt;&gt;,<sp/></highlight><highlight class="stringliteral">&quot;Unit<sp/>addition<sp/>error<sp/>:<sp/>dimension<sp/>mismatch&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>(value_SI<sp/>+<sp/>u2.value_SI);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims&gt;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref><sp/>operator-(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;Dims...&gt;</ref><sp/>u2<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="84"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(<sp/>std::is_same_v&lt;<ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt;Dims...&gt;&gt;,<sp/></highlight><highlight class="stringliteral">&quot;Unit<sp/>substraction<sp/>error<sp/>:<sp/>dimension<sp/>mismatch&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>(value_SI<sp/>-<sp/>u2.value_SI);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims&gt;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>&lt;p*Dims...&gt;<sp/>pow(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit&lt;Dims...&gt;</ref>&amp;<sp/>u)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit_1a97fdafcf1e5e691ce6b27c2502bbabc0" kindref="member">Unit</ref>&lt;p*Dims...&gt;(pow_int(<sp/>u.value_SI,<sp/>p<sp/>));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p&gt;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pow()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="98"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pow&lt;p&gt;(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims2<sp/>&gt;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt;Dims1+Dims2...&gt;<sp/>operator*(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;Dims1...&gt;</ref>&amp;<sp/>u1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;Dims2...&gt;</ref>&amp;<sp/>u2<sp/>)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt;Dims1+Dims2...&gt;(<sp/>u1.value_SI<sp/>*<sp/>u2.value_SI<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims2<sp/>&gt;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt;Dims1-Dims2...&gt;<sp/>operator/(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;Dims1...&gt;</ref>&amp;<sp/>u1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;Dims2...&gt;</ref>&amp;<sp/>u2<sp/>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt;Dims1-Dims2...&gt;(<sp/>u1.value_SI<sp/>/<sp/>u2.value_SI<sp/>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">...<sp/>Dims<sp/>&gt;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">KOKKOS_INLINE_FUNCTION<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt;Dims...&gt;<sp/>to_unit(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;Dims...&gt;</ref>&amp;<sp/>u<sp/>)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;&gt;</ref><sp/>to_unit(<sp/>real_t<sp/>val<sp/>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;&gt;</ref>(val);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="140" refid="structdyablo_1_1Units_1_1Unit__traits" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1Units_1_1Unit__traits" kindref="compound">Unit_traits</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_unit<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>L,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>M,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>C,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Temp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Mol,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>LI<sp/>&gt;</highlight></codeline>
+<codeline lineno="146" refid="structdyablo_1_1Units_1_1Unit__traits_3_01Unit_3_01T_00_01L_00_01M_00_01C_00_01Temp_00_01Mol_00_01LI_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1Units_1_1Unit__traits" kindref="compound">Unit_traits</ref>&lt;<ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit</ref>&lt;T,<sp/>L,<sp/>M,<sp/>C,<sp/>Temp,<sp/>Mol,<sp/>LI&gt;&gt;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_unit<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Time_exp<sp/>=<sp/>T;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length_exp<sp/>=<sp/>L;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Mass_exp<sp/>=<sp/>M;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Current_exp<sp/>=<sp/>C;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Temp_exp<sp/>=<sp/>Temp;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Mol_exp<sp/>=<sp/>Mol;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>LuminousIntensity_exp<sp/>=<sp/>LI;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_unit<sp/>=<sp/>Unit_traits&lt;T&gt;::is_unit;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//----------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Operators<sp/>for<sp/>units<sp/>with<sp/>automatic<sp/>type<sp/>conversion<sp/>using<sp/>to_unit()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//----------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>overload<sp/>operators<sp/>when<sp/>units<sp/>are<sp/>not<sp/>involved</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Ts&gt;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">enable_if_has_unit<sp/>=<sp/>std::enable_if_t&lt;((is_unit&lt;Ts&gt;<sp/>||<sp/>...)),<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2,<sp/>enable_if_has_unit&lt;T1,<sp/>T2&gt;<sp/>=<sp/>0<sp/>&gt;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>operator*(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>u1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>u2<sp/>)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>to_unit(<sp/>u1<sp/>)<sp/>*<sp/>to_unit(<sp/>u2<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2,<sp/>enable_if_has_unit&lt;T1,<sp/>T2&gt;<sp/>=<sp/>0<sp/><sp/>&gt;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>operator/(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>u1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>u2<sp/>)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>to_unit(<sp/>u1<sp/>)<sp/>/<sp/>to_unit(<sp/>u2<sp/>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2,<sp/>enable_if_has_unit&lt;T1,<sp/>T2&gt;<sp/>=<sp/>0<sp/><sp/>&gt;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>operator+(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>u1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>u2<sp/>)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>to_unit(<sp/>u1<sp/>).operator+(to_unit(<sp/>u2<sp/>));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T2,<sp/>enable_if_has_unit&lt;T1,<sp/>T2&gt;<sp/>=<sp/>0<sp/><sp/>&gt;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>operator-(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T1&amp;<sp/>u1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T2&amp;<sp/>u2<sp/>)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>to_unit(<sp/>u1<sp/>).operator-(to_unit(<sp/>u2<sp/>));</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFINE_UNIT(name,<sp/>...)<sp/>constexpr<sp/>auto<sp/>name()<sp/>{return<sp/>__VA_ARGS__;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SI<sp/>units<sp/>=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">DEFINE_UNIT(<sp/>second<sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;1&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">DEFINE_UNIT(<sp/>meter<sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,1&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">DEFINE_UNIT(<sp/>kilogram<sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,1&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">DEFINE_UNIT(<sp/>Ampere<sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,1&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">DEFINE_UNIT(<sp/>Kelvin<sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,1&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">DEFINE_UNIT(<sp/>mol<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,1&gt;</ref><sp/><sp/><sp/><sp/>(1)<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">DEFINE_UNIT(<sp/>candela<sp/><sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,0,1&gt;</ref><sp/><sp/>(1)<sp/>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unit<sp/>multiplicators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">DEFINE_UNIT(<sp/>one<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;&gt;</ref>(1)<sp/>);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">DEFINE_UNIT(<sp/>Giga<sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>1e9<sp/>*<sp/>one());</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">DEFINE_UNIT(<sp/>Mega<sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>1e6<sp/>*<sp/>one());</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">DEFINE_UNIT(<sp/>Kilo<sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>1e3<sp/>*<sp/>one());</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">DEFINE_UNIT(<sp/>centi<sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>1e-2<sp/>*<sp/>one());</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">DEFINE_UNIT(<sp/>milli<sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>1e-3<sp/>*<sp/>one());</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MKS<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">DEFINE_UNIT(<sp/>kg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>kilogram()<sp/>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">DEFINE_UNIT(<sp/>m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>meter()<sp/>);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">DEFINE_UNIT(<sp/>s<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>second()<sp/>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">DEFINE_UNIT(<sp/>km<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Kilo()*meter()<sp/>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">DEFINE_UNIT(<sp/>K<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Kelvin()<sp/>);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">DEFINE_UNIT(<sp/>Pa<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>kg()<sp/>/<sp/>m()<sp/>/<sp/>s()<sp/>/<sp/>s()<sp/>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">DEFINE_UNIT(<sp/>cd<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>candela()<sp/>);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">DEFINE_UNIT(<sp/>Joule<sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>kg()<sp/>*<sp/>m()*m()<sp/>/s()/s()<sp/>);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">DEFINE_UNIT(<sp/>Newton<sp/><sp/><sp/><sp/><sp/>,<sp/>kg()<sp/>*<sp/>m()<sp/>/s()/s()<sp/>);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">DEFINE_UNIT(<sp/>J<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Joule()<sp/>);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">DEFINE_UNIT(<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Newton()<sp/>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CGS<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal">DEFINE_UNIT(<sp/>gram<sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>milli()<sp/>*<sp/>kilogram()<sp/>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">DEFINE_UNIT(<sp/>g<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>gram()<sp/>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">DEFINE_UNIT(<sp/>centimeter<sp/>,<sp/>centi()<sp/>*<sp/>meter()<sp/>);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">DEFINE_UNIT(<sp/>cm<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>centimeter()<sp/>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">DEFINE_UNIT(<sp/>cm_per_s<sp/><sp/><sp/>,<sp/>cm()<sp/>/<sp/>s()<sp/>);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">DEFINE_UNIT(<sp/>erg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>1e-7<sp/>*<sp/>Joule()<sp/>);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Common<sp/>astro<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">DEFINE_UNIT(<sp/>parsec<sp/><sp/><sp/><sp/><sp/>,<sp/>3.085678e16<sp/>*<sp/>meter()<sp/>);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">DEFINE_UNIT(<sp/>pc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>parsec()<sp/><sp/>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">DEFINE_UNIT(<sp/>kpc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Kilo()<sp/>*<sp/>parsec()<sp/>);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">DEFINE_UNIT(<sp/>Mpc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Mega()<sp/>*<sp/>parsec()<sp/>);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">DEFINE_UNIT(<sp/>Gpc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Giga()<sp/>*<sp/>parsec()<sp/>);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal">DEFINE_UNIT(<sp/>astronomical_unit,<sp/>149597870700.0<sp/>*<sp/>meter()<sp/>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">DEFINE_UNIT(<sp/>au<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>astronomical_unit()<sp/>);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">DEFINE_UNIT(<sp/>solar_mass<sp/>,<sp/>1.9884e30<sp/>*<sp/>kilogram()<sp/>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">DEFINE_UNIT(<sp/>Msun<sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>solar_mass()<sp/>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal">DEFINE_UNIT(<sp/>minute<sp/><sp/><sp/><sp/><sp/>,<sp/>60<sp/>*<sp/>second()<sp/>);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">DEFINE_UNIT(<sp/>hour<sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>60<sp/>*<sp/>minute()<sp/>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">DEFINE_UNIT(<sp/>year<sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>8760.0<sp/>*<sp/>hour()<sp/>);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">DEFINE_UNIT(<sp/>yr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>year()<sp/>);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">DEFINE_UNIT(<sp/>kyr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Kilo()<sp/>*<sp/>year()<sp/>);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">DEFINE_UNIT(<sp/>Myr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Mega()<sp/>*<sp/>year()<sp/>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">DEFINE_UNIT(<sp/>Gyr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Giga()<sp/>*<sp/>year()<sp/>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal">DEFINE_UNIT(<sp/>Dalton,<sp/>1.6605388628e-27<sp/>*<sp/>kilogram()<sp/>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">DEFINE_UNIT(<sp/>atomic_mass_unit,<sp/>Dalton()<sp/>);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">DEFINE_UNIT(<sp/>amu<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>Dalton()<sp/>);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">DEFINE_UNIT(<sp/>electronvolt,<sp/>1.602176634e-19<sp/>*<sp/>Joule()<sp/>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">DEFINE_UNIT(<sp/>eV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>electronvolt()<sp/>);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Convenient<sp/>multiples</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal">DEFINE_UNIT(<sp/>m2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m()<sp/>*<sp/>m()<sp/>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">DEFINE_UNIT(<sp/>m3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m()<sp/>*<sp/>m()<sp/>*<sp/>m()<sp/>);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">DEFINE_UNIT(<sp/>cm2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>cm()<sp/>*<sp/>cm()<sp/>);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">DEFINE_UNIT(<sp/>cm3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>cm()<sp/>*<sp/>cm()<sp/>*<sp/>cm()<sp/>);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">DEFINE_UNIT(<sp/>s2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>s()<sp/>*<sp/>s()<sp/>);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Other<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal">DEFINE_UNIT(<sp/>atom<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>mol()<sp/>/<sp/>6.02214076e23<sp/>);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal">DEFINE_UNIT(<sp/>KBOLTZ<sp/><sp/><sp/><sp/><sp/>,<sp/>1.3806e-23<sp/>*<sp/>Joule()<sp/>/<sp/>Kelvin()<sp/>);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">DEFINE_UNIT(<sp/>PROTON_MASS,<sp/>1.67262158e-27<sp/>*<sp/>kilogram()<sp/>);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">DEFINE_UNIT(<sp/>MHE_OVER_MH,<sp/>4.002<sp/>*<sp/>one()<sp/>);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">DEFINE_UNIT(<sp/>HELIUM_MASS,<sp/>MHE_OVER_MH()<sp/>*<sp/>PROTON_MASS()<sp/>);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">DEFINE_UNIT(<sp/>NEWTON_G<sp/><sp/><sp/>,<sp/>6.67408e-11<sp/>*<sp/>Newton()<sp/>*<sp/>(meter()*meter())<sp/>/<sp/>(kilogram()*kilogram())<sp/>);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">DEFINE_UNIT(<sp/>SOLAR_MASS<sp/>,<sp/>solar_mass()<sp/>);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">DEFINE_UNIT(<sp/>SPEEDOFLIGHT,<sp/>299792458<sp/>*<sp/>meter()<sp/>/<sp/>second()<sp/>);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">DEFINE_UNIT(<sp/>H0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>70.3<sp/>*<sp/>km()<sp/>/<sp/>s()<sp/>/<sp/>Mpc()<sp/>);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">DEFINE_UNIT(<sp/>YHE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>0.24<sp/>*<sp/>one()<sp/>);<sp/></highlight><highlight class="comment">//<sp/>Helium<sp/>Mass<sp/>fraction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">DEFINE_UNIT(<sp/>yHE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>(YHE()/(1.-YHE())/MHE_OVER_MH())<sp/>);<sp/></highlight><highlight class="comment">//<sp/>Helium<sp/>number<sp/>fraction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Time<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;1&gt;</ref>;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Length<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,1&gt;</ref>;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Mass<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,1&gt;</ref>;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Current<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,1&gt;</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Temperature<sp/><sp/><sp/>=<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,1&gt;</ref>;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Mol<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,1&gt;</ref>;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">LuminousIntensity=<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,0,1&gt;</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Area<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>m2()<sp/>);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Volume<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>m3()<sp/>);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Velocity<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>m()/s()<sp/>);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Acceleration<sp/><sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>m()/s2()<sp/>);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Density<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>kg()/m3()<sp/>);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Energy<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>J()<sp/>);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">EnergyDensity<sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>J()/m3()<sp/>);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Pressure<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">decltype</highlight><highlight class="normal">(<sp/>Pa()<sp/>);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="classdyablo_1_1Units_1_1UnitSystem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">UnitSystem</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;1&gt;</ref><sp/>time;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,1&gt;</ref><sp/>length;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,1&gt;</ref><sp/>mass;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,1&gt;</ref><sp/>current;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,1&gt;</ref><sp/>temp;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,1&gt;</ref><sp/>mol;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,0,1&gt;</ref><sp/>luminousIntensity;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>UnitSystem(<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;1&gt;</ref><sp/>time<sp/>=<sp/>Units::second(),<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,1&gt;</ref><sp/>length<sp/>=<sp/>Units::meter(),<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,1&gt;</ref><sp/>mass<sp/>=<sp/>Units::kg(),<sp/></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,1&gt;</ref><sp/>current<sp/>=<sp/>Units::Ampere(),<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,1&gt;</ref><sp/>temp<sp/>=<sp/>Units::Kelvin(),<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,1&gt;</ref><sp/>mol<sp/>=<sp/>Units::mol(),<sp/><ref refid="classdyablo_1_1Units_1_1Unit" kindref="compound">Unit&lt;0,0,0,0,0,0,1&gt;</ref><sp/>luminousIntensity<sp/>=<sp/>Units::candela()<sp/>)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>time(time),<sp/>length(length),<sp/>mass(mass),<sp/></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>current(current),<sp/>temp(temp),<sp/>mol(mol),<sp/>luminousIntensity(luminousIntensity)</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Unit_t&gt;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>Unit_t<sp/>getUnit(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Unit_t&amp;<sp/>u<sp/>=<sp/>Unit_t(1)<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="330"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">traits<sp/>=<sp/><ref refid="structdyablo_1_1Units_1_1Unit__traits" kindref="compound">Unit_traits&lt;Unit_t&gt;</ref>;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>time<sp/><sp/><sp/><sp/><sp/>.pow&lt;traits::Time_exp&gt;()<sp/></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>length<sp/><sp/><sp/>.pow&lt;traits::Length_exp&gt;()<sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>mass<sp/><sp/><sp/><sp/><sp/>.pow&lt;traits::Mass_exp&gt;()</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>current<sp/><sp/>.pow&lt;traits::Current_exp&gt;()</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>temp<sp/><sp/><sp/><sp/><sp/>.pow&lt;traits::Temp_exp&gt;()</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>mol<sp/><sp/><sp/><sp/><sp/><sp/>.pow&lt;traits::Mol_exp&gt;()</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>luminousIntensity.pow&lt;traits::LuminousIntensity_exp&gt;();</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>code_units_init(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1UnitSystem" kindref="compound">UnitSystem</ref>&amp;<sp/>code_units<sp/>);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1Units_1_1UnitSystem" kindref="compound">UnitSystem</ref>&amp;<sp/>code_units();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Unit_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">real_t<sp/>constant_to_code_units(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Unit_t&amp;<sp/>cst<sp/>)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cst.convert_to(<sp/>code_units().getUnit(cst)<sp/>);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Impl{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="keyword">namespace</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Unit_t&gt;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>get_aexp_exponent()</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">traits<sp/>=<sp/>Unit_traits&lt;Unit_t&gt;;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<sp/>2<sp/>*<sp/>traits::Time_exp<sp/>-<sp/>traits::Length_exp;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Unit_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">real_t<sp/>physical_to_supercomoving(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>val,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>aexp<sp/>)</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val<sp/>*<sp/>pow_int(aexp,<sp/>Impl::get_aexp_exponent&lt;Unit_t&gt;());</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Unit_t<sp/>&gt;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="376"><highlight class="normal">real_t<sp/>supercomoving_to_physical(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>val,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>real_t<sp/>aexp<sp/>)</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val<sp/>/<sp/>pow_int(aexp,<sp/>Impl::get_aexp_exponent&lt;Unit_t&gt;());</highlight></codeline>
+<codeline lineno="379"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/utils/units/Units.h"/>
+  </compounddef>
+</doxygen>

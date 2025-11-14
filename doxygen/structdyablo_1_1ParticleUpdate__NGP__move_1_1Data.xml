@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::ParticleUpdate_NGP_move::Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a9583db7754840301965c18aff9c25b85" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_NGP_move::Data::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::Data::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="77" column="12" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a490c93ebc7221a61ee80e519fca5a9b7" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_NGP_move::Data::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::Data::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="77" column="16" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1abdb11979de5dbf0b3b73edd9955ddb66" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_NGP_move::Data::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::Data::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="77" column="20" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a23de304e1b214c5a6691e375d8a2520d" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_NGP_move::Data::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::Data::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="77" column="24" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1aeb40601d2f93387523300923f6f65d3b" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_NGP_move::Data::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::Data::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="77" column="28" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a25b1b97e5ed59dafd96811738679af54" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParticleUpdate_NGP_move::Data::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::ParticleUpdate_NGP_move::Data::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="77" column="32" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" line="76" column="3" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_NGP_move.cpp" bodystart="76" bodyend="78"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a490c93ebc7221a61ee80e519fca5a9b7" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move::Data</scope><name>xmax</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a9583db7754840301965c18aff9c25b85" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move::Data</scope><name>xmin</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a23de304e1b214c5a6691e375d8a2520d" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move::Data</scope><name>ymax</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1abdb11979de5dbf0b3b73edd9955ddb66" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move::Data</scope><name>ymin</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1a25b1b97e5ed59dafd96811738679af54" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move::Data</scope><name>zmax</name></member>
+      <member refid="structdyablo_1_1ParticleUpdate__NGP__move_1_1Data_1aeb40601d2f93387523300923f6f65d3b" prot="public" virt="non-virtual"><scope>dyablo::ParticleUpdate_NGP_move::Data</scope><name>zmin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

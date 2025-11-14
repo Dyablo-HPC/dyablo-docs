@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1GLMMHDState" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::GLMMHDState</compoundname>
+    <basecompoundref refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD" prot="public" virt="non-virtual">dyablo::HyperbolicPolicy_State_GLMMHD</basecompoundref>
+    <includes refid="State__GLMMHD_8h" local="no">State_GLMMHD.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1GLMMHDState_1a276eaf1b0c0f906c72381d02028b75ef" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t dyablo::GLMMHDState::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>dyablo::GLMMHDState::N</qualifiedname>
+        <initializer>= <ref refid="structdyablo_1_1State__traits" kindref="compound">State_traits</ref>&lt;<ref refid="structdyablo_1_1HyperbolicPolicy__PrimGLMMHDState" kindref="compound">PrimState</ref>&gt;::nvars</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h" line="14" column="27" bodyfile="/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1GLMMHDState_1a0e9f501a160ad5fd833ad02065d71962" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::HyperbolicPolicy_State_GLMMHD::HyperbolicPolicy_State_GLMMHD</definition>
+        <argsstring>(const HyperbolicPolicy_GLMMHD_Params &amp;params)</argsstring>
+        <name>HyperbolicPolicy_State_GLMMHD</name>
+        <qualifiedname>dyablo::GLMMHDState::HyperbolicPolicy_State_GLMMHD</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__GLMMHD__Params" kindref="compound">HyperbolicPolicy_GLMMHD_Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h" line="13" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="180" bodyend="183"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure grouping the primitive and conservative GLMMHD state as well as information on the number of fields to store per state. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::GLMMHDState</label>
+        <link refid="structdyablo_1_1GLMMHDState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_State_GLMMHD</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::GLMMHDState</label>
+        <link refid="structdyablo_1_1GLMMHDState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_State_GLMMHD</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a29583d13fcbb77eef210e7d0e4e3fec9" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>atomic_addConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a693f745768314827782ffef14debe2bf" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a128352f8d0b26964e6f9cffb38cbf0a4" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>consToPrim</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1add393c2ed6f39a8a8caad98df2820307" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>ConsVarIndex</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a6cc1533188619a50a45eb5798b76089e" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>getConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a866b7b5d234f0f39b500a92ddc84a322" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>getPrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a52a4f921197bf3ac2a69351838c2499b" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>getUin</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1ad3b0382dbf0f2573c03a91d972a4c40a" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>getUout</name></member>
+      <member refid="structdyablo_1_1GLMMHDState_1a0e9f501a160ad5fd833ad02065d71962" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>HyperbolicPolicy_State_GLMMHD</name></member>
+      <member refid="structdyablo_1_1GLMMHDState_1a276eaf1b0c0f906c72381d02028b75ef" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>N</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a1f1d1ba23a97d2471e5b7b2d9eecd2b7" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a75d67a0f55c806a5cce07632208f9911" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>primToCons</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a8792556ae2886cd059c2780358244a7a" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>setConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a1f45804430d500b0d463361b7713cc33" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDState</scope><name>setPrimState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

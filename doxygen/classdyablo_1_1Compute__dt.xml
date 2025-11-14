@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Compute__dt" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::Compute_dt</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1Compute__dt__cosmology" prot="public" virt="non-virtual">dyablo::Compute_dt_cosmology</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Compute__dt__hydro" prot="public" virt="non-virtual">dyablo::Compute_dt_hydro</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Compute__dt__parabolic" prot="public" virt="non-virtual">dyablo::Compute_dt_parabolic</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Compute__dt__particle__velocity" prot="public" virt="non-virtual">dyablo::Compute_dt_particle_velocity</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1Compute__dt__rad" prot="public" virt="non-virtual">dyablo::Compute_dt_rad</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt_1a8ff850a48ff27f842d5d8aa3893b7588" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::Compute_dt::~Compute_dt</definition>
+        <argsstring>()</argsstring>
+        <name>~Compute_dt</name>
+        <qualifiedname>dyablo::Compute_dt::~Compute_dt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h" line="18" column="11" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt_1a4d5c4db5ef4b82127137594b4027d891" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::Compute_dt::compute_dt</definition>
+        <argsstring>(const UserData &amp;Uin, ScalarSimulationData &amp;scalar_data)=0</argsstring>
+        <name>compute_dt</name>
+        <qualifiedname>dyablo::Compute_dt::compute_dt</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1Compute__dt__cosmology_1af8a32cdc47fe15bb5a5505608fcb316f">compute_dt</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Compute__dt__hydro_1a67ceb1ecab7c630140cc8bace90bf8fa">compute_dt</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Compute__dt__parabolic_1a3c66d16a67b6d284b8184ef5a40ec300">compute_dt</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Compute__dt__particle__velocity_1affaa6fb6b2d009dfa15593cd07167ecf">compute_dt</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1Compute__dt__rad_1a56a40b1709da3adb1efb982bdd9b032a">compute_dt</reimplementedby>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>Uin</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h" line="19" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="2">
+        <label>dyablo::Compute_dt_cosmology</label>
+        <link refid="classdyablo_1_1Compute__dt__cosmology"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::Compute_dt_hydro</label>
+        <link refid="classdyablo_1_1Compute__dt__hydro"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::Compute_dt_parabolic</label>
+        <link refid="classdyablo_1_1Compute__dt__parabolic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dyablo::Compute_dt_particle_velocity</label>
+        <link refid="classdyablo_1_1Compute__dt__particle__velocity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dyablo::Compute_dt_rad</label>
+        <link refid="classdyablo_1_1Compute__dt__rad"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h" line="12" column="1" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h" bodystart="12" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Compute__dt_1a4d5c4db5ef4b82127137594b4027d891" prot="public" virt="pure-virtual"><scope>dyablo::Compute_dt</scope><name>compute_dt</name></member>
+      <member refid="classdyablo_1_1Compute__dt_1a8ff850a48ff27f842d5d8aa3893b7588" prot="public" virt="virtual"><scope>dyablo::Compute_dt</scope><name>~Compute_dt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

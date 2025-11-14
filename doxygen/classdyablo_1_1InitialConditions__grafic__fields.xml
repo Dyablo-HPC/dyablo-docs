@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1InitialConditions__grafic__fields" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::InitialConditions_grafic_fields</compoundname>
+    <basecompoundref refid="classdyablo_1_1InitialConditions" prot="public" virt="non-virtual">dyablo::InitialConditions</basecompoundref>
+    <innerclass refid="structdyablo_1_1InitialConditions__grafic__fields_1_1grafic__header" prot="private">dyablo::InitialConditions_grafic_fields::grafic_header</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a950e97a8d7329f16cafa0a6a642e7197" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::InitialConditions_grafic_fields::graficDir</definition>
+        <argsstring></argsstring>
+        <name>graficDir</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::graficDir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="279" column="15" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a138aee929138f1935dd90a9281931c92" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::InitialConditions_grafic_fields::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="280" column="15" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1aff51626c9c1d2bf537aa5a7d5b65e3eb" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="283" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1ac7b6835083c85c7ab6de69b48e50f3a6" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="283" column="15" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1ad227ad35b0460ecc6c07bbc3a89101be" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="283" column="20" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a19e2ac30c91e2e93917ee27a54ef7422" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="284" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a7f73899d0f4e875224892d43dcc79cd8" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="284" column="15" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1ad9d7dbc20d0aa31ccfbe995f93be14c2" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="284" column="20" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a4c7b7283f9a6e04a3344bad47c23aa2c" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::omegab</definition>
+        <argsstring></argsstring>
+        <name>omegab</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::omegab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="285" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a7ea8fa23b9efc41d4418d1af21e5ea1f" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::astart</definition>
+        <argsstring></argsstring>
+        <name>astart</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::astart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="286" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a9fd34ab10e907bc81579eb6be0e451fc" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::omegam</definition>
+        <argsstring></argsstring>
+        <name>omegam</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::omegam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="286" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a98d385dc6ed06731f1d0598f4e611b0f" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::H0</definition>
+        <argsstring></argsstring>
+        <name>H0</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::H0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="287" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1abff2c1f9d6fd8a17a842ee9937f165e2" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::rhoc</definition>
+        <argsstring></argsstring>
+        <name>rhoc</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::rhoc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="288" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a8393f67f9e7e5a59eb8eb63a0c1a8f49" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="291" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1ace557e017539c40a4e70c39ceb6b2a6c" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="292" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a62fc6c5927afaf4d671ee5e5f571982c" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="292" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a76d6ff9fd6cad181c9e2346ef3d29535" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="292" column="22" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__grafic__fields_1a962e7a0deb9346dfb4ad63c8299bcdae" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_grafic_fields::temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::temp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="294" column="10" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="294" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__grafic__fields_1a0a4125edb99ee94d12548df3a5ed001c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::InitialConditions_grafic_fields::InitialConditions_grafic_fields</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>InitialConditions_grafic_fields</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::InitialConditions_grafic_fields</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="19" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="19" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__grafic__fields_1a9d5ad01aafc2da843c042570374773bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::InitialConditions_grafic_fields::init</definition>
+        <argsstring>(UserData &amp;U)</argsstring>
+        <name>init</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::init</qualifiedname>
+        <reimplements refid="classdyablo_1_1InitialConditions_1a20889de941f815d050a2f29d8f312d28">init</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="128" column="8" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="128" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__grafic__fields_1a47bd7ba56f7b063f873f468b526e4fe6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::InitialConditions_grafic_fields::printHeader</definition>
+        <argsstring>(grafic_header hdr, std::string graficDir)</argsstring>
+        <name>printHeader</name>
+        <qualifiedname>dyablo::InitialConditions_grafic_fields::printHeader</qualifiedname>
+        <param>
+          <type>grafic_header</type>
+          <declname>hdr</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>graficDir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print header </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="258" column="6" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="258" bodyend="276"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_grafic_fields</label>
+        <link refid="classdyablo_1_1InitialConditions__grafic__fields"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_grafic_fields</label>
+        <link refid="classdyablo_1_1InitialConditions__grafic__fields"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_grafic_fields.cpp" bodystart="8" bodyend="295"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a7ea8fa23b9efc41d4418d1af21e5ea1f" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>astart</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a138aee929138f1935dd90a9281931c92" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a8393f67f9e7e5a59eb8eb63a0c1a8f49" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>gamma0</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a950e97a8d7329f16cafa0a6a642e7197" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>graficDir</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a98d385dc6ed06731f1d0598f4e611b0f" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>H0</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a9d5ad01aafc2da843c042570374773bf" prot="public" virt="virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>init</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a0a4125edb99ee94d12548df3a5ed001c" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>InitialConditions_grafic_fields</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a4c7b7283f9a6e04a3344bad47c23aa2c" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>omegab</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a9fd34ab10e907bc81579eb6be0e451fc" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>omegam</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a47bd7ba56f7b063f873f468b526e4fe6" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>printHeader</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1abff2c1f9d6fd8a17a842ee9937f165e2" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>rhoc</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a62fc6c5927afaf4d671ee5e5f571982c" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>smallc</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a76d6ff9fd6cad181c9e2346ef3d29535" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>smallp</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1ace557e017539c40a4e70c39ceb6b2a6c" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>smallr</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a962e7a0deb9346dfb4ad63c8299bcdae" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>temp</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a19e2ac30c91e2e93917ee27a54ef7422" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>xmax</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1aff51626c9c1d2bf537aa5a7d5b65e3eb" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>xmin</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1a7f73899d0f4e875224892d43dcc79cd8" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>ymax</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1ac7b6835083c85c7ab6de69b48e50f3a6" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>ymin</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1ad9d7dbc20d0aa31ccfbe995f93be14c2" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>zmax</name></member>
+      <member refid="classdyablo_1_1InitialConditions__grafic__fields_1ad227ad35b0460ecc6c07bbc3a89101be" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>zmin</name></member>
+      <member refid="classdyablo_1_1InitialConditions_1a49242f31b906aa339374199c2ff18b96" prot="public" virt="virtual"><scope>dyablo::InitialConditions_grafic_fields</scope><name>~InitialConditions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

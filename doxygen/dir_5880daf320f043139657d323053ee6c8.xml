@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_5880daf320f043139657d323053ee6c8" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/foreach_cell</compoundname>
+    <innerfile refid="AMRBlockForeachCell_8h">AMRBlockForeachCell.h</innerfile>
+    <innerfile refid="AMRBlockForeachCell__CellArray_8h">AMRBlockForeachCell_CellArray.h</innerfile>
+    <innerfile refid="AMRBlockForeachCell__group_8h">AMRBlockForeachCell_group.h</innerfile>
+    <innerfile refid="AMRBlockForeachCell__scratch_8h">AMRBlockForeachCell_scratch.h</innerfile>
+    <innerfile refid="ForeachCell_8h">ForeachCell.h</innerfile>
+    <innerfile refid="ForeachCell__utils_8h">ForeachCell_utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/"/>
+  </compounddef>
+</doxygen>

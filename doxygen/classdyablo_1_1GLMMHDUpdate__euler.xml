@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1GLMMHDUpdate__euler" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::GLMMHDUpdate_euler</compoundname>
+    <basecompoundref refid="classdyablo_1_1Hyperbolic__euler" prot="public" virt="non-virtual">dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_GLMMHD &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::GLMMHDUpdate_euler</label>
+        <link refid="classdyablo_1_1GLMMHDUpdate__euler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_GLMMHD &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__euler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::GLMMHDUpdate_euler</label>
+        <link refid="classdyablo_1_1GLMMHDUpdate__euler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicUpdate</label>
+        <link refid="classdyablo_1_1HyperbolicUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::Hyperbolic_euler&lt; HyperbolicPolicy_GLMMHD &gt;</label>
+        <link refid="classdyablo_1_1Hyperbolic__euler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/GLMMHDUpdate_euler.cpp" line="7" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/GLMMHDUpdate_euler.cpp" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Hyperbolic__euler_1a1fa7a404c615dd6862b0fa6bdaeb5d1c" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDUpdate_euler</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1Hyperbolic__euler_1a3dfe4ed4222789749e7730e567c5a401" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDUpdate_euler</scope><name>Hyperbolic_euler</name></member>
+      <member refid="classdyablo_1_1Hyperbolic__euler_1a97fb0e35cd07afccb1902f4aec518b41" prot="public" virt="non-virtual"><scope>dyablo::GLMMHDUpdate_euler</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1Hyperbolic__euler_1a67d16281b9e7c1ea5ef7dc5c8088dfaf" prot="public" virt="virtual"><scope>dyablo::GLMMHDUpdate_euler</scope><name>update</name></member>
+      <member refid="classdyablo_1_1HyperbolicUpdate_1a9fcd8d348fd4cfd6574c4b34b57363f5" prot="public" virt="virtual"><scope>dyablo::GLMMHDUpdate_euler</scope><name>~HyperbolicUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

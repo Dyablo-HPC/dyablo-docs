@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</compoundname>
+    <basecompoundref refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl" prot="public" virt="non-virtual">dyablo::HyperbolicPolicy_Hydro_impl</basecompoundref>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl_1a49ecf2ce861f2c7cdce4d11af6d02b08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref></type>
+        <definition>static FieldManager dyablo::HyperbolicPolicy_Hydro_Hancock_impl::getFieldManager</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldManager</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Hancock_impl::getFieldManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="325" column="23" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="325" bodyend="334"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl_1a54169b8d51de4e81e6ed6f8bdaecaf44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION PrimState dyablo::HyperbolicPolicy_Hydro_Hancock_impl::compute_half_step</definition>
+        <argsstring>(PrimState q, PrimState sx, PrimState sy, PrimState sz, real_t dtdx, real_t dtdy, real_t dtdz) const</argsstring>
+        <name>compute_half_step</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Hancock_impl::compute_half_step</qualifiedname>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">PrimState</ref></type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dtdx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dtdy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dtdz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="337" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="337" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl_1a4cf8be4f929c0d65d44977283389b145" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicPolicy_Hydro_impl::HyperbolicPolicy_Hydro_impl</definition>
+        <argsstring>(const Params &amp;params, const ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>HyperbolicPolicy_Hydro_impl</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_Hancock_impl::HyperbolicPolicy_Hydro_impl</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params" kindref="compound">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="323" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="461" bodyend="470"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>HyperbolicPolicy_BoundaryConditions_Hydro_dynamic</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic"/>
+      </node>
+      <node id="5">
+        <label>HyperbolicPolicy_Slope_dynamic&lt; HyperbolicPolicy_State_Hydro &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl"/>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_Hydro_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc"/>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicPolicy_State_Hydro</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__State__Hydro"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>HyperbolicPolicy_BoundaryConditions_Hydro_dynamic</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic"/>
+      </node>
+      <node id="5">
+        <label>HyperbolicPolicy_Slope_dynamic&lt; HyperbolicPolicy_State_Hydro &gt;</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl"/>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_Hydro_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::HyperbolicPolicy_RiemannSolver_Hydro_hllc</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc"/>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicPolicy_State_Hydro</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__State__Hydro"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" line="320" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_hancock_oneneighbor.cpp" bodystart="321" bodyend="381"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a82d962040be3d6cf4e02558c9cc74789" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>atomic_addConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl_1a54169b8d51de4e81e6ed6f8bdaecaf44" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>compute_half_step</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1a268ed3703c16c3f0bf3997444bac1112" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>compute_slope</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1a268ed3703c16c3f0bf3997444bac1112" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>compute_slope</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl_1ace16a3d86af4d040fb2290dfec44e5a4" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a673f06e1285c747edc6efa152fb38cc9" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>consToPrim</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a0ff09bb92d976a3409db56b06cdae520" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>ConsVarIndex</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a4369c495451cb8143361f37897b441c5" prot="protected" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>FieldAccessor</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1abd4fb0bffa90bee06d0612149c0c3aae" prot="protected" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>gamma0</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1af7d5b09e90f8acfe4d25fa132298dcec" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getBoundaryFlux</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1af7d5b09e90f8acfe4d25fa132298dcec" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getBoundaryFlux</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1ab9bb68a4e9b36e21b10f1b6982561fa3" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getBoundaryValue</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1ab9bb68a4e9b36e21b10f1b6982561fa3" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getBoundaryValue</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a66ffe590efe7ef15d00e9e0c03addcdd" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl_1a49ecf2ce861f2c7cdce4d11af6d02b08" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getFieldManager</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl_1a2605dec6ac4b6c5dbf463601a5a02aa8" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getParams</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1aa6a1eeddd9a847c32f78d7a408f4a217" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getPrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1ae42f0de6be1f9f81ee5b03095e109353" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getUin</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a2393490739794c3f9f1f98b9e5c38318" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>getUout</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl_1a6e676fa1c2932c1f3619d584b0f3e752" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>has_postProcess</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1ac8c5444e9e71974ebe1f9de4bd444cb1" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>HyperbolicPolicy_BoundaryConditions_dynamic</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__dynamic_1ac8c5444e9e71974ebe1f9de4bd444cb1" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>HyperbolicPolicy_BoundaryConditions_dynamic</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__Hancock__impl_1a4cf8be4f929c0d65d44977283389b145" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>HyperbolicPolicy_Hydro_impl</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1a8119b334d7448f0eed2d0abc443bd00f" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>HyperbolicPolicy_RiemannSolver_Hydro_hllc</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1aea837f3109c7619a146150e5e3a59514" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>HyperbolicPolicy_Slope_dynamic_impl</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__dynamic__impl_1aea837f3109c7619a146150e5e3a59514" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>HyperbolicPolicy_Slope_dynamic_impl</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1acaacef2f49f36193bde79845ad587a10" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>HyperbolicPolicy_State_Hydro</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a90c936bd76c8bd0012bcc023b7601553" prot="protected" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>ndim</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl_1a15b73767040bd9ad9872d52ef71f2e00" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>postProcess</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl_1a14ce48bca55f34ffb2c5343d8e11681e" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a072b7d4c03fbc808a3b1ff12a6909154" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>primToCons</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Hydro__impl_1ad7b65712bd6ee171232f91ea55f23064" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>printWarnings</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Hydro__hllc_1afc85a618c0b5d0128fce6460ccabbf81" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>riemann_solver</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1abccae6ee916e171182957fc3b49bbbe5" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>setConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__Hydro_1a72ff8d0ce5f109550f364fae5087ee97" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_Hancock_impl</scope><name>setPrimState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

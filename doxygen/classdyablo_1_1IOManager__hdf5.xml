@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1IOManager__hdf5" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::IOManager_hdf5</compoundname>
+    <basecompoundref refid="classdyablo_1_1IOManager" prot="public" virt="non-virtual">dyablo::IOManager</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a0459122554e7814b8871a9831ab7de4a" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::IOManager_hdf5::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::IOManager_hdf5::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="198" column="15" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a9c125f4e2fd31a46b6853f33ef0a464b" prot="private" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::IOManager_hdf5::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::IOManager_hdf5::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="199" column="10" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a964e280d8878fb82e41580a0510fcb02" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::IOManager_hdf5::output_dir</definition>
+        <argsstring></argsstring>
+        <name>output_dir</name>
+        <qualifiedname>dyablo::IOManager_hdf5::output_dir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="200" column="15" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a0f42c1d4cdc274ffbe3d8e3690baaf6c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::IOManager_hdf5::filename_prefix</definition>
+        <argsstring></argsstring>
+        <name>filename_prefix</name>
+        <qualifiedname>dyablo::IOManager_hdf5::filename_prefix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="201" column="15" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1aa7593557b8f1a6a6b9a43335b1d79390" prot="private" static="no" mutable="no">
+        <type>std::set&lt; std::string &gt;</type>
+        <definition>std::set&lt;std::string&gt; dyablo::IOManager_hdf5::write_varnames</definition>
+        <argsstring></argsstring>
+        <name>write_varnames</name>
+        <qualifiedname>dyablo::IOManager_hdf5::write_varnames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="202" column="12" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a2719d823862a98fa512218cae9bae387" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::set&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::set&lt;std::string&gt; &gt; dyablo::IOManager_hdf5::write_particle_attributes</definition>
+        <argsstring></argsstring>
+        <name>write_particle_attributes</name>
+        <qualifiedname>dyablo::IOManager_hdf5::write_particle_attributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="203" column="12" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1aa3da553a1d21e3a500056ec7cce871ad" prot="private" static="no" mutable="no">
+        <type>MainXmfFile</type>
+        <definition>MainXmfFile dyablo::IOManager_hdf5::main_xdmf_fd</definition>
+        <argsstring></argsstring>
+        <name>main_xdmf_fd</name>
+        <qualifiedname>dyablo::IOManager_hdf5::main_xdmf_fd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="204" column="15" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1aaccd877d0e62b6af9c30f542f2056b57" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, MainXmfFile &gt;</type>
+        <definition>std::map&lt;std::string, MainXmfFile&gt; dyablo::IOManager_hdf5::particles_main_xdmf_fds</definition>
+        <argsstring></argsstring>
+        <name>particles_main_xdmf_fds</name>
+        <qualifiedname>dyablo::IOManager_hdf5::particles_main_xdmf_fds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="205" column="12" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a2d24d1e6291efba0ebaf58dcfbcc2aee" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::IOManager_hdf5::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::IOManager_hdf5::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="206" column="16" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a1fa472fe7a6aa4943673d85aa586ae74" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::IOManager_hdf5::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::IOManager_hdf5::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="206" column="21" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1aba0465c593c30f245f580b5350e343c0" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::IOManager_hdf5::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::IOManager_hdf5::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="207" column="16" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a310e05c88f2a4cd0306fe6737102a2b7" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::IOManager_hdf5::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::IOManager_hdf5::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="207" column="21" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a1f69f246da7bc8d9a2a992efd169143c" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::IOManager_hdf5::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::IOManager_hdf5::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="208" column="16" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1aa42cf1c303156eae65a82970331da7bf" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::IOManager_hdf5::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::IOManager_hdf5::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="208" column="21" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1ab1702e98fe409f85db71ddf983d0d5e2" prot="private" static="no" mutable="no">
+        <type>OutputRealType</type>
+        <definition>OutputRealType dyablo::IOManager_hdf5::output_real_type</definition>
+        <argsstring></argsstring>
+        <name>output_real_type</name>
+        <qualifiedname>dyablo::IOManager_hdf5::output_real_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="210" column="18" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1IOManager__hdf5_1a41d025e6e39f46db9c84cc4426359d42" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classdyablo_1_1DerivedFields" kindref="compound">DerivedFields</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;DerivedFields&gt; &gt; dyablo::IOManager_hdf5::derived_fields</definition>
+        <argsstring></argsstring>
+        <name>derived_fields</name>
+        <qualifiedname>dyablo::IOManager_hdf5::derived_fields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="212" column="15" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="212" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1IOManager__hdf5_1abfb6adbfa0828f5765f95721e6c5e4ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::IOManager_hdf5::IOManager_hdf5</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>IOManager_hdf5</name>
+        <qualifiedname>dyablo::IOManager_hdf5::IOManager_hdf5</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="105" column="3" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="105" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1IOManager__hdf5_1ac967d3213a98c6bdaeed432ba6d98a8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::IOManager_hdf5::save_snapshot</definition>
+        <argsstring>(const UserData &amp;U_, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>save_snapshot</name>
+        <qualifiedname>dyablo::IOManager_hdf5::save_snapshot</qualifiedname>
+        <reimplements refid="classdyablo_1_1IOManager_1a153a366ae5ca463116fa5eba2bb3c96b">save_snapshot</reimplements>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output simulation snapshot to a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+<parametername>Ughost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Simulation data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iteration number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>physical time of the simulation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="184" column="8" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="184" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1IOManager__hdf5_1a602a532d4024c9298c379a16416e0906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename output_real_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::IOManager_hdf5::save_snapshot_aux</definition>
+        <argsstring>(const UserData &amp;U_, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>save_snapshot_aux</name>
+        <qualifiedname>dyablo::IOManager_hdf5::save_snapshot_aux</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U_</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="192" column="8" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="234" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1IOManager__hdf5_1a4625a79807d4271fac311c60694ab032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename output_real_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::IOManager_hdf5::save_particles</definition>
+        <argsstring>(const UserData &amp;U, const std::string &amp;particle_array, uint32_t iter, real_t time)</argsstring>
+        <name>save_particles</name>
+        <qualifiedname>dyablo::IOManager_hdf5::save_particles</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>particle_array</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="194" column="8" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="526" bodyend="624"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::IOManager</label>
+        <link refid="classdyablo_1_1IOManager"/>
+      </node>
+      <node id="1">
+        <label>dyablo::IOManager_hdf5</label>
+        <link refid="classdyablo_1_1IOManager__hdf5"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::IOManager</label>
+        <link refid="classdyablo_1_1IOManager"/>
+      </node>
+      <node id="1">
+        <label>dyablo::IOManager_hdf5</label>
+        <link refid="classdyablo_1_1IOManager__hdf5"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" line="103" column="1" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_hdf5.cpp" bodystart="103" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a41d025e6e39f46db9c84cc4426359d42" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>derived_fields</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a0f42c1d4cdc274ffbe3d8e3690baaf6c" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>filename_prefix</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a0459122554e7814b8871a9831ab7de4a" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1abfb6adbfa0828f5765f95721e6c5e4ab" prot="public" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>IOManager_hdf5</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1aa3da553a1d21e3a500056ec7cce871ad" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>main_xdmf_fd</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a964e280d8878fb82e41580a0510fcb02" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>output_dir</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1ab1702e98fe409f85db71ddf983d0d5e2" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>output_real_type</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1aaccd877d0e62b6af9c30f542f2056b57" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>particles_main_xdmf_fds</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a4625a79807d4271fac311c60694ab032" prot="public" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>save_particles</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1ac967d3213a98c6bdaeed432ba6d98a8b" prot="public" virt="virtual"><scope>dyablo::IOManager_hdf5</scope><name>save_snapshot</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a602a532d4024c9298c379a16416e0906" prot="public" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>save_snapshot_aux</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a9c125f4e2fd31a46b6853f33ef0a464b" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>timers</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a2719d823862a98fa512218cae9bae387" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>write_particle_attributes</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1aa7593557b8f1a6a6b9a43335b1d79390" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>write_varnames</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a1fa472fe7a6aa4943673d85aa586ae74" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>xmax</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a2d24d1e6291efba0ebaf58dcfbcc2aee" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>xmin</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a310e05c88f2a4cd0306fe6737102a2b7" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>ymax</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1aba0465c593c30f245f580b5350e343c0" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>ymin</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1aa42cf1c303156eae65a82970331da7bf" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>zmax</name></member>
+      <member refid="classdyablo_1_1IOManager__hdf5_1a1f69f246da7bc8d9a2a992efd169143c" prot="private" virt="non-virtual"><scope>dyablo::IOManager_hdf5</scope><name>zmin</name></member>
+      <member refid="classdyablo_1_1IOManager_1ace6483ec8b5e65bf3e51fc1825c8afbf" prot="public" virt="virtual"><scope>dyablo::IOManager_hdf5</scope><name>~IOManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

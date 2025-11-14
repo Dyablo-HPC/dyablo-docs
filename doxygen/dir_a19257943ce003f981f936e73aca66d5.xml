@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_a19257943ce003f981f936e73aca66d5" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/source_terms</compoundname>
+    <innerfile refid="SourceUpdate_8h">SourceUpdate.h</innerfile>
+    <innerfile refid="SourceUpdate__base_8h">SourceUpdate_base.h</innerfile>
+    <innerfile refid="SourceUpdate__Cooling__FF_8cpp">SourceUpdate_Cooling_FF.cpp</innerfile>
+    <innerfile refid="SourceUpdate__GLM_8cpp">SourceUpdate_GLM.cpp</innerfile>
+    <innerfile refid="SourceUpdate__Photons__Beam_8cpp">SourceUpdate_Photons_Beam.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/source_terms/"/>
+  </compounddef>
+</doxygen>

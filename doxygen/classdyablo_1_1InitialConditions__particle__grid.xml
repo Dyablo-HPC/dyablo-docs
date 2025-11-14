@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1InitialConditions__particle__grid" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::InitialConditions_particle_grid</compoundname>
+    <basecompoundref refid="classdyablo_1_1InitialConditions" prot="public" virt="non-virtual">dyablo::InitialConditions</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a30749cace03d2de11f5f74fef9ba7978" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::InitialConditions_particle_grid::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="22" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a1eab752e94af817c8474155ccbf684d1" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1ForeachParticle" kindref="compound">ForeachParticle</ref></type>
+        <definition>ForeachParticle dyablo::InitialConditions_particle_grid::foreach_particle</definition>
+        <argsstring></argsstring>
+        <name>foreach_particle</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::foreach_particle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="23" column="21" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a9100f85c4eec2e5550dbe52220b78d7f" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::InitialConditions_particle_grid::nx</definition>
+        <argsstring></argsstring>
+        <name>nx</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::nx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="24" column="14" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1aa8bc988daf4b72966b85af1221490d84" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::InitialConditions_particle_grid::ny</definition>
+        <argsstring></argsstring>
+        <name>ny</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::ny</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="24" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a00e5d55712a79824ba57dd3d10cb22ba" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::InitialConditions_particle_grid::nz</definition>
+        <argsstring></argsstring>
+        <name>nz</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::nz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="24" column="20" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1adcaca040c718791938d5ee2971324aa6" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::InitialConditions_particle_grid::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="25" column="18" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1aa43023308a76e95eb5db9ba241750554" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::InitialConditions_particle_grid::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="25" column="23" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a5bbc17ef496779cfa3884e3cf6c2a17d" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::InitialConditions_particle_grid::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="26" column="18" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a29cbd5b3ae89f90a6361b2b135fd9203" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::InitialConditions_particle_grid::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="26" column="23" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a6b39019d5049cde9f93a213e296aea56" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::InitialConditions_particle_grid::zmin</definition>
+        <argsstring></argsstring>
+        <name>zmin</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::zmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="27" column="18" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a2a1706952f2e45ee43b6849c413658f4" prot="private" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::InitialConditions_particle_grid::zmax</definition>
+        <argsstring></argsstring>
+        <name>zmax</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::zmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="27" column="23" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a9bc2e649abd7bfb4d3e4a3809125881f" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_particle_grid::total_mass</definition>
+        <argsstring></argsstring>
+        <name>total_mass</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::total_mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="28" column="12" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1a109a00308107d224d230bd5ce1f2c545" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::InitialConditions_particle_grid::dt_perturb</definition>
+        <argsstring></argsstring>
+        <name>dt_perturb</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::dt_perturb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="29" column="12" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1InitialConditions__particle__grid_1ace383e8a26d0fd18b185199ba5849be3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::InitialConditions_particle_grid::particle_array_name</definition>
+        <argsstring></argsstring>
+        <name>particle_array_name</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::particle_array_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="30" column="17" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__particle__grid_1acbafed3cc86584b8bb849d0d5fdac00c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::InitialConditions_particle_grid::InitialConditions_particle_grid</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>InitialConditions_particle_grid</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::InitialConditions_particle_grid</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="33" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="33" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions__particle__grid_1ae083dfc0f3ea65809ba2e25c9cf4a589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::InitialConditions_particle_grid::init</definition>
+        <argsstring>(UserData &amp;U)</argsstring>
+        <name>init</name>
+        <qualifiedname>dyablo::InitialConditions_particle_grid::init</qualifiedname>
+        <reimplements refid="classdyablo_1_1InitialConditions_1a20889de941f815d050a2f29d8f312d28">init</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="113" column="8" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="113" bodyend="214"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Create particles along a cartesian grid, initial particle velocities are set using the rho_vx, rho_vy, rho_vz fields Configured in .ini in the [particle_grid] section<itemizedlist>
+<listitem><para>nx, ny, nz, the number of particles in each direction</para>
+</listitem><listitem><para>total_mass the cumulated mass of all the particles, each particle has the same mass</para>
+</listitem><listitem><para>dt_perturb : dt used to displace particles (using particle velocities) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_particle_grid</label>
+        <link refid="classdyablo_1_1InitialConditions__particle__grid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="1">
+        <label>dyablo::InitialConditions_particle_grid</label>
+        <link refid="classdyablo_1_1InitialConditions__particle__grid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" line="21" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_particle_grid.cpp" bodystart="21" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a109a00308107d224d230bd5ce1f2c545" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>dt_perturb</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a30749cace03d2de11f5f74fef9ba7978" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a1eab752e94af817c8474155ccbf684d1" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>foreach_particle</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1ae083dfc0f3ea65809ba2e25c9cf4a589" prot="public" virt="virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>init</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1acbafed3cc86584b8bb849d0d5fdac00c" prot="public" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>InitialConditions_particle_grid</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a9100f85c4eec2e5550dbe52220b78d7f" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>nx</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1aa8bc988daf4b72966b85af1221490d84" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>ny</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a00e5d55712a79824ba57dd3d10cb22ba" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>nz</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1ace383e8a26d0fd18b185199ba5849be3" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>particle_array_name</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a9bc2e649abd7bfb4d3e4a3809125881f" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>total_mass</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1aa43023308a76e95eb5db9ba241750554" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>xmax</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1adcaca040c718791938d5ee2971324aa6" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>xmin</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a29cbd5b3ae89f90a6361b2b135fd9203" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>ymax</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a5bbc17ef496779cfa3884e3cf6c2a17d" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>ymin</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a2a1706952f2e45ee43b6849c413658f4" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>zmax</name></member>
+      <member refid="classdyablo_1_1InitialConditions__particle__grid_1a6b39019d5049cde9f93a213e296aea56" prot="private" virt="non-virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>zmin</name></member>
+      <member refid="classdyablo_1_1InitialConditions_1a49242f31b906aa339374199c2ff18b96" prot="public" virt="virtual"><scope>dyablo::InitialConditions_particle_grid</scope><name>~InitialConditions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

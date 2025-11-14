@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_c1c405fe9324bc6fa2ab607a71b801c0" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/hyperbolic</compoundname>
+    <innerdir refid="dir_438330af7e3ec1430c26838ab3f04e97">/builds/dyablo/dyablo/core/src/hyperbolic/policy</innerdir>
+    <innerdir refid="dir_28549656050f5f527f596bc846b300c5">/builds/dyablo/dyablo/core/src/hyperbolic/scheme</innerdir>
+    <innerfile refid="CopyGhostBlockCellData_8h">CopyGhostBlockCellData.h</innerfile>
+    <innerfile refid="GLMMHDUpdate__euler_8cpp">GLMMHDUpdate_euler.cpp</innerfile>
+    <innerfile refid="GLMMHDUpdate__hancock_8cpp">GLMMHDUpdate_hancock.cpp</innerfile>
+    <innerfile refid="GLMMHDUpdate__RK2_8cpp">GLMMHDUpdate_RK2.cpp</innerfile>
+    <innerfile refid="HydroUpdate__euler_8cpp">HydroUpdate_euler.cpp</innerfile>
+    <innerfile refid="HydroUpdate__euler__nopatch_8cpp">HydroUpdate_euler_nopatch.cpp</innerfile>
+    <innerfile refid="HydroUpdate__gravity_8cpp">HydroUpdate_gravity.cpp</innerfile>
+    <innerfile refid="HydroUpdate__hancock_8cpp">HydroUpdate_hancock.cpp</innerfile>
+    <innerfile refid="HydroUpdate__RK2_8cpp">HydroUpdate_RK2.cpp</innerfile>
+    <innerfile refid="HyperbolicUpdate_8h">HyperbolicUpdate.h</innerfile>
+    <innerfile refid="RadUpdate__euler_8cpp">RadUpdate_euler.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/"/>
+  </compounddef>
+</doxygen>

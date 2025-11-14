@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>inih<sp/>(INI<sp/>Not<sp/>Invented<sp/>Here)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![Tests](https://github.com/benhoyt/inih/actions/workflows/tests.yml/badge.svg)](https://github.com/benhoyt/inih/actions/workflows/tests.yml)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**inih<sp/>(INI<sp/>Not<sp/>Invented<sp/>Here)**<sp/>is<sp/>a<sp/>simple<sp/>[.INI<sp/>file](http://en.wikipedia.org/wiki/INI_file)<sp/>parser<sp/>written<sp/>in<sp/>C.<sp/>It&apos;s<sp/>only<sp/>a<sp/>couple<sp/>of<sp/>pages<sp/>of<sp/>code,<sp/>and<sp/>it<sp/>was<sp/>designed<sp/>to<sp/>be<sp/>_small<sp/>and<sp/>simple_,<sp/>so<sp/>it&apos;s<sp/>good<sp/>for<sp/>embedded<sp/>systems.<sp/>It&apos;s<sp/>also<sp/>more<sp/>or<sp/>less<sp/>compatible<sp/>with<sp/>Python&apos;s<sp/>[ConfigParser](http://docs.python.org/library/configparser.html)<sp/>style<sp/>of<sp/>.INI<sp/>files,<sp/>including<sp/>RFC<sp/>822-style<sp/>multi-line<sp/>syntax<sp/>and<sp/>`name:<sp/>value`<sp/>entries.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>use<sp/>it,<sp/>just<sp/>give<sp/>`ini_parse()`<sp/>an<sp/>INI<sp/>file,<sp/>and<sp/>it<sp/>will<sp/>call<sp/>a<sp/>callback<sp/>for<sp/>every<sp/>`name=value`<sp/>pair<sp/>parsed,<sp/>giving<sp/>you<sp/>strings<sp/>for<sp/>the<sp/>section,<sp/>name,<sp/>and<sp/>value.<sp/>It&apos;s<sp/>done<sp/>this<sp/>way<sp/>(&quot;SAX<sp/>style&quot;)<sp/>because<sp/>it<sp/>works<sp/>well<sp/>on<sp/>low-memory<sp/>embedded<sp/>systems,<sp/>but<sp/>also<sp/>because<sp/>it<sp/>makes<sp/>for<sp/>a<sp/>KISS<sp/>implementation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>call<sp/>`ini_parse_file()`<sp/>to<sp/>parse<sp/>directly<sp/>from<sp/>a<sp/>`FILE*`<sp/>object,<sp/>`ini_parse_string()`<sp/>to<sp/>parse<sp/>data<sp/>from<sp/>a<sp/>string,<sp/>or<sp/>`ini_parse_stream()`<sp/>to<sp/>parse<sp/>using<sp/>a<sp/>custom<sp/>fgets-style<sp/>reader<sp/>function<sp/>for<sp/>custom<sp/>I/O.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Download<sp/>a<sp/>release,<sp/>browse<sp/>the<sp/>source,<sp/>or<sp/>read<sp/>about<sp/>[how<sp/>to<sp/>use<sp/>inih<sp/>in<sp/>a<sp/>DRY<sp/>style](http://blog.brush.co.nz/2009/08/xmacros/)<sp/>with<sp/>X-Macros.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Compile-time<sp/>options<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>control<sp/>various<sp/>aspects<sp/>of<sp/>inih<sp/>using<sp/>preprocessor<sp/>defines:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Syntax<sp/>options<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Multi-line<sp/>entries:**<sp/>By<sp/>default,<sp/>inih<sp/>supports<sp/>multi-line<sp/>entries<sp/>in<sp/>the<sp/>style<sp/>of<sp/>Python&apos;s<sp/>ConfigParser.<sp/>To<sp/>disable,<sp/>add<sp/>`-DINI_ALLOW_MULTILINE=0`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**UTF-8<sp/>BOM:**<sp/>By<sp/>default,<sp/>inih<sp/>allows<sp/>a<sp/>UTF-8<sp/>BOM<sp/>sequence<sp/>(0xEF<sp/>0xBB<sp/>0xBF)<sp/>at<sp/>the<sp/>start<sp/>of<sp/>INI<sp/>files.<sp/>To<sp/>disable,<sp/>add<sp/>`-DINI_ALLOW_BOM=0`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Inline<sp/>comments:**<sp/>By<sp/>default,<sp/>inih<sp/>allows<sp/>inline<sp/>comments<sp/>with<sp/>the<sp/>`;`<sp/>character.<sp/>To<sp/>disable,<sp/>add<sp/>`-DINI_ALLOW_INLINE_COMMENTS=0`.<sp/>You<sp/>can<sp/>also<sp/>specify<sp/>which<sp/>character(s)<sp/>start<sp/>an<sp/>inline<sp/>comment<sp/>using<sp/>`INI_INLINE_COMMENT_PREFIXES`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Start-of-line<sp/>comments:**<sp/>By<sp/>default,<sp/>inih<sp/>allows<sp/>both<sp/>`;`<sp/>and<sp/>`#`<sp/>to<sp/>start<sp/>a<sp/>comment<sp/>at<sp/>the<sp/>beginning<sp/>of<sp/>a<sp/>line.<sp/>You<sp/>can<sp/>override<sp/>this<sp/>by<sp/>changing<sp/>`INI_START_COMMENT_PREFIXES`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Allow<sp/>no<sp/>value:**<sp/>By<sp/>default,<sp/>inih<sp/>treats<sp/>a<sp/>name<sp/>with<sp/>no<sp/>value<sp/>(no<sp/>`=`<sp/>or<sp/>`:`<sp/>on<sp/>the<sp/>line)<sp/>as<sp/>an<sp/>error.<sp/>To<sp/>allow<sp/>names<sp/>with<sp/>no<sp/>values,<sp/>add<sp/>`-DINI_ALLOW_NO_VALUE=1`,<sp/>and<sp/>inih<sp/>will<sp/>call<sp/>your<sp/>handler<sp/>function<sp/>with<sp/>value<sp/>set<sp/>to<sp/>NULL.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parsing<sp/>options<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Stop<sp/>on<sp/>first<sp/>error:**<sp/>By<sp/>default,<sp/>inih<sp/>keeps<sp/>parsing<sp/>the<sp/>rest<sp/>of<sp/>the<sp/>file<sp/>after<sp/>an<sp/>error.<sp/>To<sp/>stop<sp/>parsing<sp/>on<sp/>the<sp/>first<sp/>error,<sp/>add<sp/>`-DINI_STOP_ON_FIRST_ERROR=1`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Report<sp/>line<sp/>numbers:**<sp/>By<sp/>default,<sp/>the<sp/>`ini_handler`<sp/>callback<sp/>doesn&apos;t<sp/>receive<sp/>the<sp/>line<sp/>number<sp/>as<sp/>a<sp/>parameter.<sp/>If<sp/>you<sp/>need<sp/>that,<sp/>add<sp/>`-DINI_HANDLER_LINENO=1`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Call<sp/>handler<sp/>on<sp/>new<sp/>section:**<sp/>By<sp/>default,<sp/>inih<sp/>only<sp/>calls<sp/>the<sp/>handler<sp/>on<sp/>each<sp/>`name=value`<sp/>pair.<sp/>To<sp/>detect<sp/>new<sp/>sections<sp/>(e.g.,<sp/>the<sp/>INI<sp/>file<sp/>has<sp/>multiple<sp/>sections<sp/>with<sp/>the<sp/>same<sp/>name),<sp/>add<sp/>`-DINI_CALL_HANDLER_ON_NEW_SECTION=1`.<sp/>Your<sp/>handler<sp/>function<sp/>will<sp/>then<sp/>be<sp/>called<sp/>each<sp/>time<sp/>a<sp/>new<sp/>section<sp/>is<sp/>encountered,<sp/>with<sp/>`section`<sp/>set<sp/>to<sp/>the<sp/>new<sp/>section<sp/>name<sp/>but<sp/>`name`<sp/>and<sp/>`value`<sp/>set<sp/>to<sp/>NULL.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Memory<sp/>options<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Stack<sp/>vs<sp/>heap:**<sp/>By<sp/>default,<sp/>inih<sp/>creates<sp/>a<sp/>fixed-sized<sp/>line<sp/>buffer<sp/>on<sp/>the<sp/>stack.<sp/>To<sp/>allocate<sp/>on<sp/>the<sp/>heap<sp/>using<sp/>`malloc`<sp/>instead,<sp/>specify<sp/>`-DINI_USE_STACK=0`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Maximum<sp/>line<sp/>length:**<sp/>The<sp/>default<sp/>maximum<sp/>line<sp/>length<sp/>(for<sp/>stack<sp/>or<sp/>heap)<sp/>is<sp/>200<sp/>bytes.<sp/>To<sp/>override<sp/>this,<sp/>add<sp/>something<sp/>like<sp/>`-DINI_MAX_LINE=1000`.<sp/>Note<sp/>that<sp/>`INI_MAX_LINE`<sp/>must<sp/>be<sp/>3<sp/>more<sp/>than<sp/>the<sp/>longest<sp/>line<sp/>(due<sp/>to<sp/>`\r`,<sp/>`\n`,<sp/>and<sp/>the<sp/>NUL).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Initial<sp/>malloc<sp/>size:**<sp/>`INI_INITIAL_ALLOC`<sp/>specifies<sp/>the<sp/>initial<sp/>malloc<sp/>size<sp/>when<sp/>using<sp/>the<sp/>heap.<sp/>It<sp/>defaults<sp/>to<sp/>200<sp/>bytes.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Allow<sp/>realloc:**<sp/>By<sp/>default<sp/>when<sp/>using<sp/>the<sp/>heap<sp/>(`-DINI_USE_STACK=0`),<sp/>inih<sp/>allocates<sp/>a<sp/>fixed-sized<sp/>buffer<sp/>of<sp/>`INI_INITIAL_ALLOC`<sp/>bytes.<sp/>To<sp/>allow<sp/>this<sp/>to<sp/>grow<sp/>to<sp/>`INI_MAX_LINE`<sp/>bytes,<sp/>doubling<sp/>if<sp/>needed,<sp/>set<sp/>`-DINI_ALLOW_REALLOC=1`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Custom<sp/>allocator:**<sp/>By<sp/>default<sp/>when<sp/>using<sp/>the<sp/>heap,<sp/>the<sp/>standard<sp/>library&apos;s<sp/>`malloc`,<sp/>`free`,<sp/>and<sp/>`realloc`<sp/>functions<sp/>are<sp/>used;<sp/>to<sp/>use<sp/>a<sp/>custom<sp/>allocator,<sp/>specify<sp/>`-DINI_CUSTOM_ALLOCATOR=1`<sp/>(and<sp/>`-DINI_USE_STACK=0`).<sp/>You<sp/>must<sp/>define<sp/>and<sp/>link<sp/>functions<sp/>named<sp/>`ini_malloc`,<sp/>`ini_free`,<sp/>and<sp/>(if<sp/>`INI_ALLOW_REALLOC`<sp/>is<sp/>set)<sp/>`ini_realloc`,<sp/>which<sp/>must<sp/>have<sp/>the<sp/>same<sp/>signatures<sp/>as<sp/>the<sp/>`stdlib.h`<sp/>memory<sp/>allocation<sp/>functions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Simple<sp/>example<sp/>in<sp/>C<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```c</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;stdio.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;stdlib.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;string.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;../ini.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">typedef<sp/>struct</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>version;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>const<sp/>char*<sp/>name;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>const<sp/>char*<sp/>email;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>configuration;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">static<sp/>int<sp/>handler(void*<sp/>user,<sp/>const<sp/>char*<sp/>section,<sp/>const<sp/>char*<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>char*<sp/>value)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>configuration*<sp/>pconfig<sp/>=<sp/>(configuration*)user;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#define<sp/>MATCH(s,<sp/>n)<sp/>strcmp(section,<sp/>s)<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>strcmp(name,<sp/>n)<sp/>==<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(MATCH(&quot;protocol&quot;,<sp/>&quot;version&quot;))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pconfig-&gt;version<sp/>=<sp/>atoi(value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(MATCH(&quot;user&quot;,<sp/>&quot;name&quot;))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pconfig-&gt;name<sp/>=<sp/>strdup(value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(MATCH(&quot;user&quot;,<sp/>&quot;email&quot;))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pconfig-&gt;email<sp/>=<sp/>strdup(value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>0;<sp/><sp/>/*<sp/>unknown<sp/>section/name,<sp/>error<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main(int<sp/>argc,<sp/>char*<sp/>argv[])</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>configuration<sp/>config;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(ini_parse(&quot;test.ini&quot;,<sp/>handler,<sp/>&amp;config)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;Can&apos;t<sp/>load<sp/>&apos;test.ini&apos;\n&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(&quot;Config<sp/>loaded<sp/>from<sp/>&apos;test.ini&apos;:<sp/>version=%d,<sp/>name=%s,<sp/>email=%s\n&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.version,<sp/>config.name,<sp/>config.email);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>C++<sp/>example<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you&apos;re<sp/>into<sp/>C++<sp/>and<sp/>the<sp/>STL,<sp/>there<sp/>is<sp/>also<sp/>an<sp/>easy-to-use<sp/>[INIReader<sp/>class](https://github.com/benhoyt/inih/blob/master/cpp/INIReader.h)<sp/>that<sp/>stores<sp/>values<sp/>in<sp/>a<sp/>`map`<sp/>and<sp/>lets<sp/>you<sp/>`Get()`<sp/>them:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;iostream&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;INIReader.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>INIReader<sp/>reader(&quot;../examples/test.ini&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(reader.ParseError()<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;Can&apos;t<sp/>load<sp/>&apos;test.ini&apos;\n&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;Config<sp/>loaded<sp/>from<sp/>&apos;test.ini&apos;:<sp/>version=&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.GetInteger(&quot;protocol&quot;,<sp/>&quot;version&quot;,<sp/>-1)<sp/>&lt;&lt;<sp/>&quot;,<sp/>name=&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.Get(&quot;user&quot;,<sp/>&quot;name&quot;,<sp/>&quot;UNKNOWN&quot;)<sp/>&lt;&lt;<sp/>&quot;,<sp/>email=&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.Get(&quot;user&quot;,<sp/>&quot;email&quot;,<sp/>&quot;UNKNOWN&quot;)<sp/>&lt;&lt;<sp/>&quot;,<sp/>pi=&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.GetReal(&quot;user&quot;,<sp/>&quot;pi&quot;,<sp/>-1)<sp/>&lt;&lt;<sp/>&quot;,<sp/>active=&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>reader.GetBoolean(&quot;user&quot;,<sp/>&quot;active&quot;,<sp/>true)<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>simple<sp/>C++<sp/>API<sp/>works<sp/>fine,<sp/>but<sp/>it&apos;s<sp/>not<sp/>very<sp/>fully-fledged.<sp/>I&apos;m<sp/>not<sp/>planning<sp/>to<sp/>work<sp/>more<sp/>on<sp/>the<sp/>C++<sp/>API<sp/>at<sp/>the<sp/>moment,<sp/>so<sp/>if<sp/>you<sp/>want<sp/>a<sp/>bit<sp/>more<sp/>power<sp/>(for<sp/>example<sp/>`GetSections()`<sp/>and<sp/>`GetFields()`<sp/>functions),<sp/>see<sp/>these<sp/>forks:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>https://github.com/Blandinium/inih</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>https://github.com/OSSystems/inih</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Differences<sp/>from<sp/>ConfigParser<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Some<sp/>differences<sp/>between<sp/>inih<sp/>and<sp/>Python&apos;s<sp/>[ConfigParser](http://docs.python.org/library/configparser.html)<sp/>standard<sp/>library<sp/>module:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>INI<sp/>name=value<sp/>pairs<sp/>given<sp/>above<sp/>any<sp/>section<sp/>headers<sp/>are<sp/>treated<sp/>as<sp/>valid<sp/>items<sp/>with<sp/>no<sp/>section<sp/>(section<sp/>name<sp/>is<sp/>an<sp/>empty<sp/>string).<sp/>In<sp/>ConfigParser<sp/>having<sp/>no<sp/>section<sp/>is<sp/>an<sp/>error.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Line<sp/>continuations<sp/>are<sp/>handled<sp/>with<sp/>leading<sp/>whitespace<sp/>on<sp/>continued<sp/>lines<sp/>(like<sp/>ConfigParser).<sp/>However,<sp/>instead<sp/>of<sp/>concatenating<sp/>continued<sp/>lines<sp/>together,<sp/>they<sp/>are<sp/>treated<sp/>as<sp/>separate<sp/>values<sp/>for<sp/>the<sp/>same<sp/>key<sp/>(unlike<sp/>ConfigParser).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Platform-specific<sp/>notes<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Windows/Win32<sp/>uses<sp/>UTF-16<sp/>filenames<sp/>natively,<sp/>so<sp/>to<sp/>handle<sp/>Unicode<sp/>paths<sp/>you<sp/>need<sp/>to<sp/>call<sp/>`_wfopen()`<sp/>to<sp/>open<sp/>a<sp/>file<sp/>and<sp/>then<sp/>`ini_parse_file()`<sp/>to<sp/>parse<sp/>it;<sp/>inih<sp/>does<sp/>not<sp/>include<sp/>`wchar_t`<sp/>or<sp/>Unicode<sp/>handling.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Meson<sp/>notes<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>The<sp/>`meson.build`<sp/>file<sp/>is<sp/>not<sp/>required<sp/>to<sp/>use<sp/>or<sp/>compile<sp/>inih,<sp/>its<sp/>main<sp/>purpose<sp/>is<sp/>for<sp/>distributions.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>By<sp/>default<sp/>Meson<sp/>is<sp/>set<sp/>up<sp/>for<sp/>distro<sp/>installation,<sp/>but<sp/>this<sp/>behavior<sp/>can<sp/>be<sp/>configured<sp/>for<sp/>embedded<sp/>use<sp/>cases:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>with<sp/>`-Ddefault_library=static`<sp/>static<sp/>libraries<sp/>are<sp/>built.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>with<sp/>`-Ddistro_install=false`<sp/>libraries,<sp/>headers<sp/>and<sp/>pkg-config<sp/>files<sp/>won&apos;t<sp/>be<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>with<sp/>`-Dwith_INIReader=false`<sp/>you<sp/>can<sp/>disable<sp/>building<sp/>the<sp/>C++<sp/>library.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>All<sp/>compile-time<sp/>options<sp/>are<sp/>implemented<sp/>in<sp/>Meson<sp/>as<sp/>well,<sp/>you<sp/>can<sp/>take<sp/>a<sp/>look<sp/>at<sp/>[meson_options.txt](https://github.com/benhoyt/inih/blob/master/meson_options.txt)<sp/>for<sp/>their<sp/>definition.<sp/>These<sp/>won&apos;t<sp/>work<sp/>if<sp/>`distro_install`<sp/>is<sp/>set<sp/>to<sp/>`true`.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>inih<sp/>for<sp/>programs<sp/>which<sp/>may<sp/>be<sp/>shipped<sp/>in<sp/>a<sp/>distro,<sp/>consider<sp/>linking<sp/>against<sp/>the<sp/>shared<sp/>libraries.<sp/>The<sp/>pkg-config<sp/>entries<sp/>are<sp/>`inih`<sp/>and<sp/>`INIReader`.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>In<sp/>case<sp/>you<sp/>use<sp/>inih<sp/>as<sp/>a<sp/>Meson<sp/>subproject,<sp/>you<sp/>can<sp/>use<sp/>the<sp/>`inih_dep`<sp/>and<sp/>`INIReader_dep`<sp/>dependency<sp/>variables.<sp/>You<sp/>might<sp/>want<sp/>to<sp/>set<sp/>`default_library=static`<sp/>and<sp/>`distro_install=false`<sp/>for<sp/>the<sp/>subproject.<sp/>An<sp/>official<sp/>Wrap<sp/>is<sp/>provided<sp/>on<sp/>[WrapDB](https://wrapdb.mesonbuild.com/inih).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>For<sp/>packagers:<sp/>if<sp/>you<sp/>want<sp/>to<sp/>tag<sp/>the<sp/>version<sp/>in<sp/>the<sp/>pkg-config<sp/>file,<sp/>you<sp/>will<sp/>need<sp/>to<sp/>do<sp/>this<sp/>downstream.<sp/>Add<sp/>`version<sp/>:<sp/>&apos;&lt;version_as_int&gt;&apos;,`<sp/>after<sp/>the<sp/>`license`<sp/>tag<sp/>in<sp/>the<sp/>`project()`<sp/>function<sp/>and<sp/>`version<sp/>:<sp/>meson.project_version(),`<sp/>after<sp/>the<sp/>`soversion`<sp/>tag<sp/>in<sp/>both<sp/>`library()`<sp/>functions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Using<sp/>inih<sp/>with<sp/>tipi.build</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`inih`<sp/>can<sp/>be<sp/>easily<sp/>used<sp/>in<sp/>[tipi.build](https://tipi.build)<sp/>projects<sp/>simply<sp/>by<sp/>adding<sp/>the<sp/>following<sp/>entry<sp/>to<sp/>your<sp/>`.tipi/deps`<sp/>(replace<sp/>`r56`<sp/>with<sp/>the<sp/>latest<sp/>version<sp/>tag):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;benhoyt/inih&quot;:<sp/>{<sp/>&quot;@&quot;:<sp/>&quot;r56&quot;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>required<sp/>include<sp/>path<sp/>in<sp/>your<sp/>project<sp/>is:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```c</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ini.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Building<sp/>from<sp/>vcpkg<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>build<sp/>and<sp/>install<sp/>inih<sp/>using<sp/>[vcpkg](https://github.com/microsoft/vcpkg/)<sp/>dependency<sp/>manager:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>clone<sp/>https://github.com/Microsoft/vcpkg.git</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cd<sp/>vcpkg</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>./bootstrap-vcpkg.sh</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>./vcpkg<sp/>integrate<sp/>install</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>./vcpkg<sp/>install<sp/>inih</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>inih<sp/>port<sp/>in<sp/>vcpkg<sp/>is<sp/>kept<sp/>up<sp/>to<sp/>date<sp/>by<sp/>microsoft<sp/>team<sp/>members<sp/>and<sp/>community<sp/>contributors.</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>version<sp/>is<sp/>out<sp/>of<sp/>date,<sp/>please<sp/>[create<sp/>an<sp/>issue<sp/>or<sp/>pull<sp/>request](https://github.com/Microsoft/vcpkg)<sp/>on<sp/>the<sp/>vcpkg<sp/>repository.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Related<sp/>links<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[Conan<sp/>package<sp/>for<sp/>inih](https://github.com/mohamedghita/conan-inih)<sp/>(Conan<sp/>is<sp/>a<sp/>C/C++<sp/>package<sp/>manager)</highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/inih/README.md"/>
+  </compounddef>
+</doxygen>

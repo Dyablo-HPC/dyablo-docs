@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AnalyticalFormula__riemann2d" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_riemann2d</compoundname>
+    <basecompoundref refid="structdyablo_1_1AnalyticalFormula__base__hydro" prot="public" virt="non-virtual">dyablo::AnalyticalFormula_base_hydro</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a3f5aa6e36e733ca65f69a7ebc661aea1" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_riemann2d::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="14" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a0d9de58e24675a06ed58f474917b8097" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_riemann2d::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="15" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a404466e5869464cae6d1b1657634c0fb" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_riemann2d::smallr</definition>
+        <argsstring></argsstring>
+        <name>smallr</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::smallr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="16" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a8c70862e162eed0dd23f0818ae03a2f5" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_riemann2d::smallc</definition>
+        <argsstring></argsstring>
+        <name>smallc</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::smallc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="17" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a8e823262580569d6b70fe1a41cf7fde1" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_riemann2d::smallp</definition>
+        <argsstring></argsstring>
+        <name>smallp</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::smallp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="18" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a61defeb2e10fea448e23092a2a8609b0" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_riemann2d::error_max</definition>
+        <argsstring></argsstring>
+        <name>error_max</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::error_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="19" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1abb137777cf3407c581947030c1e06910" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_riemann2d::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::x0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="21" column="16" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a3fbd134e1d2f922301603857081b67d6" prot="public" static="no" mutable="no">
+        <type>const real_t</type>
+        <definition>const real_t dyablo::AnalyticalFormula_riemann2d::y0</definition>
+        <argsstring></argsstring>
+        <name>y0</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::y0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="21" column="19" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a85109f31a0f5c2c4501c93395043bdef" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int dyablo::AnalyticalFormula_riemann2d::test_case</definition>
+        <argsstring></argsstring>
+        <name>test_case</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::test_case</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="22" column="13" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__riemann2d_1acbcfa8d749e6eb162ec578970b1da63d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AnalyticalFormula_riemann2d::AnalyticalFormula_riemann2d</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>AnalyticalFormula_riemann2d</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::AnalyticalFormula_riemann2d</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="24" column="3" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="24" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1AnalyticalFormula__riemann2d_1a1a67fe529e1a73f4c6357ac3ef19d9e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">ConsHydroState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsHydroState dyablo::AnalyticalFormula_riemann2d::value</definition>
+        <argsstring>(real_t x, real_t y, real_t z, real_t dx, real_t dy, real_t dz) const</argsstring>
+        <name>value</name>
+        <qualifiedname>dyablo::AnalyticalFormula_riemann2d::value</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="41" column="18" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="41" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>2D Riemann test. Based on Lax, Liu &quot;Solution of Two-Dimensional Riemann Problems of Gas Dynamics by Positive Schemes&quot; 1998, SIAM Journal on Scientific Computing </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_riemann2d</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__riemann2d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::AnalyticalFormula_base_hydro</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__base__hydro"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_riemann2d</label>
+        <link refid="structdyablo_1_1AnalyticalFormula__riemann2d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" line="11" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/hydro/InitialConditions_riemann2d.cpp" bodystart="12" bodyend="140"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1acbcfa8d749e6eb162ec578970b1da63d" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>AnalyticalFormula_riemann2d</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc9e104f11a094d4eb01551b30f6f420" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>ConsHydroState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a61defeb2e10fea448e23092a2a8609b0" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>error_max</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a0d9de58e24675a06ed58f474917b8097" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>gamma0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1a78404e035b2f8dde366288b564d30f14" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a3f5aa6e36e733ca65f69a7ebc661aea1" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>ndim</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1afc1b1589c77d1286deb78e32e122a643" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>setState</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a8c70862e162eed0dd23f0818ae03a2f5" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>smallc</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a8e823262580569d6b70fe1a41cf7fde1" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>smallp</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a404466e5869464cae6d1b1657634c0fb" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>smallr</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__base__hydro_1ab7c34f90f960785202d0345a2fdbf091" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>State</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a85109f31a0f5c2c4501c93395043bdef" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>test_case</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a1a67fe529e1a73f4c6357ac3ef19d9e6" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>value</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1abb137777cf3407c581947030c1e06910" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>x0</name></member>
+      <member refid="structdyablo_1_1AnalyticalFormula__riemann2d_1a3fbd134e1d2f922301603857081b67d6" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_riemann2d</scope><name>y0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

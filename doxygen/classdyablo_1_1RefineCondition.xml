@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1RefineCondition" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::RefineCondition</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1RefineCondition__helper" prot="public" virt="non-virtual">dyablo::RefineCondition_helper&lt; RefineCondition_downflows_formula &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1RefineCondition__helper" prot="public" virt="non-virtual">dyablo::RefineCondition_helper&lt; RefineCondition_mass_formula &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1RefineCondition__helper" prot="public" virt="non-virtual">dyablo::RefineCondition_helper&lt; RefineCondition_pseudo_gradient_formula&lt; FieldPicker_rho &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1RefineCondition__helper" prot="public" virt="non-virtual">dyablo::RefineCondition_helper&lt; RefineCondition_pseudo_gradient_formula&lt; FieldPicker_xe &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1RefineCondition__helper" prot="public" virt="non-virtual">dyablo::RefineCondition_helper&lt; RefineCondition_formula &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1RefineCondition__second__derivative__error" prot="public" virt="non-virtual">dyablo::RefineCondition_second_derivative_error</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Marker</name>
+        <qualifiedname>dyablo::RefineCondition::Marker</qualifiedname>
+        <enumvalue id="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bda4b94af2afbcdb1318d470914b02b0247" prot="public">
+          <name>COARSEN</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bdabf09f98907f0a315fa3b66f219d4e986" prot="public">
+          <name>NOCHANGE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bdab81a25897365e92f8b08889a3e660f5f" prot="public">
+          <name>REFINE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h" line="14" column="3" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h" bodystart="15" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1RefineCondition_1a51201d61fb51128b1131cc7ad7d354a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::RefineCondition::~RefineCondition</definition>
+        <argsstring>()</argsstring>
+        <name>~RefineCondition</name>
+        <qualifiedname>dyablo::RefineCondition::~RefineCondition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h" line="24" column="11" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1RefineCondition_1aebf191e1fdc66f7348b03dcab407c32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::RefineCondition::mark_cells</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)=0</argsstring>
+        <name>mark_cells</name>
+        <qualifiedname>dyablo::RefineCondition::mark_cells</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1RefineCondition__helper_1a2b983de17c9a3bb067589a6ea148faf5">mark_cells</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1RefineCondition__helper_1a2b983de17c9a3bb067589a6ea148faf5">mark_cells</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1RefineCondition__helper_1a2b983de17c9a3bb067589a6ea148faf5">mark_cells</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1RefineCondition__helper_1a2b983de17c9a3bb067589a6ea148faf5">mark_cells</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1RefineCondition__helper_1a2b983de17c9a3bb067589a6ea148faf5">mark_cells</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1RefineCondition__mass_1a0cd63c42849a091a978441abb79478d0">mark_cells</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1RefineCondition__second__derivative__error_1aa6f3fb1986e88086b73ad8ee758f4f7f">mark_cells</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h" line="25" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::RefineCondition</label>
+        <link refid="classdyablo_1_1RefineCondition"/>
+      </node>
+      <node id="3">
+        <label>dyablo::RefineCondition_downflows</label>
+        <link refid="classdyablo_1_1RefineCondition__downflows"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dyablo::RefineCondition_helper&lt; RefineCondition_formula &gt;</label>
+        <link refid="classdyablo_1_1RefineCondition__helper"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::RefineCondition_helper&lt; RefineCondition_downflows_formula &gt;</label>
+        <link refid="classdyablo_1_1RefineCondition__helper"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::RefineCondition_helper&lt; RefineCondition_mass_formula &gt;</label>
+        <link refid="classdyablo_1_1RefineCondition__helper"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dyablo::RefineCondition_helper&lt; RefineCondition_pseudo_gradient_formula&lt; FieldPicker_rho &gt; &gt;</label>
+        <link refid="classdyablo_1_1RefineCondition__helper"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dyablo::RefineCondition_helper&lt; RefineCondition_pseudo_gradient_formula&lt; FieldPicker_xe &gt; &gt;</label>
+        <link refid="classdyablo_1_1RefineCondition__helper"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dyablo::RefineCondition_mass</label>
+        <link refid="classdyablo_1_1RefineCondition__mass"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dyablo::RefineCondition_pseudo_gradient</label>
+        <link refid="classdyablo_1_1RefineCondition__pseudo__gradient"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dyablo::RefineCondition_pseudo_gradient_rad</label>
+        <link refid="classdyablo_1_1RefineCondition__pseudo__gradient__rad"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dyablo::RefineCondition_second_derivative_error</label>
+        <link refid="classdyablo_1_1RefineCondition__second__derivative__error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h" line="12" column="1" bodyfile="/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h" bodystart="12" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bda4b94af2afbcdb1318d470914b02b0247" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition</scope><name>COARSEN</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1aebf191e1fdc66f7348b03dcab407c32b" prot="public" virt="pure-virtual"><scope>dyablo::RefineCondition</scope><name>mark_cells</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bd" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition</scope><name>Marker</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bdabf09f98907f0a315fa3b66f219d4e986" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition</scope><name>NOCHANGE</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a46473560486090df0adfe06d1d0260bdab81a25897365e92f8b08889a3e660f5f" prot="public" virt="non-virtual"><scope>dyablo::RefineCondition</scope><name>REFINE</name></member>
+      <member refid="classdyablo_1_1RefineCondition_1a51201d61fb51128b1131cc7ad7d354a9" prot="public" virt="virtual"><scope>dyablo::RefineCondition</scope><name>~RefineCondition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1IOManager" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::IOManager</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1IOManager__checkpoint" prot="public" virt="non-virtual">dyablo::IOManager_checkpoint</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1IOManager__diagnostics" prot="public" virt="non-virtual">dyablo::IOManager_diagnostics</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1IOManager__hdf5" prot="public" virt="non-virtual">dyablo::IOManager_hdf5</derivedcompoundref>
+    <includes refid="IOManager__base_8h" local="no">IOManager_base.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1IOManager_1ace6483ec8b5e65bf3e51fc1825c8afbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::IOManager::~IOManager</definition>
+        <argsstring>()</argsstring>
+        <name>~IOManager</name>
+        <qualifiedname>dyablo::IOManager::~IOManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_base.h" line="27" column="11" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_base.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1IOManager_1a153a366ae5ca463116fa5eba2bb3c96b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::IOManager::save_snapshot</definition>
+        <argsstring>(const UserData &amp;U, ScalarSimulationData &amp;scalar_data)=0</argsstring>
+        <name>save_snapshot</name>
+        <qualifiedname>dyablo::IOManager::save_snapshot</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1IOManager__checkpoint_1aa176b5c8e89bca89d141d919c96e1048">save_snapshot</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1IOManager__diagnostics_1af6a304070e102cc05b7bf373e3ac36d1">save_snapshot</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1IOManager__hdf5_1ac967d3213a98c6bdaeed432ba6d98a8b">save_snapshot</reimplementedby>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output simulation snapshot to a file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+<parametername>Ughost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Simulation data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iteration number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>physical time of the simulation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_base.h" line="35" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for IO manager</para>
+<para>IO manager is configured and instanciated during initialisation with the IOManagerFactory <ref refid="classdyablo_1_1IOManager_1a153a366ae5ca463116fa5eba2bb3c96b" kindref="member">save_snapshot()</ref> can then be called at any timestep to output a snapshot </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::IOManager</label>
+        <link refid="classdyablo_1_1IOManager"/>
+      </node>
+      <node id="2">
+        <label>dyablo::IOManager_checkpoint</label>
+        <link refid="classdyablo_1_1IOManager__checkpoint"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::IOManager_diagnostics</label>
+        <link refid="classdyablo_1_1IOManager__diagnostics"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::IOManager_hdf5</label>
+        <link refid="classdyablo_1_1IOManager__hdf5"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/io/IOManager_base.h" line="21" column="1" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_base.h" bodystart="21" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1IOManager_1a153a366ae5ca463116fa5eba2bb3c96b" prot="public" virt="pure-virtual"><scope>dyablo::IOManager</scope><name>save_snapshot</name></member>
+      <member refid="classdyablo_1_1IOManager_1ace6483ec8b5e65bf3e51fc1825c8afbf" prot="public" virt="virtual"><scope>dyablo::IOManager</scope><name>~IOManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::UserData_fields::FieldAccessor_FieldInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo_1aa069327e74dca794535ad9f6da5bba9c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::UserData_fields::FieldAccessor_FieldInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>dyablo::UserData_fields::FieldAccessor_FieldInfo::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/UserData_fields.h" line="197" column="17" bodyfile="/builds/dyablo/dyablo/core/src/UserData_fields.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo_1a2267e9a17dadc40c13794e2d3ed6036b" prot="public" static="no" mutable="no">
+        <type>VarIndex</type>
+        <definition>VarIndex dyablo::UserData_fields::FieldAccessor_FieldInfo::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>dyablo::UserData_fields::FieldAccessor_FieldInfo::id</qualifiedname>
+        <briefdescription>
+<para>Name as in <ref refid="VarIndex_8h_source" kindref="compound">VarIndex.h</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/UserData_fields.h" line="198" column="14" bodyfile="/builds/dyablo/dyablo/core/src/UserData_fields.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/UserData_fields.h" line="195" column="1" bodyfile="/builds/dyablo/dyablo/core/src/UserData_fields.h" bodystart="196" bodyend="199"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo_1a2267e9a17dadc40c13794e2d3ed6036b" prot="public" virt="non-virtual"><scope>dyablo::UserData_fields::FieldAccessor_FieldInfo</scope><name>id</name></member>
+      <member refid="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo_1aa069327e74dca794535ad9f6da5bba9c" prot="public" virt="non-virtual"><scope>dyablo::UserData_fields::FieldAccessor_FieldInfo</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

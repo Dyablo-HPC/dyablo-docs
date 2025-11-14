@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</compoundname>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1_1Params" prot="public">dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::Params</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a1d6f5990e101d2228e43e6239746828d" prot="private" static="no">
+        <type><ref refid="classdyablo_1_1HyperbolicPolicy__State__Hydro" kindref="compound">HyperbolicPolicy_State_Hydro</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::HyperbolicPolicy_State =  HyperbolicPolicy_State_Hydro</definition>
+        <argsstring></argsstring>
+        <name>HyperbolicPolicy_State</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::HyperbolicPolicy_State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="8" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a4d82cd0a2606f7ab2823497c195230ee" prot="private" static="no">
+        <type><ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">ForeachCell::CellIndex</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::CellIndex =  ForeachCell::CellIndex</definition>
+        <argsstring></argsstring>
+        <name>CellIndex</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::CellIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="9" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ad0866bf6ca44df4d061ae81f512624b9" prot="private" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kindref="compound">ForeachCell::CellMetaData</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::CellMetaData =  ForeachCell::CellMetaData</definition>
+        <argsstring></argsstring>
+        <name>CellMetaData</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::CellMetaData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="10" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a299f4e689b4d59a743cae194175c02fb" prot="private" static="no">
+        <type>CellIndex::offset_t</type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::offset_t =  CellIndex::offset_t</definition>
+        <argsstring></argsstring>
+        <name>offset_t</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::offset_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="11" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a69e3c08da3697967f73ea46d70a9ec15" prot="public" static="no">
+        <type>typename <ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">HyperbolicPolicy_State::PrimState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::PrimState =  typename HyperbolicPolicy_State::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="16" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a5f2c6197f99042c00eb82b77f33bedb7" prot="public" static="no">
+        <type>typename <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">HyperbolicPolicy_State::ConsState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::ConsState =  typename HyperbolicPolicy_State::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="17" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a1acfb3a1a21419d71089718edfb1e660" prot="private" static="no" mutable="no">
+        <type>Kokkos::Array&lt; BoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;BoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::bc_min</definition>
+        <argsstring></argsstring>
+        <name>bc_min</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::bc_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="13" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ae925db37714935afd77c677597cad632" prot="private" static="no" mutable="no">
+        <type>Kokkos::Array&lt; BoundaryConditionType, 3 &gt;</type>
+        <definition>Kokkos::Array&lt;BoundaryConditionType, 3&gt; dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::bc_max</definition>
+        <argsstring></argsstring>
+        <name>bc_max</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::bc_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="13" column="24" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ac8666881097ecc2c395e0979b50ed684" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="19" column="22" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1aee6fef2206f272b03b527a3cf6457a5c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1_1Params" kindref="compound">Params</ref></type>
+        <definition>static Params dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::getParams</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>getParams</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::getParams</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="26" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="26" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a5b4fb26d14cda5ba8aa06dd29d07f443" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::HyperbolicPolicy_BoundaryConditions_Hydro_Default</definition>
+        <argsstring>(const Params &amp;params, const ScalarSimulationData &amp;)</argsstring>
+        <name>HyperbolicPolicy_BoundaryConditions_Hydro_Default</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::HyperbolicPolicy_BoundaryConditions_Hydro_Default</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1_1Params" kindref="compound">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="42" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1aa81aaf14eabf5d9e08517560ebd24430" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+          <param>
+            <type>typename Policy_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION ConsState</type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::getBoundaryValue</definition>
+        <argsstring>(const Policy_t &amp;policy, const Array_t &amp;U, const CellIndex &amp;iCell_boundary, const CellMetaData &amp;metadata) const</argsstring>
+        <name>getBoundaryValue</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::getBoundaryValue</qualifiedname>
+        <param>
+          <type>const Policy_t &amp;</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell_boundary</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kindref="compound">CellMetaData</ref> &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="49" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="49" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ab056e75abc1b02d47f19ceb40bfac0a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+          <param>
+            <type>typename Policy_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION ConsState</type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::getBoundaryFlux</definition>
+        <argsstring>(const Policy_t &amp;policy, const Array_t &amp;U, const CellIndex &amp;iCell_boundary, const PrimState &amp;q_in_reconstructed, const CellMetaData &amp;metadata) const</argsstring>
+        <name>getBoundaryFlux</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default::getBoundaryFlux</qualifiedname>
+        <param>
+          <type>const Policy_t &amp;</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell_boundary</declname>
+        </param>
+        <param>
+          <type>const PrimState &amp;</type>
+          <declname>q_in_reconstructed</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellMetaData" kindref="compound">CellMetaData</ref> &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="91" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="91" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" line="5" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro_BoundaryConditions.h" bodystart="6" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ae925db37714935afd77c677597cad632" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>bc_max</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a1acfb3a1a21419d71089718edfb1e660" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>bc_min</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a4d82cd0a2606f7ab2823497c195230ee" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>CellIndex</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ad0866bf6ca44df4d061ae81f512624b9" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>CellMetaData</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a5f2c6197f99042c00eb82b77f33bedb7" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ab056e75abc1b02d47f19ceb40bfac0a1" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>getBoundaryFlux</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1aa81aaf14eabf5d9e08517560ebd24430" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>getBoundaryValue</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1aee6fef2206f272b03b527a3cf6457a5c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>getParams</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a5b4fb26d14cda5ba8aa06dd29d07f443" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>HyperbolicPolicy_BoundaryConditions_Hydro_Default</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a1d6f5990e101d2228e43e6239746828d" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>HyperbolicPolicy_State</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1ac8666881097ecc2c395e0979b50ed684" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>name</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a299f4e689b4d59a743cae194175c02fb" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>offset_t</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__BoundaryConditions__Hydro__Default_1a69e3c08da3697967f73ea46d70a9ec15" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_BoundaryConditions_Hydro_Default</scope><name>PrimState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

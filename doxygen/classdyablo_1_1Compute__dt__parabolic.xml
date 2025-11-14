@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1Compute__dt__parabolic" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::Compute_dt_parabolic</compoundname>
+    <basecompoundref refid="classdyablo_1_1Compute__dt" prot="public" virt="non-virtual">dyablo::Compute_dt</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__parabolic_1a52d3fe93ca2cdad909fbc3d52c705240" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::Compute_dt_parabolic::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="109" column="15" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__parabolic_1ace666fa8f48c1ed620ccba0689c0f8e8" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::Compute_dt_parabolic::cfl</definition>
+        <argsstring></argsstring>
+        <name>cfl</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::cfl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="111" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__parabolic_1a9161225dccfb6a4f0ee78ede19481566" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::Compute_dt_parabolic::compute_dt_for_tc</definition>
+        <argsstring></argsstring>
+        <name>compute_dt_for_tc</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::compute_dt_for_tc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="112" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__parabolic_1a054c279a5a2e7d898298e7e6a482fa63" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::Compute_dt_parabolic::compute_dt_for_visc</definition>
+        <argsstring></argsstring>
+        <name>compute_dt_for_visc</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::compute_dt_for_visc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="113" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__parabolic_1ab802219c74713070c51dd133a5642698" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1ParabolicTerm__thermal__conduction" kindref="compound">ParabolicTerm_thermal_conduction</ref></type>
+        <definition>ParabolicTerm_thermal_conduction dyablo::Compute_dt_parabolic::pt_tc</definition>
+        <argsstring></argsstring>
+        <name>pt_tc</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::pt_tc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="115" column="36" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1Compute__dt__parabolic_1a937a0455e267377ab58811d2e55762f3" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1ParabolicTerm__viscosity" kindref="compound">ParabolicTerm_viscosity</ref></type>
+        <definition>ParabolicTerm_viscosity dyablo::Compute_dt_parabolic::pt_visc</definition>
+        <argsstring></argsstring>
+        <name>pt_visc</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::pt_visc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="116" column="27" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__parabolic_1aed4ce695705eaa58add9b96829319105" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::Compute_dt_parabolic::Compute_dt_parabolic</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>Compute_dt_parabolic</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::Compute_dt_parabolic</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="24" column="3" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="24" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__parabolic_1a3c66d16a67b6d284b8184ef5a40ec300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::Compute_dt_parabolic::compute_dt</definition>
+        <argsstring>(const UserData &amp;U, ScalarSimulationData &amp;scalar_data)</argsstring>
+        <name>compute_dt</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::compute_dt</qualifiedname>
+        <reimplements refid="classdyablo_1_1Compute__dt_1a4d5c4db5ef4b82127137594b4027d891">compute_dt</reimplements>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="41" column="8" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="41" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1Compute__dt__parabolic_1a6a2359bdd2b3e9edf2b2671234a2b058" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double dyablo::Compute_dt_parabolic::compute_dt_aux</definition>
+        <argsstring>(const UserData &amp;U)</argsstring>
+        <name>compute_dt_aux</name>
+        <qualifiedname>dyablo::Compute_dt_parabolic::compute_dt_aux</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="62" column="10" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="62" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Timestep limiter for parabolic terms solved explicitly. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Accounts for thermal conduction and viscosity</para>
+<para>The limitation is of the form dt = C min_h(d_h^2/lambda_h) with : . C a constant factor &lt; 0.5, . d_h the cell size along direction h . lambda_h the diffusion coefficient along direction h </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_parabolic</label>
+        <link refid="classdyablo_1_1Compute__dt__parabolic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::Compute_dt</label>
+        <link refid="classdyablo_1_1Compute__dt"/>
+      </node>
+      <node id="1">
+        <label>dyablo::Compute_dt_parabolic</label>
+        <link refid="classdyablo_1_1Compute__dt__parabolic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" line="21" column="1" bodyfile="/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_parabolic.cpp" bodystart="22" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1ace666fa8f48c1ed620ccba0689c0f8e8" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>cfl</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1a3c66d16a67b6d284b8184ef5a40ec300" prot="public" virt="virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>compute_dt</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1a6a2359bdd2b3e9edf2b2671234a2b058" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>compute_dt_aux</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1a9161225dccfb6a4f0ee78ede19481566" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>compute_dt_for_tc</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1a054c279a5a2e7d898298e7e6a482fa63" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>compute_dt_for_visc</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1aed4ce695705eaa58add9b96829319105" prot="public" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>Compute_dt_parabolic</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1a52d3fe93ca2cdad909fbc3d52c705240" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1ab802219c74713070c51dd133a5642698" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>pt_tc</name></member>
+      <member refid="classdyablo_1_1Compute__dt__parabolic_1a937a0455e267377ab58811d2e55762f3" prot="private" virt="non-virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>pt_visc</name></member>
+      <member refid="classdyablo_1_1Compute__dt_1a8ff850a48ff27f842d5d8aa3893b7588" prot="public" virt="virtual"><scope>dyablo::Compute_dt_parabolic</scope><name>~Compute_dt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

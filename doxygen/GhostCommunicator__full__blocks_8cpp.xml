@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="GhostCommunicator__full__blocks_8cpp" kind="file" language="C++">
+    <compoundname>GhostCommunicator_full_blocks.cpp</compoundname>
+    <includes refid="GhostCommunicator__full__blocks_8h" local="yes">GhostCommunicator_full_blocks.h</includes>
+    <incdepgraph>
+      <node id="38">
+        <label>FieldManager.h</label>
+        <link refid="FieldManager_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>VarIndex.h</label>
+        <link refid="VarIndex_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>amr/AMRmesh.h</label>
+        <link refid="AMRmesh_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>amr/LightOctree_base.h</label>
+        <link refid="LightOctree__base_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>amr/LightOctree_forward.h</label>
+        <link refid="LightOctree__forward_8h_source"/>
+      </node>
+      <node id="43">
+        <label>amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>amr/LightOctree_storage.h</label>
+        <link refid="LightOctree__storage_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>kokkos_shared.h</label>
+        <link refid="kokkos__shared_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp</label>
+        <link refid="GhostCommunicator__full__blocks_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GhostCommunicator_full_blocks.h</label>
+        <link refid="GhostCommunicator__full__blocks_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>mpi/ViewCommunicator.h</label>
+        <link refid="ViewCommunicator_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>particles/ForeachParticle.h</label>
+        <link refid="ForeachParticle_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>particles/ParticleArray.h</label>
+        <link refid="ParticleArray_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>userdata_utils.h</label>
+        <link refid="userdata__utils_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>utils/config/ConfigMap.h</label>
+        <link refid="ConfigMap_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>utils/config/inih/ini.h</label>
+        <link refid="ini_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>utils/misc/Dyablo_assert.h</label>
+        <link refid="Dyablo__assert_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>utils/misc/utils.h</label>
+        <link refid="utils_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>utils/mpi/GlobalMpiSession.h</label>
+        <link refid="GlobalMpiSession_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>MpiComm.h</label>
+        <link refid="MpiComm_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>utils/units/UnitParser.hpp</label>
+        <link refid="UnitParser_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Units.h</label>
+        <link refid="Units_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="54">
+        <label>Kokkos_UnorderedMap.hpp</label>
+      </node>
+      <node id="18">
+        <label>MpiComm_single.tpp</label>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="27">
+        <label>any</label>
+      </node>
+      <node id="50">
+        <label>array</label>
+      </node>
+      <node id="30">
+        <label>cassert</label>
+      </node>
+      <node id="47">
+        <label>cstddef</label>
+      </node>
+      <node id="46">
+        <label>cstdint</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>iomanip</label>
+      </node>
+      <node id="37">
+        <label>iosfwd</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>limits</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="26">
+        <label>math.h</label>
+      </node>
+      <node id="49">
+        <label>memory</label>
+      </node>
+      <node id="40">
+        <label>set</label>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="20">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>type_traits</label>
+      </node>
+      <node id="39">
+        <label>unordered_map</label>
+      </node>
+      <node id="44">
+        <label>utility</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedyablo_1ab5bc5f38f3b4a61b9b7b69923743cfe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::OctSubset_init</definition>
+        <argsstring>(MpiComm mpi_comm, const Kokkos::View&lt; uint32_t * &gt; &amp;recv_sizes_full, const Kokkos::View&lt; uint32_t * &gt; &amp;send_iOcts_full, const Kokkos::View&lt; uint32_t * &gt; &amp;send_sizes_full, std::unique_ptr&lt; ViewCommunicator &gt; &amp;partial_comm, Kokkos::View&lt; uint32_t * &gt; &amp;subset_iOcts)</argsstring>
+        <name>OctSubset_init</name>
+        <qualifiedname>dyablo::OctSubset_init</qualifiedname>
+        <param>
+          <type>MpiComm</type>
+          <declname>mpi_comm</declname>
+        </param>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt; &amp;</type>
+          <declname>recv_sizes_full</declname>
+        </param>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt; &amp;</type>
+          <declname>send_iOcts_full</declname>
+        </param>
+        <param>
+          <type>const Kokkos::View&lt; uint32_t * &gt; &amp;</type>
+          <declname>send_sizes_full</declname>
+        </param>
+        <param>
+          <type>std::unique_ptr&lt; ViewCommunicator &gt; &amp;</type>
+          <declname>partial_comm</declname>
+        </param>
+        <param>
+          <type>Kokkos::View&lt; uint32_t * &gt; &amp;</type>
+          <declname>subset_iOcts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" line="23" column="6" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" bodystart="23" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;GhostCommunicator_full_blocks.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GhostCommunicator_full_blocks::exchange_ghosts(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UserData::FieldAccessor&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="6"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;U.nbFields();<sp/>i++)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iVar<sp/>=<sp/>U.get_index_from_ivar_host(i);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>U_subview<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Kokkos::subview(<sp/>U.fields.U,<sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::ALL(),<sp/>std::make_pair(iVar,<sp/>iVar+1),<sp/>Kokkos::ALL()<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Ughost_subview<sp/>=<sp/>Kokkos::subview(<sp/>U.fields.Ughost,<sp/>Kokkos::ALL(),<sp/>std::make_pair(iVar,<sp/>iVar+1),<sp/>Kokkos::ALL()<sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdyablo_1_1ViewCommunicator_1ab2c42816f513e7e10a1c6027bab22c09" kindref="member">ViewCommunicator::exchange_ghosts&lt;2&gt;</ref>(U_subview,<sp/>Ughost_subview);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GhostCommunicator_full_blocks::exchange_ghosts(<sp/>ForeachCell::CellArray_global_ghosted&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="18"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="classdyablo_1_1ViewCommunicator_1ab2c42816f513e7e10a1c6027bab22c09" kindref="member">ViewCommunicator::exchange_ghosts&lt;2&gt;</ref>(U.U,<sp/>U.Ughost);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OctSubset_init(<sp/><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref><sp/>mpi_comm,<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::View&lt;uint32_t*&gt;&amp;<sp/>recv_sizes_full,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::View&lt;uint32_t*&gt;&amp;<sp/>send_iOcts_full,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Kokkos::View&lt;uint32_t*&gt;&amp;<sp/>send_sizes_full,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;ViewCommunicator&gt;&amp;<sp/>partial_comm,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;&amp;<sp/>subset_iOcts)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbProc<sp/>=<sp/>mpi_comm.MPI_Comm_size();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>uint32_t<sp/>nbGhosts_subset<sp/>=<sp/>subset_iOcts.size();<sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>subset<sp/>octants<sp/>requested<sp/>from<sp/>each<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;int*&gt;<sp/>subset_send_request_count_device(</highlight><highlight class="stringliteral">&quot;subset_send_request_count&quot;</highlight><highlight class="normal">,<sp/>nbProc);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Subset<sp/>Octants<sp/>requested<sp/>from<sp/>remote<sp/>ranks,<sp/>position<sp/>is<sp/>local<sp/>to<sp/>remote<sp/>rank&apos;s<sp/>local<sp/>octant<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>subset_send_request_iOcts_remotelocal(</highlight><highlight class="stringliteral">&quot;subset_send_request_iOcts_remotelocal&quot;</highlight><highlight class="normal">,nbGhosts_subset);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>Kokkos::parallel_for(<sp/></highlight><highlight class="stringliteral">&quot;OctSubset::convert_subset_to_remote&quot;</highlight><highlight class="normal">,<sp/>subset_iOcts.size(),</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/>uint32_t<sp/>i<sp/>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct_ghost_subset<sp/>=<sp/>subset_iOcts(i);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>rank_iOct_end<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>rank=0;<sp/>rank<sp/>&lt;<sp/>nbProc;<sp/>rank++<sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rank_iOct_end<sp/>+=<sp/>recv_sizes_full(rank);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>iOct_ghost_subset<sp/>&lt;<sp/>rank_iOct_end<sp/>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>rank_iOct_begin<sp/>=<sp/>rank_iOct_end<sp/>-<sp/>recv_sizes_full(rank);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>DYABLO_ASSERT_KOKKOS_DEBUG(<sp/>rank_iOct_begin<sp/>&lt;=<sp/>iOct_ghost_subset<sp/>&amp;&amp;<sp/>iOct_ghost_subset<sp/>&lt;<sp/>rank_iOct_end,<sp/></highlight><highlight class="stringliteral">&quot;OctSubset<sp/>error<sp/>-<sp/>could<sp/>not<sp/>find<sp/>subset<sp/>octant<sp/>rank&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::atomic_inc(&amp;subset_send_request_count_device(rank));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>subset_send_request_iOcts_remotelocal(i)<sp/>=<sp/>iOct_ghost_subset-rank_iOct_begin;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>});</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>subset_send_request_count_host<sp/>=<sp/>Kokkos::create_mirror_view(subset_send_request_count_device);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(subset_send_request_count_host,<sp/>subset_send_request_count_device);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>subset<sp/>octants<sp/>requested<sp/>by<sp/>each<sp/>proc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;int*&gt;::HostMirror<sp/>subset_recv_request_count_host(</highlight><highlight class="stringliteral">&quot;subset_recv_request_count&quot;</highlight><highlight class="normal">,<sp/>nbProc);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>mpi_comm.MPI_Alltoall(<sp/>subset_send_request_count_host.data(),<sp/>1,<sp/>subset_recv_request_count_host.data(),<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>uint32_t<sp/>requested_local_total<sp/>=<sp/>std::reduce(subset_recv_request_count_host.data(),<sp/>subset_recv_request_count_host.data()+nbProc);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Subset<sp/>of<sp/>local<sp/>octants<sp/>to<sp/>send<sp/>(index<sp/>in<sp/>ghost_comm.send_iOct)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>subset_recv_request_iOcts_ghosts(</highlight><highlight class="stringliteral">&quot;subset_recv_request_iOcts_ghosts&quot;</highlight><highlight class="normal">,<sp/>requested_local_total);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>MPI_IS_CUDA_AWARE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>mpi_comm.MPI_Alltoallv(<sp/>subset_send_request_iOcts_remotelocal.data(),<sp/>subset_send_request_count_host.data(),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subset_recv_request_iOcts_ghosts.data(),<sp/>subset_recv_request_count_host.data()<sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>subset_send_request_iOcts_remotelocal_host<sp/>=<sp/>Kokkos::create_mirror_view(subset_send_request_iOcts_remotelocal);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>subset_recv_request_iOcts_ghosts_host<sp/>=<sp/>Kokkos::create_mirror_view(subset_recv_request_iOcts_ghosts);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::deep_copy(subset_send_request_iOcts_remotelocal_host,<sp/>subset_send_request_iOcts_remotelocal);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>mpi_comm.MPI_Alltoallv(<sp/>subset_send_request_iOcts_remotelocal_host.data(),<sp/>subset_send_request_count_host.data(),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subset_recv_request_iOcts_ghosts_host.data(),<sp/>subset_recv_request_count_host.data()<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::deep_copy(subset_recv_request_iOcts_ghosts,<sp/>subset_recv_request_iOcts_ghosts_host);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>send_iOcts_sizes(</highlight><highlight class="stringliteral">&quot;send_iOcts_sizes&quot;</highlight><highlight class="normal">,<sp/>nbProc);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>send_iOcts_sizes_host<sp/>=<sp/>Kokkos::create_mirror_view(send_iOcts_sizes);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(<sp/>send_iOcts_sizes_host,<sp/>subset_recv_request_count_host<sp/>);<sp/></highlight><highlight class="comment">//<sp/>Cast<sp/>from<sp/>int<sp/>to<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(<sp/>send_iOcts_sizes,<sp/>send_iOcts_sizes_host<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>send_iOcts(</highlight><highlight class="stringliteral">&quot;send_iOcts&quot;</highlight><highlight class="normal">,<sp/>requested_local_total);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>send_sizes_full_host<sp/>=<sp/>Kokkos::create_mirror_view(send_sizes_full);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>Kokkos::deep_copy(send_sizes_full_host,<sp/>send_sizes_full);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_rank_begin<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iGhost_rank_begin<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank=0;<sp/>rank&lt;nbProc;<sp/>rank++<sp/>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>Kokkos::parallel_for(</highlight><highlight class="stringliteral">&quot;OctSubset::unpack_requested_octs&quot;</highlight><highlight class="normal">,<sp/>send_iOcts_sizes_host(rank),</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_rank<sp/>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>i_rank<sp/>+<sp/>i_rank_begin;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Position<sp/>in<sp/>full<sp/>send_buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iGhost<sp/>=<sp/>subset_recv_request_iOcts_ghosts(i)<sp/>+<sp/>iGhost_rank_begin;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Requested<sp/>local<sp/>octant<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct_local<sp/>=<sp/>send_iOcts_full(<sp/>iGhost<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>send_iOcts(i)<sp/>=<sp/>iOct_local;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>i_rank_begin<sp/>+=<sp/>send_iOcts_sizes_host(rank);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>iGhost_rank_begin<sp/>+=<sp/>send_sizes_full_host(rank);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>partial_comm<sp/>=<sp/>std::make_unique&lt;ViewCommunicator&gt;(<sp/>send_iOcts_sizes,<sp/>send_iOcts<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>DYABLO_ASSERT_HOST_RELEASE(<sp/>partial_comm-&gt;getNumGhosts()<sp/>==<sp/>subset_iOcts.size(),<sp/></highlight><highlight class="stringliteral">&quot;GhostCommunicator_full_blocks::OctSubset<sp/>:<sp/>ghost<sp/>count<sp/>mismatch&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">GhostCommunicator_full_blocks::OctSubset::OctSubset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classdyablo_1_1GhostCommunicator__full__blocks" kindref="compound">GhostCommunicator_full_blocks</ref>&amp;<sp/>comm_full,<sp/>Kokkos::View&lt;uint32_t*&gt;<sp/>subset_iOcts<sp/>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>:<sp/>subset_iOcts(<sp/>subset_iOcts<sp/>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>nvcc<sp/>doesnt<sp/>like<sp/>kokkos<sp/>kernels<sp/>in<sp/>constructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>OctSubset_init(<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>comm_full.mpi_comm,<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>comm_full.recv_sizes,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>comm_full.send_iOcts,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>comm_full.send_sizes,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;partial_comm,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;subset_iOcts</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GhostCommunicator_full_blocks::exchange_ghosts_subset(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UserData::FieldAccessor&amp;<sp/>U,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OctSubset&amp;<sp/>subset<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="127"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCells<sp/>=<sp/>U.fields.U.extent(0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbFields<sp/>=<sp/>U.nbFields();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>Kokkos::View&lt;real_t***,<sp/>Kokkos::LayoutLeft&gt;<sp/>Ughost_subset(<sp/></highlight><highlight class="stringliteral">&quot;Ughost_subset&quot;</highlight><highlight class="normal">,<sp/>nbCells,<sp/>nbFields,<sp/>subset.nbGhosts()<sp/>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;U.nbFields();<sp/>i++)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iVar<sp/>=<sp/>U.get_index_from_ivar_host(i);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>U_subview<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Kokkos::subview(<sp/>U.fields.U,<sp/><sp/><sp/><sp/>Kokkos::ALL(),<sp/>std::make_pair(iVar,<sp/>iVar+1),<sp/>Kokkos::ALL()<sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Ughost_subview<sp/>=<sp/>Kokkos::subview(<sp/>Ughost_subset,<sp/>Kokkos::ALL(),<sp/>std::make_pair(i,<sp/>i+1),<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::ALL()<sp/>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>subset.partial_comm-&gt;exchange_ghosts&lt;2&gt;(<sp/>U_subview,<sp/>Ughost_subview<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>subset_iOcts<sp/>=<sp/>subset.subset_iOcts;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>Kokkos::parallel_for(<sp/></highlight><highlight class="stringliteral">&quot;exchange_ghosts_subset::unpack_ghosts&quot;</highlight><highlight class="normal">,<sp/>nbCells*nbFields*subset.nbGhosts(),</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>KOKKOS_LAMBDA(uint32_t<sp/>index)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct_src<sp/>=<sp/>index/(nbCells*nbFields);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>iOct_dest<sp/>=<sp/>subset_iOcts(iOct_src);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>i<sp/>=<sp/>index%(nbCells*nbFields);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ivar_src<sp/>=<sp/>i/nbCells;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ivar_dest<sp/>=<sp/>U.get_index_from_ivar_device(ivar_src);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>iblock<sp/>=<sp/>i%nbCells;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>U.fields.Ughost(<sp/>iblock,<sp/>ivar_dest,<sp/>iOct_dest<sp/>)<sp/>=<sp/>Ughost_subset(<sp/>iblock,<sp/>ivar_src,<sp/>iOct_src<sp/>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>});<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GhostCommunicator_full_blocks::reduce_ghosts(<sp/>UserData::FieldAccessor&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="157"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;U.nbFields();<sp/>i++)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iVar<sp/>=<sp/>U.get_index_from_ivar_host(i);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>U_subview<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Kokkos::subview(<sp/>U.fields.U,<sp/><sp/><sp/><sp/><sp/><sp/>Kokkos::ALL(),<sp/>std::make_pair(iVar,<sp/>iVar+1),<sp/>Kokkos::ALL()<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Ughost_subview<sp/>=<sp/>Kokkos::subview(<sp/>U.fields.Ughost,<sp/>Kokkos::ALL(),<sp/>std::make_pair(iVar,<sp/>iVar+1),<sp/>Kokkos::ALL()<sp/>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>ViewCommunicator::reduce_ghosts&lt;2&gt;(U_subview,<sp/>Ughost_subview);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GhostCommunicator_full_blocks::reduce_ghosts(<sp/>ForeachCell::CellArray_global_ghosted&amp;<sp/>U<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="169"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>ViewCommunicator::reduce_ghosts&lt;2&gt;(U.U,<sp/>U.Ughost);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp"/>
+  </compounddef>
+</doxygen>

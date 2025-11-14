@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1DyabloSession" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::DyabloSession</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1DyabloSession_1a229938be0fba44ef9d1bfdbcca136610" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::DyabloSession::m_rank</definition>
+        <argsstring></argsstring>
+        <name>m_rank</name>
+        <qualifiedname>dyablo::DyabloSession::m_rank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="14" column="7" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloSession_1afdd9f03bf8e34c2aeecadcd7ba8f3d02" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::DyabloSession::m_nRanks</definition>
+        <argsstring></argsstring>
+        <name>m_nRanks</name>
+        <qualifiedname>dyablo::DyabloSession::m_nRanks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="14" column="14" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1DyabloSession_1ab8c22f4389dfa85567940d17eb36f0ee" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1GlobalMpiSession" kindref="compound">dyablo::GlobalMpiSession</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;dyablo::GlobalMpiSession&gt; dyablo::DyabloSession::mpiSession</definition>
+        <argsstring></argsstring>
+        <name>mpiSession</name>
+        <qualifiedname>dyablo::DyabloSession::mpiSession</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="15" column="19" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1DyabloSession_1a43bf65f83e5a5de39d99257cf0703afa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DyabloSession::DyabloSession</definition>
+        <argsstring>(int &amp;argc, char *argv[])</argsstring>
+        <name>DyabloSession</name>
+        <qualifiedname>dyablo::DyabloSession::DyabloSession</qualifiedname>
+        <param>
+          <type>int &amp;</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="17" column="3" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="17" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1DyabloSession_1a1d935a1cf3d3676e8543deaef5792a4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::DyabloSession::~DyabloSession</definition>
+        <argsstring>()</argsstring>
+        <name>~DyabloSession</name>
+        <qualifiedname>dyablo::DyabloSession::~DyabloSession</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="83" column="3" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1DyabloSession_1a1ca855bc3ba41f8632aca981f86a8a4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int dyablo::DyabloSession::getRank</definition>
+        <argsstring>()</argsstring>
+        <name>getRank</name>
+        <qualifiedname>dyablo::DyabloSession::getRank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="85" column="7" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="85" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1DyabloSession_1a0e898a7adf9410487d10298c677d3169" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool dyablo::DyabloSession::MPI_enabled</definition>
+        <argsstring>()</argsstring>
+        <name>MPI_enabled</name>
+        <qualifiedname>dyablo::DyabloSession::MPI_enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="87" column="15" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="87" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" line="12" column="1" bodyfile="/builds/dyablo/dyablo/core/src/DyabloSession.hpp" bodystart="12" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1DyabloSession_1a43bf65f83e5a5de39d99257cf0703afa" prot="public" virt="non-virtual"><scope>dyablo::DyabloSession</scope><name>DyabloSession</name></member>
+      <member refid="classdyablo_1_1DyabloSession_1a1ca855bc3ba41f8632aca981f86a8a4f" prot="public" virt="non-virtual"><scope>dyablo::DyabloSession</scope><name>getRank</name></member>
+      <member refid="classdyablo_1_1DyabloSession_1afdd9f03bf8e34c2aeecadcd7ba8f3d02" prot="private" virt="non-virtual"><scope>dyablo::DyabloSession</scope><name>m_nRanks</name></member>
+      <member refid="classdyablo_1_1DyabloSession_1a229938be0fba44ef9d1bfdbcca136610" prot="private" virt="non-virtual"><scope>dyablo::DyabloSession</scope><name>m_rank</name></member>
+      <member refid="classdyablo_1_1DyabloSession_1a0e898a7adf9410487d10298c677d3169" prot="public" virt="non-virtual"><scope>dyablo::DyabloSession</scope><name>MPI_enabled</name></member>
+      <member refid="classdyablo_1_1DyabloSession_1ab8c22f4389dfa85567940d17eb36f0ee" prot="private" virt="non-virtual"><scope>dyablo::DyabloSession</scope><name>mpiSession</name></member>
+      <member refid="classdyablo_1_1DyabloSession_1a1d935a1cf3d3676e8543deaef5792a4c" prot="public" virt="non-virtual"><scope>dyablo::DyabloSession</scope><name>~DyabloSession</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_3fd01284de124ab24e42a90aa3f98568" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/init/mhd</compoundname>
+    <innerfile refid="AnalyticalFormula__base__MHD_8hpp">AnalyticalFormula_base_MHD.hpp</innerfile>
+    <innerfile refid="InitialConditions__MHD__blast_8cpp">InitialConditions_MHD_blast.cpp</innerfile>
+    <innerfile refid="InitialConditions__MHD__rayleigh__taylor_8cpp">InitialConditions_MHD_rayleigh_taylor.cpp</innerfile>
+    <innerfile refid="InitialConditions__MHD__rotor_8cpp">InitialConditions_MHD_rotor.cpp</innerfile>
+    <innerfile refid="InitialConditions__orszag__tang_8cpp">InitialConditions_orszag_tang.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/init/mhd/"/>
+  </compounddef>
+</doxygen>

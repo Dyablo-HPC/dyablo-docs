@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1GhostCommunicator__impl" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::GhostCommunicator_impl</compoundname>
+    <basecompoundref prot="protected" virt="non-virtual">Impl</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename Impl</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__impl_1ad4de114e81e9e59a55db0d6f24a0632a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::GhostCommunicator_impl&lt; Impl &gt;::GhostCommunicator_impl</definition>
+        <argsstring>(const AMRmesh &amp;mesh, const ForeachCell::CellArray_global_ghosted::Shape_t &amp;shape, int ghost_count, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>GhostCommunicator_impl</name>
+        <qualifiedname>dyablo::GhostCommunicator_impl::GhostCommunicator_impl</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>const ForeachCell::CellArray_global_ghosted::Shape_t &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ghost_count</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AMR mesh to determline neighborhood </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shape of the blocks in the arrays </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ghost_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number for ghosts needed for stencil operations (this is a minimum, actual comms can recieve more ghosts) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mpi_comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>you know what it is </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="23" column="3" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__impl_1aca35c9d20cf5ef33bee2a6389f53a532" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::GhostCommunicator_impl&lt; Impl &gt;::getNumGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumGhosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_impl::getNumGhosts</qualifiedname>
+        <briefdescription>
+<para>Number of ghost blocks (possibly partial blocks) for this mesh. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="36" column="12" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__impl_1aa4784c0402277557707655933982c3ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_impl&lt; Impl &gt;::exchange_ghosts</definition>
+        <argsstring>(const UserData::FieldAccessor &amp;U) const</argsstring>
+        <name>exchange_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_impl::exchange_ghosts</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="47" column="8" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__impl_1adfb56e5359500322a10db9059929e804" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_impl&lt; Impl &gt;::exchange_ghosts</definition>
+        <argsstring>(const ForeachCell::CellArray_global_ghosted &amp;U) const</argsstring>
+        <name>exchange_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_impl::exchange_ghosts</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">ForeachCell::CellArray_global_ghosted</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="57" column="8" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__impl_1a0af1d097edb1b7c9f99a0f3c50856922" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_impl&lt; Impl &gt;::reduce_ghosts</definition>
+        <argsstring>(UserData::FieldAccessor &amp;U) const</argsstring>
+        <name>reduce_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_impl::reduce_ghosts</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="71" column="8" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__impl_1a6e1042c636af00b8c1730d19b4f919de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_impl&lt; Impl &gt;::reduce_ghosts</definition>
+        <argsstring>(ForeachCell::CellArray_global_ghosted &amp;U) const</argsstring>
+        <name>reduce_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_impl::reduce_ghosts</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">ForeachCell::CellArray_global_ghosted</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="76" column="8" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="76" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__impl_1aef30af5062cd3698855e5ec1c416bdfb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string dyablo::GhostCommunicator_impl&lt; Impl &gt;::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>dyablo::GhostCommunicator_impl::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="30" column="22" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Impl</label>
+      </node>
+      <node id="1">
+        <label>dyablo::GhostCommunicator_impl&lt; Impl &gt;</label>
+        <link refid="classdyablo_1_1GhostCommunicator__impl"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Impl</label>
+      </node>
+      <node id="1">
+        <label>dyablo::GhostCommunicator_impl&lt; Impl &gt;</label>
+        <link refid="classdyablo_1_1GhostCommunicator__impl"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h" bodystart="15" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1GhostCommunicator__impl_1aa4784c0402277557707655933982c3ea" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_impl</scope><name>exchange_ghosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__impl_1adfb56e5359500322a10db9059929e804" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_impl</scope><name>exchange_ghosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__impl_1aca35c9d20cf5ef33bee2a6389f53a532" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_impl</scope><name>getNumGhosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__impl_1ad4de114e81e9e59a55db0d6f24a0632a" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_impl</scope><name>GhostCommunicator_impl</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__impl_1aef30af5062cd3698855e5ec1c416bdfb" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_impl</scope><name>name</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__impl_1a0af1d097edb1b7c9f99a0f3c50856922" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_impl</scope><name>reduce_ghosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__impl_1a6e1042c636af00b8c1730d19b4f919de" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_impl</scope><name>reduce_ghosts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

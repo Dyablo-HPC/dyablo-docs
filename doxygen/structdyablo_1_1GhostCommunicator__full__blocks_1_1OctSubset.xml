@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::GhostCommunicator_full_blocks::OctSubset</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a42d54e5a6d4ffa8439736efef718d6f1" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1ViewCommunicator" kindref="compound">ViewCommunicator</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;ViewCommunicator&gt; dyablo::GhostCommunicator_full_blocks::OctSubset::partial_comm</definition>
+        <argsstring></argsstring>
+        <name>partial_comm</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::OctSubset::partial_comm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="41" column="23" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a068c1827bdef7fb73c31c17fb732cd35" prot="public" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt;uint32_t*&gt; dyablo::GhostCommunicator_full_blocks::OctSubset::subset_iOcts</definition>
+        <argsstring></argsstring>
+        <name>subset_iOcts</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::OctSubset::subset_iOcts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="42" column="20" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a37627e7437b65408284a0664e9fe597a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::GhostCommunicator_full_blocks::OctSubset::OctSubset</definition>
+        <argsstring>(const GhostCommunicator_full_blocks &amp;comm_full, Kokkos::View&lt; uint32_t * &gt; subset_iOcts)</argsstring>
+        <name>OctSubset</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::OctSubset::OctSubset</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1GhostCommunicator__full__blocks" kindref="compound">GhostCommunicator_full_blocks</ref> &amp;</type>
+          <declname>comm_full</declname>
+        </param>
+        <param>
+          <type>Kokkos::View&lt; uint32_t * &gt;</type>
+          <declname>subset_iOcts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="34" column="7" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" bodystart="112" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a6cd9deda2a3a531d3c4f0ab13ca2a314" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::GhostCommunicator_full_blocks::OctSubset::nbGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>nbGhosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::OctSubset::nbGhosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="36" column="16" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="32" column="5" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="33" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a6cd9deda2a3a531d3c4f0ab13ca2a314" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks::OctSubset</scope><name>nbGhosts</name></member>
+      <member refid="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a37627e7437b65408284a0664e9fe597a" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks::OctSubset</scope><name>OctSubset</name></member>
+      <member refid="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a42d54e5a6d4ffa8439736efef718d6f1" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks::OctSubset</scope><name>partial_comm</name></member>
+      <member refid="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset_1a068c1827bdef7fb73c31c17fb732cd35" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks::OctSubset</scope><name>subset_iOcts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

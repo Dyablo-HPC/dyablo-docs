@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structuserdata__utils_1_1get__U__t" kind="struct" language="C++" prot="public">
+    <compoundname>userdata_utils::get_U_t</compoundname>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>iOct_pos</declname>
+        <defname>iOct_pos</defname>
+      </param>
+      <param>
+        <type>typename DataArray_t</type>
+      </param>
+      <param>
+        <type>typename Nargs</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structuserdata__utils_1_1get__U__t_1abfed7617b2e04883d82b7bbae12ae73c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION DataArray_t::value_type &amp;</type>
+        <definition>static KOKKOS_INLINE_FUNCTION DataArray_t::value_type &amp; userdata_utils::get_U_t&lt; iOct_pos, DataArray_t, Nargs, Args &gt;::get_U</definition>
+        <argsstring>(const DataArray_t &amp;U, uint32_t iOct, uint32_t elt_index, Args... is)</argsstring>
+        <name>get_U</name>
+        <qualifiedname>userdata_utils::get_U_t::get_U</qualifiedname>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>elt_index</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/userdata_utils.h" line="12" column="45" bodyfile="/builds/dyablo/dyablo/core/src/userdata_utils.h" bodystart="12" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/userdata_utils.h" line="10" column="3" bodyfile="/builds/dyablo/dyablo/core/src/userdata_utils.h" bodystart="10" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structuserdata__utils_1_1get__U__t_1abfed7617b2e04883d82b7bbae12ae73c" prot="public" virt="non-virtual"><scope>userdata_utils::get_U_t</scope><name>get_U</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

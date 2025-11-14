@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_aa07128909ce6c6be4e53392ee91c885" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/compute_dt</compoundname>
+    <innerfile refid="Compute__dt_8h">Compute_dt.h</innerfile>
+    <innerfile refid="Compute__dt__base_8h">Compute_dt_base.h</innerfile>
+    <innerfile refid="Compute__dt__cosmology_8cpp">Compute_dt_cosmology.cpp</innerfile>
+    <innerfile refid="Compute__dt__hydro_8cpp">Compute_dt_hydro.cpp</innerfile>
+    <innerfile refid="Compute__dt__parabolic_8cpp">Compute_dt_parabolic.cpp</innerfile>
+    <innerfile refid="Compute__dt__particle__velocity_8cpp">Compute_dt_particle_velocity.cpp</innerfile>
+    <innerfile refid="Compute__dt__rad_8cpp">Compute_dt_rad.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/compute_dt/"/>
+  </compounddef>
+</doxygen>

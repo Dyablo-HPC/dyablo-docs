@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_28549656050f5f527f596bc846b300c5" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/hyperbolic/scheme</compoundname>
+    <innerfile refid="Hyperbolic__euler_8h">Hyperbolic_euler.h</innerfile>
+    <innerfile refid="Hyperbolic__euler__nopatch_8h">Hyperbolic_euler_nopatch.h</innerfile>
+    <innerfile refid="Hyperbolic__hancock_8h">Hyperbolic_hancock.h</innerfile>
+    <innerfile refid="Hyperbolic__RK2_8h">Hyperbolic_RK2.h</innerfile>
+    <innerfile refid="HyperbolicUpdate__base_8h">HyperbolicUpdate_base.h</innerfile>
+    <innerfile refid="HyperbolicUpdate__hancock__oneneighbor_8cpp">HyperbolicUpdate_hancock_oneneighbor.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/scheme/"/>
+  </compounddef>
+</doxygen>

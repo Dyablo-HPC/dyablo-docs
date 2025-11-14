@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AnalyticalFormula__gravity__point__mass" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AnalyticalFormula_gravity_point_mass</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AnalyticalFormula_gravity</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a0347daf3b693ee85fb890e7846c67154" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AnalyticalFormula_gravity_point_mass::point_mass_x</definition>
+        <argsstring></argsstring>
+        <name>point_mass_x</name>
+        <qualifiedname>dyablo::AnalyticalFormula_gravity_point_mass::point_mass_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="14" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a0e2ce3dd31019c280659694a197849fc" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AnalyticalFormula_gravity_point_mass::point_mass_y</definition>
+        <argsstring></argsstring>
+        <name>point_mass_y</name>
+        <qualifiedname>dyablo::AnalyticalFormula_gravity_point_mass::point_mass_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="14" column="23" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a2d1a5394b32cf129dc059a0e684ae514" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AnalyticalFormula_gravity_point_mass::point_mass_z</definition>
+        <argsstring></argsstring>
+        <name>point_mass_z</name>
+        <qualifiedname>dyablo::AnalyticalFormula_gravity_point_mass::point_mass_z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="14" column="36" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a3600fc8c4e2eef5d1b45956569ca9b01" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AnalyticalFormula_gravity_point_mass::point_mass_Gmass</definition>
+        <argsstring></argsstring>
+        <name>point_mass_Gmass</name>
+        <qualifiedname>dyablo::AnalyticalFormula_gravity_point_mass::point_mass_Gmass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="16" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a858746302052cd5113a2391e5057a47c" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::AnalyticalFormula_gravity_point_mass::softening</definition>
+        <argsstring></argsstring>
+        <name>softening</name>
+        <qualifiedname>dyablo::AnalyticalFormula_gravity_point_mass::softening</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="18" column="10" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1ad14ab2e2b83e5f0e91b991f92d83d160" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AnalyticalFormula_gravity_point_mass::AnalyticalFormula_gravity_point_mass</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>AnalyticalFormula_gravity_point_mass</name>
+        <qualifiedname>dyablo::AnalyticalFormula_gravity_point_mass::AnalyticalFormula_gravity_point_mass</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="22" column="3" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a2c9f0e9a65d4bbe56719a8140cc07811" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION GravityField_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION GravityField_t dyablo::AnalyticalFormula_gravity_point_mass::value</definition>
+        <argsstring>(real_t x, real_t y, real_t z, real_t dx, real_t dy, real_t dz) const</argsstring>
+        <name>value</name>
+        <qualifiedname>dyablo::AnalyticalFormula_gravity_point_mass::value</qualifiedname>
+        <param>
+          <type>real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="31" column="18" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="31" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>AnalyticalFormula_gravity implementation for point mass to use with <ref refid="classdyablo_1_1GravitySolver__analytical" kindref="compound">GravitySolver_analytical</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AnalyticalFormula_gravity</label>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_gravity_point_mass</label>
+        <link refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AnalyticalFormula_gravity</label>
+      </node>
+      <node id="1">
+        <label>dyablo::AnalyticalFormula_gravity_point_mass</label>
+        <link refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" line="9" column="1" bodyfile="/builds/dyablo/dyablo/core/src/gravity/GravitySolver_point_mass.cpp" bodystart="10" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1ad14ab2e2b83e5f0e91b991f92d83d160" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_gravity_point_mass</scope><name>AnalyticalFormula_gravity_point_mass</name></member>
+      <member refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a3600fc8c4e2eef5d1b45956569ca9b01" prot="private" virt="non-virtual"><scope>dyablo::AnalyticalFormula_gravity_point_mass</scope><name>point_mass_Gmass</name></member>
+      <member refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a0347daf3b693ee85fb890e7846c67154" prot="private" virt="non-virtual"><scope>dyablo::AnalyticalFormula_gravity_point_mass</scope><name>point_mass_x</name></member>
+      <member refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a0e2ce3dd31019c280659694a197849fc" prot="private" virt="non-virtual"><scope>dyablo::AnalyticalFormula_gravity_point_mass</scope><name>point_mass_y</name></member>
+      <member refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a2d1a5394b32cf129dc059a0e684ae514" prot="private" virt="non-virtual"><scope>dyablo::AnalyticalFormula_gravity_point_mass</scope><name>point_mass_z</name></member>
+      <member refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a858746302052cd5113a2391e5057a47c" prot="private" virt="non-virtual"><scope>dyablo::AnalyticalFormula_gravity_point_mass</scope><name>softening</name></member>
+      <member refid="classdyablo_1_1AnalyticalFormula__gravity__point__mass_1a2c9f0e9a65d4bbe56719a8140cc07811" prot="public" virt="non-virtual"><scope>dyablo::AnalyticalFormula_gravity_point_mass</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

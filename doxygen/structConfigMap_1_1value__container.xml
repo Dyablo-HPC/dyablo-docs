@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structConfigMap_1_1value__container" kind="struct" language="C++" prot="protected">
+    <compoundname>ConfigMap::value_container</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structConfigMap_1_1value__container_1ac3684600ccf2c1a42aa28ecfedddbe65" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ConfigMap::value_container::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>ConfigMap::value_container::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="513" column="17" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structConfigMap_1_1value__container_1a06c9dd2248e29e85c6079033b8e554bf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ConfigMap::value_container::from_file</definition>
+        <argsstring></argsstring>
+        <name>from_file</name>
+        <qualifiedname>ConfigMap::value_container::from_file</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="514" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structConfigMap_1_1value__container_1af6bf7f38e7880c3e00ab9649750deae5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ConfigMap::value_container::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <qualifiedname>ConfigMap::value_container::used</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="515" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="512" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="512" bodyend="516"/>
+    <listofallmembers>
+      <member refid="structConfigMap_1_1value__container_1a06c9dd2248e29e85c6079033b8e554bf" prot="public" virt="non-virtual"><scope>ConfigMap::value_container</scope><name>from_file</name></member>
+      <member refid="structConfigMap_1_1value__container_1af6bf7f38e7880c3e00ab9649750deae5" prot="public" virt="non-virtual"><scope>ConfigMap::value_container</scope><name>used</name></member>
+      <member refid="structConfigMap_1_1value__container_1ac3684600ccf2c1a42aa28ecfedddbe65" prot="public" virt="non-virtual"><scope>ConfigMap::value_container</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

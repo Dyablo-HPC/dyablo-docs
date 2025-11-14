@@ -1,0 +1,593 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classConfigMap" kind="class" language="C++" prot="public">
+    <compoundname>ConfigMap</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1ConfigMap__unchecked" prot="public" virt="non-virtual">dyablo::ConfigMap_unchecked</derivedcompoundref>
+    <innerclass refid="structConfigMap_1_1value__container" prot="protected">ConfigMap::value_container</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classConfigMap_1ad5b4613ce3dc143d786879f1a5322928" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ConfigMap::print_config</definition>
+        <argsstring></argsstring>
+        <name>print_config</name>
+        <qualifiedname>ConfigMap::print_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="518" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConfigMap_1adc4b8058536e9ecfbf3e3e708090683e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ConfigMap::convert_units</definition>
+        <argsstring></argsstring>
+        <name>convert_units</name>
+        <qualifiedname>ConfigMap::convert_units</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="519" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConfigMap_1add1cae6e21c1f69f00fb0b202fb70e3b" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::map&lt; std::string, <ref refid="structConfigMap_1_1value__container" kindref="compound">value_container</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::map&lt; std::string, value_container&gt; &gt; ConfigMap::_values</definition>
+        <argsstring></argsstring>
+        <name>_values</name>
+        <qualifiedname>ConfigMap::_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="521" column="12" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classConfigMap_1a5f5568a516145e575508167b3167c8e0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigMap::ConfigMap</definition>
+        <argsstring>(const ConfigMap &amp;)=default</argsstring>
+        <name>ConfigMap</name>
+        <qualifiedname>ConfigMap::ConfigMap</qualifiedname>
+        <param>
+          <type>const <ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> cannot be copied to ensure default values are registered in original <ref refid="classConfigMap" kindref="compound">ConfigMap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="202" column="3"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConfigMap_1a49ccec050f8030a13ee018beb365ace7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConfigMap::ConfigMap</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>ConfigMap</name>
+        <qualifiedname>ConfigMap::ConfigMap</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="205" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1aa36155f2920f89d35cf5b1b7f1ba0530" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConfigMap::ConfigMap</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>ConfigMap</name>
+        <qualifiedname>ConfigMap::ConfigMap</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Read configmap from string (null terminated) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="210" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="210" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1adb834b4f510ba5efa80e3cf1b2b5da09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigMap::ConfigMap</definition>
+        <argsstring>(ConfigMap &amp;&amp;)=default</argsstring>
+        <name>ConfigMap</name>
+        <qualifiedname>ConfigMap::ConfigMap</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="220" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T ConfigMap::getValue</definition>
+        <argsstring>(std::string section, std::string name, const T &amp;default_value)</argsstring>
+        <name>getValue</name>
+        <qualifiedname>ConfigMap::getValue</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>default_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the value from configMap corresponding to <programlisting><codeline><highlight class="normal">[section]</highlight></codeline>
+<codeline><highlight class="normal">name=&lt;value&gt;</highlight></codeline>
+</programlisting> Value is then parsed to type T and returned. Case is ignored in section and name. If parameter is not present, it is added to the configmap Throws std::runtime_error if value cannot be parsed to type T or if there is still something left in </para>
+<para>after parsing ( e.g if &quot;2.5&quot; is parsed as integer, &quot;.5&quot; will remain )</para>
+<para>Most types are parsed using std::ostream::operator&lt;&lt;, but some types are parsed differently:<itemizedlist>
+<listitem><para>bool : allowed values are 1/0, yes/no, true/false, on/off</para>
+</listitem><listitem><para>std::string : are returned without modification until end of line</para>
+</listitem><listitem><para>enumerations : are parsed using <ref refid="classnamed__enum" kindref="compound">named_enum&lt;T&gt;</ref>. Names for enum values must be registered in <ref refid="classnamed__enum" kindref="compound">named_enum&lt;T&gt;</ref>. Integers can be used for enum values in .ini, but a name must be configured to write default values to last.ini</para>
+</listitem></itemizedlist>
+</para>
+<para>Note : getValue can be called for different types with the same section/name. This is not recommended and may have unpredictable beahavior (especially concerning rounding errors) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="295" column="5" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="295" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1aa278ade233b84fa02b5d49d6d94cfbd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T ConfigMap::getValue</definition>
+        <argsstring>(std::string section, std::string name)</argsstring>
+        <name>getValue</name>
+        <qualifiedname>ConfigMap::getValue</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as getValue(section, name, default) but value must exist </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="316" column="5" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="316" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1a07d5d21dde8fd84fb96138c810d7125b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t ConfigMap::getValue_in_unit_aux</definition>
+        <argsstring>(std::string section, std::string name, const F &amp;unit)</argsstring>
+        <name>getValue_in_unit_aux</name>
+        <qualifiedname>ConfigMap::getValue_in_unit_aux</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const F &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Implementation details. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="355" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="355" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1adf598a6710eb9bb5ab14f205e2e46683" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t ConfigMap::getValue_in_unit</definition>
+        <argsstring>(std::string section, std::string name, const Unit_t &amp;unit, const std::string &amp;default_value_str)</argsstring>
+        <name>getValue_in_unit</name>
+        <qualifiedname>ConfigMap::getValue_in_unit</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const Unit_t &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>default_value_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a floating point value from configMap corresponding to <programlisting><codeline><highlight class="normal">[section]</highlight></codeline>
+<codeline><highlight class="normal">name=&lt;value&gt;</highlight></codeline>
+</programlisting> and convert it to the specified unit.</para>
+<para>Value can either be :<itemizedlist>
+<listitem><para>a raw floating point value : the value is supposed to already be in the specified unit, the string is parsed using <ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue&lt;real_t&gt;()</ref></para>
+</listitem><listitem><para>a value with a unit string (e.g. &quot;10 km/s&quot;) : the value is then parsed using <ref refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" kindref="member">getValue&lt;Unit_t&gt;()</ref> and then converted to the specified unit ( <computeroutput>getValue&lt;Unit_t&gt;().convert_to(unit)</computeroutput> )</para>
+</listitem></itemizedlist>
+</para>
+<para>Case is ignored in section and name. If parameter is not present, it is added to the configmap Throws std::runtime_error if value cannot be parsed or if there is still something left in </para>
+<para>after parsing ( e.g if &quot;2.5&quot; is parsed as integer, &quot;.5&quot; will remain )</para>
+<para>Note : getValue functions can be called for different types with the same section/name. This is not recommended and may have unpredictable beahavior (especially concerning rounding errors) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="405" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="405" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1a9c8f68b3fb474a11cc6cc9e87f9ea28e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t ConfigMap::getValue_in_unit</definition>
+        <argsstring>(std::string section, std::string name, const Unit_t &amp;unit, real_t default_value)</argsstring>
+        <name>getValue_in_unit</name>
+        <qualifiedname>ConfigMap::getValue_in_unit</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const Unit_t &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>default_value</declname>
+        </param>
+        <briefdescription>
+<para>Same as getValue_in_unit(section, name, unit, default_str) but default_value is converted first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="420" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="420" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1a7f9dae03a56cf2a4a08fcf8e7b43cab5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t ConfigMap::getValue_in_unit</definition>
+        <argsstring>(std::string section, std::string name, const Unit_t &amp;unit)</argsstring>
+        <name>getValue_in_unit</name>
+        <qualifiedname>ConfigMap::getValue_in_unit</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const Unit_t &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Same as getValue_in_unit(section, name, unit, default) but value must exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="430" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="430" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1abfca4fda6db64a0e16f84d649dbfea08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t ConfigMap::getValue_in_code_unit</definition>
+        <argsstring>(std::string section, std::string name)</argsstring>
+        <name>getValue_in_code_unit</name>
+        <qualifiedname>ConfigMap::getValue_in_code_unit</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Same as getValue_in_code_unit(section, name, default) but value must exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="437" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="437" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1ad091f46f3c1f1383a758822cb2a7ce3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t ConfigMap::getValue_in_code_unit</definition>
+        <argsstring>(std::string section, std::string name, const std::string &amp;default_value_str)</argsstring>
+        <name>getValue_in_code_unit</name>
+        <qualifiedname>ConfigMap::getValue_in_code_unit</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>default_value_str</declname>
+        </param>
+        <briefdescription>
+<para>Same as getValue_in_unit(section, name, unit, default) but <computeroutput>unit</computeroutput> is the code unit corresponding to Unit_t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="444" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="444" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1a4ad91ff2655ffacee44168bc00d2c36b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Unit_t</type>
+          </param>
+        </templateparamlist>
+        <type>real_t</type>
+        <definition>real_t ConfigMap::getValue_in_code_unit</definition>
+        <argsstring>(std::string section, std::string name, real_t default_value)</argsstring>
+        <name>getValue_in_code_unit</name>
+        <qualifiedname>ConfigMap::getValue_in_code_unit</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>default_value</declname>
+        </param>
+        <briefdescription>
+<para>Same as getValue_in_code_unit(section, name, default_str) but default_value is converted to string first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="459" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="459" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1ae2489b29b5ee29a5ea4a60c8b22ab8c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ConfigMap::hasValue</definition>
+        <argsstring>(std::string section, std::string name)</argsstring>
+        <name>hasValue</name>
+        <qualifiedname>ConfigMap::hasValue</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="467" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="467" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1af0b03896adfab9bf1c4e941e0068ad8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigMap::output</definition>
+        <argsstring>(std::ostream &amp;o)</argsstring>
+        <name>output</name>
+        <qualifiedname>ConfigMap::output</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write configured .ini in o</para>
+<para>Variables are printed in the order they are stored in the <ref refid="classConfigMap" kindref="compound">ConfigMap</ref> Comments are added to help understand which variables are defined in .ini file but unused in dyablo, and which variables have been defaulted because they were not present in original ini file</para>
+<para>NOTE : variables present in original .ini files are left as they were defined originally. ex : enum values set as 1 appear as 1 in last.ini, and will not be replaced by the name in <ref refid="classnamed__enum" kindref="compound">named_enum&lt;T&gt;</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="484" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="484" bodyend="510"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classConfigMap_1a8924989242dd30189223c5325aed436c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref></type>
+        <definition>static ConfigMap ConfigMap::broadcast_parameters</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>broadcast_parameters</name>
+        <qualifiedname>ConfigMap::broadcast_parameters</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read configmap from file and broadcast : this is an MPI collective that create the same <ref refid="classConfigMap" kindref="compound">ConfigMap</ref> on every process </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="224" column="20" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="224" bodyend="269"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classConfigMap_1a14fd2eaa7841f0dcf36d692ec64d4e21" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ConfigMap::valueHandler</definition>
+        <argsstring>(void *user, const char *section_cstr, const char *name_cstr, const char *value_cstr)</argsstring>
+        <name>valueHandler</name>
+        <qualifiedname>ConfigMap::valueHandler</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>section_cstr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name_cstr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value_cstr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="522" column="14" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="522" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigMap_1a160811567343ff95dbd714310aae4ce1" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string ConfigMap::tolower</definition>
+        <argsstring>(std::string str)</argsstring>
+        <name>tolower</name>
+        <qualifiedname>ConfigMap::tolower</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="533" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="533" bodyend="537"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ConfigMap</label>
+        <link refid="classConfigMap"/>
+      </node>
+      <node id="2">
+        <label>dyablo::ConfigMap_unchecked</label>
+        <link refid="classdyablo_1_1ConfigMap__unchecked"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" line="198" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/config/ConfigMap.h" bodystart="199" bodyend="538"/>
+    <listofallmembers>
+      <member refid="classConfigMap_1add1cae6e21c1f69f00fb0b202fb70e3b" prot="protected" virt="non-virtual"><scope>ConfigMap</scope><name>_values</name></member>
+      <member refid="classConfigMap_1a8924989242dd30189223c5325aed436c" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>broadcast_parameters</name></member>
+      <member refid="classConfigMap_1a5f5568a516145e575508167b3167c8e0" prot="protected" virt="non-virtual"><scope>ConfigMap</scope><name>ConfigMap</name></member>
+      <member refid="classConfigMap_1a49ccec050f8030a13ee018beb365ace7" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>ConfigMap</name></member>
+      <member refid="classConfigMap_1aa36155f2920f89d35cf5b1b7f1ba0530" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>ConfigMap</name></member>
+      <member refid="classConfigMap_1adb834b4f510ba5efa80e3cf1b2b5da09" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>ConfigMap</name></member>
+      <member refid="classConfigMap_1adc4b8058536e9ecfbf3e3e708090683e" prot="protected" virt="non-virtual"><scope>ConfigMap</scope><name>convert_units</name></member>
+      <member refid="classConfigMap_1a0c5ffe5076e10513cd7441002f4c27f1" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue</name></member>
+      <member refid="classConfigMap_1aa278ade233b84fa02b5d49d6d94cfbd1" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue</name></member>
+      <member refid="classConfigMap_1abfca4fda6db64a0e16f84d649dbfea08" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue_in_code_unit</name></member>
+      <member refid="classConfigMap_1ad091f46f3c1f1383a758822cb2a7ce3d" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue_in_code_unit</name></member>
+      <member refid="classConfigMap_1a4ad91ff2655ffacee44168bc00d2c36b" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue_in_code_unit</name></member>
+      <member refid="classConfigMap_1adf598a6710eb9bb5ab14f205e2e46683" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue_in_unit</name></member>
+      <member refid="classConfigMap_1a9c8f68b3fb474a11cc6cc9e87f9ea28e" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue_in_unit</name></member>
+      <member refid="classConfigMap_1a7f9dae03a56cf2a4a08fcf8e7b43cab5" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue_in_unit</name></member>
+      <member refid="classConfigMap_1a07d5d21dde8fd84fb96138c810d7125b" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>getValue_in_unit_aux</name></member>
+      <member refid="classConfigMap_1ae2489b29b5ee29a5ea4a60c8b22ab8c1" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>hasValue</name></member>
+      <member refid="classConfigMap_1af0b03896adfab9bf1c4e941e0068ad8d" prot="public" virt="non-virtual"><scope>ConfigMap</scope><name>output</name></member>
+      <member refid="classConfigMap_1ad5b4613ce3dc143d786879f1a5322928" prot="protected" virt="non-virtual"><scope>ConfigMap</scope><name>print_config</name></member>
+      <member refid="classConfigMap_1a160811567343ff95dbd714310aae4ce1" prot="protected" virt="non-virtual"><scope>ConfigMap</scope><name>tolower</name></member>
+      <member refid="classConfigMap_1a14fd2eaa7841f0dcf36d692ec64d4e21" prot="protected" virt="non-virtual"><scope>ConfigMap</scope><name>valueHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

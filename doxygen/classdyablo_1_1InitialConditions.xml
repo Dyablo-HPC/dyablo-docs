@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1InitialConditions" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::InitialConditions</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__analytical" prot="public" virt="non-virtual">dyablo::InitialConditions_analytical&lt; AnalyticalFormula_impl &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__grafic__fields" prot="public" virt="non-virtual">dyablo::InitialConditions_grafic_fields</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__particle__grid" prot="public" virt="non-virtual">dyablo::InitialConditions_particle_grid</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__restart" prot="public" virt="non-virtual">dyablo::InitialConditions_restart</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__simple__particles" prot="public" virt="non-virtual">dyablo::InitialConditions_simple_particles</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__tiled__restart" prot="public" virt="non-virtual">dyablo::InitialConditions_tiled_restart</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__uniform" prot="public" virt="non-virtual">dyablo::InitialConditions_uniform</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1InitialConditions__zeldovitch__particles" prot="public" virt="non-virtual">dyablo::InitialConditions_zeldovitch_particles</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions_1a20889de941f815d050a2f29d8f312d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::InitialConditions::init</definition>
+        <argsstring>(UserData &amp;U)=0</argsstring>
+        <name>init</name>
+        <qualifiedname>dyablo::InitialConditions::init</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__analytical_1a8d4f78b308d4ae95967e0ed08c975ab5">init</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__grafic__fields_1a9d5ad01aafc2da843c042570374773bf">init</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__particle__grid_1ae083dfc0f3ea65809ba2e25c9cf4a589">init</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__restart_1a4e93afd5e0aeee1063c02f690b5d3df1">init</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__simple__particles_1a40aabc9c22abcec19775acc61ae7449e">init</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__tiled__restart_1ad56ea1182accaa96e5f0fcd5315a72d3">init</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__uniform_1aa6b1cd7f08f3e3cfc0550b9228b37198">init</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1InitialConditions__zeldovitch__particles_1afd564cbb70b6e8f5514a0ff8c33cd2d1">init</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h" line="20" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1InitialConditions_1a49242f31b906aa339374199c2ff18b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::InitialConditions::~InitialConditions</definition>
+        <argsstring>()</argsstring>
+        <name>~InitialConditions</name>
+        <qualifiedname>dyablo::InitialConditions::~InitialConditions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h" line="21" column="11" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::InitialConditions</label>
+        <link refid="classdyablo_1_1InitialConditions"/>
+      </node>
+      <node id="2">
+        <label>dyablo::InitialConditions_analytical&lt; AnalyticalFormula_impl &gt;</label>
+        <link refid="classdyablo_1_1InitialConditions__analytical"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::InitialConditions_grafic_fields</label>
+        <link refid="classdyablo_1_1InitialConditions__grafic__fields"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::InitialConditions_particle_grid</label>
+        <link refid="classdyablo_1_1InitialConditions__particle__grid"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dyablo::InitialConditions_restart</label>
+        <link refid="classdyablo_1_1InitialConditions__restart"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dyablo::InitialConditions_simple_particles</label>
+        <link refid="classdyablo_1_1InitialConditions__simple__particles"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dyablo::InitialConditions_tiled_restart</label>
+        <link refid="classdyablo_1_1InitialConditions__tiled__restart"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dyablo::InitialConditions_uniform</label>
+        <link refid="classdyablo_1_1InitialConditions__uniform"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dyablo::InitialConditions_zeldovitch_particles</label>
+        <link refid="classdyablo_1_1InitialConditions__zeldovitch__particles"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h" bodystart="14" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1InitialConditions_1a20889de941f815d050a2f29d8f312d28" prot="public" virt="pure-virtual"><scope>dyablo::InitialConditions</scope><name>init</name></member>
+      <member refid="classdyablo_1_1InitialConditions_1a49242f31b906aa339374199c2ff18b96" prot="public" virt="virtual"><scope>dyablo::InitialConditions</scope><name>~InitialConditions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1GlobalMpiSession" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::GlobalMpiSession</compoundname>
+    <includes refid="GlobalMpiSession_8h" local="no">GlobalMpiSession.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1GlobalMpiSession_1a58b8934bc68a65102b7de49ec6d2b8eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::GlobalMpiSession::GlobalMpiSession</definition>
+        <argsstring>(int *argc, char ***argv)</argsstring>
+        <name>GlobalMpiSession</name>
+        <qualifiedname>dyablo::GlobalMpiSession::GlobalMpiSession</qualifiedname>
+        <param>
+          <type>int *</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char ***</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Calls MPI_Init() if DYABLO_USE_MPI is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.h" line="29" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GlobalMpiSession_1a8b240862d7332fc45059e0c464a585b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::GlobalMpiSession::~GlobalMpiSession</definition>
+        <argsstring>()</argsstring>
+        <name>~GlobalMpiSession</name>
+        <qualifiedname>dyablo::GlobalMpiSession::~GlobalMpiSession</qualifiedname>
+        <briefdescription>
+<para>Calls MPI_Finalize() if DYABLO_USE_MPI is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.h" line="32" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+        <definition>static MpiComm &amp; dyablo::GlobalMpiSession::get_comm_world</definition>
+        <argsstring>()</argsstring>
+        <name>get_comm_world</name>
+        <qualifiedname>dyablo::GlobalMpiSession::get_comm_world</qualifiedname>
+        <briefdescription>
+<para>Get MPI_COMM_WORLD communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.h" line="35" column="18" bodyfile="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class provides methods for initializing, finalizing, and querying the global MPI session. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is primarilly designed to insulate basic <computeroutput>main()</computeroutput> program type of code from having to know if MPI is enabled or not. </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.h" line="25" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/mpi/GlobalMpiSession.h" bodystart="26" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" prot="public" virt="non-virtual"><scope>dyablo::GlobalMpiSession</scope><name>get_comm_world</name></member>
+      <member refid="classdyablo_1_1GlobalMpiSession_1a58b8934bc68a65102b7de49ec6d2b8eb" prot="public" virt="non-virtual"><scope>dyablo::GlobalMpiSession</scope><name>GlobalMpiSession</name></member>
+      <member refid="classdyablo_1_1GlobalMpiSession_1a8b240862d7332fc45059e0c464a585b3" prot="public" virt="non-virtual"><scope>dyablo::GlobalMpiSession</scope><name>~GlobalMpiSession</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

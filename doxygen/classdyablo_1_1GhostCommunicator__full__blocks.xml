@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1GhostCommunicator__full__blocks" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::GhostCommunicator_full_blocks</compoundname>
+    <basecompoundref refid="classdyablo_1_1ViewCommunicator" prot="protected" virt="non-virtual">dyablo::ViewCommunicator</basecompoundref>
+    <innerclass refid="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset" prot="public">dyablo::GhostCommunicator_full_blocks::OctSubset</innerclass>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1a58036974aea02f2106bb3be5d941c3e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename AMRmesh_t</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dyablo::GhostCommunicator_full_blocks::GhostCommunicator_full_blocks</definition>
+        <argsstring>(const AMRmesh_t &amp;amr_mesh, const ForeachCell::CellArray_global_ghosted::Shape_t &amp;shape, int ghost_count, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>GhostCommunicator_full_blocks</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::GhostCommunicator_full_blocks</qualifiedname>
+        <param>
+          <type>const AMRmesh_t &amp;</type>
+          <declname>amr_mesh</declname>
+        </param>
+        <param>
+          <type>const ForeachCell::CellArray_global_ghosted::Shape_t &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ghost_count</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="13" column="5" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1a21cb313408e69eef2e1f8c3bbc85c195" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::GhostCommunicator_full_blocks::getNumGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumGhosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::getNumGhosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="23" column="14" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1ad8c15b1bc5c25f935addc103cf718da9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_full_blocks::exchange_ghosts</definition>
+        <argsstring>(const UserData::FieldAccessor &amp;U) const</argsstring>
+        <name>exchange_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::exchange_ghosts</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="28" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" bodystart="5" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1adb3fa4e5df01916649a95759942b900e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_full_blocks::exchange_ghosts</definition>
+        <argsstring>(ForeachCell::CellArray_global_ghosted &amp;U) const</argsstring>
+        <name>exchange_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::exchange_ghosts</qualifiedname>
+        <param>
+          <type>ForeachCell::CellArray_global_ghosted &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="30" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1a0cd17737f1e8c08d05128958e6966806" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_full_blocks::exchange_ghosts_subset</definition>
+        <argsstring>(const UserData::FieldAccessor &amp;U, const OctSubset &amp;subset) const</argsstring>
+        <name>exchange_ghosts_subset</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::exchange_ghosts_subset</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1GhostCommunicator__full__blocks_1_1OctSubset" kindref="compound">OctSubset</ref> &amp;</type>
+          <declname>subset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="45" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" bodystart="126" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1a213087bbd8f280022de904440ee24c05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_full_blocks::reduce_ghosts</definition>
+        <argsstring>(UserData::FieldAccessor &amp;U) const</argsstring>
+        <name>reduce_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::reduce_ghosts</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="47" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" bodystart="156" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1abe2db5945a70601e09b9f99c69145c3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_full_blocks::reduce_ghosts</definition>
+        <argsstring>(ForeachCell::CellArray_global_ghosted &amp;U) const</argsstring>
+        <name>reduce_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::reduce_ghosts</qualifiedname>
+        <param>
+          <type>ForeachCell::CellArray_global_ghosted &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="49" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.cpp" bodystart="168" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__full__blocks_1aad2634440ffa12bfbd6ce39fbeed4b5f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string dyablo::GhostCommunicator_full_blocks::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>dyablo::GhostCommunicator_full_blocks::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="17" column="24" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="17" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::GhostCommunicator_full_blocks</label>
+        <link refid="classdyablo_1_1GhostCommunicator__full__blocks"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::ViewCommunicator</label>
+        <link refid="classdyablo_1_1ViewCommunicator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::GhostCommunicator_full_blocks</label>
+        <link refid="classdyablo_1_1GhostCommunicator__full__blocks"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::MpiComm</label>
+        <link refid="classdyablo_1_1MpiComm"/>
+      </node>
+      <node id="2">
+        <label>dyablo::ViewCommunicator</label>
+        <link refid="classdyablo_1_1ViewCommunicator"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mpi_comm</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" line="9" column="1" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h" bodystart="10" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1ad8c15b1bc5c25f935addc103cf718da9" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>exchange_ghosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1adb3fa4e5df01916649a95759942b900e" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>exchange_ghosts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ab2c42816f513e7e10a1c6027bab22c09" prot="protected" virt="non-virtual" ambiguityscope="dyablo::ViewCommunicator::"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>exchange_ghosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1a0cd17737f1e8c08d05128958e6966806" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>exchange_ghosts_subset</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1accd86903368004966d29fc69dbc3e58b" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>from_mesh</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1a21cb313408e69eef2e1f8c3bbc85c195" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>getNumGhosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1a58036974aea02f2106bb3be5d941c3e1" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>GhostCommunicator_full_blocks</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1aa16e6d3f3b714af3c1552c57aee28592" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>mpi_comm</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1aad2634440ffa12bfbd6ce39fbeed4b5f" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>name</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a8d422661df0fe6c2cddb328da96e823a" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>nbghosts_recv</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a0667aa340c11ff305d2368b22b5083da" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>private_init_domains</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ab08afc47420a7f458e99933859c0828b" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>private_init_map</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a476775ad1741ca7fbe46eb6a44137af3" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>recv_sizes</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ac07816e30a50ce2f1694e9e483e54fc1" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>recv_sizes_host</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1a213087bbd8f280022de904440ee24c05" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>reduce_ghosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__full__blocks_1abe2db5945a70601e09b9f99c69145c3d" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>reduce_ghosts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a879538474f1ed2cb1e75136fba3a1c42" prot="protected" virt="non-virtual" ambiguityscope="dyablo::ViewCommunicator::"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>reduce_ghosts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ac0b9f621d7840ff7c482937d11cd6804" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>send_iOcts</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a4f2c3b25db9fb0e58f995b58c9d25e29" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>send_sizes</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a767344a2982ef90dc3d2e50f2406c921" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>send_sizes_host</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1ab3e9dc7aedae827ad54390a4546b9eac" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>ViewCommunicator</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1addb576949d4891df9aeb531674822f25" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>ViewCommunicator</name></member>
+      <member refid="classdyablo_1_1ViewCommunicator_1a95c7bd9355de2a6f54959f1ec6ad7daf" prot="protected" virt="non-virtual"><scope>dyablo::GhostCommunicator_full_blocks</scope><name>ViewCommunicator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

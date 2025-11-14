@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__RadState" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_RadState</compoundname>
+    <includes refid="HyperbolicPolicy__Rad_8h" local="no">HyperbolicPolicy_Rad.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842" prot="public" static="no" strong="no">
+        <type>dyablo::VarIndex</type>
+        <name>VarIndex</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RadState::VarIndex</qualifiedname>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842a3b1564e62e4f46b31db8ca2181c3902b" prot="public">
+          <name>Ie_rad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842a3a8b3aac45121b87756b63741486c82d" prot="public">
+          <name>Ifx_rad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842aa51c364f1428d32745b707f6cc7780d1" prot="public">
+          <name>Ify_rad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842a4a39ecfd34b5b4a8a981b0be4a7bbfd0" prot="public">
+          <name>Ifz_rad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="14" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="15" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RadState_1a4a8fd1e552212cd5cedc9845cc934bce" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RadState::e_rad</definition>
+        <argsstring></argsstring>
+        <name>e_rad</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RadState::e_rad</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="36" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RadState_1a119d17011deebd4bb9ce71cbb283f678" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RadState::fx_rad</definition>
+        <argsstring></argsstring>
+        <name>fx_rad</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RadState::fx_rad</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="37" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RadState_1a59ee0cd97da4001c53d4f28e950af8ee" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RadState::fy_rad</definition>
+        <argsstring></argsstring>
+        <name>fy_rad</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RadState::fy_rad</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="38" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__RadState_1ab032e1aaf4926c1e38bbd23003311f3d" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RadState::fz_rad</definition>
+        <argsstring></argsstring>
+        <name>fz_rad</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RadState::fz_rad</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="39" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__RadState_1a6ab2c2a37dba55e07bab1c351a29a644" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo" kindref="compound">UserData::FieldAccessor::FieldInfo</ref> &gt;</type>
+        <definition>static std::vector&lt; UserData::FieldAccessor::FieldInfo &gt; dyablo::HyperbolicPolicy_RadState::getFieldsInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldsInfo</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RadState::getFieldsInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="22" column="22" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__RadState_1a15d6bf8279ed74e5defd299f355b9989" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref></type>
+        <definition>static FieldManager dyablo::HyperbolicPolicy_RadState::getFieldManager</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldManager</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RadState::getFieldManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="31" column="23" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure holding conservative Radiative transfert variables. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="13" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="13" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1a4a8fd1e552212cd5cedc9845cc934bce" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>e_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1a119d17011deebd4bb9ce71cbb283f678" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>fx_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1a59ee0cd97da4001c53d4f28e950af8ee" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>fy_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1ab032e1aaf4926c1e38bbd23003311f3d" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>fz_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1a15d6bf8279ed74e5defd299f355b9989" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>getFieldManager</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1a6ab2c2a37dba55e07bab1c351a29a644" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842a3b1564e62e4f46b31db8ca2181c3902b" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>Ie_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842a3a8b3aac45121b87756b63741486c82d" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>Ifx_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842aa51c364f1428d32745b707f6cc7780d1" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>Ify_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842a4a39ecfd34b5b4a8a981b0be4a7bbfd0" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>Ifz_rad</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__RadState_1acf0f64c0307162d935866770a49ba842" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RadState</scope><name>VarIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

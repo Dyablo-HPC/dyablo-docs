@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1FortranBinaryReader" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::FortranBinaryReader</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1FortranBinaryReader_1a69fda1843953505421d801fb97f6cf17" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>using dyablo::FortranBinaryReader::RecordTag_t =  int32_t</definition>
+        <argsstring></argsstring>
+        <name>RecordTag_t</name>
+        <qualifiedname>dyablo::FortranBinaryReader::RecordTag_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" line="29" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1FortranBinaryReader_1a1117cad647ef8262c272c37e6fffa6a8" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::FortranBinaryReader::_byteswap</definition>
+        <argsstring></argsstring>
+        <name>_byteswap</name>
+        <qualifiedname>dyablo::FortranBinaryReader::_byteswap</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" line="28" column="22" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1FortranBinaryReader_1abe7ceeaeb3512a49c42bfd3427f6ab3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void dyablo::FortranBinaryReader::read_record</definition>
+        <argsstring>(std::istream &amp;istr, T *buffer, size_t count)</argsstring>
+        <name>read_record</name>
+        <qualifiedname>dyablo::FortranBinaryReader::read_record</qualifiedname>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>istr</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" line="33" column="15" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" bodystart="33" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" line="25" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/FortranBinaryReader.h" bodystart="26" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1FortranBinaryReader_1a1117cad647ef8262c272c37e6fffa6a8" prot="public" virt="non-virtual"><scope>dyablo::FortranBinaryReader</scope><name>_byteswap</name></member>
+      <member refid="classdyablo_1_1FortranBinaryReader_1abe7ceeaeb3512a49c42bfd3427f6ab3e" prot="public" virt="non-virtual"><scope>dyablo::FortranBinaryReader</scope><name>read_record</name></member>
+      <member refid="classdyablo_1_1FortranBinaryReader_1a69fda1843953505421d801fb97f6cf17" prot="public" virt="non-virtual"><scope>dyablo::FortranBinaryReader</scope><name>RecordTag_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

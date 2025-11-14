@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</compoundname>
+    <basecompoundref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" prot="public" virt="non-virtual">dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; false, false &gt;</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch_1ae620bb73a4d9569a2a1f1b18975de93e" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch" kindref="compound">CellArray_patch</ref></type>
+        <definition>using dyablo::AMRBlockForeachCell_group_impl::CellArray_patch::Ref =  CellArray_patch</definition>
+        <argsstring></argsstring>
+        <name>Ref</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch::Ref</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="21" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch_1a11c8f599aa4791660d285b9a6930f79f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch::CellArray_patch</definition>
+        <argsstring>()</argsstring>
+        <name>CellArray_patch</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch::CellArray_patch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="23" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch_1a2ccd35134fe9d5749109a48ee17ad36b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch::CellArray_patch</definition>
+        <argsstring>(const CellArray_global &amp;a)</argsstring>
+        <name>CellArray_patch</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch::CellArray_patch</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kindref="compound">CellArray_global</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="24" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CellArray_global</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CellArray_global</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base"/>
+      </node>
+      <node id="1">
+        <label>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="18" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="19" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1af28ea9b09eebeaafcbca11f808091ae3" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>at</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1af28ea9b09eebeaafcbca11f808091ae3" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>at</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a7bd532c4beb15651bd3f351b8a320694" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>at_ivar</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a7bd532c4beb15651bd3f351b8a320694" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>at_ivar</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ab31863c0dad0a3d8e189955901658951" prot="protected" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0b47350b1d0f8c87c4b979e34b445ddc" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae967501302fbd3242f6b69a9640e845d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ab31863c0dad0a3d8e189955901658951" prot="protected" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0b47350b1d0f8c87c4b979e34b445ddc" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae967501302fbd3242f6b69a9640e845d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch_1a11c8f599aa4791660d285b9a6930f79f" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_patch</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch_1a2ccd35134fe9d5749109a48ee17ad36b" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>CellArray_patch</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a38be05d421f9f078cfce28a5f5d26cce" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>convert_index</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a38be05d421f9f078cfce28a5f5d26cce" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>convert_index</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a2d7027b884fe35c3e169ecf442d92ea5" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>convert_index_getNeighbor</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a2d7027b884fe35c3e169ecf442d92ea5" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>convert_index_getNeighbor</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1afc2eda1f4d91049126eae9d6002ea14d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>convert_index_ghost</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1afc2eda1f4d91049126eae9d6002ea14d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>convert_index_ghost</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a40195851241f9bea0b038ac0f69b9a44" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>fm</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a40195851241f9bea0b038ac0f69b9a44" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>fm</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0cd2d310b180af44d5ca3548a0204c3c" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>getShape</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0cd2d310b180af44d5ca3548a0204c3c" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>getShape</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a70db4fe8cb364732b4223c39982914cc" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>has_ghosts</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a70db4fe8cb364732b4223c39982914cc" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>has_ghosts</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a648873db6dd6bf60a6e4eb734d1bff07" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>has_intermediates</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a648873db6dd6bf60a6e4eb734d1bff07" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>has_intermediates</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a6e7c90236f885a9ca2589f8c6a1f1c1e" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>nbFields</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a6e7c90236f885a9ca2589f8c6a1f1c1e" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>nbFields</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ac6d6749d8a3a48350c1c8eee521a18a8" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>nbfields</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ac6d6749d8a3a48350c1c8eee521a18a8" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>nbfields</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae88fdd1fb1f5b0fb37fb48c6132f114b" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>operator Shape_t</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae88fdd1fb1f5b0fb37fb48c6132f114b" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>operator Shape_t</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch_1ae620bb73a4d9569a2a1f1b18975de93e" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>Ref</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a5eb12cf6bcda3b76f7ad2b9a1e5fb7c9" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>shape</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a5eb12cf6bcda3b76f7ad2b9a1e5fb7c9" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>shape</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0fd85f363eac77df05c2500be6f9676d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>Shape_t</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a65f9c7472e29c36e2a7428c9b7eb260a" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>U</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a65f9c7472e29c36e2a7428c9b7eb260a" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>U</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1add48fb1856e70f192de3e674229d53ed" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>Ughost</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1add48fb1856e70f192de3e674229d53ed" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>Ughost</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a32c1541d92813e6a0f4d6c5eb15cf626" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>Uintermediate</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a32c1541d92813e6a0f4d6c5eb15cf626" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>Uintermediate</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1afde456062f43f6c3b2b3c0bd11f49a0c" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::CellArray_patch</scope><name>View_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

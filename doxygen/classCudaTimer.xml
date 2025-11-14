@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classCudaTimer" kind="class" language="C++" prot="public">
+    <compoundname>CudaTimer</compoundname>
+    <includes refid="CudaTimer_8h" local="no">CudaTimer.h</includes>
+    <innerclass refid="classCudaTimer_1_1CUDAEvent" prot="protected">CudaTimer::CUDAEvent</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCudaTimer_1a728c8f61fc2da0c3a31a66585514fa07" prot="protected" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classCudaTimer_1_1CUDAEvent" kindref="compound">CUDAEvent</ref> &gt;</type>
+        <definition>std::queue&lt;CUDAEvent&gt; CudaTimer::startEv_queue</definition>
+        <argsstring></argsstring>
+        <name>startEv_queue</name>
+        <qualifiedname>CudaTimer::startEv_queue</qualifiedname>
+        <briefdescription>
+<para>queue CUDA start and stop events </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="62" column="14" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCudaTimer_1a98db3d6cb22706546256cb23595750b9" prot="protected" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classCudaTimer_1_1CUDAEvent" kindref="compound">CUDAEvent</ref> &gt;</type>
+        <definition>std::queue&lt;CUDAEvent&gt; CudaTimer::stopEv_queue</definition>
+        <argsstring></argsstring>
+        <name>stopEv_queue</name>
+        <qualifiedname>CudaTimer::stopEv_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="62" column="28" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCudaTimer_1a7190becb46771fdbd305d1f67e631f9e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CudaTimer::total_time</definition>
+        <argsstring></argsstring>
+        <name>total_time</name>
+        <qualifiedname>CudaTimer::total_time</qualifiedname>
+        <briefdescription>
+<para>total accumulated duration </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="64" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCudaTimer_1add52b7f92343ff892346eb3f9d6f9173" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CudaTimer::CudaTimer</definition>
+        <argsstring>()</argsstring>
+        <name>CudaTimer</name>
+        <qualifiedname>CudaTimer::CudaTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="67" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classCudaTimer_1a5db3e05cd63573015bf1a9f55cc37e32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CudaTimer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>CudaTimer::start</qualifiedname>
+        <briefdescription>
+<para>start timer push a start even in a cuda stream also check events termination (cudaEventQuery()) and accumulate times </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="77" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classCudaTimer_1a5a4be0bef35ed52a5389d2ffb819b44a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CudaTimer::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>CudaTimer::reset</qualifiedname>
+        <briefdescription>
+<para>reset accumulated duration and empty the queue </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="85" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classCudaTimer_1a20e3226471439fed515fdde5d6e4ce75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CudaTimer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>CudaTimer::stop</qualifiedname>
+        <briefdescription>
+<para>stop timer, push a stop event in a cuda stream </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="92" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classCudaTimer_1a9d81d3c270df6920a5cab0d1040415aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CudaTimer::elapsed</definition>
+        <argsstring>()</argsstring>
+        <name>elapsed</name>
+        <qualifiedname>CudaTimer::elapsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return total elapsed time in seconds Performs a CPU synchronization (cudaEventSynchronize()) and flushes event queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="101" column="10" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="101" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCudaTimer_1a2a943240dafb0bd657dae3a8f359edcd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CudaTimer::empty_queue</definition>
+        <argsstring>()</argsstring>
+        <name>empty_queue</name>
+        <qualifiedname>CudaTimer::empty_queue</qualifiedname>
+        <briefdescription>
+<para>Wait for events and flush queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="110" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="110" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classCudaTimer_1a9982221db76a00d2f5973600e206120b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CudaTimer::accumulate_finished</definition>
+        <argsstring>()</argsstring>
+        <name>accumulate_finished</name>
+        <qualifiedname>CudaTimer::accumulate_finished</qualifiedname>
+        <briefdescription>
+<para>Flush finished events from the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="123" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="123" bodyend="132"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>a simple timer for CUDA kernel using CUDA events. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__EVENT.html">https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__EVENT.html</ulink></para>
+</simplesect>
+This timer uses a CUDA event queue to avoid using cudaEventSychronize() to accumulate measured times <ref refid="classCudaTimer_1a5db3e05cd63573015bf1a9f55cc37e32" kindref="member">start()</ref>/stop() create new cudaEvent_t handles and adds it to an event queue cudaEventQuery() is called periodically (during <ref refid="classCudaTimer_1a5db3e05cd63573015bf1a9f55cc37e32" kindref="member">start()</ref> and <ref refid="classCudaTimer_1a9d81d3c270df6920a5cab0d1040415aa" kindref="member">elapsed()</ref>) to empty the queue and accumulate time CPU synchronization (cudaEventSynchronize()) is performed only in <ref refid="classCudaTimer_1a9d81d3c270df6920a5cab0d1040415aa" kindref="member">elapsed()</ref> (and <ref refid="classCudaTimer_1a5a4be0bef35ed52a5389d2ffb819b44a" kindref="member">reset()</ref>) </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" line="24" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/monitoring/CudaTimer.h" bodystart="25" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classCudaTimer_1a9982221db76a00d2f5973600e206120b" prot="private" virt="non-virtual"><scope>CudaTimer</scope><name>accumulate_finished</name></member>
+      <member refid="classCudaTimer_1add52b7f92343ff892346eb3f9d6f9173" prot="public" virt="non-virtual"><scope>CudaTimer</scope><name>CudaTimer</name></member>
+      <member refid="classCudaTimer_1a9d81d3c270df6920a5cab0d1040415aa" prot="public" virt="non-virtual"><scope>CudaTimer</scope><name>elapsed</name></member>
+      <member refid="classCudaTimer_1a2a943240dafb0bd657dae3a8f359edcd" prot="private" virt="non-virtual"><scope>CudaTimer</scope><name>empty_queue</name></member>
+      <member refid="classCudaTimer_1a5a4be0bef35ed52a5389d2ffb819b44a" prot="public" virt="non-virtual"><scope>CudaTimer</scope><name>reset</name></member>
+      <member refid="classCudaTimer_1a5db3e05cd63573015bf1a9f55cc37e32" prot="public" virt="non-virtual"><scope>CudaTimer</scope><name>start</name></member>
+      <member refid="classCudaTimer_1a728c8f61fc2da0c3a31a66585514fa07" prot="protected" virt="non-virtual"><scope>CudaTimer</scope><name>startEv_queue</name></member>
+      <member refid="classCudaTimer_1a20e3226471439fed515fdde5d6e4ce75" prot="public" virt="non-virtual"><scope>CudaTimer</scope><name>stop</name></member>
+      <member refid="classCudaTimer_1a98db3d6cb22706546256cb23595750b9" prot="protected" virt="non-virtual"><scope>CudaTimer</scope><name>stopEv_queue</name></member>
+      <member refid="classCudaTimer_1a7190becb46771fdbd305d1f67e631f9e" prot="protected" virt="non-virtual"><scope>CudaTimer</scope><name>total_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

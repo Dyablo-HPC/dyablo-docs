@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HDF5ViewWriter" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HDF5ViewWriter</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HDF5ViewWriter_1a27059f6733eaba7b3efd8d79cacb73a4" prot="private" static="no" mutable="no">
+        <type>hid_t</type>
+        <definition>hid_t dyablo::HDF5ViewWriter::m_hdf5_file</definition>
+        <argsstring></argsstring>
+        <name>m_hdf5_file</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::m_hdf5_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="206" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HDF5ViewWriter_1af0b486f98345228ba850cdc8922137d7" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref></type>
+        <definition>MpiComm dyablo::HDF5ViewWriter::m_mpi_comm</definition>
+        <argsstring></argsstring>
+        <name>m_mpi_comm</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::m_mpi_comm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="207" column="11" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HDF5ViewWriter_1a9d2c8b3ee17f55c5dfc50e837c7c0895" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HDF5ViewWriter::HDF5ViewWriter</definition>
+        <argsstring>(const std::string &amp;filename, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>HDF5ViewWriter</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::HDF5ViewWriter</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open a new hdf5 file at path <computeroutput>filename</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="32" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HDF5ViewWriter_1a2cc2e8cf71570dbacc51aaebb072c760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HDF5ViewWriter::~HDF5ViewWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~HDF5ViewWriter</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::~HDF5ViewWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="42" column="3" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HDF5ViewWriter_1aacf7b0c558610e9458eb3a03f5828d2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::HDF5ViewWriter::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="47" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HDF5ViewWriter_1a77eb480cdf16235cedd02cb2795e36c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::HDF5ViewWriter::write_scalar</definition>
+        <argsstring>(const std::string &amp;varpath, const T &amp;value)</argsstring>
+        <name>write_scalar</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::write_scalar</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>varpath</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="57" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="57" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HDF5ViewWriter_1adfcf8db3122ae9be797a3efc03430d90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename View_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::HDF5ViewWriter::collective_write</definition>
+        <argsstring>(const std::string &amp;varname, const View_t &amp;data)</argsstring>
+        <name>collective_write</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::collective_write</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>varname</declname>
+        </param>
+        <param>
+          <type>const View_t &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as <computeroutput>collective_write_hint</computeroutput> but <computeroutput>global_extent</computeroutput> and <computeroutput>first_global_index</computeroutput> are determined using MPI communications. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="98" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="98" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HDF5ViewWriter_1abb47b53aa406ba2ac5e39564b20673df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename View_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::HDF5ViewWriter::collective_write_hint</definition>
+        <argsstring>(const std::string &amp;varpath, const View_t &amp;data, uint64_t global_extent, uint64_t first_global_index)</argsstring>
+        <name>collective_write_hint</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::collective_write_hint</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>varpath</declname>
+        </param>
+        <param>
+          <type>const View_t &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>global_extent</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>first_global_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write collectively the content of the view <computeroutput>data</computeroutput> into the dataset names after <computeroutput>name</computeroutput> <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kokkos::View with LayoutLeft </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>varpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name in the dataset inside the HDF5 file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a Kokkos::View containing the data to write every extent should be identical on every MPI process, except the last one. Data will be written contiguously for each MPI process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>global_extent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cumulated values for each process for the last extent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first_global_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start value for the last extent of current process </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="120" column="8" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="120" bodyend="203"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdyablo_1_1HDF5ViewWriter_1a6e6547229f1f45acd9beabda85023a9c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>hid_t</type>
+        <definition>hid_t dyablo::HDF5ViewWriter::get_group</definition>
+        <argsstring>(const std::string &amp;group_path)</argsstring>
+        <name>get_group</name>
+        <qualifiedname>dyablo::HDF5ViewWriter::get_group</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>group_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="209" column="9" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="209" bodyend="227"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" line="26" column="1" bodyfile="/builds/dyablo/dyablo/core/src/utils/io/HDF5ViewWriter.h" bodystart="26" bodyend="228"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1aacf7b0c558610e9458eb3a03f5828d2b" prot="public" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>close</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1adfcf8db3122ae9be797a3efc03430d90" prot="public" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>collective_write</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1abb47b53aa406ba2ac5e39564b20673df" prot="public" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>collective_write_hint</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1a6e6547229f1f45acd9beabda85023a9c" prot="private" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>get_group</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1a9d2c8b3ee17f55c5dfc50e837c7c0895" prot="public" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>HDF5ViewWriter</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1a27059f6733eaba7b3efd8d79cacb73a4" prot="private" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>m_hdf5_file</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1af0b486f98345228ba850cdc8922137d7" prot="private" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>m_mpi_comm</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1a77eb480cdf16235cedd02cb2795e36c3" prot="public" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>write_scalar</name></member>
+      <member refid="classdyablo_1_1HDF5ViewWriter_1a2cc2e8cf71570dbacc51aaebb072c760" prot="public" virt="non-virtual"><scope>dyablo::HDF5ViewWriter</scope><name>~HDF5ViewWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

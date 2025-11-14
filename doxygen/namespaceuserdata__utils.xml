@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceuserdata__utils" kind="namespace" language="C++">
+    <compoundname>userdata_utils</compoundname>
+    <innerclass refid="structuserdata__utils_1_1get__U__t" prot="public">userdata_utils::get_U_t</innerclass>
+    <innerclass refid="structuserdata__utils_1_1get__U__t_3_01iOct__pos_00_01DataArray__t_00_01integer__t_3_01DataArray33823ffbe90ab3c62d1493e0eab72145" prot="public">userdata_utils::get_U_t&lt; iOct_pos, DataArray_t, integer_t&lt; DataArray_t::rank &gt;, Args... &gt;</innerclass>
+    <innerclass refid="structuserdata__utils_1_1get__U__t_3_01iOct__pos_00_01DataArray__t_00_01integer__t_3_01iOct__pos_01_4_00_01Args_8_8_8_01_4" prot="public">userdata_utils::get_U_t&lt; iOct_pos, DataArray_t, integer_t&lt; iOct_pos &gt;, Args... &gt;</innerclass>
+    <innerclass refid="structuserdata__utils_1_1integer__t" prot="public">userdata_utils::integer_t</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="userdata__utils_8h_1abdd8306ec2b31e679ca0dadcfcdd1a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>iOct_pos</declname>
+            <defname>iOct_pos</defname>
+          </param>
+          <param>
+            <type>typename DataArray_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION DataArray_t::value_type &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION DataArray_t::value_type &amp; userdata_utils::get_U</definition>
+        <argsstring>(const DataArray_t &amp;U, uint32_t iOct, uint32_t elt_index)</argsstring>
+        <name>get_U</name>
+        <qualifiedname>userdata_utils::get_U</qualifiedname>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>elt_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Value of U(...,iOct,...) <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DataArray_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kokkos::View containing user data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iOct_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position of iOct parameter for DataArray_t::operator() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kokkos::View to acces </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iOct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>octant index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elt_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linearized index for elements inside octant NOTE : leftmost non-iOct index is contiguous (LayoutLeft) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/userdata_utils.h" line="50" column="36" bodyfile="/builds/dyablo/dyablo/core/src/userdata_utils.h" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="userdata__utils_8h_1a17edfebca1765d7428dbf18d76fdd36e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataArray_t</type>
+          </param>
+          <param>
+            <type>int</type>
+            <declname>iOct_pos</declname>
+            <defname>iOct_pos</defname>
+          </param>
+        </templateparamlist>
+        <type>uint32_t</type>
+        <definition>uint32_t userdata_utils::octant_size</definition>
+        <argsstring>(const DataArray_t &amp;U)</argsstring>
+        <name>octant_size</name>
+        <qualifiedname>userdata_utils::octant_size</qualifiedname>
+        <param>
+          <type>const DataArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/userdata_utils.h" line="56" column="12" bodyfile="/builds/dyablo/dyablo/core/src/userdata_utils.h" bodystart="56" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/userdata_utils.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

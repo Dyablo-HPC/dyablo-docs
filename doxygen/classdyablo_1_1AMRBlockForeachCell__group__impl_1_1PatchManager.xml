@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_group_impl::PatchManager</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a6d0ce99339b4e7078d2b9f3a624a76fb" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1Patch" kindref="compound">AMRBlockForeachCell_group_impl::Patch</ref></type>
+        <definition>using dyablo::AMRBlockForeachCell_group_impl::PatchManager::Patch =  AMRBlockForeachCell_group_impl::Patch</definition>
+        <argsstring></argsstring>
+        <name>Patch</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::PatchManager::Patch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="95" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a09eb460417a6898f43053177ba9d3a70" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch" kindref="compound">AMRBlockForeachCell_group_impl::CellArray_patch</ref></type>
+        <definition>using dyablo::AMRBlockForeachCell_group_impl::PatchManager::CellArray_patch =  AMRBlockForeachCell_group_impl::CellArray_patch</definition>
+        <argsstring></argsstring>
+        <name>CellArray_patch</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::PatchManager::CellArray_patch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="96" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a5e4cdf2f1efbb3fade53b4b523a97302" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CData" kindref="compound">CData</ref></type>
+        <definition>const CData dyablo::AMRBlockForeachCell_group_impl::PatchManager::cdata</definition>
+        <argsstring></argsstring>
+        <name>cdata</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::PatchManager::cdata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="99" column="15" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1af33fbbe9854534d45be6a8ff9734aee0" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+        <definition>const AMRmesh&amp; dyablo::AMRBlockForeachCell_group_impl::PatchManager::pmesh</definition>
+        <argsstring></argsstring>
+        <name>pmesh</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::PatchManager::pmesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="100" column="17" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a94998d640586014e4a0ea0eb870f5a08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_group_impl::PatchManager::PatchManager</definition>
+        <argsstring>(const CData &amp;cdata, const AMRmesh &amp;pmesh)</argsstring>
+        <name>PatchManager</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::PatchManager::PatchManager</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CData" kindref="compound">CData</ref> &amp;</type>
+          <declname>cdata</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+          <declname>pmesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="103" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a88dfb027f72b59b4b1a43d9b71374baa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1CellArray__patch" kindref="compound">CellArray_patch::Ref</ref></type>
+        <definition>CellArray_patch::Ref dyablo::AMRBlockForeachCell_group_impl::PatchManager::reserve_patch_tmp</definition>
+        <argsstring>(std::string name, int gx, int gy, int gz, const id2index_t &amp;fm, int nvars)</argsstring>
+        <name>reserve_patch_tmp</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::PatchManager::reserve_patch_tmp</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gz</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref> &amp;</type>
+          <declname>fm</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nvars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="107" column="24" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="107" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a1c07c823619bbceaf35a7c5ca14c9e9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::AMRBlockForeachCell_group_impl::PatchManager::foreach_patch</definition>
+        <argsstring>(const std::string &amp;kernel_name, const Function &amp;f) const</argsstring>
+        <name>foreach_patch</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_group_impl::PatchManager::foreach_patch</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>kernel_name</declname>
+        </param>
+        <param>
+          <type>const Function &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="121" column="8" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="121" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" line="93" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h" bodystart="93" bodyend="169"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a5e4cdf2f1efbb3fade53b4b523a97302" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::PatchManager</scope><name>cdata</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a09eb460417a6898f43053177ba9d3a70" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::PatchManager</scope><name>CellArray_patch</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a1c07c823619bbceaf35a7c5ca14c9e9c" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::PatchManager</scope><name>foreach_patch</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a6d0ce99339b4e7078d2b9f3a624a76fb" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::PatchManager</scope><name>Patch</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a94998d640586014e4a0ea0eb870f5a08" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::PatchManager</scope><name>PatchManager</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1af33fbbe9854534d45be6a8ff9734aee0" prot="private" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::PatchManager</scope><name>pmesh</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__group__impl_1_1PatchManager_1a88dfb027f72b59b4b1a43d9b71374baa" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_group_impl::PatchManager</scope><name>reserve_patch_tmp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
   <compounddef id="HyperbolicUpdate" kind="page">
     <compoundname>HyperbolicUpdate</compoundname>
     <title>HyperbolicUpdate</title>
@@ -22,6 +22,6 @@
 </xrefdescription></xrefsect></para>
 <para>@hyperbolic_update <computeroutput>RadUpdate_euler</computeroutput> - Euler scheme for the radiative hydrodynamics equations with M1 closure </para>
     </detaileddescription>
-    <location file="/home/md241548/work/codes/dyablo/dyablo-paper/core/src/hyperbolic/GLMMHDUpdate_euler.cpp"/>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/GLMMHDUpdate_euler.cpp"/>
   </compounddef>
 </doxygen>

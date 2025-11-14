@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacedyablo_1_1_0d231344244340102256227032056057004210107005300000" kind="namespace" language="C++">
+    <compoundname>dyablo</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacedyablo_1_1_0d231344244340102256227032056057004210107005300000_1a9b8d02a13abe81b1297ac341edbd7037" prot="public" static="no" strong="no">
+        <type></type>
+        <name>VarIndex_thermal</name>
+        <qualifiedname>dyablo::VarIndex_thermal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="42" column="1" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="33" column="1"/>
+  </compounddef>
+</doxygen>

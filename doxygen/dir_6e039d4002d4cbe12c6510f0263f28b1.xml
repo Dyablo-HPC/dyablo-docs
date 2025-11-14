@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_6e039d4002d4cbe12c6510f0263f28b1" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/gravity</compoundname>
+    <innerfile refid="GravitySolver_8h">GravitySolver.h</innerfile>
+    <innerfile refid="GravitySolver__base_8h">GravitySolver_base.h</innerfile>
+    <innerfile refid="GravitySolver__cg_8cpp">GravitySolver_cg.cpp</innerfile>
+    <innerfile refid="GravitySolver__cg_8h">GravitySolver_cg.h</innerfile>
+    <innerfile refid="GravitySolver__constant_8cpp">GravitySolver_constant.cpp</innerfile>
+    <innerfile refid="GravitySolver__point__mass_8cpp">GravitySolver_point_mass.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/gravity/"/>
+  </compounddef>
+</doxygen>

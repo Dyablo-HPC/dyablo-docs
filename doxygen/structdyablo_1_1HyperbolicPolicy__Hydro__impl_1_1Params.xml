@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_Hydro_impl::Params</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params_1adc1a259337297114b1938f7ae9ea8127" prot="public" static="no" mutable="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params" kindref="compound">HyperbolicPolicy_Hydro_Params</ref></type>
+        <definition>HyperbolicPolicy_Hydro_Params dyablo::HyperbolicPolicy_Hydro_impl::Params::policy_params</definition>
+        <argsstring></argsstring>
+        <name>policy_params</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_impl::Params::policy_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="447" column="35" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params_1a1ee34540b60458f274c6c1e22e937cf0" prot="public" static="no" mutable="no">
+        <type>BoundaryConditions_t::Params</type>
+        <definition>BoundaryConditions_t::Params dyablo::HyperbolicPolicy_Hydro_impl::Params::bc_params</definition>
+        <argsstring></argsstring>
+        <name>bc_params</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_impl::Params::bc_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="448" column="34" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params_1afa5b4224bd80156b4a26adf19066d630" prot="public" static="no" mutable="no">
+        <type>Slope_t::Params</type>
+        <definition>Slope_t::Params dyablo::HyperbolicPolicy_Hydro_impl::Params::slope_params</definition>
+        <argsstring></argsstring>
+        <name>slope_params</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Hydro_impl::Params::slope_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="449" column="21" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>dyablo::HyperbolicPolicy_BoundaryConditions_dynamic&lt; HyperbolicPolicy_State_Hydro, HyperbolicPolicy_BoundaryConditions_Hydro_Default, HyperbolicPolicy_BoundaryConditions_Hydro_DoubleMach &gt;::Params</label>
+      </node>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_Hydro_Params</label>
+        <link refid="structdyablo_1_1HyperbolicPolicy__Hydro__Params"/>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_Hydro_impl::Params</label>
+        <link refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>policy_params</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bc_params</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>slope_params</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::HyperbolicPolicy_Slope_dynamic_impl&lt; LegacyState_t, HyperbolicPolicy_Slope_minmod&lt; LegacyState_t &gt;, HyperbolicPolicy_Slope_superbee&lt; LegacyState_t &gt; &gt;::Params</label>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" line="445" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h" bodystart="446" bodyend="450"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params_1a1ee34540b60458f274c6c1e22e937cf0" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_impl::Params</scope><name>bc_params</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params_1adc1a259337297114b1938f7ae9ea8127" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_impl::Params</scope><name>policy_params</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__Hydro__impl_1_1Params_1afa5b4224bd80156b4a26adf19066d630" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Hydro_impl::Params</scope><name>slope_params</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1SourceUpdate" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::SourceUpdate</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1SourceUpdate__Cooling__FF" prot="public" virt="non-virtual">dyablo::SourceUpdate_Cooling_FF</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1SourceUpdate__GLM" prot="public" virt="non-virtual">dyablo::SourceUpdate_GLM</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1SourceUpdate__Photons__Beam" prot="public" virt="non-virtual">dyablo::SourceUpdate_Photons_Beam</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate_1a9a85905bd78000faa09fc4a4aec39d9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual dyablo::SourceUpdate::~SourceUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>~SourceUpdate</name>
+        <qualifiedname>dyablo::SourceUpdate::~SourceUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h" line="16" column="11" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1SourceUpdate_1adf652efd434405d92080ba26647a879c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::SourceUpdate::update</definition>
+        <argsstring>(UserData &amp;U, ScalarSimulationData &amp;scalar_data)=0</argsstring>
+        <name>update</name>
+        <qualifiedname>dyablo::SourceUpdate::update</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1SourceUpdate__Cooling__FF_1a5d48080d58f657681dbfe9ab706b9ebb">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1SourceUpdate__GLM_1a7ee72708cecc5f2c72d220b4f7982f23">update</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1SourceUpdate__Photons__Beam_1a563a5b5fef7582a0b8069bf0e50382ae">update</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h" line="18" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dyablo::SourceUpdate</label>
+        <link refid="classdyablo_1_1SourceUpdate"/>
+      </node>
+      <node id="2">
+        <label>dyablo::SourceUpdate_Cooling_FF</label>
+        <link refid="classdyablo_1_1SourceUpdate__Cooling__FF"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::SourceUpdate_GLM</label>
+        <link refid="classdyablo_1_1SourceUpdate__GLM"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::SourceUpdate_Photons_Beam</label>
+        <link refid="classdyablo_1_1SourceUpdate__Photons__Beam"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h" line="14" column="1" bodyfile="/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1SourceUpdate_1adf652efd434405d92080ba26647a879c" prot="public" virt="pure-virtual"><scope>dyablo::SourceUpdate</scope><name>update</name></member>
+      <member refid="classdyablo_1_1SourceUpdate_1a9a85905bd78000faa09fc4a4aec39d9c" prot="public" virt="virtual"><scope>dyablo::SourceUpdate</scope><name>~SourceUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

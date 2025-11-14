@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1MapUserData__base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>dyablo::MapUserData_base</compoundname>
+    <basecompoundref refid="classdyablo_1_1MapUserData" prot="public" virt="non-virtual">dyablo::MapUserData</basecompoundref>
+    <derivedcompoundref refid="classdyablo_1_1MapUserData__linear" prot="public" virt="non-virtual">dyablo::MapUserData_linear</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1MapUserData__mean" prot="public" virt="non-virtual">dyablo::MapUserData_mean</derivedcompoundref>
+    <includes refid="MapUserData__base_8h" local="no">MapUserData_base.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1MapUserData__base_1a1e09a83b8b33169871b75f209a302e5a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+        <definition>ForeachCell&amp; dyablo::MapUserData_base::foreach_cell</definition>
+        <argsstring></argsstring>
+        <name>foreach_cell</name>
+        <qualifiedname>dyablo::MapUserData_base::foreach_cell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="63" column="15" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1MapUserData__base_1a8cae32974164977c55758bbf7ea68db8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1LightOctree__hashmap" kindref="compound">LightOctree</ref></type>
+        <definition>LightOctree dyablo::MapUserData_base::lmesh_old</definition>
+        <argsstring></argsstring>
+        <name>lmesh_old</name>
+        <qualifiedname>dyablo::MapUserData_base::lmesh_old</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="64" column="15" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1MapUserData__base_1a80764a209440f2a72a71928db0b8a031" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classdyablo_1_1GhostCommunicator__full__blocks" kindref="compound">GhostCommunicator_full_blocks</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;GhostCommunicator_full_blocks&gt; dyablo::MapUserData_base::ghost_comm_full</definition>
+        <argsstring></argsstring>
+        <name>ghost_comm_full</name>
+        <qualifiedname>dyablo::MapUserData_base::ghost_comm_full</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="65" column="19" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1MapUserData__base_1ab7b6f95a46ab9e2ffcb65ef2ace04985" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::MapUserData_base::MapUserData_base</definition>
+        <argsstring>(ConfigMap &amp;configMap, ForeachCell &amp;foreach_cell, Timers &amp;timers)</argsstring>
+        <name>MapUserData_base</name>
+        <qualifiedname>dyablo::MapUserData_base::MapUserData_base</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1AMRBlockForeachCell__impl" kindref="compound">ForeachCell</ref> &amp;</type>
+          <declname>foreach_cell</declname>
+        </param>
+        <param>
+          <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+          <declname>timers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="47" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="47" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MapUserData__base_1ae70de037e7bb3a6f9cae28c3ca00626b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::MapUserData_base::~MapUserData_base</definition>
+        <argsstring>()</argsstring>
+        <name>~MapUserData_base</name>
+        <qualifiedname>dyablo::MapUserData_base::~MapUserData_base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="54" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MapUserData__base_1a27f01c88b77e903bd811a2b2064c15ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::MapUserData_base::save_old_mesh</definition>
+        <argsstring>(UserData &amp;user_data) override</argsstring>
+        <name>save_old_mesh</name>
+        <qualifiedname>dyablo::MapUserData_base::save_old_mesh</qualifiedname>
+        <reimplements refid="classdyablo_1_1MapUserData_1a6a52b7e8c75645ab6c9a958ce0565d3e">save_old_mesh</reimplements>
+        <reimplementedby refid="classdyablo_1_1MapUserData__linear_1a4f94db32d26a727193ae6cea56a98882">save_old_mesh</reimplementedby>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save a snapshot of the current AMR mesh in ForeachCell This should be called before calling AMRmesh::refine() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="56" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MapUserData__base_1a0abfa935092fd671223220634cef9552" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void dyablo::MapUserData_base::remap</definition>
+        <argsstring>(UserData &amp;user_data) override</argsstring>
+        <name>remap</name>
+        <qualifiedname>dyablo::MapUserData_base::remap</qualifiedname>
+        <reimplements refid="classdyablo_1_1MapUserData_1a5afe6212bf4c30ebc923858a10a11e94">remap</reimplements>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill new array Uout from Uin <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Uin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A cell array on the old amr mesh (mesh at last <ref refid="classdyablo_1_1MapUserData__base_1a27f01c88b77e903bd811a2b2064c15ca" kindref="member">save_old_mesh()</ref> call) to copy data from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Uout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array to store new cells for the new mesh to write new mesh data to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="58" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.cpp" bodystart="13" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1MapUserData__base_1aef1d047d83fd001f0fc41a08a598c380" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void dyablo::MapUserData_base::remap_aux</definition>
+        <argsstring>(const UserData::FieldAccessor &amp;Uin, const UserData::FieldAccessor &amp;Uout, const CellIndexRemapper &amp;remapper)=0</argsstring>
+        <name>remap_aux</name>
+        <qualifiedname>dyablo::MapUserData_base::remap_aux</qualifiedname>
+        <reimplementedby refid="classdyablo_1_1MapUserData__linear_1aee2f5ea4fdb72d1dc1d423da6ccd55aa">remap_aux</reimplementedby>
+        <reimplementedby refid="classdyablo_1_1MapUserData__mean_1aae5d458d985b9cfa6a9b72a3279b597d">remap_aux</reimplementedby>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>Uin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref> &amp;</type>
+          <declname>Uout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1CellIndexRemapper" kindref="compound">CellIndexRemapper</ref> &amp;</type>
+          <declname>remapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="60" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of <ref refid="classdyablo_1_1MapUserData" kindref="compound">MapUserData</ref> using mean of smaller cells when coarseneing </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::MapUserData</label>
+        <link refid="classdyablo_1_1MapUserData"/>
+      </node>
+      <node id="1">
+        <label>dyablo::MapUserData_base</label>
+        <link refid="classdyablo_1_1MapUserData__base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::MapUserData_linear</label>
+        <link refid="classdyablo_1_1MapUserData__linear"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dyablo::MapUserData_mean</label>
+        <link refid="classdyablo_1_1MapUserData__mean"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>dyablo::AMRBlockForeachCell_impl&lt; AMRBlockForeachCell_group_impl::PatchManager &gt;</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__impl"/>
+      </node>
+      <node id="5">
+        <label>dyablo::LightOctree_base</label>
+        <link refid="classdyablo_1_1LightOctree__base"/>
+      </node>
+      <node id="4">
+        <label>dyablo::LightOctree_hashmap</label>
+        <link refid="classdyablo_1_1LightOctree__hashmap"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::MapUserData</label>
+        <link refid="classdyablo_1_1MapUserData"/>
+      </node>
+      <node id="1">
+        <label>dyablo::MapUserData_base</label>
+        <link refid="classdyablo_1_1MapUserData__base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>foreach_cell</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lmesh_old</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" line="45" column="1" bodyfile="/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h" bodystart="45" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1MapUserData__base_1a1e09a83b8b33169871b75f209a302e5a" prot="protected" virt="non-virtual"><scope>dyablo::MapUserData_base</scope><name>foreach_cell</name></member>
+      <member refid="classdyablo_1_1MapUserData__base_1a80764a209440f2a72a71928db0b8a031" prot="protected" virt="non-virtual"><scope>dyablo::MapUserData_base</scope><name>ghost_comm_full</name></member>
+      <member refid="classdyablo_1_1MapUserData__base_1a8cae32974164977c55758bbf7ea68db8" prot="protected" virt="non-virtual"><scope>dyablo::MapUserData_base</scope><name>lmesh_old</name></member>
+      <member refid="classdyablo_1_1MapUserData__base_1ab7b6f95a46ab9e2ffcb65ef2ace04985" prot="public" virt="non-virtual"><scope>dyablo::MapUserData_base</scope><name>MapUserData_base</name></member>
+      <member refid="classdyablo_1_1MapUserData__base_1a0abfa935092fd671223220634cef9552" prot="public" virt="virtual"><scope>dyablo::MapUserData_base</scope><name>remap</name></member>
+      <member refid="classdyablo_1_1MapUserData__base_1aef1d047d83fd001f0fc41a08a598c380" prot="public" virt="pure-virtual"><scope>dyablo::MapUserData_base</scope><name>remap_aux</name></member>
+      <member refid="classdyablo_1_1MapUserData__base_1a27f01c88b77e903bd811a2b2064c15ca" prot="public" virt="virtual"><scope>dyablo::MapUserData_base</scope><name>save_old_mesh</name></member>
+      <member refid="classdyablo_1_1MapUserData_1a7ad2caa8103a5dfe208f9cde6a6b9f66" prot="public" virt="virtual"><scope>dyablo::MapUserData_base</scope><name>~MapUserData</name></member>
+      <member refid="classdyablo_1_1MapUserData__base_1ae70de037e7bb3a6f9cae28c3ca00626b" prot="public" virt="non-virtual"><scope>dyablo::MapUserData_base</scope><name>~MapUserData_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1IOManager__checkpoint_1_1Data" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::IOManager_checkpoint::Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1IOManager__checkpoint_1_1Data_1a129762f980bead808872e88e56b0fe16" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+        <definition>const ConfigMap&amp; dyablo::IOManager_checkpoint::Data::configMap</definition>
+        <argsstring></argsstring>
+        <name>configMap</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::Data::configMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="99" column="21" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1IOManager__checkpoint_1_1Data_1ad1fbfd9dae797b6e854ce16cb5404b9f" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+        <definition>AMRmesh&amp; dyablo::IOManager_checkpoint::Data::pmesh</definition>
+        <argsstring></argsstring>
+        <name>pmesh</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::Data::pmesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="100" column="13" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1IOManager__checkpoint_1_1Data_1adc11e0f30a9f5478e49e62c38b9da289" prot="public" static="no" mutable="no">
+        <type><ref refid="classTimers" kindref="compound">Timers</ref> &amp;</type>
+        <definition>Timers&amp; dyablo::IOManager_checkpoint::Data::timers</definition>
+        <argsstring></argsstring>
+        <name>timers</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::Data::timers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="101" column="12" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1IOManager__checkpoint_1_1Data_1a0be1d3ad65dab92a59411b8709b32efd" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::IOManager_checkpoint::Data::outputDir</definition>
+        <argsstring></argsstring>
+        <name>outputDir</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::Data::outputDir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="102" column="17" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1IOManager__checkpoint_1_1Data_1a10eb17dbd0029b7b27e676e1ea4c1b39" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dyablo::IOManager_checkpoint::Data::outputPrefix</definition>
+        <argsstring></argsstring>
+        <name>outputPrefix</name>
+        <qualifiedname>dyablo::IOManager_checkpoint::Data::outputPrefix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="102" column="27" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ConfigMap</label>
+        <link refid="classConfigMap"/>
+      </node>
+      <node id="4">
+        <label>Timers</label>
+        <link refid="classTimers"/>
+      </node>
+      <node id="3">
+        <label>dyablo::AMRmesh</label>
+        <link refid="classdyablo_1_1AMRmesh"/>
+      </node>
+      <node id="1">
+        <label>dyablo::IOManager_checkpoint::Data</label>
+        <link refid="structdyablo_1_1IOManager__checkpoint_1_1Data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>configMap</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pmesh</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>timers</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" line="98" column="3" bodyfile="/builds/dyablo/dyablo/core/src/io/IOManager_checkpoint.cpp" bodystart="98" bodyend="103"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1IOManager__checkpoint_1_1Data_1a129762f980bead808872e88e56b0fe16" prot="public" virt="non-virtual"><scope>dyablo::IOManager_checkpoint::Data</scope><name>configMap</name></member>
+      <member refid="structdyablo_1_1IOManager__checkpoint_1_1Data_1a0be1d3ad65dab92a59411b8709b32efd" prot="public" virt="non-virtual"><scope>dyablo::IOManager_checkpoint::Data</scope><name>outputDir</name></member>
+      <member refid="structdyablo_1_1IOManager__checkpoint_1_1Data_1a10eb17dbd0029b7b27e676e1ea4c1b39" prot="public" virt="non-virtual"><scope>dyablo::IOManager_checkpoint::Data</scope><name>outputPrefix</name></member>
+      <member refid="structdyablo_1_1IOManager__checkpoint_1_1Data_1ad1fbfd9dae797b6e854ce16cb5404b9f" prot="public" virt="non-virtual"><scope>dyablo::IOManager_checkpoint::Data</scope><name>pmesh</name></member>
+      <member refid="structdyablo_1_1IOManager__checkpoint_1_1Data_1adc11e0f30a9f5478e49e62c38b9da289" prot="public" virt="non-virtual"><scope>dyablo::IOManager_checkpoint::Data</scope><name>timers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

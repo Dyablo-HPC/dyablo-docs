@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ParticleData" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::ParticleData</compoundname>
+    <basecompoundref refid="classdyablo_1_1ParticleArray" prot="public" virt="non-virtual">dyablo::ParticleArray</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1ParticleData_1a1558bbae997d5da62c1b1e507b49a58b" prot="public" static="no" mutable="no">
+        <type>Kokkos::View&lt; real_t **, Kokkos::LayoutLeft &gt;</type>
+        <definition>Kokkos::View&lt; real_t**, Kokkos::LayoutLeft &gt; dyablo::ParticleData::particle_data</definition>
+        <argsstring></argsstring>
+        <name>particle_data</name>
+        <qualifiedname>dyablo::ParticleData::particle_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="88" column="18" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParticleData_1a1d85b2de6c3519034f4bce78778232e1" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref></type>
+        <definition>id2index_t dyablo::ParticleData::fm</definition>
+        <argsstring></argsstring>
+        <name>fm</name>
+        <qualifiedname>dyablo::ParticleData::fm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="89" column="16" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1a39482db4f45659e86ce6df3e0abd1a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleData::ParticleData</definition>
+        <argsstring>()=default</argsstring>
+        <name>ParticleData</name>
+        <qualifiedname>dyablo::ParticleData::ParticleData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1a9214df7eae907546b3fae05c99090f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleData::ParticleData</definition>
+        <argsstring>(const ParticleData &amp;pa)=default</argsstring>
+        <name>ParticleData</name>
+        <qualifiedname>dyablo::ParticleData::ParticleData</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1ParticleData" kindref="compound">ParticleData</ref> &amp;</type>
+          <declname>pa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="47" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1af6996dae210ec84ab0927ae6928424fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleData::ParticleData</definition>
+        <argsstring>(ParticleData &amp;&amp;pa)=default</argsstring>
+        <name>ParticleData</name>
+        <qualifiedname>dyablo::ParticleData::ParticleData</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1ParticleData" kindref="compound">ParticleData</ref> &amp;&amp;</type>
+          <declname>pa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1aa026489a4781b225c9c617e1e92f3beb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1ParticleData" kindref="compound">ParticleData</ref> &amp;</type>
+        <definition>ParticleData &amp; dyablo::ParticleData::operator=</definition>
+        <argsstring>(const ParticleData &amp;pa)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>dyablo::ParticleData::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1ParticleData" kindref="compound">ParticleData</ref> &amp;</type>
+          <declname>pa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="49" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1a7cc1ac6f24ba50494db5734b97f3c86c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1ParticleData" kindref="compound">ParticleData</ref> &amp;</type>
+        <definition>ParticleData &amp; dyablo::ParticleData::operator=</definition>
+        <argsstring>(ParticleData &amp;&amp;pa)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>dyablo::ParticleData::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1ParticleData" kindref="compound">ParticleData</ref> &amp;&amp;</type>
+          <declname>pa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="50" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1a5b4d7bb40e83207f03fe66074deceb2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleData::ParticleData</definition>
+        <argsstring>(const ParticleArray &amp;pa, const FieldManager &amp;fieldManager)</argsstring>
+        <name>ParticleData</name>
+        <qualifiedname>dyablo::ParticleData::ParticleData</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1ParticleArray" kindref="compound">ParticleArray</ref> &amp;</type>
+          <declname>pa</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref> &amp;</type>
+          <declname>fieldManager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="52" column="5" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1a8c64bf954455edf85d718b60c5a2ea63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParticleData::ParticleData</definition>
+        <argsstring>(const std::string &amp;name, uint32_t nbParticles, const FieldManager &amp;fieldManager)</argsstring>
+        <name>ParticleData</name>
+        <qualifiedname>dyablo::ParticleData::ParticleData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nbParticles</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref> &amp;</type>
+          <declname>fieldManager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="58" column="5" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1ac0b85e87bfc95ccaa995ebeabbf43116" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref></type>
+        <definition>FieldManager dyablo::ParticleData::field_manager</definition>
+        <argsstring>()</argsstring>
+        <name>field_manager</name>
+        <qualifiedname>dyablo::ParticleData::field_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="65" column="18" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1ad53757b5169c4ab7102d3a83902cf29c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION int</type>
+        <definition>KOKKOS_INLINE_FUNCTION int dyablo::ParticleData::nbfields</definition>
+        <argsstring>() const</argsstring>
+        <name>nbfields</name>
+        <qualifiedname>dyablo::ParticleData::nbfields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="71" column="9" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1a6d0dd2879ad988a0a14a1916dfa812de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION real_t &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t &amp; dyablo::ParticleData::at</definition>
+        <argsstring>(const ParticleIndex &amp;iPart, VarIndex field) const</argsstring>
+        <name>at</name>
+        <qualifiedname>dyablo::ParticleData::at</qualifiedname>
+        <param>
+          <type>const ParticleIndex &amp;</type>
+          <declname>iPart</declname>
+        </param>
+        <param>
+          <type>VarIndex</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="77" column="12" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParticleData_1a9bd4ac7408ce012142932acd163e856e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION real_t &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t &amp; dyablo::ParticleData::at_ivar</definition>
+        <argsstring>(const ParticleIndex &amp;iPart, int ivar) const</argsstring>
+        <name>at_ivar</name>
+        <qualifiedname>dyablo::ParticleData::at_ivar</qualifiedname>
+        <param>
+          <type>const ParticleIndex &amp;</type>
+          <declname>iPart</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ivar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="83" column="12" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::ParticleArray</label>
+        <link refid="classdyablo_1_1ParticleArray"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParticleData</label>
+        <link refid="classdyablo_1_1ParticleData"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>dyablo::ParticleArray</label>
+        <link refid="classdyablo_1_1ParticleArray"/>
+      </node>
+      <node id="1">
+        <label>dyablo::ParticleData</label>
+        <link refid="classdyablo_1_1ParticleData"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fm</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::id2index_t</label>
+        <link refid="classdyablo_1_1id2index__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" line="41" column="1" bodyfile="/builds/dyablo/dyablo/core/src/particles/ParticleArray.h" bodystart="42" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1ParticleData_1a6d0dd2879ad988a0a14a1916dfa812de" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>at</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a9bd4ac7408ce012142932acd163e856e" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>at_ivar</name></member>
+      <member refid="classdyablo_1_1ParticleData_1ac0b85e87bfc95ccaa995ebeabbf43116" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>field_manager</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a1d85b2de6c3519034f4bce78778232e1" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>fm</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a5985857a622163f0c19ef46bf6c1e510" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>getNumParticles</name></member>
+      <member refid="classdyablo_1_1ParticleData_1ad53757b5169c4ab7102d3a83902cf29c" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>nbfields</name></member>
+      <member refid="classdyablo_1_1ParticleData_1aa026489a4781b225c9c617e1e92f3beb" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>operator=</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a7cc1ac6f24ba50494db5734b97f3c86c" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>operator=</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1ad4a0e5035f9b7664af91721e7f549016" prot="public" virt="non-virtual" ambiguityscope="dyablo::ParticleArray::"><scope>dyablo::ParticleData</scope><name>operator=</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a56584252d1f06c8f9eda135fa64d95b9" prot="public" virt="non-virtual" ambiguityscope="dyablo::ParticleArray::"><scope>dyablo::ParticleData</scope><name>operator=</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a1558bbae997d5da62c1b1e507b49a58b" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>particle_data</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a6f3a6735b35d08cce2849afdb2e88833" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>particle_position</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a2c2ab94a331414235b5f7834f88acaa1" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleArray</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a3a4efaeff69afae67110b1aed659956d" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleArray</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a0e2f4510b179016e466c8579e5cefd3f" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleArray</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a6190683828f28f3c19824e8ec8019bad" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleArray</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a39482db4f45659e86ce6df3e0abd1a17" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleData</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a9214df7eae907546b3fae05c99090f91" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleData</name></member>
+      <member refid="classdyablo_1_1ParticleData_1af6996dae210ec84ab0927ae6928424fe" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleData</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a5b4d7bb40e83207f03fe66074deceb2f" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleData</name></member>
+      <member refid="classdyablo_1_1ParticleData_1a8c64bf954455edf85d718b60c5a2ea63" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleData</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a6c9ac5ae3171306c9b3b034d06e333ea" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>ParticleIndex</name></member>
+      <member refid="classdyablo_1_1ParticleArray_1a14eee368ed07387215512eb9c0bece92" prot="public" virt="non-virtual"><scope>dyablo::ParticleData</scope><name>pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

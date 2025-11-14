@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1AMRmesh_1_1Parameters" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::AMRmesh::Parameters</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1Parameters_1abd7d41f6395c6993c59919b83fc938dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::AMRmesh::Parameters::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <qualifiedname>dyablo::AMRmesh::Parameters::dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="39" column="9" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1Parameters_1a76c473b09045f56904c7f1faee3368e8" prot="public" static="no" mutable="no">
+        <type>std::array&lt; bool, 3 &gt;</type>
+        <definition>std::array&lt;bool,3&gt; dyablo::AMRmesh::Parameters::periodic</definition>
+        <argsstring></argsstring>
+        <name>periodic</name>
+        <qualifiedname>dyablo::AMRmesh::Parameters::periodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="40" column="16" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1Parameters_1a3858404615796083d8f9785425e2cf0e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dyablo::AMRmesh::Parameters::level_min</definition>
+        <argsstring></argsstring>
+        <name>level_min</name>
+        <qualifiedname>dyablo::AMRmesh::Parameters::level_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="41" column="13" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1Parameters_1ab930f9e934f1473ffc5e50ee874b63c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dyablo::AMRmesh::Parameters::level_max</definition>
+        <argsstring></argsstring>
+        <name>level_max</name>
+        <qualifiedname>dyablo::AMRmesh::Parameters::level_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="41" column="23" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1AMRmesh_1_1Parameters_1a8a72566cfc299e087930fb532ad15195" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 3 &gt;</type>
+        <definition>std::array&lt;uint32_t,3&gt; dyablo::AMRmesh::Parameters::coarse_grid_size</definition>
+        <argsstring></argsstring>
+        <name>coarse_grid_size</name>
+        <qualifiedname>dyablo::AMRmesh::Parameters::coarse_grid_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="42" column="16" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="37" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="38" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1AMRmesh_1_1Parameters_1a8a72566cfc299e087930fb532ad15195" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::Parameters</scope><name>coarse_grid_size</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1Parameters_1abd7d41f6395c6993c59919b83fc938dd" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::Parameters</scope><name>dim</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1Parameters_1ab930f9e934f1473ffc5e50ee874b63c5" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::Parameters</scope><name>level_max</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1Parameters_1a3858404615796083d8f9785425e2cf0e" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::Parameters</scope><name>level_min</name></member>
+      <member refid="structdyablo_1_1AMRmesh_1_1Parameters_1a76c473b09045f56904c7f1faee3368e8" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh::Parameters</scope><name>periodic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

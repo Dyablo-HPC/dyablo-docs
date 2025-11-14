@@ -1,0 +1,995 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="morton__utils_8h" kind="file" language="C++">
+    <compoundname>morton_utils.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">cstddef</includes>
+    <includes refid="enums_8h" local="yes">enums.h</includes>
+    <includes refid="real__type_8h" local="yes">real_type.h</includes>
+    <includes local="no">Kokkos_Core.hpp</includes>
+    <includedby refid="LightOctree__hashmap_8h" local="yes">/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>enums.h</label>
+        <link refid="enums_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>real_type.h</label>
+        <link refid="real__type_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>utils/config/named_enum.h</label>
+        <link refid="named__enum_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Kokkos_Core.hpp</label>
+      </node>
+      <node id="3">
+        <label>cstddef</label>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>/builds/dyablo/dyablo/core/src/DyabloTimeLoop.h</label>
+        <link refid="DyabloTimeLoop_8h_source"/>
+      </node>
+      <node id="13">
+        <label>/builds/dyablo/dyablo/core/src/UserData.h</label>
+        <link refid="UserData_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/builds/dyablo/dyablo/core/src/UserData_fields.h</label>
+        <link refid="UserData__fields_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>/builds/dyablo/dyablo/core/src/UserData_particles.h</label>
+        <link refid="UserData__particles_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/builds/dyablo/dyablo/core/src/amr/CellIndexRemapper.h</label>
+        <link refid="CellIndexRemapper_8h_source"/>
+      </node>
+      <node id="3">
+        <label>/builds/dyablo/dyablo/core/src/amr/LightOctree.h</label>
+        <link refid="LightOctree_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap.h</label>
+        <link refid="LightOctree__hashmap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>/builds/dyablo/dyablo/core/src/amr/LightOctree_hashmap_precompute.h</label>
+        <link refid="LightOctree__hashmap__precompute_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData.h</label>
+        <link refid="MapUserData_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/dyablo/dyablo/core/src/amr/MapUserData_base.h</label>
+        <link refid="MapUserData__base_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt.h</label>
+        <link refid="Compute__dt_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/builds/dyablo/dyablo/core/src/compute_dt/Compute_dt_base.h</label>
+        <link refid="Compute__dt__base_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell.h</label>
+        <link refid="AMRBlockForeachCell_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h</label>
+        <link refid="AMRBlockForeachCell__CellArray_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_group.h</label>
+        <link refid="AMRBlockForeachCell__group_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_scratch.h</label>
+        <link refid="AMRBlockForeachCell__scratch_8h_source"/>
+      </node>
+      <node id="11">
+        <label>/builds/dyablo/dyablo/core/src/foreach_cell/ForeachCell.h</label>
+        <link refid="ForeachCell_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver.h</label>
+        <link refid="GravitySolver_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_base.h</label>
+        <link refid="GravitySolver__base_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/builds/dyablo/dyablo/core/src/gravity/GravitySolver_cg.h</label>
+        <link refid="GravitySolver__cg_8h_source"/>
+      </node>
+      <node id="32">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/HyperbolicUpdate.h</label>
+        <link refid="HyperbolicUpdate_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_BoundaryConditions.h</label>
+        <link refid="HyperbolicPolicy__BoundaryConditions_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h</label>
+        <link refid="HyperbolicPolicy__GLMMHD_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Hydro.h</label>
+        <link refid="HyperbolicPolicy__Hydro_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h</label>
+        <link refid="HyperbolicPolicy__Rad_8h_source"/>
+      </node>
+      <node id="19">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_base.h</label>
+        <link refid="HyperbolicPolicy__base_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/HyperbolicUpdate_base.h</label>
+        <link refid="HyperbolicUpdate__base_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_RK2.h</label>
+        <link refid="Hyperbolic__RK2_8h_source"/>
+      </node>
+      <node id="34">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler.h</label>
+        <link refid="Hyperbolic__euler_8h_source"/>
+      </node>
+      <node id="35">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_euler_nopatch.h</label>
+        <link refid="Hyperbolic__euler__nopatch_8h_source"/>
+      </node>
+      <node id="36">
+        <label>/builds/dyablo/dyablo/core/src/hyperbolic/scheme/Hyperbolic_hancock.h</label>
+        <link refid="Hyperbolic__hancock_8h_source"/>
+      </node>
+      <node id="37">
+        <label>/builds/dyablo/dyablo/core/src/init/AnalyticalFormula.h</label>
+        <link refid="AnalyticalFormula_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions.h</label>
+        <link refid="InitialConditions_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_analytical.h</label>
+        <link refid="InitialConditions__analytical_8h_source"/>
+      </node>
+      <node id="39">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_base.h</label>
+        <link refid="InitialConditions__base_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/builds/dyablo/dyablo/core/src/init/InitialConditions_uniform.h</label>
+        <link refid="InitialConditions__uniform_8h_source"/>
+      </node>
+      <node id="26">
+        <label>/builds/dyablo/dyablo/core/src/init/hydro/AnalyticalFormula_base_hydro.hpp</label>
+        <link refid="AnalyticalFormula__base__hydro_8hpp_source"/>
+      </node>
+      <node id="22">
+        <label>/builds/dyablo/dyablo/core/src/init/mhd/AnalyticalFormula_base_MHD.hpp</label>
+        <link refid="AnalyticalFormula__base__MHD_8hpp_source"/>
+      </node>
+      <node id="43">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager.h</label>
+        <link refid="IOManager_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/builds/dyablo/dyablo/core/src/io/IOManager_base.h</label>
+        <link refid="IOManager__base_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields.h</label>
+        <link refid="DerivedFields_8h_source"/>
+      </node>
+      <node id="44">
+        <label>/builds/dyablo/dyablo/core/src/io/derived_fields/DerivedFields_base.h</label>
+        <link refid="DerivedFields__base_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/dyablo/dyablo/core/src/morton_utils.h</label>
+        <link refid="morton__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator.h</label>
+        <link refid="GhostCommunicator_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_full_blocks.h</label>
+        <link refid="GhostCommunicator__full__blocks_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h</label>
+        <link refid="GhostCommunicator__partial__blocks_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm.h</label>
+        <link refid="ParabolicTerm_8h_source"/>
+      </node>
+      <node id="28">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h</label>
+        <link refid="ParabolicTerm__thermal__conduction_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_viscosity.h</label>
+        <link refid="ParabolicTerm__viscosity_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate.h</label>
+        <link refid="ParabolicUpdate_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>/builds/dyablo/dyablo/core/src/parabolic/ParabolicUpdate_base.h</label>
+        <link refid="ParabolicUpdate__base_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate.h</label>
+        <link refid="ParticleUpdate_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/builds/dyablo/dyablo/core/src/particles/ParticleUpdate_base.h</label>
+        <link refid="ParticleUpdate__base_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition.h</label>
+        <link refid="RefineCondition_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_base.h</label>
+        <link refid="RefineCondition__base_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/builds/dyablo/dyablo/core/src/refine_condition/RefineCondition_helper.h</label>
+        <link refid="RefineCondition__helper_8h_source"/>
+      </node>
+      <node id="54">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate.h</label>
+        <link refid="SourceUpdate_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>/builds/dyablo/dyablo/core/src/source_terms/SourceUpdate_base.h</label>
+        <link refid="SourceUpdate__base_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/builds/dyablo/dyablo/core/src/states/State_GLMMHD.h</label>
+        <link refid="State__GLMMHD_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/builds/dyablo/dyablo/core/src/states/State_forward.h</label>
+        <link refid="State__forward_8h_source"/>
+      </node>
+      <node id="27">
+        <label>/builds/dyablo/dyablo/core/src/states/State_hydro.h</label>
+        <link refid="State__hydro_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>/builds/dyablo/dyablo/core/src/utils/io/AMRMesh_output_vtk.h</label>
+        <link refid="AMRMesh__output__vtk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdyablo_1_1index__t_3_012_01_4" prot="public">dyablo::index_t&lt; 2 &gt;</innerclass>
+    <innerclass refid="structdyablo_1_1index__t_3_013_01_4" prot="public">dyablo::index_t&lt; 3 &gt;</innerclass>
+    <innernamespace refid="namespacedyablo">dyablo</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION uint64_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint64_t dyablo::splitBy3</definition>
+        <argsstring>(uint32_t a)</argsstring>
+        <name>splitBy3</name>
+        <qualifiedname>dyablo::splitBy3</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper method to encode a Morton key from the cartesian coordinates. Separate bits from a given integer &quot;dim&quot; positions apart and inserting zeros in between.</para>
+<para>e.g. &quot;100&quot; becomes &quot;01|00|00&quot; in 2D &quot;100&quot; becomes &quot;001|000|000&quot; in 3D </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="50" column="10" declfile="/builds/dyablo/dyablo/core/src/morton_utils.h" declline="50" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1abe82514536af52ea52f9f8925c67db43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION uint64_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint64_t dyablo::splitBy3&lt; 1 &gt;</definition>
+        <argsstring>(uint32_t a)</argsstring>
+        <name>splitBy3&lt; 1 &gt;</name>
+        <qualifiedname>dyablo::splitBy3&lt; 1 &gt;</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="55" column="1" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1aa29a7a61b3f241203c1215c810085aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION uint64_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint64_t dyablo::splitBy3&lt; 2 &gt;</definition>
+        <argsstring>(uint32_t a)</argsstring>
+        <name>splitBy3&lt; 2 &gt;</name>
+        <qualifiedname>dyablo::splitBy3&lt; 2 &gt;</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="67" column="1" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="67" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a77a03b088e469014096b3458268677ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION uint64_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint64_t dyablo::splitBy3&lt; 3 &gt;</definition>
+        <argsstring>(uint32_t a)</argsstring>
+        <name>splitBy3&lt; 3 &gt;</name>
+        <qualifiedname>dyablo::splitBy3&lt; 3 &gt;</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="86" column="1" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="86" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1abe6f2db835c20b99e7c8e74c02a36191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>dim</declname>
+            <defname>dim</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION uint64_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint64_t dyablo::compute_morton_key</definition>
+        <argsstring>(const index_t&lt; dim &gt; &amp;index)</argsstring>
+        <name>compute_morton_key</name>
+        <qualifiedname>dyablo::compute_morton_key</qualifiedname>
+        <param>
+          <type>const index_t&lt; dim &gt; &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode / compute Morton key from integer cartesian coordinate (i,j,k).</para>
+<para>In 2D, cartesian coordinates x,y can be as large as 2^32 (about 4e9) In 3D, cartesian coordinates x,y,z must be lower than 2^21 = 2097152</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cartesian coordinates (x,y,z) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the Morton key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="165" column="10" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="165" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a002754e174436efe8f45f27dc7964ff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint64_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint64_t dyablo::compute_morton_key</definition>
+        <argsstring>(const uint32_t ix, const uint32_t iy)</argsstring>
+        <name>compute_morton_key</name>
+        <qualifiedname>dyablo::compute_morton_key</qualifiedname>
+        <param>
+          <type>const uint32_t</type>
+          <declname>ix</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>iy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>another 2d version of morton key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="182" column="10" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="182" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1ad49a127661db99fbdd77c0c8c6dc2b9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION uint64_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint64_t dyablo::compute_morton_key</definition>
+        <argsstring>(const uint32_t ix, const uint32_t iy, const uint32_t iz)</argsstring>
+        <name>compute_morton_key</name>
+        <qualifiedname>dyablo::compute_morton_key</qualifiedname>
+        <param>
+          <type>const uint32_t</type>
+          <declname>ix</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>iy</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>iz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>another 3d version of morton key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="192" column="10" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="192" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedyablo_1a4e37152b18b9dfc50b6a3068d0e85c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>coord</declname>
+            <defname>coord</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION uint32_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION uint32_t dyablo::morton_extract_coord</definition>
+        <argsstring>(int dim, uint64_t key)</argsstring>
+        <name>morton_extract_coord</name>
+        <qualifiedname>dyablo::morton_extract_coord</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper method for Magicbits Morton key decoding.</para>
+<para>Returned value is encoded on 32 bits. In 2D, all bits can be significant. In 3D, only the last 21 bits are significant, i.e. the returned value must be lower than 2^21=2097152. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should be 2 or 3</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Template parameter allows to extract either x,y or z coordinate.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should be IX, IY or IZ (from enums) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/morton_utils.h" line="215" column="10" bodyfile="/builds/dyablo/dyablo/core/src/morton_utils.h" bodystart="215" bodyend="245"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Some usefull routines to compute / handle Morton indexes.</para>
+<para>Morton curve (or Z-curve) is a space filling curve, i.e. a mapping from an n-dimensional space to 1d).</para>
+<para><simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Z-order_curve">https://en.wikipedia.org/wiki/Z-order_curve</ulink></para>
+</simplesect>
+Some of the following routines are adapted from: <ulink url="http://www.forceflow.be/2013/10/07/morton-encodingdecoding-through-bit-interleaving-implementations/">http://www.forceflow.be/2013/10/07/morton-encodingdecoding-through-bit-interleaving-implementations/</ulink></para>
+<para>This blog provides performances comparison between 3 methods:<itemizedlist>
+<listitem><para>&quot;For loop&quot; method</para>
+</listitem><listitem><para>&quot;Magic bits&quot; method</para>
+</listitem><listitem><para>&quot;Lookup table&quot; method</para>
+</listitem></itemizedlist>
+</para>
+<para>Here, we only use the &quot;Magic bits&quot; method.</para>
+<para>Other interesting references:<itemizedlist>
+<listitem><para>libmorton, <ulink url="https://github.com/Forceflow/libmorton">https://github.com/Forceflow/libmorton</ulink></para>
+</listitem><listitem><para>mortonlib, <ulink url="https://github.com/aavenel/mortonlib">https://github.com/aavenel/mortonlib</ulink></para>
+</listitem><listitem><para><ulink url="http://bitmath.blogspot.fr/2012/11/tesseral-arithmetic-useful-snippets.html">http://bitmath.blogspot.fr/2012/11/tesseral-arithmetic-useful-snippets.html</ulink> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHARED_MORTON_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHARED_MORTON_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>uint32_t,<sp/>uint64_t,<sp/>etc...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>std::size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;enums.h&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>ComponentIndex3D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="real__type_8h" kindref="compound">real_type.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Kokkos_Core.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedyablo" kindref="compound">dyablo</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="50" refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" refkind="member"><highlight class="normal">uint64_t<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3</ref>(uint32_t<sp/>a);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>1D<sp/>version<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">uint64_t<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;1&gt;</ref>(uint32_t<sp/>a)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>uint64_t<sp/>x<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>splitBy3&lt;1&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>2D<sp/>version<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">uint64_t<sp/>splitBy3&lt;2&gt;(uint32_t<sp/>a)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>take<sp/>all<sp/>32<sp/>bits<sp/>(this<sp/>is<sp/>different<sp/>in<sp/>3D)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>because<sp/>the<sp/>result<sp/>must<sp/>hold<sp/>in<sp/>an<sp/>uint64_t<sp/>(<sp/>2x21=63<sp/>bits<sp/>--&gt;<sp/>uint64_t<sp/>is<sp/>enought<sp/>)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>uint64_t<sp/>x<sp/>=<sp/>a<sp/>&amp;<sp/>0xffffffff;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>16)<sp/>&amp;<sp/>0xffff0000ffff;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>8)<sp/>&amp;<sp/>0xff00ff00ff00ff;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>4)<sp/>&amp;<sp/>0xf0f0f0f0f0f0f0f;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>2)<sp/>&amp;<sp/>0x3333333333333333;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>1)<sp/>&amp;<sp/>0x5555555555555555;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>splitBy3&lt;2&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>3D<sp/>version<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">uint64_t<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;3&gt;</ref>(uint32_t<sp/>a)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>only<sp/>look<sp/>at<sp/>the<sp/>first<sp/>21<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>because<sp/>the<sp/>result<sp/>must<sp/>hold<sp/>in<sp/>an<sp/>uint64_t<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3x21=63<sp/>bits<sp/>--&gt;<sp/>uint64_t<sp/>is<sp/>enought<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>uint64_t<sp/>x<sp/>=<sp/>a<sp/>&amp;<sp/>0x1fffff;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>32)<sp/>&amp;<sp/>0x1f00000000ffff;<sp/><sp/></highlight><highlight class="comment">//<sp/>shift<sp/>left<sp/>32<sp/>bits,<sp/>OR<sp/>with<sp/>self,<sp/>and<sp/>00011111000000000000000000000000000000001111111111111111</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>16)<sp/>&amp;<sp/>0x1f0000ff0000ff;<sp/><sp/></highlight><highlight class="comment">//<sp/>shift<sp/>left<sp/>32<sp/>bits,<sp/>OR<sp/>with<sp/>self,<sp/>and<sp/>00011111000000000000000011111111000000000000000011111111</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>8)<sp/>&amp;<sp/>0x100f00f00f00f00f;<sp/></highlight><highlight class="comment">//<sp/>shift<sp/>left<sp/>32<sp/>bits,<sp/>OR<sp/>with<sp/>self,<sp/>and<sp/>0001000000001111000000001111000000001111000000001111000000000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>4)<sp/>&amp;<sp/>0x10c30c30c30c30c3;<sp/></highlight><highlight class="comment">//<sp/>shift<sp/>left<sp/>32<sp/>bits,<sp/>OR<sp/>with<sp/>self,<sp/>and<sp/>0001000011000011000011000011000011000011000011000011000100000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>(x<sp/>|<sp/>x<sp/>&lt;&lt;<sp/>2)<sp/>&amp;<sp/>0x1249249249249249;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>splitBy3&lt;3&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim&gt;</highlight></codeline>
+<codeline lineno="109" refid="structdyablo_1_1index__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdyablo_1_1index__t" kindref="compound">index_t</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="112" refid="structdyablo_1_1index__t_3_012_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">index_t&lt;2&gt;{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>uint32_t<sp/>data[ndim];</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>index_t()<sp/>{}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>index_t(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{<sp/>data[0]=i;<sp/>data[1]=j;<sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>uint32_t<sp/>operator[](std::size_t<sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[i];<sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>uint32_t&amp;<sp/>operator[](std::size_t<sp/>i)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[i];<sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>index_t&lt;2&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="133" refid="structdyablo_1_1index__t_3_013_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">index_t&lt;3&gt;{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>uint32_t<sp/>data[ndim];</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>index_t()<sp/>{}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>index_t(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k)<sp/>{<sp/>data[0]=i;<sp/>data[1]=j;<sp/>data[2]=k;<sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>uint32_t<sp/>operator[](std::size_t<sp/>i)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[i];<sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>uint32_t&amp;<sp/>operator[](std::size_t<sp/>i)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[i];<sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>index_t&lt;3&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim&gt;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="165" refid="namespacedyablo_1abe6f2db835c20b99e7c8e74c02a36191" refkind="member"><highlight class="normal">uint64_t<sp/><ref refid="namespacedyablo_1abe6f2db835c20b99e7c8e74c02a36191" kindref="member">compute_morton_key</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdyablo_1_1index__t" kindref="compound">index_t&lt;dim&gt;</ref>&amp;<sp/>index)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>uint64_t<sp/>key<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>index[IX];</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>|=<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;dim&gt;</ref>(index[IX])<sp/>|<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;dim&gt;</ref>(index[IY])<sp/>&lt;&lt;<sp/>1;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim<sp/>==<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>|=<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;dim&gt;</ref>(index[IX])<sp/>|<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;dim&gt;</ref>(index[IY])<sp/>&lt;&lt;<sp/>1<sp/>|<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;dim&gt;</ref>(index[IZ])<sp/>&lt;&lt;<sp/>2;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>key;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>compute_morton_key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="182" refid="namespacedyablo_1a002754e174436efe8f45f27dc7964ff4" refkind="member"><highlight class="normal">uint64_t<sp/><ref refid="namespacedyablo_1abe6f2db835c20b99e7c8e74c02a36191" kindref="member">compute_morton_key</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>ix,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>iy)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>uint64_t<sp/>key<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>key<sp/>|=<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;2&gt;</ref>(ix)<sp/>|<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;2&gt;</ref>(iy)<sp/>&lt;&lt;<sp/>1;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>key;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>compute_morton_key<sp/>-<sp/>2d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="192" refid="namespacedyablo_1ad49a127661db99fbdd77c0c8c6dc2b9d" refkind="member"><highlight class="normal">uint64_t<sp/><ref refid="namespacedyablo_1abe6f2db835c20b99e7c8e74c02a36191" kindref="member">compute_morton_key</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>ix,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>iy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>iz)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>uint64_t<sp/>key<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>key<sp/>|=<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;3&gt;</ref>(ix)<sp/>|<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;3&gt;</ref>(iy)<sp/>&lt;&lt;<sp/>1<sp/>|<sp/><ref refid="namespacedyablo_1af14411559f4fcbe172bb30239e121d7e" kindref="member">splitBy3&lt;3&gt;</ref>(iz)<sp/>&lt;&lt;<sp/>2;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>key;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>compute_morton_key<sp/>-<sp/>3d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coord&gt;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">KOKKOS_INLINE_FUNCTION</highlight></codeline>
+<codeline lineno="215" refid="namespacedyablo_1a4e37152b18b9dfc50b6a3068d0e85c5b" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="namespacedyablo_1a4e37152b18b9dfc50b6a3068d0e85c5b" kindref="member">morton_extract_coord</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/>uint64_t<sp/>key)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>shift<sp/>bit<sp/>by<sp/>dimension<sp/>and<sp/>thus<sp/>select<sp/>which<sp/>coordinate<sp/>to<sp/>extract</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>key<sp/>=<sp/>key<sp/>&gt;&gt;<sp/>coord;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim==2)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>5<sp/>is<sp/>&quot;0101&quot;<sp/>in<sp/>binary</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>just<sp/>mask<sp/>bits<sp/>to<sp/>zero<sp/>out<sp/>bits<sp/>at<sp/>odd<sp/>positions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>that<sp/>one<sp/>can<sp/>extract<sp/>one<sp/>out<sp/>of<sp/>2<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>&amp;=<sp/>0x5555555555555555;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>1))<sp/><sp/>&amp;<sp/>0x3333333333333333;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>2))<sp/><sp/>&amp;<sp/>0x0f0f0f0f0f0f0f0f;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>4))<sp/><sp/>&amp;<sp/>0x00ff00ff00ff00ff;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>8))<sp/><sp/>&amp;<sp/>0x0000ffff0000ffff;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>16))<sp/>&amp;<sp/>0x00000000ffffffff;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim==3)<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>249<sp/>pattern<sp/>is<sp/>|0010|0100|1001|<sp/>in<sp/>binary<sp/>notation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>that<sp/>on<sp/>can<sp/>extract<sp/>one<sp/>out<sp/>of<sp/>3<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>&amp;=<sp/>0x1249249249249249;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>2))<sp/><sp/>&amp;<sp/>0x30c30c30c30c30c3;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>4))<sp/><sp/>&amp;<sp/>0xf00f00f00f00f00f;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>8))<sp/><sp/>&amp;<sp/>0x00ff0000ff0000ff;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>16))<sp/>&amp;<sp/>0x00ff00000000ffff;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(key<sp/>^<sp/>(key<sp/>&gt;&gt;<sp/>32))<sp/>&amp;<sp/>0x1fffff;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(key);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>morton_extract_bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dyablo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SHARED_MORTON_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/builds/dyablo/dyablo/core/src/morton_utils.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1GhostCommunicator__partial__blocks" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::GhostCommunicator_partial_blocks</compoundname>
+    <includes refid="GhostCommunicator__partial__blocks_8h" local="no">GhostCommunicator_partial_blocks.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a081c7e069bc0c86688530ccd1fc2754e" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::GhostCommunicator_partial_blocks::m_local_ghost_octants</definition>
+        <argsstring></argsstring>
+        <name>m_local_ghost_octants</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::m_local_ghost_octants</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="194" column="14" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1ad7e3bbe45a84c4ba7ada53065365e14f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; dyablo::GhostCommunicator_partial_blocks::m_send_cell_count</definition>
+        <argsstring></argsstring>
+        <name>m_send_cell_count</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::m_send_cell_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="195" column="17" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a612e12f736db75571f9c1280d3e09a59" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; dyablo::GhostCommunicator_partial_blocks::m_recv_cell_count</definition>
+        <argsstring></argsstring>
+        <name>m_recv_cell_count</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::m_recv_cell_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="196" column="17" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1aade3708bf0285434c39bc83b46661bfc" prot="private" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt; uint32_t* &gt; dyablo::GhostCommunicator_partial_blocks::m_send_iOct</definition>
+        <argsstring></argsstring>
+        <name>m_send_iOct</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::m_send_iOct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="197" column="18" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1ad01e7ced7b3aaf6eb56ca0c6e2e7332c" prot="private" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt; uint32_t* &gt; dyablo::GhostCommunicator_partial_blocks::m_send_iCell</definition>
+        <argsstring></argsstring>
+        <name>m_send_iCell</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::m_send_iCell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="198" column="18" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1ae24286dd6844f5acd3a1c82be456f70d" prot="private" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt; uint32_t* &gt; dyablo::GhostCommunicator_partial_blocks::m_recv_iOct</definition>
+        <argsstring></argsstring>
+        <name>m_recv_iOct</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::m_recv_iOct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="199" column="18" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a10ffeabd6e20ae9bf2b0227291e25292" prot="private" static="no" mutable="no">
+        <type>Kokkos::View&lt; uint32_t * &gt;</type>
+        <definition>Kokkos::View&lt; uint32_t* &gt; dyablo::GhostCommunicator_partial_blocks::m_recv_iCell</definition>
+        <argsstring></argsstring>
+        <name>m_recv_iCell</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::m_recv_iCell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="200" column="18" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a0b4b4dd83caef49b7eb007f0365225ee" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref></type>
+        <definition>MpiComm dyablo::GhostCommunicator_partial_blocks::mpi_comm</definition>
+        <argsstring></argsstring>
+        <name>mpi_comm</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::mpi_comm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="202" column="13" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a3fce7ba330d63811b79cd4e76e5a5a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::GhostCommunicator_partial_blocks::GhostCommunicator_partial_blocks</definition>
+        <argsstring>(const AMRmesh &amp;amr_mesh, const ForeachCell::CellArray_global_ghosted::Shape_t &amp;shape, uint32_t ghost_count, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>GhostCommunicator_partial_blocks</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::GhostCommunicator_partial_blocks</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+          <declname>amr_mesh</declname>
+        </param>
+        <param>
+          <type>const ForeachCell::CellArray_global_ghosted::Shape_t &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ghost_count</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="16" column="5" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.cpp" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a31a7d93cbf238bfa44ec96e70ac21999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_partial_blocks::init</definition>
+        <argsstring>(const AMRmesh &amp;amr_mesh, const ForeachCell::CellArray_global_ghosted::Shape_t &amp;shape, uint32_t ghost_count, const MpiComm &amp;mpi_comm)</argsstring>
+        <name>init</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::init</qualifiedname>
+        <param>
+          <type>const <ref refid="classdyablo_1_1AMRmesh" kindref="compound">AMRmesh</ref> &amp;</type>
+          <declname>amr_mesh</declname>
+        </param>
+        <param>
+          <type>const ForeachCell::CellArray_global_ghosted::Shape_t &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ghost_count</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="18" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.cpp" bodystart="108" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a8c10f3b1c8acfaa868e17e48726cfdf3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::GhostCommunicator_partial_blocks::getNumGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumGhosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::getNumGhosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="26" column="14" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a3401bc28a21e9fc7442a0cd62eac4d58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CellArray_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_partial_blocks::exchange_ghosts</definition>
+        <argsstring>(const CellArray_t &amp;U) const</argsstring>
+        <name>exchange_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::exchange_ghosts</qualifiedname>
+        <param>
+          <type>const CellArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO : doc </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="35" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="35" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__partial__blocks_1a72f75112e3d2b226ae24c89f0337cec4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CellArray_t</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void dyablo::GhostCommunicator_partial_blocks::reduce_ghosts</definition>
+        <argsstring>(CellArray_t &amp;U) const</argsstring>
+        <name>reduce_ghosts</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::reduce_ghosts</qualifiedname>
+        <param>
+          <type>CellArray_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO : doc </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="115" column="10" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="115" bodyend="191"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1GhostCommunicator__partial__blocks_1af65006c8b09ed9471e550e2fed4a3baf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string dyablo::GhostCommunicator_partial_blocks::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>dyablo::GhostCommunicator_partial_blocks::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="20" column="24" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="20" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Ghost communicator for partial blocks (ghosts) then serialize/deserialize in Kokkos kernels and use CUDA-aware MPI </para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" line="13" column="1" bodyfile="/builds/dyablo/dyablo/core/src/mpi/GhostCommunicator_partial_blocks.h" bodystart="14" bodyend="203"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a3401bc28a21e9fc7442a0cd62eac4d58" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>exchange_ghosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a8c10f3b1c8acfaa868e17e48726cfdf3" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>getNumGhosts</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a3fce7ba330d63811b79cd4e76e5a5a90" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>GhostCommunicator_partial_blocks</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a31a7d93cbf238bfa44ec96e70ac21999" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>init</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a081c7e069bc0c86688530ccd1fc2754e" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>m_local_ghost_octants</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a612e12f736db75571f9c1280d3e09a59" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>m_recv_cell_count</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a10ffeabd6e20ae9bf2b0227291e25292" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>m_recv_iCell</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1ae24286dd6844f5acd3a1c82be456f70d" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>m_recv_iOct</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1ad7e3bbe45a84c4ba7ada53065365e14f" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>m_send_cell_count</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1ad01e7ced7b3aaf6eb56ca0c6e2e7332c" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>m_send_iCell</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1aade3708bf0285434c39bc83b46661bfc" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>m_send_iOct</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a0b4b4dd83caef49b7eb007f0365225ee" prot="private" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>mpi_comm</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1af65006c8b09ed9471e550e2fed4a3baf" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>name</name></member>
+      <member refid="classdyablo_1_1GhostCommunicator__partial__blocks_1a72f75112e3d2b226ae24c89f0337cec4" prot="public" virt="non-virtual"><scope>dyablo::GhostCommunicator_partial_blocks</scope><name>reduce_ghosts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

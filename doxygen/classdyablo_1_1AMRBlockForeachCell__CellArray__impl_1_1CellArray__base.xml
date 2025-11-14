@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</compoundname>
+    <includes refid="AMRBlockForeachCell__CellArray_8h" local="no">AMRBlockForeachCell_CellArray.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>has_ghosts_</declname>
+        <defname>has_ghosts_</defname>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>has_intermediates_</declname>
+        <defname>has_intermediates_</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0fd85f363eac77df05c2500be6f9676d" prot="public" static="no">
+        <type>std::conditional_t&lt; has_ghosts_, <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape__ghosted" kindref="compound">CellArray_shape_ghosted</ref>, <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__shape__local" kindref="compound">CellArray_shape_local</ref> &gt;</type>
+        <definition>using dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::Shape_t =  std::conditional_t&lt; has_ghosts_, CellArray_shape_ghosted, CellArray_shape_local&gt;</definition>
+        <argsstring></argsstring>
+        <name>Shape_t</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::Shape_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="549" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1afde456062f43f6c3b2b3c0bd11f49a0c" prot="public" static="no">
+        <type>Kokkos::View&lt; real_t ***, Kokkos::LayoutLeft &gt;</type>
+        <definition>using dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::View_t =  Kokkos::View&lt;real_t***, Kokkos::LayoutLeft&gt;</definition>
+        <argsstring></argsstring>
+        <name>View_t</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::View_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="550" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a70db4fe8cb364732b4223c39982914cc" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::has_ghosts</definition>
+        <argsstring></argsstring>
+        <name>has_ghosts</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::has_ghosts</qualifiedname>
+        <initializer>= has_ghosts_</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="551" column="25" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a648873db6dd6bf60a6e4eb734d1bff07" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::has_intermediates</definition>
+        <argsstring></argsstring>
+        <name>has_intermediates</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::has_intermediates</qualifiedname>
+        <initializer>= has_intermediates_</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="552" column="25" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="552" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a65f9c7472e29c36e2a7428c9b7eb260a" prot="public" static="no" mutable="no">
+        <type>View_t</type>
+        <definition>View_t dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::U</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::U</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="554" column="10" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1add48fb1856e70f192de3e674229d53ed" prot="public" static="no" mutable="no">
+        <type>View_t</type>
+        <definition>View_t dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::Ughost</definition>
+        <argsstring></argsstring>
+        <name>Ughost</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::Ughost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="554" column="12" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a32c1541d92813e6a0f4d6c5eb15cf626" prot="public" static="no" mutable="no">
+        <type>View_t</type>
+        <definition>View_t dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::Uintermediate</definition>
+        <argsstring></argsstring>
+        <name>Uintermediate</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::Uintermediate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="554" column="19" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a5eb12cf6bcda3b76f7ad2b9a1e5fb7c9" prot="public" static="no" mutable="no">
+        <type>Shape_t</type>
+        <definition>Shape_t dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="555" column="11" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a40195851241f9bea0b038ac0f69b9a44" prot="public" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref></type>
+        <definition>id2index_t dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::fm</definition>
+        <argsstring></argsstring>
+        <name>fm</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::fm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="556" column="14" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ab31863c0dad0a3d8e189955901658951" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::CellArray_base</definition>
+        <argsstring>(const Shape_t &amp;s, const id2index_t &amp;fm)</argsstring>
+        <name>CellArray_base</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::CellArray_base</qualifiedname>
+        <param>
+          <type>const Shape_t &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref> &amp;</type>
+          <declname>fm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="560" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="560" bodyend="562"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0b47350b1d0f8c87c4b979e34b445ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::CellArray_base</definition>
+        <argsstring>()=default</argsstring>
+        <name>CellArray_base</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::CellArray_base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="567" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae967501302fbd3242f6b69a9640e845d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::CellArray_base</definition>
+        <argsstring>(const T &amp;label, const Shape_t &amp;s, const id2index_t &amp;fm)</argsstring>
+        <name>CellArray_base</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::CellArray_base</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const Shape_t &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1id2index__t" kindref="compound">id2index_t</ref> &amp;</type>
+          <declname>fm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a CellArray from a shape and allocate views <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to label the Kokkos views </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the blocks and number of octants Note: when has_ghosts or has_intermediates are false, number of ghosts or intermediates must be 0 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="577" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="577" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a6e7c90236f885a9ca2589f8c6a1f1c1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION int</type>
+        <definition>KOKKOS_INLINE_FUNCTION int dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::nbFields</definition>
+        <argsstring>() const</argsstring>
+        <name>nbFields</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::nbFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="595" column="7" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="595" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ac6d6749d8a3a48350c1c8eee521a18a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION int</type>
+        <definition>KOKKOS_INLINE_FUNCTION int dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::nbfields</definition>
+        <argsstring>() const</argsstring>
+        <name>nbfields</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::nbfields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="602" column="7" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="602" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0cd2d310b180af44d5ca3548a0204c3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION Shape_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION Shape_t dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::getShape</definition>
+        <argsstring>() const</argsstring>
+        <name>getShape</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::getShape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="608" column="11" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="608" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae88fdd1fb1f5b0fb37fb48c6132f114b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::operator Shape_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Shape_t</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::operator Shape_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="614" column="3" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="614" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a7bd532c4beb15651bd3f351b8a320694" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION real_t &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t &amp; dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::at_ivar</definition>
+        <argsstring>(const CellIndex &amp;iCell, uint32_t ivar) const</argsstring>
+        <name>at_ivar</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::at_ivar</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ivar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="620" column="10" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="620" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1af28ea9b09eebeaafcbca11f808091ae3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION real_t &amp;</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t &amp; dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::at</definition>
+        <argsstring>(const CellIndex &amp;iCell, int ivar) const</argsstring>
+        <name>at</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::at</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ivar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="643" column="10" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="643" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a38be05d421f9f078cfce28a5f5d26cce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION CellIndex dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::convert_index</definition>
+        <argsstring>(const CellIndex &amp;iCell) const</argsstring>
+        <name>convert_index</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::convert_index</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="650" column="13" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="650" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1afc2eda1f4d91049126eae9d6002ea14d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION CellIndex dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::convert_index_ghost</definition>
+        <argsstring>(const CellIndex &amp;iCell) const</argsstring>
+        <name>convert_index_ghost</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::convert_index_ghost</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="656" column="13" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="656" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a2d7027b884fe35c3e169ecf442d92ea5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION CellIndex dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;::convert_index_getNeighbor</definition>
+        <argsstring>(const CellIndex &amp;iCell) const</argsstring>
+        <name>convert_index_getNeighbor</name>
+        <qualifiedname>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base::convert_index_getNeighbor</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="662" column="13" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="662" bodyend="665"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstraction for an array containing cell values Cells are indexed by abstracted CellIndexes and values in cells are accessed through the at() accessor. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>has_ghosts_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ghost cells are present </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_intermediate_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>intermediate cells are present </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base&lt; has_ghosts_, has_intermediates_ &gt;</label>
+        <link refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fm</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dyablo::id2index_t</label>
+        <link refid="classdyablo_1_1id2index__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" line="546" column="1" bodyfile="/builds/dyablo/dyablo/core/src/foreach_cell/AMRBlockForeachCell_CellArray.h" bodystart="547" bodyend="666"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1af28ea9b09eebeaafcbca11f808091ae3" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>at</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a7bd532c4beb15651bd3f351b8a320694" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>at_ivar</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ab31863c0dad0a3d8e189955901658951" prot="protected" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0b47350b1d0f8c87c4b979e34b445ddc" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae967501302fbd3242f6b69a9640e845d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>CellArray_base</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a38be05d421f9f078cfce28a5f5d26cce" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>convert_index</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a2d7027b884fe35c3e169ecf442d92ea5" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>convert_index_getNeighbor</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1afc2eda1f4d91049126eae9d6002ea14d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>convert_index_ghost</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a40195851241f9bea0b038ac0f69b9a44" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>fm</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0cd2d310b180af44d5ca3548a0204c3c" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>getShape</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a70db4fe8cb364732b4223c39982914cc" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>has_ghosts</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a648873db6dd6bf60a6e4eb734d1bff07" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>has_intermediates</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a6e7c90236f885a9ca2589f8c6a1f1c1e" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>nbFields</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ac6d6749d8a3a48350c1c8eee521a18a8" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>nbfields</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1ae88fdd1fb1f5b0fb37fb48c6132f114b" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>operator Shape_t</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a5eb12cf6bcda3b76f7ad2b9a1e5fb7c9" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>shape</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a0fd85f363eac77df05c2500be6f9676d" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>Shape_t</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a65f9c7472e29c36e2a7428c9b7eb260a" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>U</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1add48fb1856e70f192de3e674229d53ed" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>Ughost</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1a32c1541d92813e6a0f4d6c5eb15cf626" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>Uintermediate</name></member>
+      <member refid="classdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellArray__base_1afde456062f43f6c3b2b3c0bd11f49a0c" prot="public" virt="non-virtual"><scope>dyablo::AMRBlockForeachCell_CellArray_impl::CellArray_base</scope><name>View_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

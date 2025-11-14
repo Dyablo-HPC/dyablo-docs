@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1AMRmesh" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::AMRmesh</compoundname>
+    <innerclass refid="structdyablo_1_1AMRmesh_1_1GhostMap__t" prot="public">dyablo::AMRmesh::GhostMap_t</innerclass>
+    <innerclass refid="structdyablo_1_1AMRmesh_1_1Parameters" prot="public">dyablo::AMRmesh::Parameters</innerclass>
+    <innerclass refid="structdyablo_1_1AMRmesh_1_1PData" prot="public">dyablo::AMRmesh::PData</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1AMRmesh_1acde267bb23a2a59602a56b76d8655bfd" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="structdyablo_1_1AMRmesh_1_1PData" kindref="compound">PData</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;PData&gt; dyablo::AMRmesh::pdata</definition>
+        <argsstring></argsstring>
+        <name>pdata</name>
+        <qualifiedname>dyablo::AMRmesh::pdata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="22" column="19" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a6b1766af1ff378b1a794e31e7ad1b9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRmesh::AMRmesh</definition>
+        <argsstring>(int dim, const std::array&lt; bool, 3 &gt; &amp;periodic, uint8_t level_min, uint8_t level_max, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>AMRmesh</name>
+        <qualifiedname>dyablo::AMRmesh::AMRmesh</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; bool, 3 &gt; &amp;</type>
+          <declname>periodic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_min</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_max</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new empty AMR mesh initialized with a fixed grid at level_min <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of dimensions 2D/3D </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>periodic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set perodicity for each dimension (last is ignored in 2D) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum refinement level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum refinement level (TODO : clarify level_min/level_max) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="33" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="430" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1ab09f32f102aab534089227efb2262102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRmesh::AMRmesh</definition>
+        <argsstring>(int dim, const std::array&lt; bool, 3 &gt; &amp;periodic, uint8_t level_min, uint8_t level_max, const std::array&lt; uint32_t, 3 &gt; &amp;coarse_grid_size, const MpiComm &amp;mpi_comm=GlobalMpiSession::get_comm_world())</argsstring>
+        <name>AMRmesh</name>
+        <qualifiedname>dyablo::AMRmesh::AMRmesh</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; bool, 3 &gt; &amp;</type>
+          <declname>periodic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_min</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>level_max</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; uint32_t, 3 &gt; &amp;</type>
+          <declname>coarse_grid_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref> &amp;</type>
+          <declname>mpi_comm</declname>
+          <defval><ref refid="classdyablo_1_1GlobalMpiSession_1ae9a8647702e616339bcd986996552516" kindref="member">GlobalMpiSession::get_comm_world</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="34" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="434" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1aaaf394d0e55793ff08197758119fa616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::AMRmesh::~AMRmesh</definition>
+        <argsstring>()</argsstring>
+        <name>~AMRmesh</name>
+        <qualifiedname>dyablo::AMRmesh::~AMRmesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="35" column="3" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="474" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1ae8f3bb259b9cd834f9fdb3b4959ecb57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t dyablo::AMRmesh::getDim</definition>
+        <argsstring>() const</argsstring>
+        <name>getDim</name>
+        <qualifiedname>dyablo::AMRmesh::getDim</qualifiedname>
+        <briefdescription>
+<para>Get number of dimensions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="48" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="531" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a071c3293c4c61906834803a7b137d380" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dyablo::AMRmesh::getPeriodic</definition>
+        <argsstring>(uint8_t i) const</argsstring>
+        <name>getPeriodic</name>
+        <qualifiedname>dyablo::AMRmesh::getPeriodic</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get periodicity of direction i. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="51" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="536" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1ac865cf745df284296ef139c2c08b8ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Kokkos::Array&lt; uint32_t, 3 &gt;</type>
+        <definition>Kokkos::Array&lt; uint32_t, 3 &gt; dyablo::AMRmesh::get_coarse_grid_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_coarse_grid_size</name>
+        <qualifiedname>dyablo::AMRmesh::get_coarse_grid_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="53" column="17" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="541" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1ae4eb99e5103a6cddddf1478e3b0167c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dyablo::AMRmesh::get_max_supported_level</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_supported_level</name>
+        <qualifiedname>dyablo::AMRmesh::get_max_supported_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="55" column="7" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="546" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a744754ff12bd4a07ccd975eea513c96b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dyablo::AMRmesh::get_level_min</definition>
+        <argsstring>() const</argsstring>
+        <name>get_level_min</name>
+        <qualifiedname>dyablo::AMRmesh::get_level_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="56" column="7" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="551" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a22286459665f78f53116b5f8618587ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dyablo::AMRmesh::get_level_max</definition>
+        <argsstring>() const</argsstring>
+        <name>get_level_max</name>
+        <qualifiedname>dyablo::AMRmesh::get_level_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="57" column="7" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="556" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a17dfe2391cd09e46a3de0417aadaa9aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdyablo_1_1LightOctree__storage" kindref="compound">LightOctree_storage</ref>&lt; Kokkos::DefaultHostExecutionSpace::memory_space &gt;</type>
+        <definition>const Storage_t dyablo::AMRmesh::getStorage</definition>
+        <argsstring>() const</argsstring>
+        <name>getStorage</name>
+        <qualifiedname>dyablo::AMRmesh::getStorage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="59" column="29" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="561" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a95b5301f1ef0ff018e1fce3bb0212a28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classdyablo_1_1LightOctree__hashmap" kindref="compound">LightOctree</ref> &amp;</type>
+        <definition>const LightOctree &amp; dyablo::AMRmesh::getLightOctree</definition>
+        <argsstring>()</argsstring>
+        <name>getLightOctree</name>
+        <qualifiedname>dyablo::AMRmesh::getLightOctree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the LightOctree associated to the current AMR mesh May reallocate LightOctree if mesh has been modified </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="64" column="21" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="566" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a875c014658ccdf45ae30129d620cf22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::AMRmesh::updateLightOctree</definition>
+        <argsstring>()</argsstring>
+        <name>updateLightOctree</name>
+        <qualifiedname>dyablo::AMRmesh::updateLightOctree</qualifiedname>
+        <briefdescription>
+<para>Update LightOctree to make sure next call to <ref refid="classdyablo_1_1AMRmesh_1a95b5301f1ef0ff018e1fce3bb0212a28" kindref="member">getLightOctree()</ref> will not reallocate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="66" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="576" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a3c92c0bac2ea62b115438387bfd00d9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1MpiComm" kindref="compound">MpiComm</ref></type>
+        <definition>MpiComm dyablo::AMRmesh::getMpiComm</definition>
+        <argsstring>() const</argsstring>
+        <name>getMpiComm</name>
+        <qualifiedname>dyablo::AMRmesh::getMpiComm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="69" column="11" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="587" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a446aa2463cd9295ac39757f806fe255b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRmesh::getNumOctants</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumOctants</name>
+        <qualifiedname>dyablo::AMRmesh::getNumOctants</qualifiedname>
+        <briefdescription>
+<para>Get number of local octants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="73" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="592" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1ae70194758f8c042cde5833f8cfea621f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dyablo::AMRmesh::getNumGhosts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumGhosts</name>
+        <qualifiedname>dyablo::AMRmesh::getNumGhosts</qualifiedname>
+        <briefdescription>
+<para>Get number of ghost octants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="75" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="597" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a576ce0604e9319b4f4308265f94f8fe6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dyablo::AMRmesh::getGlobalNumOctants</definition>
+        <argsstring>() const</argsstring>
+        <name>getGlobalNumOctants</name>
+        <qualifiedname>dyablo::AMRmesh::getGlobalNumOctants</qualifiedname>
+        <briefdescription>
+<para>Get total number of octants across all MPI process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="77" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="602" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1abab761422228b3040e1b9eb58143b019" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t dyablo::AMRmesh::getGlobalIdx</definition>
+        <argsstring>(uint32_t idx) const</argsstring>
+        <name>getGlobalIdx</name>
+        <qualifiedname>dyablo::AMRmesh::getGlobalIdx</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Get the global id associated to local octant idx. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="80" column="12" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="607" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a2e53c6863249d7755f047916e35ae6c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1AMRmesh_1_1GhostMap__t" kindref="compound">GhostMap_t</ref></type>
+        <definition>AMRmesh::GhostMap_t dyablo::AMRmesh::loadBalance</definition>
+        <argsstring>(uint8_t compact_levels=0)</argsstring>
+        <name>loadBalance</name>
+        <qualifiedname>dyablo::AMRmesh::loadBalance</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>compact_levels</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change octants distribution to evenly redistribute the load <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compact_levels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>are the number of levels to keep compact at the bottom of the tree all suboctants of octants at level (level_max - compact_level) are kept in the same process </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="104" column="14" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="612" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a69d46e5607d354e1142d4268c52f4e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::AMRmesh::loadBalance_userdata</definition>
+        <argsstring>(int compact_levels, UserData &amp;userData)</argsstring>
+        <name>loadBalance_userdata</name>
+        <qualifiedname>dyablo::AMRmesh::loadBalance_userdata</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>compact_levels</declname>
+        </param>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>userData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kokkos::View of octant-related data to be redistributed userData must have layout Kokkos::LayoutLeft and rightmost index must be octants for each octant iOct that needs to be moved, values from userData(..., iOct) are transfered to the new owning mpi rank </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="113" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="793" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a7b90bbf02d2c59a6add1826fdd2f647a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::AMRmesh::setMarker</definition>
+        <argsstring>(uint32_t iOct, int marker)</argsstring>
+        <name>setMarker</name>
+        <qualifiedname>dyablo::AMRmesh::setMarker</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>iOct</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>marker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set marker for refinement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>marker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>+1 to mark iOct for refinement, -1 for coarsening </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="119" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="800" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a3dab367e3ce22a6158168933913952d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::AMRmesh::setMarkers</definition>
+        <argsstring>(const Kokkos::View&lt; int * &gt; &amp;oct_markers)</argsstring>
+        <name>setMarkers</name>
+        <qualifiedname>dyablo::AMRmesh::setMarkers</qualifiedname>
+        <param>
+          <type>const Kokkos::View&lt; int * &gt; &amp;</type>
+          <declname>oct_markers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="120" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="805" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1acc231891d3a43f104116787eaa88518e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::AMRmesh::adapt</definition>
+        <argsstring>()</argsstring>
+        <name>adapt</name>
+        <qualifiedname>dyablo::AMRmesh::adapt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coarsen and refine octants according to markers set with <ref refid="classdyablo_1_1AMRmesh_1a7b90bbf02d2c59a6add1826fdd2f647a" kindref="member">setMarker()</ref> <ref refid="classdyablo_1_1AMRmesh_1acc231891d3a43f104116787eaa88518e" kindref="member">adapt()</ref> includes 2:1 balancing in the directions set with <computeroutput>balance_codim</computeroutput> in the constructor NOTE : refining/coarsening octants by more than one level is not supported (yet?) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="127" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="810" bodyend="1096"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1ad60a8b75604b498cf9a1f34d8fa3e0a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dyablo::AMRmesh::adaptGlobalRefine</definition>
+        <argsstring>()</argsstring>
+        <name>adaptGlobalRefine</name>
+        <qualifiedname>dyablo::AMRmesh::adaptGlobalRefine</qualifiedname>
+        <briefdescription>
+<para>Refine all octants : same as adapt with all octants marked +1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="129" column="8" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="1098" bodyend="1102"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1a79f99d70eb6a91572c8d67bed37c712d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structdyablo_1_1AMRmesh_1_1GhostMap__t" kindref="compound">GhostMap_t</ref> &amp;</type>
+        <definition>const AMRmesh::GhostMap_t &amp; dyablo::AMRmesh::getGhostMap</definition>
+        <argsstring>() const</argsstring>
+        <name>getGhostMap</name>
+        <qualifiedname>dyablo::AMRmesh::getGhostMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="131" column="20" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="1104" bodyend="1107"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1AMRmesh_1ae3d0da807edd53e70ac6b2319fa7bb71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1AMRmesh_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>AMRmesh::Parameters dyablo::AMRmesh::parse_parameters</definition>
+        <argsstring>(ConfigMap &amp;configmap)</argsstring>
+        <name>parse_parameters</name>
+        <qualifiedname>dyablo::AMRmesh::parse_parameters</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="44" column="21" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.cpp" bodystart="477" bodyend="529"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" line="17" column="1" bodyfile="/builds/dyablo/dyablo/core/src/amr/AMRmesh.h" bodystart="17" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1AMRmesh_1acc231891d3a43f104116787eaa88518e" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>adapt</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1ad60a8b75604b498cf9a1f34d8fa3e0a2" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>adaptGlobalRefine</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a6b1766af1ff378b1a794e31e7ad1b9c0" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>AMRmesh</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1ab09f32f102aab534089227efb2262102" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>AMRmesh</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1ac865cf745df284296ef139c2c08b8ce1" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>get_coarse_grid_size</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a22286459665f78f53116b5f8618587ed" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>get_level_max</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a744754ff12bd4a07ccd975eea513c96b" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>get_level_min</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1ae4eb99e5103a6cddddf1478e3b0167c6" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>get_max_supported_level</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1ae8f3bb259b9cd834f9fdb3b4959ecb57" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getDim</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a79f99d70eb6a91572c8d67bed37c712d" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getGhostMap</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1abab761422228b3040e1b9eb58143b019" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getGlobalIdx</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a576ce0604e9319b4f4308265f94f8fe6" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getGlobalNumOctants</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a95b5301f1ef0ff018e1fce3bb0212a28" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getLightOctree</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a3c92c0bac2ea62b115438387bfd00d9f" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getMpiComm</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1ae70194758f8c042cde5833f8cfea621f" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getNumGhosts</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a446aa2463cd9295ac39757f806fe255b" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getNumOctants</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a071c3293c4c61906834803a7b137d380" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getPeriodic</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a17dfe2391cd09e46a3de0417aadaa9aa" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>getStorage</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a2e53c6863249d7755f047916e35ae6c5" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>loadBalance</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a69d46e5607d354e1142d4268c52f4e2b" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>loadBalance_userdata</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1ae3d0da807edd53e70ac6b2319fa7bb71" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>parse_parameters</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1acde267bb23a2a59602a56b76d8655bfd" prot="private" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>pdata</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a7b90bbf02d2c59a6add1826fdd2f647a" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>setMarker</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a3dab367e3ce22a6158168933913952d3" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>setMarkers</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1a875c014658ccdf45ae30129d620cf22e" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>updateLightOctree</name></member>
+      <member refid="classdyablo_1_1AMRmesh_1aaaf394d0e55793ff08197758119fa616" prot="public" virt="non-virtual"><scope>dyablo::AMRmesh</scope><name>~AMRmesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

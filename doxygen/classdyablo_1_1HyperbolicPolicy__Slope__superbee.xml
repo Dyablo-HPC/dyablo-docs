@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicPolicy__Slope__superbee" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_Slope_superbee</compoundname>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__Slope__superbee_1_1Params" prot="public">dyablo::HyperbolicPolicy_Slope_superbee::Params</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename State_t</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1aec4ec1187799a2ce1ff76665ed5cc09f" prot="public" static="no">
+        <type>typename State_t::PrimState</type>
+        <definition>using dyablo::HyperbolicPolicy_Slope_superbee&lt; State_t &gt;::PrimState =  typename State_t::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Slope_superbee::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="76" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1a93f6765e7472c091b514f34a07f5d458" prot="public" static="no">
+        <type>typename State_t::ConsState</type>
+        <definition>using dyablo::HyperbolicPolicy_Slope_superbee&lt; State_t &gt;::ConsState =  typename State_t::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Slope_superbee::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="77" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1ae4cdc314f75e57170123330c65582906" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string dyablo::HyperbolicPolicy_Slope_superbee&lt; State_t &gt;::name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Slope_superbee::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="79" column="22" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1ad284cde9cc1df8712aa7997e729bbc4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__Slope__superbee_1_1Params" kindref="compound">Params</ref></type>
+        <definition>static Params dyablo::HyperbolicPolicy_Slope_superbee&lt; State_t &gt;::getParams</definition>
+        <argsstring>(const ConfigMap &amp;)</argsstring>
+        <name>getParams</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Slope_superbee::getParams</qualifiedname>
+        <param>
+          <type>const <ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="83" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1a5dbc884cbb1adb7fc67e6101322755df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicPolicy_Slope_superbee&lt; State_t &gt;::HyperbolicPolicy_Slope_superbee</definition>
+        <argsstring>(const Params &amp;Params)</argsstring>
+        <name>HyperbolicPolicy_Slope_superbee</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Slope_superbee::HyperbolicPolicy_Slope_superbee</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__Slope__superbee_1_1Params" kindref="compound">Params</ref> &amp;</type>
+          <declname>Params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="88" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="88" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1ab5f5915365575ef98995b48b2e448b89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION PrimState</type>
+        <definition>KOKKOS_INLINE_FUNCTION PrimState dyablo::HyperbolicPolicy_Slope_superbee&lt; State_t &gt;::compute_slope</definition>
+        <argsstring>(PrimState qL, PrimState qC, PrimState qR, real_t dL, real_t dR) const</argsstring>
+        <name>compute_slope</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_Slope_superbee::compute_slope</qualifiedname>
+        <param>
+          <type>PrimState</type>
+          <declname>qL</declname>
+        </param>
+        <param>
+          <type>PrimState</type>
+          <declname>qC</declname>
+        </param>
+        <param>
+          <type>PrimState</type>
+          <declname>qR</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dL</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>dR</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="92" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="92" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" line="73" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Slope.h" bodystart="74" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1ab5f5915365575ef98995b48b2e448b89" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Slope_superbee</scope><name>compute_slope</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1a93f6765e7472c091b514f34a07f5d458" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Slope_superbee</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1ad284cde9cc1df8712aa7997e729bbc4c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Slope_superbee</scope><name>getParams</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1a5dbc884cbb1adb7fc67e6101322755df" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Slope_superbee</scope><name>HyperbolicPolicy_Slope_superbee</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1ae4cdc314f75e57170123330c65582906" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Slope_superbee</scope><name>name</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__Slope__superbee_1aec4ec1187799a2ce1ff76665ed5cc09f" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_Slope_superbee</scope><name>PrimState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

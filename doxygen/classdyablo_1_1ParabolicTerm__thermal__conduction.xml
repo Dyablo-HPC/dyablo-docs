@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1ParabolicTerm__thermal__conduction" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::ParabolicTerm_thermal_conduction</compoundname>
+    <includes refid="ParabolicTerm__thermal__conduction_8h" local="no">ParabolicTerm_thermal_conduction.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a50484489270de23c28dc5319c760a7c9" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HydroState" kindref="compound">HydroState</ref></type>
+        <definition>using dyablo::ParabolicTerm_thermal_conduction::State =  HydroState</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="53" column="3" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a1cb78aa8992100f5f85d0903623aee38" prot="public" static="no">
+        <type>typename <ref refid="structdyablo_1_1HyperbolicPolicy__PrimHydroState" kindref="compound">State::PrimState</ref></type>
+        <definition>using dyablo::ParabolicTerm_thermal_conduction::PrimState =  typename State::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="54" column="3" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1ab26505baf0dbb0a6273d1d742082c051" prot="public" static="no">
+        <type>typename <ref refid="structdyablo_1_1HyperbolicPolicy__ConsHydroState" kindref="compound">State::ConsState</ref></type>
+        <definition>using dyablo::ParabolicTerm_thermal_conduction::ConsState =  typename State::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="55" column="3" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a78d26e5fd934eeb72478fb42688d46dd" prot="private" static="no" mutable="no">
+        <type><ref refid="classdyablo_1_1BoundaryConditions" kindref="compound">BoundaryConditions</ref></type>
+        <definition>BoundaryConditions dyablo::ParabolicTerm_thermal_conduction::bc_manager</definition>
+        <argsstring></argsstring>
+        <name>bc_manager</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::bc_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="259" column="22" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a9cb964c4014167a942369035633d478c" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicTerm_thermal_conduction::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="261" column="10" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1aa2ba5cb386f3f32341d889e02e935dca" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicTerm_thermal_conduction::kappa_cst</definition>
+        <argsstring></argsstring>
+        <name>kappa_cst</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::kappa_cst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="262" column="10" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a3c77851e0f4bfa413df28021161738e0" prot="private" static="no" mutable="no">
+        <type>DiffusivityMode</type>
+        <definition>DiffusivityMode dyablo::ParabolicTerm_thermal_conduction::diffusivity_mode</definition>
+        <argsstring></argsstring>
+        <name>diffusivity_mode</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::diffusivity_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="263" column="19" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1ae9147716a16a3596c6895e4c52757d77" prot="private" static="no" mutable="no">
+        <type>KappaMode</type>
+        <definition>KappaMode dyablo::ParabolicTerm_thermal_conduction::kappa_mode</definition>
+        <argsstring></argsstring>
+        <name>kappa_mode</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::kappa_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="264" column="13" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a9ac909318c3f54a30b307113848d4be8" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicTerm_thermal_conduction::tr_thick</definition>
+        <argsstring></argsstring>
+        <name>tr_thick</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::tr_thick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="267" column="10" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1aa70532313f27d6749a1096ce41128454" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicTerm_thermal_conduction::z1</definition>
+        <argsstring></argsstring>
+        <name>z1</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::z1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="267" column="19" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1ad643c7c69e958f725283fbe7e36baaa2" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicTerm_thermal_conduction::z2</definition>
+        <argsstring></argsstring>
+        <name>z2</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::z2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="267" column="22" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a844345519f84eb7d9bdaf8fdb5308cef" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicTerm_thermal_conduction::K1</definition>
+        <argsstring></argsstring>
+        <name>K1</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::K1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="267" column="25" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1ae099b14a1151780dbd0f9f99d1ff98b8" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::ParabolicTerm_thermal_conduction::K2</definition>
+        <argsstring></argsstring>
+        <name>K2</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::K2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="267" column="28" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a5bfd5b6695faeec2b7dc0530e529c078" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::ParabolicTerm_thermal_conduction::ParabolicTerm_thermal_conduction</definition>
+        <argsstring>(ConfigMap &amp;configMap)</argsstring>
+        <name>ParabolicTerm_thermal_conduction</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::ParabolicTerm_thermal_conduction</qualifiedname>
+        <param>
+          <type><ref refid="classConfigMap" kindref="compound">ConfigMap</ref> &amp;</type>
+          <declname>configMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="57" column="3" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="57" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1af7c35a21c611df229bbc27a8d3c1e3b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION real_t</type>
+        <definition>KOKKOS_INLINE_FUNCTION real_t dyablo::ParabolicTerm_thermal_conduction::compute_kappa</definition>
+        <argsstring>(const pos_t &amp;pos) const</argsstring>
+        <name>compute_kappa</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::compute_kappa</qualifiedname>
+        <param>
+          <type>const pos_t &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="81" column="10" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="81" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1ab27a619c2c76107c31714e273ee68d21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>int</type>
+            <declname>ndim</declname>
+            <defname>ndim</defname>
+          </param>
+          <param>
+            <type>typename Uin_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION void</type>
+        <definition>KOKKOS_INLINE_FUNCTION void dyablo::ParabolicTerm_thermal_conduction::compute_rhs</definition>
+        <argsstring>(const Uin_t &amp;Uin, const PatchArray &amp;Ugroup, const PatchArray &amp;Qgroup, const PatchArray &amp;rhs, const CellIndex &amp;iCell_Uout, const CellIndex &amp;iCell_rhs, const CellMetaData &amp;cellmetadata) const</argsstring>
+        <name>compute_rhs</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::compute_rhs</qualifiedname>
+        <param>
+          <type>const Uin_t &amp;</type>
+          <declname>Uin</declname>
+        </param>
+        <param>
+          <type>const PatchArray &amp;</type>
+          <declname>Ugroup</declname>
+        </param>
+        <param>
+          <type>const PatchArray &amp;</type>
+          <declname>Qgroup</declname>
+        </param>
+        <param>
+          <type>const PatchArray &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>const CellIndex &amp;</type>
+          <declname>iCell_Uout</declname>
+        </param>
+        <param>
+          <type>const CellIndex &amp;</type>
+          <declname>iCell_rhs</declname>
+        </param>
+        <param>
+          <type>const CellMetaData &amp;</type>
+          <declname>cellmetadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="111" column="8" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="111" bodyend="256"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdyablo_1_1ParabolicTerm__thermal__conduction_1a73df7dca3c70c3fd7962bc1f5cb06db2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo" kindref="compound">UserData::FieldAccessor::FieldInfo</ref> &gt;</type>
+        <definition>static std::vector&lt; UserData::FieldAccessor::FieldInfo &gt; dyablo::ParabolicTerm_thermal_conduction::getFieldsInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldsInfo</name>
+        <qualifiedname>dyablo::ParabolicTerm_thermal_conduction::getFieldsInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="103" column="22" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parabolic term solving for thermal conduction : dE/dt + div(Kappa grad T) = 0. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" line="51" column="1" bodyfile="/builds/dyablo/dyablo/core/src/parabolic/ParabolicTerm_thermal_conduction.h" bodystart="51" bodyend="268"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a78d26e5fd934eeb72478fb42688d46dd" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>bc_manager</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1af7c35a21c611df229bbc27a8d3c1e3b6" prot="public" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>compute_kappa</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1ab27a619c2c76107c31714e273ee68d21" prot="public" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>compute_rhs</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1ab26505baf0dbb0a6273d1d742082c051" prot="public" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a3c77851e0f4bfa413df28021161738e0" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>diffusivity_mode</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a9cb964c4014167a942369035633d478c" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>gamma0</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a73df7dca3c70c3fd7962bc1f5cb06db2" prot="public" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>getFieldsInfo</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a844345519f84eb7d9bdaf8fdb5308cef" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>K1</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1ae099b14a1151780dbd0f9f99d1ff98b8" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>K2</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1aa2ba5cb386f3f32341d889e02e935dca" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>kappa_cst</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1ae9147716a16a3596c6895e4c52757d77" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>kappa_mode</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a5bfd5b6695faeec2b7dc0530e529c078" prot="public" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>ParabolicTerm_thermal_conduction</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a1cb78aa8992100f5f85d0903623aee38" prot="public" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a50484489270de23c28dc5319c760a7c9" prot="public" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>State</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1a9ac909318c3f54a30b307113848d4be8" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>tr_thick</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1aa70532313f27d6749a1096ce41128454" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>z1</name></member>
+      <member refid="classdyablo_1_1ParabolicTerm__thermal__conduction_1ad643c7c69e958f725283fbe7e36baaa2" prot="private" virt="non-virtual"><scope>dyablo::ParabolicTerm_thermal_conduction</scope><name>z2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

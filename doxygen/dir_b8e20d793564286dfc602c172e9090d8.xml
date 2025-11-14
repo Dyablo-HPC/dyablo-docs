@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_b8e20d793564286dfc602c172e9090d8" kind="dir">
+    <compoundname>/builds/dyablo/dyablo/core/src/io/derived_fields</compoundname>
+    <innerfile refid="DerivedFields_8h">DerivedFields.h</innerfile>
+    <innerfile refid="DerivedFields__base_8h">DerivedFields_base.h</innerfile>
+    <innerfile refid="DerivedFields__divB_8cpp">DerivedFields_divB.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/io/derived_fields/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_State_GLMMHD</compoundname>
+    <derivedcompoundref refid="structdyablo_1_1GLMMHDState" prot="public" virt="non-virtual">dyablo::GLMMHDState</derivedcompoundref>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicPolicy__GLMMHD__impl" prot="public" virt="non-virtual">dyablo::HyperbolicPolicy_GLMMHD_impl</derivedcompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1aba8fc349f0777a05024cfeb61efee0d3" prot="private" static="no">
+        <type><ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">ForeachCell::CellIndex</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_State_GLMMHD::CellIndex =  ForeachCell::CellIndex</definition>
+        <argsstring></argsstring>
+        <name>CellIndex</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::CellIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="173" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a6f470c0f3990df9578066683f831bbb7" prot="private" static="no">
+        <type><ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">UserData::FieldAccessor</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_State_GLMMHD::FieldAccessor =  UserData::FieldAccessor</definition>
+        <argsstring></argsstring>
+        <name>FieldAccessor</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::FieldAccessor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="174" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a1f1d1ba23a97d2471e5b7b2d9eecd2b7" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__PrimGLMMHDState" kindref="compound">HyperbolicPolicy_PrimGLMMHDState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_State_GLMMHD::PrimState =  HyperbolicPolicy_PrimGLMMHDState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="176" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a693f745768314827782ffef14debe2bf" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">HyperbolicPolicy_ConsGLMMHDState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_State_GLMMHD::ConsState =  HyperbolicPolicy_ConsGLMMHDState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="177" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1add393c2ed6f39a8a8caad98df2820307" prot="public" static="no">
+        <type>HyperbolicPolicy_ConsGLMMHDState::VarIndex</type>
+        <definition>using dyablo::HyperbolicPolicy_State_GLMMHD::ConsVarIndex =  HyperbolicPolicy_ConsGLMMHDState::VarIndex</definition>
+        <argsstring></argsstring>
+        <name>ConsVarIndex</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::ConsVarIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="185" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a963cb3963fd4118bf4559962f005e75d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dyablo::HyperbolicPolicy_State_GLMMHD::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::ndim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="170" column="7" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a65851191d9a71c62a911b2aea601faa3" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_State_GLMMHD::gamma0</definition>
+        <argsstring></argsstring>
+        <name>gamma0</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::gamma0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="171" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a0e9f501a160ad5fd833ad02065d71962" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION</type>
+        <definition>KOKKOS_INLINE_FUNCTION dyablo::HyperbolicPolicy_State_GLMMHD::HyperbolicPolicy_State_GLMMHD</definition>
+        <argsstring>(const HyperbolicPolicy_GLMMHD_Params &amp;params)</argsstring>
+        <name>HyperbolicPolicy_State_GLMMHD</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::HyperbolicPolicy_State_GLMMHD</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__GLMMHD__Params" kindref="compound">HyperbolicPolicy_GLMMHD_Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="180" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a52a4f921197bf3ac2a69351838c2499b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">FieldAccessor</ref></type>
+        <definition>FieldAccessor dyablo::HyperbolicPolicy_State_GLMMHD::getUin</definition>
+        <argsstring>(UserData &amp;U) const</argsstring>
+        <name>getUin</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::getUin</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="187" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="187" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1ad3b0382dbf0f2573c03a91d972a4c40a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1UserData__fields_1_1FieldAccessor" kindref="compound">FieldAccessor</ref></type>
+        <definition>FieldAccessor dyablo::HyperbolicPolicy_State_GLMMHD::getUout</definition>
+        <argsstring>(UserData &amp;U) const</argsstring>
+        <name>getUout</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::getUout</qualifiedname>
+        <param>
+          <type><ref refid="classdyablo_1_1UserData" kindref="compound">UserData</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="204" column="17" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="204" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a6cc1533188619a50a45eb5798b76089e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_State_GLMMHD::getConsState</definition>
+        <argsstring>(const Array_t &amp;U, const CellIndex &amp;iCell) const</argsstring>
+        <name>getConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::getConsState</qualifiedname>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="222" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="222" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a8792556ae2886cd059c2780358244a7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION void</type>
+        <definition>KOKKOS_INLINE_FUNCTION void dyablo::HyperbolicPolicy_State_GLMMHD::setConsState</definition>
+        <argsstring>(const Array_t &amp;U, const CellIndex &amp;iCell, const ConsState &amp;u) const</argsstring>
+        <name>setConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::setConsState</qualifiedname>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">ConsState</ref> &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="239" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="239" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a29583d13fcbb77eef210e7d0e4e3fec9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION void</type>
+        <definition>KOKKOS_INLINE_FUNCTION void dyablo::HyperbolicPolicy_State_GLMMHD::atomic_addConsState</definition>
+        <argsstring>(const Array_t &amp;U, const CellIndex &amp;iCell, const ConsState &amp;u) const</argsstring>
+        <name>atomic_addConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::atomic_addConsState</qualifiedname>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">ConsState</ref> &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="255" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="255" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a866b7b5d234f0f39b500a92ddc84a322" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__PrimGLMMHDState" kindref="compound">PrimState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION PrimState dyablo::HyperbolicPolicy_State_GLMMHD::getPrimState</definition>
+        <argsstring>(const Array_t &amp;Q, const CellIndex &amp;iCell) const</argsstring>
+        <name>getPrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::getPrimState</qualifiedname>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>Q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="271" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="271" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a1f45804430d500b0d463361b7713cc33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Array_t</type>
+          </param>
+        </templateparamlist>
+        <type>KOKKOS_INLINE_FUNCTION void</type>
+        <definition>KOKKOS_INLINE_FUNCTION void dyablo::HyperbolicPolicy_State_GLMMHD::setPrimState</definition>
+        <argsstring>(const Array_t &amp;Q, const CellIndex &amp;iCell, const PrimState &amp;q) const</argsstring>
+        <name>setPrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::setPrimState</qualifiedname>
+        <param>
+          <type>const Array_t &amp;</type>
+          <declname>Q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1AMRBlockForeachCell__CellArray__impl_1_1CellIndex" kindref="compound">CellIndex</ref> &amp;</type>
+          <declname>iCell</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__PrimGLMMHDState" kindref="compound">PrimState</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="288" column="8" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="288" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a128352f8d0b26964e6f9cffb38cbf0a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__PrimGLMMHDState" kindref="compound">PrimState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION PrimState dyablo::HyperbolicPolicy_State_GLMMHD::consToPrim</definition>
+        <argsstring>(const ConsState &amp;U) const</argsstring>
+        <name>consToPrim</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::consToPrim</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">ConsState</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="303" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="303" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a75d67a0f55c806a5cce07632208f9911" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_State_GLMMHD::primToCons</definition>
+        <argsstring>(const PrimState &amp;Q) const</argsstring>
+        <name>primToCons</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_State_GLMMHD::primToCons</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__PrimGLMMHDState" kindref="compound">PrimState</ref> &amp;</type>
+          <declname>Q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="322" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="322" bodyend="338"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::GLMMHDState</label>
+        <link refid="structdyablo_1_1GLMMHDState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dyablo::HyperbolicPolicy_GLMMHD_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__GLMMHD__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_State_GLMMHD</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD"/>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="167" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="168" bodyend="339"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a29583d13fcbb77eef210e7d0e4e3fec9" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>atomic_addConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1aba8fc349f0777a05024cfeb61efee0d3" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>CellIndex</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a693f745768314827782ffef14debe2bf" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a128352f8d0b26964e6f9cffb38cbf0a4" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>consToPrim</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1add393c2ed6f39a8a8caad98df2820307" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>ConsVarIndex</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a6f470c0f3990df9578066683f831bbb7" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>FieldAccessor</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a65851191d9a71c62a911b2aea601faa3" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>gamma0</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a6cc1533188619a50a45eb5798b76089e" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>getConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a866b7b5d234f0f39b500a92ddc84a322" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>getPrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a52a4f921197bf3ac2a69351838c2499b" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>getUin</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1ad3b0382dbf0f2573c03a91d972a4c40a" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>getUout</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a0e9f501a160ad5fd833ad02065d71962" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>HyperbolicPolicy_State_GLMMHD</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a963cb3963fd4118bf4559962f005e75d" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>ndim</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a1f1d1ba23a97d2471e5b7b2d9eecd2b7" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a75d67a0f55c806a5cce07632208f9911" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>primToCons</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a8792556ae2886cd059c2780358244a7a" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>setConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__State__GLMMHD_1a1f45804430d500b0d463361b7713cc33" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_State_GLMMHD</scope><name>setPrimState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState" kind="struct" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_ConsGLMMHDState</compoundname>
+    <includes refid="HyperbolicPolicy__GLMMHD_8h" local="no">HyperbolicPolicy_GLMMHD.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945" prot="public" static="no" strong="no">
+        <type>dyablo::VarIndex</type>
+        <name>VarIndex</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::VarIndex</qualifiedname>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a75510cb3ea1773a8372ab602861b385d" prot="public">
+          <name>Irho</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945ac633ac0cd4d80352fa62a3e2082f9e88" prot="public">
+          <name>Ie_tot</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a9a3f2fcc8fc29d0872c4007a49fc1038" prot="public">
+          <name>Irho_vx</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a384090d2d248adf41adcb37077981a4b" prot="public">
+          <name>Irho_vy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a01a8d41f8b73486988131beb9c5158a2" prot="public">
+          <name>Irho_vz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a340742902839824cb7336d9f516f5b1c" prot="public">
+          <name>IBx</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a33de0787dae25c17872c0ac3a226c0a2" prot="public">
+          <name>IBy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a3e6fc789cdf996199bcff45308802d03" prot="public">
+          <name>IBz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a1fc6e9bbf683087670584f1956d57c39" prot="public">
+          <name>Ipsi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="16" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="17" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a16192c3655b3cbe92ba18c384f347cdc" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::rho</definition>
+        <argsstring></argsstring>
+        <name>rho</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::rho</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="48" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1ae507941d1549faafa65b71086904e8e8" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::e_tot</definition>
+        <argsstring></argsstring>
+        <name>e_tot</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::e_tot</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="49" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af1fe418ae16a9f3ccad84a9cd5939635" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::rho_u</definition>
+        <argsstring></argsstring>
+        <name>rho_u</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::rho_u</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="50" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a7d92f9de7aff5fb77b56e9773a1aa5e3" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::rho_v</definition>
+        <argsstring></argsstring>
+        <name>rho_v</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::rho_v</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="51" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1aed328cfa2bb8032d5a0147630f9cc307" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::rho_w</definition>
+        <argsstring></argsstring>
+        <name>rho_w</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::rho_w</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="52" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a19bbb58bee76841c16f23d6f34d64591" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::Bx</definition>
+        <argsstring></argsstring>
+        <name>Bx</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::Bx</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="53" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a6ffc41380da6e9fe84332b4e401a8fd3" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::By</definition>
+        <argsstring></argsstring>
+        <name>By</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::By</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="54" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af867a121d656346dcfa21384d17ffd0e" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::Bz</definition>
+        <argsstring></argsstring>
+        <name>Bz</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::Bz</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="55" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1afeb666eb4fee35685b4099a31fa6328f" prot="public" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_ConsGLMMHDState::psi</definition>
+        <argsstring></argsstring>
+        <name>psi</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::psi</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="56" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a01d2409b9c3028746ab38be803a2d00c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdyablo_1_1UserData__fields_1_1FieldAccessor__FieldInfo" kindref="compound">UserData::FieldAccessor::FieldInfo</ref> &gt;</type>
+        <definition>static std::vector&lt; UserData::FieldAccessor::FieldInfo &gt; dyablo::HyperbolicPolicy_ConsGLMMHDState::getFieldsInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldsInfo</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::getFieldsInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="29" column="22" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="29" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a0a00ab019db87aa76b3e60b6926edc4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdyablo_1_1FieldManager" kindref="compound">FieldManager</ref></type>
+        <definition>static FieldManager dyablo::HyperbolicPolicy_ConsGLMMHDState::getFieldManager</definition>
+        <argsstring>()</argsstring>
+        <name>getFieldManager</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_ConsGLMMHDState::getFieldManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="43" column="23" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure holding conservative MHD variables. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Important here : p denotes the gas pressure and not the total pressure </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" line="15" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_GLMMHD.h" bodystart="15" bodyend="57"/>
+    <listofallmembers>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a19bbb58bee76841c16f23d6f34d64591" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Bx</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a6ffc41380da6e9fe84332b4e401a8fd3" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>By</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af867a121d656346dcfa21384d17ffd0e" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Bz</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1ae507941d1549faafa65b71086904e8e8" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>e_tot</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a0a00ab019db87aa76b3e60b6926edc4c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>getFieldManager</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a01d2409b9c3028746ab38be803a2d00c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>getFieldsInfo</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a340742902839824cb7336d9f516f5b1c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>IBx</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a33de0787dae25c17872c0ac3a226c0a2" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>IBy</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a3e6fc789cdf996199bcff45308802d03" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>IBz</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945ac633ac0cd4d80352fa62a3e2082f9e88" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Ie_tot</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a1fc6e9bbf683087670584f1956d57c39" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Ipsi</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a75510cb3ea1773a8372ab602861b385d" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Irho</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a9a3f2fcc8fc29d0872c4007a49fc1038" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Irho_vx</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a384090d2d248adf41adcb37077981a4b" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Irho_vy</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945a01a8d41f8b73486988131beb9c5158a2" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>Irho_vz</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1afeb666eb4fee35685b4099a31fa6328f" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>psi</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a16192c3655b3cbe92ba18c384f347cdc" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>rho</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af1fe418ae16a9f3ccad84a9cd5939635" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>rho_u</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1a7d92f9de7aff5fb77b56e9773a1aa5e3" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>rho_v</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1aed328cfa2bb8032d5a0147630f9cc307" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>rho_w</name></member>
+      <member refid="structdyablo_1_1HyperbolicPolicy__ConsGLMMHDState_1af33faeeebbcf49aa69ddd727a46df945" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_ConsGLMMHDState</scope><name>VarIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

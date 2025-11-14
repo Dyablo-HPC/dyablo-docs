@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1" kind="class" language="C++" prot="public">
+    <compoundname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</compoundname>
+    <derivedcompoundref refid="classdyablo_1_1HyperbolicPolicy__Rad__impl" prot="public" virt="non-virtual">dyablo::HyperbolicPolicy_Rad_impl</derivedcompoundref>
+    <innerclass refid="structdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1_1ScalarData__t" prot="private">dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::ScalarData_t</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1aed0f96a2f75d170a0d0b1cbbf700ef59" prot="public" static="no">
+        <type><ref refid="classdyablo_1_1HyperbolicPolicy__State__Rad" kindref="compound">HyperbolicPolicy_State_Rad</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::State =  HyperbolicPolicy_State_Rad</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="172" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1aac9c0993810ba9bd2827bca43bcf420d" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">State::PrimState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::PrimState =  State::PrimState</definition>
+        <argsstring></argsstring>
+        <name>PrimState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::PrimState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="173" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1adffc82451188eb59a5e072c5d9e16974" prot="public" static="no">
+        <type><ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">State::ConsState</ref></type>
+        <definition>using dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::ConsState =  State::ConsState</definition>
+        <argsstring></argsstring>
+        <name>ConsState</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::ConsState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="174" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1a84f1b8cdf6306bb790fe1f97bf0001d4" prot="private" static="no" mutable="no">
+        <type>real_t</type>
+        <definition>real_t dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::c_rad</definition>
+        <argsstring></argsstring>
+        <name>c_rad</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::c_rad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="165" column="10" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1af795dc3d28a7cb768f41b5010bf1a070" prot="private" static="no" mutable="no">
+        <type>struct dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::ScalarData_t</type>
+        <definition>struct dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::ScalarData_t dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::scalar_data</definition>
+        <argsstring></argsstring>
+        <name>scalar_data</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::scalar_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="169" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1a4639ca2cac4d409e16a2e5e6262d8f6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::HyperbolicPolicy_RiemannSolver_Rad_M1</definition>
+        <argsstring>(const HyperbolicPolicy_Rad_Params &amp;params, const ScalarSimulationData &amp;scalar_data_dict)</argsstring>
+        <name>HyperbolicPolicy_RiemannSolver_Rad_M1</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::HyperbolicPolicy_RiemannSolver_Rad_M1</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__Rad__Params" kindref="compound">HyperbolicPolicy_Rad_Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdyablo_1_1MultiTypeMap" kindref="compound">ScalarSimulationData</ref> &amp;</type>
+          <declname>scalar_data_dict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="176" column="3" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="176" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1ab019e3952bf8df4ce82a32e1d4cd0551" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::riemann_solver</definition>
+        <argsstring>(PrimState qL, PrimState qR, ComponentIndex3D dir) const</argsstring>
+        <name>riemann_solver</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::riemann_solver</qualifiedname>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">PrimState</ref></type>
+          <declname>qL</declname>
+        </param>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">PrimState</ref></type>
+          <declname>qR</declname>
+        </param>
+        <param>
+          <type>ComponentIndex3D</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="182" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="182" bodyend="190"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1ab66f7ead948563e20ddf3fc7979a8f90" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">PrimState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION PrimState dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::swapComponents</definition>
+        <argsstring>(const PrimState &amp;q, ComponentIndex3D comp) const</argsstring>
+        <name>swapComponents</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::swapComponents</qualifiedname>
+        <param>
+          <type>const <ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">PrimState</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>ComponentIndex3D</type>
+          <declname>comp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="195" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="195" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1a38961ecde451d7ebd3f0adf1c00b1683" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>KOKKOS_INLINE_FUNCTION <ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">ConsState</ref></type>
+        <definition>KOKKOS_INLINE_FUNCTION ConsState dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::riemann_M1</definition>
+        <argsstring>(PrimState qleft, PrimState qright, real_t ctilde) const</argsstring>
+        <name>riemann_M1</name>
+        <qualifiedname>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1::riemann_M1</qualifiedname>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">PrimState</ref></type>
+          <declname>qleft</declname>
+        </param>
+        <param>
+          <type><ref refid="structdyablo_1_1HyperbolicPolicy__RadState" kindref="compound">PrimState</ref></type>
+          <declname>qright</declname>
+        </param>
+        <param>
+          <type>real_t</type>
+          <declname>ctilde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="220" column="13" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="220" bodyend="306"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>dyablo::HyperbolicPolicy_Rad_impl</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__Rad__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</label>
+        <link refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1"/>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" line="162" column="1" bodyfile="/builds/dyablo/dyablo/core/src/hyperbolic/policy/HyperbolicPolicy_Rad.h" bodystart="163" bodyend="308"/>
+    <listofallmembers>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1a84f1b8cdf6306bb790fe1f97bf0001d4" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>c_rad</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1adffc82451188eb59a5e072c5d9e16974" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>ConsState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1a4639ca2cac4d409e16a2e5e6262d8f6c" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>HyperbolicPolicy_RiemannSolver_Rad_M1</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1aac9c0993810ba9bd2827bca43bcf420d" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>PrimState</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1a38961ecde451d7ebd3f0adf1c00b1683" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>riemann_M1</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1ab019e3952bf8df4ce82a32e1d4cd0551" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>riemann_solver</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1af795dc3d28a7cb768f41b5010bf1a070" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>scalar_data</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1aed0f96a2f75d170a0d0b1cbbf700ef59" prot="public" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>State</name></member>
+      <member refid="classdyablo_1_1HyperbolicPolicy__RiemannSolver__Rad__M1_1ab66f7ead948563e20ddf3fc7979a8f90" prot="private" virt="non-virtual"><scope>dyablo::HyperbolicPolicy_RiemannSolver_Rad_M1</scope><name>swapComponents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
