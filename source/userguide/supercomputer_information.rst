@@ -6,7 +6,7 @@ This document centralizes all the configuration/batchscripts used for building a
 Jean-Zay
 --------
 
-H100 partition (**Last update: 25/09/2025**)
+H100 partition (**Last update: 18/11/2025**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Configuration
@@ -16,7 +16,7 @@ Configuration
   
   module purge
   module load arch/h100
-  module load cmake gcc/12.2.0 cuda/12.1.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
+  module load cmake gcc/12.2.0 cuda/12.8.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
   cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ENABLE_CUDA=ON -DKokkos_ARCH="HOPPER90" ..
 
 .. danger :: As of november 2024, compilation fails on frontal nodes because of h100 modules incompatible with gcc/cmake. 
@@ -45,12 +45,12 @@ Example jobscript
 
   module purge
   module load arch/h100
-  module load cmake gcc/12.2.0 cuda/12.1.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
+  module load cmake gcc/12.2.0 cuda/12.8.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
 
   srun ./dyablo <your-ini-file>.ini
 
 
-A100 partition (**Last update: 25/09/2025**)
+A100 partition (**Last update: 18/11/2025**)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Configuration
@@ -60,7 +60,7 @@ Configuration
   
   module purge
   module load arch/a100
-  module load cmake gcc/12.2.0 cuda/12.1.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
+  module load cmake gcc/12.2.0 cuda/12.8.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
   cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ENABLE_CUDA=ON -DKokkos_ARCH="AMPERE80" ..
 
 
@@ -85,7 +85,7 @@ Example jobscript
 
   module purge
   module load arch/a100
-  module load cmake gcc/12.2.0 cuda/12.1.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
+  module load cmake gcc/12.2.0 cuda/12.8.0 openmpi/4.1.5-cuda hdf5/1.12.0-mpi-cuda
 
   srun ./dyablo <your-ini-file>.ini
 
@@ -245,3 +245,24 @@ Example jobscript
   export MPICH_GPU_SUPPORT_ENABLED=1
     
   srun ./dyablo <your-ini-file>.ini
+
+Pleiadi - OAPA
+--------------
+
+Genoa (CPU) partition (**Last update 25/09/2025**)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Configuration
+"""""""""""""
+
+.. code-block :: bash
+
+  module purge
+  module load cpe/24.07
+  module load craype-x86-genoa
+  module load PrgEnv-cray
+  module load cray-hdf5-parallel
+  CC=cc CXX=CC cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ARCH=ZEN4 ..
+
+Example jobscript
+"""""""""""""""""
