@@ -6,9 +6,6 @@
 Dyablo documentation
 ====================
 
-.. TODO : 
-   . Ajouter un mot sur la compilation avec Mac
-
 What is Dyablo
 --------------
 
@@ -40,6 +37,7 @@ Contents
    general_organization
    user_guide
    developer_guide
+   tutorials
    lexicon
    community
    publication_list
