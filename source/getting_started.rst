@@ -25,12 +25,9 @@ Dependencies
 Dyablo relies on CMake for building. The superbuild system should automatically find dependencies and warn you if any dependency is missing. 
 CMake version > 3.16 is needed to compile Kokkos.
 
-You will need a recent C++ compiler compatible with C++17 and capable of compiling Kokkos. Recommended compiler versions for Dyablo are :
+You will need a recent C++ compiler `compatible with Kokkos`_. Kokkos requires C++20 since version 5.0.
 
-  * ``g++`` 12+
-  * ``icc`` 19.0.5+
-  * ``clang`` 11+
-  * ``nvcc`` 12+
+.. _compatible with Kokkos(https://kokkos.org/kokkos-core-wiki/get-started/requirements.html): https://kokkos.org/kokkos-core-wiki/get-started/requirements.html
   
 You will also require ``hdf5`` (1.10+), ``MPI`` and ``libxml2``.
 
