@@ -31,12 +31,12 @@ The combination of all the terms above is done using operator splitting. Each te
 Hyperbolic terms
 ----------------
 
-The hyperbolic terms are solved using a godunov-like method. The resolution of the hyperbolic terms combine two aspects: 
+The hyperbolic terms are solved using a Godunov-like method. The resolution of the hyperbolic terms combines two aspects: 
 
 * a **policy** which describes the equations: a conservative state, a primitive state, an equation of state, a flux solver, boundary conditions, etc.
 * a **scheme** which will update the equations in an explicit discrete form.
 
-For instance, the most basic policy in Dyablo is the **hydrodynamics** policy which solves the Euler equations : 
+For instance, the most basic policy in Dyablo is the **hydrodynamics** policy, which solves the Euler equations : 
 
 .. math ::
 
@@ -53,7 +53,7 @@ For instance, the most basic policy in Dyablo is the **hydrodynamics** policy wh
       (E+P)\mathbf{u}
   \end{bmatrix}
 
-The policy includes the flux calculation, which, in this precise case, is done using the `HLLC`_ solver. Boundary conditions, by default include *absorbing*, *periodic* and *reflecting* conditions. The policy also defined the closure of the equations, and in the hydrodynamics case, uses an ideal gas equation of state to link the internal energy density to the pressure.
+The policy includes the flux calculation, which, in this precise case, is done using the `HLLC`_ solver. Boundary conditions, by default, include *absorbing*, *periodic* and *reflecting* conditions. The policy also defined the closure of the equations, and in the hydrodynamics case, uses an ideal gas equation of state to link the internal energy density to the pressure.
 
 .. _HLLC: https://link.springer.com/article/10.1007/s00193-019-00912-4
 
@@ -79,7 +79,7 @@ Likewise, you could use the `2nd order strong-stability preserving Runge-Kutta`_
 ``.ini`` file parameters:
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The hyperbolic solver is declared in the ``[hydro]`` section and paired with the ``update`` key. Every hyperbolic solver is going to have their own parameters that will be read from the ``.ini`` file so please refer to the documentation of each policy and scheme.
+The hyperbolic solver is declared in the ``[hydro]`` section and paired with the ``update`` key. Every hyperbolic solver is going to have their own parameters that will be read from the ``.ini`` file, so please refer to the documentation of each policy and scheme.
 
 .. doxygenpage:: hyperbolic_update_plugins
   :content-only:
@@ -90,9 +90,9 @@ Parabolic terms
 ---------------
 
 .. warning::
-  The parabolic source term will be refactored into source-terms later in the development of Dyablo. 
+  The parabolic source term will be refactored into source terms later in the development of Dyablo. 
 
-Parabolic source terms can also be applied. Parabolic terms include viscosity and thermal conduction. They are splitted from the hyperbolic and source updates, and are applied a first order in time explicit operator. The parabolic plugins do not create fields for Dyablo so their usage is conditioned to specific hyperbolic policies.
+Parabolic source terms can also be applied. Parabolic terms include viscosity and thermal conduction. They are split from the hyperbolic and source updates, and are applied a first order in time explicit operator. The parabolic plugins do not create fields for Dyablo so their usage is conditioned to specific hyperbolic policies.
 
 Viscosity
 ^^^^^^^^^
@@ -101,7 +101,7 @@ The viscosity operator acts on two variables: the momentum (:math:`\rho\mathbf{u
 
 .. math ::
 
-  \dfrac{\partial \rho\mathbf{u}}{\partial t} &= -\nabla\cdot(\mathbf{\tau}) \\
+  \dfrac{\partial \rho\mathbf{u}}{\partial t} &= -\nabla\cdot\mathbf{\tau} \\
   \dfrac{\partial E}{\partial t} &= -\nabla\cdot(\mathbf{\tau}\cdot\mathbf{u})
 
 with :math:`\mathbf{\tau}` the viscosity stress tensor whose components are defined as 
@@ -110,30 +110,53 @@ with :math:`\mathbf{\tau}` the viscosity stress tensor whose components are defi
 
   \tau_{ij} = \mu \left(\dfrac{\partial u_i}{\partial x_j} + \dfrac{\partial u_j}{\partial x_i} - \dfrac{2}{3}(\delta_i^j \nabla\cdot\mathbf{u})\right)
 
-where :math:`\mu` is the bulk viscosity diffusion coefficient and :math:`\delta_i^j` the Kroenecker delta operator.
+where :math:`\mu` is the bulk viscosity diffusion coefficient and :math:`\delta_i^j` the Kronecker delta operator.
 
 ``.ini`` parameters:
-####################
+""""""""""""""""""""
 
+Viscosity takes only a few parameters from the `.ini` file in its own dedicated section.
 
-.. warning :: 
+.. code-block :: ini
 
-  This section is incomplete yet.
+  [viscosity]
 
+  update=ParabolicUpdate_explicit
+  mu=...
 
 
 Thermal conduction
 ^^^^^^^^^^^^^^^^^^
 
+Thermal conduction acts on the total energy for a hydrodynamics run.
 
-.. warning :: 
+.. danger :: 
 
-  This section is incomplete yet.
+  Thermal conduction is only implemented for hydrodynamics and will not work correctly with MHD or any solver that includes more than kinetic energy and internal energy in the total energy.
+
+The plugin integrates an additional diffusion term as follows: 
+
+.. math ::
+  
+  \dfrac{\partial E}{\partial t} &= - \nabla\cdot(K\nabla T)
+
+with :math:`K` is the diffusion coefficient and :math:`T` the temperature of the fluid. 
+
+.. note ::
+
+  In the absence of more complex equations of state, for now the temperature is defined as :math:`T=P/\rho`.
+
+.. warning ::
+
+  Boundary conditions are not yet in dev. TODO.
 
 Other source terms
 ------------------
 
-The rest of the source terms are splitted and applied in turn. 
+Source terms are cell-centered kernels applied after the hyperbolic and parabolic kernels.
+
+.. note ::
+  Source terms should not be used for stencil-kernels. Generally, kernels using stencils imply derivatives and should thus be included in the hyperbolic policy, or parabolic terms.
 
 ``.ini`` parameters:
 ####################

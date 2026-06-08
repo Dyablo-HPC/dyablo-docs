@@ -11,7 +11,7 @@ The Adaptive mesh refinement data structure in Dyablo is called **block-structur
 .. figure :: ../figs/amr_types.png
   :align: center
   
-  **Left**: A *cell-based* AMR tree. The octants in green are the cells of the mesh. **Right**: A *block-based* AMR tree. The leaves of the tree in orange are not the cells of the computational domain. Instead, each octant contains a regular cartesian sub-grid, with the actual cells (in green).
+  **Left**: A *cell-based* AMR tree. The octants in green are the cells of the mesh. **Right**: A *block-based* AMR tree. The leaves of the tree in orange are not the cells of the computational domain. Instead, each octant contains a regular Cartesian sub-grid, where the computation cells are located (in green).
 
 
 Levels, block-sizes and resolution
@@ -20,9 +20,9 @@ Levels, block-sizes and resolution
 Refinement level
 ^^^^^^^^^^^^^^^^
 
-The AMR tree exists is always confined between two **refinement levels**: a minimum level (``level_min``) and a maximum level (``level_max``). The tree is always fully refined at ``level_min`` and *can* go up to ``level_max`` included.
+The AMR tree is always confined between two **refinement levels**: a minimum level (``level_min``) and a maximum level (``level_max``). The tree is always fully refined at ``level_min`` and *can* go up to ``level_max`` included.
 
-Every time an octant is refined, it is subdivided in two along each direction: 4 new octants in 2D and 8 in 3D.
+Every time an octant is refined, it is subdivided into two in each direction: 4 new octants in 2D and 8 in 3D.
 
 .. figure :: ../figs/amr_levels.png
   :align: center
@@ -38,23 +38,23 @@ The operation of going from one level :math:`\ell` to the next :math:`\ell + 1` 
 Block-sizes
 ^^^^^^^^^^^
 
-Octants are then subdivided in blocks. The size of a block is given as a set of three parameters to the simulation, one along each direction: :math:`b_x`, :math:`b_y` and :math:`b_z`. Thus, each octant has a :math:`b_x \times b_y \times b_z` regular grid of cells. Note that in 2D, :math:`b_z` is automatically set to zero.
+Octants are then subdivided into blocks. The size of a block is given as a set of three parameters to the simulation, one in each direction: :math:`b_x`, :math:`b_y` and :math:`b_z`. Thus, each octant has a :math:`b_x \times b_y \times b_z` regular grid of cells. Note that in 2D, :math:`b_z` is automatically set to zero.
 
 .. figure :: ../figs/octants_blocks.png
   :align: center
 
-  AMR grid in two dimensions. We see cells and octants at two different levels. Each block has :math:`b_x=b_y=4`. Octant are colored differently. A block is highlighted in pink. 
+  AMR grid in two dimensions. We see cells and octants at two different levels. Each block has :math:`b_x=b_y=4`. Octants are colored differently. A block is highlighted in pink. 
 
 Logical resolution
 ^^^^^^^^^^^^^^^^^^
 
-The actual resolution obtained with block-structured AMR can be sometimes tricky to calculate. Let's consider a fixed grid case as an example, where the minimum level (:math:`\ell_{min}`) and maximum level (:math:`\ell_{max}`) are equal. Blocks in a simulation are given a size, ie the number of cells along each direction they have. These sizes are constant through the whole simulation, and are noted :math:`b_x`, :math:`b_y`, and :math:`b_z`.
+The actual resolution obtained with block-structured AMR can be sometimes tricky to calculate. Let's consider a fixed grid case as an example, where the minimum level (:math:`\ell_{min}`) and maximum level (:math:`\ell_{max}`) are equal. Blocks in a simulation are given a size, ie the number of cells in  each direction they have. These sizes are constant through the whole simulation, and are noted :math:`b_x`, :math:`b_y`, and :math:`b_z`.
 
-We define the **logical resolution** as the number of cells in each direction at maximum level. In the case of a fixed grid run, it is the actual number of cells in the simulation. In the case of an AMR run, it is the maximum potential cells in the domain.
+We define the **logical resolution** as the number of cells in each direction at the maximum level. In the case of a fixed grid run, it is the actual number of cells in the simulation. In the case of an AMR run, it is the maximum number of potential cells in the domain.
 
-For our example, let us take :math:`\ell_{min} = \ell_{max} = 6`. Likewise, we take the same block size, along each direction: :math:`b_x = b_y = b_z = 4`. 
+For our example, let us take :math:`\ell_{min} = \ell_{max} = 6`. Likewise, we take the same block size, in each direction: :math:`b_x = b_y = b_z = 4`. 
 
-We start by calculating the number of octants along each direction. Since the grid is fully refined, the number of octants :math:`N_{oct, dir}` is given by the number of levels : 
+We start by calculating the number of octants in each direction. Since the grid is fully refined, the number of octants :math:`N_{oct, dir}` is given by the number of levels : 
 
 .. math ::
 
@@ -97,16 +97,16 @@ For instance, having a circular feature in a domain extending over :math:`[0.00,
 .. figure :: ../figs/slab_incorrect.png
   :align: center
 
-  Example of a slab with the same logical resolution along each direction. Since the domain is stretched along the y-axis, all cells look squashed. This can have negative numerical impacts, for instance on time step limitations.
+  Example of a slab with the same logical resolution in each direction. Since the domain is stretched along the y-axis, all cells look squashed. This can have negative numerical impacts, for instance, on time step limitations.
 
-A solution to avoid the squashing of the cells is to lower both :math:`\ell_{min}` and :math:`\ell_{max}` and change the block size to fit the aspect ratio. This has the inconvenient of often increasing the granularity of refinement, and adding too many cells in un-necessary places. In our example, if we go to :math:`\ell_{min}=2`, :math:`\ell_{max}=6` and :math:`bx,by,bz=4,16,14` we get the following result: 
+A solution to avoid the squashing of the cells is to lower both :math:`\ell_{min}` and :math:`\ell_{max}` and change the block size to fit the aspect ratio. This has the inconvenience of often increasing the granularity of refinement, and adding too many cells in unnecessary places. In our example, if we go to :math:`\ell_{min}=2`, :math:`\ell_{max}=6` and :math:`bx,by,bz=4,16,14` we get the following result: 
 
 .. figure :: ../figs/slab_incorrect2.png
   :align: center
 
   Example of the same slab where the aspect ratio of cells has been corrected using the block-size. This increases the granularity of the refinement, and adds a lot of cells far from the circular feature due to the size of the blocks.
 
-The correct solution is to use the **coarse-resolution** feature that allows you to cut the coarse mesh, ie, the mesh fully refined at :math:`\ell_{min}`. For this Dyablo exposes the parameters ``coarse_oct_resolution_{x|y|z}`` that allows you to select how many **octants** the coarse mesh has in each direction. To circle back on our example, we have :math:`\ell_{min}=4` so we have 16 octants along each direction. The ratio to our physical size is :math:`(1/4, 1, 1/4)` so we can set: 
+The correct solution is to use the **coarse-resolution** feature that allows you to cut the coarse mesh, ie, the mesh fully refined at :math:`\ell_{min}`. For this, Dyablo exposes the parameters ``coarse_oct_resolution_{x|y|z}`` that allows you to select how many **octants** the coarse mesh has in each direction. To circle back on our example, we have :math:`\ell_{min}=4` so we have 16 octants in each direction. The ratio to our physical size is :math:`(1/4, 1, 1/4)` so we can set: 
 
 .. code-block ::
 
@@ -114,37 +114,37 @@ The correct solution is to use the **coarse-resolution** feature that allows you
   coarse_oct_resolution_y = 16
   coarse_oct_resolution_z = 4
 
-That way, the mesh will have the right amount of cells in each direction to keep a block size of :math:`4^3` and still have a perfect aspect ratio: 
+That way, the mesh will have the right number of cells in each direction to keep a block size of :math:`4^3` and still have a perfect aspect ratio: 
 
 
 .. figure :: ../figs/slab.png
   :align: center
 
-  The slab has been cut at :math:`\ell_{min}` only keeping the correct amount of cells. AMR granularity is optimal and cells have the right aspect ratio.
+  The slab has been cut at :math:`\ell_{min}` only keeping the correct number of cells. AMR granularity is optimal and cells have the right aspect ratio.
 
 AMR Cycle and Load-balancing
 ----------------------------
 
 The AMR cycle is the process of marking the cells, adapting the mesh, and doing the 2:1 balance. This process can be very expensive, so the user has the choice to parametrize how often it is applied by the parameter ``cycle_frequency``.
 
-Similarly, the operation of load-balancing, ie distribution the total load of the mesh between all the MPI processes to make sure all process does roughly the same amount of work, is very expensive because it involves communicating a lot of data. Dyablo allows the user to parametrize how often the load balancing is done using the ``load_balancing_frequency`` parameter.
+Similarly, the operation of load-balancing, ie distributing the total load of the mesh between all the MPI processes to make sure every process does roughly the same amount of work, is very expensive because it involves communicating a lot of data. Dyablo allows the user to parametrize how often the load balancing is done using the ``load_balancing_frequency`` parameter.
 
 Refinement criterion and remapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The actual marking of the cells is done by the `RefinementCondition` plugin. Similarly, when a cell is refined or coarsen, the definition of the new values is done using the `MapUserData` plugin (**remapping**).
 
-Coherent-levels
+Coherent levels
 ^^^^^^^^^^^^^^^
 
-By default, the data is organized in memory following a space filling curve: the Morton Z-curve_. The most simple way to do load-balancing is to cut the curve in equal pieces and distribute these to every-process. Doing that can imply cutting on very fine levels, which will tend to increase unnecessarily the number of ghost cells to communicate. To avoid that, Dyablo allows the user to set **coherent levels** which are a number of levels below the maximum level of refinement that are not going to be cut by the load balancing if possible.  
+By default, the data is organized in memory following a space-filling curve: the Morton Z-curve_. The most simple way to do load-balancing is to cut the curve in equal pieces and distribute these to every process. Doing that can imply cutting on very fine levels, which will tend to increase unnecessarily the number of ghost cells to communicate. To avoid that, Dyablo allows the user to set **coherent levels**, which are a number of levels below the maximum level of refinement that are not going to be cut by the load balancing if possible.  
 
 .. _`Z-curve`: https://en.wikipedia.org/wiki/Z-order_curve
 
 .. figure :: ../figs/coherent_levels.png
   :align: center
 
-  The figure shows a two occurrences of the same run, woomed on a specific region. The run uses 13 MPI processes and different coherence levels. The colors indicate the MPI process and the mesh is displayed in blue. On the **left** we set ``loadbalance_coherent_levels=0``. We can see the MPI process cutting is very irregular and cuts through smaller levels. On the **right** ``loadbalance_coherent_levels=3`` and the balancing is much more coarse. 
+  The figure shows two occurrences of the same run, zoomed on a specific region. The run uses 13 MPI processes and different coherence levels. The colors indicate the MPI process and the mesh is displayed in blue. On the **left** we set ``loadbalance_coherent_levels=0``. We can see the MPI process cutting is very irregular and cuts through smaller levels. On the **right** ``loadbalance_coherent_levels=3`` and the balancing is much coarser. 
 
 
 ``.ini`` file parameters
