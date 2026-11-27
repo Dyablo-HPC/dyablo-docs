@@ -17,3 +17,4 @@ The first two tutorials are meant to teach you the organization of the code and 
    tutorials/writing_an_hyperbolic_solver
    tutorials/writing_a_unit_test
    tutorials/writing_a_validation_test
+   tutorials/cosmology_simulation
