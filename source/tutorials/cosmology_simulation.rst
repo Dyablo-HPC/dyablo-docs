@@ -33,7 +33,7 @@ If MUSIC is already built somewhere, export the path to the correct folder manua
 
 
 ``yt`` and colossus
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 Most of the analysis will be done using the `yt <https://yt-project.org/>` package. We will also need the colossus package for the dark matter halo mass analysis.
 
@@ -94,7 +94,7 @@ Now that we have a ``dyablo`` and a ``MUSIC`` executable built, the next step is
 
 The important parameters are the following: 
 
-[TODO]
+.. danger :: [TODO]
 
 Create a new folder where the simulations of this tutorial will be run. Download and copy the ``music.conf`` file there, then start MUSIC to generate the initial conditions set:
 
@@ -188,7 +188,24 @@ We can query the ``ds`` structure to get more information on the snapshot. For i
 
 You can see here a list of metadata, including the current expansion factor (``aexp``), the current iteration (``iter``), or the name of the run. 
 
-** Faire ici un display de l'histogramme des niveaux**
+We can also get the raw data in the fields and play with them. In this run, the fields only hold the level of each cell and the initial density (that is not updated since we are not solving for hydrodynamics). Let's plot an histogram of the levels in the simulation: 
+
+.. code-block:: python
+
+  max_level = int(ds.r["level"].max())
+  min_level = int(ds.r["level"].min())
+  edges = np.arange(min_level-0.5, max_level+0.5001, 1.0)
+  plt.hist(ds.r["level"]-0.5, bins=edges, color="skyblue", edgecolor="black")
+  plt.yscale("log")
+  plt.title("Distribution of the cell levels in the grid")
+  plt.xlabel("Level of refinement")
+  plt.ylabel("Number of blcellsocks")
+  plt.savefig("refinement_level.png")
+
+This should write a ``refinement_level.png`` image on your disk, that should look akin to the following distribution: 
+
+.. figure :: ../figs/tuto_cosmo_refinement_levels.png
+  :align: center
 
 Maps of the simulation data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -226,6 +243,54 @@ We run FOF on the dataset to build a catalogue
   hc = HaloCatalog(data_ds=ds, finder_method='fof', output_dir='./')
   hc.create()
 
+This operation will take one or two minutes to run, and will build the catalogue of haloes, and will save it to your disk in the file ``cosmo_iterXXXXXXX.0.h5``. We can then proceed to plot these halos on top of the projected density:
+
+.. code-block:: python
+
+  p = yt.ParticlePlot(ds,"particle_position_x","particle_position_y","particle_mass")
+  p.set_unit("particle_mass", "Msun")
+  p.annotate_halos(hc)
+  p.save("halos_annotation.png")
+
+You should end-up with a ``halos_annotation.png`` image with the previous density map plotted with halos on top as white circles: 
+
+.. figure :: ../figs/tuto_cosmo_dm_halos_annotation.png
+  :align: center
+
+Next we can extract the most massive halo and make a zoom of the density map around it: 
+
+.. code-block:: python
+
+  ad    = hds.all_data()
+  haloM = ad["halos", "particle_mass"].to("Msun")
+  maxHaloID = np.where(haloM == haloM.max())[0][0]
+  halo = hds.halo("halos", maxHaloID)
+  center_halo=ad["halos", "particle_position"][maxHaloID]
+  rvir = 4 * ad["halos","virial_radius"][maxHaloID]
+  p = yt.ParticlePlot(ds,'particle_position_x','particle_position_z','particle_mass',
+                        center=center_halo,width=rvir,depth=rvir,axes_unit='Mpc',density=True)
+  p.set_unit('particle_mass', "Msun/kpc**2")
+  p.set_buff_size(64)
+  p.set_figure_size((5,5))
+  p.savefig("most_massive_halo.png")              
+
+You should end up with a density map around the most massive halo as the following: 
+
+.. figure :: ../figs/tuto_cosmo_most_massive_halo.png
+  :align: center
+
+
+
+Cosmology with baryons
+----------------------
+
+Music configuration : `music.conf`_
+
+.ini file : `ini_file`_
+
+.. _`music.conf`: ini_files/music_hydro.conf
+
+.. _`ini_file`: ini_files/cosmo_hydro.ini
 
 
 Playing with paraview
