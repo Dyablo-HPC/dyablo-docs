@@ -1,6 +1,17 @@
 Creating a new initial conditions
 =================================
 
+Pre-requisites
+--------------
+
+For this tutorial, you will need to already be familiar with: 
+
+* The plugins mechanism. See the :doc:`plugins` tutorial
+* The block-based adaptive mesh refinement. See the userguide section on :doc:`/userguide/amr`
+
+Introduction
+------------
+
 In this tutorial, we will write a new initial condition. Initial conditions are plugins as well, so you can follow the same principles as in the previous tutorial: 
 
 1. Look at the base abstract class in ``core/src/InitialConditions_base.h``

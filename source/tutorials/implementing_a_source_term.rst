@@ -1,6 +1,13 @@
 Implementing a source term
 ==========================
 
+Pre-requisites
+--------------
+
+For this tutorial, you will need to already be familiar with: 
+
+* The plugins mechanism. See the :doc:`plugins` tutorial
+
 Adding a source-term
 --------------------
 
